@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4CF6FE84-77D9-4FF3-9529-0F1C871A2DDE}</ProjectGuid>
+    <ProjectGuid>{5AF9AA39-743B-41FE-92CB-01668E268F5E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>SignIt_</RootNamespace>
     <AssemblyName>SignIt!</AssemblyName>
@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
