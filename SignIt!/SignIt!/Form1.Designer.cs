@@ -1,5 +1,5 @@
 ﻿
-namespace PROyecto
+namespace SignIt_
 {
     partial class Form1
     {
