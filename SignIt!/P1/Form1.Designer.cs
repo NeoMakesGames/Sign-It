@@ -1,5 +1,5 @@
 ﻿
-namespace SignIt_
+namespace P1
 {
     partial class Form1
     {
@@ -29,32 +29,35 @@ namespace SignIt_
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.userControl11 = new P1.UserControl1();
             this.SuspendLayout();
             // 
-            // textBox1
+            // userControl11
             // 
-            this.textBox1.Location = new System.Drawing.Point(377, 152);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.userControl11.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.userControl11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl11.BackgroundImage")));
+            this.userControl11.Location = new System.Drawing.Point(-3, -1);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(720, 405);
+            this.userControl11.TabIndex = 0;
+            this.userControl11.Load += new System.EventHandler(this.userControl11_Load);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.userControl11);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "SignIt!";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private UserControl1 userControl11;
     }
 }
 
