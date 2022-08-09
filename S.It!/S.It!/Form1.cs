@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace P1
+namespace S.It_
 {
     public partial class Form1 : Form
     {
@@ -16,12 +16,8 @@ namespace P1
         {
             InitializeComponent();
         }
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, ClientRectangle, Color.FromArgb(0, 0, 0), ButtonBorderStyle.Solid);
-        }
 
-        private void userControl11_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

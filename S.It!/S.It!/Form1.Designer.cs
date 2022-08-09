@@ -1,5 +1,5 @@
 ﻿
-namespace P1
+namespace S.It_
 {
     partial class Form1
     {
@@ -29,35 +29,21 @@ namespace P1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.userControl11 = new P1.UserControl1();
             this.SuspendLayout();
-            // 
-            // userControl11
-            // 
-            this.userControl11.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.userControl11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl11.BackgroundImage")));
-            this.userControl11.Location = new System.Drawing.Point(-3, -1);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(720, 405);
-            this.userControl11.TabIndex = 0;
-            this.userControl11.Load += new System.EventHandler(this.userControl11_Load);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.userControl11);
             this.Name = "Form1";
-            this.Text = "SignIt!";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private UserControl1 userControl11;
     }
 }
 
