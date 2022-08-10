@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace S.It_
 {
-    public partial class Form1 : Form
+    public partial class CreaciónDeUsuario : UserControl
     {
-        public Form1()
+        public CreaciónDeUsuario()
         {
             InitializeComponent();
         }

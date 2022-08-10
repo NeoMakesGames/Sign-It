@@ -35,8 +35,9 @@ namespace S.It_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::S.It_.Properties.Resources.InicioDesesión__6_;
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(1366, 788);
+            this.Size = new System.Drawing.Size(1366, 910);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.ResumeLayout(false);
 
