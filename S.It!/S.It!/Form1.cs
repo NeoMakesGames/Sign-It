@@ -16,5 +16,10 @@ namespace S.It_
         {
             InitializeComponent();
         }
+
+        private void creaciónDeUsuario1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

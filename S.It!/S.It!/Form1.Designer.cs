@@ -29,25 +29,10 @@ namespace S.It_
         /// </summary>
         private void InitializeComponent()
         {
-            this.userControl11 = new S.It_.UserControl1();
-            this.creaciónDeUsuario1 = new S.It_.CreaciónDeUsuario();
             this.home1 = new S.It_.Home();
+            this.creaciónDeUsuario1 = new S.It_.CreaciónDeUsuario();
+            this.userControl11 = new S.It_.UserControl1();
             this.SuspendLayout();
-            // 
-            // userControl11
-            // 
-            this.userControl11.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.userControl11.Location = new System.Drawing.Point(12, 12);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(282, 191);
-            this.userControl11.TabIndex = 0;
-            // 
-            // creaciónDeUsuario1
-            // 
-            this.creaciónDeUsuario1.Location = new System.Drawing.Point(370, 12);
-            this.creaciónDeUsuario1.Name = "creaciónDeUsuario1";
-            this.creaciónDeUsuario1.Size = new System.Drawing.Size(358, 177);
-            this.creaciónDeUsuario1.TabIndex = 1;
             // 
             // home1
             // 
@@ -56,6 +41,23 @@ namespace S.It_
             this.home1.Name = "home1";
             this.home1.Size = new System.Drawing.Size(261, 203);
             this.home1.TabIndex = 2;
+            // 
+            // creaciónDeUsuario1
+            // 
+            this.creaciónDeUsuario1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.creaciónDeUsuario1.Location = new System.Drawing.Point(385, 12);
+            this.creaciónDeUsuario1.Name = "creaciónDeUsuario1";
+            this.creaciónDeUsuario1.Size = new System.Drawing.Size(358, 177);
+            this.creaciónDeUsuario1.TabIndex = 1;
+            this.creaciónDeUsuario1.Load += new System.EventHandler(this.creaciónDeUsuario1_Load);
+            // 
+            // userControl11
+            // 
+            this.userControl11.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.userControl11.Location = new System.Drawing.Point(12, 12);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(282, 191);
+            this.userControl11.TabIndex = 0;
             // 
             // Form1
             // 
