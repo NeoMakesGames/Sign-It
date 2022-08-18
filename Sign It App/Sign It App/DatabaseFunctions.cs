@@ -9,6 +9,8 @@ namespace Sign_It_App
 {
     public class DatabaseFunctions
     {
+        public static int currentUser;
+        
         public string getString(int id, string objID, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
@@ -21,7 +23,7 @@ namespace Sign_It_App
             return result;
         }
 
-        public bool checkIfNameExists(string path)
+        public bool checkIfNameExists(string name, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
