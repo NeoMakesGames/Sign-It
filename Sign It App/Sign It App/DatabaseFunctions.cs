@@ -21,14 +21,32 @@ namespace Sign_It_App
             return result;
         }
 
-        public void addUser(string name, int xp, string path)
+        public bool checkIfNameExists(string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
-            OleDbCommand cmd = new OleDbCommand("INSERT INTO Usuarios (Nombre, XP) VALUES ('" + name + "', " + xp + ")", con);
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Usuarios WHERE Nombre = '" + name + "'", con);
+            OleDbDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                con.Close();
+                return true;
+            }
+            else
+            {
+                con.Close();
+                return false;
+            }
+        }
+
+        public void addUser(string name, string path)
+        {
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("INSERT INTO Usuarios (Nombre, XP) VALUES ('" + name + "', " + 0 + ")", con);
             cmd.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("¡Usuario agregado! (" + xp + " " + name + ")");
+            MessageBox.Show("¡Usuario agregado! (Agregaste a " + name + ")");
         }
 
         public void updateListBox(ListBox listBox, string path)
@@ -45,9 +63,9 @@ namespace Sign_It_App
             con.Close();
         }
 
-        public void addXP(int id, int amount)
+        public void addXP(int id, int amount, string path)
         {
-            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\" + Environment.UserName + "\\Documents\\SignIt.accdb");
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
             OleDbCommand cmd = new OleDbCommand("UPDATE Usuarios SET XP = XP + " + amount + " WHERE id = " + id, con);
             cmd.ExecuteNonQuery();
@@ -55,7 +73,7 @@ namespace Sign_It_App
             MessageBox.Show("¡XP agregada! (Se sumó " + amount + ")");
         }
 
-        public int checkXP(int id)
+        public int checkXP(int id, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\" + Environment.UserName + "\\Documents\\SignIt.accdb");
             con.Open();
