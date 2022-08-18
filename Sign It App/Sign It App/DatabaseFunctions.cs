@@ -45,7 +45,17 @@ namespace Sign_It_App
             con.Close();
         }
 
-        public void deleteUser(int id, ListBox lb, string path)
+        public void addXP(int id, int amount)
+        {
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\" + Environment.UserName + "\\Documents\\SignIt.accdb");
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("UPDATE Usuarios SET XP = XP + " + amount + " WHERE id = " + id, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("¡XP agregada! (Se sumó " + amount + ")");
+        }
+
+        public void deleteUser(int id, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
@@ -53,7 +63,7 @@ namespace Sign_It_App
             cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("¡Usuario " + id + " eliminado!");
-            updateListBox(lb, path);
+            //updateListBox(lb, path);
         }
     }
 }

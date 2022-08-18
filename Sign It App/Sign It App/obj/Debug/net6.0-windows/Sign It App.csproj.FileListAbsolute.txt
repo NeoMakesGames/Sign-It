@@ -1,0 +1,20 @@
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\bin\Debug\net6.0-windows\Sign It App.exe
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\bin\Debug\net6.0-windows\Sign It App.deps.json
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\bin\Debug\net6.0-windows\Sign It App.runtimeconfig.json
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\bin\Debug\net6.0-windows\Sign It App.dll
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\bin\Debug\net6.0-windows\Sign It App.pdb
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\bin\Debug\net6.0-windows\System.Data.OleDb.dll
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign It App.csproj.AssemblyReference.cache
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign_It_App.Form1.resources
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign It App.csproj.GenerateResource.cache
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign It App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign It App.AssemblyInfoInputs.cache
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign It App.AssemblyInfo.cs
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign It App.csproj.CoreCompileInputs.cache
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign It App.csproj.CopyComplete
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign It App.dll
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\refint\Sign It App.dll
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign It App.pdb
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign It App.genruntimeconfig.cache
+C:\Users\47436334\Documents\GitHub\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\ref\Sign It App.dll
