@@ -55,6 +55,18 @@ namespace Sign_It_App
             MessageBox.Show("¡XP agregada! (Se sumó " + amount + ")");
         }
 
+        public int checkXP(int id)
+        {
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\" + Environment.UserName + "\\Documents\\SignIt.accdb");
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT XP FROM Usuarios WHERE id = " + id, con);
+            OleDbDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            int result = Convert.ToInt32(reader["XP"]);
+            con.Close();
+            return result;
+        }
+
         public void deleteUser(int id, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
