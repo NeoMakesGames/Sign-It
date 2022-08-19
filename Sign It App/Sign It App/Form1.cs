@@ -3,6 +3,7 @@ namespace Sign_It_App
     public partial class Form1 : Form
     {
         public int menu = 0;
+        string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         public Form1()
         {
             InitializeComponent();
@@ -11,27 +12,35 @@ namespace Sign_It_App
         private void Form1_Load(object sender, EventArgs e)
         {
             IdS();
+            panel1.Hide();
+            Menubutton.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (2==2)
+            if (DatabaseFunctions.checkIfThereAreUsers(path) == true)
             {
-                noIdS();
+                if (DatabaseFunctions.checkIfNameExists(path) == true)
+                {
+                    noIdS();
+                }
+                else
+                {
+                    label2Ids.Show();
+                }
+                
             }
             else
             {
                 label2Ids.Show();
             }
-
-            if()
         }
 
         private void linkLabel1IdS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }
-        private void IdS ()
+        private void IdS()
         {
             inicioDeSesión1.Show();
             ComenzarIds.Show();
@@ -50,6 +59,7 @@ namespace Sign_It_App
         }
         private void CdS ()
         {
+            creacionDeUsuario1.Show();
 
         }
 

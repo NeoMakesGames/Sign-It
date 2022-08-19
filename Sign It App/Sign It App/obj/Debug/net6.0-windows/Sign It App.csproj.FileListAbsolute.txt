@@ -20,3 +20,4 @@ C:\Users\48110679\Source\Repos\NeoMakesGames\Sign-It\Sign It App\Sign It App\obj
 C:\Users\48110679\Source\Repos\NeoMakesGames\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign It App.pdb
 C:\Users\48110679\Source\Repos\NeoMakesGames\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign It App.genruntimeconfig.cache
 C:\Users\48110679\Source\Repos\NeoMakesGames\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\ref\Sign It App.dll
+C:\Users\48110679\Source\Repos\NeoMakesGames\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign_It_App.Home.resources

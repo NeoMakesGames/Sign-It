@@ -36,12 +36,12 @@
             this.textBox1CdU = new System.Windows.Forms.TextBox();
             this.creacionDeUsuario1 = new Sign_It_App.CreacionDeUsuario();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Menubutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // inicioDeSesión1
             // 
-            this.inicioDeSesión1.Location = new System.Drawing.Point(2, 1);
+            this.inicioDeSesión1.Location = new System.Drawing.Point(0, 1);
             this.inicioDeSesión1.Name = "inicioDeSesión1";
             this.inicioDeSesión1.Size = new System.Drawing.Size(1350, 751);
             this.inicioDeSesión1.TabIndex = 0;
@@ -106,28 +106,27 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Location = new System.Drawing.Point(228, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 750);
             this.panel1.TabIndex = 9;
             // 
-            // button1
+            // Menubutton
             // 
-            this.button1.Location = new System.Drawing.Point(0, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 54);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.Menubutton.Location = new System.Drawing.Point(0, -1);
+            this.Menubutton.Name = "Menubutton";
+            this.Menubutton.Size = new System.Drawing.Size(80, 54);
+            this.Menubutton.TabIndex = 10;
+            this.Menubutton.Text = "...";
+            this.Menubutton.UseVisualStyleBackColor = true;
+            this.Menubutton.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 749);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Menubutton);
             this.Controls.Add(this.linkLabel1IdS);
             this.Controls.Add(this.label2Ids);
             this.Controls.Add(this.ComenzarIds);
@@ -135,6 +134,7 @@
             this.Controls.Add(this.inicioDeSesión1);
             this.Controls.Add(this.textBox1CdU);
             this.Controls.Add(this.creacionDeUsuario1);
+            this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -153,6 +153,6 @@
         private TextBox textBox1CdU;
         private CreacionDeUsuario creacionDeUsuario1;
         private Panel panel1;
-        private Button button1;
+        private Button Menubutton;
     }
 }
