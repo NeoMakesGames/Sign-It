@@ -46,7 +46,7 @@
             // UserInicioDeSesion
             // 
             this.UserInicioDeSesion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UserInicioDeSesion.Location = new System.Drawing.Point(551, 354);
+            this.UserInicioDeSesion.Location = new System.Drawing.Point(550, 354);
             this.UserInicioDeSesion.Name = "UserInicioDeSesion";
             this.UserInicioDeSesion.Size = new System.Drawing.Size(291, 43);
             this.UserInicioDeSesion.TabIndex = 1;

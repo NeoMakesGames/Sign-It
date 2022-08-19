@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.label1IdS = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -36,16 +37,27 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Ananda", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label1.Location = new System.Drawing.Point(564, 176);
+            this.label1.Location = new System.Drawing.Point(564, 175);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(245, 113);
             this.label1.TabIndex = 0;
             this.label1.Text = "SignIt";
             // 
+            // label1IdS
+            // 
+            this.label1IdS.AutoSize = true;
+            this.label1IdS.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1IdS.Location = new System.Drawing.Point(338, 369);
+            this.label1IdS.Name = "label1IdS";
+            this.label1IdS.Size = new System.Drawing.Size(154, 28);
+            this.label1IdS.TabIndex = 4;
+            this.label1IdS.Text = "Ingresar Usuario";
+            // 
             // InicioDeSesión
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label1IdS);
             this.Controls.Add(this.label1);
             this.Name = "InicioDeSesión";
             this.Size = new System.Drawing.Size(1366, 788);
@@ -58,5 +70,6 @@
         #endregion
 
         private Label label1;
+        private Label label1IdS;
     }
 }
