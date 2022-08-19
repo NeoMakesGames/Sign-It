@@ -48,11 +48,11 @@
             // 
             this.label1CdU.AutoSize = true;
             this.label1CdU.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1CdU.Location = new System.Drawing.Point(277, 360);
+            this.label1CdU.Location = new System.Drawing.Point(164, 374);
             this.label1CdU.Name = "label1CdU";
-            this.label1CdU.Size = new System.Drawing.Size(268, 28);
+            this.label1CdU.Size = new System.Drawing.Size(382, 28);
             this.label1CdU.TabIndex = 2;
-            this.label1CdU.Text = "Ingresa tu nombre de usuario";
+            this.label1CdU.Text = "Ingresa tu nombre de usuario para crearlo ";
             // 
             // label2
             // 

@@ -33,15 +33,17 @@
             this.ComenzarIds = new System.Windows.Forms.Button();
             this.label2Ids = new System.Windows.Forms.Label();
             this.linkLabel1IdS = new System.Windows.Forms.LinkLabel();
-            this.textBox1CdU = new System.Windows.Forms.TextBox();
+            this.UserCdU = new System.Windows.Forms.TextBox();
             this.creacionDeUsuario1 = new Sign_It_App.CreacionDeUsuario();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Menubutton = new System.Windows.Forms.Button();
+            this.ComenzarCdU = new System.Windows.Forms.Button();
+            this.label1CdU = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // inicioDeSesión1
             // 
-            this.inicioDeSesión1.Location = new System.Drawing.Point(0, 1);
+            this.inicioDeSesión1.Location = new System.Drawing.Point(0, 0);
             this.inicioDeSesión1.Name = "inicioDeSesión1";
             this.inicioDeSesión1.Size = new System.Drawing.Size(1350, 751);
             this.inicioDeSesión1.TabIndex = 0;
@@ -49,7 +51,7 @@
             // UserInicioDeSesion
             // 
             this.UserInicioDeSesion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UserInicioDeSesion.Location = new System.Drawing.Point(550, 354);
+            this.UserInicioDeSesion.Location = new System.Drawing.Point(550, 371);
             this.UserInicioDeSesion.Name = "UserInicioDeSesion";
             this.UserInicioDeSesion.Size = new System.Drawing.Size(291, 43);
             this.UserInicioDeSesion.TabIndex = 1;
@@ -57,7 +59,7 @@
             // ComenzarIds
             // 
             this.ComenzarIds.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ComenzarIds.Location = new System.Drawing.Point(587, 488);
+            this.ComenzarIds.Location = new System.Drawing.Point(587, 529);
             this.ComenzarIds.Name = "ComenzarIds";
             this.ComenzarIds.Size = new System.Drawing.Size(219, 71);
             this.ComenzarIds.TabIndex = 2;
@@ -88,20 +90,22 @@
             this.linkLabel1IdS.Text = "Para crear un usuario has click aquí";
             this.linkLabel1IdS.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1IdS_LinkClicked);
             // 
-            // textBox1CdU
+            // UserCdU
             // 
-            this.textBox1CdU.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1CdU.Location = new System.Drawing.Point(550, 354);
-            this.textBox1CdU.Name = "textBox1CdU";
-            this.textBox1CdU.Size = new System.Drawing.Size(291, 43);
-            this.textBox1CdU.TabIndex = 7;
+            this.UserCdU.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UserCdU.Location = new System.Drawing.Point(550, 371);
+            this.UserCdU.Name = "UserCdU";
+            this.UserCdU.Size = new System.Drawing.Size(291, 43);
+            this.UserCdU.TabIndex = 7;
+            this.UserCdU.TextChanged += new System.EventHandler(this.UserCdU_TextChanged);
             // 
             // creacionDeUsuario1
             // 
-            this.creacionDeUsuario1.Location = new System.Drawing.Point(2, 0);
+            this.creacionDeUsuario1.Location = new System.Drawing.Point(0, 0);
             this.creacionDeUsuario1.Name = "creacionDeUsuario1";
             this.creacionDeUsuario1.Size = new System.Drawing.Size(1370, 750);
             this.creacionDeUsuario1.TabIndex = 8;
+            this.creacionDeUsuario1.Load += new System.EventHandler(this.creacionDeUsuario1_Load);
             // 
             // panel1
             // 
@@ -121,20 +125,45 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // ComenzarCdU
+            // 
+            this.ComenzarCdU.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ComenzarCdU.Location = new System.Drawing.Point(591, 536);
+            this.ComenzarCdU.Name = "ComenzarCdU";
+            this.ComenzarCdU.Size = new System.Drawing.Size(219, 71);
+            this.ComenzarCdU.TabIndex = 11;
+            this.ComenzarCdU.Text = "Crear";
+            this.ComenzarCdU.UseVisualStyleBackColor = true;
+            this.ComenzarCdU.Click += new System.EventHandler(this.ComenzarCdU_Click);
+            // 
+            // label1CdU
+            // 
+            this.label1CdU.AutoSize = true;
+            this.label1CdU.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1CdU.ForeColor = System.Drawing.Color.Red;
+            this.label1CdU.Location = new System.Drawing.Point(556, 475);
+            this.label1CdU.Name = "label1CdU";
+            this.label1CdU.Size = new System.Drawing.Size(288, 28);
+            this.label1CdU.TabIndex = 12;
+            this.label1CdU.Text = "Nombre de usuario ya existente";
+            this.label1CdU.Click += new System.EventHandler(this.label1CdU_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 749);
-            this.Controls.Add(this.Menubutton);
             this.Controls.Add(this.linkLabel1IdS);
             this.Controls.Add(this.label2Ids);
             this.Controls.Add(this.ComenzarIds);
-            this.Controls.Add(this.UserInicioDeSesion);
-            this.Controls.Add(this.inicioDeSesión1);
-            this.Controls.Add(this.textBox1CdU);
-            this.Controls.Add(this.creacionDeUsuario1);
+            this.Controls.Add(this.Menubutton);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.UserCdU);
+            this.Controls.Add(this.inicioDeSesión1);
+            this.Controls.Add(this.ComenzarCdU);
+            this.Controls.Add(this.label1CdU);
+            this.Controls.Add(this.creacionDeUsuario1);
+            this.Controls.Add(this.UserInicioDeSesion);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -150,9 +179,11 @@
         private Button ComenzarIds;
         private Label label2Ids;
         private LinkLabel linkLabel1IdS;
-        private TextBox textBox1CdU;
+        private TextBox UserCdU;
         private CreacionDeUsuario creacionDeUsuario1;
         private Panel panel1;
         private Button Menubutton;
+        private Button ComenzarCdU;
+        private Label label1CdU;
     }
 }

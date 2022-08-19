@@ -7,20 +7,20 @@ namespace Sign_It_App
         public Form1()
         {
             InitializeComponent();
+            clear();
+            IdS();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            IdS();
-            panel1.Hide();
-            Menubutton.Hide();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (DatabaseFunctions.checkIfThereAreUsers(path) == true)
             {
-                if (DatabaseFunctions.checkIfNameExists(path) == true)
+                if (DatabaseFunctions.checkIfNameExists(UserInicioDeSesion.Text, path) == true)
                 {
                     noIdS();
                 }
@@ -28,7 +28,7 @@ namespace Sign_It_App
                 {
                     label2Ids.Show();
                 }
-                
+
             }
             else
             {
@@ -38,7 +38,21 @@ namespace Sign_It_App
 
         private void linkLabel1IdS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            noIdS();
+            CdU();
+        }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (menu == 0)
+            {
+                panel1.Show();
+                menu = 1;
+            }
+            else if (menu == 1)
+            {
+                panel1.Hide();
+                menu = 0;
+            }
         }
         private void IdS()
         {
@@ -57,24 +71,62 @@ namespace Sign_It_App
             label2Ids.Hide();
 
         }
-        private void CdS ()
+        private void CdU()
         {
             creacionDeUsuario1.Show();
+            ComenzarCdU.Show();
+            UserCdU.Show();
+        }
+        private void noCdU()
+        {
+            creacionDeUsuario1.Show();
+            ComenzarCdU.Show();
+            UserCdU.Show();
+            label1CdU.Hide();
+        }
+        private void MENU()
+        {
+            Menubutton.Show();
+            panel1.Show();
+            panel1.SendToBack();
+        }
+        private void noMENU()
+        {
+            Menubutton.Hide();
+            panel1.Hide();
+        }
+
+        private void clear ()
+        {
+            noIdS();
+            noCdU();
+            noMENU();
+        }
+        private void ComenzarCdU_Click(object sender, EventArgs e)
+        {
+            if (DatabaseFunctions.checkIfThereAreUsers(path) == false)
+            {
+
+            }
+            else
+            {
+                label1CdU.Show();
+            }
+        }
+
+        private void label1CdU_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void UserCdU_TextChanged(object sender, EventArgs e)
         {
-            if (menu ==  0)
-            {
-                panel1.Show();
-                menu = 1;
-            }
-            else if (menu == 1)
-            {
-                panel1.Hide();
-                menu = 0;
-            }
+
+        }
+
+        private void creacionDeUsuario1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
