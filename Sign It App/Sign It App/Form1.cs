@@ -26,7 +26,6 @@ namespace Sign_It_App
             inicioDeSesión1.Show();
             ComenzarIds.Show();
             UserInicioDeSesion.Show();
-            label1IdS.Show();
             linkLabel1IdS.Show();
 
         }

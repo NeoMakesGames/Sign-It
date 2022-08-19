@@ -16,5 +16,10 @@ namespace Sign_It_App
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

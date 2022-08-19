@@ -31,7 +31,6 @@
             this.inicioDeSesión1 = new Sign_It_App.Pantalla.InicioDeSesión();
             this.UserInicioDeSesion = new System.Windows.Forms.TextBox();
             this.ComenzarIds = new System.Windows.Forms.Button();
-            this.label1IdS = new System.Windows.Forms.Label();
             this.label2Ids = new System.Windows.Forms.Label();
             this.linkLabel1IdS = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
@@ -61,16 +60,6 @@
             this.ComenzarIds.Text = "Comenzar";
             this.ComenzarIds.UseVisualStyleBackColor = true;
             this.ComenzarIds.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1IdS
-            // 
-            this.label1IdS.AutoSize = true;
-            this.label1IdS.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1IdS.Location = new System.Drawing.Point(377, 364);
-            this.label1IdS.Name = "label1IdS";
-            this.label1IdS.Size = new System.Drawing.Size(154, 28);
-            this.label1IdS.TabIndex = 3;
-            this.label1IdS.Text = "Ingresar Usuario";
             // 
             // label2Ids
             // 
@@ -102,7 +91,6 @@
             this.ClientSize = new System.Drawing.Size(1350, 749);
             this.Controls.Add(this.linkLabel1IdS);
             this.Controls.Add(this.label2Ids);
-            this.Controls.Add(this.label1IdS);
             this.Controls.Add(this.ComenzarIds);
             this.Controls.Add(this.UserInicioDeSesion);
             this.Controls.Add(this.inicioDeSesión1);
@@ -119,7 +107,6 @@
         private Pantalla.InicioDeSesión inicioDeSesión1;
         private TextBox UserInicioDeSesion;
         private Button ComenzarIds;
-        private Label label1IdS;
         private Label label2Ids;
         private LinkLabel linkLabel1IdS;
     }
