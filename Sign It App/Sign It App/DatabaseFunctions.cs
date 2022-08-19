@@ -41,6 +41,24 @@ namespace Sign_It_App
             }
         }
 
+        public bool checkIfThereAreUsers()
+        {
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Usuarios", con);
+            OleDbDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                con.Close();
+                return true;
+            }
+            else
+            {
+                con.Close();
+                return false;
+            }
+        }
+
         public void addUser(string name, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);

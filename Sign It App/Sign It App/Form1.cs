@@ -23,6 +23,8 @@ namespace Sign_It_App
             {
                 label2Ids.Show();
             }
+
+            if()
         }
 
         private void linkLabel1IdS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
