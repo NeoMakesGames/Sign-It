@@ -11,7 +11,7 @@ namespace Sign_It_App
     {
         public static int currentUser;
         
-        public string getString(int id, string objID, string path)
+        public static string getString(int id, string objID, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
@@ -23,7 +23,7 @@ namespace Sign_It_App
             return result;
         }
 
-        public bool checkIfNameExists(string name, string path)
+        public static bool checkIfNameExists(string name, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
@@ -41,7 +41,7 @@ namespace Sign_It_App
             }
         }
 
-        public bool checkIfThereAreUsers()
+        public static bool checkIfThereAreUsers(string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
@@ -59,7 +59,7 @@ namespace Sign_It_App
             }
         }
 
-        public void addUser(string name, string path)
+        public static void addUser(string name, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
@@ -69,7 +69,7 @@ namespace Sign_It_App
             MessageBox.Show("¡Usuario agregado! (Agregaste a " + name + ")");
         }
 
-        public void updateListBox(ListBox listBox, string path)
+        public static void updateListBox(ListBox listBox, string path)
         {
             listBox.Items.Clear();
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
@@ -83,7 +83,7 @@ namespace Sign_It_App
             con.Close();
         }
 
-        public void addXP(int id, int amount, string path)
+        public static void addXP(int id, int amount, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
@@ -93,7 +93,7 @@ namespace Sign_It_App
             MessageBox.Show("¡XP agregada! (Se sumó " + amount + ")");
         }
 
-        public int checkXP(int id, string path)
+        public static int checkXP(int id, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\" + Environment.UserName + "\\Documents\\SignIt.accdb");
             con.Open();
@@ -105,7 +105,7 @@ namespace Sign_It_App
             return result;
         }
 
-        public void deleteUser(int id, string path)
+        public static void deleteUser(int id, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
