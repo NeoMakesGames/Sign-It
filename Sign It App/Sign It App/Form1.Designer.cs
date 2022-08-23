@@ -36,9 +36,11 @@
             this.UserCdU = new System.Windows.Forms.TextBox();
             this.creacionDeUsuario1 = new Sign_It_App.CreacionDeUsuario();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.home1 = new Sign_It_App.Home();
             this.Menubutton = new System.Windows.Forms.Button();
             this.ComenzarCdU = new System.Windows.Forms.Button();
             this.label1CdU = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // inicioDeSesión1
@@ -110,10 +112,18 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.home1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 750);
             this.panel1.TabIndex = 9;
+            // 
+            // home1
+            // 
+            this.home1.Location = new System.Drawing.Point(0, 0);
+            this.home1.Name = "home1";
+            this.home1.Size = new System.Drawing.Size(1370, 750);
+            this.home1.TabIndex = 13;
             // 
             // Menubutton
             // 
@@ -167,6 +177,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,5 +196,6 @@
         private Button Menubutton;
         private Button ComenzarCdU;
         private Label label1CdU;
+        private Home home1;
     }
 }

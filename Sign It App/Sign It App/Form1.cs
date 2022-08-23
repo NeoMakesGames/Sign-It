@@ -3,19 +3,19 @@ namespace Sign_It_App
     public partial class Form1 : Form
     {
         public int menu = 0;
+        public int pantalla = 0;
+        public bool border = true;
         string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         public Form1()
         {
             InitializeComponent();
-            clear();
-            IdS();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            clear();
+            UserInicioDeSesion.BringToFront();
+            IdS();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (DatabaseFunctions.checkIfThereAreUsers(path) == true)
@@ -54,6 +54,18 @@ namespace Sign_It_App
                 menu = 0;
             }
         }
+        private void ComenzarCdU_Click(object sender, EventArgs e)
+        {
+            if (DatabaseFunctions.checkIfThereAreUsers(path) == false)
+            {
+                Home();
+                noCdU();
+            }
+            else
+            {
+                label1CdU.Show();
+            }
+        }
         private void IdS()
         {
             inicioDeSesión1.Show();
@@ -79,21 +91,28 @@ namespace Sign_It_App
         }
         private void noCdU()
         {
-            creacionDeUsuario1.Show();
-            ComenzarCdU.Show();
-            UserCdU.Show();
+            creacionDeUsuario1.Hide();
+            ComenzarCdU.Hide();
+            UserCdU.Hide();
             label1CdU.Hide();
         }
         private void MENU()
         {
             Menubutton.Show();
-            panel1.Show();
-            panel1.SendToBack();
         }
         private void noMENU()
         {
             Menubutton.Hide();
             panel1.Hide();
+        }
+        private void Home()
+        {
+            home1.Show();
+            MENU();
+        }
+        private void noHome()
+        {
+            home1.Hide();
         }
 
         private void clear ()
@@ -102,18 +121,6 @@ namespace Sign_It_App
             noCdU();
             noMENU();
         }
-        private void ComenzarCdU_Click(object sender, EventArgs e)
-        {
-            if (DatabaseFunctions.checkIfThereAreUsers(path) == false)
-            {
-
-            }
-            else
-            {
-                label1CdU.Show();
-            }
-        }
-
         private void label1CdU_Click(object sender, EventArgs e)
         {
 
