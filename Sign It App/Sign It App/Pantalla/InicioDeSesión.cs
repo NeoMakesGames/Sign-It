@@ -21,5 +21,10 @@ namespace Sign_It_App.Pantalla
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ((Form)this.TopLevelControl).Close();
+        }
     }
 }

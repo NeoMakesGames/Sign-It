@@ -47,7 +47,7 @@
             // 
             this.inicioDeSesión1.Location = new System.Drawing.Point(0, 0);
             this.inicioDeSesión1.Name = "inicioDeSesión1";
-            this.inicioDeSesión1.Size = new System.Drawing.Size(1350, 751);
+            this.inicioDeSesión1.Size = new System.Drawing.Size(1350, 750);
             this.inicioDeSesión1.TabIndex = 0;
             // 
             // UserInicioDeSesion
@@ -122,7 +122,7 @@
             // 
             this.home1.Location = new System.Drawing.Point(0, 0);
             this.home1.Name = "home1";
-            this.home1.Size = new System.Drawing.Size(1370, 750);
+            this.home1.Size = new System.Drawing.Size(1352, 750);
             this.home1.TabIndex = 13;
             // 
             // Menubutton

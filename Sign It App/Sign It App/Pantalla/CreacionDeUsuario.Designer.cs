@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label1CdU = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -62,15 +63,25 @@
             this.label2.Size = new System.Drawing.Size(0, 15);
             this.label2.TabIndex = 3;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1160, 680);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 40);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Exit";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // CreacionDeUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1CdU);
             this.Controls.Add(this.label1);
             this.Name = "CreacionDeUsuario";
-            this.Size = new System.Drawing.Size(1370, 750);
+            this.Size = new System.Drawing.Size(1300, 750);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,5 +92,6 @@
         private Label label1;
         private Label label1CdU;
         private Label label2;
+        private Button button1;
     }
 }
