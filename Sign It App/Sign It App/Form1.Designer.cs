@@ -36,10 +36,13 @@
             this.UserCdU = new System.Windows.Forms.TextBox();
             this.creacionDeUsuario1 = new Sign_It_App.CreacionDeUsuario();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.MenuLectionsButton = new System.Windows.Forms.Button();
             this.home1 = new Sign_It_App.Home();
             this.Menubutton = new System.Windows.Forms.Button();
             this.ComenzarCdU = new System.Windows.Forms.Button();
             this.label1CdU = new System.Windows.Forms.Label();
+            this.MenuExitButton = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // inicioDeSesión1
@@ -111,15 +114,26 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.MenuExitButton);
+            this.panel1.Controls.Add(this.MenuLectionsButton);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 750);
             this.panel1.TabIndex = 9;
             // 
+            // MenuLectionsButton
+            // 
+            this.MenuLectionsButton.Location = new System.Drawing.Point(5, 59);
+            this.MenuLectionsButton.Name = "MenuLectionsButton";
+            this.MenuLectionsButton.Size = new System.Drawing.Size(192, 65);
+            this.MenuLectionsButton.TabIndex = 0;
+            this.MenuLectionsButton.Text = "Lecciones";
+            this.MenuLectionsButton.UseVisualStyleBackColor = true;
+            // 
             // home1
             // 
             this.home1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.home1.Location = new System.Drawing.Point(0, 0);
+            this.home1.Location = new System.Drawing.Point(-2, -1);
             this.home1.Name = "home1";
             this.home1.Size = new System.Drawing.Size(1352, 750);
             this.home1.TabIndex = 13;
@@ -157,17 +171,27 @@
             this.label1CdU.Text = "Nombre de usuario ya existente";
             this.label1CdU.Click += new System.EventHandler(this.label1CdU_Click);
             // 
+            // MenuExitButton
+            // 
+            this.MenuExitButton.Location = new System.Drawing.Point(4, 679);
+            this.MenuExitButton.Name = "MenuExitButton";
+            this.MenuExitButton.Size = new System.Drawing.Size(192, 65);
+            this.MenuExitButton.TabIndex = 1;
+            this.MenuExitButton.Text = "Salir";
+            this.MenuExitButton.UseVisualStyleBackColor = true;
+            this.MenuExitButton.Click += new System.EventHandler(this.MenuExitButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 749);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.home1);
             this.Controls.Add(this.linkLabel1IdS);
             this.Controls.Add(this.label2Ids);
             this.Controls.Add(this.ComenzarIds);
             this.Controls.Add(this.Menubutton);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.UserCdU);
             this.Controls.Add(this.inicioDeSesión1);
             this.Controls.Add(this.ComenzarCdU);
@@ -177,6 +201,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,5 +221,7 @@
         private Button ComenzarCdU;
         private Label label1CdU;
         private Home home1;
+        private Button MenuLectionsButton;
+        private Button MenuExitButton;
     }
 }

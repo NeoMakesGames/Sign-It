@@ -99,6 +99,8 @@ namespace Sign_It_App
         private void MENU()
         {
             Menubutton.Show();
+            Menubutton.BringToFront();
+            
         }
         private void noMENU()
         {
@@ -140,6 +142,11 @@ namespace Sign_It_App
         private void home2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void MenuExitButton_Click(object sender, EventArgs e)
+        {
+            ((Form)this.TopLevelControl).Close();
         }
     }
 }
