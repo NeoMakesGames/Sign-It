@@ -13,7 +13,7 @@ namespace Sign_It_App
         private void Form1_Load(object sender, EventArgs e)
         {
             clear();
-            UserInicioDeSesion.BringToFront();
+            
             IdS();
         }
         private void button1_Click(object sender, EventArgs e)
@@ -56,14 +56,24 @@ namespace Sign_It_App
         }
         private void ComenzarCdU_Click(object sender, EventArgs e)
         {
-            if (DatabaseFunctions.checkIfThereAreUsers(path) == false)
+            if (!DatabaseFunctions.checkIfThereAreUsers(path))
             {
+                DatabaseFunctions.addUser(UserCdU.Text, path);
                 Home();
                 noCdU();
             }
-            else
+            else if (DatabaseFunctions.checkIfThereAreUsers(path))
             {
-                label1CdU.Show();
+                if (!DatabaseFunctions.checkIfNameExists(UserCdU.Text, path))
+                {
+                    DatabaseFunctions.addUser(UserCdU.Text, path);
+                    Home();
+                    noCdU();
+                }
+                else
+                {
+                    label1CdU.Show();
+                }
             }
         }
         private void IdS()
@@ -72,6 +82,7 @@ namespace Sign_It_App
             ComenzarIds.Show();
             UserInicioDeSesion.Show();
             linkLabel1IdS.Show();
+            noCdU();
 
         }
         private void noIdS()
@@ -81,13 +92,13 @@ namespace Sign_It_App
             UserInicioDeSesion.Hide();
             linkLabel1IdS.Hide();
             label2Ids.Hide();
-
         }
         private void CdU()
         {
             creacionDeUsuario1.Show();
             ComenzarCdU.Show();
             UserCdU.Show();
+            noIdS();
         }
         private void noCdU()
         {

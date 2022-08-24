@@ -71,7 +71,7 @@ namespace Sign_It_App
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
             OleDbCommand cmd = new OleDbCommand("INSERT INTO Usuarios (Nombre, XP) VALUES ('" + name + "', " + 0 + ")", con);
-            cmd.ExecuteNonQuery();
+//          cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("¡Usuario agregado! (Agregaste a " + name + ")");
         }
