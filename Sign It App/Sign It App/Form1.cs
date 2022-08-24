@@ -120,6 +120,7 @@ namespace Sign_It_App
             noIdS();
             noCdU();
             noMENU();
+            noHome();
         }
         private void label1CdU_Click(object sender, EventArgs e)
         {
@@ -132,6 +133,11 @@ namespace Sign_It_App
         }
 
         private void creacionDeUsuario1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void home2_Load(object sender, EventArgs e)
         {
 
         }

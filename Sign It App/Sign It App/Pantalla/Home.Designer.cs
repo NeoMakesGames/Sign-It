@@ -34,6 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.Name = "Home";
             this.Size = new System.Drawing.Size(1370, 750);
             this.ResumeLayout(false);

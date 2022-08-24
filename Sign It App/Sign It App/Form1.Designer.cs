@@ -40,7 +40,6 @@
             this.Menubutton = new System.Windows.Forms.Button();
             this.ComenzarCdU = new System.Windows.Forms.Button();
             this.label1CdU = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // inicioDeSesión1
@@ -112,7 +111,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Controls.Add(this.home1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 750);
@@ -120,6 +118,7 @@
             // 
             // home1
             // 
+            this.home1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.home1.Location = new System.Drawing.Point(0, 0);
             this.home1.Name = "home1";
             this.home1.Size = new System.Drawing.Size(1352, 750);
@@ -163,6 +162,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 749);
+            this.Controls.Add(this.home1);
             this.Controls.Add(this.linkLabel1IdS);
             this.Controls.Add(this.label2Ids);
             this.Controls.Add(this.ComenzarIds);
@@ -177,7 +177,6 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
