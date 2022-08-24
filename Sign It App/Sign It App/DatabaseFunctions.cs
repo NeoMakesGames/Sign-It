@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.OleDb;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -64,6 +65,19 @@ namespace Sign_It_App
                 con.Close();
                 return false;
             }
+        }
+
+        public static int getID(string name, string path)
+        {
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Usuarios WHERE Nombre = " + name, con);
+            OleDbDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            int result = Convert.ToInt32(reader["ID"]);
+            con.Close();
+            return result;
+
         }
 
         public static void addUser(string name, string path)
