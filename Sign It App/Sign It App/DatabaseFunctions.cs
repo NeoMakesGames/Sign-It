@@ -105,6 +105,7 @@ namespace Sign_It_App
             return result;
         }
 
+        /*
         public static void deleteUser(int id, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
@@ -115,5 +116,6 @@ namespace Sign_It_App
             MessageBox.Show("¡Usuario " + id + " eliminado!");
             //updateListBox(lb, path);
         }
+        */
     }
 }
