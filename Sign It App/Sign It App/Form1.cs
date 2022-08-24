@@ -25,17 +25,18 @@ namespace Sign_It_App
                 {
                     noIdS();
                     Home();
-                    
+                    DatabaseFunctions.currentUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
                 }
                 else
                 {
+                    label2Ids.Text = "Usuario invalido";
                     label2Ids.Show();
                 }
 
             }
             else
             {
-                label2Ids.Show();
+//              OWO
             }
         }
 
@@ -62,6 +63,7 @@ namespace Sign_It_App
             if (!DatabaseFunctions.checkIfThereAreUsers(path))
             {
                 DatabaseFunctions.addUser(UserCdU.Text, path);
+                DatabaseFunctions.currentUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
                 Home();
                 noCdU();
             }
@@ -70,6 +72,7 @@ namespace Sign_It_App
                 if (!DatabaseFunctions.checkIfNameExists(UserCdU.Text, path))
                 {
                     DatabaseFunctions.addUser(UserCdU.Text, path);
+                    DatabaseFunctions.currentUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
                     Home();
                     noCdU();
                 }
