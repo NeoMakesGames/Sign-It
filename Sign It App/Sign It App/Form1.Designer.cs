@@ -47,7 +47,7 @@
             // 
             // inicioDeSesión1
             // 
-            this.inicioDeSesión1.Location = new System.Drawing.Point(0, -1);
+            this.inicioDeSesión1.Location = new System.Drawing.Point(-1, -1);
             this.inicioDeSesión1.Name = "inicioDeSesión1";
             this.inicioDeSesión1.Size = new System.Drawing.Size(1350, 750);
             this.inicioDeSesión1.TabIndex = 0;
@@ -63,7 +63,7 @@
             // ComenzarIds
             // 
             this.ComenzarIds.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ComenzarIds.Location = new System.Drawing.Point(587, 528);
+            this.ComenzarIds.Location = new System.Drawing.Point(587, 529);
             this.ComenzarIds.Name = "ComenzarIds";
             this.ComenzarIds.Size = new System.Drawing.Size(219, 71);
             this.ComenzarIds.TabIndex = 2;
@@ -76,7 +76,7 @@
             this.label2Ids.AutoSize = true;
             this.label2Ids.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2Ids.ForeColor = System.Drawing.Color.Red;
-            this.label2Ids.Location = new System.Drawing.Point(582, 424);
+            this.label2Ids.Location = new System.Drawing.Point(582, 425);
             this.label2Ids.Name = "label2Ids";
             this.label2Ids.Size = new System.Drawing.Size(228, 37);
             this.label2Ids.TabIndex = 4;
@@ -86,7 +86,7 @@
             // 
             this.linkLabel1IdS.AutoSize = true;
             this.linkLabel1IdS.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.linkLabel1IdS.Location = new System.Drawing.Point(539, 609);
+            this.linkLabel1IdS.Location = new System.Drawing.Point(539, 610);
             this.linkLabel1IdS.Name = "linkLabel1IdS";
             this.linkLabel1IdS.Size = new System.Drawing.Size(313, 28);
             this.linkLabel1IdS.TabIndex = 5;
@@ -105,7 +105,7 @@
             // 
             // creacionDeUsuario1
             // 
-            this.creacionDeUsuario1.Location = new System.Drawing.Point(0, 0);
+            this.creacionDeUsuario1.Location = new System.Drawing.Point(-1, 1);
             this.creacionDeUsuario1.Name = "creacionDeUsuario1";
             this.creacionDeUsuario1.Size = new System.Drawing.Size(1370, 750);
             this.creacionDeUsuario1.TabIndex = 8;

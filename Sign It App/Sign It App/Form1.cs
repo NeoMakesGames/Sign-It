@@ -8,12 +8,13 @@ namespace Sign_It_App
         string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         public Form1()
         {
+            DatabaseFunctions.currentUser = 0;
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             clear();
-            
             IdS();
         }
         private void button1_Click(object sender, EventArgs e)
@@ -23,6 +24,8 @@ namespace Sign_It_App
                 if (DatabaseFunctions.checkIfNameExists(UserInicioDeSesion.Text, path) == true)
                 {
                     noIdS();
+                    Home();
+                    
                 }
                 else
                 {
