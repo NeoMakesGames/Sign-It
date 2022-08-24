@@ -4,22 +4,29 @@ using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Sign_It_App
 {
     public class DatabaseFunctions
     {
         public static int currentUser;
-        
+
         public static string getString(int id, string objID, string path)
         {
+            //Establece una coneccion a la base de datos
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
+            //Crea un comando que colecciona toda la informacion de un usuario especificado por id
             OleDbCommand cmd = new OleDbCommand("SELECT * FROM Usuarios WHERE id = " + id, con);
+            //Crea una variable que lee los datos
             OleDbDataReader reader = cmd.ExecuteReader();
             reader.Read();
+            //Obtiene el resultado deseado en objID del usuario seleccionado
             string result = reader[objID].ToString();
+            //Cierra la coneccion a la base de datos
             con.Close();
+            //Devuelve como string el resultado que se buscaba
             return result;
         }
 
@@ -105,7 +112,6 @@ namespace Sign_It_App
             return result;
         }
 
-        /*
         public static void deleteUser(int id, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
@@ -116,6 +122,5 @@ namespace Sign_It_App
             MessageBox.Show("¡Usuario " + id + " eliminado!");
             //updateListBox(lb, path);
         }
-        */
     }
 }
