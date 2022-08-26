@@ -19,8 +19,6 @@ namespace Sign_It_App
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (DatabaseFunctions.checkIfThereAreUsers(path) == true)
-            {
                 if (DatabaseFunctions.checkIfNameExists(UserInicioDeSesion.Text, path) == true)
                 {
                     noIdS();
@@ -29,15 +27,8 @@ namespace Sign_It_App
                 }
                 else
                 {
-                    label2Ids.Text = "Usuario invalido";
                     label2Ids.Show();
                 }
-
-            }
-            else
-            {
-//              OWO
-            }
         }
 
         private void linkLabel1IdS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
