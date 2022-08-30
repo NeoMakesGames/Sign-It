@@ -19,8 +19,6 @@ namespace Sign_It_App
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (DatabaseFunctions.checkIfThereAreUsers(path) == true)
-            {
                 if (DatabaseFunctions.checkIfNameExists(UserInicioDeSesion.Text, path) == true)
                 {
                     noIdS();
@@ -29,15 +27,8 @@ namespace Sign_It_App
                 }
                 else
                 {
-                    label2Ids.Text = "Usuario invalido";
                     label2Ids.Show();
                 }
-
-            }
-            else
-            {
-//              OWO
-            }
         }
 
         private void linkLabel1IdS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -104,6 +95,7 @@ namespace Sign_It_App
             creacionDeUsuario1.Show();
             ComenzarCdU.Show();
             UserCdU.Show();
+            SnapBackToReality.Show();
             noIdS();
         }
         private void noCdU()
@@ -112,6 +104,7 @@ namespace Sign_It_App
             ComenzarCdU.Hide();
             UserCdU.Hide();
             label1CdU.Hide();
+            SnapBackToReality.Hide();
         }
         private void MENU()
         {
@@ -164,6 +157,12 @@ namespace Sign_It_App
         private void MenuExitButton_Click(object sender, EventArgs e)
         {
             ((Form)this.TopLevelControl).Close();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            noCdU();
+            IdS();
         }
     }
 }

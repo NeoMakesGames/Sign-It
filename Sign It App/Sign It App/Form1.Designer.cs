@@ -42,6 +42,7 @@
             this.Menubutton = new System.Windows.Forms.Button();
             this.ComenzarCdU = new System.Windows.Forms.Button();
             this.label1CdU = new System.Windows.Forms.Label();
+            this.SnapBackToReality = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -181,11 +182,22 @@
             this.label1CdU.Text = "Nombre de usuario ya existente";
             this.label1CdU.Click += new System.EventHandler(this.label1CdU_Click);
             // 
+            // SnapBackToReality
+            // 
+            this.SnapBackToReality.Location = new System.Drawing.Point(21, 18);
+            this.SnapBackToReality.Name = "SnapBackToReality";
+            this.SnapBackToReality.Size = new System.Drawing.Size(75, 44);
+            this.SnapBackToReality.TabIndex = 14;
+            this.SnapBackToReality.Text = "<---";
+            this.SnapBackToReality.UseVisualStyleBackColor = true;
+            this.SnapBackToReality.Click += new System.EventHandler(this.button1_Click_2);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 749);
+            this.Controls.Add(this.SnapBackToReality);
             this.Controls.Add(this.UserInicioDeSesion);
             this.Controls.Add(this.linkLabel1IdS);
             this.Controls.Add(this.label2Ids);
@@ -223,5 +235,6 @@
         private Home home1;
         private Button MenuLectionsButton;
         private Button MenuExitButton;
+        private Button SnapBackToReality;
     }
 }
