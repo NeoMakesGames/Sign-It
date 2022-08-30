@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Sign It App",
-    "\\Sign It App\\Sign It App",
-    "\\Sign It App\\Sign It App\\Pantalla"
+    "\\Sign It App\\Sign It App"
   ],
-  "SelectedNode": "\\Sign It App\\Sign It App\\DatabaseFunctions.cs",
+  "SelectedNode": "\\Sign It App\\Sign It App.sln",
   "PreviewInSolutionExplorer": false
 }

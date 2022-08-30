@@ -13,17 +13,18 @@ namespace Sign_It_App
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            IDT();
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
-            clear();
-            IdS();
+            signIt.SelectedTab = tabPage1;
         }
         private void button1_Click(object sender, EventArgs e)
         {
                 if (DatabaseFunctions.checkIfNameExists(UserInicioDeSesion.Text, path) == true)
                 {
-                    noIdS();
-                    Home();
-                    DatabaseFunctions.currentUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
+                    signIt.SelectedTab = tabPage3;
+                    MENU();
+ // esto genera error OWO: DatabaseFunctions.currentUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
                 }
                 else
                 {
@@ -33,19 +34,19 @@ namespace Sign_It_App
 
         private void linkLabel1IdS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            noIdS();
-            CdU();
+            signIt.SelectedTab = tabPage2;
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
             if (menu == 0)
             {
-                panel1.Show();
+                panel1.BringToFront();
                 menu = 1;
+                Menubutton.BringToFront();
             }
             else if (menu == 1)
             {
-                panel1.Hide();
+                panel1.SendToBack();
                 menu = 0;
             }
         }
@@ -55,8 +56,7 @@ namespace Sign_It_App
             {
                 DatabaseFunctions.addUser(UserCdU.Text, path);
                 DatabaseFunctions.currentUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
-                Home();
-                noCdU();
+                signIt.SelectedTab = tabPage3;
             }
             else if (DatabaseFunctions.checkIfThereAreUsers(path))
             {
@@ -64,8 +64,8 @@ namespace Sign_It_App
                 {
                     DatabaseFunctions.addUser(UserCdU.Text, path);
                     DatabaseFunctions.currentUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
-                    Home();
-                    noCdU();
+                    signIt.SelectedTab = tabPage3;
+                    MENU();
                 }
                 else
                 {
@@ -73,66 +73,23 @@ namespace Sign_It_App
                 }
             }
         }
-        private void IdS()
-        {
-            inicioDeSesión1.Show();
-            ComenzarIds.Show();
-            UserInicioDeSesion.Show();
-            linkLabel1IdS.Show();
-            noCdU();
-
-        }
-        private void noIdS()
-        {
-            inicioDeSesión1.Hide();
-            ComenzarIds.Hide();
-            UserInicioDeSesion.Hide();
-            linkLabel1IdS.Hide();
-            label2Ids.Hide();
-        }
-        private void CdU()
-        {
-            creacionDeUsuario1.Show();
-            ComenzarCdU.Show();
-            UserCdU.Show();
-            SnapBackToReality.Show();
-            noIdS();
-        }
-        private void noCdU()
-        {
-            creacionDeUsuario1.Hide();
-            ComenzarCdU.Hide();
-            UserCdU.Hide();
-            label1CdU.Hide();
-            SnapBackToReality.Hide();
-        }
-        private void MENU()
-        {
-            Menubutton.Show();
-            Menubutton.BringToFront();
-            
-        }
+       
         private void noMENU()
         {
             Menubutton.Hide();
             panel1.Hide();
         }
-        private void Home()
+        private void MENU()
         {
-            home1.Show();
-            MENU();
+            Menubutton.Show();
+            Menubutton.BringToFront();
+            panel1.Show();
+            panel1.SendToBack();
         }
-        private void noHome()
+        private void IDT()
         {
-            home1.Hide();
-        }
-
-        private void clear ()
-        {
-            noIdS();
-            noCdU();
-            noMENU();
-            noHome();
+            label1CdU.Hide();
+            label2Ids.Hide();
         }
         private void label1CdU_Click(object sender, EventArgs e)
         {
@@ -161,8 +118,17 @@ namespace Sign_It_App
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            noCdU();
-            IdS();
+            signIt.SelectedTab = tabPage1;
+        }
+
+        private void SalirIdS_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
