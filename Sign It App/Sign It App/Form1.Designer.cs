@@ -56,12 +56,14 @@
             this.Diccionario = new System.Windows.Forms.TabPage();
             this.Juegos = new System.Windows.Forms.TabPage();
             this.Ajustes = new System.Windows.Forms.TabPage();
+            this.SonidoSett = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
             this.Home.SuspendLayout();
             this.Lecciones.SuspendLayout();
+            this.Ajustes.SuspendLayout();
             this.SuspendLayout();
             // 
             // UserInicioDeSesion
@@ -356,12 +358,22 @@
             // 
             // Ajustes
             // 
+            this.Ajustes.Controls.Add(this.SonidoSett);
             this.Ajustes.Location = new System.Drawing.Point(4, 24);
             this.Ajustes.Name = "Ajustes";
             this.Ajustes.Size = new System.Drawing.Size(1354, 757);
             this.Ajustes.TabIndex = 6;
             this.Ajustes.Text = "Ajustes";
             this.Ajustes.UseVisualStyleBackColor = true;
+            // 
+            // SonidoSett
+            // 
+            this.SonidoSett.AutoSize = true;
+            this.SonidoSett.Location = new System.Drawing.Point(495, 307);
+            this.SonidoSett.Name = "SonidoSett";
+            this.SonidoSett.Size = new System.Drawing.Size(44, 15);
+            this.SonidoSett.TabIndex = 0;
+            this.SonidoSett.Text = "Sonido";
             // 
             // Form1
             // 
@@ -382,6 +394,8 @@
             this.CdU.PerformLayout();
             this.Home.ResumeLayout(false);
             this.Lecciones.ResumeLayout(false);
+            this.Ajustes.ResumeLayout(false);
+            this.Ajustes.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -415,5 +429,6 @@
         private TabPage Diccionario;
         private TabPage Juegos;
         private TabPage Ajustes;
+        private Label SonidoSett;
     }
 }
