@@ -34,6 +34,10 @@
             this.linkLabel1IdS = new System.Windows.Forms.LinkLabel();
             this.UserCdU = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.MenuSettingsButton = new System.Windows.Forms.Button();
+            this.MenuGamesButton = new System.Windows.Forms.Button();
+            this.MenuHomeButton = new System.Windows.Forms.Button();
+            this.MenuDiccionarioButton = new System.Windows.Forms.Button();
             this.MenuLectionsButton = new System.Windows.Forms.Button();
             this.MenuExitButton = new System.Windows.Forms.Button();
             this.Menubutton = new System.Windows.Forms.Button();
@@ -41,17 +45,23 @@
             this.label1CdU = new System.Windows.Forms.Label();
             this.SnapBackToReality = new System.Windows.Forms.Button();
             this.signIt = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.IdS = new System.Windows.Forms.TabPage();
             this.SalirIdS = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.CdU = new System.Windows.Forms.TabPage();
+            this.Home = new System.Windows.Forms.TabPage();
             this.DiccionarioHome = new System.Windows.Forms.Button();
             this.LeccionesHome = new System.Windows.Forms.Button();
+            this.Lecciones = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Diccionario = new System.Windows.Forms.TabPage();
+            this.Juegos = new System.Windows.Forms.TabPage();
+            this.Ajustes = new System.Windows.Forms.TabPage();
             this.panel1.SuspendLayout();
             this.signIt.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.IdS.SuspendLayout();
+            this.CdU.SuspendLayout();
+            this.Home.SuspendLayout();
+            this.Lecciones.SuspendLayout();
             this.SuspendLayout();
             // 
             // UserInicioDeSesion
@@ -108,27 +118,72 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.MenuSettingsButton);
+            this.panel1.Controls.Add(this.MenuGamesButton);
+            this.panel1.Controls.Add(this.MenuHomeButton);
+            this.panel1.Controls.Add(this.MenuDiccionarioButton);
             this.panel1.Controls.Add(this.MenuLectionsButton);
             this.panel1.Controls.Add(this.MenuExitButton);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, -8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 750);
+            this.panel1.Size = new System.Drawing.Size(200, 775);
             this.panel1.TabIndex = 9;
+            // 
+            // MenuSettingsButton
+            // 
+            this.MenuSettingsButton.Location = new System.Drawing.Point(4, 529);
+            this.MenuSettingsButton.Name = "MenuSettingsButton";
+            this.MenuSettingsButton.Size = new System.Drawing.Size(192, 79);
+            this.MenuSettingsButton.TabIndex = 5;
+            this.MenuSettingsButton.Text = "Ajustes";
+            this.MenuSettingsButton.UseVisualStyleBackColor = true;
+            this.MenuSettingsButton.Click += new System.EventHandler(this.MenuSettingsButton_Click);
+            // 
+            // MenuGamesButton
+            // 
+            this.MenuGamesButton.Location = new System.Drawing.Point(5, 412);
+            this.MenuGamesButton.Name = "MenuGamesButton";
+            this.MenuGamesButton.Size = new System.Drawing.Size(192, 79);
+            this.MenuGamesButton.TabIndex = 4;
+            this.MenuGamesButton.Text = "Juegos";
+            this.MenuGamesButton.UseVisualStyleBackColor = true;
+            this.MenuGamesButton.Click += new System.EventHandler(this.MenuGamesButton_Click);
+            // 
+            // MenuHomeButton
+            // 
+            this.MenuHomeButton.Location = new System.Drawing.Point(4, 74);
+            this.MenuHomeButton.Name = "MenuHomeButton";
+            this.MenuHomeButton.Size = new System.Drawing.Size(192, 79);
+            this.MenuHomeButton.TabIndex = 3;
+            this.MenuHomeButton.Text = "Home";
+            this.MenuHomeButton.UseVisualStyleBackColor = true;
+            this.MenuHomeButton.Click += new System.EventHandler(this.MenuHomeButton_Click);
+            // 
+            // MenuDiccionarioButton
+            // 
+            this.MenuDiccionarioButton.Location = new System.Drawing.Point(5, 299);
+            this.MenuDiccionarioButton.Name = "MenuDiccionarioButton";
+            this.MenuDiccionarioButton.Size = new System.Drawing.Size(192, 79);
+            this.MenuDiccionarioButton.TabIndex = 2;
+            this.MenuDiccionarioButton.Text = "Diccionario";
+            this.MenuDiccionarioButton.UseVisualStyleBackColor = true;
+            this.MenuDiccionarioButton.Click += new System.EventHandler(this.MenuDiccionarioButton_Click);
             // 
             // MenuLectionsButton
             // 
-            this.MenuLectionsButton.Location = new System.Drawing.Point(5, 59);
+            this.MenuLectionsButton.Location = new System.Drawing.Point(4, 186);
             this.MenuLectionsButton.Name = "MenuLectionsButton";
-            this.MenuLectionsButton.Size = new System.Drawing.Size(192, 65);
+            this.MenuLectionsButton.Size = new System.Drawing.Size(192, 79);
             this.MenuLectionsButton.TabIndex = 0;
             this.MenuLectionsButton.Text = "Lecciones";
             this.MenuLectionsButton.UseVisualStyleBackColor = true;
+            this.MenuLectionsButton.Click += new System.EventHandler(this.MenuLectionsButton_Click);
             // 
             // MenuExitButton
             // 
-            this.MenuExitButton.Location = new System.Drawing.Point(4, 679);
+            this.MenuExitButton.Location = new System.Drawing.Point(4, 650);
             this.MenuExitButton.Name = "MenuExitButton";
-            this.MenuExitButton.Size = new System.Drawing.Size(192, 65);
+            this.MenuExitButton.Size = new System.Drawing.Size(192, 79);
             this.MenuExitButton.TabIndex = 1;
             this.MenuExitButton.Text = "Salir";
             this.MenuExitButton.UseVisualStyleBackColor = true;
@@ -179,30 +234,34 @@
             // 
             // signIt
             // 
-            this.signIt.Controls.Add(this.tabPage3);
-            this.signIt.Controls.Add(this.tabPage1);
-            this.signIt.Controls.Add(this.tabPage2);
+            this.signIt.Controls.Add(this.IdS);
+            this.signIt.Controls.Add(this.CdU);
+            this.signIt.Controls.Add(this.Home);
+            this.signIt.Controls.Add(this.Lecciones);
+            this.signIt.Controls.Add(this.Diccionario);
+            this.signIt.Controls.Add(this.Juegos);
+            this.signIt.Controls.Add(this.Ajustes);
             this.signIt.Location = new System.Drawing.Point(-4, -8);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1362, 785);
             this.signIt.TabIndex = 15;
             // 
-            // tabPage1
+            // IdS
             // 
-            this.tabPage1.Controls.Add(this.SalirIdS);
-            this.tabPage1.Controls.Add(this.UserInicioDeSesion);
-            this.tabPage1.Controls.Add(this.linkLabel1IdS);
-            this.tabPage1.Controls.Add(this.label2Ids);
-            this.tabPage1.Controls.Add(this.ComenzarIds);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1354, 757);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "InicioDeSesion";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            this.IdS.Controls.Add(this.SalirIdS);
+            this.IdS.Controls.Add(this.UserInicioDeSesion);
+            this.IdS.Controls.Add(this.linkLabel1IdS);
+            this.IdS.Controls.Add(this.label2Ids);
+            this.IdS.Controls.Add(this.ComenzarIds);
+            this.IdS.Location = new System.Drawing.Point(4, 24);
+            this.IdS.Name = "IdS";
+            this.IdS.Padding = new System.Windows.Forms.Padding(3);
+            this.IdS.Size = new System.Drawing.Size(1354, 757);
+            this.IdS.TabIndex = 0;
+            this.IdS.Text = "InicioDeSesion";
+            this.IdS.UseVisualStyleBackColor = true;
+            this.IdS.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // SalirIdS
             // 
@@ -214,31 +273,31 @@
             this.SalirIdS.UseVisualStyleBackColor = true;
             this.SalirIdS.Click += new System.EventHandler(this.SalirIdS_Click);
             // 
-            // tabPage2
+            // CdU
             // 
-            this.tabPage2.Controls.Add(this.SnapBackToReality);
-            this.tabPage2.Controls.Add(this.UserCdU);
-            this.tabPage2.Controls.Add(this.label1CdU);
-            this.tabPage2.Controls.Add(this.ComenzarCdU);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1354, 757);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "CreacionDeUsuario";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.CdU.Controls.Add(this.SnapBackToReality);
+            this.CdU.Controls.Add(this.UserCdU);
+            this.CdU.Controls.Add(this.label1CdU);
+            this.CdU.Controls.Add(this.ComenzarCdU);
+            this.CdU.Location = new System.Drawing.Point(4, 24);
+            this.CdU.Name = "CdU";
+            this.CdU.Padding = new System.Windows.Forms.Padding(3);
+            this.CdU.Size = new System.Drawing.Size(1354, 757);
+            this.CdU.TabIndex = 1;
+            this.CdU.Text = "CreacionDeUsuario";
+            this.CdU.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // Home
             // 
-            this.tabPage3.Controls.Add(this.DiccionarioHome);
-            this.tabPage3.Controls.Add(this.LeccionesHome);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1354, 757);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Home";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.Home.Controls.Add(this.DiccionarioHome);
+            this.Home.Controls.Add(this.LeccionesHome);
+            this.Home.Location = new System.Drawing.Point(4, 24);
+            this.Home.Name = "Home";
+            this.Home.Padding = new System.Windows.Forms.Padding(3);
+            this.Home.Size = new System.Drawing.Size(1354, 757);
+            this.Home.TabIndex = 2;
+            this.Home.Text = "Home";
+            this.Home.UseVisualStyleBackColor = true;
             // 
             // DiccionarioHome
             // 
@@ -258,24 +317,71 @@
             this.LeccionesHome.Text = "Continua con tus lecciones";
             this.LeccionesHome.UseVisualStyleBackColor = true;
             // 
+            // Lecciones
+            // 
+            this.Lecciones.Controls.Add(this.button1);
+            this.Lecciones.Location = new System.Drawing.Point(4, 24);
+            this.Lecciones.Name = "Lecciones";
+            this.Lecciones.Size = new System.Drawing.Size(1354, 757);
+            this.Lecciones.TabIndex = 3;
+            this.Lecciones.Text = "Lecciones";
+            this.Lecciones.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(573, 405);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 45);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Palabras basicas";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Diccionario
+            // 
+            this.Diccionario.Location = new System.Drawing.Point(4, 24);
+            this.Diccionario.Name = "Diccionario";
+            this.Diccionario.Size = new System.Drawing.Size(1354, 757);
+            this.Diccionario.TabIndex = 4;
+            this.Diccionario.Text = "Diccionario";
+            this.Diccionario.UseVisualStyleBackColor = true;
+            // 
+            // Juegos
+            // 
+            this.Juegos.Location = new System.Drawing.Point(4, 24);
+            this.Juegos.Name = "Juegos";
+            this.Juegos.Size = new System.Drawing.Size(1354, 757);
+            this.Juegos.TabIndex = 5;
+            this.Juegos.Text = "Juegos";
+            this.Juegos.UseVisualStyleBackColor = true;
+            // 
+            // Ajustes
+            // 
+            this.Ajustes.Location = new System.Drawing.Point(4, 24);
+            this.Ajustes.Name = "Ajustes";
+            this.Ajustes.Size = new System.Drawing.Size(1354, 757);
+            this.Ajustes.TabIndex = 6;
+            this.Ajustes.Text = "Ajustes";
+            this.Ajustes.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 749);
-            this.Controls.Add(this.signIt);
             this.Controls.Add(this.Menubutton);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.signIt);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.signIt.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
+            this.IdS.ResumeLayout(false);
+            this.IdS.PerformLayout();
+            this.CdU.ResumeLayout(false);
+            this.CdU.PerformLayout();
+            this.Home.ResumeLayout(false);
+            this.Lecciones.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -294,11 +400,20 @@
         private Button MenuExitButton;
         private Button SnapBackToReality;
         private TabControl signIt;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
-        private TabPage tabPage3;
+        private TabPage IdS;
+        private TabPage CdU;
+        private TabPage Home;
         private Button SalirIdS;
         private Button DiccionarioHome;
         private Button LeccionesHome;
+        private TabPage Lecciones;
+        private Button MenuSettingsButton;
+        private Button MenuGamesButton;
+        private Button MenuHomeButton;
+        private Button MenuDiccionarioButton;
+        private Button button1;
+        private TabPage Diccionario;
+        private TabPage Juegos;
+        private TabPage Ajustes;
     }
 }

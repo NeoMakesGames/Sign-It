@@ -14,15 +14,16 @@ namespace Sign_It_App
         private void Form1_Load(object sender, EventArgs e)
         {
             IDT();
+            noMENU();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
-            signIt.SelectedTab = tabPage1;
+            signIt.SelectedTab = IdS;
         }
         private void button1_Click(object sender, EventArgs e)
         {
                 if (DatabaseFunctions.checkIfNameExists(UserInicioDeSesion.Text, path) == true)
                 {
-                    signIt.SelectedTab = tabPage3;
+                    signIt.SelectedTab = Home;
                     MENU();
  // esto genera error OWO: DatabaseFunctions.currentUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
                 }
@@ -34,7 +35,7 @@ namespace Sign_It_App
 
         private void linkLabel1IdS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            signIt.SelectedTab = tabPage2;
+            signIt.SelectedTab = CdU;
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -56,7 +57,7 @@ namespace Sign_It_App
             {
                 DatabaseFunctions.addUser(UserCdU.Text, path);
                 DatabaseFunctions.currentUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
-                signIt.SelectedTab = tabPage3;
+                signIt.SelectedTab = Home;
             }
             else if (DatabaseFunctions.checkIfThereAreUsers(path))
             {
@@ -64,7 +65,7 @@ namespace Sign_It_App
                 {
                     DatabaseFunctions.addUser(UserCdU.Text, path);
                     DatabaseFunctions.currentUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
-                    signIt.SelectedTab = tabPage3;
+                    signIt.SelectedTab = Home;
                     MENU();
                 }
                 else
@@ -101,24 +102,14 @@ namespace Sign_It_App
 
         }
 
-        private void creacionDeUsuario1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void home2_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void MenuExitButton_Click(object sender, EventArgs e)
         {
-            ((Form)this.TopLevelControl).Close();
+            this.Close();
         }
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            signIt.SelectedTab = tabPage1;
+            signIt.SelectedTab = IdS;
         }
 
         private void SalirIdS_Click(object sender, EventArgs e)
@@ -129,6 +120,36 @@ namespace Sign_It_App
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void MenuHomeButton_Click(object sender, EventArgs e)
+        {
+            signIt.SelectedTab = Home;
+            pantalla = 1;
+        }
+
+        private void MenuLectionsButton_Click(object sender, EventArgs e)
+        {
+            signIt.SelectedTab = Lecciones;
+            pantalla = 2;
+        }
+
+        private void MenuDiccionarioButton_Click(object sender, EventArgs e)
+        {
+            signIt.SelectedTab = Diccionario;
+            pantalla = 3;
+        }
+
+        private void MenuGamesButton_Click(object sender, EventArgs e)
+        {
+            signIt.SelectedTab = Juegos;
+            pantalla = 4;
+        }
+
+        private void MenuSettingsButton_Click(object sender, EventArgs e)
+        {
+            signIt.SelectedTab = Ajustes;
+            pantalla = 5;
         }
     }
 }
