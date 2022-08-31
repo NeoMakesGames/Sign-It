@@ -5,10 +5,10 @@ namespace Sign_It_App
         public int menu = 0;
         public int pantalla = 0;
         public bool border = true;
+        public static int currUser;
         string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         public Form1()
         {
-            DatabaseFunctions.currentUser = 0;
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -25,7 +25,7 @@ namespace Sign_It_App
                 {
                     signIt.SelectedTab = Home;
                     MENU();
- // esto genera error OWO: DatabaseFunctions.currentUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
+                    currUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
                 }
                 else
                 {
