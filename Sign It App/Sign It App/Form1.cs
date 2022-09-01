@@ -5,8 +5,8 @@ namespace Sign_It_App
         public int menu = 0;
         public int pantalla = 0;
         public bool border = true;
-        public static int currUser;
-        string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
+        string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
+        //string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         public Form1()
         {
             InitializeComponent();
@@ -25,7 +25,7 @@ namespace Sign_It_App
                 {
                     signIt.SelectedTab = Home;
                     MENU();
-                    currUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
+                    DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserInicioDeSesion.Text, path);
                 }
                 else
                 {
@@ -56,7 +56,7 @@ namespace Sign_It_App
             if (!DatabaseFunctions.checkIfThereAreUsers(path))
             {
                 DatabaseFunctions.addUser(UserCdU.Text, path);
-                DatabaseFunctions.currentUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
+                DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserInicioDeSesion.Text, path);
                 signIt.SelectedTab = Home;
             }
             else if (DatabaseFunctions.checkIfThereAreUsers(path))
@@ -64,7 +64,7 @@ namespace Sign_It_App
                 if (!DatabaseFunctions.checkIfNameExists(UserCdU.Text, path))
                 {
                     DatabaseFunctions.addUser(UserCdU.Text, path);
-                    DatabaseFunctions.currentUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
+                    DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserInicioDeSesion.Text, path);
                     signIt.SelectedTab = Home;
                     MENU();
                 }
