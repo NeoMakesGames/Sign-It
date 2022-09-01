@@ -7,7 +7,12 @@
     <Nullable>warnings</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>PFP.Signit (1).ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="PFP.Signit (1).ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Data.OleDb" Version="6.0.0" />

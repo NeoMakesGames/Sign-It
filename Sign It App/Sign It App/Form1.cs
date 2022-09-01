@@ -25,7 +25,7 @@ namespace Sign_It_App
                 {
                     signIt.SelectedTab = Home;
                     MENU();
-                    currUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
+               //     currUser = DatabaseFunctions.getID(UserInicioDeSesion.Text, path);
                 }
                 else
                 {
@@ -126,30 +126,45 @@ namespace Sign_It_App
         {
             signIt.SelectedTab = Home;
             pantalla = 1;
+            panel1.SendToBack();
+            menu = 0;
         }
 
         private void MenuLectionsButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Lecciones;
             pantalla = 2;
+            panel1.SendToBack();
+            menu = 0;
         }
 
         private void MenuDiccionarioButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Diccionario;
             pantalla = 3;
+            panel1.SendToBack();
+            menu = 0;
         }
 
         private void MenuGamesButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Juegos;
             pantalla = 4;
+            panel1.SendToBack();
+            menu = 0;
         }
 
         private void MenuSettingsButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Ajustes;
             pantalla = 5;
+            panel1.SendToBack();
+            menu = 0;
+        }
+
+        private void UserInicioDeSesion_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

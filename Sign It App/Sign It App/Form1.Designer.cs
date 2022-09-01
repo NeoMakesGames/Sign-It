@@ -73,6 +73,7 @@
             this.UserInicioDeSesion.Name = "UserInicioDeSesion";
             this.UserInicioDeSesion.Size = new System.Drawing.Size(293, 43);
             this.UserInicioDeSesion.TabIndex = 1;
+            this.UserInicioDeSesion.TextChanged += new System.EventHandler(this.UserInicioDeSesion_TextChanged);
             // 
             // ComenzarIds
             // 
@@ -111,7 +112,7 @@
             // UserCdU
             // 
             this.UserCdU.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UserCdU.Location = new System.Drawing.Point(363, 219);
+            this.UserCdU.Location = new System.Drawing.Point(557, 256);
             this.UserCdU.Name = "UserCdU";
             this.UserCdU.Size = new System.Drawing.Size(291, 43);
             this.UserCdU.TabIndex = 7;
@@ -204,9 +205,9 @@
             // ComenzarCdU
             // 
             this.ComenzarCdU.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ComenzarCdU.Location = new System.Drawing.Point(407, 347);
+            this.ComenzarCdU.Location = new System.Drawing.Point(601, 384);
             this.ComenzarCdU.Name = "ComenzarCdU";
-            this.ComenzarCdU.Size = new System.Drawing.Size(219, 71);
+            this.ComenzarCdU.Size = new System.Drawing.Size(223, 71);
             this.ComenzarCdU.TabIndex = 11;
             this.ComenzarCdU.Text = "Crear";
             this.ComenzarCdU.UseVisualStyleBackColor = true;
@@ -217,7 +218,7 @@
             this.label1CdU.AutoSize = true;
             this.label1CdU.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1CdU.ForeColor = System.Drawing.Color.Red;
-            this.label1CdU.Location = new System.Drawing.Point(363, 287);
+            this.label1CdU.Location = new System.Drawing.Point(557, 324);
             this.label1CdU.Name = "label1CdU";
             this.label1CdU.Size = new System.Drawing.Size(288, 28);
             this.label1CdU.TabIndex = 12;
@@ -243,7 +244,7 @@
             this.signIt.Controls.Add(this.Diccionario);
             this.signIt.Controls.Add(this.Juegos);
             this.signIt.Controls.Add(this.Ajustes);
-            this.signIt.Location = new System.Drawing.Point(-4, -8);
+            this.signIt.Location = new System.Drawing.Point(-4, -25);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1362, 785);
@@ -380,9 +381,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 749);
+            this.Controls.Add(this.signIt);
             this.Controls.Add(this.Menubutton);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.signIt);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
