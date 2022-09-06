@@ -69,17 +69,17 @@
             // UserInicioDeSesion
             // 
             this.UserInicioDeSesion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UserInicioDeSesion.Location = new System.Drawing.Point(562, 256);
+            this.UserInicioDeSesion.Location = new System.Drawing.Point(531, 220);
             this.UserInicioDeSesion.Name = "UserInicioDeSesion";
-            this.UserInicioDeSesion.Size = new System.Drawing.Size(293, 43);
+            this.UserInicioDeSesion.Size = new System.Drawing.Size(300, 43);
             this.UserInicioDeSesion.TabIndex = 1;
             // 
             // ComenzarIds
             // 
             this.ComenzarIds.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ComenzarIds.Location = new System.Drawing.Point(594, 373);
+            this.ComenzarIds.Location = new System.Drawing.Point(570, 373);
             this.ComenzarIds.Name = "ComenzarIds";
-            this.ComenzarIds.Size = new System.Drawing.Size(221, 71);
+            this.ComenzarIds.Size = new System.Drawing.Size(222, 80);
             this.ComenzarIds.TabIndex = 2;
             this.ComenzarIds.Text = "Comenzar";
             this.ComenzarIds.UseVisualStyleBackColor = true;
@@ -88,11 +88,11 @@
             // label2Ids
             // 
             this.label2Ids.AutoSize = true;
-            this.label2Ids.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2Ids.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2Ids.ForeColor = System.Drawing.Color.Red;
-            this.label2Ids.Location = new System.Drawing.Point(594, 315);
+            this.label2Ids.Location = new System.Drawing.Point(590, 287);
             this.label2Ids.Name = "label2Ids";
-            this.label2Ids.Size = new System.Drawing.Size(228, 37);
+            this.label2Ids.Size = new System.Drawing.Size(182, 30);
             this.label2Ids.TabIndex = 4;
             this.label2Ids.Text = "Usuario no Valido";
             // 
@@ -100,7 +100,7 @@
             // 
             this.linkLabel1IdS.AutoSize = true;
             this.linkLabel1IdS.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.linkLabel1IdS.Location = new System.Drawing.Point(556, 474);
+            this.linkLabel1IdS.Location = new System.Drawing.Point(525, 474);
             this.linkLabel1IdS.Name = "linkLabel1IdS";
             this.linkLabel1IdS.Size = new System.Drawing.Size(313, 28);
             this.linkLabel1IdS.TabIndex = 5;
@@ -111,9 +111,9 @@
             // UserCdU
             // 
             this.UserCdU.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UserCdU.Location = new System.Drawing.Point(363, 219);
+            this.UserCdU.Location = new System.Drawing.Point(531, 220);
             this.UserCdU.Name = "UserCdU";
-            this.UserCdU.Size = new System.Drawing.Size(291, 43);
+            this.UserCdU.Size = new System.Drawing.Size(300, 43);
             this.UserCdU.TabIndex = 7;
             this.UserCdU.TextChanged += new System.EventHandler(this.UserCdU_TextChanged);
             // 
@@ -204,9 +204,9 @@
             // ComenzarCdU
             // 
             this.ComenzarCdU.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ComenzarCdU.Location = new System.Drawing.Point(407, 347);
+            this.ComenzarCdU.Location = new System.Drawing.Point(570, 373);
             this.ComenzarCdU.Name = "ComenzarCdU";
-            this.ComenzarCdU.Size = new System.Drawing.Size(219, 71);
+            this.ComenzarCdU.Size = new System.Drawing.Size(222, 80);
             this.ComenzarCdU.TabIndex = 11;
             this.ComenzarCdU.Text = "Crear";
             this.ComenzarCdU.UseVisualStyleBackColor = true;
@@ -215,20 +215,20 @@
             // label1CdU
             // 
             this.label1CdU.AutoSize = true;
-            this.label1CdU.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1CdU.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1CdU.ForeColor = System.Drawing.Color.Red;
-            this.label1CdU.Location = new System.Drawing.Point(363, 287);
+            this.label1CdU.Location = new System.Drawing.Point(521, 287);
             this.label1CdU.Name = "label1CdU";
-            this.label1CdU.Size = new System.Drawing.Size(288, 28);
+            this.label1CdU.Size = new System.Drawing.Size(321, 30);
             this.label1CdU.TabIndex = 12;
             this.label1CdU.Text = "Nombre de usuario ya existente";
             this.label1CdU.Click += new System.EventHandler(this.label1CdU_Click);
             // 
             // SnapBackToReality
             // 
-            this.SnapBackToReality.Location = new System.Drawing.Point(4, 3);
+            this.SnapBackToReality.Location = new System.Drawing.Point(9, 9);
             this.SnapBackToReality.Name = "SnapBackToReality";
-            this.SnapBackToReality.Size = new System.Drawing.Size(75, 44);
+            this.SnapBackToReality.Size = new System.Drawing.Size(89, 57);
             this.SnapBackToReality.TabIndex = 14;
             this.SnapBackToReality.Text = "<---";
             this.SnapBackToReality.UseVisualStyleBackColor = true;
@@ -236,17 +236,18 @@
             // 
             // signIt
             // 
-            this.signIt.Controls.Add(this.IdS);
             this.signIt.Controls.Add(this.CdU);
             this.signIt.Controls.Add(this.Home);
             this.signIt.Controls.Add(this.Lecciones);
             this.signIt.Controls.Add(this.Diccionario);
             this.signIt.Controls.Add(this.Juegos);
             this.signIt.Controls.Add(this.Ajustes);
-            this.signIt.Location = new System.Drawing.Point(-4, -8);
+            this.signIt.Controls.Add(this.IdS);
+            this.signIt.ItemSize = new System.Drawing.Size(90, 20);
+            this.signIt.Location = new System.Drawing.Point(-4, -10);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
-            this.signIt.Size = new System.Drawing.Size(1362, 785);
+            this.signIt.Size = new System.Drawing.Size(1373, 785);
             this.signIt.TabIndex = 15;
             // 
             // IdS
@@ -259,7 +260,7 @@
             this.IdS.Location = new System.Drawing.Point(4, 24);
             this.IdS.Name = "IdS";
             this.IdS.Padding = new System.Windows.Forms.Padding(3);
-            this.IdS.Size = new System.Drawing.Size(1354, 757);
+            this.IdS.Size = new System.Drawing.Size(1365, 757);
             this.IdS.TabIndex = 0;
             this.IdS.Text = "InicioDeSesion";
             this.IdS.UseVisualStyleBackColor = true;
@@ -284,7 +285,7 @@
             this.CdU.Location = new System.Drawing.Point(4, 24);
             this.CdU.Name = "CdU";
             this.CdU.Padding = new System.Windows.Forms.Padding(3);
-            this.CdU.Size = new System.Drawing.Size(1354, 757);
+            this.CdU.Size = new System.Drawing.Size(1365, 757);
             this.CdU.TabIndex = 1;
             this.CdU.Text = "CreacionDeUsuario";
             this.CdU.UseVisualStyleBackColor = true;
@@ -296,7 +297,7 @@
             this.Home.Location = new System.Drawing.Point(4, 24);
             this.Home.Name = "Home";
             this.Home.Padding = new System.Windows.Forms.Padding(3);
-            this.Home.Size = new System.Drawing.Size(1354, 757);
+            this.Home.Size = new System.Drawing.Size(1365, 757);
             this.Home.TabIndex = 2;
             this.Home.Text = "Home";
             this.Home.UseVisualStyleBackColor = true;
@@ -309,6 +310,7 @@
             this.DiccionarioHome.TabIndex = 1;
             this.DiccionarioHome.Text = "Diccionario";
             this.DiccionarioHome.UseVisualStyleBackColor = true;
+            this.DiccionarioHome.Click += new System.EventHandler(this.DiccionarioHome_Click);
             // 
             // LeccionesHome
             // 
@@ -324,7 +326,7 @@
             this.Lecciones.Controls.Add(this.button1);
             this.Lecciones.Location = new System.Drawing.Point(4, 24);
             this.Lecciones.Name = "Lecciones";
-            this.Lecciones.Size = new System.Drawing.Size(1354, 757);
+            this.Lecciones.Size = new System.Drawing.Size(1365, 757);
             this.Lecciones.TabIndex = 3;
             this.Lecciones.Text = "Lecciones";
             this.Lecciones.UseVisualStyleBackColor = true;
@@ -342,7 +344,7 @@
             // 
             this.Diccionario.Location = new System.Drawing.Point(4, 24);
             this.Diccionario.Name = "Diccionario";
-            this.Diccionario.Size = new System.Drawing.Size(1354, 757);
+            this.Diccionario.Size = new System.Drawing.Size(1365, 757);
             this.Diccionario.TabIndex = 4;
             this.Diccionario.Text = "Diccionario";
             this.Diccionario.UseVisualStyleBackColor = true;
@@ -351,7 +353,7 @@
             // 
             this.Juegos.Location = new System.Drawing.Point(4, 24);
             this.Juegos.Name = "Juegos";
-            this.Juegos.Size = new System.Drawing.Size(1354, 757);
+            this.Juegos.Size = new System.Drawing.Size(1365, 757);
             this.Juegos.TabIndex = 5;
             this.Juegos.Text = "Juegos";
             this.Juegos.UseVisualStyleBackColor = true;
@@ -361,7 +363,7 @@
             this.Ajustes.Controls.Add(this.SonidoSett);
             this.Ajustes.Location = new System.Drawing.Point(4, 24);
             this.Ajustes.Name = "Ajustes";
-            this.Ajustes.Size = new System.Drawing.Size(1354, 757);
+            this.Ajustes.Size = new System.Drawing.Size(1365, 757);
             this.Ajustes.TabIndex = 6;
             this.Ajustes.Text = "Ajustes";
             this.Ajustes.UseVisualStyleBackColor = true;
