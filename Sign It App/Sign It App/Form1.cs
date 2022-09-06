@@ -43,12 +43,12 @@ namespace Sign_It_App
             if (menu == 0)
             {
                 panel1.BringToFront();
-                Menubutton.BringToFront();
                 while (menuX < -8)
                 {
                     panel1.Location = new Point(menuX, 0);
                     menuX += 2;
                 }
+                Menubutton.BringToFront();
                 menu = 1;
             }
             else if (menu == 1)
@@ -56,7 +56,7 @@ namespace Sign_It_App
                 while (menuX > -210)
                 {
                     panel1.Location = new Point(menuX, 0);
-                    menuX -= 1;
+                    menuX -= 2;
                 }
                 menu = 0;
             }
