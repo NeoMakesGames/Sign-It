@@ -8,6 +8,9 @@ namespace Sign_It_App
         public bool border = true;
         //string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
+        int UserXp;
+        int UserLvl = 0;
+        int NextLvl = 25;
         public Form1()
         {
             InitializeComponent();
@@ -27,6 +30,14 @@ namespace Sign_It_App
                     signIt.SelectedTab = Home;
                     MENU();
                     DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserInicioDeSesion.Text, path);
+                    UserXp = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "XP", path));
+                    while (UserXp > NextLvl)
+                    {
+                        UserLvl += 1;
+                        UserXp -= NextLvl;
+                        NextLvl *= 2;
+                    }
+                    XPLVL.Text = Convert.ToString(UserLvl);
                 }
                 else
                 {

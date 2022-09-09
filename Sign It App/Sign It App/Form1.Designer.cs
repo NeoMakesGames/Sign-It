@@ -45,6 +45,8 @@
             this.label1CdU = new System.Windows.Forms.Label();
             this.SnapBackToReality = new System.Windows.Forms.Button();
             this.signIt = new System.Windows.Forms.TabControl();
+            this.IdS = new System.Windows.Forms.TabPage();
+            this.SalirIdS = new System.Windows.Forms.Button();
             this.CdU = new System.Windows.Forms.TabPage();
             this.Home = new System.Windows.Forms.TabPage();
             this.DiccionarioHome = new System.Windows.Forms.Button();
@@ -55,15 +57,14 @@
             this.Juegos = new System.Windows.Forms.TabPage();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.SonidoSett = new System.Windows.Forms.Label();
-            this.IdS = new System.Windows.Forms.TabPage();
-            this.SalirIdS = new System.Windows.Forms.Button();
+            this.XPLVL = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.signIt.SuspendLayout();
+            this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
             this.Home.SuspendLayout();
             this.Lecciones.SuspendLayout();
             this.Ajustes.SuspendLayout();
-            this.IdS.SuspendLayout();
             this.SuspendLayout();
             // 
             // UserInicioDeSesion
@@ -236,19 +237,45 @@
             // 
             // signIt
             // 
+            this.signIt.Controls.Add(this.IdS);
             this.signIt.Controls.Add(this.CdU);
             this.signIt.Controls.Add(this.Home);
             this.signIt.Controls.Add(this.Lecciones);
             this.signIt.Controls.Add(this.Diccionario);
             this.signIt.Controls.Add(this.Juegos);
             this.signIt.Controls.Add(this.Ajustes);
-            this.signIt.Controls.Add(this.IdS);
             this.signIt.ItemSize = new System.Drawing.Size(90, 20);
-            this.signIt.Location = new System.Drawing.Point(-4, -25);
+            this.signIt.Location = new System.Drawing.Point(-4, -11);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1373, 785);
             this.signIt.TabIndex = 15;
+            // 
+            // IdS
+            // 
+            this.IdS.Controls.Add(this.SalirIdS);
+            this.IdS.Controls.Add(this.UserInicioDeSesion);
+            this.IdS.Controls.Add(this.linkLabel1IdS);
+            this.IdS.Controls.Add(this.label2Ids);
+            this.IdS.Controls.Add(this.ComenzarIds);
+            this.IdS.Location = new System.Drawing.Point(4, 24);
+            this.IdS.Name = "IdS";
+            this.IdS.Padding = new System.Windows.Forms.Padding(3);
+            this.IdS.Size = new System.Drawing.Size(1365, 757);
+            this.IdS.TabIndex = 0;
+            this.IdS.Text = "InicioDeSesion";
+            this.IdS.UseVisualStyleBackColor = true;
+            this.IdS.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // SalirIdS
+            // 
+            this.SalirIdS.Location = new System.Drawing.Point(1237, 699);
+            this.SalirIdS.Name = "SalirIdS";
+            this.SalirIdS.Size = new System.Drawing.Size(91, 32);
+            this.SalirIdS.TabIndex = 6;
+            this.SalirIdS.Text = "Salir";
+            this.SalirIdS.UseVisualStyleBackColor = true;
+            this.SalirIdS.Click += new System.EventHandler(this.SalirIdS_Click);
             // 
             // CdU
             // 
@@ -266,6 +293,7 @@
             // 
             // Home
             // 
+            this.Home.Controls.Add(this.XPLVL);
             this.Home.Controls.Add(this.DiccionarioHome);
             this.Home.Controls.Add(this.LeccionesHome);
             this.Home.Location = new System.Drawing.Point(4, 24);
@@ -351,31 +379,14 @@
             this.SonidoSett.TabIndex = 0;
             this.SonidoSett.Text = "Sonido";
             // 
-            // IdS
+            // XPLVL
             // 
-            this.IdS.Controls.Add(this.SalirIdS);
-            this.IdS.Controls.Add(this.UserInicioDeSesion);
-            this.IdS.Controls.Add(this.linkLabel1IdS);
-            this.IdS.Controls.Add(this.label2Ids);
-            this.IdS.Controls.Add(this.ComenzarIds);
-            this.IdS.Location = new System.Drawing.Point(4, 24);
-            this.IdS.Name = "IdS";
-            this.IdS.Padding = new System.Windows.Forms.Padding(3);
-            this.IdS.Size = new System.Drawing.Size(1365, 757);
-            this.IdS.TabIndex = 0;
-            this.IdS.Text = "InicioDeSesion";
-            this.IdS.UseVisualStyleBackColor = true;
-            this.IdS.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // SalirIdS
-            // 
-            this.SalirIdS.Location = new System.Drawing.Point(1237, 699);
-            this.SalirIdS.Name = "SalirIdS";
-            this.SalirIdS.Size = new System.Drawing.Size(91, 32);
-            this.SalirIdS.TabIndex = 6;
-            this.SalirIdS.Text = "Salir";
-            this.SalirIdS.UseVisualStyleBackColor = true;
-            this.SalirIdS.Click += new System.EventHandler(this.SalirIdS_Click);
+            this.XPLVL.AutoSize = true;
+            this.XPLVL.Location = new System.Drawing.Point(934, 210);
+            this.XPLVL.Name = "XPLVL";
+            this.XPLVL.Size = new System.Drawing.Size(38, 15);
+            this.XPLVL.TabIndex = 2;
+            this.XPLVL.Text = "label1";
             // 
             // Form1
             // 
@@ -390,14 +401,15 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.signIt.ResumeLayout(false);
+            this.IdS.ResumeLayout(false);
+            this.IdS.PerformLayout();
             this.CdU.ResumeLayout(false);
             this.CdU.PerformLayout();
             this.Home.ResumeLayout(false);
+            this.Home.PerformLayout();
             this.Lecciones.ResumeLayout(false);
             this.Ajustes.ResumeLayout(false);
             this.Ajustes.PerformLayout();
-            this.IdS.ResumeLayout(false);
-            this.IdS.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -432,5 +444,6 @@
         private TabPage Juegos;
         private TabPage Ajustes;
         private Label SonidoSett;
+        private Label XPLVL;
     }
 }
