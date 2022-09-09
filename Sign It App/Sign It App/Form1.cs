@@ -2,11 +2,12 @@ namespace Sign_It_App
 {
     public partial class Form1 : Form
     {
+        int menuX = -210;
         public int menu = 0;
         public int pantalla = 0;
         public bool border = true;
-        string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
-        //string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
+        //string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
+        string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         public Form1()
         {
             InitializeComponent();
@@ -42,12 +43,21 @@ namespace Sign_It_App
             if (menu == 0)
             {
                 panel1.BringToFront();
-                menu = 1;
+                while (menuX < -8)
+                {
+                    panel1.Location = new Point(menuX, 0);
+                    menuX += 2;
+                }
                 Menubutton.BringToFront();
+                menu = 1;
             }
             else if (menu == 1)
             {
-                panel1.SendToBack();
+                while (menuX > -210)
+                {
+                    panel1.Location = new Point(menuX, 0);
+                    menuX -= 2;
+                }
                 menu = 0;
             }
         }
@@ -126,15 +136,26 @@ namespace Sign_It_App
         {
             signIt.SelectedTab = Home;
             pantalla = 1;
+            panel1.SendToBack();
+            menu = 0;
         }
 
         private void MenuLectionsButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Lecciones;
             pantalla = 2;
+            panel1.SendToBack();
+            menu = 0;
         }
 
         private void MenuDiccionarioButton_Click(object sender, EventArgs e)
+        {
+            signIt.SelectedTab = Diccionario;
+            pantalla = 3;
+            panel1.SendToBack();
+            menu = 0;
+        }
+        private void DiccionarioHome_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Diccionario;
             pantalla = 3;
@@ -144,12 +165,16 @@ namespace Sign_It_App
         {
             signIt.SelectedTab = Juegos;
             pantalla = 4;
+            panel1.SendToBack();
+            menu = 0;
         }
 
         private void MenuSettingsButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Ajustes;
             pantalla = 5;
+            panel1.SendToBack();
+            menu = 0;
         }
     }
 }
