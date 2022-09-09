@@ -66,7 +66,7 @@ namespace Sign_It_App
                 return false;
             }
         }
-    
+
         public static int getIDFromName(string name, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
