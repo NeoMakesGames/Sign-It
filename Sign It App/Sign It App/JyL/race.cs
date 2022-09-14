@@ -19,9 +19,17 @@ namespace Sign_It_App
             this.Hide();
         }
 
-        private void race_Load(object sender, EventArgs e)
+        private async void race_Load(object sender, EventArgs e)
         {
-
+            for (int i = 3; i > 0; i++)
+            {
+                await Task.Delay(100);
+                CounterRace.Text = Convert.ToString(i);
+            }
+        }
+        private void racegame()
+        {
+           // ImagenesRace.Image = DatabaseFunctions.Get
         }
     }
 }

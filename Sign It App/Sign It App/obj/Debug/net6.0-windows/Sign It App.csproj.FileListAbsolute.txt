@@ -63,3 +63,8 @@ C:\Users\benjd\Source\Repos\NeoMakesGames\Sign-It\Sign It App\Sign It App\obj\De
 C:\Users\benjd\Source\Repos\NeoMakesGames\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign_It_App.memotest.resources
 C:\Users\benjd\Source\Repos\NeoMakesGames\Sign-It\Sign It App\Sign It App\bin\Debug\net6.0-windows\CircularProgressBar.dll
 C:\Users\benjd\Source\Repos\NeoMakesGames\Sign-It\Sign It App\Sign It App\bin\Debug\net6.0-windows\WinFormAnimation.dll
+C:\Users\48110679\Source\Repos\NeoMakesGames\Sign-It\Sign It App\Sign It App\bin\Debug\net6.0-windows\CircularProgressBar.dll
+C:\Users\48110679\Source\Repos\NeoMakesGames\Sign-It\Sign It App\Sign It App\bin\Debug\net6.0-windows\WinFormAnimation.dll
+C:\Users\48110679\Source\Repos\NeoMakesGames\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign_It_App.memotest.resources
+C:\Users\48110679\Source\Repos\NeoMakesGames\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign_It_App.race.resources
+C:\Users\48110679\Source\Repos\NeoMakesGames\Sign-It\Sign It App\Sign It App\obj\Debug\net6.0-windows\Sign_It_App.Properties.Resources.resources

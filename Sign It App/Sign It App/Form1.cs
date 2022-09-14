@@ -4,8 +4,8 @@ namespace Sign_It_App
     {
         
         //string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
-        //string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
-        string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
+        string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
+        //string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         int menuX = -210;
         public int menu = 0;
         public int pantalla;
@@ -121,16 +121,6 @@ namespace Sign_It_App
             label1CdU.Hide();
             label2Ids.Hide();
         }
-        private void label1CdU_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UserCdU_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void MenuExitButton_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -145,12 +135,6 @@ namespace Sign_It_App
         {
             this.Close();
         }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void MenuHomeButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Home;
@@ -219,7 +203,6 @@ namespace Sign_It_App
                 fullscr = false;
             }
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             race2.Show();
@@ -233,6 +216,18 @@ namespace Sign_It_App
         }
 
         private void race2_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label1CdU_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void UserCdU_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -56,6 +56,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.Diccionario = new System.Windows.Forms.TabPage();
             this.Ajustes = new System.Windows.Forms.TabPage();
+            this.XProgresBarSett = new CircularProgressBar.CircularProgressBar();
             this.FullScrButtonSett = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.UserNameSett = new System.Windows.Forms.Label();
@@ -66,7 +67,6 @@
             this.memotest1 = new Sign_It_App.memotest();
             this.race2 = new Sign_It_App.race();
             this.Lecciones_y_Ejercicios = new System.Windows.Forms.TabPage();
-            this.XProgresBarSett = new CircularProgressBar.CircularProgressBar();
             this.panel1.SuspendLayout();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
@@ -256,7 +256,7 @@
             this.signIt.Controls.Add(this.juegos);
             this.signIt.Controls.Add(this.Lecciones_y_Ejercicios);
             this.signIt.ItemSize = new System.Drawing.Size(90, 20);
-            this.signIt.Location = new System.Drawing.Point(-4, -11);
+            this.signIt.Location = new System.Drawing.Point(-5, -12);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1388, 785);
@@ -385,6 +385,38 @@
             this.Ajustes.Text = "Ajustes";
             this.Ajustes.UseVisualStyleBackColor = true;
             // 
+            // XProgresBarSett
+            // 
+            this.XProgresBarSett.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.XProgresBarSett.AnimationSpeed = 500;
+            this.XProgresBarSett.BackColor = System.Drawing.Color.Transparent;
+            this.XProgresBarSett.Font = new System.Drawing.Font("Segoe UI", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.XProgresBarSett.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.XProgresBarSett.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.XProgresBarSett.InnerMargin = 2;
+            this.XProgresBarSett.InnerWidth = -1;
+            this.XProgresBarSett.Location = new System.Drawing.Point(604, 136);
+            this.XProgresBarSett.MarqueeAnimationSpeed = 2000;
+            this.XProgresBarSett.Name = "XProgresBarSett";
+            this.XProgresBarSett.OuterColor = System.Drawing.Color.Silver;
+            this.XProgresBarSett.OuterMargin = -25;
+            this.XProgresBarSett.OuterWidth = 26;
+            this.XProgresBarSett.ProgressColor = System.Drawing.Color.Navy;
+            this.XProgresBarSett.ProgressWidth = 25;
+            this.XProgresBarSett.SecondaryFont = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.XProgresBarSett.Size = new System.Drawing.Size(226, 211);
+            this.XProgresBarSett.StartAngle = 270;
+            this.XProgresBarSett.SubscriptColor = System.Drawing.Color.Transparent;
+            this.XProgresBarSett.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.XProgresBarSett.SubscriptText = ".";
+            this.XProgresBarSett.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.XProgresBarSett.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.XProgresBarSett.SuperscriptText = "";
+            this.XProgresBarSett.TabIndex = 5;
+            this.XProgresBarSett.Text = "0";
+            this.XProgresBarSett.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.XProgresBarSett.Value = 68;
+            // 
             // FullScrButtonSett
             // 
             this.FullScrButtonSett.Location = new System.Drawing.Point(551, 353);
@@ -479,38 +511,6 @@
             this.Lecciones_y_Ejercicios.TabIndex = 7;
             this.Lecciones_y_Ejercicios.Text = "Lecciones y Ejercicios";
             this.Lecciones_y_Ejercicios.UseVisualStyleBackColor = true;
-            // 
-            // XProgresBarSett
-            // 
-            this.XProgresBarSett.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-            this.XProgresBarSett.AnimationSpeed = 500;
-            this.XProgresBarSett.BackColor = System.Drawing.Color.Transparent;
-            this.XProgresBarSett.Font = new System.Drawing.Font("Segoe UI", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.XProgresBarSett.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.XProgresBarSett.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.XProgresBarSett.InnerMargin = 2;
-            this.XProgresBarSett.InnerWidth = -1;
-            this.XProgresBarSett.Location = new System.Drawing.Point(604, 136);
-            this.XProgresBarSett.MarqueeAnimationSpeed = 2000;
-            this.XProgresBarSett.Name = "XProgresBarSett";
-            this.XProgresBarSett.OuterColor = System.Drawing.Color.Silver;
-            this.XProgresBarSett.OuterMargin = -25;
-            this.XProgresBarSett.OuterWidth = 26;
-            this.XProgresBarSett.ProgressColor = System.Drawing.Color.Navy;
-            this.XProgresBarSett.ProgressWidth = 25;
-            this.XProgresBarSett.SecondaryFont = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.XProgresBarSett.Size = new System.Drawing.Size(226, 211);
-            this.XProgresBarSett.StartAngle = 270;
-            this.XProgresBarSett.SubscriptColor = System.Drawing.Color.Transparent;
-            this.XProgresBarSett.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.XProgresBarSett.SubscriptText = ".";
-            this.XProgresBarSett.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.XProgresBarSett.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.XProgresBarSett.SuperscriptText = "";
-            this.XProgresBarSett.TabIndex = 5;
-            this.XProgresBarSett.Text = "0";
-            this.XProgresBarSett.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.XProgresBarSett.Value = 68;
             // 
             // Form1
             // 
