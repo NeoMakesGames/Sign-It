@@ -542,23 +542,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\48110679\\.nuget\\packages\\": {},
+    "C:\\Users\\47436334\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\48110679\\Source\\Repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Sign It App.csproj",
+      "projectUniqueName": "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Sign It App.csproj",
       "projectName": "Sign It App",
-      "projectPath": "C:\\Users\\48110679\\Source\\Repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Sign It App.csproj",
-      "packagesPath": "C:\\Users\\48110679\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\48110679\\Source\\Repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\obj\\",
+      "projectPath": "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Sign It App.csproj",
+      "packagesPath": "C:\\Users\\47436334\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\48110679\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\47436334\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

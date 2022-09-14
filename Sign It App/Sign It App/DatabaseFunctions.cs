@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
 
 namespace Sign_It_App
 {
@@ -135,5 +136,8 @@ namespace Sign_It_App
             MessageBox.Show("¡Usuario " + id + " eliminado!");
             //updateListBox(lb, path);
         }
+        
+        //Create an html instance (with the html 11 extension) which shows a video given from a query in the videos table in the campo1 column
+
     }
 }
