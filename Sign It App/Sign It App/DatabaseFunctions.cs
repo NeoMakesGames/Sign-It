@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using
 
 
 namespace Sign_It_App
@@ -12,8 +13,6 @@ namespace Sign_It_App
     public class DatabaseFunctions
     {
         public static int currentUser;
-        //Create a variable to store a windowsmediaplayer
-        public static 
 
         public static string getString(int id, string objID, string path)
         {
@@ -137,7 +136,5 @@ namespace Sign_It_App
             MessageBox.Show("¡Usuario " + id + " eliminado!");
             //updateListBox(lb, path);
         }
-
-
     }
 }
