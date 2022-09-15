@@ -7,7 +7,7 @@ namespace Sign_It_App
         string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         //string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         int menuX = -210;
-        public int menu = 0;
+        public bool menu = false;
         public int pantalla;
         bool fullscr = true;
         int UserXp;
@@ -39,46 +39,12 @@ namespace Sign_It_App
                     UserXp -= NextLvl;
                     NextLvl *= 2;
                 }
-                XPLVL.Text = Convert.ToString(UserLvl);
-                }
+                UserHome.Text = DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path);
+            }
                 else
                 {
-                    label2Ids.Show();
+                label2Ids.Show();
                 }
-        }
-
-        private void linkLabel1IdS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            signIt.SelectedTab = CdU;
-        }
-        private async void button1_Click_1(object sender, EventArgs e)
-        {
-            Menubutton.Enabled = false;
-            if (menu == 0)
-            {
-                panel1.BringToFront();
-                while (menuX < 0)
-                {
-                    panel1.Location = new Point(menuX, 0);
-                    menuX += 2;
-                }
-                Menubutton.BringToFront();
-                await Task.Delay(75);
-                Menubutton.Enabled = true;
-                menu = 1;
-            }
-            else if (menu == 1)
-            {
-                while (menuX > -210)
-                {
-                    panel1.Location = new Point(menuX, 0);
-                    menuX -= 2;
-                }
-                Menubutton.BringToFront();
-                await Task.Delay(75);
-                Menubutton.Enabled = true;
-                menu = 0;
-            }
         }
         private void ComenzarCdU_Click(object sender, EventArgs e)
         {
@@ -103,7 +69,39 @@ namespace Sign_It_App
                 }
             }
         }
-       
+        private void linkLabel1IdS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            signIt.SelectedTab = CdU;
+        }
+        private async void button1_Click_1(object sender, EventArgs e)
+        {
+            Menubutton.Enabled = false;
+            if (menu == false)
+            {
+                panel1.BringToFront();
+                while (menuX < 0)
+                {
+                    panel1.Location = new Point(menuX, 0);
+                    menuX += 2;
+                }
+                Menubutton.BringToFront();
+                await Task.Delay(75);
+                Menubutton.Enabled = true;
+                menu = true;
+            }
+            else if (menu == true)
+            {
+                while (menuX > -210)
+                {
+                    panel1.Location = new Point(menuX, 0);
+                    menuX -= 2;
+                }
+                Menubutton.BringToFront();
+                await Task.Delay(75);
+                Menubutton.Enabled = true;
+                menu = false;
+            }
+        }
         private void noMENU()
         {
             Menubutton.Hide();
@@ -125,12 +123,10 @@ namespace Sign_It_App
         {
             this.Close();
         }
-
         private void button1_Click_2(object sender, EventArgs e)
         {
             signIt.SelectedTab = IdS;
         }
-
         private void SalirIdS_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -140,52 +136,48 @@ namespace Sign_It_App
             signIt.SelectedTab = Home;
             pantalla = 1;
             panel1.SendToBack();
-            menu = 0;
+            menu = false;
         }
-
         private void MenuLectionsButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = LeccionesMenu;
             pantalla = 2;
             panel1.SendToBack();
-            menu = 0;
+            menu = false;
         }
-
         private void MenuDiccionarioButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Diccionario;
             pantalla = 3;
             panel1.SendToBack();
-            menu = 0;
+            menu = false;
         }
         private void DiccionarioHome_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Diccionario;
             pantalla = 3;
         }
-
         private void MenuGamesButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = juegos;
             pantalla = 4;
             panel1.SendToBack();
-            menu = 0;
+            menu = false;
         }
-
         private void MenuSettingsButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Ajustes;
             pantalla = 5;
             panel1.SendToBack();
-            menu = 0;
-            //
+            menu = false;
             UserNameSett.Text = UserNameSett.Text + " " + DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path);
             XProgresBarSett.Text = Convert.ToString(UserLvl);
             XProgresBarSett.Maximum = NextLvl;
             XProgresBarSett.Value = UserXp;
+            signIt.SelectedTab = Home;
+            signIt.SelectedTab = Ajustes;
 
         }
-
         private void FullScrButtonSett_Click(object sender, EventArgs e)
         {
             if (fullscr == false)
@@ -208,13 +200,11 @@ namespace Sign_It_App
             race2.Show();
             race2.BringToFront();
         }
-
         private void MemotestGameButton_Click(object sender, EventArgs e)
         {
             memotest1.Show();
             memotest1.BringToFront();
         }
-
         private void race2_Load(object sender, EventArgs e)
         {
 

@@ -12,8 +12,6 @@ namespace Sign_It_App
     public class DatabaseFunctions
     {
         public static int currentUser;
-        //Create a variable to store a windowsmediaplayer
-        public static 
 
         public static string getString(int id, string objID, string path)
         {

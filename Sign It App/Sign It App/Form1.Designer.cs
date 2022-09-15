@@ -49,7 +49,7 @@
             this.SalirIdS = new System.Windows.Forms.Button();
             this.CdU = new System.Windows.Forms.TabPage();
             this.Home = new System.Windows.Forms.TabPage();
-            this.XPLVL = new System.Windows.Forms.Label();
+            this.UserHome = new System.Windows.Forms.Label();
             this.DiccionarioHome = new System.Windows.Forms.Button();
             this.LeccionesHome = new System.Windows.Forms.Button();
             this.LeccionesMenu = new System.Windows.Forms.TabPage();
@@ -304,7 +304,7 @@
             // 
             // Home
             // 
-            this.Home.Controls.Add(this.XPLVL);
+            this.Home.Controls.Add(this.UserHome);
             this.Home.Controls.Add(this.DiccionarioHome);
             this.Home.Controls.Add(this.LeccionesHome);
             this.Home.Location = new System.Drawing.Point(4, 24);
@@ -315,14 +315,14 @@
             this.Home.Text = "Home";
             this.Home.UseVisualStyleBackColor = true;
             // 
-            // XPLVL
+            // UserHome
             // 
-            this.XPLVL.AutoSize = true;
-            this.XPLVL.Location = new System.Drawing.Point(934, 210);
-            this.XPLVL.Name = "XPLVL";
-            this.XPLVL.Size = new System.Drawing.Size(13, 15);
-            this.XPLVL.TabIndex = 2;
-            this.XPLVL.Text = "0";
+            this.UserHome.AutoSize = true;
+            this.UserHome.Location = new System.Drawing.Point(1032, 26);
+            this.UserHome.Name = "UserHome";
+            this.UserHome.Size = new System.Drawing.Size(38, 15);
+            this.UserHome.TabIndex = 2;
+            this.UserHome.Text = "label2";
             // 
             // DiccionarioHome
             // 
@@ -392,19 +392,19 @@
             this.XProgresBarSett.BackColor = System.Drawing.Color.Transparent;
             this.XProgresBarSett.Font = new System.Drawing.Font("Segoe UI", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.XProgresBarSett.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.XProgresBarSett.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.XProgresBarSett.InnerColor = System.Drawing.Color.Transparent;
             this.XProgresBarSett.InnerMargin = 2;
             this.XProgresBarSett.InnerWidth = -1;
-            this.XProgresBarSett.Location = new System.Drawing.Point(604, 136);
+            this.XProgresBarSett.Location = new System.Drawing.Point(604, 123);
             this.XProgresBarSett.MarqueeAnimationSpeed = 2000;
             this.XProgresBarSett.Name = "XProgresBarSett";
             this.XProgresBarSett.OuterColor = System.Drawing.Color.Silver;
             this.XProgresBarSett.OuterMargin = -25;
             this.XProgresBarSett.OuterWidth = 26;
             this.XProgresBarSett.ProgressColor = System.Drawing.Color.Navy;
-            this.XProgresBarSett.ProgressWidth = 25;
+            this.XProgresBarSett.ProgressWidth = 20;
             this.XProgresBarSett.SecondaryFont = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.XProgresBarSett.Size = new System.Drawing.Size(226, 211);
+            this.XProgresBarSett.Size = new System.Drawing.Size(220, 220);
             this.XProgresBarSett.StartAngle = 270;
             this.XProgresBarSett.SubscriptColor = System.Drawing.Color.Transparent;
             this.XProgresBarSett.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -569,7 +569,6 @@
         private TabPage juegos;
         private TabPage Ajustes;
         private Label SonidoSett;
-        private Label XPLVL;
         private Label UserNameSett;
         private Label label1;
         private Button FullScrButtonSett;
@@ -580,5 +579,6 @@
         private memotest memotest1;
         private race race2;
         private CircularProgressBar.CircularProgressBar XProgresBarSett;
+        private Label UserHome;
     }
 }

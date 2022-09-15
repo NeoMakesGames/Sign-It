@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="CircularProgressBar" Version="2.8.0.16">
-      <NoWarn>yes</NoWarn>
+      <NoWarn>no</NoWarn>
     </PackageReference>
     <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
   </ItemGroup>
