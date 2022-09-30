@@ -30,35 +30,43 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Race));
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.RaceTextBox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // axWindowsMediaPlayer1
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(275, 29);
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(121, 61);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(336, 238);
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(402, 207);
             this.axWindowsMediaPlayer1.TabIndex = 0;
-            this.axWindowsMediaPlayer1.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
             // 
-            // RaceTextBox
+            // textBox1
             // 
-            this.RaceTextBox.Location = new System.Drawing.Point(275, 301);
-            this.RaceTextBox.Name = "RaceTextBox";
-            this.RaceTextBox.Size = new System.Drawing.Size(336, 20);
-            this.RaceTextBox.TabIndex = 1;
+            this.textBox1.Location = new System.Drawing.Point(121, 288);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(399, 20);
+            this.textBox1.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(121, 224);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(403, 43);
+            this.panel1.TabIndex = 2;
             // 
             // Race
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.RaceTextBox);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Name = "Race";
-            this.Size = new System.Drawing.Size(873, 460);
+            this.Size = new System.Drawing.Size(709, 417);
             this.Load += new System.EventHandler(this.Race_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
@@ -69,6 +77,7 @@
         #endregion
 
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
-        private System.Windows.Forms.TextBox RaceTextBox;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

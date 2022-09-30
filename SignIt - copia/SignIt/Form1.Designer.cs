@@ -62,6 +62,8 @@
             this.MenuLectionsButton = new System.Windows.Forms.Button();
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.Menubutton = new System.Windows.Forms.Button();
+            this.RaceGamesButton = new System.Windows.Forms.Button();
+            this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.race1 = new SignIt.Race();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
@@ -263,6 +265,8 @@
             // 
             // juegos
             // 
+            this.juegos.Controls.Add(this.MemotestGamesButton);
+            this.juegos.Controls.Add(this.RaceGamesButton);
             this.juegos.Controls.Add(this.race1);
             this.juegos.Location = new System.Drawing.Point(4, 22);
             this.juegos.Name = "juegos";
@@ -447,12 +451,33 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
+            // RaceGamesButton
+            // 
+            this.RaceGamesButton.Location = new System.Drawing.Point(184, 203);
+            this.RaceGamesButton.Name = "RaceGamesButton";
+            this.RaceGamesButton.Size = new System.Drawing.Size(75, 23);
+            this.RaceGamesButton.TabIndex = 0;
+            this.RaceGamesButton.Text = "Race";
+            this.RaceGamesButton.UseVisualStyleBackColor = true;
+            this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
+            // 
+            // MemotestGamesButton
+            // 
+            this.MemotestGamesButton.Location = new System.Drawing.Point(439, 203);
+            this.MemotestGamesButton.Name = "MemotestGamesButton";
+            this.MemotestGamesButton.Size = new System.Drawing.Size(75, 23);
+            this.MemotestGamesButton.TabIndex = 1;
+            this.MemotestGamesButton.Text = "Memotest";
+            this.MemotestGamesButton.UseVisualStyleBackColor = true;
+            this.MemotestGamesButton.Click += new System.EventHandler(this.MemotestGamesButton_Click);
+            // 
             // race1
             // 
-            this.race1.Location = new System.Drawing.Point(0, 0);
+            this.race1.Location = new System.Drawing.Point(1, 0);
             this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(873, 460);
-            this.race1.TabIndex = 0;
+            this.race1.Size = new System.Drawing.Size(1361, 745);
+            this.race1.TabIndex = 2;
+            this.race1.Visible = false;
             // 
             // Form1
             // 
@@ -516,6 +541,8 @@
         private System.Windows.Forms.Button FullScrButtonSett;
         private System.Windows.Forms.Label label2IdS;
         private System.Windows.Forms.Label UserHome;
+        private System.Windows.Forms.Button MemotestGamesButton;
+        private System.Windows.Forms.Button RaceGamesButton;
         private Race race1;
     }
 }

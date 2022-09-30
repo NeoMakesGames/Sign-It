@@ -247,5 +247,16 @@ namespace SignIt
         {
 
         }
+
+//Juegos
+        private void RaceGamesButton_Click(object sender, EventArgs e)
+        {
+            race1.Show();
+        }
+
+        private void MemotestGamesButton_Click(object sender, EventArgs e)
+        {
+            //Memotest.Show();
+        }
     }
 }
