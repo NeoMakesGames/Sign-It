@@ -84,6 +84,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -118,6 +119,23 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Fondo triángulos prendidos %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo triángulos prendidos %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 rayitas %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 44.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

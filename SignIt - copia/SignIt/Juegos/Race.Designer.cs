@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Race));
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.RaceTextBox = new System.Windows.Forms.TextBox();
+            this.RacePoints = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,26 +44,28 @@
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(402, 207);
             this.axWindowsMediaPlayer1.TabIndex = 0;
             // 
-            // textBox1
+            // RaceTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(121, 288);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(399, 20);
-            this.textBox1.TabIndex = 1;
+            this.RaceTextBox.Location = new System.Drawing.Point(121, 288);
+            this.RaceTextBox.Name = "RaceTextBox";
+            this.RaceTextBox.Size = new System.Drawing.Size(399, 20);
+            this.RaceTextBox.TabIndex = 1;
             // 
-            // panel1
+            // RacePoints
             // 
-            this.panel1.Location = new System.Drawing.Point(121, 224);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(403, 43);
-            this.panel1.TabIndex = 2;
+            this.RacePoints.AutoSize = true;
+            this.RacePoints.Location = new System.Drawing.Point(605, 25);
+            this.RacePoints.Name = "RacePoints";
+            this.RacePoints.Size = new System.Drawing.Size(13, 13);
+            this.RacePoints.TabIndex = 2;
+            this.RacePoints.Text = "0";
             // 
             // Race
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.RacePoints);
+            this.Controls.Add(this.RaceTextBox);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Name = "Race";
             this.Size = new System.Drawing.Size(709, 417);
@@ -77,7 +79,7 @@
         #endregion
 
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox RaceTextBox;
+        private System.Windows.Forms.Label RacePoints;
     }
 }

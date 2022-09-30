@@ -16,6 +16,7 @@ namespace SignIt
         public static string path = "C:\\Users\\48110679\\source\\repos\\SignIt - copia\\SignIt\\Usuarios.accdb";
         //string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         int menuX = -210;
+        int paneltransition = -1366;
         public bool menu = false;
         public int pantalla;
         public bool fullscr = true;
@@ -31,6 +32,8 @@ namespace SignIt
         {
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
+            SnapBackToReality.FlatStyle = FlatStyle.Flat;
+            SnapBackToReality.FlatAppearance.BorderSize = 0;
             IDT();
             noMENU();
             signIt.SelectedTab = IdS;
@@ -62,6 +65,16 @@ namespace SignIt
             this.Close();
         }
 
+        private void XP()
+        {
+            while (UserXp > NextLvl)
+            {
+                UserLvl += 1;
+                UserXp -= NextLvl;
+                NextLvl *= 2;
+            }
+        }
+
 //Comienzo 
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -74,16 +87,11 @@ namespace SignIt
         {
             if (DatabaseFunctions.checkIfNameExists(UserIdS.Text, path) == true)
             {
-                signIt.SelectedTab = Home;
+                signIt.SelectedTab = Home;   
                 MENU();
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
                 UserXp = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "XP", path));
-                while (UserXp > NextLvl)
-                {
-                    UserLvl += 1;
-                    UserXp -= NextLvl;
-                    NextLvl *= 2;
-                }
+                XP();
                 UserHome.Text = DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path);
             }
             else
@@ -252,11 +260,19 @@ namespace SignIt
         private void RaceGamesButton_Click(object sender, EventArgs e)
         {
             race1.Show();
+            race1.BringToFront();
+            Race.jugandoRace = true;
+            noMENU();
         }
 
         private void MemotestGamesButton_Click(object sender, EventArgs e)
         {
             //Memotest.Show();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
