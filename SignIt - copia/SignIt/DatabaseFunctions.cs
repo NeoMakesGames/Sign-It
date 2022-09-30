@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AxWMPLib;
+using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
 using System.Linq;
@@ -133,6 +134,18 @@ namespace SignIt
             con.Close();
             MessageBox.Show("¡Usuario " + id + " eliminado!");
             //updateListBox(lb, path);
+        }
+
+        public static void playVideo(int id, AxWindowsMediaPlayer axWMP, string path)
+        {
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Signs WHERE id = " + id, con);
+            OleDbDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            string result = reader["Campo1"].ToString();
+            con.Close();
+            axWMP.newMedia(result);
         }
     }
 }
