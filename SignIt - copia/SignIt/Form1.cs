@@ -78,6 +78,7 @@ namespace SignIt
             MemotestGamesButton.FlatAppearance.BorderSize = 0;
             RaceGamesButton.FlatStyle = FlatStyle.Flat;
             RaceGamesButton.FlatAppearance.BorderSize = 0;
+
         }
             //Comienzo 
             private void Form1_Load(object sender, EventArgs e)
@@ -311,6 +312,11 @@ private void IdS_Click(object sender, EventArgs e){}
             {
 
             }
+        }
+
+        private void race2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

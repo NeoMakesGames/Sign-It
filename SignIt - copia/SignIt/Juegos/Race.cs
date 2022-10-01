@@ -30,6 +30,8 @@ namespace SignIt
             ExitRace.FlatAppearance.BorderSize = 0;
             imagenTimer.FlatStyle = FlatStyle.Flat;
             imagenTimer.FlatAppearance.BorderSize = 0;
+            RaceButtonStart.FlatStyle = FlatStyle.Flat;
+            RaceButtonStart.FlatAppearance.BorderSize = 0;
         }
         private void Race_Load(object sender, EventArgs e)
         {
@@ -42,6 +44,7 @@ namespace SignIt
 
             endRacePanel.BringToFront();
             axWindowsMediaPlayer1.settings.setMode("loop", true);
+            endRacePanel.Hide();
         }
         //
 
@@ -86,8 +89,19 @@ namespace SignIt
         private void raceEndpanel()
         {
             endRacePanel.Show();
-            finalRaceText.Text = "Bien hecho " + DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", Form1.path) + "! Continua intentado para conseguirmás puntos";
-            endRacePoints.Text = "Conseguiste " + Convert.ToString(puntos) + " puntos!";
+            if (puntos <= 3)
+            {
+                finalRaceText.Text = "Mala leche " + DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", Form1.path) + "...Habrá que seguir practicando.";
+            }
+            else if (puntos > 3 && puntos < 10)
+            {
+                finalRaceText.Text = "Bien hecho " + DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", Form1.path) + ". Continua estudiando.";
+            }
+            else if (puntos > 10)
+            {
+                finalRaceText.Text = "Muy bien " + DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", Form1.path) + "! Continua intentado para conseguir más puntos";
+            }
+            endRacePoints.Text = "Puntuación: " + Convert.ToString(puntos);
         }
         private void notraceEndpanel()
         {
@@ -180,33 +194,54 @@ namespace SignIt
                 Contador.Text = "";
                 
                 raceEndpanel();
+                TimerRace2.Stop();
+                TimerRace2.Enabled= false;
+                axWindowsMediaPlayer1.URL = "";
+                endRacePanel.BringToFront();
+                endRacePanel.Show();
             }
         }
 
         //Botones
-        private void endExitRaceButton_Click(object sender, EventArgs e)
-        {
-            exit();
-        }
-
         private void ExitRace_Click(object sender, EventArgs e)
         {
             exit();
         }
-        private void restartRaceButton_Click(object sender, EventArgs e)
+        private void endExitRaceButton_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            RaceButtonStart.Show();
+            axWindowsMediaPlayer1.URL = "";
+            Form1.externalmenu = true;
+            endRacePanel.Hide();
+            endRacePanel.SendToBack();
+        }
+
+        private void restartEndRaceButton_Click(object sender, EventArgs e)
         {
             reStart();
         }
 
-        private void finalRaceText_Click(object sender, EventArgs e)
+        //----//
+
+        private void endPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
+        private void RacePoints_Click(object sender, EventArgs e)
+        {
 
+        }
+        private void RaceTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
 
         }
+
+        //prueba de verificacion
 
     }
 }

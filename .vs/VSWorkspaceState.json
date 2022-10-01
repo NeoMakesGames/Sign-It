@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SignIt - copia"
+    "\\SignIt - copia",
+    "\\SignIt - copia\\SignIt",
+    "\\SignIt - copia\\SignIt\\Juegos"
   ],
-  "SelectedNode": "\\SignIt - copia\\SignIt.sln",
+  "SelectedNode": "\\SignIt - copia\\SignIt\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -66,8 +66,8 @@
             this.juegos = new System.Windows.Forms.TabPage();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
             this.Menubutton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
             this.signIt.SuspendLayout();
             this.Ajustes.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -87,7 +87,7 @@
             this.signIt.Controls.Add(this.juegos);
             this.signIt.Controls.Add(this.Ajustes);
             this.signIt.Controls.Add(this.Lecciones_y_Ejercicios);
-            this.signIt.Location = new System.Drawing.Point(-35, -56);
+            this.signIt.Location = new System.Drawing.Point(-6, 2);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1437, 831);
@@ -280,12 +280,14 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 500;
+            this.timer1.Interval = 250;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // IdS
             // 
+            this.IdS.BackColor = System.Drawing.Color.LightBlue;
             this.IdS.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.IdS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.IdS.Controls.Add(this.label2IdS);
             this.IdS.Controls.Add(this.SalirIdS);
             this.IdS.Controls.Add(this.ComenzarIds);
@@ -297,7 +299,6 @@
             this.IdS.Size = new System.Drawing.Size(1429, 805);
             this.IdS.TabIndex = 0;
             this.IdS.Text = "Inicio de Sesión";
-            this.IdS.UseVisualStyleBackColor = true;
             this.IdS.Click += new System.EventHandler(this.IdS_Click);
             // 
             // label2IdS
@@ -350,7 +351,9 @@
             // 
             // CdU
             // 
+            this.CdU.BackColor = System.Drawing.Color.LightBlue;
             this.CdU.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.CdU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CdU.Controls.Add(this.UserCdU);
             this.CdU.Controls.Add(this.label1CdU);
             this.CdU.Controls.Add(this.ComenzarCdU);
@@ -361,7 +364,6 @@
             this.CdU.Size = new System.Drawing.Size(1429, 805);
             this.CdU.TabIndex = 1;
             this.CdU.Text = "Creación de usuario";
-            this.CdU.UseVisualStyleBackColor = true;
             // 
             // UserCdU
             // 
@@ -391,19 +393,21 @@
             // 
             // SnapBackToReality
             // 
-            this.SnapBackToReality.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.SnapBackToReality.BackgroundImage = global::SignIt.Properties.Resources.Group_44;
+            this.SnapBackToReality.BackColor = System.Drawing.Color.Transparent;
+            this.SnapBackToReality.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
             this.SnapBackToReality.ForeColor = System.Drawing.Color.Black;
             this.SnapBackToReality.Location = new System.Drawing.Point(31, 26);
             this.SnapBackToReality.Name = "SnapBackToReality";
-            this.SnapBackToReality.Size = new System.Drawing.Size(137, 134);
+            this.SnapBackToReality.Size = new System.Drawing.Size(125, 102);
             this.SnapBackToReality.TabIndex = 0;
             this.SnapBackToReality.UseVisualStyleBackColor = false;
             this.SnapBackToReality.Click += new System.EventHandler(this.SnapBackToReality_Click);
             // 
             // Home
             // 
+            this.Home.BackColor = System.Drawing.Color.LightBlue;
             this.Home.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Home.Controls.Add(this.UserHome);
             this.Home.Controls.Add(this.LeccionesHome);
             this.Home.Controls.Add(this.DiccionarioHome);
@@ -412,7 +416,6 @@
             this.Home.Size = new System.Drawing.Size(1429, 805);
             this.Home.TabIndex = 2;
             this.Home.Text = "Home";
-            this.Home.UseVisualStyleBackColor = true;
             // 
             // UserHome
             // 
@@ -445,7 +448,9 @@
             // 
             // juegos
             // 
+            this.juegos.BackColor = System.Drawing.Color.LightBlue;
             this.juegos.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.juegos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.juegos.Controls.Add(this.MemotestGamesButton);
             this.juegos.Controls.Add(this.RaceGamesButton);
             this.juegos.Controls.Add(this.race1);
@@ -454,40 +459,29 @@
             this.juegos.Size = new System.Drawing.Size(1429, 805);
             this.juegos.TabIndex = 6;
             this.juegos.Text = "juegos";
-            this.juegos.UseVisualStyleBackColor = true;
-            this.juegos.UseWaitCursor = true;
             // 
             // MemotestGamesButton
             // 
             this.MemotestGamesButton.BackgroundImage = global::SignIt.Properties.Resources.Group_47__1_;
+            this.MemotestGamesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MemotestGamesButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MemotestGamesButton.Location = new System.Drawing.Point(780, 98);
             this.MemotestGamesButton.Name = "MemotestGamesButton";
             this.MemotestGamesButton.Size = new System.Drawing.Size(300, 350);
             this.MemotestGamesButton.TabIndex = 1;
             this.MemotestGamesButton.UseVisualStyleBackColor = true;
-            this.MemotestGamesButton.UseWaitCursor = true;
             this.MemotestGamesButton.Click += new System.EventHandler(this.MemotestGamesButton_Click);
             // 
             // RaceGamesButton
             // 
             this.RaceGamesButton.BackgroundImage = global::SignIt.Properties.Resources.Group_48;
+            this.RaceGamesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.RaceGamesButton.Location = new System.Drawing.Point(290, 98);
             this.RaceGamesButton.Name = "RaceGamesButton";
             this.RaceGamesButton.Size = new System.Drawing.Size(300, 350);
             this.RaceGamesButton.TabIndex = 0;
             this.RaceGamesButton.UseVisualStyleBackColor = true;
-            this.RaceGamesButton.UseWaitCursor = true;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
-            // 
-            // race1
-            // 
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.Location = new System.Drawing.Point(26, -17);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1361, 745);
-            this.race1.TabIndex = 2;
-            this.race1.UseWaitCursor = true;
-            this.race1.Visible = false;
             // 
             // Menubutton
             // 
@@ -498,6 +492,17 @@
             this.Menubutton.TabIndex = 3;
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
+            // 
+            // race1
+            // 
+            this.race1.BackColor = System.Drawing.Color.SteelBlue;
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(10, 3);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1430, 823);
+            this.race1.TabIndex = 2;
+            this.race1.Visible = false;
             // 
             // Form1
             // 
@@ -563,8 +568,8 @@
         private System.Windows.Forms.Label UserHome;
         private System.Windows.Forms.Button MemotestGamesButton;
         private System.Windows.Forms.Button RaceGamesButton;
-        private Race race1;
         private System.Windows.Forms.Timer timer1;
+        private Race race1;
     }
 }
 

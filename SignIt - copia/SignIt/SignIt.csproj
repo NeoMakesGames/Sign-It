@@ -175,5 +175,26 @@
   <ItemGroup>
     <None Include="Resources\Group 48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 208.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo triángulos prendidos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 55 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo triángulos prendidos %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo triángulos prendidos %281%292.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

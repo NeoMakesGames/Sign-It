@@ -103,9 +103,39 @@ namespace SignIt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fondo_triángulos_prendidos {
+            get {
+                object obj = ResourceManager.GetObject("Fondo triángulos prendidos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Fondo_triángulos_prendidos__1_ {
             get {
                 object obj = ResourceManager.GetObject("Fondo triángulos prendidos (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fondo_triángulos_prendidos__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("Fondo triángulos prendidos (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fondo_triángulos_prendidos__1_2 {
+            get {
+                object obj = ResourceManager.GetObject("Fondo triángulos prendidos (1)2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +196,46 @@ namespace SignIt.Properties {
         internal static System.Drawing.Bitmap Group_48 {
             get {
                 object obj = ResourceManager.GetObject("Group 48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_55 {
+            get {
+                object obj = ResourceManager.GetObject("Group 55", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_55__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 55 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_56 {
+            get {
+                object obj = ResourceManager.GetObject("Group 56", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_208 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle 208", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
