@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,13 +13,14 @@ namespace SignIt
 {
     public partial class Form1 : Form
     {
-        //string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
-        public static string path = "C:\\Users\\48110679\\source\\repos\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        //string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
+        //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
+        //public static string path = "C:\\Users\\48110679\\source\\repos\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
         int menuX = -210;
-        int paneltransition = -1366;
+        //int paneltransition = -1366;
         public bool menu = false;
         public int pantalla;
+        public static bool externalmenu = false;
         public bool fullscr = true;
         int UserXp;
         int UserLvl = 0;
@@ -28,16 +30,7 @@ namespace SignIt
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
-            SnapBackToReality.FlatStyle = FlatStyle.Flat;
-            SnapBackToReality.FlatAppearance.BorderSize = 0;
-            IDT();
-            noMENU();
-            signIt.SelectedTab = IdS;
-        }
+
 
         //Funciones
 
@@ -45,13 +38,14 @@ namespace SignIt
         {
             Menubutton.Hide();
             panel1.Hide();
+            panel1.Location = new Point(-210, 0);
         }
         private void MENU()
         {
+            panel1.Show();
+            panel1.BringToFront();
             Menubutton.Show();
             Menubutton.BringToFront();
-            panel1.Show();
-            panel1.SendToBack();
         }
         private void IDT()
         {
@@ -75,8 +69,17 @@ namespace SignIt
             }
         }
 
-//Comienzo 
-
+        //Comienzo 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            IDT();
+            noMENU();
+            signIt.SelectedTab = IdS;
+            buttons();
+        }
+//mover 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             
@@ -110,6 +113,13 @@ namespace SignIt
             X();
         }
 
+        private void buttons()
+        {
+            SnapBackToReality.FlatStyle = FlatStyle.Flat;
+            SnapBackToReality.FlatAppearance.BorderSize = 0;
+            Menubutton.FlatStyle = FlatStyle.Flat;
+            Menubutton.FlatAppearance.BorderSize = 0;
+        }
 //Creación de Usuario
         private void ComenzarCdU_Click(object sender, EventArgs e)
         {
@@ -159,19 +169,19 @@ namespace SignIt
 
         //Menu
 
-        private async void Menubutton_Click(object sender, EventArgs e)
+        private void Menubutton_Click(object sender, EventArgs e)
         {
             Menubutton.Enabled = false;
             if (menu == false)
             {
-                panel1.BringToFront();
                 while (menuX < 0)
                 {
+                    panel1.BringToFront();
                     panel1.Location = new Point(menuX, 0);
                     menuX += 2;
                     Menubutton.BringToFront();
                 }
-                await Task.Delay(75);
+                //await Task.Delay(50);
                 Menubutton.Enabled = true;
                 menu = true;
             }
@@ -180,11 +190,11 @@ namespace SignIt
                 while (menuX > -210)
                 {
                     panel1.Location = new Point(menuX, 0);
-                    menuX -= 2;
+                    menuX -= 10;
                     Menubutton.BringToFront();
                 }
                 Menubutton.BringToFront();
-                await Task.Delay(75);
+                //await Task.Delay(50);
                 Menubutton.Enabled = true;
                 menu = false;
             }
@@ -194,21 +204,21 @@ namespace SignIt
         {
             signIt.SelectedTab = Home;
             pantalla = 1;
-            panel1.SendToBack();
+            Menubutton_Click(sender, e);
             menu = false;
         }
         private void MenuLectionsButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = LeccionesMenu;
             pantalla = 1;
-            panel1.SendToBack();
+            Menubutton_Click(sender, e);
             menu = false;
         }
         private void MenuDiccionarioButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Diccionario;
             pantalla = 1;
-            panel1.SendToBack();
+            Menubutton_Click(sender, e);
             menu = false;
         }
 
@@ -216,14 +226,15 @@ namespace SignIt
         {
             signIt.SelectedTab = juegos;
             pantalla = 1;
-            panel1.SendToBack();
+            Menubutton_Click(sender, e);
             menu = false;
         }
         private void MenuSettingsButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Ajustes;
+            UserNameSett.Text = UserNameSett.Text + DatabaseFunctions.getString(DatabaseFunctions.currentUser,"Nombre",path);
             pantalla = 1;
-            panel1.SendToBack();
+            Menubutton_Click(sender, e);
             menu = false;
         }
 
@@ -251,17 +262,14 @@ namespace SignIt
                 fullscr = false;
             }
         }
-        private void IdS_Click(object sender, EventArgs e)
-        {
-
-        }
+//mover
+private void IdS_Click(object sender, EventArgs e){}
 
 //Juegos
         private void RaceGamesButton_Click(object sender, EventArgs e)
         {
             race1.Show();
             race1.BringToFront();
-            Race.jugandoRace = true;
             noMENU();
         }
 
@@ -273,6 +281,19 @@ namespace SignIt
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        //constantCheck
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (externalmenu == true)
+            {
+                MENU();
+                externalmenu = false;
+            }
+            else
+            {
+
+            }
         }
     }
 }
