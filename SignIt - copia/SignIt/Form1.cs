@@ -68,9 +68,19 @@ namespace SignIt
                 NextLvl *= 2;
             }
         }
-
-        //Comienzo 
-        private void Form1_Load(object sender, EventArgs e)
+        private void buttons()
+        {
+            SnapBackToReality.FlatStyle = FlatStyle.Flat;
+            SnapBackToReality.FlatAppearance.BorderSize = 0;
+            Menubutton.FlatStyle = FlatStyle.Flat;
+            Menubutton.FlatAppearance.BorderSize = 0;
+            MemotestGamesButton.FlatStyle = FlatStyle.Flat;
+            MemotestGamesButton.FlatAppearance.BorderSize = 0;
+            RaceGamesButton.FlatStyle = FlatStyle.Flat;
+            RaceGamesButton.FlatAppearance.BorderSize = 0;
+        }
+            //Comienzo 
+            private void Form1_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
@@ -79,6 +89,16 @@ namespace SignIt
             signIt.SelectedTab = IdS;
             buttons();
         }
+
+        private void transición()
+        {
+            Random rdn = new Random();
+            int transicion = rdn.Next(0, 3);
+            if (transicion == 0)
+            {
+
+            }
+        }
 //mover 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -86,7 +106,7 @@ namespace SignIt
         }
 
 //Inicio de Sesión
-        private void ComenzarIds_Click(object sender, EventArgs e)
+        private async void ComenzarIds_Click(object sender, EventArgs e)
         {
             if (DatabaseFunctions.checkIfNameExists(UserIdS.Text, path) == true)
             {
@@ -96,6 +116,7 @@ namespace SignIt
                 UserXp = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "XP", path));
                 XP();
                 UserHome.Text = DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path);
+                await Task.Delay(250);
             }
             else
             {
@@ -113,21 +134,16 @@ namespace SignIt
             X();
         }
 
-        private void buttons()
-        {
-            SnapBackToReality.FlatStyle = FlatStyle.Flat;
-            SnapBackToReality.FlatAppearance.BorderSize = 0;
-            Menubutton.FlatStyle = FlatStyle.Flat;
-            Menubutton.FlatAppearance.BorderSize = 0;
-        }
 //Creación de Usuario
-        private void ComenzarCdU_Click(object sender, EventArgs e)
+        private async void ComenzarCdU_Click(object sender, EventArgs e)
         {
             if (!DatabaseFunctions.checkIfThereAreUsers(path))
             {
                 DatabaseFunctions.addUser(UserCdU.Text, path);
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
                 signIt.SelectedTab = Home;
+                MENU();
+                await Task.Delay(250);
             }
             else if (DatabaseFunctions.checkIfThereAreUsers(path))
             {
@@ -136,6 +152,7 @@ namespace SignIt
                     DatabaseFunctions.addUser(UserCdU.Text, path);
                     DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
                     signIt.SelectedTab = Home;
+                    await Task.Delay(250);
                     MENU();
                 }
                 else
