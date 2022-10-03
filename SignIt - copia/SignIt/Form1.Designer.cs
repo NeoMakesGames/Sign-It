@@ -41,13 +41,14 @@
             this.XProgresBarSett = new CircularProgressBar.CircularProgressBar();
             this.Lecciones_y_Ejercicios = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Menubutton = new System.Windows.Forms.Button();
             this.MenuExitButton = new System.Windows.Forms.Button();
             this.MenuSettingsButton = new System.Windows.Forms.Button();
             this.MenuGamesButton = new System.Windows.Forms.Button();
             this.MenuDiccionarioButton = new System.Windows.Forms.Button();
             this.MenuLectionsButton = new System.Windows.Forms.Button();
             this.MenuHomeButton = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.IdS = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2IdS = new System.Windows.Forms.Label();
@@ -69,7 +70,6 @@
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
             this.race1 = new SignIt.Race();
-            this.Menubutton = new System.Windows.Forms.Button();
             this.signIt.SuspendLayout();
             this.Ajustes.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -81,7 +81,6 @@
             // 
             // signIt
             // 
-            this.signIt.Controls.Add(this.IdS);
             this.signIt.Controls.Add(this.CdU);
             this.signIt.Controls.Add(this.Home);
             this.signIt.Controls.Add(this.LeccionesMenu);
@@ -89,7 +88,8 @@
             this.signIt.Controls.Add(this.juegos);
             this.signIt.Controls.Add(this.Ajustes);
             this.signIt.Controls.Add(this.Lecciones_y_Ejercicios);
-            this.signIt.Location = new System.Drawing.Point(-6, 0);
+            this.signIt.Controls.Add(this.IdS);
+            this.signIt.Location = new System.Drawing.Point(-6, -23);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1437, 831);
@@ -207,83 +207,105 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panel1.Controls.Add(this.MenuExitButton);
             this.panel1.Controls.Add(this.MenuSettingsButton);
             this.panel1.Controls.Add(this.MenuGamesButton);
             this.panel1.Controls.Add(this.MenuDiccionarioButton);
             this.panel1.Controls.Add(this.MenuLectionsButton);
             this.panel1.Controls.Add(this.MenuHomeButton);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, -23);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 775);
+            this.panel1.Size = new System.Drawing.Size(326, 807);
             this.panel1.TabIndex = 2;
-            // 
-            // MenuExitButton
-            // 
-            this.MenuExitButton.Location = new System.Drawing.Point(3, 438);
-            this.MenuExitButton.Name = "MenuExitButton";
-            this.MenuExitButton.Size = new System.Drawing.Size(194, 64);
-            this.MenuExitButton.TabIndex = 5;
-            this.MenuExitButton.Text = "Salir";
-            this.MenuExitButton.UseVisualStyleBackColor = true;
-            this.MenuExitButton.Click += new System.EventHandler(this.MenuExitButton_Click);
-            // 
-            // MenuSettingsButton
-            // 
-            this.MenuSettingsButton.Location = new System.Drawing.Point(3, 368);
-            this.MenuSettingsButton.Name = "MenuSettingsButton";
-            this.MenuSettingsButton.Size = new System.Drawing.Size(194, 64);
-            this.MenuSettingsButton.TabIndex = 4;
-            this.MenuSettingsButton.Text = "Ajustes";
-            this.MenuSettingsButton.UseVisualStyleBackColor = true;
-            this.MenuSettingsButton.Click += new System.EventHandler(this.MenuSettingsButton_Click);
-            // 
-            // MenuGamesButton
-            // 
-            this.MenuGamesButton.Location = new System.Drawing.Point(3, 298);
-            this.MenuGamesButton.Name = "MenuGamesButton";
-            this.MenuGamesButton.Size = new System.Drawing.Size(194, 64);
-            this.MenuGamesButton.TabIndex = 3;
-            this.MenuGamesButton.Text = "Juegos";
-            this.MenuGamesButton.UseVisualStyleBackColor = true;
-            this.MenuGamesButton.Click += new System.EventHandler(this.MenuGamesButton_Click);
-            // 
-            // MenuDiccionarioButton
-            // 
-            this.MenuDiccionarioButton.Location = new System.Drawing.Point(3, 228);
-            this.MenuDiccionarioButton.Name = "MenuDiccionarioButton";
-            this.MenuDiccionarioButton.Size = new System.Drawing.Size(194, 64);
-            this.MenuDiccionarioButton.TabIndex = 2;
-            this.MenuDiccionarioButton.Text = "Diccionario";
-            this.MenuDiccionarioButton.UseVisualStyleBackColor = true;
-            this.MenuDiccionarioButton.Click += new System.EventHandler(this.MenuDiccionarioButton_Click);
-            // 
-            // MenuLectionsButton
-            // 
-            this.MenuLectionsButton.Location = new System.Drawing.Point(3, 158);
-            this.MenuLectionsButton.Name = "MenuLectionsButton";
-            this.MenuLectionsButton.Size = new System.Drawing.Size(194, 64);
-            this.MenuLectionsButton.TabIndex = 1;
-            this.MenuLectionsButton.Text = "Lecciones";
-            this.MenuLectionsButton.UseVisualStyleBackColor = true;
-            this.MenuLectionsButton.Click += new System.EventHandler(this.MenuLectionsButton_Click);
-            // 
-            // MenuHomeButton
-            // 
-            this.MenuHomeButton.Location = new System.Drawing.Point(3, 88);
-            this.MenuHomeButton.Name = "MenuHomeButton";
-            this.MenuHomeButton.Size = new System.Drawing.Size(194, 64);
-            this.MenuHomeButton.TabIndex = 0;
-            this.MenuHomeButton.Text = "Home";
-            this.MenuHomeButton.UseVisualStyleBackColor = true;
-            this.MenuHomeButton.Click += new System.EventHandler(this.MenuHomeButton_Click);
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 250;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Menubutton
+            // 
+            this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
+            this.Menubutton.Location = new System.Drawing.Point(0, 0);
+            this.Menubutton.Name = "Menubutton";
+            this.Menubutton.Size = new System.Drawing.Size(100, 75);
+            this.Menubutton.TabIndex = 3;
+            this.Menubutton.UseVisualStyleBackColor = true;
+            this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
+            // 
+            // MenuExitButton
+            // 
+            this.MenuExitButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuExitButton.BackgroundImage = global::SignIt.Properties.Resources.Group_55__2_;
+            this.MenuExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuExitButton.Location = new System.Drawing.Point(0, 637);
+            this.MenuExitButton.Name = "MenuExitButton";
+            this.MenuExitButton.Size = new System.Drawing.Size(326, 100);
+            this.MenuExitButton.TabIndex = 5;
+            this.MenuExitButton.UseVisualStyleBackColor = false;
+            this.MenuExitButton.Click += new System.EventHandler(this.MenuExitButton_Click);
+            // 
+            // MenuSettingsButton
+            // 
+            this.MenuSettingsButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuSettingsButton.BackgroundImage = global::SignIt.Properties.Resources.Group_53;
+            this.MenuSettingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuSettingsButton.Location = new System.Drawing.Point(0, 531);
+            this.MenuSettingsButton.Name = "MenuSettingsButton";
+            this.MenuSettingsButton.Size = new System.Drawing.Size(326, 100);
+            this.MenuSettingsButton.TabIndex = 4;
+            this.MenuSettingsButton.UseVisualStyleBackColor = false;
+            this.MenuSettingsButton.Click += new System.EventHandler(this.MenuSettingsButton_Click);
+            // 
+            // MenuGamesButton
+            // 
+            this.MenuGamesButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuGamesButton.BackgroundImage = global::SignIt.Properties.Resources.Group_52;
+            this.MenuGamesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuGamesButton.Location = new System.Drawing.Point(0, 425);
+            this.MenuGamesButton.Name = "MenuGamesButton";
+            this.MenuGamesButton.Size = new System.Drawing.Size(326, 100);
+            this.MenuGamesButton.TabIndex = 3;
+            this.MenuGamesButton.UseVisualStyleBackColor = false;
+            this.MenuGamesButton.Click += new System.EventHandler(this.MenuGamesButton_Click);
+            // 
+            // MenuDiccionarioButton
+            // 
+            this.MenuDiccionarioButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuDiccionarioButton.BackgroundImage = global::SignIt.Properties.Resources.Group_50;
+            this.MenuDiccionarioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuDiccionarioButton.Location = new System.Drawing.Point(0, 319);
+            this.MenuDiccionarioButton.Name = "MenuDiccionarioButton";
+            this.MenuDiccionarioButton.Size = new System.Drawing.Size(326, 100);
+            this.MenuDiccionarioButton.TabIndex = 2;
+            this.MenuDiccionarioButton.UseVisualStyleBackColor = false;
+            this.MenuDiccionarioButton.Click += new System.EventHandler(this.MenuDiccionarioButton_Click);
+            // 
+            // MenuLectionsButton
+            // 
+            this.MenuLectionsButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuLectionsButton.BackgroundImage = global::SignIt.Properties.Resources.Group_49;
+            this.MenuLectionsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuLectionsButton.Location = new System.Drawing.Point(0, 213);
+            this.MenuLectionsButton.Name = "MenuLectionsButton";
+            this.MenuLectionsButton.Size = new System.Drawing.Size(326, 100);
+            this.MenuLectionsButton.TabIndex = 1;
+            this.MenuLectionsButton.UseVisualStyleBackColor = false;
+            this.MenuLectionsButton.Click += new System.EventHandler(this.MenuLectionsButton_Click);
+            // 
+            // MenuHomeButton
+            // 
+            this.MenuHomeButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuHomeButton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas_botón;
+            this.MenuHomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuHomeButton.Location = new System.Drawing.Point(0, 104);
+            this.MenuHomeButton.Name = "MenuHomeButton";
+            this.MenuHomeButton.Size = new System.Drawing.Size(326, 100);
+            this.MenuHomeButton.TabIndex = 0;
+            this.MenuHomeButton.UseVisualStyleBackColor = false;
+            this.MenuHomeButton.Click += new System.EventHandler(this.MenuHomeButton_Click);
             // 
             // IdS
             // 
@@ -530,16 +552,6 @@
             this.race1.Size = new System.Drawing.Size(1430, 823);
             this.race1.TabIndex = 2;
             this.race1.Visible = false;
-            // 
-            // Menubutton
-            // 
-            this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
-            this.Menubutton.Location = new System.Drawing.Point(0, 0);
-            this.Menubutton.Name = "Menubutton";
-            this.Menubutton.Size = new System.Drawing.Size(100, 75);
-            this.Menubutton.TabIndex = 3;
-            this.Menubutton.UseVisualStyleBackColor = true;
-            this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
             // Form1
             // 

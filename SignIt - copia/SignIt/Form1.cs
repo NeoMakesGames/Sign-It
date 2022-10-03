@@ -17,7 +17,7 @@ namespace SignIt
         //public static string path = "C:\\Users\\48110679\\source\\repos\\SignIt - copia\\SignIt\\Usuarios.accdb";
         public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
         public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
-        int menuX = -210;
+        int menuX = -326;
         //int paneltransition = -1366;
         public bool menu = false;
         public int pantalla;
@@ -39,7 +39,7 @@ namespace SignIt
         {
             Menubutton.Hide();
             panel1.Hide();
-            panel1.Location = new Point(-210, 0);
+            panel1.Location = new Point(-326, 0);
         }
         private void MENU()
         {
@@ -73,6 +73,24 @@ namespace SignIt
         {
             SnapBackToReality.FlatStyle = FlatStyle.Flat;
             SnapBackToReality.FlatAppearance.BorderSize = 0;
+
+            MenuHomeButton.FlatStyle = FlatStyle.Flat;
+            MenuHomeButton.FlatAppearance.BorderSize = 0;
+
+            MenuLectionsButton.FlatStyle = FlatStyle.Flat;
+            MenuLectionsButton.FlatAppearance.BorderSize = 0;
+
+            MenuDiccionarioButton.FlatStyle = FlatStyle.Flat;
+            MenuDiccionarioButton.FlatAppearance.BorderSize = 0;
+
+            MenuGamesButton.FlatStyle = FlatStyle.Flat;
+            MenuGamesButton.FlatAppearance.BorderSize = 0;
+
+            MenuSettingsButton.FlatStyle = FlatStyle.Flat;
+            MenuSettingsButton.FlatAppearance.BorderSize = 0;
+
+            MenuExitButton.FlatStyle = FlatStyle.Flat;
+            MenuExitButton.FlatAppearance.BorderSize = 0;
 
             Menubutton.FlatStyle = FlatStyle.Flat;
             Menubutton.FlatAppearance.BorderSize = 0;
@@ -200,7 +218,7 @@ namespace SignIt
 
         //Menu
 
-        private void Menubutton_Click(object sender, EventArgs e)
+        private async void Menubutton_Click(object sender, EventArgs e)
         {
             Menubutton.Enabled = false;
             if (menu == false)
@@ -212,20 +230,20 @@ namespace SignIt
                     menuX += 2;
                     Menubutton.BringToFront();
                 }
-                //await Task.Delay(50);
+                await Task.Delay(50);
                 Menubutton.Enabled = true;
                 menu = true;
             }
             else if (menu == true)
             {
-                while (menuX > -210)
+                while (menuX > -326)
                 {
                     panel1.Location = new Point(menuX, 0);
-                    menuX -= 10;
+                    menuX -= 1;
                     Menubutton.BringToFront();
                 }
                 Menubutton.BringToFront();
-                //await Task.Delay(50);
+                await Task.Delay(50);
                 Menubutton.Enabled = true;
                 menu = false;
             }
