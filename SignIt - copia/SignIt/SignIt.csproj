@@ -196,5 +196,14 @@
   <ItemGroup>
     <None Include="Resources\Fondo triángulos prendidos %281%292.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo azul sin fondo 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botón.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ícono de salir %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

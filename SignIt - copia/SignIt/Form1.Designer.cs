@@ -49,6 +49,7 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.IdS = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label2IdS = new System.Windows.Forms.Label();
             this.SalirIdS = new System.Windows.Forms.Button();
             this.ComenzarIds = new System.Windows.Forms.Button();
@@ -66,8 +67,8 @@
             this.juegos = new System.Windows.Forms.TabPage();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
-            this.Menubutton = new System.Windows.Forms.Button();
             this.race1 = new SignIt.Race();
+            this.Menubutton = new System.Windows.Forms.Button();
             this.signIt.SuspendLayout();
             this.Ajustes.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -87,7 +88,7 @@
             this.signIt.Controls.Add(this.juegos);
             this.signIt.Controls.Add(this.Ajustes);
             this.signIt.Controls.Add(this.Lecciones_y_Ejercicios);
-            this.signIt.Location = new System.Drawing.Point(-6, 2);
+            this.signIt.Location = new System.Drawing.Point(-6, 0);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1437, 831);
@@ -288,6 +289,7 @@
             this.IdS.BackColor = System.Drawing.Color.LightBlue;
             this.IdS.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.IdS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.IdS.Controls.Add(this.panel2);
             this.IdS.Controls.Add(this.label2IdS);
             this.IdS.Controls.Add(this.SalirIdS);
             this.IdS.Controls.Add(this.ComenzarIds);
@@ -301,52 +303,70 @@
             this.IdS.Text = "Inicio de Sesión";
             this.IdS.Click += new System.EventHandler(this.IdS_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_1;
+            this.panel2.Location = new System.Drawing.Point(501, 55);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(435, 206);
+            this.panel2.TabIndex = 6;
+            // 
             // label2IdS
             // 
             this.label2IdS.AutoSize = true;
-            this.label2IdS.Location = new System.Drawing.Point(672, 336);
+            this.label2IdS.BackColor = System.Drawing.Color.Transparent;
+            this.label2IdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label2IdS.ForeColor = System.Drawing.Color.IndianRed;
+            this.label2IdS.Location = new System.Drawing.Point(601, 416);
             this.label2IdS.Name = "label2IdS";
-            this.label2IdS.Size = new System.Drawing.Size(93, 13);
+            this.label2IdS.Size = new System.Drawing.Size(235, 31);
             this.label2IdS.TabIndex = 5;
             this.label2IdS.Text = "Usuario incorrecto";
+            this.label2IdS.Click += new System.EventHandler(this.label2IdS_Click);
             // 
             // SalirIdS
             // 
-            this.SalirIdS.Location = new System.Drawing.Point(1239, 709);
+            this.SalirIdS.BackColor = System.Drawing.Color.Transparent;
+            this.SalirIdS.BackgroundImage = global::SignIt.Properties.Resources.Ícono_de_salir__1_;
+            this.SalirIdS.Location = new System.Drawing.Point(1246, 645);
             this.SalirIdS.Name = "SalirIdS";
-            this.SalirIdS.Size = new System.Drawing.Size(75, 23);
+            this.SalirIdS.Size = new System.Drawing.Size(61, 57);
             this.SalirIdS.TabIndex = 4;
-            this.SalirIdS.Text = "Salir";
-            this.SalirIdS.UseVisualStyleBackColor = true;
+            this.SalirIdS.UseVisualStyleBackColor = false;
             this.SalirIdS.Click += new System.EventHandler(this.SalirIdS_Click);
             // 
             // ComenzarIds
             // 
-            this.ComenzarIds.Location = new System.Drawing.Point(681, 370);
+            this.ComenzarIds.BackColor = System.Drawing.Color.Transparent;
+            this.ComenzarIds.BackgroundImage = global::SignIt.Properties.Resources.Botón;
+            this.ComenzarIds.Location = new System.Drawing.Point(508, 481);
             this.ComenzarIds.Name = "ComenzarIds";
-            this.ComenzarIds.Size = new System.Drawing.Size(75, 23);
+            this.ComenzarIds.Size = new System.Drawing.Size(420, 85);
             this.ComenzarIds.TabIndex = 3;
-            this.ComenzarIds.Text = "Comenzar";
-            this.ComenzarIds.UseVisualStyleBackColor = true;
+            this.ComenzarIds.UseVisualStyleBackColor = false;
             this.ComenzarIds.Click += new System.EventHandler(this.ComenzarIds_Click);
             // 
             // linkLabel1IdS
             // 
+            this.linkLabel1IdS.ActiveLinkColor = System.Drawing.Color.DeepSkyBlue;
             this.linkLabel1IdS.AutoSize = true;
-            this.linkLabel1IdS.Location = new System.Drawing.Point(630, 412);
+            this.linkLabel1IdS.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1IdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.linkLabel1IdS.Location = new System.Drawing.Point(500, 613);
             this.linkLabel1IdS.Name = "linkLabel1IdS";
-            this.linkLabel1IdS.Size = new System.Drawing.Size(176, 13);
+            this.linkLabel1IdS.Size = new System.Drawing.Size(446, 31);
             this.linkLabel1IdS.TabIndex = 1;
             this.linkLabel1IdS.TabStop = true;
-            this.linkLabel1IdS.Text = "Haz click aquí para crear un usuaio";
+            this.linkLabel1IdS.Text = "¿No tienes usuario? ¡Haz click aquí!";
             this.linkLabel1IdS.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1IdS_LinkClicked);
             // 
             // UserIdS
             // 
-            this.UserIdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.UserIdS.Location = new System.Drawing.Point(603, 273);
+            this.UserIdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
+            this.UserIdS.Location = new System.Drawing.Point(501, 297);
             this.UserIdS.Name = "UserIdS";
-            this.UserIdS.Size = new System.Drawing.Size(231, 38);
+            this.UserIdS.Size = new System.Drawing.Size(435, 83);
             this.UserIdS.TabIndex = 0;
             // 
             // CdU
@@ -483,6 +503,17 @@
             this.RaceGamesButton.UseVisualStyleBackColor = true;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
             // 
+            // race1
+            // 
+            this.race1.BackColor = System.Drawing.Color.SteelBlue;
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(2, -12);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1430, 823);
+            this.race1.TabIndex = 2;
+            this.race1.Visible = false;
+            // 
             // Menubutton
             // 
             this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
@@ -492,17 +523,6 @@
             this.Menubutton.TabIndex = 3;
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
-            // 
-            // race1
-            // 
-            this.race1.BackColor = System.Drawing.Color.SteelBlue;
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(10, 3);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1430, 823);
-            this.race1.TabIndex = 2;
-            this.race1.Visible = false;
             // 
             // Form1
             // 
@@ -570,6 +590,7 @@
         private System.Windows.Forms.Button RaceGamesButton;
         private System.Windows.Forms.Timer timer1;
         private Race race1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 

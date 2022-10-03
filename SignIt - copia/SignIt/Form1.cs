@@ -318,5 +318,10 @@ private void IdS_Click(object sender, EventArgs e){}
         {
 
         }
+
+        private void label2IdS_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -241,7 +241,5 @@ namespace SignIt
 
         }
 
-        //prueba de verificacion
-
     }
 }
