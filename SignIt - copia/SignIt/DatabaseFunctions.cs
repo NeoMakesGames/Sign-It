@@ -83,7 +83,7 @@ namespace SignIt
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
-            OleDbCommand cmd = new OleDbCommand("INSERT INTO Usuarios (Nombre, XP) VALUES ('" + name + "', " + 0 + ")", con);
+            OleDbCommand cmd = new OleDbCommand("INSERT INTO Usuarios (Nombre, XP, Avance) VALUES ('" + name + "', " + 0 + ", " + 0 + ")", con);
             cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("¡Usuario agregado! (Agregaste a " + name + ")");
@@ -111,6 +111,15 @@ namespace SignIt
             cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("¡XP agregada! (Se sumó " + amount + ")");
+        }
+
+        public static void addAvance(int id, string path)
+        {
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("UPDATE Usuarios SET Avance = Avance + " + 1 + " WHERE id = " + id, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
 
         public static int checkXP(int id, string path)
