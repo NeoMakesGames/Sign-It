@@ -16,6 +16,7 @@ namespace SignIt
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         //public static string path = "C:\\Users\\48110679\\source\\repos\\SignIt - copia\\SignIt\\Usuarios.accdb";
         public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
         int menuX = -210;
         //int paneltransition = -1366;
         public bool menu = false;
@@ -72,12 +73,24 @@ namespace SignIt
         {
             SnapBackToReality.FlatStyle = FlatStyle.Flat;
             SnapBackToReality.FlatAppearance.BorderSize = 0;
+
             Menubutton.FlatStyle = FlatStyle.Flat;
             Menubutton.FlatAppearance.BorderSize = 0;
+
             MemotestGamesButton.FlatStyle = FlatStyle.Flat;
             MemotestGamesButton.FlatAppearance.BorderSize = 0;
+
             RaceGamesButton.FlatStyle = FlatStyle.Flat;
             RaceGamesButton.FlatAppearance.BorderSize = 0;
+
+            SalirIdS.FlatStyle = FlatStyle.Flat;
+            SalirIdS.FlatAppearance.BorderSize = 0;
+
+            ComenzarIds.FlatStyle = FlatStyle.Flat;
+            ComenzarIds.FlatAppearance.BorderSize = 0;
+
+            ComenzarCdU.FlatStyle = FlatStyle.Flat;
+            ComenzarCdU.FlatAppearance.BorderSize = 0;
 
         }
             //Comienzo 

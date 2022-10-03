@@ -56,6 +56,7 @@
             this.linkLabel1IdS = new System.Windows.Forms.LinkLabel();
             this.UserIdS = new System.Windows.Forms.TextBox();
             this.CdU = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.UserCdU = new System.Windows.Forms.TextBox();
             this.label1CdU = new System.Windows.Forms.Label();
             this.ComenzarCdU = new System.Windows.Forms.Button();
@@ -307,7 +308,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_1;
-            this.panel2.Location = new System.Drawing.Point(501, 55);
+            this.panel2.Location = new System.Drawing.Point(500, 55);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(435, 206);
             this.panel2.TabIndex = 6;
@@ -331,7 +332,7 @@
             this.SalirIdS.BackgroundImage = global::SignIt.Properties.Resources.Ícono_de_salir__1_;
             this.SalirIdS.Location = new System.Drawing.Point(1246, 645);
             this.SalirIdS.Name = "SalirIdS";
-            this.SalirIdS.Size = new System.Drawing.Size(61, 57);
+            this.SalirIdS.Size = new System.Drawing.Size(64, 57);
             this.SalirIdS.TabIndex = 4;
             this.SalirIdS.UseVisualStyleBackColor = false;
             this.SalirIdS.Click += new System.EventHandler(this.SalirIdS_Click);
@@ -364,7 +365,7 @@
             // UserIdS
             // 
             this.UserIdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
-            this.UserIdS.Location = new System.Drawing.Point(501, 297);
+            this.UserIdS.Location = new System.Drawing.Point(500, 290);
             this.UserIdS.Name = "UserIdS";
             this.UserIdS.Size = new System.Drawing.Size(435, 83);
             this.UserIdS.TabIndex = 0;
@@ -374,6 +375,7 @@
             this.CdU.BackColor = System.Drawing.Color.LightBlue;
             this.CdU.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.CdU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CdU.Controls.Add(this.panel3);
             this.CdU.Controls.Add(this.UserCdU);
             this.CdU.Controls.Add(this.label1CdU);
             this.CdU.Controls.Add(this.ComenzarCdU);
@@ -385,30 +387,45 @@
             this.CdU.TabIndex = 1;
             this.CdU.Text = "Creación de usuario";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_1;
+            this.panel3.Location = new System.Drawing.Point(500, 55);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(435, 206);
+            this.panel3.TabIndex = 7;
+            // 
             // UserCdU
             // 
-            this.UserCdU.Location = new System.Drawing.Point(529, 335);
+            this.UserCdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
+            this.UserCdU.Location = new System.Drawing.Point(500, 290);
             this.UserCdU.Name = "UserCdU";
-            this.UserCdU.Size = new System.Drawing.Size(100, 20);
+            this.UserCdU.Size = new System.Drawing.Size(435, 83);
             this.UserCdU.TabIndex = 3;
             // 
             // label1CdU
             // 
             this.label1CdU.AutoSize = true;
-            this.label1CdU.Location = new System.Drawing.Point(527, 372);
+            this.label1CdU.BackColor = System.Drawing.Color.Transparent;
+            this.label1CdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1CdU.ForeColor = System.Drawing.Color.IndianRed;
+            this.label1CdU.Location = new System.Drawing.Point(587, 416);
             this.label1CdU.Name = "label1CdU";
-            this.label1CdU.Size = new System.Drawing.Size(102, 13);
+            this.label1CdU.Size = new System.Drawing.Size(260, 31);
             this.label1CdU.TabIndex = 2;
             this.label1CdU.Text = "Usuario ya existente";
             // 
             // ComenzarCdU
             // 
-            this.ComenzarCdU.Location = new System.Drawing.Point(544, 403);
+            this.ComenzarCdU.BackColor = System.Drawing.Color.Transparent;
+            this.ComenzarCdU.BackgroundImage = global::SignIt.Properties.Resources.Botón__1_;
+            this.ComenzarCdU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ComenzarCdU.Location = new System.Drawing.Point(508, 481);
             this.ComenzarCdU.Name = "ComenzarCdU";
-            this.ComenzarCdU.Size = new System.Drawing.Size(75, 23);
+            this.ComenzarCdU.Size = new System.Drawing.Size(420, 85);
             this.ComenzarCdU.TabIndex = 1;
-            this.ComenzarCdU.Text = "Crear";
-            this.ComenzarCdU.UseVisualStyleBackColor = true;
+            this.ComenzarCdU.UseVisualStyleBackColor = false;
             this.ComenzarCdU.Click += new System.EventHandler(this.ComenzarCdU_Click);
             // 
             // SnapBackToReality
@@ -591,6 +608,7 @@
         private System.Windows.Forms.Timer timer1;
         private Race race1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

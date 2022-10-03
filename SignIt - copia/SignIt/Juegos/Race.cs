@@ -55,10 +55,8 @@ namespace SignIt
             int id = rdn.Next(0, 2);
 
             OpenFileDialog opf = new OpenFileDialog();
-           //axWindowsMediaPlayer1.URL = DatabaseFunctions.getString(id, "Signs", Form1.path)+".wmv";
-            //DatabaseFunctions.playVideo(id, axWindowsMediaPlayer1, Form1.path);
-
-            axWindowsMediaPlayer1.URL = "C:\\Users\\benjd\\Videos\\6vbqj6.wmv";
+            //axWindowsMediaPlayer1.URL = Form1.videosPath + DatabaseFunctions.GetURL(id, Form1.path)+".wmv";
+            axWindowsMediaPlayer1.URL = Form1.videosPath + "\\17.wmv";
             axWindowsMediaPlayer1.Ctlcontrols.play();
         }
         private void reStart()
