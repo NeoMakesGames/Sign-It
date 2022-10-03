@@ -154,7 +154,8 @@ namespace SignIt
             reader.Read();
             string result = reader["Campo1"].ToString();
             con.Close();
-            axWMP.newMedia(result);
+            axWMP.URL = result;
+            axWMP.Ctlcontrols.play();
         }
     }
 }
