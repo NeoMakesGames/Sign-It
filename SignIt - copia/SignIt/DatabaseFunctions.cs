@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.XPath;
 
 namespace SignIt
 {
@@ -145,7 +146,7 @@ namespace SignIt
             //updateListBox(lb, path);
         }
 
-        public static void playVideo(int id, AxWindowsMediaPlayer axWMP, string path)
+        public static string GetURL(int id, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
@@ -154,8 +155,7 @@ namespace SignIt
             reader.Read();
             string result = reader["Campo1"].ToString();
             con.Close();
-            axWMP.URL = result;
-            axWMP.Ctlcontrols.play();
+            return result;
         }
     }
 }
