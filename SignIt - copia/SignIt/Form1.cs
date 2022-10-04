@@ -110,6 +110,12 @@ namespace SignIt
             ComenzarCdU.FlatStyle = FlatStyle.Flat;
             ComenzarCdU.FlatAppearance.BorderSize = 0;
 
+            LeccionesHome.FlatStyle = FlatStyle.Flat;
+            LeccionesHome.FlatAppearance.BorderSize = 0;
+
+            DiccionarioHome.FlatStyle = FlatStyle.Flat;
+            DiccionarioHome.FlatAppearance.BorderSize = 0;
+
         }
         //Comienzo 
         private void Form1_Load(object sender, EventArgs e)
