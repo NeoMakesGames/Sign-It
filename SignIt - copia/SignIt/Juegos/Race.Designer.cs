@@ -163,6 +163,7 @@
             // 
             this.restartEndRaceButton.BackColor = System.Drawing.Color.Transparent;
             this.restartEndRaceButton.BackgroundImage = global::SignIt.Properties.Resources.restar_150x150;
+            this.restartEndRaceButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.restartEndRaceButton.Location = new System.Drawing.Point(612, 464);
             this.restartEndRaceButton.Name = "restartEndRaceButton";
             this.restartEndRaceButton.Size = new System.Drawing.Size(150, 151);
@@ -174,6 +175,7 @@
             // 
             this.endExitRaceButton.BackColor = System.Drawing.Color.Transparent;
             this.endExitRaceButton.BackgroundImage = global::SignIt.Properties.Resources.Flecha1;
+            this.endExitRaceButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.endExitRaceButton.Location = new System.Drawing.Point(69, 57);
             this.endExitRaceButton.Name = "endExitRaceButton";
             this.endExitRaceButton.Size = new System.Drawing.Size(108, 82);
