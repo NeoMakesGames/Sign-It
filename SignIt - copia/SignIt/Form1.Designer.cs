@@ -31,8 +31,29 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.signIt = new System.Windows.Forms.TabControl();
+            this.IdS = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2IdS = new System.Windows.Forms.Label();
+            this.SalirIdS = new System.Windows.Forms.Button();
+            this.ComenzarIds = new System.Windows.Forms.Button();
+            this.linkLabel1IdS = new System.Windows.Forms.LinkLabel();
+            this.UserIdS = new System.Windows.Forms.TextBox();
+            this.CdU = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.UserCdU = new System.Windows.Forms.TextBox();
+            this.label1CdU = new System.Windows.Forms.Label();
+            this.ComenzarCdU = new System.Windows.Forms.Button();
+            this.SnapBackToReality = new System.Windows.Forms.Button();
+            this.Home = new System.Windows.Forms.TabPage();
+            this.UserHome = new System.Windows.Forms.Label();
+            this.LeccionesHome = new System.Windows.Forms.Button();
+            this.DiccionarioHome = new System.Windows.Forms.Button();
             this.LeccionesMenu = new System.Windows.Forms.TabPage();
             this.Diccionario = new System.Windows.Forms.TabPage();
+            this.juegos = new System.Windows.Forms.TabPage();
+            this.MemotestGamesButton = new System.Windows.Forms.Button();
+            this.RaceGamesButton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.FullScrButtonSett = new System.Windows.Forms.Button();
             this.PantallaSett = new System.Windows.Forms.Label();
@@ -48,34 +69,14 @@
             this.MenuLectionsButton = new System.Windows.Forms.Button();
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.IdS = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2IdS = new System.Windows.Forms.Label();
-            this.SalirIdS = new System.Windows.Forms.Button();
-            this.ComenzarIds = new System.Windows.Forms.Button();
-            this.linkLabel1IdS = new System.Windows.Forms.LinkLabel();
-            this.UserIdS = new System.Windows.Forms.TextBox();
-            this.CdU = new System.Windows.Forms.TabPage();
-            this.UserCdU = new System.Windows.Forms.TextBox();
-            this.label1CdU = new System.Windows.Forms.Label();
-            this.ComenzarCdU = new System.Windows.Forms.Button();
-            this.SnapBackToReality = new System.Windows.Forms.Button();
-            this.Home = new System.Windows.Forms.TabPage();
-            this.UserHome = new System.Windows.Forms.Label();
-            this.LeccionesHome = new System.Windows.Forms.Button();
-            this.DiccionarioHome = new System.Windows.Forms.Button();
-            this.juegos = new System.Windows.Forms.TabPage();
-            this.MemotestGamesButton = new System.Windows.Forms.Button();
-            this.RaceGamesButton = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
             this.Menubutton = new System.Windows.Forms.Button();
             this.signIt.SuspendLayout();
-            this.Ajustes.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
             this.Home.SuspendLayout();
             this.juegos.SuspendLayout();
+            this.Ajustes.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // signIt
@@ -88,29 +89,285 @@
             this.signIt.Controls.Add(this.juegos);
             this.signIt.Controls.Add(this.Ajustes);
             this.signIt.Controls.Add(this.Lecciones_y_Ejercicios);
-            this.signIt.Location = new System.Drawing.Point(-6, 0);
+            this.signIt.Location = new System.Drawing.Point(-5, -22);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1437, 831);
             this.signIt.TabIndex = 0;
             // 
+            // IdS
+            // 
+            this.IdS.BackColor = System.Drawing.Color.LightBlue;
+            this.IdS.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.IdS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.IdS.Controls.Add(this.panel2);
+            this.IdS.Controls.Add(this.label2IdS);
+            this.IdS.Controls.Add(this.SalirIdS);
+            this.IdS.Controls.Add(this.ComenzarIds);
+            this.IdS.Controls.Add(this.linkLabel1IdS);
+            this.IdS.Controls.Add(this.UserIdS);
+            this.IdS.Location = new System.Drawing.Point(4, 22);
+            this.IdS.Name = "IdS";
+            this.IdS.Padding = new System.Windows.Forms.Padding(3);
+            this.IdS.Size = new System.Drawing.Size(1429, 805);
+            this.IdS.TabIndex = 0;
+            this.IdS.Text = "Inicio de Sesión";
+            this.IdS.Click += new System.EventHandler(this.IdS_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_1;
+            this.panel2.Location = new System.Drawing.Point(500, 55);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(435, 206);
+            this.panel2.TabIndex = 6;
+            // 
+            // label2IdS
+            // 
+            this.label2IdS.AutoSize = true;
+            this.label2IdS.BackColor = System.Drawing.Color.Transparent;
+            this.label2IdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label2IdS.ForeColor = System.Drawing.Color.IndianRed;
+            this.label2IdS.Location = new System.Drawing.Point(601, 416);
+            this.label2IdS.Name = "label2IdS";
+            this.label2IdS.Size = new System.Drawing.Size(235, 31);
+            this.label2IdS.TabIndex = 5;
+            this.label2IdS.Text = "Usuario incorrecto";
+            this.label2IdS.Click += new System.EventHandler(this.label2IdS_Click);
+            // 
+            // SalirIdS
+            // 
+            this.SalirIdS.BackColor = System.Drawing.Color.Transparent;
+            this.SalirIdS.BackgroundImage = global::SignIt.Properties.Resources.Ícono_de_salir__1_;
+            this.SalirIdS.Location = new System.Drawing.Point(1246, 645);
+            this.SalirIdS.Name = "SalirIdS";
+            this.SalirIdS.Size = new System.Drawing.Size(64, 57);
+            this.SalirIdS.TabIndex = 4;
+            this.SalirIdS.UseVisualStyleBackColor = false;
+            this.SalirIdS.Click += new System.EventHandler(this.SalirIdS_Click);
+            // 
+            // ComenzarIds
+            // 
+            this.ComenzarIds.BackColor = System.Drawing.Color.Transparent;
+            this.ComenzarIds.BackgroundImage = global::SignIt.Properties.Resources.Botón;
+            this.ComenzarIds.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ComenzarIds.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ComenzarIds.Location = new System.Drawing.Point(508, 481);
+            this.ComenzarIds.Name = "ComenzarIds";
+            this.ComenzarIds.Size = new System.Drawing.Size(420, 85);
+            this.ComenzarIds.TabIndex = 3;
+            this.ComenzarIds.UseVisualStyleBackColor = false;
+            this.ComenzarIds.Click += new System.EventHandler(this.ComenzarIds_Click);
+            // 
+            // linkLabel1IdS
+            // 
+            this.linkLabel1IdS.ActiveLinkColor = System.Drawing.Color.DeepSkyBlue;
+            this.linkLabel1IdS.AutoSize = true;
+            this.linkLabel1IdS.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1IdS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel1IdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.linkLabel1IdS.Location = new System.Drawing.Point(500, 613);
+            this.linkLabel1IdS.Name = "linkLabel1IdS";
+            this.linkLabel1IdS.Size = new System.Drawing.Size(446, 31);
+            this.linkLabel1IdS.TabIndex = 1;
+            this.linkLabel1IdS.TabStop = true;
+            this.linkLabel1IdS.Text = "¿No tienes usuario? ¡Haz click aquí!";
+            this.linkLabel1IdS.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1IdS_LinkClicked);
+            // 
+            // UserIdS
+            // 
+            this.UserIdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
+            this.UserIdS.Location = new System.Drawing.Point(500, 290);
+            this.UserIdS.Name = "UserIdS";
+            this.UserIdS.Size = new System.Drawing.Size(435, 83);
+            this.UserIdS.TabIndex = 0;
+            // 
+            // CdU
+            // 
+            this.CdU.BackColor = System.Drawing.Color.LightBlue;
+            this.CdU.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.CdU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CdU.Controls.Add(this.panel3);
+            this.CdU.Controls.Add(this.UserCdU);
+            this.CdU.Controls.Add(this.label1CdU);
+            this.CdU.Controls.Add(this.ComenzarCdU);
+            this.CdU.Controls.Add(this.SnapBackToReality);
+            this.CdU.Location = new System.Drawing.Point(4, 22);
+            this.CdU.Name = "CdU";
+            this.CdU.Padding = new System.Windows.Forms.Padding(3);
+            this.CdU.Size = new System.Drawing.Size(1429, 805);
+            this.CdU.TabIndex = 1;
+            this.CdU.Text = "Creación de usuario";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_1;
+            this.panel3.Location = new System.Drawing.Point(500, 55);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(435, 206);
+            this.panel3.TabIndex = 7;
+            // 
+            // UserCdU
+            // 
+            this.UserCdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
+            this.UserCdU.Location = new System.Drawing.Point(500, 290);
+            this.UserCdU.Name = "UserCdU";
+            this.UserCdU.Size = new System.Drawing.Size(435, 83);
+            this.UserCdU.TabIndex = 3;
+            // 
+            // label1CdU
+            // 
+            this.label1CdU.AutoSize = true;
+            this.label1CdU.BackColor = System.Drawing.Color.Transparent;
+            this.label1CdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1CdU.ForeColor = System.Drawing.Color.IndianRed;
+            this.label1CdU.Location = new System.Drawing.Point(587, 416);
+            this.label1CdU.Name = "label1CdU";
+            this.label1CdU.Size = new System.Drawing.Size(260, 31);
+            this.label1CdU.TabIndex = 2;
+            this.label1CdU.Text = "Usuario ya existente";
+            // 
+            // ComenzarCdU
+            // 
+            this.ComenzarCdU.BackColor = System.Drawing.Color.Transparent;
+            this.ComenzarCdU.BackgroundImage = global::SignIt.Properties.Resources.Botón__1_;
+            this.ComenzarCdU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ComenzarCdU.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ComenzarCdU.Location = new System.Drawing.Point(508, 481);
+            this.ComenzarCdU.Name = "ComenzarCdU";
+            this.ComenzarCdU.Size = new System.Drawing.Size(420, 85);
+            this.ComenzarCdU.TabIndex = 1;
+            this.ComenzarCdU.UseVisualStyleBackColor = false;
+            this.ComenzarCdU.Click += new System.EventHandler(this.ComenzarCdU_Click);
+            // 
+            // SnapBackToReality
+            // 
+            this.SnapBackToReality.BackColor = System.Drawing.Color.Transparent;
+            this.SnapBackToReality.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
+            this.SnapBackToReality.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SnapBackToReality.ForeColor = System.Drawing.Color.Black;
+            this.SnapBackToReality.Location = new System.Drawing.Point(31, 26);
+            this.SnapBackToReality.Name = "SnapBackToReality";
+            this.SnapBackToReality.Size = new System.Drawing.Size(125, 102);
+            this.SnapBackToReality.TabIndex = 0;
+            this.SnapBackToReality.UseVisualStyleBackColor = false;
+            this.SnapBackToReality.Click += new System.EventHandler(this.SnapBackToReality_Click);
+            // 
+            // Home
+            // 
+            this.Home.BackColor = System.Drawing.Color.LightBlue;
+            this.Home.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Home.Controls.Add(this.UserHome);
+            this.Home.Controls.Add(this.LeccionesHome);
+            this.Home.Controls.Add(this.DiccionarioHome);
+            this.Home.Location = new System.Drawing.Point(4, 22);
+            this.Home.Name = "Home";
+            this.Home.Size = new System.Drawing.Size(1429, 805);
+            this.Home.TabIndex = 2;
+            this.Home.Text = "Home";
+            // 
+            // UserHome
+            // 
+            this.UserHome.AutoSize = true;
+            this.UserHome.Location = new System.Drawing.Point(1241, 11);
+            this.UserHome.Name = "UserHome";
+            this.UserHome.Size = new System.Drawing.Size(43, 13);
+            this.UserHome.TabIndex = 2;
+            this.UserHome.Text = "Usuario";
+            // 
+            // LeccionesHome
+            // 
+            this.LeccionesHome.Location = new System.Drawing.Point(526, 345);
+            this.LeccionesHome.Name = "LeccionesHome";
+            this.LeccionesHome.Size = new System.Drawing.Size(128, 60);
+            this.LeccionesHome.TabIndex = 1;
+            this.LeccionesHome.Text = "Continua con tus lecciones";
+            this.LeccionesHome.UseVisualStyleBackColor = true;
+            this.LeccionesHome.Click += new System.EventHandler(this.LeccionesHome_Click);
+            // 
+            // DiccionarioHome
+            // 
+            this.DiccionarioHome.Location = new System.Drawing.Point(526, 188);
+            this.DiccionarioHome.Name = "DiccionarioHome";
+            this.DiccionarioHome.Size = new System.Drawing.Size(139, 61);
+            this.DiccionarioHome.TabIndex = 0;
+            this.DiccionarioHome.Text = "Explora el diccionario";
+            this.DiccionarioHome.UseVisualStyleBackColor = true;
+            this.DiccionarioHome.Click += new System.EventHandler(this.DiccionarioHome_Click);
+            // 
             // LeccionesMenu
             // 
+            this.LeccionesMenu.BackColor = System.Drawing.Color.LightBlue;
+            this.LeccionesMenu.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.LeccionesMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.LeccionesMenu.Location = new System.Drawing.Point(4, 22);
             this.LeccionesMenu.Name = "LeccionesMenu";
             this.LeccionesMenu.Size = new System.Drawing.Size(1429, 805);
             this.LeccionesMenu.TabIndex = 3;
             this.LeccionesMenu.Text = "LeccionesMenu";
-            this.LeccionesMenu.UseVisualStyleBackColor = true;
             // 
             // Diccionario
             // 
+            this.Diccionario.BackColor = System.Drawing.Color.LightBlue;
+            this.Diccionario.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Diccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Diccionario.Location = new System.Drawing.Point(4, 22);
             this.Diccionario.Name = "Diccionario";
             this.Diccionario.Size = new System.Drawing.Size(1429, 805);
             this.Diccionario.TabIndex = 4;
             this.Diccionario.Text = "Diccioinario";
-            this.Diccionario.UseVisualStyleBackColor = true;
+            // 
+            // juegos
+            // 
+            this.juegos.BackColor = System.Drawing.Color.LightBlue;
+            this.juegos.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.juegos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.juegos.Controls.Add(this.MemotestGamesButton);
+            this.juegos.Controls.Add(this.RaceGamesButton);
+            this.juegos.Controls.Add(this.race1);
+            this.juegos.Location = new System.Drawing.Point(4, 22);
+            this.juegos.Name = "juegos";
+            this.juegos.Size = new System.Drawing.Size(1429, 805);
+            this.juegos.TabIndex = 6;
+            this.juegos.Text = "juegos";
+            // 
+            // MemotestGamesButton
+            // 
+            this.MemotestGamesButton.BackgroundImage = global::SignIt.Properties.Resources.Group_47__1_;
+            this.MemotestGamesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MemotestGamesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MemotestGamesButton.Location = new System.Drawing.Point(780, 98);
+            this.MemotestGamesButton.Name = "MemotestGamesButton";
+            this.MemotestGamesButton.Size = new System.Drawing.Size(300, 350);
+            this.MemotestGamesButton.TabIndex = 1;
+            this.MemotestGamesButton.UseVisualStyleBackColor = true;
+            this.MemotestGamesButton.Click += new System.EventHandler(this.MemotestGamesButton_Click);
+            // 
+            // RaceGamesButton
+            // 
+            this.RaceGamesButton.BackgroundImage = global::SignIt.Properties.Resources.Group_48;
+            this.RaceGamesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.RaceGamesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RaceGamesButton.Location = new System.Drawing.Point(290, 98);
+            this.RaceGamesButton.Name = "RaceGamesButton";
+            this.RaceGamesButton.Size = new System.Drawing.Size(300, 350);
+            this.RaceGamesButton.TabIndex = 0;
+            this.RaceGamesButton.UseVisualStyleBackColor = true;
+            this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
+            // 
+            // race1
+            // 
+            this.race1.BackColor = System.Drawing.Color.SteelBlue;
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(2, -12);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1430, 823);
+            this.race1.TabIndex = 2;
+            this.race1.Visible = false;
             // 
             // Ajustes
             // 
@@ -206,76 +463,88 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panel1.Controls.Add(this.MenuExitButton);
             this.panel1.Controls.Add(this.MenuSettingsButton);
             this.panel1.Controls.Add(this.MenuGamesButton);
             this.panel1.Controls.Add(this.MenuDiccionarioButton);
             this.panel1.Controls.Add(this.MenuLectionsButton);
             this.panel1.Controls.Add(this.MenuHomeButton);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, -23);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 775);
+            this.panel1.Size = new System.Drawing.Size(332, 807);
             this.panel1.TabIndex = 2;
             // 
             // MenuExitButton
             // 
-            this.MenuExitButton.Location = new System.Drawing.Point(3, 438);
+            this.MenuExitButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuExitButton.BackgroundImage = global::SignIt.Properties.Resources.Group_55__2_;
+            this.MenuExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuExitButton.Location = new System.Drawing.Point(3, 637);
             this.MenuExitButton.Name = "MenuExitButton";
-            this.MenuExitButton.Size = new System.Drawing.Size(194, 64);
+            this.MenuExitButton.Size = new System.Drawing.Size(326, 100);
             this.MenuExitButton.TabIndex = 5;
-            this.MenuExitButton.Text = "Salir";
-            this.MenuExitButton.UseVisualStyleBackColor = true;
+            this.MenuExitButton.UseVisualStyleBackColor = false;
             this.MenuExitButton.Click += new System.EventHandler(this.MenuExitButton_Click);
             // 
             // MenuSettingsButton
             // 
-            this.MenuSettingsButton.Location = new System.Drawing.Point(3, 368);
+            this.MenuSettingsButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuSettingsButton.BackgroundImage = global::SignIt.Properties.Resources.Group_53;
+            this.MenuSettingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuSettingsButton.Location = new System.Drawing.Point(3, 531);
             this.MenuSettingsButton.Name = "MenuSettingsButton";
-            this.MenuSettingsButton.Size = new System.Drawing.Size(194, 64);
+            this.MenuSettingsButton.Size = new System.Drawing.Size(326, 100);
             this.MenuSettingsButton.TabIndex = 4;
-            this.MenuSettingsButton.Text = "Ajustes";
-            this.MenuSettingsButton.UseVisualStyleBackColor = true;
+            this.MenuSettingsButton.UseVisualStyleBackColor = false;
             this.MenuSettingsButton.Click += new System.EventHandler(this.MenuSettingsButton_Click);
             // 
             // MenuGamesButton
             // 
-            this.MenuGamesButton.Location = new System.Drawing.Point(3, 298);
+            this.MenuGamesButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuGamesButton.BackgroundImage = global::SignIt.Properties.Resources.Group_52;
+            this.MenuGamesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuGamesButton.Location = new System.Drawing.Point(3, 425);
             this.MenuGamesButton.Name = "MenuGamesButton";
-            this.MenuGamesButton.Size = new System.Drawing.Size(194, 64);
+            this.MenuGamesButton.Size = new System.Drawing.Size(326, 100);
             this.MenuGamesButton.TabIndex = 3;
-            this.MenuGamesButton.Text = "Juegos";
-            this.MenuGamesButton.UseVisualStyleBackColor = true;
+            this.MenuGamesButton.UseVisualStyleBackColor = false;
             this.MenuGamesButton.Click += new System.EventHandler(this.MenuGamesButton_Click);
             // 
             // MenuDiccionarioButton
             // 
-            this.MenuDiccionarioButton.Location = new System.Drawing.Point(3, 228);
+            this.MenuDiccionarioButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuDiccionarioButton.BackgroundImage = global::SignIt.Properties.Resources.Group_50;
+            this.MenuDiccionarioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuDiccionarioButton.Location = new System.Drawing.Point(3, 319);
             this.MenuDiccionarioButton.Name = "MenuDiccionarioButton";
-            this.MenuDiccionarioButton.Size = new System.Drawing.Size(194, 64);
+            this.MenuDiccionarioButton.Size = new System.Drawing.Size(326, 100);
             this.MenuDiccionarioButton.TabIndex = 2;
-            this.MenuDiccionarioButton.Text = "Diccionario";
-            this.MenuDiccionarioButton.UseVisualStyleBackColor = true;
+            this.MenuDiccionarioButton.UseVisualStyleBackColor = false;
             this.MenuDiccionarioButton.Click += new System.EventHandler(this.MenuDiccionarioButton_Click);
             // 
             // MenuLectionsButton
             // 
-            this.MenuLectionsButton.Location = new System.Drawing.Point(3, 158);
+            this.MenuLectionsButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuLectionsButton.BackgroundImage = global::SignIt.Properties.Resources.Group_49;
+            this.MenuLectionsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuLectionsButton.Location = new System.Drawing.Point(3, 213);
             this.MenuLectionsButton.Name = "MenuLectionsButton";
-            this.MenuLectionsButton.Size = new System.Drawing.Size(194, 64);
+            this.MenuLectionsButton.Size = new System.Drawing.Size(326, 100);
             this.MenuLectionsButton.TabIndex = 1;
-            this.MenuLectionsButton.Text = "Lecciones";
-            this.MenuLectionsButton.UseVisualStyleBackColor = true;
+            this.MenuLectionsButton.UseVisualStyleBackColor = false;
             this.MenuLectionsButton.Click += new System.EventHandler(this.MenuLectionsButton_Click);
             // 
             // MenuHomeButton
             // 
-            this.MenuHomeButton.Location = new System.Drawing.Point(3, 88);
+            this.MenuHomeButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuHomeButton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas_botón;
+            this.MenuHomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuHomeButton.Location = new System.Drawing.Point(3, 104);
             this.MenuHomeButton.Name = "MenuHomeButton";
-            this.MenuHomeButton.Size = new System.Drawing.Size(194, 64);
+            this.MenuHomeButton.Size = new System.Drawing.Size(326, 100);
             this.MenuHomeButton.TabIndex = 0;
-            this.MenuHomeButton.Text = "Home";
-            this.MenuHomeButton.UseVisualStyleBackColor = true;
+            this.MenuHomeButton.UseVisualStyleBackColor = false;
             this.MenuHomeButton.Click += new System.EventHandler(this.MenuHomeButton_Click);
             // 
             // timer1
@@ -283,236 +552,6 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 250;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // IdS
-            // 
-            this.IdS.BackColor = System.Drawing.Color.LightBlue;
-            this.IdS.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
-            this.IdS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.IdS.Controls.Add(this.panel2);
-            this.IdS.Controls.Add(this.label2IdS);
-            this.IdS.Controls.Add(this.SalirIdS);
-            this.IdS.Controls.Add(this.ComenzarIds);
-            this.IdS.Controls.Add(this.linkLabel1IdS);
-            this.IdS.Controls.Add(this.UserIdS);
-            this.IdS.Location = new System.Drawing.Point(4, 22);
-            this.IdS.Name = "IdS";
-            this.IdS.Padding = new System.Windows.Forms.Padding(3);
-            this.IdS.Size = new System.Drawing.Size(1429, 805);
-            this.IdS.TabIndex = 0;
-            this.IdS.Text = "Inicio de Sesión";
-            this.IdS.Click += new System.EventHandler(this.IdS_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_1;
-            this.panel2.Location = new System.Drawing.Point(501, 55);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(435, 206);
-            this.panel2.TabIndex = 6;
-            // 
-            // label2IdS
-            // 
-            this.label2IdS.AutoSize = true;
-            this.label2IdS.BackColor = System.Drawing.Color.Transparent;
-            this.label2IdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label2IdS.ForeColor = System.Drawing.Color.IndianRed;
-            this.label2IdS.Location = new System.Drawing.Point(601, 416);
-            this.label2IdS.Name = "label2IdS";
-            this.label2IdS.Size = new System.Drawing.Size(235, 31);
-            this.label2IdS.TabIndex = 5;
-            this.label2IdS.Text = "Usuario incorrecto";
-            this.label2IdS.Click += new System.EventHandler(this.label2IdS_Click);
-            // 
-            // SalirIdS
-            // 
-            this.SalirIdS.BackColor = System.Drawing.Color.Transparent;
-            this.SalirIdS.BackgroundImage = global::SignIt.Properties.Resources.Ícono_de_salir__1_;
-            this.SalirIdS.Location = new System.Drawing.Point(1246, 645);
-            this.SalirIdS.Name = "SalirIdS";
-            this.SalirIdS.Size = new System.Drawing.Size(61, 57);
-            this.SalirIdS.TabIndex = 4;
-            this.SalirIdS.UseVisualStyleBackColor = false;
-            this.SalirIdS.Click += new System.EventHandler(this.SalirIdS_Click);
-            // 
-            // ComenzarIds
-            // 
-            this.ComenzarIds.BackColor = System.Drawing.Color.Transparent;
-            this.ComenzarIds.BackgroundImage = global::SignIt.Properties.Resources.Botón;
-            this.ComenzarIds.Location = new System.Drawing.Point(508, 481);
-            this.ComenzarIds.Name = "ComenzarIds";
-            this.ComenzarIds.Size = new System.Drawing.Size(420, 85);
-            this.ComenzarIds.TabIndex = 3;
-            this.ComenzarIds.UseVisualStyleBackColor = false;
-            this.ComenzarIds.Click += new System.EventHandler(this.ComenzarIds_Click);
-            // 
-            // linkLabel1IdS
-            // 
-            this.linkLabel1IdS.ActiveLinkColor = System.Drawing.Color.DeepSkyBlue;
-            this.linkLabel1IdS.AutoSize = true;
-            this.linkLabel1IdS.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1IdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.linkLabel1IdS.Location = new System.Drawing.Point(500, 613);
-            this.linkLabel1IdS.Name = "linkLabel1IdS";
-            this.linkLabel1IdS.Size = new System.Drawing.Size(446, 31);
-            this.linkLabel1IdS.TabIndex = 1;
-            this.linkLabel1IdS.TabStop = true;
-            this.linkLabel1IdS.Text = "¿No tienes usuario? ¡Haz click aquí!";
-            this.linkLabel1IdS.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1IdS_LinkClicked);
-            // 
-            // UserIdS
-            // 
-            this.UserIdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
-            this.UserIdS.Location = new System.Drawing.Point(501, 297);
-            this.UserIdS.Name = "UserIdS";
-            this.UserIdS.Size = new System.Drawing.Size(435, 83);
-            this.UserIdS.TabIndex = 0;
-            // 
-            // CdU
-            // 
-            this.CdU.BackColor = System.Drawing.Color.LightBlue;
-            this.CdU.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
-            this.CdU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.CdU.Controls.Add(this.UserCdU);
-            this.CdU.Controls.Add(this.label1CdU);
-            this.CdU.Controls.Add(this.ComenzarCdU);
-            this.CdU.Controls.Add(this.SnapBackToReality);
-            this.CdU.Location = new System.Drawing.Point(4, 22);
-            this.CdU.Name = "CdU";
-            this.CdU.Padding = new System.Windows.Forms.Padding(3);
-            this.CdU.Size = new System.Drawing.Size(1429, 805);
-            this.CdU.TabIndex = 1;
-            this.CdU.Text = "Creación de usuario";
-            // 
-            // UserCdU
-            // 
-            this.UserCdU.Location = new System.Drawing.Point(529, 335);
-            this.UserCdU.Name = "UserCdU";
-            this.UserCdU.Size = new System.Drawing.Size(100, 20);
-            this.UserCdU.TabIndex = 3;
-            // 
-            // label1CdU
-            // 
-            this.label1CdU.AutoSize = true;
-            this.label1CdU.Location = new System.Drawing.Point(527, 372);
-            this.label1CdU.Name = "label1CdU";
-            this.label1CdU.Size = new System.Drawing.Size(102, 13);
-            this.label1CdU.TabIndex = 2;
-            this.label1CdU.Text = "Usuario ya existente";
-            // 
-            // ComenzarCdU
-            // 
-            this.ComenzarCdU.Location = new System.Drawing.Point(544, 403);
-            this.ComenzarCdU.Name = "ComenzarCdU";
-            this.ComenzarCdU.Size = new System.Drawing.Size(75, 23);
-            this.ComenzarCdU.TabIndex = 1;
-            this.ComenzarCdU.Text = "Crear";
-            this.ComenzarCdU.UseVisualStyleBackColor = true;
-            this.ComenzarCdU.Click += new System.EventHandler(this.ComenzarCdU_Click);
-            // 
-            // SnapBackToReality
-            // 
-            this.SnapBackToReality.BackColor = System.Drawing.Color.Transparent;
-            this.SnapBackToReality.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
-            this.SnapBackToReality.ForeColor = System.Drawing.Color.Black;
-            this.SnapBackToReality.Location = new System.Drawing.Point(31, 26);
-            this.SnapBackToReality.Name = "SnapBackToReality";
-            this.SnapBackToReality.Size = new System.Drawing.Size(125, 102);
-            this.SnapBackToReality.TabIndex = 0;
-            this.SnapBackToReality.UseVisualStyleBackColor = false;
-            this.SnapBackToReality.Click += new System.EventHandler(this.SnapBackToReality_Click);
-            // 
-            // Home
-            // 
-            this.Home.BackColor = System.Drawing.Color.LightBlue;
-            this.Home.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
-            this.Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Home.Controls.Add(this.UserHome);
-            this.Home.Controls.Add(this.LeccionesHome);
-            this.Home.Controls.Add(this.DiccionarioHome);
-            this.Home.Location = new System.Drawing.Point(4, 22);
-            this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(1429, 805);
-            this.Home.TabIndex = 2;
-            this.Home.Text = "Home";
-            // 
-            // UserHome
-            // 
-            this.UserHome.AutoSize = true;
-            this.UserHome.Location = new System.Drawing.Point(1241, 11);
-            this.UserHome.Name = "UserHome";
-            this.UserHome.Size = new System.Drawing.Size(43, 13);
-            this.UserHome.TabIndex = 2;
-            this.UserHome.Text = "Usuario";
-            // 
-            // LeccionesHome
-            // 
-            this.LeccionesHome.Location = new System.Drawing.Point(526, 345);
-            this.LeccionesHome.Name = "LeccionesHome";
-            this.LeccionesHome.Size = new System.Drawing.Size(128, 60);
-            this.LeccionesHome.TabIndex = 1;
-            this.LeccionesHome.Text = "Continua con tus lecciones";
-            this.LeccionesHome.UseVisualStyleBackColor = true;
-            this.LeccionesHome.Click += new System.EventHandler(this.LeccionesHome_Click);
-            // 
-            // DiccionarioHome
-            // 
-            this.DiccionarioHome.Location = new System.Drawing.Point(526, 188);
-            this.DiccionarioHome.Name = "DiccionarioHome";
-            this.DiccionarioHome.Size = new System.Drawing.Size(139, 61);
-            this.DiccionarioHome.TabIndex = 0;
-            this.DiccionarioHome.Text = "Explora el diccionario";
-            this.DiccionarioHome.UseVisualStyleBackColor = true;
-            this.DiccionarioHome.Click += new System.EventHandler(this.DiccionarioHome_Click);
-            // 
-            // juegos
-            // 
-            this.juegos.BackColor = System.Drawing.Color.LightBlue;
-            this.juegos.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
-            this.juegos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.juegos.Controls.Add(this.MemotestGamesButton);
-            this.juegos.Controls.Add(this.RaceGamesButton);
-            this.juegos.Controls.Add(this.race1);
-            this.juegos.Location = new System.Drawing.Point(4, 22);
-            this.juegos.Name = "juegos";
-            this.juegos.Size = new System.Drawing.Size(1429, 805);
-            this.juegos.TabIndex = 6;
-            this.juegos.Text = "juegos";
-            // 
-            // MemotestGamesButton
-            // 
-            this.MemotestGamesButton.BackgroundImage = global::SignIt.Properties.Resources.Group_47__1_;
-            this.MemotestGamesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MemotestGamesButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MemotestGamesButton.Location = new System.Drawing.Point(780, 98);
-            this.MemotestGamesButton.Name = "MemotestGamesButton";
-            this.MemotestGamesButton.Size = new System.Drawing.Size(300, 350);
-            this.MemotestGamesButton.TabIndex = 1;
-            this.MemotestGamesButton.UseVisualStyleBackColor = true;
-            this.MemotestGamesButton.Click += new System.EventHandler(this.MemotestGamesButton_Click);
-            // 
-            // RaceGamesButton
-            // 
-            this.RaceGamesButton.BackgroundImage = global::SignIt.Properties.Resources.Group_48;
-            this.RaceGamesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.RaceGamesButton.Location = new System.Drawing.Point(290, 98);
-            this.RaceGamesButton.Name = "RaceGamesButton";
-            this.RaceGamesButton.Size = new System.Drawing.Size(300, 350);
-            this.RaceGamesButton.TabIndex = 0;
-            this.RaceGamesButton.UseVisualStyleBackColor = true;
-            this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
-            // 
-            // race1
-            // 
-            this.race1.BackColor = System.Drawing.Color.SteelBlue;
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(2, -12);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1430, 823);
-            this.race1.TabIndex = 2;
-            this.race1.Visible = false;
             // 
             // Menubutton
             // 
@@ -536,9 +575,6 @@
             this.Text = "SignIt!";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.signIt.ResumeLayout(false);
-            this.Ajustes.ResumeLayout(false);
-            this.Ajustes.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.IdS.ResumeLayout(false);
             this.IdS.PerformLayout();
             this.CdU.ResumeLayout(false);
@@ -546,6 +582,9 @@
             this.Home.ResumeLayout(false);
             this.Home.PerformLayout();
             this.juegos.ResumeLayout(false);
+            this.Ajustes.ResumeLayout(false);
+            this.Ajustes.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -591,6 +630,7 @@
         private System.Windows.Forms.Timer timer1;
         private Race race1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

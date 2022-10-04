@@ -1,9 +1,11 @@
-﻿using System;
+﻿using SignIt.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,10 +16,11 @@ namespace SignIt
     public partial class Form1 : Form
     {
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
-        //public static string path = "C:\\Users\\48110679\\source\\repos\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        int menuX = -210;
-        //int paneltransition = -1366;
+        public static string path = "C:\\Users\\48110679\\source\\repos\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        //public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        //public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        int menuX = -332;
         public bool menu = false;
         public int pantalla;
         public static bool externalmenu = false;
@@ -30,15 +33,13 @@ namespace SignIt
             InitializeComponent();
         }
 
-
-
         //Funciones
 
         private void noMENU()
         {
             Menubutton.Hide();
             panel1.Hide();
-            panel1.Location = new Point(-210, 0);
+            panel1.Location = new Point(-332, 0);
         }
         private void MENU()
         {
@@ -72,16 +73,46 @@ namespace SignIt
         {
             SnapBackToReality.FlatStyle = FlatStyle.Flat;
             SnapBackToReality.FlatAppearance.BorderSize = 0;
+
+            MenuHomeButton.FlatStyle = FlatStyle.Flat;
+            MenuHomeButton.FlatAppearance.BorderSize = 0;
+
+            MenuLectionsButton.FlatStyle = FlatStyle.Flat;
+            MenuLectionsButton.FlatAppearance.BorderSize = 0;
+
+            MenuDiccionarioButton.FlatStyle = FlatStyle.Flat;
+            MenuDiccionarioButton.FlatAppearance.BorderSize = 0;
+
+            MenuGamesButton.FlatStyle = FlatStyle.Flat;
+            MenuGamesButton.FlatAppearance.BorderSize = 0;
+
+            MenuSettingsButton.FlatStyle = FlatStyle.Flat;
+            MenuSettingsButton.FlatAppearance.BorderSize = 0;
+
+            MenuExitButton.FlatStyle = FlatStyle.Flat;
+            MenuExitButton.FlatAppearance.BorderSize = 0;
+
             Menubutton.FlatStyle = FlatStyle.Flat;
             Menubutton.FlatAppearance.BorderSize = 0;
+
             MemotestGamesButton.FlatStyle = FlatStyle.Flat;
             MemotestGamesButton.FlatAppearance.BorderSize = 0;
+
             RaceGamesButton.FlatStyle = FlatStyle.Flat;
             RaceGamesButton.FlatAppearance.BorderSize = 0;
 
+            SalirIdS.FlatStyle = FlatStyle.Flat;
+            SalirIdS.FlatAppearance.BorderSize = 0;
+
+            ComenzarIds.FlatStyle = FlatStyle.Flat;
+            ComenzarIds.FlatAppearance.BorderSize = 0;
+
+            ComenzarCdU.FlatStyle = FlatStyle.Flat;
+            ComenzarCdU.FlatAppearance.BorderSize = 0;
+
         }
-            //Comienzo 
-            private void Form1_Load(object sender, EventArgs e)
+        //Comienzo 
+        private void Form1_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
@@ -89,17 +120,11 @@ namespace SignIt
             noMENU();
             signIt.SelectedTab = IdS;
             buttons();
+            //musica
+            //SoundPlayer splayer = new SoundPlayer(@"C:\\Users\\48110679\\Música\\Official Rickroll Download (Pls don't give me copyright strike).mp3");
+            //splayer.Play();
         }
 
-        private void transición()
-        {
-            Random rdn = new Random();
-            int transicion = rdn.Next(0, 3);
-            if (transicion == 0)
-            {
-
-            }
-        }
 //mover 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -111,7 +136,7 @@ namespace SignIt
         {
             if (DatabaseFunctions.checkIfNameExists(UserIdS.Text, path) == true)
             {
-                signIt.SelectedTab = Home;   
+                signIt.SelectedTab = Home;
                 MENU();
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
                 UserXp = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "XP", path));
@@ -187,7 +212,7 @@ namespace SignIt
 
         //Menu
 
-        private void Menubutton_Click(object sender, EventArgs e)
+        private async void Menubutton_Click(object sender, EventArgs e)
         {
             Menubutton.Enabled = false;
             if (menu == false)
@@ -199,20 +224,20 @@ namespace SignIt
                     menuX += 2;
                     Menubutton.BringToFront();
                 }
-                //await Task.Delay(50);
+                await Task.Delay(50);
                 Menubutton.Enabled = true;
                 menu = true;
             }
             else if (menu == true)
             {
-                while (menuX > -210)
+                while (menuX > -332)
                 {
                     panel1.Location = new Point(menuX, 0);
-                    menuX -= 10;
+                    menuX -= 2;
                     Menubutton.BringToFront();
                 }
                 Menubutton.BringToFront();
-                //await Task.Delay(50);
+                await Task.Delay(50);
                 Menubutton.Enabled = true;
                 menu = false;
             }
@@ -293,13 +318,9 @@ private void IdS_Click(object sender, EventArgs e){}
 
         private void MemotestGamesButton_Click(object sender, EventArgs e)
         {
-            //Memotest.Show();
+            //Memotest1.Show();
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         //constantCheck
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -313,12 +334,14 @@ private void IdS_Click(object sender, EventArgs e){}
 
             }
         }
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
         private void race2_Load(object sender, EventArgs e)
         {
 
         }
-
         private void label2IdS_Click(object sender, EventArgs e)
         {
 

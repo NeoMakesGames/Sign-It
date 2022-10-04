@@ -205,5 +205,32 @@
   <ItemGroup>
     <None Include="Resources\Ícono de salir %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botón %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 rayitas botón.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 rayitas botón %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 55 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 45.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
