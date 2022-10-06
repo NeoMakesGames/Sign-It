@@ -129,25 +129,40 @@ namespace SignIt
             DiccionarioHome.FlatStyle = FlatStyle.Flat;
             DiccionarioHome.FlatAppearance.BorderSize = 0;
 
+            sliderHomeIz.FlatStyle = FlatStyle.Flat;
+            sliderHomeIz.FlatAppearance.BorderSize = 0;
+
+            sliderHomeDer.FlatStyle = FlatStyle.Flat;
+            sliderHomeDer.FlatAppearance.BorderSize = 0;
+
         }
 
         private void homeslider()
         {
+            homeSlider++;
             if (homeSlider >= 1 && homeSlider <= 16)
             {
-                sliderHome.BackgroundImage = ;
+                Image myimage = new Bitmap(@"C:\Users\48110679\source\repos\NeoMakesGames\Sign-It\SignIt - copia\SignIt\Resources\a.jpg");
+                sliderHome.BackgroundImage = myimage;
             }
-            if (homeSlider >= 17 && homeSlider <= 32)
+            else if (homeSlider >= 17 && homeSlider <= 32)
             {
-
+                Image myimage = new Bitmap(@"C:\Users\48110679\source\repos\NeoMakesGames\Sign-It\SignIt - copia\SignIt\Resources\aa.jfif");
+                sliderHome.BackgroundImage = myimage;
             }
-            if (homeSlider >= 33 && homeSlider <= 48)
+            else if (homeSlider >= 33 && homeSlider <= 48)
             {
-
+                Image myimage = new Bitmap(@"C:\Users\48110679\source\repos\NeoMakesGames\Sign-It\SignIt - copia\SignIt\Resources\aaa.jpeg");
+                sliderHome.BackgroundImage = myimage;
             }
-            if (homeSlider >= 49 && homeSlider <= 64)
+            else if (homeSlider >= 49 && homeSlider <= 64)
             {
-
+                Image myimage = new Bitmap(@"C:\Users\48110679\source\repos\NeoMakesGames\Sign-It\SignIt - copia\SignIt\Resources\aaaa.jfif");
+                sliderHome.BackgroundImage = myimage;
+            }
+            else if (homeSlider > 64)
+            {
+                homeSlider = 1;
             }
         }
 
@@ -233,6 +248,15 @@ namespace SignIt
             panel1.SendToBack();
             menu = false;
         }
+        private void sliderHomeIz_Click(object sender, EventArgs e)
+        {
+            homeSlider -= 16;
+        }
+        private void sliderHomeDer_Click(object sender, EventArgs e)
+        {
+            homeSlider += 16;
+        }
+
         //Menu
 
         private async void Menubutton_Click(object sender, EventArgs e)
@@ -272,12 +296,14 @@ namespace SignIt
             Menubutton_Click(sender, e);
             menu = false;
         }
+
         private void MenuLectionsButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = LeccionesMenu;
             Menubutton_Click(sender, e);
             menu = false;
         }
+
         private void MenuDiccionarioButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Diccionario;
@@ -291,6 +317,7 @@ namespace SignIt
             Menubutton_Click(sender, e);
             menu = false;
         }
+
         private void MenuSettingsButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Ajustes;
@@ -349,9 +376,12 @@ namespace SignIt
             {
 
             }
+
+            homeslider();
         }
 
 //sobras
+
         private void race2_Load(object sender, EventArgs e)
         {
 
