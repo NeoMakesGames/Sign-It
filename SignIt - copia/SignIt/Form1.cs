@@ -20,14 +20,17 @@ namespace SignIt
         public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
         //public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
         //public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+
         int menuX = -332;
+        int UserXp;
+        int UserLvl;
+        int NextLvl = 10;
+        int homeSlider = 1;
+
         public bool menu = false;
-        public int pantalla;
         public static bool externalmenu = false;
         public bool fullscr = true;
-        int UserXp;
-        int UserLvl = 0;
-        int NextLvl = 10;
+
         public Form1()
         {
             InitializeComponent();
@@ -41,6 +44,7 @@ namespace SignIt
             panel1.Hide();
             panel1.Location = new Point(-332, 0);
         }
+        
         private void MENU()
         {
             panel1.Show();
@@ -48,6 +52,7 @@ namespace SignIt
             Menubutton.Show();
             Menubutton.BringToFront();
         }
+        
         private void IDT()
         {
             label1CdU.Hide();
@@ -55,6 +60,7 @@ namespace SignIt
             UserCdU.Text = "";
             UserIdS.Text = "";
         }
+        
         private void X()
         {
             this.Close();
@@ -69,6 +75,13 @@ namespace SignIt
                 NextLvl *= 2;
             }
         }
+
+        private void SnapBackToReality_Click(object sender, EventArgs e)
+        {
+            signIt.SelectedTab = IdS;
+            IDT();
+        }
+
         private void buttons()
         {
             SnapBackToReality.FlatStyle = FlatStyle.Flat;
@@ -117,7 +130,28 @@ namespace SignIt
             DiccionarioHome.FlatAppearance.BorderSize = 0;
 
         }
-        //Comienzo 
+
+        private void homeslider()
+        {
+            if (homeSlider >= 1 && homeSlider <= 16)
+            {
+                sliderHome.BackgroundImage = ;
+            }
+            if (homeSlider >= 17 && homeSlider <= 32)
+            {
+
+            }
+            if (homeSlider >= 33 && homeSlider <= 48)
+            {
+
+            }
+            if (homeSlider >= 49 && homeSlider <= 64)
+            {
+
+            }
+        }
+
+//Comienzo 
         private void Form1_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
@@ -126,15 +160,6 @@ namespace SignIt
             noMENU();
             signIt.SelectedTab = IdS;
             buttons();
-            //musica
-            //SoundPlayer splayer = new SoundPlayer(@"C:\\Users\\48110679\\Música\\Official Rickroll Download (Pls don't give me copyright strike).mp3");
-            //splayer.Play();
-        }
-
-//mover 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            
         }
 
 //Inicio de Sesión
@@ -193,29 +218,21 @@ namespace SignIt
                 }
             }
         }
-        private void SnapBackToReality_Click(object sender, EventArgs e)
-        {
-            signIt.SelectedTab = IdS;
-            IDT();
-        }
+        
 
 //Home
-        private void DiccionarioHome_Click(object sender, EventArgs e)
+        private void DiccionarioHome_Click_1(object sender, EventArgs e)
         {
             signIt.SelectedTab = Diccionario;
-            pantalla = 3;
             panel1.SendToBack();
             menu = false;
         }
-
-        private void LeccionesHome_Click(object sender, EventArgs e)
+        private void LeccionesHome_Click_1(object sender, EventArgs e)
         {
             signIt.SelectedTab = LeccionesMenu;
-            pantalla = 2;
             panel1.SendToBack();
             menu = false;
         }
-
         //Menu
 
         private async void Menubutton_Click(object sender, EventArgs e)
@@ -252,21 +269,18 @@ namespace SignIt
         private void MenuHomeButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Home;
-            pantalla = 1;
             Menubutton_Click(sender, e);
             menu = false;
         }
         private void MenuLectionsButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = LeccionesMenu;
-            pantalla = 1;
             Menubutton_Click(sender, e);
             menu = false;
         }
         private void MenuDiccionarioButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Diccionario;
-            pantalla = 1;
             Menubutton_Click(sender, e);
             menu = false;
         }
@@ -274,7 +288,6 @@ namespace SignIt
         private void MenuGamesButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = juegos;
-            pantalla = 1;
             Menubutton_Click(sender, e);
             menu = false;
         }
@@ -282,7 +295,6 @@ namespace SignIt
         {
             signIt.SelectedTab = Ajustes;
             UserNameSett.Text = UserNameSett.Text + DatabaseFunctions.getString(DatabaseFunctions.currentUser,"Nombre",path);
-            pantalla = 1;
             Menubutton_Click(sender, e);
             menu = false;
         }
@@ -311,8 +323,6 @@ namespace SignIt
                 fullscr = false;
             }
         }
-//mover
-private void IdS_Click(object sender, EventArgs e){}
 
 //Juegos
         private void RaceGamesButton_Click(object sender, EventArgs e)
@@ -327,7 +337,7 @@ private void IdS_Click(object sender, EventArgs e){}
             //Memotest1.Show();
         }
 
-        //constantCheck
+//constantCheck
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (externalmenu == true)
@@ -340,10 +350,8 @@ private void IdS_Click(object sender, EventArgs e){}
 
             }
         }
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
+//sobras
         private void race2_Load(object sender, EventArgs e)
         {
 
@@ -351,6 +359,20 @@ private void IdS_Click(object sender, EventArgs e){}
         private void label2IdS_Click(object sender, EventArgs e)
         {
 
+        }
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+        private void UserIdS_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void IdS_Click(object sender, EventArgs e) {
         }
     }
 }
