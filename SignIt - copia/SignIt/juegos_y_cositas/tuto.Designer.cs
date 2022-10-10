@@ -1,6 +1,6 @@
 ﻿namespace SignIt
 {
-    partial class tutorial
+    partial class tuto
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -29,80 +29,80 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.tutoTimer = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.skipTutorial = new System.Windows.Forms.Button();
             this.tutocont = new System.Windows.Forms.Button();
-            this.tutoreg = new System.Windows.Forms.Button();
-            this.tutotimer = new System.Windows.Forms.Timer(this.components);
+            this.tutoReg = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // tutoTimer
+            // 
+            this.tutoTimer.Enabled = true;
+            this.tutoTimer.Interval = 250;
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(106, 58);
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(94, 43);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1157, 576);
+            this.panel1.Size = new System.Drawing.Size(1132, 556);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // skipTutorial
             // 
-            this.button1.Location = new System.Drawing.Point(1159, 671);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 63);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.skipTutorial.Location = new System.Drawing.Point(1120, 635);
+            this.skipTutorial.Name = "skipTutorial";
+            this.skipTutorial.Size = new System.Drawing.Size(95, 80);
+            this.skipTutorial.TabIndex = 1;
+            this.skipTutorial.Text = "button1";
+            this.skipTutorial.UseVisualStyleBackColor = true;
+            this.skipTutorial.Click += new System.EventHandler(this.skipTutorial_Click);
             // 
             // tutocont
             // 
-            this.tutocont.Location = new System.Drawing.Point(789, 678);
+            this.tutocont.Location = new System.Drawing.Point(816, 644);
             this.tutocont.Name = "tutocont";
-            this.tutocont.Size = new System.Drawing.Size(110, 49);
+            this.tutocont.Size = new System.Drawing.Size(75, 62);
             this.tutocont.TabIndex = 2;
             this.tutocont.Text = "button2";
             this.tutocont.UseVisualStyleBackColor = true;
-            this.tutocont.Click += new System.EventHandler(this.tutocont_Click);
+            this.tutocont.Click += new System.EventHandler(this.tutocont_Click_1);
             // 
-            // tutoreg
+            // tutoReg
             // 
-            this.tutoreg.Location = new System.Drawing.Point(534, 678);
-            this.tutoreg.Name = "tutoreg";
-            this.tutoreg.Size = new System.Drawing.Size(110, 49);
-            this.tutoreg.TabIndex = 3;
-            this.tutoreg.Text = "button3";
-            this.tutoreg.UseVisualStyleBackColor = true;
-            this.tutoreg.Click += new System.EventHandler(this.tutoreg_Click);
+            this.tutoReg.Location = new System.Drawing.Point(459, 644);
+            this.tutoReg.Name = "tutoReg";
+            this.tutoReg.Size = new System.Drawing.Size(75, 62);
+            this.tutoReg.TabIndex = 3;
+            this.tutoReg.Text = "button1";
+            this.tutoReg.UseVisualStyleBackColor = true;
+            this.tutoReg.Click += new System.EventHandler(this.tutoReg_Click_1);
             // 
-            // tutotimer
-            // 
-            this.tutotimer.Interval = 250;
-            this.tutotimer.Tick += new System.EventHandler(this.tutotimer_Tick);
-            // 
-            // tutorial
+            // tuto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.tutoreg);
+            this.Controls.Add(this.tutoReg);
             this.Controls.Add(this.tutocont);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.skipTutorial);
             this.Controls.Add(this.panel1);
-            this.DoubleBuffered = true;
-            this.Name = "tutorial";
+            this.Name = "tuto";
             this.Size = new System.Drawing.Size(1366, 788);
-            this.Load += new System.EventHandler(this.tutorial_Load);
+            this.Load += new System.EventHandler(this.tuto_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Timer tutoTimer;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button skipTutorial;
         private System.Windows.Forms.Button tutocont;
-        private System.Windows.Forms.Button tutoreg;
-        private System.Windows.Forms.Timer tutotimer;
+        private System.Windows.Forms.Button tutoReg;
     }
 }

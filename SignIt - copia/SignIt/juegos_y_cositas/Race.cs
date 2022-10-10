@@ -158,8 +158,6 @@ namespace SignIt
             raceTimer = 10000;
 
             reproduccion();
-            TimerRace.Start();
-            TimerRace2.Start();
         }
 
         //Timers

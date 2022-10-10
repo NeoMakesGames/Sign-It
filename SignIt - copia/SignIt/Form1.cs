@@ -7,19 +7,24 @@ using System.Drawing;
 using System.Linq;
 using System.Media;
 using System.Runtime.CompilerServices;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
+using Image = System.Drawing.Image;
 
 namespace SignIt
 {
     public partial class Form1 : Form
     {
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
-        public static string path = "C:\\Users\\48110679\\source\\repos\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
-        //public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        //public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        //public static string path = "C:\\Users\\48110679\\source\\repos\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        //public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+
+        Image myimage;
 
         int menuX = -332;
         int UserXp;
@@ -29,9 +34,12 @@ namespace SignIt
         int avance;
 
         public bool menu = false;
-        public static bool externalmenu = false;
         public bool fullscr = true;
+        public static bool externalmenu = false;
+        public static bool endTutorial = false;
+        
 
+        string HS_URL;
         public Form1()
         {
             InitializeComponent();
@@ -140,13 +148,58 @@ namespace SignIt
 
         private void homeslider()
         {
+            homeSlider++;
 
+            if (homeSlider > 64)
+            {
+                homeSlider = 1;
+            }
+
+            else if (homeSlider > 48 && 64 >= homeSlider)
+            {
+                if (HS_URL != "")
+                {
+                    HS_URL = "";
+                    //myimage = new Bitmap(HS_URL);
+                    //this.BackgroundImage = myimage;
+                }
+            }
+
+            else if (homeSlider > 32 && 48 >= homeSlider)
+            {
+                if (HS_URL != "")
+                {
+                    HS_URL = "";
+                    //myimage = new Bitmap(HS_URL);
+                    //this.BackgroundImage = myimage;
+                }
+            }
+
+            else if (homeSlider > 17 && 32 >= homeSlider)
+            {
+                if (HS_URL != "")
+                {
+                    HS_URL = "";
+                    //myimage = new Bitmap(HS_URL);
+                    //this.BackgroundImage = myimage;
+                }
+            }
+
+            else if (homeSlider > 1 && 16 >= homeSlider)
+            {
+                if (HS_URL != "")
+                {
+                    HS_URL = "";
+                    //myimage = new Bitmap(HS_URL);
+                    //this.BackgroundImage = myimage;
+                }
+            }
         }
 
         private void tutorial()
         {
             signIt.SelectedTab = Lecciones_y_Ejercicios;
-            //tutorial.Show();
+            tuto1.Show();
         }
 
 //Comienzo 
@@ -172,8 +225,9 @@ namespace SignIt
                 XP();
 
                 UserHome.Text = DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path);
-                signIt.SelectedTab = Home;
-                MENU();
+                //signIt.SelectedTab = Home;
+                //MENU();
+                tutorial();
             }
             else
             {
@@ -201,8 +255,7 @@ namespace SignIt
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
                 avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
 
-                signIt.SelectedTab = Home;
-                MENU();
+                tutorial();
             }
             else if (DatabaseFunctions.checkIfThereAreUsers(path))
             {
@@ -213,8 +266,7 @@ namespace SignIt
                     DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
                     avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
 
-                    signIt.SelectedTab = Home;
-                    MENU();
+                    tutorial();
                 }
                 else
                 {
@@ -246,7 +298,7 @@ namespace SignIt
             homeSlider += 16;
         }
 
-        //Menu
+//Menu
 
         private async void Menubutton_Click(object sender, EventArgs e)
         {
@@ -356,17 +408,29 @@ namespace SignIt
 //constantCheck
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (externalmenu == true)
+            if(signIt.SelectedTab == juegos || signIt.SelectedTab == Lecciones_y_Ejercicios)
             {
-                MENU();
-                externalmenu = false;
+                if (externalmenu == true)
+                {
+                    MENU();
+                    externalmenu = false;
+                }
+                else if (endTutorial == true)
+                {
+                    signIt.SelectedTab = Home;
+                    MENU();
+                }
             }
-            else
+            else if(signIt.SelectedTab == Home)
             {
-
+                if (externalmenu == true)
+                {
+                    homeslider();
+                }
             }
+            
+            
 
-            homeslider();
         }
 
 //sobras

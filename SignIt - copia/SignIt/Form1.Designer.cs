@@ -70,15 +70,17 @@
             this.MenuDiccionarioButton = new System.Windows.Forms.Button();
             this.MenuLectionsButton = new System.Windows.Forms.Button();
             this.MenuHomeButton = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Chekeos = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
             this.race1 = new SignIt.Race();
+            this.tuto1 = new SignIt.tuto();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
             this.Home.SuspendLayout();
             this.juegos.SuspendLayout();
             this.Ajustes.SuspendLayout();
+            this.Lecciones_y_Ejercicios.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -490,6 +492,8 @@
             // 
             // Lecciones_y_Ejercicios
             // 
+            this.Lecciones_y_Ejercicios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Lecciones_y_Ejercicios.Controls.Add(this.tuto1);
             this.Lecciones_y_Ejercicios.Location = new System.Drawing.Point(4, 22);
             this.Lecciones_y_Ejercicios.Name = "Lecciones_y_Ejercicios";
             this.Lecciones_y_Ejercicios.Size = new System.Drawing.Size(1429, 805);
@@ -583,11 +587,10 @@
             this.MenuHomeButton.UseVisualStyleBackColor = false;
             this.MenuHomeButton.Click += new System.EventHandler(this.MenuHomeButton_Click);
             // 
-            // timer1
+            // Chekeos
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 250;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.Chekeos.Enabled = true;
+            this.Chekeos.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Menubutton
             // 
@@ -610,6 +613,17 @@
             this.race1.TabIndex = 2;
             this.race1.Visible = false;
             // 
+            // tuto1
+            // 
+            this.tuto1.BackColor = System.Drawing.Color.LightBlue;
+            this.tuto1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tuto1.BackgroundImage")));
+            this.tuto1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tuto1.Location = new System.Drawing.Point(0, 0);
+            this.tuto1.Name = "tuto1";
+            this.tuto1.Size = new System.Drawing.Size(1366, 788);
+            this.tuto1.TabIndex = 0;
+            this.tuto1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -631,6 +645,7 @@
             this.juegos.ResumeLayout(false);
             this.Ajustes.ResumeLayout(false);
             this.Ajustes.PerformLayout();
+            this.Lecciones_y_Ejercicios.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -670,7 +685,7 @@
         private System.Windows.Forms.Label label2IdS;
         private System.Windows.Forms.Button MemotestGamesButton;
         private System.Windows.Forms.Button RaceGamesButton;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer Chekeos;
         private Race race1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
@@ -681,6 +696,7 @@
         private System.Windows.Forms.Button sliderHomeDer;
         private System.Windows.Forms.Button sliderHomeIz;
         private System.Windows.Forms.Panel sliderHome;
+        private tuto tuto1;
     }
 }
 
