@@ -85,12 +85,6 @@ namespace SignIt
             }
         }
 
-        private void SnapBackToReality_Click(object sender, EventArgs e)
-        {
-            signIt.SelectedTab = IdS;
-            IDT();
-        }
-
         private void buttons()
         {
             SnapBackToReality.FlatStyle = FlatStyle.Flat;
@@ -225,9 +219,8 @@ namespace SignIt
                 XP();
 
                 UserHome.Text = DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path);
-                //signIt.SelectedTab = Home;
-                //MENU();
-                tutorial();
+                signIt.SelectedTab = Home;
+                MENU();
             }
             else
             {
@@ -264,7 +257,7 @@ namespace SignIt
                     DatabaseFunctions.addUser(UserCdU.Text, path);
 
                     DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
-                    avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
+                // error aca    avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
 
                     tutorial();
                 }
@@ -274,9 +267,14 @@ namespace SignIt
                 }
             }
         }
-        
 
-//Home
+        private void SnapBackToReality_Click(object sender, EventArgs e)
+        {
+            signIt.SelectedTab = IdS;
+            IDT();
+        }
+
+        //Home
         private void DiccionarioHome_Click_1(object sender, EventArgs e)
         {
             signIt.SelectedTab = Diccionario;

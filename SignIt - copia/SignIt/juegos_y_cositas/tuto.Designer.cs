@@ -34,12 +34,15 @@
             this.skipTutorial = new System.Windows.Forms.Button();
             this.tutocont = new System.Windows.Forms.Button();
             this.tutoReg = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.endTutorial = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tutoTimer
             // 
             this.tutoTimer.Enabled = true;
             this.tutoTimer.Interval = 250;
+            this.tutoTimer.Tick += new System.EventHandler(this.tutoTimer_Tick_1);
             // 
             // panel1
             // 
@@ -79,6 +82,25 @@
             this.tutoReg.UseVisualStyleBackColor = true;
             this.tutoReg.Click += new System.EventHandler(this.tutoReg_Click_1);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1293, 152);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
+            // 
+            // endTutorial
+            // 
+            this.endTutorial.Location = new System.Drawing.Point(637, 664);
+            this.endTutorial.Name = "endTutorial";
+            this.endTutorial.Size = new System.Drawing.Size(75, 23);
+            this.endTutorial.TabIndex = 5;
+            this.endTutorial.Text = "button1";
+            this.endTutorial.UseVisualStyleBackColor = true;
+            this.endTutorial.Click += new System.EventHandler(this.endTutorial_Click);
+            // 
             // tuto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -86,14 +108,18 @@
             this.BackColor = System.Drawing.Color.LightBlue;
             this.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.endTutorial);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.tutoReg);
             this.Controls.Add(this.tutocont);
             this.Controls.Add(this.skipTutorial);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Name = "tuto";
             this.Size = new System.Drawing.Size(1366, 788);
             this.Load += new System.EventHandler(this.tuto_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -104,5 +130,7 @@
         private System.Windows.Forms.Button skipTutorial;
         private System.Windows.Forms.Button tutocont;
         private System.Windows.Forms.Button tutoReg;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button endTutorial;
     }
 }
