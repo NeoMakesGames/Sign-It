@@ -39,6 +39,8 @@ namespace SignIt
 
             TimerRace.Stop();
             TimerRace2.Stop();
+            TimerRace.Enabled = false; 
+            TimerRace2.Enabled = false;
 
             reStart();
 
@@ -143,6 +145,11 @@ namespace SignIt
             RacePoints.Text = "Tus puntos: 0";
             Contador.Text = "00:10";
 
+            TimerRace.Start();
+            TimerRace2.Start();
+            TimerRace.Enabled = true;
+            TimerRace2.Enabled = true;
+
             RaceButtonStart.Hide();
             RaceTextBox.Show();
             axWindowsMediaPlayer1.Show();
@@ -232,6 +239,12 @@ namespace SignIt
         {
 
         }
+
+        private void endRacePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
 

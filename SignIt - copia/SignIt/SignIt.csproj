@@ -64,31 +64,34 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Juegos\Memotest.cs">
+    <Compile Include="juegos_y_cositas\Memotest.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Juegos\Memotest.Designer.cs">
+    <Compile Include="juegos_y_cositas\Memotest.Designer.cs">
       <DependentUpon>Memotest.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Juegos\Race.cs">
+    <Compile Include="juegos_y_cositas\Race.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Juegos\Race.Designer.cs">
+    <Compile Include="juegos_y_cositas\Race.Designer.cs">
       <DependentUpon>Race.cs</DependentUpon>
     </Compile>
-    <Compile Include="Juegos\Resultados.cs">
+    <Compile Include="juegos_y_cositas\tutorial.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Juegos\Resultados.Designer.cs">
-      <DependentUpon>Resultados.cs</DependentUpon>
+    <Compile Include="juegos_y_cositas\tutorial.Designer.cs">
+      <DependentUpon>tutorial.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Juegos\Race.resx">
+    <EmbeddedResource Include="juegos_y_cositas\Race.resx">
       <DependentUpon>Race.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="juegos_y_cositas\tutorial.resx">
+      <DependentUpon>tutorial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

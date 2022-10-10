@@ -26,6 +26,7 @@ namespace SignIt
         int UserLvl;
         int NextLvl = 10;
         int homeSlider = 1;
+        int avance;
 
         public bool menu = false;
         public static bool externalmenu = false;
@@ -139,31 +140,13 @@ namespace SignIt
 
         private void homeslider()
         {
-            homeSlider++;
-            if (homeSlider >= 1 && homeSlider <= 16)
-            {
-                Image myimage = new Bitmap(@"C:\Users\48110679\source\repos\NeoMakesGames\Sign-It\SignIt - copia\SignIt\Resources\a.jpg");
-                sliderHome.BackgroundImage = myimage;
-            }
-            else if (homeSlider >= 17 && homeSlider <= 32)
-            {
-                Image myimage = new Bitmap(@"C:\Users\48110679\source\repos\NeoMakesGames\Sign-It\SignIt - copia\SignIt\Resources\aa.jfif");
-                sliderHome.BackgroundImage = myimage;
-            }
-            else if (homeSlider >= 33 && homeSlider <= 48)
-            {
-                Image myimage = new Bitmap(@"C:\Users\48110679\source\repos\NeoMakesGames\Sign-It\SignIt - copia\SignIt\Resources\aaa.jpeg");
-                sliderHome.BackgroundImage = myimage;
-            }
-            else if (homeSlider >= 49 && homeSlider <= 64)
-            {
-                Image myimage = new Bitmap(@"C:\Users\48110679\source\repos\NeoMakesGames\Sign-It\SignIt - copia\SignIt\Resources\aaaa.jfif");
-                sliderHome.BackgroundImage = myimage;
-            }
-            else if (homeSlider > 64)
-            {
-                homeSlider = 1;
-            }
+
+        }
+
+        private void tutorial()
+        {
+            signIt.SelectedTab = Lecciones_y_Ejercicios;
+            //tutorial.Show();
         }
 
 //Comienzo 
@@ -178,17 +161,19 @@ namespace SignIt
         }
 
 //Inicio de Sesión
-        private async void ComenzarIds_Click(object sender, EventArgs e)
+        private void ComenzarIds_Click(object sender, EventArgs e)
         {
             if (DatabaseFunctions.checkIfNameExists(UserIdS.Text, path) == true)
             {
-                signIt.SelectedTab = Home;
-                MENU();
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
+                avance = Convert.ToInt32(DatabaseFunctions.getString( DatabaseFunctions.currentUser, "Avance", path));
+
                 UserXp = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "XP", path));
                 XP();
+
                 UserHome.Text = DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path);
-                await Task.Delay(250);
+                signIt.SelectedTab = Home;
+                MENU();
             }
             else
             {
@@ -207,24 +192,28 @@ namespace SignIt
         }
 
 //Creación de Usuario
-        private async void ComenzarCdU_Click(object sender, EventArgs e)
+        private void ComenzarCdU_Click(object sender, EventArgs e)
         {
             if (!DatabaseFunctions.checkIfThereAreUsers(path))
             {
                 DatabaseFunctions.addUser(UserCdU.Text, path);
+                
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
+                avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
+
                 signIt.SelectedTab = Home;
                 MENU();
-                await Task.Delay(250);
             }
             else if (DatabaseFunctions.checkIfThereAreUsers(path))
             {
                 if (!DatabaseFunctions.checkIfNameExists(UserCdU.Text, path))
                 {
                     DatabaseFunctions.addUser(UserCdU.Text, path);
+
                     DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
+                    avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
+
                     signIt.SelectedTab = Home;
-                    await Task.Delay(250);
                     MENU();
                 }
                 else
