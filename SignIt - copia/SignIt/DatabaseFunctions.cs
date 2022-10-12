@@ -157,5 +157,26 @@ namespace SignIt
             con.Close();
             return result;
         }
+
+        public static int CheckAvance(int id, string path)
+        {
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT Avance FROM Usuarios WHERE id = " + id, con);
+            OleDbDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            int result = Convert.ToInt32(reader["Avance"]);
+            con.Close();
+            return result;
+        }
+
+        public static void SetAvance(int id, int avance, string path)
+        {
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("UPDATE Usuarios SET Avance = " + avance + " WHERE id = " + id, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }
