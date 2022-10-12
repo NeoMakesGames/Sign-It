@@ -48,25 +48,19 @@ namespace SignIt
 
         //Funciones
 
-        private void noMENU()
+        private void desaparicionDelMenu()
         {
             Menubutton.Hide();
             panel1.Hide();
             panel1.Location = new Point(-332, 0);
         }
         
-        private void MENU()
+        private void aparicionDelMenu()
         {
             panel1.Show();
             panel1.BringToFront();
             Menubutton.Show();
             Menubutton.BringToFront();
-        }
-        
-        private void Inicio()
-        {
-            label1CdU.Hide();
-            label2IdS.Hide();
         }
         
         private void cierre()
@@ -200,10 +194,11 @@ namespace SignIt
         {
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
-            Inicio();
-            noMENU();
+            desaparicionDelMenu();
             signIt.SelectedTab = IdS;
             diseñoDeBotones();
+            label1CdU.Hide();
+            label2IdS.Hide();
         }
 
 //Inicio de Sesión
@@ -219,7 +214,7 @@ namespace SignIt
 
                 UserHome.Text = DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path);
                 signIt.SelectedTab = Home;
-                MENU();
+                aparicionDelMenu();
             }
             else
             {
@@ -230,7 +225,10 @@ namespace SignIt
         private void linkLabel1IdS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             signIt.SelectedTab = CdU;
-            Inicio();
+            label1CdU.Hide();
+            label2IdS.Hide();
+            UserCdU.Text = "";
+            UserIdS.Text = "";
         }
         private void SalirIdS_Click(object sender, EventArgs e)
         {
@@ -270,7 +268,10 @@ namespace SignIt
         private void SnapBackToReality_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = IdS;
-            Inicio();
+            label1CdU.Hide();
+            label2IdS.Hide();
+            UserCdU.Text = "";
+            UserIdS.Text = "";
         }
 
 //Home
@@ -395,7 +396,7 @@ namespace SignIt
         {
             race1.Show();
             race1.BringToFront();
-            noMENU();
+            desaparicionDelMenu();
         }
 
         private void MemotestGamesButton_Click(object sender, EventArgs e)
@@ -412,13 +413,13 @@ namespace SignIt
                 {
                     if (externalmenu == true)
                     {
-                        MENU();
+                        aparicionDelMenu();
                         externalmenu = false;
                     }
                     else if (endTutorial == true)
                     {
                         signIt.SelectedTab = Home;
-                        MENU();
+                        aparicionDelMenu();
                     }
                 }
                 else if (signIt.SelectedTab == Home)
