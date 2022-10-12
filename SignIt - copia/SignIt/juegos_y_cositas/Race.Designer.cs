@@ -158,6 +158,7 @@
             this.endRacePanel.Name = "endRacePanel";
             this.endRacePanel.Size = new System.Drawing.Size(1533, 858);
             this.endRacePanel.TabIndex = 8;
+            this.endRacePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.endRacePanel_Paint);
             // 
             // restartEndRaceButton
             // 

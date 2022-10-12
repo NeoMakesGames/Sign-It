@@ -193,6 +193,26 @@ namespace SignIt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_41__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 41 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_41__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 41 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_44 {
             get {
                 object obj = ResourceManager.GetObject("Group 44", resourceCulture);
@@ -293,6 +313,36 @@ namespace SignIt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_54 {
+            get {
+                object obj = ResourceManager.GetObject("Group 54", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_54__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 54 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_54__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("Group 54 (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_55 {
             get {
                 object obj = ResourceManager.GetObject("Group 55", resourceCulture);
@@ -326,6 +376,26 @@ namespace SignIt.Properties {
         internal static System.Drawing.Bitmap Group_56 {
             get {
                 object obj = ResourceManager.GetObject("Group 56", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_561 {
+            get {
+                object obj = ResourceManager.GetObject("Group 561", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_57 {
+            get {
+                object obj = ResourceManager.GetObject("Group 57", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
