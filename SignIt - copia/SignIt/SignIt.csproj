@@ -64,34 +64,31 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="juegos_y_cositas\Memotest.cs">
+    <Compile Include="Juegos\Memotest.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="juegos_y_cositas\Memotest.Designer.cs">
+    <Compile Include="Juegos\Memotest.Designer.cs">
       <DependentUpon>Memotest.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="juegos_y_cositas\Race.cs">
+    <Compile Include="Juegos\Race.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="juegos_y_cositas\Race.Designer.cs">
+    <Compile Include="Juegos\Race.Designer.cs">
       <DependentUpon>Race.cs</DependentUpon>
     </Compile>
-    <Compile Include="juegos_y_cositas\tuto.cs">
+    <Compile Include="Juegos\Resultados.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="juegos_y_cositas\tuto.Designer.cs">
-      <DependentUpon>tuto.cs</DependentUpon>
+    <Compile Include="Juegos\Resultados.Designer.cs">
+      <DependentUpon>Resultados.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="juegos_y_cositas\Race.resx">
+    <EmbeddedResource Include="Juegos\Race.resx">
       <DependentUpon>Race.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="juegos_y_cositas\tuto.resx">
-      <DependentUpon>tuto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -234,27 +231,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Group 45.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 41 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 54.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 54 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 41 %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 54 %281%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 561.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 57.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
