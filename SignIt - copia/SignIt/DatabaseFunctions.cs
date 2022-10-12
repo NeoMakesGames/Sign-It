@@ -87,7 +87,7 @@ namespace SignIt
             OleDbCommand cmd = new OleDbCommand("INSERT INTO Usuarios (Nombre, XP, Avance) VALUES ('" + name + "', " + 0 + ", " + 0 + ")", con);
             cmd.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("¡Usuario agregado! (Agregaste a " + name + ")");
+            //MessageBox.Show("¡Usuario agregado! (Agregaste a " + name + ")");
         }
 
         public static void updateListBox(ListBox listBox, string path)
@@ -125,7 +125,7 @@ namespace SignIt
 
         public static int checkXP(int id, string path)
         {
-            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\" + Environment.UserName + "\\Documents\\SignIt.accdb");
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
             con.Open();
             OleDbCommand cmd = new OleDbCommand("SELECT XP FROM Usuarios WHERE id = " + id, con);
             OleDbDataReader reader = cmd.ExecuteReader();
