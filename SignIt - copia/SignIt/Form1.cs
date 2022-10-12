@@ -32,7 +32,7 @@ namespace SignIt
         int NextLvl = 10;
         int homeSlider = 0;
         double home_slider = 0;
-        int avance;
+      //  int avance;
 
         public bool menu = false;
         public bool fullscr = true;
@@ -207,7 +207,7 @@ namespace SignIt
             if (DatabaseFunctions.checkIfNameExists(UserIdS.Text, path) == true)
             {
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
-                avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
+                //avance = Convert.ToInt32(DatabaseFunctions.getString( DatabaseFunctions.currentUser, "Avance", path));
 
                 UserXp = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "XP", path));
                 experiencia();
@@ -243,7 +243,7 @@ namespace SignIt
                 DatabaseFunctions.addUser(UserCdU.Text, path);
                 
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
-               // avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
+                //avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
 
                 tutorial();
             }
@@ -254,7 +254,7 @@ namespace SignIt
                     DatabaseFunctions.addUser(UserCdU.Text, path);
 
                     DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
-                   // avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
+                // error aca    avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
 
                     tutorial();
                 }
