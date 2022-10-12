@@ -473,5 +473,10 @@ namespace SignIt
         {
 
         }
+
+        private void LeccionesMenu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
