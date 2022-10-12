@@ -56,6 +56,7 @@
             this.juegos = new System.Windows.Forms.TabPage();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.FullScrButtonSett = new System.Windows.Forms.Button();
             this.PantallaSett = new System.Windows.Forms.Label();
@@ -63,6 +64,7 @@
             this.UserNameSett = new System.Windows.Forms.Label();
             this.XProgresBarSett = new CircularProgressBar.CircularProgressBar();
             this.Lecciones_y_Ejercicios = new System.Windows.Forms.TabPage();
+            this.tuto1 = new SignIt.tuto();
             this.panel1 = new System.Windows.Forms.Panel();
             this.MenuExitButton = new System.Windows.Forms.Button();
             this.MenuSettingsButton = new System.Windows.Forms.Button();
@@ -70,10 +72,8 @@
             this.MenuDiccionarioButton = new System.Windows.Forms.Button();
             this.MenuLectionsButton = new System.Windows.Forms.Button();
             this.MenuHomeButton = new System.Windows.Forms.Button();
-            this.Chekeos = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
-            this.tuto1 = new SignIt.tuto();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -211,7 +211,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_1;
-            this.panel3.Location = new System.Drawing.Point(500, 55);
+            this.panel3.Location = new System.Drawing.Point(454, 55);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(435, 206);
             this.panel3.TabIndex = 7;
@@ -219,7 +219,7 @@
             // UserCdU
             // 
             this.UserCdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
-            this.UserCdU.Location = new System.Drawing.Point(500, 290);
+            this.UserCdU.Location = new System.Drawing.Point(454, 290);
             this.UserCdU.Name = "UserCdU";
             this.UserCdU.Size = new System.Drawing.Size(435, 83);
             this.UserCdU.TabIndex = 3;
@@ -230,7 +230,7 @@
             this.label1CdU.BackColor = System.Drawing.Color.Transparent;
             this.label1CdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1CdU.ForeColor = System.Drawing.Color.IndianRed;
-            this.label1CdU.Location = new System.Drawing.Point(587, 416);
+            this.label1CdU.Location = new System.Drawing.Point(541, 416);
             this.label1CdU.Name = "label1CdU";
             this.label1CdU.Size = new System.Drawing.Size(260, 31);
             this.label1CdU.TabIndex = 2;
@@ -242,7 +242,7 @@
             this.ComenzarCdU.BackgroundImage = global::SignIt.Properties.Resources.Botón__1_;
             this.ComenzarCdU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ComenzarCdU.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ComenzarCdU.Location = new System.Drawing.Point(508, 481);
+            this.ComenzarCdU.Location = new System.Drawing.Point(461, 481);
             this.ComenzarCdU.Name = "ComenzarCdU";
             this.ComenzarCdU.Size = new System.Drawing.Size(420, 85);
             this.ComenzarCdU.TabIndex = 1;
@@ -407,8 +407,22 @@
             this.RaceGamesButton.UseVisualStyleBackColor = true;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
             // 
+            // race1
+            // 
+            this.race1.BackColor = System.Drawing.Color.SteelBlue;
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(2, -12);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1430, 823);
+            this.race1.TabIndex = 2;
+            this.race1.Visible = false;
+            // 
             // Ajustes
             // 
+            this.Ajustes.BackColor = System.Drawing.Color.LightBlue;
+            this.Ajustes.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Ajustes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Ajustes.Controls.Add(this.FullScrButtonSett);
             this.Ajustes.Controls.Add(this.PantallaSett);
             this.Ajustes.Controls.Add(this.SonidoSett);
@@ -419,7 +433,6 @@
             this.Ajustes.Size = new System.Drawing.Size(1429, 805);
             this.Ajustes.TabIndex = 5;
             this.Ajustes.Text = "Ajustes";
-            this.Ajustes.UseVisualStyleBackColor = true;
             // 
             // FullScrButtonSett
             // 
@@ -500,6 +513,17 @@
             this.Lecciones_y_Ejercicios.TabIndex = 7;
             this.Lecciones_y_Ejercicios.Text = "Lecciones y Ejercicios";
             this.Lecciones_y_Ejercicios.UseVisualStyleBackColor = true;
+            // 
+            // tuto1
+            // 
+            this.tuto1.BackColor = System.Drawing.Color.LightBlue;
+            this.tuto1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tuto1.BackgroundImage")));
+            this.tuto1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tuto1.Location = new System.Drawing.Point(0, 0);
+            this.tuto1.Name = "tuto1";
+            this.tuto1.Size = new System.Drawing.Size(1366, 788);
+            this.tuto1.TabIndex = 0;
+            this.tuto1.Visible = false;
             // 
             // panel1
             // 
@@ -587,11 +611,6 @@
             this.MenuHomeButton.UseVisualStyleBackColor = false;
             this.MenuHomeButton.Click += new System.EventHandler(this.MenuHomeButton_Click);
             // 
-            // Chekeos
-            // 
-            this.Chekeos.Enabled = true;
-            this.Chekeos.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // Menubutton
             // 
             this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
@@ -602,27 +621,10 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // race1
+            // timer1
             // 
-            this.race1.BackColor = System.Drawing.Color.SteelBlue;
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(2, -12);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1430, 823);
-            this.race1.TabIndex = 2;
-            this.race1.Visible = false;
-            // 
-            // tuto1
-            // 
-            this.tuto1.BackColor = System.Drawing.Color.LightBlue;
-            this.tuto1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tuto1.BackgroundImage")));
-            this.tuto1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tuto1.Location = new System.Drawing.Point(0, 0);
-            this.tuto1.Name = "tuto1";
-            this.tuto1.Size = new System.Drawing.Size(1366, 788);
-            this.tuto1.TabIndex = 0;
-            this.tuto1.Visible = false;
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -685,7 +687,6 @@
         private System.Windows.Forms.Label label2IdS;
         private System.Windows.Forms.Button MemotestGamesButton;
         private System.Windows.Forms.Button RaceGamesButton;
-        private System.Windows.Forms.Timer Chekeos;
         private Race race1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
@@ -697,6 +698,7 @@
         private System.Windows.Forms.Button sliderHomeIz;
         private System.Windows.Forms.Panel sliderHome;
         private tuto tuto1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

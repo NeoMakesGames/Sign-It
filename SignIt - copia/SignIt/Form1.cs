@@ -19,10 +19,10 @@ namespace SignIt
     public partial class Form1 : Form
     {
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
-        //public static string path = "C:\\Users\\48110679\\source\\repos\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        //public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
-        public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        public static string path = "C:\\Users\\48110679\\source\\repos\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        //public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        //public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
 
         Image myimage;
 
@@ -30,8 +30,9 @@ namespace SignIt
         int UserXp;
         int UserLvl;
         int NextLvl = 10;
-        int homeSlider = 1;
-        int avance;
+        int homeSlider = 0;
+        double home_slider = 0;
+      //  int avance;
 
         public bool menu = false;
         public bool fullscr = true;
@@ -62,20 +63,18 @@ namespace SignIt
             Menubutton.BringToFront();
         }
         
-        private void IDT()
+        private void Inicio()
         {
             label1CdU.Hide();
             label2IdS.Hide();
-            UserCdU.Text = "";
-            UserIdS.Text = "";
         }
         
-        private void X()
+        private void cierre()
         {
             this.Close();
         }
 
-        private void XP()
+        private void experiencia()
         {
             while (UserXp > NextLvl)
             {
@@ -85,7 +84,7 @@ namespace SignIt
             }
         }
 
-        private void buttons()
+        private void diseñoDeBotones()
         {
             SnapBackToReality.FlatStyle = FlatStyle.Flat;
             SnapBackToReality.FlatAppearance.BorderSize = 0;
@@ -140,26 +139,16 @@ namespace SignIt
 
         }
 
-        private void homeslider()
+        private void  sliderDeLaHome()
         {
-            homeSlider++;
+            
 
-            if (homeSlider > 64)
+            if (homeSlider == 4)
             {
-                homeSlider = 1;
+                homeSlider = 0;
             }
 
-            else if (homeSlider > 48 && 64 >= homeSlider)
-            {
-                if (HS_URL != "")
-                {
-                    HS_URL = "";
-                    //myimage = new Bitmap(HS_URL);
-                    //this.BackgroundImage = myimage;
-                }
-            }
-
-            else if (homeSlider > 32 && 48 >= homeSlider)
+            else if (homeSlider == 3)
             {
                 if (HS_URL != "")
                 {
@@ -169,7 +158,7 @@ namespace SignIt
                 }
             }
 
-            else if (homeSlider > 17 && 32 >= homeSlider)
+            else if (homeSlider == 2)
             {
                 if (HS_URL != "")
                 {
@@ -179,7 +168,17 @@ namespace SignIt
                 }
             }
 
-            else if (homeSlider > 1 && 16 >= homeSlider)
+            else if (homeSlider == 1)
+            {
+                if (HS_URL != "")
+                {
+                    HS_URL = "";
+                    //myimage = new Bitmap(HS_URL);
+                    //this.BackgroundImage = myimage;
+                }
+            }
+
+            else if (homeSlider == 0)
             {
                 if (HS_URL != "")
                 {
@@ -201,10 +200,10 @@ namespace SignIt
         {
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
-            IDT();
+            Inicio();
             noMENU();
             signIt.SelectedTab = IdS;
-            buttons();
+            diseñoDeBotones();
         }
 
 //Inicio de Sesión
@@ -213,10 +212,10 @@ namespace SignIt
             if (DatabaseFunctions.checkIfNameExists(UserIdS.Text, path) == true)
             {
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
-                avance = Convert.ToInt32(DatabaseFunctions.getString( DatabaseFunctions.currentUser, "Avance", path));
+                //avance = Convert.ToInt32(DatabaseFunctions.getString( DatabaseFunctions.currentUser, "Avance", path));
 
                 UserXp = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "XP", path));
-                XP();
+                experiencia();
 
                 UserHome.Text = DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path);
                 signIt.SelectedTab = Home;
@@ -231,11 +230,11 @@ namespace SignIt
         private void linkLabel1IdS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             signIt.SelectedTab = CdU;
-            IDT();
+            Inicio();
         }
         private void SalirIdS_Click(object sender, EventArgs e)
         {
-            X();
+            cierre();
         }
 
 //Creación de Usuario
@@ -246,7 +245,7 @@ namespace SignIt
                 DatabaseFunctions.addUser(UserCdU.Text, path);
                 
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
-                avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
+                //avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
 
                 tutorial();
             }
@@ -271,10 +270,11 @@ namespace SignIt
         private void SnapBackToReality_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = IdS;
-            IDT();
+            Inicio();
         }
 
-        //Home
+//Home
+
         private void DiccionarioHome_Click_1(object sender, EventArgs e)
         {
             signIt.SelectedTab = Diccionario;
@@ -367,7 +367,7 @@ namespace SignIt
 
         private void MenuExitButton_Click(object sender, EventArgs e)
             {
-                X();
+                cierre();
             }
             
 //Ajustes
@@ -404,33 +404,34 @@ namespace SignIt
         }
 
 //constantCheck
+
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(signIt.SelectedTab == juegos || signIt.SelectedTab == Lecciones_y_Ejercicios)
             {
-                if (externalmenu == true)
+                if (signIt.SelectedTab == juegos || signIt.SelectedTab == Lecciones_y_Ejercicios)
                 {
-                    MENU();
-                    externalmenu = false;
+                    if (externalmenu == true)
+                    {
+                        MENU();
+                        externalmenu = false;
+                    }
+                    else if (endTutorial == true)
+                    {
+                        signIt.SelectedTab = Home;
+                        MENU();
+                    }
                 }
-                else if (endTutorial == true)
+                else if (signIt.SelectedTab == Home)
                 {
-                    signIt.SelectedTab = Home;
-                    MENU();
+                    home_slider = +0.25;
+                    sliderDeLaHome();
+                    if (home_slider == 1)
+                    {
+                        home_slider = 0;
+                    }
                 }
             }
-            else if(signIt.SelectedTab == Home)
-            {
-                if (externalmenu == true)
-                {
-                    homeslider();
-                }
-            }
-            
-            
-
         }
-
 //sobras
 
         private void race2_Load(object sender, EventArgs e)
@@ -454,6 +455,10 @@ namespace SignIt
 
         }
         private void IdS_Click(object sender, EventArgs e) {
+        }
+        private void Chekeos_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }
