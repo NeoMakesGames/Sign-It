@@ -19,7 +19,7 @@ namespace SignIt
     public partial class Form1 : Form
     {
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
-        public static string path = "C:\\Users\\48110679\\source\\repos\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
         public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
         //public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
         //public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
@@ -32,7 +32,7 @@ namespace SignIt
         int NextLvl = 10;
         int homeSlider = 0;
         double home_slider = 0;
-      //  int avance;
+        int avance;
 
         public bool menu = false;
         public bool fullscr = true;
@@ -137,49 +137,54 @@ namespace SignIt
         {
             
 
-            if (homeSlider == 4)
+            if (homeSlider > 3)
             {
                 homeSlider = 0;
             }
 
             else if (homeSlider == 3)
             {
-                if (HS_URL != "")
+                if (HS_URL != "C:\\Users\\48110679\\Downloads\\images-1.jpg")
                 {
-                    HS_URL = "";
-                    //myimage = new Bitmap(HS_URL);
-                    //this.BackgroundImage = myimage;
+                    HS_URL = "C:\\Users\\48110679\\Downloads\\images-1.jpg";
+                    myimage = new Bitmap(HS_URL);
+                    sliderHome.BackgroundImage = myimage;
                 }
             }
 
             else if (homeSlider == 2)
             {
-                if (HS_URL != "")
+                if (HS_URL != "C:\\Users\\48110679\\Downloads\\a.jpg")
                 {
-                    HS_URL = "";
-                    //myimage = new Bitmap(HS_URL);
-                    //this.BackgroundImage = myimage;
+                    HS_URL = "C:\\Users\\48110679\\Downloads\\a.jpg";
+                    myimage = new Bitmap(HS_URL);
+                    sliderHome.BackgroundImage = myimage;
                 }
             }
 
             else if (homeSlider == 1)
             {
-                if (HS_URL != "")
+                if (HS_URL != "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg")
                 {
-                    HS_URL = "";
-                    //myimage = new Bitmap(HS_URL);
-                    //this.BackgroundImage = myimage;
+                    HS_URL = "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg";
+                    myimage = new Bitmap(HS_URL);
+                    sliderHome.BackgroundImage = myimage;
                 }
             }
 
             else if (homeSlider == 0)
             {
-                if (HS_URL != "")
+                if (HS_URL != "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg")
                 {
-                    HS_URL = "";
-                    //myimage = new Bitmap(HS_URL);
-                    //this.BackgroundImage = myimage;
+                    HS_URL = "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg";
+                    myimage = new Bitmap(HS_URL);
+                    sliderHome.BackgroundImage = myimage;
                 }
+            }
+
+            else if (homeSlider < 0)
+            {
+                homeSlider = 3;
             }
         }
 
@@ -187,9 +192,11 @@ namespace SignIt
         {
             signIt.SelectedTab = Lecciones_y_Ejercicios;
             tuto1.Show();
+            DatabaseFunctions.SetAvance(DatabaseFunctions.currentUser, 1, path);
         }
 
-//Comienzo 
+//Comienzo
+//
         private void Form1_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
@@ -207,12 +214,12 @@ namespace SignIt
             if (DatabaseFunctions.checkIfNameExists(UserIdS.Text, path) == true)
             {
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
-                //avance = Convert.ToInt32(DatabaseFunctions.getString( DatabaseFunctions.currentUser, "Avance", path));
+                avance = DatabaseFunctions.CheckAvance(DatabaseFunctions.currentUser, path);
 
-                UserXp = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "XP", path));
+                UserXp = DatabaseFunctions.checkXP(DatabaseFunctions.currentUser, path);
                 experiencia();
 
-                UserHome.Text = DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path);
+                UserHome.Text = (DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path));
                 signIt.SelectedTab = Home;
                 aparicionDelMenu();
             }
@@ -242,9 +249,11 @@ namespace SignIt
             {
                 DatabaseFunctions.addUser(UserCdU.Text, path);
                 
-                DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
-                //avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
+                DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserCdU.Text, path);
 
+                DatabaseFunctions.SetAvance(DatabaseFunctions.currentUser, 0, path);
+                avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
+                
                 tutorial();
             }
             else if (DatabaseFunctions.checkIfThereAreUsers(path))
@@ -253,8 +262,10 @@ namespace SignIt
                 {
                     DatabaseFunctions.addUser(UserCdU.Text, path);
 
-                    DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
-                // error aca    avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
+                    DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserCdU.Text, path);
+
+                    DatabaseFunctions.SetAvance(DatabaseFunctions.currentUser, 0, path);
+                    Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
 
                     tutorial();
                 }
@@ -290,11 +301,11 @@ namespace SignIt
         }
         private void sliderHomeIz_Click(object sender, EventArgs e)
         {
-            homeSlider -= 16;
+            homeSlider -= 1;
         }
         private void sliderHomeDer_Click(object sender, EventArgs e)
         {
-            homeSlider += 16;
+            homeSlider += 1;
         }
 
 //Menu
@@ -424,11 +435,12 @@ namespace SignIt
                 }
                 else if (signIt.SelectedTab == Home)
                 {
-                    home_slider = +0.25;
+                    home_slider += 0.5;
                     sliderDeLaHome();
-                    if (home_slider == 1)
+                    if (home_slider == 25)
                     {
                         home_slider = 0;
+                        homeSlider++;
                     }
                 }
             }
@@ -458,6 +470,11 @@ namespace SignIt
         private void IdS_Click(object sender, EventArgs e) {
         }
         private void Chekeos_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LeccionesMenu_Click(object sender, EventArgs e)
         {
 
         }
