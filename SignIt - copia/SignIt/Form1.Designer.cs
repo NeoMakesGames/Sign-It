@@ -63,6 +63,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Diccionario = new System.Windows.Forms.TabPage();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.juegos = new System.Windows.Forms.TabPage();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
@@ -88,6 +96,7 @@
             this.CdU.SuspendLayout();
             this.Home.SuspendLayout();
             this.LeccionesMenu.SuspendLayout();
+            this.Diccionario.SuspendLayout();
             this.juegos.SuspendLayout();
             this.Ajustes.SuspendLayout();
             this.SuspendLayout();
@@ -486,11 +495,124 @@
             this.Diccionario.BackColor = System.Drawing.Color.LightBlue;
             this.Diccionario.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Diccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Diccionario.Controls.Add(this.button15);
+            this.Diccionario.Controls.Add(this.button16);
+            this.Diccionario.Controls.Add(this.button12);
+            this.Diccionario.Controls.Add(this.button13);
+            this.Diccionario.Controls.Add(this.button10);
+            this.Diccionario.Controls.Add(this.button11);
+            this.Diccionario.Controls.Add(this.button9);
+            this.Diccionario.Controls.Add(this.button4);
             this.Diccionario.Location = new System.Drawing.Point(4, 22);
             this.Diccionario.Name = "Diccionario";
             this.Diccionario.Size = new System.Drawing.Size(1429, 805);
             this.Diccionario.TabIndex = 4;
             this.Diccionario.Text = "Diccioinario";
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.Transparent;
+            this.button15.BackgroundImage = global::SignIt.Properties.Resources.Básico__5_;
+            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button15.FlatAppearance.BorderSize = 0;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Location = new System.Drawing.Point(887, 300);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(246, 110);
+            this.button15.TabIndex = 7;
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.Transparent;
+            this.button16.BackgroundImage = global::SignIt.Properties.Resources.Básico__2_;
+            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Location = new System.Drawing.Point(900, 76);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(220, 110);
+            this.button16.TabIndex = 6;
+            this.button16.UseVisualStyleBackColor = false;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.Transparent;
+            this.button12.BackgroundImage = global::SignIt.Properties.Resources.Group_58;
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Location = new System.Drawing.Point(804, 464);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(220, 220);
+            this.button12.TabIndex = 5;
+            this.button12.UseVisualStyleBackColor = false;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.Transparent;
+            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(336, 464);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(220, 220);
+            this.button13.TabIndex = 4;
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Transparent;
+            this.button10.BackgroundImage = global::SignIt.Properties.Resources.Básico__4_;
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Location = new System.Drawing.Point(581, 300);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(220, 110);
+            this.button10.TabIndex = 3;
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Transparent;
+            this.button11.BackgroundImage = global::SignIt.Properties.Resources.Básico__3_;
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Location = new System.Drawing.Point(251, 300);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(220, 110);
+            this.button11.TabIndex = 2;
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Transparent;
+            this.button9.BackgroundImage = global::SignIt.Properties.Resources.Básico__1_;
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Location = new System.Drawing.Point(581, 76);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(220, 110);
+            this.button9.TabIndex = 1;
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = global::SignIt.Properties.Resources.Básico;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(251, 76);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(220, 110);
+            this.button4.TabIndex = 0;
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // juegos
             // 
@@ -740,6 +862,7 @@
             this.Home.ResumeLayout(false);
             this.Home.PerformLayout();
             this.LeccionesMenu.ResumeLayout(false);
+            this.Diccionario.ResumeLayout(false);
             this.juegos.ResumeLayout(false);
             this.Ajustes.ResumeLayout(false);
             this.Ajustes.PerformLayout();
@@ -800,6 +923,14 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button12;
     }
 }
 
