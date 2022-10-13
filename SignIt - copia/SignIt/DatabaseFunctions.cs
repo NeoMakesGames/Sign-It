@@ -178,5 +178,29 @@ namespace SignIt
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+        public static string GetNameOfVideo(int id, string path)
+        {
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Signs WHERE id = " + id, con);
+            OleDbDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            string result = reader["Sign"].ToString();
+            con.Close();
+            return result;
+        }
+
+        public static int GetIdOfVideo(string name, string path)
+        {
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Signs WHERE Sign = '" + name + "'", con);
+            OleDbDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            int result = Convert.ToInt32(reader["id"]);
+            con.Close();
+            return result;
+        }
     }
 }
