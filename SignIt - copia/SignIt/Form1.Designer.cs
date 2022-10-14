@@ -31,9 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.signIt = new System.Windows.Forms.TabControl();
-            this.Lecciones_y_Ejercicios = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.IdS = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2IdS = new System.Windows.Forms.Label();
@@ -63,14 +60,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Diccionario = new System.Windows.Forms.TabPage();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.verbosDiccionario = new System.Windows.Forms.Button();
+            this.coloresDiccionario = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.pronombresDiccionario = new System.Windows.Forms.Button();
+            this.lugaresDiccionario = new System.Windows.Forms.Button();
+            this.comidaDiccionario = new System.Windows.Forms.Button();
+            this.basicoDiccionario = new System.Windows.Forms.Button();
             this.juegos = new System.Windows.Forms.TabPage();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
@@ -81,17 +78,18 @@
             this.SonidoSett = new System.Windows.Forms.Label();
             this.UserNameSett = new System.Windows.Forms.Label();
             this.XProgresBarSett = new CircularProgressBar.CircularProgressBar();
+            this.Lecciones_y_Ejercicios = new System.Windows.Forms.TabPage();
             this.tuto1 = new SignIt.tuto();
-            this.Menubutton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.MenuExitButton = new System.Windows.Forms.Button();
             this.MenuSettingsButton = new System.Windows.Forms.Button();
             this.MenuGamesButton = new System.Windows.Forms.Button();
             this.MenuDiccionarioButton = new System.Windows.Forms.Button();
             this.MenuLectionsButton = new System.Windows.Forms.Button();
             this.MenuHomeButton = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Menubutton = new System.Windows.Forms.Button();
             this.signIt.SuspendLayout();
-            this.Lecciones_y_Ejercicios.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
             this.Home.SuspendLayout();
@@ -99,6 +97,8 @@
             this.Diccionario.SuspendLayout();
             this.juegos.SuspendLayout();
             this.Ajustes.SuspendLayout();
+            this.Lecciones_y_Ejercicios.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // signIt
@@ -116,36 +116,6 @@
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1437, 831);
             this.signIt.TabIndex = 0;
-            // 
-            // Lecciones_y_Ejercicios
-            // 
-            this.Lecciones_y_Ejercicios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Lecciones_y_Ejercicios.Controls.Add(this.tuto1);
-            this.Lecciones_y_Ejercicios.Location = new System.Drawing.Point(4, 22);
-            this.Lecciones_y_Ejercicios.Name = "Lecciones_y_Ejercicios";
-            this.Lecciones_y_Ejercicios.Size = new System.Drawing.Size(1429, 805);
-            this.Lecciones_y_Ejercicios.TabIndex = 7;
-            this.Lecciones_y_Ejercicios.Text = "Lecciones y Ejercicios";
-            this.Lecciones_y_Ejercicios.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel1.Controls.Add(this.MenuExitButton);
-            this.panel1.Controls.Add(this.MenuSettingsButton);
-            this.panel1.Controls.Add(this.MenuGamesButton);
-            this.panel1.Controls.Add(this.MenuDiccionarioButton);
-            this.panel1.Controls.Add(this.MenuLectionsButton);
-            this.panel1.Controls.Add(this.MenuHomeButton);
-            this.panel1.Location = new System.Drawing.Point(0, -23);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(332, 807);
-            this.panel1.TabIndex = 2;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // IdS
             // 
@@ -495,45 +465,47 @@
             this.Diccionario.BackColor = System.Drawing.Color.LightBlue;
             this.Diccionario.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Diccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Diccionario.Controls.Add(this.button15);
-            this.Diccionario.Controls.Add(this.button16);
+            this.Diccionario.Controls.Add(this.verbosDiccionario);
+            this.Diccionario.Controls.Add(this.coloresDiccionario);
             this.Diccionario.Controls.Add(this.button12);
             this.Diccionario.Controls.Add(this.button13);
-            this.Diccionario.Controls.Add(this.button10);
-            this.Diccionario.Controls.Add(this.button11);
-            this.Diccionario.Controls.Add(this.button9);
-            this.Diccionario.Controls.Add(this.button4);
+            this.Diccionario.Controls.Add(this.pronombresDiccionario);
+            this.Diccionario.Controls.Add(this.lugaresDiccionario);
+            this.Diccionario.Controls.Add(this.comidaDiccionario);
+            this.Diccionario.Controls.Add(this.basicoDiccionario);
             this.Diccionario.Location = new System.Drawing.Point(4, 22);
             this.Diccionario.Name = "Diccionario";
             this.Diccionario.Size = new System.Drawing.Size(1429, 805);
             this.Diccionario.TabIndex = 4;
             this.Diccionario.Text = "Diccioinario";
             // 
-            // button15
+            // verbosDiccionario
             // 
-            this.button15.BackColor = System.Drawing.Color.Transparent;
-            this.button15.BackgroundImage = global::SignIt.Properties.Resources.Básico__5_;
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Location = new System.Drawing.Point(887, 300);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(246, 110);
-            this.button15.TabIndex = 7;
-            this.button15.UseVisualStyleBackColor = false;
+            this.verbosDiccionario.BackColor = System.Drawing.Color.Transparent;
+            this.verbosDiccionario.BackgroundImage = global::SignIt.Properties.Resources.Básico__5_;
+            this.verbosDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.verbosDiccionario.FlatAppearance.BorderSize = 0;
+            this.verbosDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.verbosDiccionario.Location = new System.Drawing.Point(887, 300);
+            this.verbosDiccionario.Name = "verbosDiccionario";
+            this.verbosDiccionario.Size = new System.Drawing.Size(246, 110);
+            this.verbosDiccionario.TabIndex = 7;
+            this.verbosDiccionario.UseVisualStyleBackColor = false;
+            this.verbosDiccionario.Click += new System.EventHandler(this.verbosDiccionario_Click);
             // 
-            // button16
+            // coloresDiccionario
             // 
-            this.button16.BackColor = System.Drawing.Color.Transparent;
-            this.button16.BackgroundImage = global::SignIt.Properties.Resources.Básico__2_;
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Location = new System.Drawing.Point(900, 76);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(220, 110);
-            this.button16.TabIndex = 6;
-            this.button16.UseVisualStyleBackColor = false;
+            this.coloresDiccionario.BackColor = System.Drawing.Color.Transparent;
+            this.coloresDiccionario.BackgroundImage = global::SignIt.Properties.Resources.Básico__2_;
+            this.coloresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.coloresDiccionario.FlatAppearance.BorderSize = 0;
+            this.coloresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.coloresDiccionario.Location = new System.Drawing.Point(900, 76);
+            this.coloresDiccionario.Name = "coloresDiccionario";
+            this.coloresDiccionario.Size = new System.Drawing.Size(220, 110);
+            this.coloresDiccionario.TabIndex = 6;
+            this.coloresDiccionario.UseVisualStyleBackColor = false;
+            this.coloresDiccionario.Click += new System.EventHandler(this.coloresDiccionario_Click);
             // 
             // button12
             // 
@@ -547,6 +519,7 @@
             this.button12.Size = new System.Drawing.Size(220, 220);
             this.button12.TabIndex = 5;
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
@@ -560,59 +533,64 @@
             this.button13.Size = new System.Drawing.Size(220, 220);
             this.button13.TabIndex = 4;
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
-            // button10
+            // pronombresDiccionario
             // 
-            this.button10.BackColor = System.Drawing.Color.Transparent;
-            this.button10.BackgroundImage = global::SignIt.Properties.Resources.Básico__4_;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(581, 300);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(220, 110);
-            this.button10.TabIndex = 3;
-            this.button10.UseVisualStyleBackColor = false;
+            this.pronombresDiccionario.BackColor = System.Drawing.Color.Transparent;
+            this.pronombresDiccionario.BackgroundImage = global::SignIt.Properties.Resources.Básico__4_;
+            this.pronombresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pronombresDiccionario.FlatAppearance.BorderSize = 0;
+            this.pronombresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pronombresDiccionario.Location = new System.Drawing.Point(581, 300);
+            this.pronombresDiccionario.Name = "pronombresDiccionario";
+            this.pronombresDiccionario.Size = new System.Drawing.Size(220, 110);
+            this.pronombresDiccionario.TabIndex = 3;
+            this.pronombresDiccionario.UseVisualStyleBackColor = false;
+            this.pronombresDiccionario.Click += new System.EventHandler(this.pronombresDiccionario_Click);
             // 
-            // button11
+            // lugaresDiccionario
             // 
-            this.button11.BackColor = System.Drawing.Color.Transparent;
-            this.button11.BackgroundImage = global::SignIt.Properties.Resources.Básico__3_;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(251, 300);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(220, 110);
-            this.button11.TabIndex = 2;
-            this.button11.UseVisualStyleBackColor = false;
+            this.lugaresDiccionario.BackColor = System.Drawing.Color.Transparent;
+            this.lugaresDiccionario.BackgroundImage = global::SignIt.Properties.Resources.Básico__3_;
+            this.lugaresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lugaresDiccionario.FlatAppearance.BorderSize = 0;
+            this.lugaresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lugaresDiccionario.Location = new System.Drawing.Point(251, 300);
+            this.lugaresDiccionario.Name = "lugaresDiccionario";
+            this.lugaresDiccionario.Size = new System.Drawing.Size(220, 110);
+            this.lugaresDiccionario.TabIndex = 2;
+            this.lugaresDiccionario.UseVisualStyleBackColor = false;
+            this.lugaresDiccionario.Click += new System.EventHandler(this.lugaresDiccionario_Click);
             // 
-            // button9
+            // comidaDiccionario
             // 
-            this.button9.BackColor = System.Drawing.Color.Transparent;
-            this.button9.BackgroundImage = global::SignIt.Properties.Resources.Básico__1_;
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(581, 76);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(220, 110);
-            this.button9.TabIndex = 1;
-            this.button9.UseVisualStyleBackColor = false;
+            this.comidaDiccionario.BackColor = System.Drawing.Color.Transparent;
+            this.comidaDiccionario.BackgroundImage = global::SignIt.Properties.Resources.Básico__1_;
+            this.comidaDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.comidaDiccionario.FlatAppearance.BorderSize = 0;
+            this.comidaDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comidaDiccionario.Location = new System.Drawing.Point(581, 76);
+            this.comidaDiccionario.Name = "comidaDiccionario";
+            this.comidaDiccionario.Size = new System.Drawing.Size(220, 110);
+            this.comidaDiccionario.TabIndex = 1;
+            this.comidaDiccionario.UseVisualStyleBackColor = false;
+            this.comidaDiccionario.Click += new System.EventHandler(this.comidaDiccionario_Click);
             // 
-            // button4
+            // basicoDiccionario
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = global::SignIt.Properties.Resources.Básico;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(251, 76);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(220, 110);
-            this.button4.TabIndex = 0;
-            this.button4.UseVisualStyleBackColor = false;
+            this.basicoDiccionario.BackColor = System.Drawing.Color.Transparent;
+            this.basicoDiccionario.BackgroundImage = global::SignIt.Properties.Resources.Básico;
+            this.basicoDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.basicoDiccionario.FlatAppearance.BorderSize = 0;
+            this.basicoDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.basicoDiccionario.ForeColor = System.Drawing.Color.Black;
+            this.basicoDiccionario.Location = new System.Drawing.Point(251, 76);
+            this.basicoDiccionario.Name = "basicoDiccionario";
+            this.basicoDiccionario.Size = new System.Drawing.Size(220, 110);
+            this.basicoDiccionario.TabIndex = 0;
+            this.basicoDiccionario.UseVisualStyleBackColor = false;
+            this.basicoDiccionario.Click += new System.EventHandler(this.button4_Click);
             // 
             // juegos
             // 
@@ -748,6 +726,17 @@
             this.XProgresBarSett.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
             this.XProgresBarSett.Value = 68;
             // 
+            // Lecciones_y_Ejercicios
+            // 
+            this.Lecciones_y_Ejercicios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Lecciones_y_Ejercicios.Controls.Add(this.tuto1);
+            this.Lecciones_y_Ejercicios.Location = new System.Drawing.Point(4, 22);
+            this.Lecciones_y_Ejercicios.Name = "Lecciones_y_Ejercicios";
+            this.Lecciones_y_Ejercicios.Size = new System.Drawing.Size(1429, 805);
+            this.Lecciones_y_Ejercicios.TabIndex = 7;
+            this.Lecciones_y_Ejercicios.Text = "Lecciones y Ejercicios";
+            this.Lecciones_y_Ejercicios.UseVisualStyleBackColor = true;
+            // 
             // tuto1
             // 
             this.tuto1.BackColor = System.Drawing.Color.LightBlue;
@@ -759,15 +748,19 @@
             this.tuto1.TabIndex = 0;
             this.tuto1.Visible = false;
             // 
-            // Menubutton
+            // panel1
             // 
-            this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
-            this.Menubutton.Location = new System.Drawing.Point(0, 0);
-            this.Menubutton.Name = "Menubutton";
-            this.Menubutton.Size = new System.Drawing.Size(100, 75);
-            this.Menubutton.TabIndex = 3;
-            this.Menubutton.UseVisualStyleBackColor = true;
-            this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel1.Controls.Add(this.MenuExitButton);
+            this.panel1.Controls.Add(this.MenuSettingsButton);
+            this.panel1.Controls.Add(this.MenuGamesButton);
+            this.panel1.Controls.Add(this.MenuDiccionarioButton);
+            this.panel1.Controls.Add(this.MenuLectionsButton);
+            this.panel1.Controls.Add(this.MenuHomeButton);
+            this.panel1.Location = new System.Drawing.Point(0, -23);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(332, 807);
+            this.panel1.TabIndex = 2;
             // 
             // MenuExitButton
             // 
@@ -841,6 +834,21 @@
             this.MenuHomeButton.UseVisualStyleBackColor = false;
             this.MenuHomeButton.Click += new System.EventHandler(this.MenuHomeButton_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Menubutton
+            // 
+            this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
+            this.Menubutton.Location = new System.Drawing.Point(0, 0);
+            this.Menubutton.Name = "Menubutton";
+            this.Menubutton.Size = new System.Drawing.Size(100, 75);
+            this.Menubutton.TabIndex = 3;
+            this.Menubutton.UseVisualStyleBackColor = true;
+            this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -853,8 +861,6 @@
             this.Text = "SignIt!";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.signIt.ResumeLayout(false);
-            this.Lecciones_y_Ejercicios.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.IdS.ResumeLayout(false);
             this.IdS.PerformLayout();
             this.CdU.ResumeLayout(false);
@@ -866,6 +872,8 @@
             this.juegos.ResumeLayout(false);
             this.Ajustes.ResumeLayout(false);
             this.Ajustes.PerformLayout();
+            this.Lecciones_y_Ejercicios.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -924,12 +932,12 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button pronombresDiccionario;
+        private System.Windows.Forms.Button lugaresDiccionario;
+        private System.Windows.Forms.Button comidaDiccionario;
+        private System.Windows.Forms.Button basicoDiccionario;
+        private System.Windows.Forms.Button verbosDiccionario;
+        private System.Windows.Forms.Button coloresDiccionario;
         private System.Windows.Forms.Button button12;
     }
 }

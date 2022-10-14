@@ -402,7 +402,50 @@ namespace SignIt
             }
         }
 
+        //Diccionario
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //diccionarioBeta1.Show()
+            diccionarioBeta.verificacionDeTipo = "basico";
+        }
+
+        private void comidaDiccionario_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.verificacionDeTipo = "comida";
+        }
+
+        private void coloresDiccionario_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.verificacionDeTipo = "colores";
+        }
+
+        private void lugaresDiccionario_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.verificacionDeTipo = "lugares";
+        }
+
+        private void pronombresDiccionario_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.verificacionDeTipo = "pronombres";
+        }
+
+        private void verbosDiccionario_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.verificacionDeTipo = "verbos";
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.verificacionDeTipo = "abecedario";
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.verificacionDeTipo = "numeros";
+        }
+
 //Juegos
+
         private void RaceGamesButton_Click(object sender, EventArgs e)
         {
             race1.Show();

@@ -93,6 +93,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="juegos_y_cositas\diccionarioBeta.resx">
+      <DependentUpon>diccionarioBeta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="juegos_y_cositas\Race.resx">
       <DependentUpon>Race.cs</DependentUpon>
     </EmbeddedResource>
