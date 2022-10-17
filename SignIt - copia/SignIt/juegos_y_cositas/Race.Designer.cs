@@ -64,7 +64,7 @@
             this.RacePoints.BackColor = System.Drawing.Color.Transparent;
             this.RacePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.RacePoints.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.RacePoints.Location = new System.Drawing.Point(1102, 34);
+            this.RacePoints.Location = new System.Drawing.Point(1102, 59);
             this.RacePoints.Name = "RacePoints";
             this.RacePoints.Size = new System.Drawing.Size(29, 31);
             this.RacePoints.TabIndex = 2;
@@ -91,6 +91,8 @@
             // 
             this.RaceButtonStart.BackColor = System.Drawing.Color.Transparent;
             this.RaceButtonStart.BackgroundImage = global::SignIt.Properties.Resources.Group_56;
+            this.RaceButtonStart.FlatAppearance.BorderSize = 0;
+            this.RaceButtonStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RaceButtonStart.Location = new System.Drawing.Point(547, 527);
             this.RaceButtonStart.Name = "RaceButtonStart";
             this.RaceButtonStart.Size = new System.Drawing.Size(300, 70);
@@ -120,6 +122,8 @@
             // 
             this.imagenTimer.BackColor = System.Drawing.Color.Transparent;
             this.imagenTimer.BackgroundImage = global::SignIt.Properties.Resources.stopwatch_4;
+            this.imagenTimer.FlatAppearance.BorderSize = 0;
+            this.imagenTimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.imagenTimer.Location = new System.Drawing.Point(1108, 659);
             this.imagenTimer.Name = "imagenTimer";
             this.imagenTimer.Size = new System.Drawing.Size(60, 60);
@@ -130,6 +134,8 @@
             // 
             this.ExitRace.BackColor = System.Drawing.Color.Transparent;
             this.ExitRace.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
+            this.ExitRace.FlatAppearance.BorderSize = 0;
+            this.ExitRace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitRace.Location = new System.Drawing.Point(53, 34);
             this.ExitRace.Name = "ExitRace";
             this.ExitRace.Size = new System.Drawing.Size(125, 92);
@@ -154,9 +160,9 @@
             this.endRacePanel.Controls.Add(this.endExitRaceButton);
             this.endRacePanel.Controls.Add(this.endRacePoints);
             this.endRacePanel.Controls.Add(this.finalRaceText);
-            this.endRacePanel.Location = new System.Drawing.Point(-5, -18);
+            this.endRacePanel.Location = new System.Drawing.Point(-9, -37);
             this.endRacePanel.Name = "endRacePanel";
-            this.endRacePanel.Size = new System.Drawing.Size(1533, 858);
+            this.endRacePanel.Size = new System.Drawing.Size(1533, 863);
             this.endRacePanel.TabIndex = 8;
             this.endRacePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.endRacePanel_Paint);
             // 
@@ -165,6 +171,8 @@
             this.restartEndRaceButton.BackColor = System.Drawing.Color.Transparent;
             this.restartEndRaceButton.BackgroundImage = global::SignIt.Properties.Resources.restar_150x150;
             this.restartEndRaceButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.restartEndRaceButton.FlatAppearance.BorderSize = 0;
+            this.restartEndRaceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.restartEndRaceButton.Location = new System.Drawing.Point(612, 464);
             this.restartEndRaceButton.Name = "restartEndRaceButton";
             this.restartEndRaceButton.Size = new System.Drawing.Size(150, 151);
@@ -177,6 +185,8 @@
             this.endExitRaceButton.BackColor = System.Drawing.Color.Transparent;
             this.endExitRaceButton.BackgroundImage = global::SignIt.Properties.Resources.Flecha1;
             this.endExitRaceButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.endExitRaceButton.FlatAppearance.BorderSize = 0;
+            this.endExitRaceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.endExitRaceButton.Location = new System.Drawing.Point(69, 57);
             this.endExitRaceButton.Name = "endExitRaceButton";
             this.endExitRaceButton.Size = new System.Drawing.Size(108, 82);
@@ -212,6 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.BackgroundImage = global::SignIt.Properties.Resources.Group_55__1_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.endRacePanel);

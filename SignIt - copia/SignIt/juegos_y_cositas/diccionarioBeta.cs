@@ -13,13 +13,18 @@ namespace SignIt
 {
     public partial class diccionarioBeta : UserControl
     {
-        bool basico, comida, colores, lugares, pronombres, verbos = false;
+
         public static string verificacionDeTipo;
+        string a, b, c, d, e, f, g, h, i, j, k, l;
+
         int[] idCorrectas = new int[20];
-        int a = 0;
+        int z = 0;
         public diccionarioBeta()
         {
             InitializeComponent();
+            Hide();
+            panel1.Hide();
+            axWindowsMediaPlayer1.settings.setMode("loop", true);
         }
 
         private void diccionarioBeta_Load(object sender, EventArgs e)
@@ -27,63 +32,94 @@ namespace SignIt
 
         }
 
-        private void diccionariobeta()
+         void diccionariobeta()
         {
-            for (int i = 0; i < 100; i++)
+            a = "";
+            b = "";
+            c = "";
+            d = "";
+            e = "";
+            f = "";
+            g = "";
+            h = "";
+            i = "";
+            j = "";
+            k = "";
+            l = "";
+
+            for (int x = 0; x < 100; x++)
             {
-                if (verificacionDeTipo == DatabaseFunctions.getString(i, "Signs", Form1.path))
+                if (verificacionDeTipo == DatabaseFunctions.getString(x, "Signs", Form1.path))
                 {
-                    idCorrectas[a] = i;
+                    idCorrectas[z] = x;
+                    z++;
                 }
             }
             
-            for (int i = 0; i <= idCorrectas.Length; i++)
+            for (int y = 0; y <= idCorrectas.Length; y++)
             {
-                switch (i)
+                switch (y)
                 {
                     case 0:
-                        diccionarioButton1.Show();
-                        diccionarioButton1.Text = DatabaseFunctions.getString(idCorrectas[i], "Sign", Form1.path);
-                        DatabaseFunctions.GetURL(idCorrectas[i], Form1.path);
+                        dD1.Show();
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
+                        a = DatabaseFunctions.GetURL(idCorrectas[y], Form1.path);
                         break;
 
                     case 1:
-                        diccionarioButton1.Show();
-                        diccionarioButton1.Text = DatabaseFunctions.getString(idCorrectas[i], "Sign", Form1.path);
+                        dD1.Show();
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 2:
-                        diccionarioButton1.Show();
-                        diccionarioButton1.Text = DatabaseFunctions.getString(idCorrectas[i], "Sign" , Form1.path);
+                        dD1.Show();
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
                         break;
 
                     case 3:
-                        diccionarioButton1.Show();
-                        diccionarioButton1.Text = DatabaseFunctions.getString(idCorrectas[i], "Sign" , Form1.path);
+                        dD1.Show();
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
                         break;
 
                     case 4:
-                        diccionarioButton1.Show();
-                        diccionarioButton1.Text = DatabaseFunctions.getString(idCorrectas[i], "Sign" , Form1.path);
+                        dD1.Show();
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
                         break;
 
                     case 5:
-                        diccionarioButton1.Show();
-                        diccionarioButton1.Text = DatabaseFunctions.getString(idCorrectas[i], "Sign" , Form1.path);
+                        dD1.Show();
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
                         break;
-                {
+                
                     case 6:
-                        diccionarioButton1.Show();
-                        diccionarioButton1.Text = DatabaseFunctions.getString(idCorrectas[i], "Sign" , Form1.path);
+                        dD1.Show();
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
                         break;
 
                     case 7:
-                        diccionarioButton1.Show();
-                        diccionarioButton1.Text = DatabaseFunctions.getString(idCorrectas[i], "Sign" , Form1.path);
+                        dD1.Show();
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
                         break;
                 }
             }
+
             verificacionDeTipo = "";
+        }
+        private void dD1_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.URL = a;
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+        }
+        private void dbPanelExit_Click(object sender, EventArgs e)
+        {
+            panel1.Hide();
+            axWindowsMediaPlayer1.Ctlcontrols.stop();
+        }
+
+        private void diccionarioBetaExit_Click(object sender, EventArgs e)
+        {
+            dbPanelExit_Click(sender, e);
+            Hide();
         }
     }
 }

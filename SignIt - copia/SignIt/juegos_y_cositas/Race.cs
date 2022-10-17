@@ -22,16 +22,6 @@ namespace SignIt
         public Race()
         {
             InitializeComponent();
-            restartEndRaceButton.FlatStyle = FlatStyle.Flat;
-            restartEndRaceButton.FlatAppearance.BorderSize = 0;
-            endExitRaceButton.FlatAppearance.BorderSize = 0;
-            endExitRaceButton.FlatStyle = FlatStyle.Flat;
-            ExitRace.FlatStyle = FlatStyle.Flat;
-            ExitRace.FlatAppearance.BorderSize = 0;
-            imagenTimer.FlatStyle = FlatStyle.Flat;
-            imagenTimer.FlatAppearance.BorderSize = 0;
-            RaceButtonStart.FlatStyle = FlatStyle.Flat;
-            RaceButtonStart.FlatAppearance.BorderSize = 0;
         }
         private void Race_Load(object sender, EventArgs e)
         {
@@ -56,7 +46,6 @@ namespace SignIt
             OpenFileDialog opf = new OpenFileDialog();
             //axWindowsMediaPlayer1.URL = Form1.videosPath + DatabaseFunctions.GetURL(id, Form1.path)+".wmv";
             axWindowsMediaPlayer1.URL = Form1.videosPath + "\\" + DatabaseFunctions.GetURL(id, Form1.path) + ".wmv";
-            MessageBox.Show(DatabaseFunctions.GetURL(id, Form1.path));
             axWindowsMediaPlayer1.Ctlcontrols.play();
         }
         private void reStart()

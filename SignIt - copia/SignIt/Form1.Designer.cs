@@ -71,7 +71,6 @@
             this.juegos = new System.Windows.Forms.TabPage();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.FullScrButtonSett = new System.Windows.Forms.Button();
             this.PantallaSett = new System.Windows.Forms.Label();
@@ -79,7 +78,6 @@
             this.UserNameSett = new System.Windows.Forms.Label();
             this.XProgresBarSett = new CircularProgressBar.CircularProgressBar();
             this.Lecciones_y_Ejercicios = new System.Windows.Forms.TabPage();
-            this.tuto1 = new SignIt.tuto();
             this.panel1 = new System.Windows.Forms.Panel();
             this.MenuExitButton = new System.Windows.Forms.Button();
             this.MenuSettingsButton = new System.Windows.Forms.Button();
@@ -89,6 +87,9 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
+            this.tuto1 = new SignIt.tuto();
+            this.diccionarioBeta1 = new SignIt.diccionarioBeta();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -465,6 +466,7 @@
             this.Diccionario.BackColor = System.Drawing.Color.LightBlue;
             this.Diccionario.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Diccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Diccionario.Controls.Add(this.diccionarioBeta1);
             this.Diccionario.Controls.Add(this.verbosDiccionario);
             this.Diccionario.Controls.Add(this.coloresDiccionario);
             this.Diccionario.Controls.Add(this.button12);
@@ -630,17 +632,6 @@
             this.RaceGamesButton.UseVisualStyleBackColor = true;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
             // 
-            // race1
-            // 
-            this.race1.BackColor = System.Drawing.Color.SteelBlue;
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(2, -12);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1430, 823);
-            this.race1.TabIndex = 2;
-            this.race1.Visible = false;
-            // 
             // Ajustes
             // 
             this.Ajustes.BackColor = System.Drawing.Color.LightBlue;
@@ -736,17 +727,6 @@
             this.Lecciones_y_Ejercicios.TabIndex = 7;
             this.Lecciones_y_Ejercicios.Text = "Lecciones y Ejercicios";
             this.Lecciones_y_Ejercicios.UseVisualStyleBackColor = true;
-            // 
-            // tuto1
-            // 
-            this.tuto1.BackColor = System.Drawing.Color.LightBlue;
-            this.tuto1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tuto1.BackgroundImage")));
-            this.tuto1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tuto1.Location = new System.Drawing.Point(0, 0);
-            this.tuto1.Name = "tuto1";
-            this.tuto1.Size = new System.Drawing.Size(1366, 788);
-            this.tuto1.TabIndex = 0;
-            this.tuto1.Visible = false;
             // 
             // panel1
             // 
@@ -849,6 +829,39 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
+            // race1
+            // 
+            this.race1.BackColor = System.Drawing.Color.SteelBlue;
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(2, -12);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1430, 823);
+            this.race1.TabIndex = 2;
+            this.race1.Visible = false;
+            // 
+            // tuto1
+            // 
+            this.tuto1.BackColor = System.Drawing.Color.LightBlue;
+            this.tuto1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tuto1.BackgroundImage")));
+            this.tuto1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tuto1.Location = new System.Drawing.Point(0, 0);
+            this.tuto1.Name = "tuto1";
+            this.tuto1.Size = new System.Drawing.Size(1366, 788);
+            this.tuto1.TabIndex = 0;
+            this.tuto1.Visible = false;
+            // 
+            // diccionarioBeta1
+            // 
+            this.diccionarioBeta1.BackColor = System.Drawing.Color.LightBlue;
+            this.diccionarioBeta1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("diccionarioBeta1.BackgroundImage")));
+            this.diccionarioBeta1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.diccionarioBeta1.Location = new System.Drawing.Point(-4, -18);
+            this.diccionarioBeta1.Name = "diccionarioBeta1";
+            this.diccionarioBeta1.Size = new System.Drawing.Size(1366, 788);
+            this.diccionarioBeta1.TabIndex = 8;
+            this.diccionarioBeta1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -939,6 +952,7 @@
         private System.Windows.Forms.Button verbosDiccionario;
         private System.Windows.Forms.Button coloresDiccionario;
         private System.Windows.Forms.Button button12;
+        private diccionarioBeta diccionarioBeta1;
     }
 }
 

@@ -19,10 +19,10 @@ namespace SignIt
     public partial class Form1 : Form
     {
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
-        public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
-        //public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        //public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        //public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        //public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        public static string path = "C:\\Users\\BenjaDBF\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        public static string videosPath = "C:\\Users\\BenjaDBF\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
 
         Image myimage;
 
@@ -133,60 +133,60 @@ namespace SignIt
 
         }
 
-        private void  sliderDeLaHome()
-        {
-            
-
-            if (homeSlider > 3)
-            {
-                homeSlider = 0;
-            }
-
-            else if (homeSlider == 3)
-            {
-                if (HS_URL != "C:\\Users\\48110679\\Downloads\\images-1.jpg")
-                {
-                    HS_URL = "C:\\Users\\48110679\\Downloads\\images-1.jpg";
-                    myimage = new Bitmap(HS_URL);
-                    sliderHome.BackgroundImage = myimage;
-                }
-            }
-
-            else if (homeSlider == 2)
-            {
-                if (HS_URL != "C:\\Users\\48110679\\Downloads\\a.jpg")
-                {
-                    HS_URL = "C:\\Users\\48110679\\Downloads\\a.jpg";
-                    myimage = new Bitmap(HS_URL);
-                    sliderHome.BackgroundImage = myimage;
-                }
-            }
-
-            else if (homeSlider == 1)
-            {
-                if (HS_URL != "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg")
-                {
-                    HS_URL = "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg";
-                    myimage = new Bitmap(HS_URL);
-                    sliderHome.BackgroundImage = myimage;
-                }
-            }
-
-            else if (homeSlider == 0)
-            {
-                if (HS_URL != "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg")
-                {
-                    HS_URL = "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg";
-                    myimage = new Bitmap(HS_URL);
-                    sliderHome.BackgroundImage = myimage;
-                }
-            }
-
-            else if (homeSlider < 0)
-            {
-                homeSlider = 3;
-            }
-        }
+        //private void  sliderDeLaHome()
+        //{
+        //    
+        //
+        //    if (homeSlider > 3)
+        //    {
+        //        homeSlider = 0;
+        //    }
+        //
+        //    else if (homeSlider == 3)
+        //    {
+        //        if (HS_URL != "C:\\Users\\48110679\\Downloads\\images-1.jpg")
+        //        {
+        //            HS_URL = "C:\\Users\\48110679\\Downloads\\images-1.jpg";
+        //            myimage = new Bitmap(HS_URL);
+        //            sliderHome.BackgroundImage = myimage;
+        //        }
+        //    }
+        //
+        //    else if (homeSlider == 2)
+        //    {
+        //        if (HS_URL != "C:\\Users\\48110679\\Downloads\\a.jpg")
+        //        {
+        //            HS_URL = "C:\\Users\\48110679\\Downloads\\a.jpg";
+        //            myimage = new Bitmap(HS_URL);
+        //            sliderHome.BackgroundImage = myimage;
+        //        }
+        //    }
+        //
+        //    else if (homeSlider == 1)
+        //    {
+        //        if (HS_URL != "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg")
+        //        {
+        //            HS_URL = "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg";
+        //            myimage = new Bitmap(HS_URL);
+        //            sliderHome.BackgroundImage = myimage;
+        //        }
+        //    }
+        //
+        //    else if (homeSlider == 0)
+        //    {
+        //        if (HS_URL != "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg")
+        //        {
+        //            HS_URL = "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg";
+        //            myimage = new Bitmap(HS_URL);
+        //            sliderHome.BackgroundImage = myimage;
+        //        }
+        //    }
+        //
+        //    else if (homeSlider < 0)
+        //    {
+        //        homeSlider = 3;
+        //    }
+        //}
 
         private void tutorial()
         {
@@ -405,8 +405,9 @@ namespace SignIt
         //Diccionario
         private void button4_Click(object sender, EventArgs e)
         {
-            //diccionarioBeta1.Show()
+            diccionarioBeta1.Show();
             diccionarioBeta.verificacionDeTipo = "basico";
+
         }
 
         private void comidaDiccionario_Click(object sender, EventArgs e)
@@ -479,7 +480,7 @@ namespace SignIt
                 else if (signIt.SelectedTab == Home)
                 {
                     home_slider += 0.5;
-                    sliderDeLaHome();
+                    //sliderDeLaHome();
                     if (home_slider == 25)
                     {
                         home_slider = 0;
