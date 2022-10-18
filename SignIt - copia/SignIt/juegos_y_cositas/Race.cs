@@ -44,8 +44,10 @@ namespace SignIt
             int id = rdn.Next(3,5);
 
             OpenFileDialog opf = new OpenFileDialog();
-            //axWindowsMediaPlayer1.URL = Form1.videosPath + DatabaseFunctions.GetURL(id, Form1.path)+".wmv";
-            axWindowsMediaPlayer1.URL = Form1.videosPath + "\\" + DatabaseFunctions.GetURL(id, Form1.path) + ".wmv";
+            axWindowsMediaPlayer1.URL = Form1.videosPath + DatabaseFunctions.GetNameOfVideo(id, Form1.path) + ".wmv";
+            //axWindowsMediaPlayer1.URL = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\3.wmv";
+            //axWindowsMediaPlayer1.URL = DatabaseFunctions.GetURL(35, Form1.path);
+            MessageBox.Show(axWindowsMediaPlayer1.URL);
             axWindowsMediaPlayer1.Ctlcontrols.play();
         }
         private void reStart()
@@ -115,7 +117,7 @@ namespace SignIt
             {
                 Contador.Text = "0" + Convert.ToString(minutos) + ":" + Convert.ToString(segundos);
             }
-            if (segundos < 10)
+            else if (segundos < 10)
             {
                 Contador.Text = Convert.ToString(minutos) + ":" + "0" + Convert.ToString(segundos);
             }
@@ -183,12 +185,13 @@ namespace SignIt
                 RaceTextBox.Text = "";
                 Contador.Text = "";
                 
-                raceEndpanel();
-                TimerRace2.Stop();
-                TimerRace2.Enabled= false;
                 axWindowsMediaPlayer1.URL = "";
+                
+                raceEndpanel();
                 endRacePanel.BringToFront();
                 endRacePanel.Show();
+
+                DatabaseFunctions.addXP(DatabaseFunctions.currentUser, ((puntos % 2) + puntos)/2,Form1.path);
             }
         }
 

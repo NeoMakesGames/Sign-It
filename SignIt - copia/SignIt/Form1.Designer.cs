@@ -92,6 +92,7 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
+            this.diccionarioBeta1 = new SignIt.diccionarioBeta();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -468,6 +469,7 @@
             this.Diccionario.BackColor = System.Drawing.Color.LightBlue;
             this.Diccionario.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Diccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Diccionario.Controls.Add(this.diccionarioBeta1);
             this.Diccionario.Controls.Add(this.verbosDiccionario);
             this.Diccionario.Controls.Add(this.coloresDiccionario);
             this.Diccionario.Controls.Add(this.button12);
@@ -874,6 +876,17 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
+            // diccionarioBeta1
+            // 
+            this.diccionarioBeta1.BackColor = System.Drawing.Color.LightBlue;
+            this.diccionarioBeta1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("diccionarioBeta1.BackgroundImage")));
+            this.diccionarioBeta1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.diccionarioBeta1.Location = new System.Drawing.Point(-5, 2);
+            this.diccionarioBeta1.Name = "diccionarioBeta1";
+            this.diccionarioBeta1.Size = new System.Drawing.Size(1366, 788);
+            this.diccionarioBeta1.TabIndex = 8;
+            this.diccionarioBeta1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -962,12 +975,12 @@
         private System.Windows.Forms.Button verbosDiccionario;
         private System.Windows.Forms.Button coloresDiccionario;
         private System.Windows.Forms.Button button12;
-        private diccionarioBeta diccionarioBeta1;
         private System.Windows.Forms.Label progresoSett2;
         private System.Windows.Forms.Label progresoSett;
         private System.Windows.Forms.Label XpLvlSett;
         private System.Windows.Forms.Label userNameSett2;
         private System.Windows.Forms.Label experienciaSett2;
+        private diccionarioBeta diccionarioBeta1;
     }
 }
 

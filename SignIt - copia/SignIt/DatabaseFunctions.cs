@@ -25,7 +25,7 @@ namespace SignIt
             OleDbDataReader reader = cmd.ExecuteReader();
             reader.Read();
             //Obtiene el resultado deseado en objID del usuario seleccionado
-            string result = reader[objID].ToString();
+            Sstring result = reader[objID].ToString();
             //Cierra la coneccion a la base de datos
             con.Close();
             //Devuelve como string el resultado que se buscaba

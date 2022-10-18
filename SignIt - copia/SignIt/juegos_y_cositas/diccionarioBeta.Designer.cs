@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(diccionarioBeta));
             this.dD1 = new System.Windows.Forms.Button();
             this.dD2 = new System.Windows.Forms.Button();
@@ -50,6 +51,7 @@
             this.dD4 = new System.Windows.Forms.Button();
             this.dD3 = new System.Windows.Forms.Button();
             this.diccionarioBetaExit = new System.Windows.Forms.Button();
+            this.timerDB = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
@@ -147,24 +149,27 @@
             this.panel1.Controls.Add(this.dbPanelExit);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.axWindowsMediaPlayer1);
-            this.panel1.Location = new System.Drawing.Point(432, 151);
+            this.panel1.Location = new System.Drawing.Point(301, 96);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(521, 363);
+            this.panel1.Size = new System.Drawing.Size(576, 396);
             this.panel1.TabIndex = 8;
             // 
             // dbPanelExit
             // 
-            this.dbPanelExit.Location = new System.Drawing.Point(12, 28);
+            this.dbPanelExit.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
+            this.dbPanelExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dbPanelExit.FlatAppearance.BorderSize = 0;
+            this.dbPanelExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dbPanelExit.Location = new System.Drawing.Point(13, 18);
             this.dbPanelExit.Name = "dbPanelExit";
-            this.dbPanelExit.Size = new System.Drawing.Size(34, 23);
+            this.dbPanelExit.Size = new System.Drawing.Size(64, 46);
             this.dbPanelExit.TabIndex = 17;
-            this.dbPanelExit.Text = "button1";
             this.dbPanelExit.UseVisualStyleBackColor = true;
             this.dbPanelExit.Click += new System.EventHandler(this.dbPanelExit_Click);
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(63, 284);
+            this.panel2.Location = new System.Drawing.Point(107, 283);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(387, 47);
             this.panel2.TabIndex = 17;
@@ -172,7 +177,7 @@
             // axWindowsMediaPlayer1
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(63, 63);
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(107, 60);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(387, 268);
@@ -264,13 +269,23 @@
             // 
             // diccionarioBetaExit
             // 
+            this.diccionarioBetaExit.BackColor = System.Drawing.Color.Transparent;
+            this.diccionarioBetaExit.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
+            this.diccionarioBetaExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.diccionarioBetaExit.FlatAppearance.BorderSize = 0;
+            this.diccionarioBetaExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.diccionarioBetaExit.Location = new System.Drawing.Point(29, 35);
             this.diccionarioBetaExit.Name = "diccionarioBetaExit";
-            this.diccionarioBetaExit.Size = new System.Drawing.Size(75, 42);
+            this.diccionarioBetaExit.Size = new System.Drawing.Size(84, 62);
             this.diccionarioBetaExit.TabIndex = 17;
-            this.diccionarioBetaExit.Text = "button1";
-            this.diccionarioBetaExit.UseVisualStyleBackColor = true;
+            this.diccionarioBetaExit.UseVisualStyleBackColor = false;
             this.diccionarioBetaExit.Click += new System.EventHandler(this.diccionarioBetaExit_Click);
+            // 
+            // timerDB
+            // 
+            this.timerDB.Enabled = true;
+            this.timerDB.Interval = 250;
+            this.timerDB.Tick += new System.EventHandler(this.timerDB_Tick);
             // 
             // diccionarioBeta
             // 
@@ -330,5 +345,6 @@
         private System.Windows.Forms.Button dbPanelExit;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button diccionarioBetaExit;
+        private System.Windows.Forms.Timer timerDB;
     }
 }

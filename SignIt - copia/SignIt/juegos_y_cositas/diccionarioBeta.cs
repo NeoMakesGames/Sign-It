@@ -13,9 +13,10 @@ namespace SignIt
 {
     public partial class diccionarioBeta : UserControl
     {
-
+        public static bool DB = false;
         public static string verificacionDeTipo;
         string a, b, c, d, e, f, g, h, i, j, k, l;
+
 
         int[] idCorrectas = new int[20];
         int z = 0;
@@ -120,6 +121,15 @@ namespace SignIt
         {
             dbPanelExit_Click(sender, e);
             Hide();
+            verificacionDeTipo = "";
+        }
+        private void timerDB_Tick(object sender, EventArgs e)
+        {
+            if (DB == true)
+            {
+                diccionariobeta();
+                DB = false;
+            }
         }
     }
 }

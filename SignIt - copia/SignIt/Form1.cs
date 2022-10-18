@@ -39,14 +39,12 @@ namespace SignIt
         public static bool externalmenu = false;
         public static bool endTutorial = false;
         
-
-        string HS_URL;
         public Form1()
         {
-            InitializeComponent();
+          InitializeComponent();
         }
 
-        //Funciones
+//Funciones
 
         private void desaparicionDelMenu()
         {
@@ -70,6 +68,7 @@ namespace SignIt
 
         private void experiencia()
         {
+            UserXp = DatabaseFunctions.checkXP(DatabaseFunctions.currentUser, path);
             while (UserXp > NextLvl)
             {
                 UserLvl += 1;
@@ -136,6 +135,7 @@ namespace SignIt
         //private void  sliderDeLaHome()
         //{
         //    
+        //    string HS_URL;
         //
         //    if (homeSlider > 3)
         //    {
@@ -196,7 +196,7 @@ namespace SignIt
         }
 
 //Comienzo
-//
+
         private void Form1_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
@@ -216,7 +216,6 @@ namespace SignIt
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
                 avance = DatabaseFunctions.CheckAvance(DatabaseFunctions.currentUser, path);
 
-                UserXp = DatabaseFunctions.checkXP(DatabaseFunctions.currentUser, path);
                 experiencia();
 
                 UserHome.Text = (DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path));
@@ -312,6 +311,7 @@ namespace SignIt
 
         private async void Menubutton_Click(object sender, EventArgs e)
         {
+            experiencia();
             Menubutton.Enabled = false;
             if (menu == false)
             {
@@ -409,7 +409,7 @@ namespace SignIt
         {
             diccionarioBeta1.Show();
             diccionarioBeta.verificacionDeTipo = "basico";
-
+            diccionarioBeta.DB = true;
         }
 
         private void comidaDiccionario_Click(object sender, EventArgs e)
