@@ -21,8 +21,8 @@ namespace SignIt
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         //public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
         //public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
-        public static string path = "C:\\Users\\BenjaDBF\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        public static string videosPath = "C:\\Users\\BenjaDBF\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
 
         Image myimage;
 
@@ -372,7 +372,9 @@ namespace SignIt
         private void MenuSettingsButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Ajustes;
-            UserNameSett.Text = UserNameSett.Text + DatabaseFunctions.getString(DatabaseFunctions.currentUser,"Nombre",path);
+            userNameSett2.Text = DatabaseFunctions.getString(DatabaseFunctions.currentUser,"Nombre",path);
+            experienciaSett2.Text = Convert.ToString(UserLvl) + "          " + Convert.ToString(UserXp) + "/" + Convert.ToString(NextLvl);
+
             Menubutton_Click(sender, e);
             menu = false;
         }
@@ -519,6 +521,11 @@ namespace SignIt
         }
 
         private void LeccionesMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
