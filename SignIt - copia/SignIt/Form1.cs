@@ -19,10 +19,10 @@ namespace SignIt
     public partial class Form1 : Form
     {
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
-        //public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        //public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
-        public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        //public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        //public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
 
         Image myimage;
 
@@ -76,117 +76,61 @@ namespace SignIt
                 NextLvl *= 2;
             }
         }
-
-        private void diseñoDeBotones()
+        private void  sliderDeLaHome()
         {
-            SnapBackToReality.FlatStyle = FlatStyle.Flat;
-            SnapBackToReality.FlatAppearance.BorderSize = 0;
 
-            MenuHomeButton.FlatStyle = FlatStyle.Flat;
-            MenuHomeButton.FlatAppearance.BorderSize = 0;
+            string HS_URL = "";
 
-            MenuLectionsButton.FlatStyle = FlatStyle.Flat;
-            MenuLectionsButton.FlatAppearance.BorderSize = 0;
+            if (homeSlider > 3)
+            {
+                homeSlider = 0;
+            }
 
-            MenuDiccionarioButton.FlatStyle = FlatStyle.Flat;
-            MenuDiccionarioButton.FlatAppearance.BorderSize = 0;
+            else if (homeSlider == 1)
+            {
+                if (HS_URL != "C:\\Users\\48110679\\Downloads\\images-1.jpg")
+                {
+                    HS_URL = "C:\\Users\\48110679\\Downloads\\images-1.jpg";
+                    myimage = new Bitmap(HS_URL);
+                    sliderHome.BackgroundImage = myimage;
+                }
+            }
 
-            MenuGamesButton.FlatStyle = FlatStyle.Flat;
-            MenuGamesButton.FlatAppearance.BorderSize = 0;
+            else if (homeSlider == 2)
+            {
+                if (HS_URL != "C:\\Users\\48110679\\Downloads\\a.jpg")
+                {
+                    HS_URL = "C:\\Users\\48110679\\Downloads\\a.jpg";
+                    myimage = new Bitmap(HS_URL);
+                    sliderHome.BackgroundImage = myimage;
+                }
+            }
 
-            MenuSettingsButton.FlatStyle = FlatStyle.Flat;
-            MenuSettingsButton.FlatAppearance.BorderSize = 0;
+            else if (homeSlider == 3)
+            {
+                if (HS_URL != "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg")
+                {
+                    HS_URL = "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg";
+                    myimage = new Bitmap(HS_URL);
+                    sliderHome.BackgroundImage = myimage;
+                }
+            }
 
-            MenuExitButton.FlatStyle = FlatStyle.Flat;
-            MenuExitButton.FlatAppearance.BorderSize = 0;
+            else if (homeSlider == 0)
+            {
+                if (HS_URL != "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg")
+                {
+                    HS_URL = "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg";
+                    myimage = new Bitmap(HS_URL);
+                    sliderHome.BackgroundImage = myimage;
+                }
+            }
 
-            Menubutton.FlatStyle = FlatStyle.Flat;
-            Menubutton.FlatAppearance.BorderSize = 0;
-
-            MemotestGamesButton.FlatStyle = FlatStyle.Flat;
-            MemotestGamesButton.FlatAppearance.BorderSize = 0;
-
-            RaceGamesButton.FlatStyle = FlatStyle.Flat;
-            RaceGamesButton.FlatAppearance.BorderSize = 0;
-
-            SalirIdS.FlatStyle = FlatStyle.Flat;
-            SalirIdS.FlatAppearance.BorderSize = 0;
-
-            ComenzarIds.FlatStyle = FlatStyle.Flat;
-            ComenzarIds.FlatAppearance.BorderSize = 0;
-
-            ComenzarCdU.FlatStyle = FlatStyle.Flat;
-            ComenzarCdU.FlatAppearance.BorderSize = 0;
-
-            LeccionesHome.FlatStyle = FlatStyle.Flat;
-            LeccionesHome.FlatAppearance.BorderSize = 0;
-
-            DiccionarioHome.FlatStyle = FlatStyle.Flat;
-            DiccionarioHome.FlatAppearance.BorderSize = 0;
-
-            sliderHomeIz.FlatStyle = FlatStyle.Flat;
-            sliderHomeIz.FlatAppearance.BorderSize = 0;
-
-            sliderHomeDer.FlatStyle = FlatStyle.Flat;
-            sliderHomeDer.FlatAppearance.BorderSize = 0;
-
+            else if (homeSlider < 1)
+            {
+                homeSlider = 3;
+            }
         }
-
-        //private void  sliderDeLaHome()
-        //{
-        //    
-        //    string HS_URL;
-        //
-        //    if (homeSlider > 3)
-        //    {
-        //        homeSlider = 0;
-        //    }
-        //
-        //    else if (homeSlider == 3)
-        //    {
-        //        if (HS_URL != "C:\\Users\\48110679\\Downloads\\images-1.jpg")
-        //        {
-        //            HS_URL = "C:\\Users\\48110679\\Downloads\\images-1.jpg";
-        //            myimage = new Bitmap(HS_URL);
-        //            sliderHome.BackgroundImage = myimage;
-        //        }
-        //    }
-        //
-        //    else if (homeSlider == 2)
-        //    {
-        //        if (HS_URL != "C:\\Users\\48110679\\Downloads\\a.jpg")
-        //        {
-        //            HS_URL = "C:\\Users\\48110679\\Downloads\\a.jpg";
-        //            myimage = new Bitmap(HS_URL);
-        //            sliderHome.BackgroundImage = myimage;
-        //        }
-        //    }
-        //
-        //    else if (homeSlider == 1)
-        //    {
-        //        if (HS_URL != "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg")
-        //        {
-        //            HS_URL = "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg";
-        //            myimage = new Bitmap(HS_URL);
-        //            sliderHome.BackgroundImage = myimage;
-        //        }
-        //    }
-        //
-        //    else if (homeSlider == 0)
-        //    {
-        //        if (HS_URL != "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg")
-        //        {
-        //            HS_URL = "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg";
-        //            myimage = new Bitmap(HS_URL);
-        //            sliderHome.BackgroundImage = myimage;
-        //        }
-        //    }
-        //
-        //    else if (homeSlider < 0)
-        //    {
-        //        homeSlider = 3;
-        //    }
-        //}
 
         private void tutorial()
         {
@@ -203,7 +147,6 @@ namespace SignIt
             this.WindowState = FormWindowState.Maximized;
             desaparicionDelMenu();
             signIt.SelectedTab = IdS;
-            diseñoDeBotones();
             label1CdU.Hide();
             label2IdS.Hide();
         }
@@ -404,7 +347,7 @@ namespace SignIt
             }
         }
 
-        //Diccionario
+//Diccionario
         private void button4_Click(object sender, EventArgs e)
         {
             diccionarioBeta1.Show();
@@ -482,8 +425,8 @@ namespace SignIt
                 else if (signIt.SelectedTab == Home)
                 {
                     home_slider += 0.5;
-                    //sliderDeLaHome();
-                    if (home_slider == 25)
+                    sliderDeLaHome();
+                    if (home_slider == 30)
                     {
                         home_slider = 0;
                         homeSlider++;

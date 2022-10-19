@@ -58,6 +58,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseFunctions.cs" />
+    <Compile Include="juegos_y_cositas\Ej1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="juegos_y_cositas\Ej1.Designer.cs">
+      <DependentUpon>Ej1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="juegos_y_cositas\Ej0.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="juegos_y_cositas\Ej0.Designer.cs">
+      <DependentUpon>Ej0.cs</DependentUpon>
+    </Compile>
     <Compile Include="juegos_y_cositas\diccionarioBeta.cs">
       <SubType>UserControl</SubType>
     </Compile>
