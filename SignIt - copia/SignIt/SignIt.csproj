@@ -58,6 +58,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseFunctions.cs" />
+    <Compile Include="juegos_y_cositas\Ej1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="juegos_y_cositas\Ej1.Designer.cs">
+      <DependentUpon>Ej1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="juegos_y_cositas\Ej0.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="juegos_y_cositas\Ej0.Designer.cs">
+      <DependentUpon>Ej0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="juegos_y_cositas\diccionarioBeta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="juegos_y_cositas\diccionarioBeta.Designer.cs">
+      <DependentUpon>diccionarioBeta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +104,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="juegos_y_cositas\diccionarioBeta.resx">
+      <DependentUpon>diccionarioBeta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="juegos_y_cositas\Race.resx">
       <DependentUpon>Race.cs</DependentUpon>
@@ -276,6 +297,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Básico %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Presentación.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

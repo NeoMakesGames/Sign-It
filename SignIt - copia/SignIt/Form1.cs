@@ -39,14 +39,12 @@ namespace SignIt
         public static bool externalmenu = false;
         public static bool endTutorial = false;
         
-
-        string HS_URL;
         public Form1()
         {
-            InitializeComponent();
+          InitializeComponent();
         }
 
-        //Funciones
+//Funciones
 
         private void desaparicionDelMenu()
         {
@@ -70,6 +68,7 @@ namespace SignIt
 
         private void experiencia()
         {
+            UserXp = DatabaseFunctions.checkXP(DatabaseFunctions.currentUser, path);
             while (UserXp > NextLvl)
             {
                 UserLvl += 1;
@@ -77,72 +76,17 @@ namespace SignIt
                 NextLvl *= 2;
             }
         }
-
-        private void diseñoDeBotones()
-        {
-            SnapBackToReality.FlatStyle = FlatStyle.Flat;
-            SnapBackToReality.FlatAppearance.BorderSize = 0;
-
-            MenuHomeButton.FlatStyle = FlatStyle.Flat;
-            MenuHomeButton.FlatAppearance.BorderSize = 0;
-
-            MenuLectionsButton.FlatStyle = FlatStyle.Flat;
-            MenuLectionsButton.FlatAppearance.BorderSize = 0;
-
-            MenuDiccionarioButton.FlatStyle = FlatStyle.Flat;
-            MenuDiccionarioButton.FlatAppearance.BorderSize = 0;
-
-            MenuGamesButton.FlatStyle = FlatStyle.Flat;
-            MenuGamesButton.FlatAppearance.BorderSize = 0;
-
-            MenuSettingsButton.FlatStyle = FlatStyle.Flat;
-            MenuSettingsButton.FlatAppearance.BorderSize = 0;
-
-            MenuExitButton.FlatStyle = FlatStyle.Flat;
-            MenuExitButton.FlatAppearance.BorderSize = 0;
-
-            Menubutton.FlatStyle = FlatStyle.Flat;
-            Menubutton.FlatAppearance.BorderSize = 0;
-
-            MemotestGamesButton.FlatStyle = FlatStyle.Flat;
-            MemotestGamesButton.FlatAppearance.BorderSize = 0;
-
-            RaceGamesButton.FlatStyle = FlatStyle.Flat;
-            RaceGamesButton.FlatAppearance.BorderSize = 0;
-
-            SalirIdS.FlatStyle = FlatStyle.Flat;
-            SalirIdS.FlatAppearance.BorderSize = 0;
-
-            ComenzarIds.FlatStyle = FlatStyle.Flat;
-            ComenzarIds.FlatAppearance.BorderSize = 0;
-
-            ComenzarCdU.FlatStyle = FlatStyle.Flat;
-            ComenzarCdU.FlatAppearance.BorderSize = 0;
-
-            LeccionesHome.FlatStyle = FlatStyle.Flat;
-            LeccionesHome.FlatAppearance.BorderSize = 0;
-
-            DiccionarioHome.FlatStyle = FlatStyle.Flat;
-            DiccionarioHome.FlatAppearance.BorderSize = 0;
-
-            sliderHomeIz.FlatStyle = FlatStyle.Flat;
-            sliderHomeIz.FlatAppearance.BorderSize = 0;
-
-            sliderHomeDer.FlatStyle = FlatStyle.Flat;
-            sliderHomeDer.FlatAppearance.BorderSize = 0;
-
-        }
-
         private void  sliderDeLaHome()
         {
-            
+
+            string HS_URL = "";
 
             if (homeSlider > 3)
             {
                 homeSlider = 0;
             }
 
-            else if (homeSlider == 3)
+            else if (homeSlider == 1)
             {
                 if (HS_URL != "C:\\Users\\48110679\\Downloads\\images-1.jpg")
                 {
@@ -162,7 +106,7 @@ namespace SignIt
                 }
             }
 
-            else if (homeSlider == 1)
+            else if (homeSlider == 3)
             {
                 if (HS_URL != "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg")
                 {
@@ -182,7 +126,7 @@ namespace SignIt
                 }
             }
 
-            else if (homeSlider < 0)
+            else if (homeSlider < 1)
             {
                 homeSlider = 3;
             }
@@ -196,14 +140,13 @@ namespace SignIt
         }
 
 //Comienzo
-//
+
         private void Form1_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
             desaparicionDelMenu();
             signIt.SelectedTab = IdS;
-            diseñoDeBotones();
             label1CdU.Hide();
             label2IdS.Hide();
         }
@@ -216,7 +159,6 @@ namespace SignIt
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
                 avance = DatabaseFunctions.CheckAvance(DatabaseFunctions.currentUser, path);
 
-                UserXp = DatabaseFunctions.checkXP(DatabaseFunctions.currentUser, path);
                 experiencia();
 
                 UserHome.Text = (DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path));
@@ -312,6 +254,7 @@ namespace SignIt
 
         private async void Menubutton_Click(object sender, EventArgs e)
         {
+            experiencia();
             Menubutton.Enabled = false;
             if (menu == false)
             {
@@ -372,7 +315,9 @@ namespace SignIt
         private void MenuSettingsButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = Ajustes;
-            UserNameSett.Text = UserNameSett.Text + DatabaseFunctions.getString(DatabaseFunctions.currentUser,"Nombre",path);
+            userNameSett2.Text = DatabaseFunctions.getString(DatabaseFunctions.currentUser,"Nombre",path);
+            experienciaSett2.Text = Convert.ToString(UserLvl) + "          " + Convert.ToString(UserXp) + "/" + Convert.ToString(NextLvl);
+
             Menubutton_Click(sender, e);
             menu = false;
         }
@@ -402,7 +347,51 @@ namespace SignIt
             }
         }
 
+//Diccionario
+        private void button4_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta1.Show();
+            diccionarioBeta.verificacionDeTipo = "basico";
+            diccionarioBeta.DB = true;
+        }
+
+        private void comidaDiccionario_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.verificacionDeTipo = "comida";
+        }
+
+        private void coloresDiccionario_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.verificacionDeTipo = "colores";
+        }
+
+        private void lugaresDiccionario_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.verificacionDeTipo = "lugares";
+        }
+
+        private void pronombresDiccionario_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.verificacionDeTipo = "pronombres";
+        }
+
+        private void verbosDiccionario_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.verificacionDeTipo = "verbos";
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.verificacionDeTipo = "abecedario";
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.verificacionDeTipo = "numeros";
+        }
+
 //Juegos
+
         private void RaceGamesButton_Click(object sender, EventArgs e)
         {
             race1.Show();
@@ -437,7 +426,7 @@ namespace SignIt
                 {
                     home_slider += 0.5;
                     sliderDeLaHome();
-                    if (home_slider == 25)
+                    if (home_slider == 30)
                     {
                         home_slider = 0;
                         homeSlider++;
@@ -475,6 +464,11 @@ namespace SignIt
         }
 
         private void LeccionesMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
