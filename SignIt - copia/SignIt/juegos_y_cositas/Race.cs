@@ -19,6 +19,8 @@ namespace SignIt
         public static bool jugandoRace;
         int puntos;
         int segundos, minutos;
+        int id_;
+        string palabra;
         public Race()
         {
             InitializeComponent();
@@ -51,13 +53,16 @@ namespace SignIt
         private void reproduccion()
         {
             Random rdn = new Random();
-            int id = rdn.Next(3,5);
+            int id = rdn.Next(0, 60);
+            id_ = id;
 
             OpenFileDialog opf = new OpenFileDialog();
-            //axWindowsMediaPlayer1.URL = Form1.videosPath + DatabaseFunctions.GetURL(id, Form1.path)+".wmv";
-            axWindowsMediaPlayer1.URL = Form1.videosPath + "\\" + DatabaseFunctions.GetURL(id, Form1.path) + ".wmv";
-            MessageBox.Show(DatabaseFunctions.GetURL(id, Form1.path));
+            axWindowsMediaPlayer1.URL = Form1.videosPath + DatabaseFunctions.GetNameOfVideo(id, Form1.path) + ".wmv";
+            MessageBox.Show(axWindowsMediaPlayer1.URL);
             axWindowsMediaPlayer1.Ctlcontrols.play();
+
+            palabra = DatabaseFunctions.GetNameOfVideo(id_, Form1.path);
+            MessageBox.Show(palabra);
         }
         private void reStart()
         {
@@ -164,8 +169,8 @@ namespace SignIt
 
         private void TimerRace_Tick(object sender, EventArgs e)
         {
-            //poner palabra
-            if (RaceTextBox.Text == "hola")
+            
+            if (RaceTextBox.Text == palabra)
             {
                 raceTimer += 3000;
                 reproduccion();
