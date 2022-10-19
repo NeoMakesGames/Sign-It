@@ -58,6 +58,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseFunctions.cs" />
+    <Compile Include="diccionarioBeta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="diccionarioBeta.Designer.cs">
+      <DependentUpon>diccionarioBeta.cs</DependentUpon>
+    </Compile>
     <Compile Include="juegos_y_cositas\Ej1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -69,12 +75,6 @@
     </Compile>
     <Compile Include="juegos_y_cositas\Ej0.Designer.cs">
       <DependentUpon>Ej0.cs</DependentUpon>
-    </Compile>
-    <Compile Include="juegos_y_cositas\diccionarioBeta.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="juegos_y_cositas\diccionarioBeta.Designer.cs">
-      <DependentUpon>diccionarioBeta.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -102,11 +102,11 @@
     <Compile Include="juegos_y_cositas\tuto.Designer.cs">
       <DependentUpon>tuto.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="diccionarioBeta.resx">
+      <DependentUpon>diccionarioBeta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="juegos_y_cositas\diccionarioBeta.resx">
-      <DependentUpon>diccionarioBeta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="juegos_y_cositas\Race.resx">
       <DependentUpon>Race.cs</DependentUpon>

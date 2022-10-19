@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AxWMPLib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,7 +34,7 @@ namespace SignIt
 
         }
 
-         void diccionariobeta()
+        void diccionariobeta()
         {
             a = "";
             b = "";
@@ -71,7 +72,7 @@ namespace SignIt
                     ow++;
                 }
             }
-            
+
             for (int y = 0; y <= idCorrectas.Length; y++)
             {
                 switch (y)
@@ -89,57 +90,57 @@ namespace SignIt
 
                     case 2:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 3:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 4:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 5:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
-                
+
                     case 6:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 7:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 8:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 9:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 10:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
-                
+
                     case 11:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 12:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 13:
@@ -155,67 +156,67 @@ namespace SignIt
 
                     case 15:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 16:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 17:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 18:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
-                
+
                     case 19:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 20:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 21:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 22:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 23:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
-                
+
                     case 24:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 25:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
-                
+
                     case 26:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
 
                     case 27:
                         dD1.Show();
-                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign" , Form1.path);
+                        dD1.Text = DatabaseFunctions.getString(idCorrectas[y], "Sign", Form1.path);
                         break;
                 }
             }
