@@ -92,7 +92,6 @@
             this.MenuDiccionarioButton = new System.Windows.Forms.Button();
             this.MenuLectionsButton = new System.Windows.Forms.Button();
             this.MenuHomeButton = new System.Windows.Forms.Button();
-            this.diccionarioBeta1 = new SignIt.diccionarioBeta();
             this.signIt.SuspendLayout();
             this.Lecciones_y_Ejercicios.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -530,7 +529,6 @@
             this.Diccionario.BackColor = System.Drawing.Color.LightBlue;
             this.Diccionario.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Diccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Diccionario.Controls.Add(this.diccionarioBeta1);
             this.Diccionario.Controls.Add(this.verbosDiccionario);
             this.Diccionario.Controls.Add(this.coloresDiccionario);
             this.Diccionario.Controls.Add(this.button12);
@@ -543,7 +541,7 @@
             this.Diccionario.Name = "Diccionario";
             this.Diccionario.Size = new System.Drawing.Size(1429, 805);
             this.Diccionario.TabIndex = 4;
-            this.Diccionario.Text = "Diccioinario";
+            this.Diccionario.Text = " ";
             // 
             // verbosDiccionario
             // 
@@ -576,6 +574,7 @@
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.Transparent;
+            this.button12.BackgroundImage = global::SignIt.Properties.Resources.Group_58__1_;
             this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -924,14 +923,6 @@
             this.MenuHomeButton.UseVisualStyleBackColor = false;
             this.MenuHomeButton.Click += new System.EventHandler(this.MenuHomeButton_Click);
             // 
-            // diccionarioBeta1
-            // 
-            this.diccionarioBeta1.Location = new System.Drawing.Point(0, 0);
-            this.diccionarioBeta1.Name = "diccionarioBeta1";
-            this.diccionarioBeta1.Size = new System.Drawing.Size(1366, 788);
-            this.diccionarioBeta1.TabIndex = 8;
-            this.diccionarioBeta1.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1025,7 +1016,6 @@
         private System.Windows.Forms.Label XpLvlSett;
         private System.Windows.Forms.Label userNameSett2;
         private System.Windows.Forms.Label experienciaSett2;
-        private diccionarioBeta diccionarioBeta1;
     }
 }
 
