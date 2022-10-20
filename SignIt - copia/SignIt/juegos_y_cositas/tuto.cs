@@ -66,21 +66,18 @@ namespace SignIt
                           tutocont.Show();
                           endTutorial.Hide();
                           break;
-                    //
-                    //    case 3:
+                  
+                      case 3:
                     //        if (URL != "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg")
                     //        {
                     //            URL = "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg";
                     //            myimage = new Bitmap(URL);
                     //            panel1.BackgroundImage = myimage;
                     //        }
-                    //        tutocont.Hide();
-                    //        endTutorial.Show();
-                    //        break;
-                    //
-                    //    case 4:
-                    //        elprincipiodelfin();
-                    //        break;
+                              tutocont.Hide();
+                              endTutorial.Show();
+                              break;
+                      
                     }
             }
 

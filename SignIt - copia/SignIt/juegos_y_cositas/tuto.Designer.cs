@@ -54,6 +54,7 @@
             // 
             // skipTutorial
             // 
+            this.skipTutorial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.skipTutorial.Location = new System.Drawing.Point(1120, 635);
             this.skipTutorial.Name = "skipTutorial";
             this.skipTutorial.Size = new System.Drawing.Size(95, 80);
@@ -67,6 +68,7 @@
             this.tutocont.BackColor = System.Drawing.Color.Transparent;
             this.tutocont.BackgroundImage = global::SignIt.Properties.Resources.Group_57;
             this.tutocont.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tutocont.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tutocont.FlatAppearance.BorderSize = 0;
             this.tutocont.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tutocont.Location = new System.Drawing.Point(816, 640);
@@ -81,6 +83,7 @@
             this.tutoReg.BackColor = System.Drawing.Color.Transparent;
             this.tutoReg.BackgroundImage = global::SignIt.Properties.Resources.Group_561;
             this.tutoReg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tutoReg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tutoReg.FlatAppearance.BorderSize = 0;
             this.tutoReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tutoReg.Location = new System.Drawing.Point(459, 640);
@@ -101,12 +104,17 @@
             // 
             // endTutorial
             // 
-            this.endTutorial.Location = new System.Drawing.Point(637, 664);
+            this.endTutorial.BackColor = System.Drawing.Color.Transparent;
+            this.endTutorial.BackgroundImage = global::SignIt.Properties.Resources.Botón__1_;
+            this.endTutorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.endTutorial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.endTutorial.FlatAppearance.BorderSize = 0;
+            this.endTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.endTutorial.Location = new System.Drawing.Point(558, 647);
             this.endTutorial.Name = "endTutorial";
-            this.endTutorial.Size = new System.Drawing.Size(75, 23);
+            this.endTutorial.Size = new System.Drawing.Size(233, 57);
             this.endTutorial.TabIndex = 5;
-            this.endTutorial.Text = "button1";
-            this.endTutorial.UseVisualStyleBackColor = true;
+            this.endTutorial.UseVisualStyleBackColor = false;
             this.endTutorial.Click += new System.EventHandler(this.endTutorial_Click);
             // 
             // tuto

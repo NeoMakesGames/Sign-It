@@ -407,8 +407,9 @@ namespace SignIt
                     }
                     else if (endTutorial == true)
                     {
-                        signIt.SelectedTab = Home;
                         aparicionDelMenu();
+                        UserHome.Text = (DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path));
+                        signIt.SelectedTab = Home;
                     }
                 }
                 else if (signIt.SelectedTab == Home)
