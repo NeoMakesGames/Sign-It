@@ -64,22 +64,30 @@
             // 
             // tutocont
             // 
-            this.tutocont.Location = new System.Drawing.Point(816, 644);
+            this.tutocont.BackColor = System.Drawing.Color.Transparent;
+            this.tutocont.BackgroundImage = global::SignIt.Properties.Resources.Group_57;
+            this.tutocont.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tutocont.FlatAppearance.BorderSize = 0;
+            this.tutocont.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tutocont.Location = new System.Drawing.Point(816, 640);
             this.tutocont.Name = "tutocont";
-            this.tutocont.Size = new System.Drawing.Size(75, 62);
+            this.tutocont.Size = new System.Drawing.Size(75, 71);
             this.tutocont.TabIndex = 2;
-            this.tutocont.Text = "button2";
-            this.tutocont.UseVisualStyleBackColor = true;
+            this.tutocont.UseVisualStyleBackColor = false;
             this.tutocont.Click += new System.EventHandler(this.tutocont_Click_1);
             // 
             // tutoReg
             // 
-            this.tutoReg.Location = new System.Drawing.Point(459, 644);
+            this.tutoReg.BackColor = System.Drawing.Color.Transparent;
+            this.tutoReg.BackgroundImage = global::SignIt.Properties.Resources.Group_561;
+            this.tutoReg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tutoReg.FlatAppearance.BorderSize = 0;
+            this.tutoReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tutoReg.Location = new System.Drawing.Point(459, 640);
             this.tutoReg.Name = "tutoReg";
-            this.tutoReg.Size = new System.Drawing.Size(75, 62);
+            this.tutoReg.Size = new System.Drawing.Size(75, 71);
             this.tutoReg.TabIndex = 3;
-            this.tutoReg.Text = "button1";
-            this.tutoReg.UseVisualStyleBackColor = true;
+            this.tutoReg.UseVisualStyleBackColor = false;
             this.tutoReg.Click += new System.EventHandler(this.tutoReg_Click_1);
             // 
             // label1

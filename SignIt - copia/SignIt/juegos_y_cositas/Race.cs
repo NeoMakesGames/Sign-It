@@ -24,20 +24,10 @@ namespace SignIt
         public Race()
         {
             InitializeComponent();
-            restartEndRaceButton.FlatStyle = FlatStyle.Flat;
-            restartEndRaceButton.FlatAppearance.BorderSize = 0;
-            endExitRaceButton.FlatAppearance.BorderSize = 0;
-            endExitRaceButton.FlatStyle = FlatStyle.Flat;
-            ExitRace.FlatStyle = FlatStyle.Flat;
-            ExitRace.FlatAppearance.BorderSize = 0;
-            imagenTimer.FlatStyle = FlatStyle.Flat;
-            imagenTimer.FlatAppearance.BorderSize = 0;
-            RaceButtonStart.FlatStyle = FlatStyle.Flat;
-            RaceButtonStart.FlatAppearance.BorderSize = 0;
         }
         private void Race_Load(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
 
             TimerRace.Stop();
             TimerRace2.Stop();
@@ -79,7 +69,7 @@ namespace SignIt
         }
         private void exit()
         {
-            this.Hide();
+            Hide();
             reStart();
 
             TimerRace.Stop();
@@ -170,7 +160,7 @@ namespace SignIt
         private void TimerRace_Tick(object sender, EventArgs e)
         {
             
-            if (RaceTextBox.Text == palabra)
+            //if (RaceTextBox.Text == DatabaseFunctions.GetNameOfVideo(id_, Form1.path))
             {
                 raceTimer += 3000;
                 reproduccion();
@@ -192,19 +182,19 @@ namespace SignIt
                 TimerRace.Enabled = false;
                 TimerRace2.Enabled = false;
 
-                axWindowsMediaPlayer1.Hide();
-                axWindowsMediaPlayer1.URL = "";
-
-                RacePoints.Text = "";
-                RaceTextBox.Text = "";
-                Contador.Text = "";
-                
                 raceEndpanel();
                 TimerRace2.Stop();
                 TimerRace2.Enabled= false;
                 axWindowsMediaPlayer1.URL = "";
                 endRacePanel.BringToFront();
                 endRacePanel.Show();
+
+                axWindowsMediaPlayer1.Hide();
+                axWindowsMediaPlayer1.URL = "";
+
+                RacePoints.Text = "";
+                RaceTextBox.Text = "";
+                Contador.Text = "";                
             }
         }
 

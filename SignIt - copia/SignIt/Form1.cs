@@ -19,13 +19,13 @@ namespace SignIt
     public partial class Form1 : Form
     {
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
-        public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
-        //public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        //public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        //public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        //public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
 
         Image myimage;
-
+        string HS_URL;
         int menuX = -332;
         int UserXp;
         int UserLvl;
@@ -78,58 +78,47 @@ namespace SignIt
         }
         private void  sliderDeLaHome()
         {
-
-            string HS_URL = "";
-
-            if (homeSlider > 3)
-            {
-                homeSlider = 0;
-            }
-
-            else if (homeSlider == 1)
-            {
-                if (HS_URL != "C:\\Users\\48110679\\Downloads\\images-1.jpg")
+            
+             
+            
+                if (homeSlider > 3)
                 {
-                    HS_URL = "C:\\Users\\48110679\\Downloads\\images-1.jpg";
-                    myimage = new Bitmap(HS_URL);
-                    sliderHome.BackgroundImage = myimage;
+                    homeSlider = 1;
                 }
-            }
-
-            else if (homeSlider == 2)
-            {
-                if (HS_URL != "C:\\Users\\48110679\\Downloads\\a.jpg")
+            
+                else if (homeSlider == 1)
                 {
-                    HS_URL = "C:\\Users\\48110679\\Downloads\\a.jpg";
-                    myimage = new Bitmap(HS_URL);
-                    sliderHome.BackgroundImage = myimage;
+                  if (HS_URL != Form1.path.Remove(72, 14) + "\\Resources\\fundasor.PNG")
+                  {
+                        HS_URL = Form1.path.Remove(72, 14) + "\\Resources\\fundasor.PNG";
+                        myimage = new Bitmap(HS_URL);
+                        sliderHome.BackgroundImage = myimage;
+                  }
                 }
-            }
-
-            else if (homeSlider == 3)
-            {
-                if (HS_URL != "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg")
+            
+                else if (homeSlider == 2)
                 {
-                    HS_URL = "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg";
-                    myimage = new Bitmap(HS_URL);
-                    sliderHome.BackgroundImage = myimage;
+                    if (HS_URL != Form1.path.Remove(72, 14) + "\\Resources\\Logo-CAS.PNG")
+                    {
+                        HS_URL = Form1.path.Remove(72, 14) + "\\Resources\\Logo-CAS.PNG";
+                        myimage = new Bitmap(HS_URL);
+                        sliderHome.BackgroundImage = myimage;
+                    }
                 }
-            }
-
-            else if (homeSlider == 0)
-            {
-                if (HS_URL != "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg")
+            
+                else if (homeSlider == 3)
                 {
-                    HS_URL = "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg";
-                    myimage = new Bitmap(HS_URL);
-                    sliderHome.BackgroundImage = myimage;
+                    if (HS_URL != Form1.path.Remove(72, 14) + "\\Resources\\logo.PNG")
+                    {
+                        HS_URL = Form1.path.Remove(72, 14) + "\\Resources\\logo.PNG";
+                        myimage = new Bitmap(HS_URL);
+                        sliderHome.BackgroundImage = myimage;
+                    }
                 }
-            }
-
-            else if (homeSlider < 1)
-            {
-                homeSlider = 3;
-            }
+                else if (homeSlider < 1)
+                {
+                    homeSlider = 3;
+                }
         }
 
         private void tutorial()

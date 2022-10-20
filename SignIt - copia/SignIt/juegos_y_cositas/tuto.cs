@@ -15,7 +15,8 @@ namespace SignIt
     {
         Image myimage;
 
-        string URL = "";
+        string URL = "a";
+        string url_ = "";
 
         int avance = 0;
         public tuto()
@@ -32,56 +33,56 @@ namespace SignIt
         private void tutoTimer_Tick_1(object sender, EventArgs e)
         {
             label1.Text = Convert.ToString(avance);
-            switch (avance)
-            {
-                case 0:
-                    if (URL != "C:\\Users\\48110679\\Downloads\\images-1.jpg")
-                    {
-                        URL = "C:\\Users\\48110679\\Downloads\\images-1.jpg";
-                        myimage = new Bitmap(URL);
-                        panel1.BackgroundImage = myimage;
+           switch (avance)
+           {         
+                      case 0:
+                           if (URL != Form1.path.Remove(72, 14) + "\\Resources\\Group 59.PNG" )
+                           {
+                               URL = Form1.path.Remove(72,14) + "\\Resources\\Group 59.PNG";
+                               myimage = new Bitmap(URL);
+                               panel1.BackgroundImage = myimage;
+                           }
+                           tutoReg.Hide();
+                           break;
+                          
+                      case 1:
+                          if (URL != Form1.path.Remove(72, 14) + "\\Resources\\Group 61.PNG")
+                          {
+                              URL = Form1.path.Remove(72, 14) + "\\Resources\\Group 61.PNG";
+                              myimage = new Bitmap(URL);
+                              panel1.BackgroundImage = myimage;
+                          }
+                          skipTutorial.Hide();
+                          tutoReg.Show();
+                          break;
+                   
+                      case 2:
+                          if (URL != Form1.path.Remove(72, 14) + "\\Resources\\Group 62.PNG")
+                          {
+                              URL = Form1.path.Remove(72, 14) + "\\Resources\\Group 62.PNG";
+                              myimage = new Bitmap(URL);
+                              panel1.BackgroundImage = myimage;
+                          }   
+                          tutocont.Show();
+                          endTutorial.Hide();
+                          break;
+                    //
+                    //    case 3:
+                    //        if (URL != "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg")
+                    //        {
+                    //            URL = "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg";
+                    //            myimage = new Bitmap(URL);
+                    //            panel1.BackgroundImage = myimage;
+                    //        }
+                    //        tutocont.Hide();
+                    //        endTutorial.Show();
+                    //        break;
+                    //
+                    //    case 4:
+                    //        elprincipiodelfin();
+                    //        break;
                     }
-                    tutoReg.Hide();
-                    break;
-            
-                case 1:
-                    if (URL != "C:\\Users\\48110679\\Downloads\\a.jpg")
-                    {
-                        URL = "C:\\Users\\48110679\\Downloads\\a.jpg";
-                        myimage = new Bitmap(URL);
-                        panel1.BackgroundImage = myimage;
-                    }
-                    skipTutorial.Hide();
-                    tutoReg.Show();
-                    break;
-            
-                case 2:
-                    if (URL != "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg")
-                    {
-                        URL = "C:\\Users\\48110679\\Downloads\\5e25ddc5dcbba.jpeg";
-                        myimage = new Bitmap(URL);
-                        panel1.BackgroundImage = myimage;
-                    }   
-                    tutocont.Show();
-                    endTutorial.Hide();
-                    break;
-            
-                case 3:
-                    if (URL != "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg")
-                    {
-                        URL = "C:\\Users\\48110679\\Downloads\\5d87d6e6211d5.jpeg";
-                        myimage = new Bitmap(URL);
-                        panel1.BackgroundImage = myimage;
-                    }
-                    tutocont.Hide();
-                    endTutorial.Show();
-                    break;
-            
-                case 4:
-                    elprincipiodelfin();
-                    break;
             }
-        }
 
         private void elprincipiodelfin()
         {
