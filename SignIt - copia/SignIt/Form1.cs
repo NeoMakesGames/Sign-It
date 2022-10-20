@@ -559,6 +559,9 @@ namespace SignIt
 
         }
 
-        
+        private void NumBack_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.SelectedTab = dB0;
+        }
     }
 }

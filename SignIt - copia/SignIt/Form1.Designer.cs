@@ -103,8 +103,6 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
-            this.tuto1 = new SignIt.tuto();
             this.dBNum2 = new System.Windows.Forms.Button();
             this.dBNum3 = new System.Windows.Forms.Button();
             this.dBNum8 = new System.Windows.Forms.Button();
@@ -115,6 +113,9 @@
             this.dBNum4 = new System.Windows.Forms.Button();
             this.dBNum6 = new System.Windows.Forms.Button();
             this.dBNum1 = new System.Windows.Forms.Button();
+            this.NumBack = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
+            this.tuto1 = new SignIt.tuto();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -777,18 +778,21 @@
             // 
             // dBAbecedario
             // 
+            this.dBAbecedario.BackColor = System.Drawing.Color.LightBlue;
+            this.dBAbecedario.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.dBAbecedario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBAbecedario.Location = new System.Drawing.Point(4, 22);
             this.dBAbecedario.Name = "dBAbecedario";
             this.dBAbecedario.Size = new System.Drawing.Size(1358, 762);
             this.dBAbecedario.TabIndex = 3;
             this.dBAbecedario.Text = "dBAbecedario";
-            this.dBAbecedario.UseVisualStyleBackColor = true;
             // 
             // dBNros
             // 
             this.dBNros.BackColor = System.Drawing.Color.LightBlue;
             this.dBNros.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.dBNros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNros.Controls.Add(this.NumBack);
             this.dBNros.Controls.Add(this.dBNum6);
             this.dBNros.Controls.Add(this.dBNum1);
             this.dBNros.Controls.Add(this.dBNum9);
@@ -1081,6 +1085,110 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
+            // dBNum2
+            // 
+            this.dBNum2.Location = new System.Drawing.Point(339, 157);
+            this.dBNum2.Name = "dBNum2";
+            this.dBNum2.Size = new System.Drawing.Size(200, 200);
+            this.dBNum2.TabIndex = 0;
+            this.dBNum2.Text = "2";
+            this.dBNum2.UseVisualStyleBackColor = true;
+            // 
+            // dBNum3
+            // 
+            this.dBNum3.Location = new System.Drawing.Point(567, 157);
+            this.dBNum3.Name = "dBNum3";
+            this.dBNum3.Size = new System.Drawing.Size(200, 200);
+            this.dBNum3.TabIndex = 1;
+            this.dBNum3.Text = "3";
+            this.dBNum3.UseVisualStyleBackColor = true;
+            // 
+            // dBNum8
+            // 
+            this.dBNum8.Location = new System.Drawing.Point(567, 419);
+            this.dBNum8.Name = "dBNum8";
+            this.dBNum8.Size = new System.Drawing.Size(200, 200);
+            this.dBNum8.TabIndex = 2;
+            this.dBNum8.Text = "8";
+            this.dBNum8.UseVisualStyleBackColor = true;
+            // 
+            // dBNum7
+            // 
+            this.dBNum7.Location = new System.Drawing.Point(339, 419);
+            this.dBNum7.Name = "dBNum7";
+            this.dBNum7.Size = new System.Drawing.Size(200, 200);
+            this.dBNum7.TabIndex = 3;
+            this.dBNum7.Text = "7";
+            this.dBNum7.UseVisualStyleBackColor = true;
+            // 
+            // dBNum9
+            // 
+            this.dBNum9.Location = new System.Drawing.Point(810, 419);
+            this.dBNum9.Name = "dBNum9";
+            this.dBNum9.Size = new System.Drawing.Size(200, 200);
+            this.dBNum9.TabIndex = 7;
+            this.dBNum9.Text = "9";
+            this.dBNum9.UseVisualStyleBackColor = true;
+            // 
+            // dBNum10
+            // 
+            this.dBNum10.Location = new System.Drawing.Point(1058, 419);
+            this.dBNum10.Name = "dBNum10";
+            this.dBNum10.Size = new System.Drawing.Size(200, 200);
+            this.dBNum10.TabIndex = 6;
+            this.dBNum10.Text = "10";
+            this.dBNum10.UseVisualStyleBackColor = true;
+            // 
+            // dBNum5
+            // 
+            this.dBNum5.Location = new System.Drawing.Point(1058, 157);
+            this.dBNum5.Name = "dBNum5";
+            this.dBNum5.Size = new System.Drawing.Size(200, 200);
+            this.dBNum5.TabIndex = 5;
+            this.dBNum5.Text = "5";
+            this.dBNum5.UseVisualStyleBackColor = true;
+            // 
+            // dBNum4
+            // 
+            this.dBNum4.Location = new System.Drawing.Point(810, 157);
+            this.dBNum4.Name = "dBNum4";
+            this.dBNum4.Size = new System.Drawing.Size(200, 200);
+            this.dBNum4.TabIndex = 4;
+            this.dBNum4.Text = "4";
+            this.dBNum4.UseVisualStyleBackColor = true;
+            // 
+            // dBNum6
+            // 
+            this.dBNum6.Location = new System.Drawing.Point(101, 419);
+            this.dBNum6.Name = "dBNum6";
+            this.dBNum6.Size = new System.Drawing.Size(200, 200);
+            this.dBNum6.TabIndex = 9;
+            this.dBNum6.Text = "6";
+            this.dBNum6.UseVisualStyleBackColor = true;
+            // 
+            // dBNum1
+            // 
+            this.dBNum1.Location = new System.Drawing.Point(101, 157);
+            this.dBNum1.Name = "dBNum1";
+            this.dBNum1.Size = new System.Drawing.Size(200, 200);
+            this.dBNum1.TabIndex = 8;
+            this.dBNum1.Text = "1";
+            this.dBNum1.UseVisualStyleBackColor = true;
+            // 
+            // NumBack
+            // 
+            this.NumBack.BackColor = System.Drawing.Color.Transparent;
+            this.NumBack.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
+            this.NumBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.NumBack.FlatAppearance.BorderSize = 0;
+            this.NumBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NumBack.Location = new System.Drawing.Point(42, 42);
+            this.NumBack.Name = "NumBack";
+            this.NumBack.Size = new System.Drawing.Size(96, 60);
+            this.NumBack.TabIndex = 10;
+            this.NumBack.UseVisualStyleBackColor = false;
+            this.NumBack.Click += new System.EventHandler(this.NumBack_Click);
+            // 
             // race1
             // 
             this.race1.BackColor = System.Drawing.Color.SteelBlue;
@@ -1102,96 +1210,6 @@
             this.tuto1.Size = new System.Drawing.Size(1366, 788);
             this.tuto1.TabIndex = 0;
             this.tuto1.Visible = false;
-            // 
-            // dBNum2
-            // 
-            this.dBNum2.Location = new System.Drawing.Point(345, 116);
-            this.dBNum2.Name = "dBNum2";
-            this.dBNum2.Size = new System.Drawing.Size(75, 23);
-            this.dBNum2.TabIndex = 0;
-            this.dBNum2.Text = "2";
-            this.dBNum2.UseVisualStyleBackColor = true;
-            // 
-            // dBNum3
-            // 
-            this.dBNum3.Location = new System.Drawing.Point(588, 119);
-            this.dBNum3.Name = "dBNum3";
-            this.dBNum3.Size = new System.Drawing.Size(75, 23);
-            this.dBNum3.TabIndex = 1;
-            this.dBNum3.Text = "3";
-            this.dBNum3.UseVisualStyleBackColor = true;
-            // 
-            // dBNum8
-            // 
-            this.dBNum8.Location = new System.Drawing.Point(588, 313);
-            this.dBNum8.Name = "dBNum8";
-            this.dBNum8.Size = new System.Drawing.Size(75, 23);
-            this.dBNum8.TabIndex = 2;
-            this.dBNum8.Text = "8";
-            this.dBNum8.UseVisualStyleBackColor = true;
-            // 
-            // dBNum7
-            // 
-            this.dBNum7.Location = new System.Drawing.Point(355, 313);
-            this.dBNum7.Name = "dBNum7";
-            this.dBNum7.Size = new System.Drawing.Size(75, 23);
-            this.dBNum7.TabIndex = 3;
-            this.dBNum7.Text = "7";
-            this.dBNum7.UseVisualStyleBackColor = true;
-            // 
-            // dBNum9
-            // 
-            this.dBNum9.Location = new System.Drawing.Point(783, 313);
-            this.dBNum9.Name = "dBNum9";
-            this.dBNum9.Size = new System.Drawing.Size(75, 23);
-            this.dBNum9.TabIndex = 7;
-            this.dBNum9.Text = "9";
-            this.dBNum9.UseVisualStyleBackColor = true;
-            // 
-            // dBNum10
-            // 
-            this.dBNum10.Location = new System.Drawing.Point(1016, 313);
-            this.dBNum10.Name = "dBNum10";
-            this.dBNum10.Size = new System.Drawing.Size(75, 23);
-            this.dBNum10.TabIndex = 6;
-            this.dBNum10.Text = "10";
-            this.dBNum10.UseVisualStyleBackColor = true;
-            // 
-            // dBNum5
-            // 
-            this.dBNum5.Location = new System.Drawing.Point(1016, 119);
-            this.dBNum5.Name = "dBNum5";
-            this.dBNum5.Size = new System.Drawing.Size(75, 23);
-            this.dBNum5.TabIndex = 5;
-            this.dBNum5.Text = "5";
-            this.dBNum5.UseVisualStyleBackColor = true;
-            // 
-            // dBNum4
-            // 
-            this.dBNum4.Location = new System.Drawing.Point(773, 116);
-            this.dBNum4.Name = "dBNum4";
-            this.dBNum4.Size = new System.Drawing.Size(75, 23);
-            this.dBNum4.TabIndex = 4;
-            this.dBNum4.Text = "4";
-            this.dBNum4.UseVisualStyleBackColor = true;
-            // 
-            // dBNum6
-            // 
-            this.dBNum6.Location = new System.Drawing.Point(187, 316);
-            this.dBNum6.Name = "dBNum6";
-            this.dBNum6.Size = new System.Drawing.Size(75, 23);
-            this.dBNum6.TabIndex = 9;
-            this.dBNum6.Text = "6";
-            this.dBNum6.UseVisualStyleBackColor = true;
-            // 
-            // dBNum1
-            // 
-            this.dBNum1.Location = new System.Drawing.Point(177, 119);
-            this.dBNum1.Name = "dBNum1";
-            this.dBNum1.Size = new System.Drawing.Size(75, 23);
-            this.dBNum1.TabIndex = 8;
-            this.dBNum1.Text = "1";
-            this.dBNum1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -1312,6 +1330,7 @@
         private System.Windows.Forms.Button dBNum8;
         private System.Windows.Forms.Button dBNum3;
         private System.Windows.Forms.Button dBNum2;
+        private System.Windows.Forms.Button NumBack;
     }
 }
 
