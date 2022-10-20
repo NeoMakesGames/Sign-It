@@ -74,6 +74,7 @@
             this.juegos = new System.Windows.Forms.TabPage();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.userNameSett2 = new System.Windows.Forms.Label();
             this.experienciaSett2 = new System.Windows.Forms.Label();
@@ -84,6 +85,7 @@
             this.PantallaSett = new System.Windows.Forms.Label();
             this.UserNameSett = new System.Windows.Forms.Label();
             this.Lecciones_y_Ejercicios = new System.Windows.Forms.TabPage();
+            this.tuto1 = new SignIt.tuto();
             this.panel1 = new System.Windows.Forms.Panel();
             this.MenuExitButton = new System.Windows.Forms.Button();
             this.MenuSettingsButton = new System.Windows.Forms.Button();
@@ -93,9 +95,9 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.diccionarioBeta1 = new SignIt.diccionarioBeta();
-            this.race1 = new SignIt.Race();
-            this.tuto1 = new SignIt.tuto();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -106,6 +108,8 @@
             this.Ajustes.SuspendLayout();
             this.Lecciones_y_Ejercicios.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // signIt
@@ -169,11 +173,11 @@
             // 
             this.label2IdS.AutoSize = true;
             this.label2IdS.BackColor = System.Drawing.Color.Transparent;
-            this.label2IdS.Font = new System.Drawing.Font("Humnst777 BT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2IdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2IdS.ForeColor = System.Drawing.Color.IndianRed;
             this.label2IdS.Location = new System.Drawing.Point(555, 416);
             this.label2IdS.Name = "label2IdS";
-            this.label2IdS.Size = new System.Drawing.Size(240, 32);
+            this.label2IdS.Size = new System.Drawing.Size(235, 31);
             this.label2IdS.TabIndex = 5;
             this.label2IdS.Text = "Usuario incorrecto";
             this.label2IdS.Click += new System.EventHandler(this.label2IdS_Click);
@@ -541,15 +545,7 @@
             this.Diccionario.BackColor = System.Drawing.Color.LightBlue;
             this.Diccionario.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Diccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Diccionario.Controls.Add(this.diccionarioBeta1);
-            this.Diccionario.Controls.Add(this.verbosDiccionario);
-            this.Diccionario.Controls.Add(this.coloresDiccionario);
-            this.Diccionario.Controls.Add(this.button12);
-            this.Diccionario.Controls.Add(this.button13);
-            this.Diccionario.Controls.Add(this.pronombresDiccionario);
-            this.Diccionario.Controls.Add(this.lugaresDiccionario);
-            this.Diccionario.Controls.Add(this.comidaDiccionario);
-            this.Diccionario.Controls.Add(this.basicoDiccionario);
+            this.Diccionario.Controls.Add(this.tabControl1);
             this.Diccionario.Location = new System.Drawing.Point(4, 22);
             this.Diccionario.Name = "Diccionario";
             this.Diccionario.Size = new System.Drawing.Size(1429, 805);
@@ -563,7 +559,7 @@
             this.verbosDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.verbosDiccionario.FlatAppearance.BorderSize = 0;
             this.verbosDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.verbosDiccionario.Location = new System.Drawing.Point(887, 300);
+            this.verbosDiccionario.Location = new System.Drawing.Point(832, 270);
             this.verbosDiccionario.Name = "verbosDiccionario";
             this.verbosDiccionario.Size = new System.Drawing.Size(246, 110);
             this.verbosDiccionario.TabIndex = 7;
@@ -577,7 +573,7 @@
             this.coloresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.coloresDiccionario.FlatAppearance.BorderSize = 0;
             this.coloresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.coloresDiccionario.Location = new System.Drawing.Point(900, 76);
+            this.coloresDiccionario.Location = new System.Drawing.Point(870, 76);
             this.coloresDiccionario.Name = "coloresDiccionario";
             this.coloresDiccionario.Size = new System.Drawing.Size(220, 110);
             this.coloresDiccionario.TabIndex = 6;
@@ -591,7 +587,7 @@
             this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(804, 464);
+            this.button12.Location = new System.Drawing.Point(780, 420);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(220, 220);
             this.button12.TabIndex = 5;
@@ -605,7 +601,7 @@
             this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button13.FlatAppearance.BorderSize = 0;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(336, 464);
+            this.button13.Location = new System.Drawing.Point(319, 420);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(220, 220);
             this.button13.TabIndex = 4;
@@ -619,7 +615,7 @@
             this.pronombresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pronombresDiccionario.FlatAppearance.BorderSize = 0;
             this.pronombresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pronombresDiccionario.Location = new System.Drawing.Point(581, 300);
+            this.pronombresDiccionario.Location = new System.Drawing.Point(595, 256);
             this.pronombresDiccionario.Name = "pronombresDiccionario";
             this.pronombresDiccionario.Size = new System.Drawing.Size(220, 110);
             this.pronombresDiccionario.TabIndex = 3;
@@ -633,7 +629,7 @@
             this.lugaresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lugaresDiccionario.FlatAppearance.BorderSize = 0;
             this.lugaresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lugaresDiccionario.Location = new System.Drawing.Point(251, 300);
+            this.lugaresDiccionario.Location = new System.Drawing.Point(258, 241);
             this.lugaresDiccionario.Name = "lugaresDiccionario";
             this.lugaresDiccionario.Size = new System.Drawing.Size(220, 110);
             this.lugaresDiccionario.TabIndex = 2;
@@ -647,7 +643,7 @@
             this.comidaDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.comidaDiccionario.FlatAppearance.BorderSize = 0;
             this.comidaDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comidaDiccionario.Location = new System.Drawing.Point(581, 76);
+            this.comidaDiccionario.Location = new System.Drawing.Point(536, 99);
             this.comidaDiccionario.Name = "comidaDiccionario";
             this.comidaDiccionario.Size = new System.Drawing.Size(220, 110);
             this.comidaDiccionario.TabIndex = 1;
@@ -662,7 +658,7 @@
             this.basicoDiccionario.FlatAppearance.BorderSize = 0;
             this.basicoDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.basicoDiccionario.ForeColor = System.Drawing.Color.Black;
-            this.basicoDiccionario.Location = new System.Drawing.Point(251, 76);
+            this.basicoDiccionario.Location = new System.Drawing.Point(142, 76);
             this.basicoDiccionario.Name = "basicoDiccionario";
             this.basicoDiccionario.Size = new System.Drawing.Size(220, 110);
             this.basicoDiccionario.TabIndex = 0;
@@ -710,6 +706,17 @@
             this.RaceGamesButton.TabIndex = 0;
             this.RaceGamesButton.UseVisualStyleBackColor = false;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
+            // 
+            // race1
+            // 
+            this.race1.BackColor = System.Drawing.Color.SteelBlue;
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(2, -12);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1430, 823);
+            this.race1.TabIndex = 2;
+            this.race1.Visible = false;
             // 
             // Ajustes
             // 
@@ -829,6 +836,17 @@
             this.Lecciones_y_Ejercicios.Text = "Lecciones y Ejercicios";
             this.Lecciones_y_Ejercicios.UseVisualStyleBackColor = true;
             // 
+            // tuto1
+            // 
+            this.tuto1.BackColor = System.Drawing.Color.LightBlue;
+            this.tuto1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tuto1.BackgroundImage")));
+            this.tuto1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tuto1.Location = new System.Drawing.Point(0, 0);
+            this.tuto1.Name = "tuto1";
+            this.tuto1.Size = new System.Drawing.Size(1366, 788);
+            this.tuto1.TabIndex = 0;
+            this.tuto1.Visible = false;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
@@ -944,35 +962,44 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // diccionarioBeta1
+            // tabControl1
             // 
-            this.diccionarioBeta1.Location = new System.Drawing.Point(0, 0);
-            this.diccionarioBeta1.Name = "diccionarioBeta1";
-            this.diccionarioBeta1.Size = new System.Drawing.Size(1366, 788);
-            this.diccionarioBeta1.TabIndex = 8;
-            this.diccionarioBeta1.Visible = false;
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(13, 22);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1326, 637);
+            this.tabControl1.TabIndex = 8;
             // 
-            // race1
+            // tabPage1
             // 
-            this.race1.BackColor = System.Drawing.Color.SteelBlue;
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(2, -12);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1430, 823);
-            this.race1.TabIndex = 2;
-            this.race1.Visible = false;
+            this.tabPage1.Controls.Add(this.button12);
+            this.tabPage1.Controls.Add(this.verbosDiccionario);
+            this.tabPage1.Controls.Add(this.button13);
+            this.tabPage1.Controls.Add(this.basicoDiccionario);
+            this.tabPage1.Controls.Add(this.lugaresDiccionario);
+            this.tabPage1.Controls.Add(this.coloresDiccionario);
+            this.tabPage1.Controls.Add(this.comidaDiccionario);
+            this.tabPage1.Controls.Add(this.pronombresDiccionario);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1318, 611);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // tuto1
+            // tabPage2
             // 
-            this.tuto1.BackColor = System.Drawing.Color.LightBlue;
-            this.tuto1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tuto1.BackgroundImage")));
-            this.tuto1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tuto1.Location = new System.Drawing.Point(0, 0);
-            this.tuto1.Name = "tuto1";
-            this.tuto1.Size = new System.Drawing.Size(1366, 788);
-            this.tuto1.TabIndex = 0;
-            this.tuto1.Visible = false;
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(192, 74);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -999,6 +1026,8 @@
             this.Ajustes.PerformLayout();
             this.Lecciones_y_Ejercicios.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1067,10 +1096,12 @@
         private System.Windows.Forms.Label XpLvlSett;
         private System.Windows.Forms.Label userNameSett2;
         private System.Windows.Forms.Label experienciaSett2;
-        private diccionarioBeta diccionarioBeta1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }
 
