@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 using WMPLib;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
@@ -160,7 +161,7 @@ namespace SignIt
         private void TimerRace_Tick(object sender, EventArgs e)
         {
             
-            //if (RaceTextBox.Text == DatabaseFunctions.GetNameOfVideo(id_, Form1.path))
+            if (RaceTextBox.Text == "hola")//DatabaseFunctions.GetNameOfVideo(id_, Form1.path))
             {
                 raceTimer += 3000;
                 reproduccion();

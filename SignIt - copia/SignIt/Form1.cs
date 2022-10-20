@@ -33,7 +33,7 @@ namespace SignIt
         int homeSlider = 0;
         double home_slider = 0;
         int avance;
-        int diccionario = 0;
+
 
         public bool menu = false;
         public bool fullscr = true;
@@ -222,6 +222,10 @@ namespace SignIt
         private void DiccionarioHome_Click_1(object sender, EventArgs e)
         {
             signIt.SelectedTab = Diccionario;
+            switch(avance)
+            {
+
+            }
             panel1.SendToBack();
             menu = false;
         }
@@ -344,44 +348,42 @@ namespace SignIt
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            //diccionarioBeta1.Show();
-            SignIt.diccionarioBeta.verificacionDeTipo = "basico";
-            SignIt.diccionarioBeta.DB = true;
+            signIt.SelectedTab = dB1;
         }
 
         private void comidaDiccionario_Click(object sender, EventArgs e)
         {
-            SignIt.diccionarioBeta.verificacionDeTipo = "comida";
+            signIt.SelectedTab = dB2;
         }
 
         private void coloresDiccionario_Click(object sender, EventArgs e)
         {
-            SignIt.diccionarioBeta.verificacionDeTipo = "colores";
+            signIt.SelectedTab = dB3;
         }
 
         private void lugaresDiccionario_Click(object sender, EventArgs e)
         {
-            SignIt.diccionarioBeta.verificacionDeTipo = "lugares";
+            signIt.SelectedTab = dB4;
         }
 
         private void pronombresDiccionario_Click(object sender, EventArgs e)
         {
-            SignIt.diccionarioBeta.verificacionDeTipo = "pronombres";
+            signIt.SelectedTab = dB5;
         }
 
         private void verbosDiccionario_Click(object sender, EventArgs e)
         {
-            SignIt.diccionarioBeta.verificacionDeTipo = "verbos";
+            signIt.SelectedTab = dB6;
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            SignIt.diccionarioBeta.verificacionDeTipo = "abecedario";
+            diccionarioBeta.SelectedTab = dBAbecedario;
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            SignIt.diccionarioBeta.verificacionDeTipo = "numeros";
+            diccionarioBeta.SelectedTab = dBNros;
         }
 
 //Juegos
