@@ -17,7 +17,7 @@ namespace SignIt
 
         string URL = "a";
 
-        int avance = 0;
+        int progreso = 0;
         public tuto()
         {
             InitializeComponent();
@@ -31,8 +31,8 @@ namespace SignIt
         }
         private void tutoTimer_Tick_1(object sender, EventArgs e)
         {
-            label1.Text = Convert.ToString(avance);
-           switch (avance)
+           label1.Text = Convert.ToString(progreso);
+           switch (progreso)
            {         
                       case 0:
                            if (URL != Form1.path.Remove(75, 14) + "\\Resources\\Group 59.PNG" )
@@ -87,6 +87,7 @@ namespace SignIt
             this.Hide();
             Form1.endTutorial = true;
             DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, Form1.path);
+            Form1.avance++;
         }
 
         private void skipTutorial_Click(object sender, EventArgs e)
@@ -96,12 +97,12 @@ namespace SignIt
 
         private void tutocont_Click_1(object sender, EventArgs e)
         {
-            avance++;
+            progreso++;
         }
 
         private void tutoReg_Click_1(object sender, EventArgs e)
         {
-                avance--;
+                progreso--;
         }
 
         private void endTutorial_Click(object sender, EventArgs e)

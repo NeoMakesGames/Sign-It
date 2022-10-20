@@ -20,29 +20,31 @@ namespace SignIt
     {
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        public static string videosPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        public static string imagePath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Resources\\";
         //public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
         //public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
 
         Image myimage;
         string HS_URL;
+        string botonBI;
         int menuX = -332;
         int UserXp;
         int UserLvl;
         int NextLvl = 10;
         int homeSlider = 0;
         double home_slider = 0;
-        int avance;
+        public static int avance;
 
 
         public bool menu = false;
         public bool fullscr = true;
         public static bool externalmenu = false;
         public static bool endTutorial = false;
-        
+
         public Form1()
         {
-          InitializeComponent();
+            InitializeComponent();
+            timer1.Enabled = false;
         }
 
 //Funciones
@@ -147,10 +149,11 @@ namespace SignIt
             if (DatabaseFunctions.checkIfNameExists(UserIdS.Text, path) == true)
             {
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
-                avance = DatabaseFunctions.CheckAvance(DatabaseFunctions.currentUser, path);
+                avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser,"Avance" ,path));
 
                 experiencia();
 
+                timer1.Enabled = true;
                 UserHome.Text = (DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path));
                 signIt.SelectedTab = Home;
                 aparicionDelMenu();
@@ -197,8 +200,7 @@ namespace SignIt
                     DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserCdU.Text, path);
 
                     DatabaseFunctions.SetAvance(DatabaseFunctions.currentUser, 0, path);
-                    Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
-
+                    avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
                     tutorial();
                 }
                 else
@@ -222,9 +224,41 @@ namespace SignIt
         private void DiccionarioHome_Click_1(object sender, EventArgs e)
         {
             signIt.SelectedTab = Diccionario;
-            switch(avance)
+            if (avance < 2)
             {
-
+                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+                myimage = new Bitmap(botonBI);
+                basicoDiccionario.BackgroundImage = myimage;
+            }
+            if (avance < 3)
+            {
+                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+                myimage = new Bitmap(botonBI);
+                comidaDiccionario.BackgroundImage = myimage;
+            }
+            if (avance < 4)
+            {
+                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+                myimage = new Bitmap(botonBI);
+                coloresDiccionario.BackgroundImage = myimage;
+            }
+            if (avance < 5)
+            {
+                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+                myimage = new Bitmap(botonBI);
+                lugaresDiccionario.BackgroundImage = myimage;
+            }
+            if (avance < 6)
+            {
+                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+                myimage = new Bitmap(botonBI);
+                pronombresDiccionario.BackgroundImage = myimage;
+            }
+            if (avance < 7)
+            {
+                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+                myimage = new Bitmap(botonBI);
+                verbosDiccionario.BackgroundImage = myimage;
             }
             panel1.SendToBack();
             menu = false;
@@ -297,6 +331,43 @@ namespace SignIt
             signIt.SelectedTab = Diccionario;
             Menubutton_Click(sender, e);
             menu = false;
+            signIt.SelectedTab = Diccionario;
+            if (avance < 2)
+            {
+                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+                myimage = new Bitmap(botonBI);
+                basicoDiccionario.BackgroundImage = myimage;
+            }
+            if (avance < 3)
+            {
+                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+                myimage = new Bitmap(botonBI);
+                comidaDiccionario.BackgroundImage = myimage;
+            }
+            if (avance < 4)
+            {
+                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+                myimage = new Bitmap(botonBI);
+                coloresDiccionario.BackgroundImage = myimage;
+            }
+            if (avance < 5)
+            {
+                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+                myimage = new Bitmap(botonBI);
+                lugaresDiccionario.BackgroundImage = myimage;
+            }
+            if (avance < 6)
+            {
+                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+                myimage = new Bitmap(botonBI);
+                pronombresDiccionario.BackgroundImage = myimage;
+            }
+            if (avance < 7)
+            {
+                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+                myimage = new Bitmap(botonBI);
+                verbosDiccionario.BackgroundImage = myimage;
+            }
         }
 
         private void MenuGamesButton_Click(object sender, EventArgs e)
@@ -348,32 +419,50 @@ namespace SignIt
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            signIt.SelectedTab = dB1;
+            if(avance > 1)
+            {
+                signIt.SelectedTab = dB1;
+            }
         }
 
         private void comidaDiccionario_Click(object sender, EventArgs e)
         {
-            signIt.SelectedTab = dB2;
+            if (avance > 2)
+            {
+                signIt.SelectedTab = dB2;
+            }
         }
 
         private void coloresDiccionario_Click(object sender, EventArgs e)
         {
-            signIt.SelectedTab = dB3;
+            if (avance > 3)
+            {
+                signIt.SelectedTab = dB3;
+            }
         }
 
         private void lugaresDiccionario_Click(object sender, EventArgs e)
         {
-            signIt.SelectedTab = dB4;
+            if (avance > 4)
+            {
+                signIt.SelectedTab = dB4;
+            }
         }
 
         private void pronombresDiccionario_Click(object sender, EventArgs e)
         {
-            signIt.SelectedTab = dB5;
+            if (avance > 5)
+            {
+                signIt.SelectedTab = dB5;
+            }
         }
 
         private void verbosDiccionario_Click(object sender, EventArgs e)
         {
-            signIt.SelectedTab = dB6;
+            if (avance > 6)
+            {
+                signIt.SelectedTab = dB6;
+            }
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -427,17 +516,6 @@ namespace SignIt
                     {
                         home_slider = 0;
                         homeSlider++;
-                    }
-                }
-                else if (signIt.SelectedTab == Diccionario)
-                {
-                    switch(diccionario)
-                    {
-                        case 0:
-                            break;
-
-                        case 1:
-                            break;
                     }
                 }
             }

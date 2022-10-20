@@ -48,7 +48,7 @@ namespace SignIt
             id_ = id;
 
             OpenFileDialog opf = new OpenFileDialog();
-            axWindowsMediaPlayer1.URL = Form1.videosPath + DatabaseFunctions.GetNameOfVideo(id, Form1.path) + ".wmv";
+            axWindowsMediaPlayer1.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, Form1.path) + ".wmv";
             MessageBox.Show(axWindowsMediaPlayer1.URL);
             axWindowsMediaPlayer1.Ctlcontrols.play();
 

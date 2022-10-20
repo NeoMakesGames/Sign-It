@@ -74,11 +74,16 @@
             this.comidaDiccionario = new System.Windows.Forms.Button();
             this.pronombresDiccionario = new System.Windows.Forms.Button();
             this.dB1 = new System.Windows.Forms.TabPage();
+            this.dB2 = new System.Windows.Forms.TabPage();
+            this.dB6 = new System.Windows.Forms.TabPage();
+            this.dB3 = new System.Windows.Forms.TabPage();
+            this.dB4 = new System.Windows.Forms.TabPage();
+            this.dB5 = new System.Windows.Forms.TabPage();
+            this.dBAbecedario = new System.Windows.Forms.TabPage();
             this.dBNros = new System.Windows.Forms.TabPage();
             this.juegos = new System.Windows.Forms.TabPage();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.userNameSett2 = new System.Windows.Forms.Label();
             this.experienciaSett2 = new System.Windows.Forms.Label();
@@ -89,7 +94,6 @@
             this.PantallaSett = new System.Windows.Forms.Label();
             this.UserNameSett = new System.Windows.Forms.Label();
             this.Lecciones_y_Ejercicios = new System.Windows.Forms.TabPage();
-            this.tuto1 = new SignIt.tuto();
             this.panel1 = new System.Windows.Forms.Panel();
             this.MenuExitButton = new System.Windows.Forms.Button();
             this.MenuSettingsButton = new System.Windows.Forms.Button();
@@ -99,12 +103,18 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.dBAbecedario = new System.Windows.Forms.TabPage();
-            this.dB6 = new System.Windows.Forms.TabPage();
-            this.dB2 = new System.Windows.Forms.TabPage();
-            this.dB3 = new System.Windows.Forms.TabPage();
-            this.dB4 = new System.Windows.Forms.TabPage();
-            this.dB5 = new System.Windows.Forms.TabPage();
+            this.race1 = new SignIt.Race();
+            this.tuto1 = new SignIt.tuto();
+            this.dBNum2 = new System.Windows.Forms.Button();
+            this.dBNum3 = new System.Windows.Forms.Button();
+            this.dBNum8 = new System.Windows.Forms.Button();
+            this.dBNum7 = new System.Windows.Forms.Button();
+            this.dBNum9 = new System.Windows.Forms.Button();
+            this.dBNum10 = new System.Windows.Forms.Button();
+            this.dBNum5 = new System.Windows.Forms.Button();
+            this.dBNum4 = new System.Windows.Forms.Button();
+            this.dBNum6 = new System.Windows.Forms.Button();
+            this.dBNum1 = new System.Windows.Forms.Button();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -113,6 +123,7 @@
             this.Diccionario.SuspendLayout();
             this.diccionarioBeta.SuspendLayout();
             this.dB0.SuspendLayout();
+            this.dBNros.SuspendLayout();
             this.juegos.SuspendLayout();
             this.Ajustes.SuspendLayout();
             this.Lecciones_y_Ejercicios.SuspendLayout();
@@ -391,7 +402,6 @@
             this.sliderHome.BackColor = System.Drawing.Color.Transparent;
             this.sliderHome.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
             this.sliderHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.sliderHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sliderHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sliderHome.Location = new System.Drawing.Point(846, 153);
             this.sliderHome.Name = "sliderHome";
@@ -570,7 +580,7 @@
             this.diccionarioBeta.Controls.Add(this.dB5);
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
-            this.diccionarioBeta.Location = new System.Drawing.Point(-4, -13);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-4, -5);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
             this.diccionarioBeta.Size = new System.Drawing.Size(1366, 788);
@@ -720,11 +730,75 @@
             this.dB1.Text = "1";
             this.dB1.UseVisualStyleBackColor = true;
             // 
+            // dB2
+            // 
+            this.dB2.Location = new System.Drawing.Point(4, 22);
+            this.dB2.Name = "dB2";
+            this.dB2.Size = new System.Drawing.Size(1358, 762);
+            this.dB2.TabIndex = 5;
+            this.dB2.Text = "dB2";
+            this.dB2.UseVisualStyleBackColor = true;
+            // 
+            // dB6
+            // 
+            this.dB6.Location = new System.Drawing.Point(4, 22);
+            this.dB6.Name = "dB6";
+            this.dB6.Size = new System.Drawing.Size(1358, 762);
+            this.dB6.TabIndex = 4;
+            this.dB6.Text = "dB6";
+            this.dB6.UseVisualStyleBackColor = true;
+            // 
+            // dB3
+            // 
+            this.dB3.Location = new System.Drawing.Point(4, 22);
+            this.dB3.Name = "dB3";
+            this.dB3.Size = new System.Drawing.Size(1358, 762);
+            this.dB3.TabIndex = 6;
+            this.dB3.Text = "dB3";
+            this.dB3.UseVisualStyleBackColor = true;
+            // 
+            // dB4
+            // 
+            this.dB4.Location = new System.Drawing.Point(4, 22);
+            this.dB4.Name = "dB4";
+            this.dB4.Size = new System.Drawing.Size(1358, 762);
+            this.dB4.TabIndex = 7;
+            this.dB4.Text = "dB4";
+            this.dB4.UseVisualStyleBackColor = true;
+            // 
+            // dB5
+            // 
+            this.dB5.Location = new System.Drawing.Point(4, 22);
+            this.dB5.Name = "dB5";
+            this.dB5.Size = new System.Drawing.Size(1358, 762);
+            this.dB5.TabIndex = 8;
+            this.dB5.Text = "dB5";
+            this.dB5.UseVisualStyleBackColor = true;
+            // 
+            // dBAbecedario
+            // 
+            this.dBAbecedario.Location = new System.Drawing.Point(4, 22);
+            this.dBAbecedario.Name = "dBAbecedario";
+            this.dBAbecedario.Size = new System.Drawing.Size(1358, 762);
+            this.dBAbecedario.TabIndex = 3;
+            this.dBAbecedario.Text = "dBAbecedario";
+            this.dBAbecedario.UseVisualStyleBackColor = true;
+            // 
             // dBNros
             // 
             this.dBNros.BackColor = System.Drawing.Color.LightBlue;
             this.dBNros.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.dBNros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNros.Controls.Add(this.dBNum6);
+            this.dBNros.Controls.Add(this.dBNum1);
+            this.dBNros.Controls.Add(this.dBNum9);
+            this.dBNros.Controls.Add(this.dBNum10);
+            this.dBNros.Controls.Add(this.dBNum5);
+            this.dBNros.Controls.Add(this.dBNum4);
+            this.dBNros.Controls.Add(this.dBNum7);
+            this.dBNros.Controls.Add(this.dBNum8);
+            this.dBNros.Controls.Add(this.dBNum3);
+            this.dBNros.Controls.Add(this.dBNum2);
             this.dBNros.Location = new System.Drawing.Point(4, 22);
             this.dBNros.Name = "dBNros";
             this.dBNros.Size = new System.Drawing.Size(1358, 762);
@@ -772,17 +846,6 @@
             this.RaceGamesButton.TabIndex = 0;
             this.RaceGamesButton.UseVisualStyleBackColor = false;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
-            // 
-            // race1
-            // 
-            this.race1.BackColor = System.Drawing.Color.SteelBlue;
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(2, -12);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1430, 823);
-            this.race1.TabIndex = 2;
-            this.race1.Visible = false;
             // 
             // Ajustes
             // 
@@ -902,17 +965,6 @@
             this.Lecciones_y_Ejercicios.Text = "Lecciones y Ejercicios";
             this.Lecciones_y_Ejercicios.UseVisualStyleBackColor = true;
             // 
-            // tuto1
-            // 
-            this.tuto1.BackColor = System.Drawing.Color.LightBlue;
-            this.tuto1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tuto1.BackgroundImage")));
-            this.tuto1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tuto1.Location = new System.Drawing.Point(0, 0);
-            this.tuto1.Name = "tuto1";
-            this.tuto1.Size = new System.Drawing.Size(1366, 788);
-            this.tuto1.TabIndex = 0;
-            this.tuto1.Visible = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
@@ -1014,6 +1066,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
+            this.timer1.Interval = 200;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Menubutton
@@ -1028,59 +1081,117 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // dBAbecedario
+            // race1
             // 
-            this.dBAbecedario.Location = new System.Drawing.Point(4, 22);
-            this.dBAbecedario.Name = "dBAbecedario";
-            this.dBAbecedario.Size = new System.Drawing.Size(1358, 762);
-            this.dBAbecedario.TabIndex = 3;
-            this.dBAbecedario.Text = "dBAbecedario";
-            this.dBAbecedario.UseVisualStyleBackColor = true;
+            this.race1.BackColor = System.Drawing.Color.SteelBlue;
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(2, -12);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1430, 823);
+            this.race1.TabIndex = 2;
+            this.race1.Visible = false;
             // 
-            // dB6
+            // tuto1
             // 
-            this.dB6.Location = new System.Drawing.Point(4, 22);
-            this.dB6.Name = "dB6";
-            this.dB6.Size = new System.Drawing.Size(1358, 762);
-            this.dB6.TabIndex = 4;
-            this.dB6.Text = "dB6";
-            this.dB6.UseVisualStyleBackColor = true;
+            this.tuto1.BackColor = System.Drawing.Color.LightBlue;
+            this.tuto1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tuto1.BackgroundImage")));
+            this.tuto1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tuto1.Location = new System.Drawing.Point(0, 0);
+            this.tuto1.Name = "tuto1";
+            this.tuto1.Size = new System.Drawing.Size(1366, 788);
+            this.tuto1.TabIndex = 0;
+            this.tuto1.Visible = false;
             // 
-            // dB2
+            // dBNum2
             // 
-            this.dB2.Location = new System.Drawing.Point(4, 22);
-            this.dB2.Name = "dB2";
-            this.dB2.Size = new System.Drawing.Size(1358, 762);
-            this.dB2.TabIndex = 5;
-            this.dB2.Text = "dB2";
-            this.dB2.UseVisualStyleBackColor = true;
+            this.dBNum2.Location = new System.Drawing.Point(345, 116);
+            this.dBNum2.Name = "dBNum2";
+            this.dBNum2.Size = new System.Drawing.Size(75, 23);
+            this.dBNum2.TabIndex = 0;
+            this.dBNum2.Text = "2";
+            this.dBNum2.UseVisualStyleBackColor = true;
             // 
-            // dB3
+            // dBNum3
             // 
-            this.dB3.Location = new System.Drawing.Point(4, 22);
-            this.dB3.Name = "dB3";
-            this.dB3.Size = new System.Drawing.Size(1358, 762);
-            this.dB3.TabIndex = 6;
-            this.dB3.Text = "dB3";
-            this.dB3.UseVisualStyleBackColor = true;
+            this.dBNum3.Location = new System.Drawing.Point(588, 119);
+            this.dBNum3.Name = "dBNum3";
+            this.dBNum3.Size = new System.Drawing.Size(75, 23);
+            this.dBNum3.TabIndex = 1;
+            this.dBNum3.Text = "3";
+            this.dBNum3.UseVisualStyleBackColor = true;
             // 
-            // dB4
+            // dBNum8
             // 
-            this.dB4.Location = new System.Drawing.Point(4, 22);
-            this.dB4.Name = "dB4";
-            this.dB4.Size = new System.Drawing.Size(1358, 762);
-            this.dB4.TabIndex = 7;
-            this.dB4.Text = "dB4";
-            this.dB4.UseVisualStyleBackColor = true;
+            this.dBNum8.Location = new System.Drawing.Point(588, 313);
+            this.dBNum8.Name = "dBNum8";
+            this.dBNum8.Size = new System.Drawing.Size(75, 23);
+            this.dBNum8.TabIndex = 2;
+            this.dBNum8.Text = "8";
+            this.dBNum8.UseVisualStyleBackColor = true;
             // 
-            // dB5
+            // dBNum7
             // 
-            this.dB5.Location = new System.Drawing.Point(4, 22);
-            this.dB5.Name = "dB5";
-            this.dB5.Size = new System.Drawing.Size(1358, 762);
-            this.dB5.TabIndex = 8;
-            this.dB5.Text = "dB5";
-            this.dB5.UseVisualStyleBackColor = true;
+            this.dBNum7.Location = new System.Drawing.Point(355, 313);
+            this.dBNum7.Name = "dBNum7";
+            this.dBNum7.Size = new System.Drawing.Size(75, 23);
+            this.dBNum7.TabIndex = 3;
+            this.dBNum7.Text = "7";
+            this.dBNum7.UseVisualStyleBackColor = true;
+            // 
+            // dBNum9
+            // 
+            this.dBNum9.Location = new System.Drawing.Point(783, 313);
+            this.dBNum9.Name = "dBNum9";
+            this.dBNum9.Size = new System.Drawing.Size(75, 23);
+            this.dBNum9.TabIndex = 7;
+            this.dBNum9.Text = "9";
+            this.dBNum9.UseVisualStyleBackColor = true;
+            // 
+            // dBNum10
+            // 
+            this.dBNum10.Location = new System.Drawing.Point(1016, 313);
+            this.dBNum10.Name = "dBNum10";
+            this.dBNum10.Size = new System.Drawing.Size(75, 23);
+            this.dBNum10.TabIndex = 6;
+            this.dBNum10.Text = "10";
+            this.dBNum10.UseVisualStyleBackColor = true;
+            // 
+            // dBNum5
+            // 
+            this.dBNum5.Location = new System.Drawing.Point(1016, 119);
+            this.dBNum5.Name = "dBNum5";
+            this.dBNum5.Size = new System.Drawing.Size(75, 23);
+            this.dBNum5.TabIndex = 5;
+            this.dBNum5.Text = "5";
+            this.dBNum5.UseVisualStyleBackColor = true;
+            // 
+            // dBNum4
+            // 
+            this.dBNum4.Location = new System.Drawing.Point(773, 116);
+            this.dBNum4.Name = "dBNum4";
+            this.dBNum4.Size = new System.Drawing.Size(75, 23);
+            this.dBNum4.TabIndex = 4;
+            this.dBNum4.Text = "4";
+            this.dBNum4.UseVisualStyleBackColor = true;
+            // 
+            // dBNum6
+            // 
+            this.dBNum6.Location = new System.Drawing.Point(187, 316);
+            this.dBNum6.Name = "dBNum6";
+            this.dBNum6.Size = new System.Drawing.Size(75, 23);
+            this.dBNum6.TabIndex = 9;
+            this.dBNum6.Text = "6";
+            this.dBNum6.UseVisualStyleBackColor = true;
+            // 
+            // dBNum1
+            // 
+            this.dBNum1.Location = new System.Drawing.Point(177, 119);
+            this.dBNum1.Name = "dBNum1";
+            this.dBNum1.Size = new System.Drawing.Size(75, 23);
+            this.dBNum1.TabIndex = 8;
+            this.dBNum1.Text = "1";
+            this.dBNum1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -1104,6 +1215,7 @@
             this.Diccionario.ResumeLayout(false);
             this.diccionarioBeta.ResumeLayout(false);
             this.dB0.ResumeLayout(false);
+            this.dBNros.ResumeLayout(false);
             this.juegos.ResumeLayout(false);
             this.Ajustes.ResumeLayout(false);
             this.Ajustes.PerformLayout();
@@ -1190,6 +1302,16 @@
         private System.Windows.Forms.TabPage dB3;
         private System.Windows.Forms.TabPage dB4;
         private System.Windows.Forms.TabPage dB5;
+        private System.Windows.Forms.Button dBNum6;
+        private System.Windows.Forms.Button dBNum1;
+        private System.Windows.Forms.Button dBNum9;
+        private System.Windows.Forms.Button dBNum10;
+        private System.Windows.Forms.Button dBNum5;
+        private System.Windows.Forms.Button dBNum4;
+        private System.Windows.Forms.Button dBNum7;
+        private System.Windows.Forms.Button dBNum8;
+        private System.Windows.Forms.Button dBNum3;
+        private System.Windows.Forms.Button dBNum2;
     }
 }
 
