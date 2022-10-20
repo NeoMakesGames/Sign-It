@@ -95,9 +95,10 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.diccionarioBeta = new System.Windows.Forms.TabControl();
+            this.dB0 = new System.Windows.Forms.TabPage();
+            this.dB1 = new System.Windows.Forms.TabPage();
+            this.dBNros = new System.Windows.Forms.TabPage();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -108,8 +109,8 @@
             this.Ajustes.SuspendLayout();
             this.Lecciones_y_Ejercicios.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.diccionarioBeta.SuspendLayout();
+            this.dB0.SuspendLayout();
             this.SuspendLayout();
             // 
             // signIt
@@ -545,7 +546,7 @@
             this.Diccionario.BackColor = System.Drawing.Color.LightBlue;
             this.Diccionario.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Diccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Diccionario.Controls.Add(this.tabControl1);
+            this.Diccionario.Controls.Add(this.diccionarioBeta);
             this.Diccionario.Location = new System.Drawing.Point(4, 22);
             this.Diccionario.Name = "Diccionario";
             this.Diccionario.Size = new System.Drawing.Size(1429, 805);
@@ -962,44 +963,58 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // tabControl1
+            // diccionarioBeta
             // 
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(13, 22);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1326, 637);
-            this.tabControl1.TabIndex = 8;
+            this.diccionarioBeta.Controls.Add(this.dB0);
+            this.diccionarioBeta.Controls.Add(this.dB1);
+            this.diccionarioBeta.Controls.Add(this.dBNros);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-4, -13);
+            this.diccionarioBeta.Name = "diccionarioBeta";
+            this.diccionarioBeta.SelectedIndex = 0;
+            this.diccionarioBeta.Size = new System.Drawing.Size(1366, 788);
+            this.diccionarioBeta.TabIndex = 8;
             // 
-            // tabPage1
+            // dB0
             // 
-            this.tabPage1.Controls.Add(this.button12);
-            this.tabPage1.Controls.Add(this.verbosDiccionario);
-            this.tabPage1.Controls.Add(this.button13);
-            this.tabPage1.Controls.Add(this.basicoDiccionario);
-            this.tabPage1.Controls.Add(this.lugaresDiccionario);
-            this.tabPage1.Controls.Add(this.coloresDiccionario);
-            this.tabPage1.Controls.Add(this.comidaDiccionario);
-            this.tabPage1.Controls.Add(this.pronombresDiccionario);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1318, 611);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            this.dB0.BackColor = System.Drawing.Color.LightBlue;
+            this.dB0.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.dB0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dB0.Controls.Add(this.button12);
+            this.dB0.Controls.Add(this.verbosDiccionario);
+            this.dB0.Controls.Add(this.button13);
+            this.dB0.Controls.Add(this.basicoDiccionario);
+            this.dB0.Controls.Add(this.lugaresDiccionario);
+            this.dB0.Controls.Add(this.coloresDiccionario);
+            this.dB0.Controls.Add(this.comidaDiccionario);
+            this.dB0.Controls.Add(this.pronombresDiccionario);
+            this.dB0.Location = new System.Drawing.Point(4, 22);
+            this.dB0.Name = "dB0";
+            this.dB0.Padding = new System.Windows.Forms.Padding(3);
+            this.dB0.Size = new System.Drawing.Size(1358, 762);
+            this.dB0.TabIndex = 0;
+            this.dB0.Text = "0";
+            this.dB0.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // tabPage2
+            // dB1
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 74);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.dB1.Location = new System.Drawing.Point(4, 22);
+            this.dB1.Name = "dB1";
+            this.dB1.Padding = new System.Windows.Forms.Padding(3);
+            this.dB1.Size = new System.Drawing.Size(1358, 762);
+            this.dB1.TabIndex = 1;
+            this.dB1.Text = "1";
+            this.dB1.UseVisualStyleBackColor = true;
+            // 
+            // dBNros
+            // 
+            this.dBNros.BackColor = System.Drawing.Color.LightBlue;
+            this.dBNros.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.dBNros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNros.Location = new System.Drawing.Point(4, 22);
+            this.dBNros.Name = "dBNros";
+            this.dBNros.Size = new System.Drawing.Size(1358, 762);
+            this.dBNros.TabIndex = 2;
+            this.dBNros.Text = "dbNros";
             // 
             // Form1
             // 
@@ -1026,8 +1041,8 @@
             this.Ajustes.PerformLayout();
             this.Lecciones_y_Ejercicios.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.diccionarioBeta.ResumeLayout(false);
+            this.dB0.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1099,9 +1114,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabControl diccionarioBeta;
+        private System.Windows.Forms.TabPage dB1;
+        private System.Windows.Forms.TabPage dB0;
+        private System.Windows.Forms.TabPage dBNros;
     }
 }
 

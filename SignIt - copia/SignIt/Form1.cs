@@ -33,6 +33,7 @@ namespace SignIt
         int homeSlider = 0;
         double home_slider = 0;
         int avance;
+        int diccionario = 0;
 
         public bool menu = false;
         public bool fullscr = true;
@@ -344,43 +345,43 @@ namespace SignIt
         private void button4_Click(object sender, EventArgs e)
         {
             //diccionarioBeta1.Show();
-            diccionarioBeta.verificacionDeTipo = "basico";
-            diccionarioBeta.DB = true;
+            SignIt.diccionarioBeta.verificacionDeTipo = "basico";
+            SignIt.diccionarioBeta.DB = true;
         }
 
         private void comidaDiccionario_Click(object sender, EventArgs e)
         {
-            diccionarioBeta.verificacionDeTipo = "comida";
+            SignIt.diccionarioBeta.verificacionDeTipo = "comida";
         }
 
         private void coloresDiccionario_Click(object sender, EventArgs e)
         {
-            diccionarioBeta.verificacionDeTipo = "colores";
+            SignIt.diccionarioBeta.verificacionDeTipo = "colores";
         }
 
         private void lugaresDiccionario_Click(object sender, EventArgs e)
         {
-            diccionarioBeta.verificacionDeTipo = "lugares";
+            SignIt.diccionarioBeta.verificacionDeTipo = "lugares";
         }
 
         private void pronombresDiccionario_Click(object sender, EventArgs e)
         {
-            diccionarioBeta.verificacionDeTipo = "pronombres";
+            SignIt.diccionarioBeta.verificacionDeTipo = "pronombres";
         }
 
         private void verbosDiccionario_Click(object sender, EventArgs e)
         {
-            diccionarioBeta.verificacionDeTipo = "verbos";
+            SignIt.diccionarioBeta.verificacionDeTipo = "verbos";
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            diccionarioBeta.verificacionDeTipo = "abecedario";
+            SignIt.diccionarioBeta.verificacionDeTipo = "abecedario";
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            diccionarioBeta.verificacionDeTipo = "numeros";
+            SignIt.diccionarioBeta.verificacionDeTipo = "numeros";
         }
 
 //Juegos
@@ -424,6 +425,17 @@ namespace SignIt
                     {
                         home_slider = 0;
                         homeSlider++;
+                    }
+                }
+                else if (signIt.SelectedTab == Diccionario)
+                {
+                    switch(diccionario)
+                    {
+                        case 0:
+                            break;
+
+                        case 1:
+                            break;
                     }
                 }
             }
