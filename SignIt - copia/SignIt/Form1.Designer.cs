@@ -31,9 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.signIt = new System.Windows.Forms.TabControl();
-            this.Lecciones_y_Ejercicios = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.IdS = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -108,17 +105,17 @@
             this.FullScrButtonSett = new System.Windows.Forms.Button();
             this.PantallaSett = new System.Windows.Forms.Label();
             this.UserNameSett = new System.Windows.Forms.Label();
-            this.tuto1 = new SignIt.tuto();
-            this.Menubutton = new System.Windows.Forms.Button();
+            this.Lecciones_y_Ejercicios = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.MenuExitButton = new System.Windows.Forms.Button();
             this.MenuSettingsButton = new System.Windows.Forms.Button();
             this.MenuGamesButton = new System.Windows.Forms.Button();
             this.MenuDiccionarioButton = new System.Windows.Forms.Button();
             this.MenuLectionsButton = new System.Windows.Forms.Button();
             this.MenuHomeButton = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Menubutton = new System.Windows.Forms.Button();
             this.signIt.SuspendLayout();
-            this.Lecciones_y_Ejercicios.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
             this.Home.SuspendLayout();
@@ -129,6 +126,7 @@
             this.dBNros.SuspendLayout();
             this.juegos.SuspendLayout();
             this.Ajustes.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // signIt
@@ -146,37 +144,6 @@
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1437, 831);
             this.signIt.TabIndex = 0;
-            // 
-            // Lecciones_y_Ejercicios
-            // 
-            this.Lecciones_y_Ejercicios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Lecciones_y_Ejercicios.Controls.Add(this.tuto1);
-            this.Lecciones_y_Ejercicios.Location = new System.Drawing.Point(4, 22);
-            this.Lecciones_y_Ejercicios.Name = "Lecciones_y_Ejercicios";
-            this.Lecciones_y_Ejercicios.Size = new System.Drawing.Size(1429, 805);
-            this.Lecciones_y_Ejercicios.TabIndex = 7;
-            this.Lecciones_y_Ejercicios.Text = "Lecciones y Ejercicios";
-            this.Lecciones_y_Ejercicios.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel1.Controls.Add(this.MenuExitButton);
-            this.panel1.Controls.Add(this.MenuSettingsButton);
-            this.panel1.Controls.Add(this.MenuGamesButton);
-            this.panel1.Controls.Add(this.MenuDiccionarioButton);
-            this.panel1.Controls.Add(this.MenuLectionsButton);
-            this.panel1.Controls.Add(this.MenuHomeButton);
-            this.panel1.Location = new System.Drawing.Point(0, -23);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(332, 807);
-            this.panel1.TabIndex = 2;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 200;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // IdS
             // 
@@ -989,7 +956,7 @@
             // 
             // race1
             // 
-            this.race1.BackColor = System.Drawing.Color.SteelBlue;
+            this.race1.BackColor = System.Drawing.Color.SlateGray;
             this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
             this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.race1.Location = new System.Drawing.Point(2, -12);
@@ -1105,28 +1072,29 @@
             this.UserNameSett.TabIndex = 1;
             this.UserNameSett.Text = "Nombre de Usuario: ";
             // 
-            // tuto1
+            // Lecciones_y_Ejercicios
             // 
-            this.tuto1.BackColor = System.Drawing.Color.LightBlue;
-            this.tuto1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tuto1.BackgroundImage")));
-            this.tuto1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tuto1.Location = new System.Drawing.Point(0, 0);
-            this.tuto1.Name = "tuto1";
-            this.tuto1.Size = new System.Drawing.Size(1366, 788);
-            this.tuto1.TabIndex = 0;
-            this.tuto1.Visible = false;
+            this.Lecciones_y_Ejercicios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Lecciones_y_Ejercicios.Location = new System.Drawing.Point(4, 22);
+            this.Lecciones_y_Ejercicios.Name = "Lecciones_y_Ejercicios";
+            this.Lecciones_y_Ejercicios.Size = new System.Drawing.Size(1429, 805);
+            this.Lecciones_y_Ejercicios.TabIndex = 7;
+            this.Lecciones_y_Ejercicios.Text = "Lecciones y Ejercicios";
+            this.Lecciones_y_Ejercicios.UseVisualStyleBackColor = true;
             // 
-            // Menubutton
+            // panel1
             // 
-            this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
-            this.Menubutton.FlatAppearance.BorderSize = 0;
-            this.Menubutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menubutton.Location = new System.Drawing.Point(0, 0);
-            this.Menubutton.Name = "Menubutton";
-            this.Menubutton.Size = new System.Drawing.Size(100, 75);
-            this.Menubutton.TabIndex = 3;
-            this.Menubutton.UseVisualStyleBackColor = true;
-            this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel1.Controls.Add(this.MenuExitButton);
+            this.panel1.Controls.Add(this.MenuSettingsButton);
+            this.panel1.Controls.Add(this.MenuGamesButton);
+            this.panel1.Controls.Add(this.MenuDiccionarioButton);
+            this.panel1.Controls.Add(this.MenuLectionsButton);
+            this.panel1.Controls.Add(this.MenuHomeButton);
+            this.panel1.Location = new System.Drawing.Point(0, -23);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(332, 807);
+            this.panel1.TabIndex = 2;
             // 
             // MenuExitButton
             // 
@@ -1212,6 +1180,24 @@
             this.MenuHomeButton.UseVisualStyleBackColor = false;
             this.MenuHomeButton.Click += new System.EventHandler(this.MenuHomeButton_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Menubutton
+            // 
+            this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
+            this.Menubutton.FlatAppearance.BorderSize = 0;
+            this.Menubutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Menubutton.Location = new System.Drawing.Point(0, 0);
+            this.Menubutton.Name = "Menubutton";
+            this.Menubutton.Size = new System.Drawing.Size(100, 75);
+            this.Menubutton.TabIndex = 3;
+            this.Menubutton.UseVisualStyleBackColor = true;
+            this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1224,8 +1210,6 @@
             this.Text = "SignIt!";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.signIt.ResumeLayout(false);
-            this.Lecciones_y_Ejercicios.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.IdS.ResumeLayout(false);
             this.IdS.PerformLayout();
             this.CdU.ResumeLayout(false);
@@ -1240,6 +1224,7 @@
             this.juegos.ResumeLayout(false);
             this.Ajustes.ResumeLayout(false);
             this.Ajustes.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
