@@ -35,9 +35,9 @@ namespace SignIt
            switch (progreso)
            {         
                       case 0:
-                           if (URL != Form1.path.Remove(75, 14) + "\\Resources\\Group 59.PNG" )
+                           if (URL != Form1.imagePath + "\\Group 59.PNG")
                            {//72
-                               URL = Form1.path.Remove(75,14) + "\\Resources\\Group 59.PNG";
+                               URL = Form1.imagePath + "\\Group 59.PNG";
                                myimage = new Bitmap(URL);
                                panel1.BackgroundImage = myimage;
                            }
@@ -45,9 +45,9 @@ namespace SignIt
                            break;
                           
                       case 1:
-                          if (URL != Form1.path.Remove(75, 14) + "\\Resources\\Group 61.PNG")
+                          if (URL != Form1.imagePath + "\\Group 61.PNG")
                           {
-                              URL = Form1.path.Remove(75, 14) + "\\Resources\\Group 61.PNG";
+                              URL = Form1.imagePath + "\\Group 61.PNG";
                               myimage = new Bitmap(URL);
                               panel1.BackgroundImage = myimage;
                           }
@@ -56,9 +56,9 @@ namespace SignIt
                           break;
                    
                       case 2:
-                          if (URL != Form1.path.Remove(75, 14) + "\\Resources\\Group 62.PNG")
+                          if (URL != Form1.imagePath + "\\Group 62.PNG")
                           {
-                              URL = Form1.path.Remove(75, 14) + "\\Resources\\Group 62.PNG";
+                              URL = Form1.imagePath + "\\Group 62.PNG";
                               myimage = new Bitmap(URL);
                               panel1.BackgroundImage = myimage;
                           }   

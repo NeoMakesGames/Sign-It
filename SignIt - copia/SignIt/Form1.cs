@@ -20,7 +20,7 @@ namespace SignIt
     {
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        public static string imagePath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Resources\\";
+        public static string imagePath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Resources";
         //public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
         //public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
 
@@ -47,7 +47,7 @@ namespace SignIt
             timer1.Enabled = false;
         }
 
-//Funciones
+        //Funciones
 
         private void desaparicionDelMenu()
         {
@@ -55,7 +55,7 @@ namespace SignIt
             panel1.Hide();
             panel1.Location = new Point(-332, 0);
         }
-        
+
         private void aparicionDelMenu()
         {
             panel1.Show();
@@ -63,7 +63,7 @@ namespace SignIt
             Menubutton.Show();
             Menubutton.BringToFront();
         }
-        
+
         private void cierre()
         {
             this.Close();
@@ -79,49 +79,49 @@ namespace SignIt
                 NextLvl *= 2;
             }
         }
-        private void  sliderDeLaHome()
+        private void sliderDeLaHome()
         {
-            
-             
-            
-                if (homeSlider > 3)
+
+
+
+            if (homeSlider > 3)
+            {
+                homeSlider = 1;
+            }
+
+            else if (homeSlider == 1)
+            {
+                if (HS_URL != Form1.path.Remove(75, 14) + "\\Resources\\fundasor.PNG")
                 {
-                    homeSlider = 1;
+                    HS_URL = Form1.path.Remove(75, 14) + "\\Resources\\fundasor.PNG";
+                    myimage = new Bitmap(HS_URL);
+                    sliderHome.BackgroundImage = myimage;
                 }
-            
-                else if (homeSlider == 1)
+            }
+
+            else if (homeSlider == 2)
+            {
+                if (HS_URL != Form1.path.Remove(75, 14) + "\\Resources\\Logo-CAS.PNG")
                 {
-                  if (HS_URL != Form1.path.Remove(75, 14) + "\\Resources\\fundasor.PNG")
-                  {
-                        HS_URL = Form1.path.Remove(75, 14) + "\\Resources\\fundasor.PNG";
-                        myimage = new Bitmap(HS_URL);
-                        sliderHome.BackgroundImage = myimage;
-                  }
+                    HS_URL = Form1.path.Remove(75, 14) + "\\Resources\\Logo-CAS.PNG";
+                    myimage = new Bitmap(HS_URL);
+                    sliderHome.BackgroundImage = myimage;
                 }
-            
-                else if (homeSlider == 2)
+            }
+
+            else if (homeSlider == 3)
+            {
+                if (HS_URL != Form1.path.Remove(75, 14) + "\\Resources\\logo.PNG")
                 {
-                    if (HS_URL != Form1.path.Remove(75, 14) + "\\Resources\\Logo-CAS.PNG")
-                    {
-                        HS_URL = Form1.path.Remove(75, 14) + "\\Resources\\Logo-CAS.PNG";
-                        myimage = new Bitmap(HS_URL);
-                        sliderHome.BackgroundImage = myimage;
-                    }
+                    HS_URL = Form1.path.Remove(75, 14) + "\\Resources\\logo.PNG";
+                    myimage = new Bitmap(HS_URL);
+                    sliderHome.BackgroundImage = myimage;
                 }
-            
-                else if (homeSlider == 3)
-                {
-                    if (HS_URL != Form1.path.Remove(75, 14) + "\\Resources\\logo.PNG")
-                    {
-                        HS_URL = Form1.path.Remove(75, 14) + "\\Resources\\logo.PNG";
-                        myimage = new Bitmap(HS_URL);
-                        sliderHome.BackgroundImage = myimage;
-                    }
-                }
-                else if (homeSlider < 1)
-                {
-                    homeSlider = 3;
-                }
+            }
+            else if (homeSlider < 1)
+            {
+                homeSlider = 3;
+            }
         }
 
         private void tutorial()
@@ -130,6 +130,23 @@ namespace SignIt
             tuto1.Show();
             DatabaseFunctions.SetAvance(DatabaseFunctions.currentUser, 1, path);
         }
+
+        public void ensañanza(string t)
+        {
+            int z = 0;
+            int[] videos = new int[20];
+
+            for (int i = 0; i <= 60; i++)
+            {
+                if (t == DatabaseFunctions.getString(i, "clasificación", path))
+                {
+                    videos[z] = i;
+                    z++;
+                }
+            }
+
+        }
+            
 
 //Comienzo
 
@@ -562,6 +579,11 @@ namespace SignIt
         private void NumBack_Click(object sender, EventArgs e)
         {
             diccionarioBeta.SelectedTab = dB0;
+        }
+
+        private void ComenzarIds_MouseHover(object sender, EventArgs e)
+        {
+
         }
     }
 }

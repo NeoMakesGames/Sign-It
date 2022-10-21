@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.signIt = new System.Windows.Forms.TabControl();
+            this.Lecciones_y_Ejercicios = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.IdS = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -81,9 +84,21 @@
             this.dB5 = new System.Windows.Forms.TabPage();
             this.dBAbecedario = new System.Windows.Forms.TabPage();
             this.dBNros = new System.Windows.Forms.TabPage();
+            this.NumBack = new System.Windows.Forms.Button();
+            this.dBNum6 = new System.Windows.Forms.Button();
+            this.dBNum1 = new System.Windows.Forms.Button();
+            this.dBNum9 = new System.Windows.Forms.Button();
+            this.dBNum10 = new System.Windows.Forms.Button();
+            this.dBNum5 = new System.Windows.Forms.Button();
+            this.dBNum4 = new System.Windows.Forms.Button();
+            this.dBNum7 = new System.Windows.Forms.Button();
+            this.dBNum8 = new System.Windows.Forms.Button();
+            this.dBNum3 = new System.Windows.Forms.Button();
+            this.dBNum2 = new System.Windows.Forms.Button();
             this.juegos = new System.Windows.Forms.TabPage();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.userNameSett2 = new System.Windows.Forms.Label();
             this.experienciaSett2 = new System.Windows.Forms.Label();
@@ -93,30 +108,17 @@
             this.FullScrButtonSett = new System.Windows.Forms.Button();
             this.PantallaSett = new System.Windows.Forms.Label();
             this.UserNameSett = new System.Windows.Forms.Label();
-            this.Lecciones_y_Ejercicios = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.tuto1 = new SignIt.tuto();
+            this.Menubutton = new System.Windows.Forms.Button();
             this.MenuExitButton = new System.Windows.Forms.Button();
             this.MenuSettingsButton = new System.Windows.Forms.Button();
             this.MenuGamesButton = new System.Windows.Forms.Button();
             this.MenuDiccionarioButton = new System.Windows.Forms.Button();
             this.MenuLectionsButton = new System.Windows.Forms.Button();
             this.MenuHomeButton = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Menubutton = new System.Windows.Forms.Button();
-            this.dBNum2 = new System.Windows.Forms.Button();
-            this.dBNum3 = new System.Windows.Forms.Button();
-            this.dBNum8 = new System.Windows.Forms.Button();
-            this.dBNum7 = new System.Windows.Forms.Button();
-            this.dBNum9 = new System.Windows.Forms.Button();
-            this.dBNum10 = new System.Windows.Forms.Button();
-            this.dBNum5 = new System.Windows.Forms.Button();
-            this.dBNum4 = new System.Windows.Forms.Button();
-            this.dBNum6 = new System.Windows.Forms.Button();
-            this.dBNum1 = new System.Windows.Forms.Button();
-            this.NumBack = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
-            this.tuto1 = new SignIt.tuto();
             this.signIt.SuspendLayout();
+            this.Lecciones_y_Ejercicios.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
             this.Home.SuspendLayout();
@@ -127,8 +129,6 @@
             this.dBNros.SuspendLayout();
             this.juegos.SuspendLayout();
             this.Ajustes.SuspendLayout();
-            this.Lecciones_y_Ejercicios.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // signIt
@@ -146,6 +146,37 @@
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1437, 831);
             this.signIt.TabIndex = 0;
+            // 
+            // Lecciones_y_Ejercicios
+            // 
+            this.Lecciones_y_Ejercicios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Lecciones_y_Ejercicios.Controls.Add(this.tuto1);
+            this.Lecciones_y_Ejercicios.Location = new System.Drawing.Point(4, 22);
+            this.Lecciones_y_Ejercicios.Name = "Lecciones_y_Ejercicios";
+            this.Lecciones_y_Ejercicios.Size = new System.Drawing.Size(1429, 805);
+            this.Lecciones_y_Ejercicios.TabIndex = 7;
+            this.Lecciones_y_Ejercicios.Text = "Lecciones y Ejercicios";
+            this.Lecciones_y_Ejercicios.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel1.Controls.Add(this.MenuExitButton);
+            this.panel1.Controls.Add(this.MenuSettingsButton);
+            this.panel1.Controls.Add(this.MenuGamesButton);
+            this.panel1.Controls.Add(this.MenuDiccionarioButton);
+            this.panel1.Controls.Add(this.MenuLectionsButton);
+            this.panel1.Controls.Add(this.MenuHomeButton);
+            this.panel1.Location = new System.Drawing.Point(0, -23);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(332, 807);
+            this.panel1.TabIndex = 2;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // IdS
             // 
@@ -228,6 +259,7 @@
             this.ComenzarIds.TabIndex = 3;
             this.ComenzarIds.UseVisualStyleBackColor = false;
             this.ComenzarIds.Click += new System.EventHandler(this.ComenzarIds_Click);
+            this.ComenzarIds.MouseHover += new System.EventHandler(this.ComenzarIds_MouseHover);
             // 
             // linkLabel1IdS
             // 
@@ -809,6 +841,110 @@
             this.dBNros.TabIndex = 2;
             this.dBNros.Text = "dbNros";
             // 
+            // NumBack
+            // 
+            this.NumBack.BackColor = System.Drawing.Color.Transparent;
+            this.NumBack.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
+            this.NumBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.NumBack.FlatAppearance.BorderSize = 0;
+            this.NumBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NumBack.Location = new System.Drawing.Point(42, 42);
+            this.NumBack.Name = "NumBack";
+            this.NumBack.Size = new System.Drawing.Size(96, 60);
+            this.NumBack.TabIndex = 10;
+            this.NumBack.UseVisualStyleBackColor = false;
+            this.NumBack.Click += new System.EventHandler(this.NumBack_Click);
+            // 
+            // dBNum6
+            // 
+            this.dBNum6.Location = new System.Drawing.Point(101, 419);
+            this.dBNum6.Name = "dBNum6";
+            this.dBNum6.Size = new System.Drawing.Size(200, 200);
+            this.dBNum6.TabIndex = 9;
+            this.dBNum6.Text = "6";
+            this.dBNum6.UseVisualStyleBackColor = true;
+            // 
+            // dBNum1
+            // 
+            this.dBNum1.Location = new System.Drawing.Point(101, 157);
+            this.dBNum1.Name = "dBNum1";
+            this.dBNum1.Size = new System.Drawing.Size(200, 200);
+            this.dBNum1.TabIndex = 8;
+            this.dBNum1.Text = "1";
+            this.dBNum1.UseVisualStyleBackColor = true;
+            // 
+            // dBNum9
+            // 
+            this.dBNum9.Location = new System.Drawing.Point(810, 419);
+            this.dBNum9.Name = "dBNum9";
+            this.dBNum9.Size = new System.Drawing.Size(200, 200);
+            this.dBNum9.TabIndex = 7;
+            this.dBNum9.Text = "9";
+            this.dBNum9.UseVisualStyleBackColor = true;
+            // 
+            // dBNum10
+            // 
+            this.dBNum10.Location = new System.Drawing.Point(1058, 419);
+            this.dBNum10.Name = "dBNum10";
+            this.dBNum10.Size = new System.Drawing.Size(200, 200);
+            this.dBNum10.TabIndex = 6;
+            this.dBNum10.Text = "10";
+            this.dBNum10.UseVisualStyleBackColor = true;
+            // 
+            // dBNum5
+            // 
+            this.dBNum5.Location = new System.Drawing.Point(1058, 157);
+            this.dBNum5.Name = "dBNum5";
+            this.dBNum5.Size = new System.Drawing.Size(200, 200);
+            this.dBNum5.TabIndex = 5;
+            this.dBNum5.Text = "5";
+            this.dBNum5.UseVisualStyleBackColor = true;
+            // 
+            // dBNum4
+            // 
+            this.dBNum4.Location = new System.Drawing.Point(810, 157);
+            this.dBNum4.Name = "dBNum4";
+            this.dBNum4.Size = new System.Drawing.Size(200, 200);
+            this.dBNum4.TabIndex = 4;
+            this.dBNum4.Text = "4";
+            this.dBNum4.UseVisualStyleBackColor = true;
+            // 
+            // dBNum7
+            // 
+            this.dBNum7.Location = new System.Drawing.Point(339, 419);
+            this.dBNum7.Name = "dBNum7";
+            this.dBNum7.Size = new System.Drawing.Size(200, 200);
+            this.dBNum7.TabIndex = 3;
+            this.dBNum7.Text = "7";
+            this.dBNum7.UseVisualStyleBackColor = true;
+            // 
+            // dBNum8
+            // 
+            this.dBNum8.Location = new System.Drawing.Point(567, 419);
+            this.dBNum8.Name = "dBNum8";
+            this.dBNum8.Size = new System.Drawing.Size(200, 200);
+            this.dBNum8.TabIndex = 2;
+            this.dBNum8.Text = "8";
+            this.dBNum8.UseVisualStyleBackColor = true;
+            // 
+            // dBNum3
+            // 
+            this.dBNum3.Location = new System.Drawing.Point(567, 157);
+            this.dBNum3.Name = "dBNum3";
+            this.dBNum3.Size = new System.Drawing.Size(200, 200);
+            this.dBNum3.TabIndex = 1;
+            this.dBNum3.Text = "3";
+            this.dBNum3.UseVisualStyleBackColor = true;
+            // 
+            // dBNum2
+            // 
+            this.dBNum2.Location = new System.Drawing.Point(339, 157);
+            this.dBNum2.Name = "dBNum2";
+            this.dBNum2.Size = new System.Drawing.Size(200, 200);
+            this.dBNum2.TabIndex = 0;
+            this.dBNum2.Text = "2";
+            this.dBNum2.UseVisualStyleBackColor = true;
+            // 
             // juegos
             // 
             this.juegos.BackColor = System.Drawing.Color.LightBlue;
@@ -850,6 +986,17 @@
             this.RaceGamesButton.TabIndex = 0;
             this.RaceGamesButton.UseVisualStyleBackColor = false;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
+            // 
+            // race1
+            // 
+            this.race1.BackColor = System.Drawing.Color.SteelBlue;
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(2, -12);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1430, 823);
+            this.race1.TabIndex = 2;
+            this.race1.Visible = false;
             // 
             // Ajustes
             // 
@@ -958,30 +1105,28 @@
             this.UserNameSett.TabIndex = 1;
             this.UserNameSett.Text = "Nombre de Usuario: ";
             // 
-            // Lecciones_y_Ejercicios
+            // tuto1
             // 
-            this.Lecciones_y_Ejercicios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Lecciones_y_Ejercicios.Controls.Add(this.tuto1);
-            this.Lecciones_y_Ejercicios.Location = new System.Drawing.Point(4, 22);
-            this.Lecciones_y_Ejercicios.Name = "Lecciones_y_Ejercicios";
-            this.Lecciones_y_Ejercicios.Size = new System.Drawing.Size(1429, 805);
-            this.Lecciones_y_Ejercicios.TabIndex = 7;
-            this.Lecciones_y_Ejercicios.Text = "Lecciones y Ejercicios";
-            this.Lecciones_y_Ejercicios.UseVisualStyleBackColor = true;
+            this.tuto1.BackColor = System.Drawing.Color.LightBlue;
+            this.tuto1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tuto1.BackgroundImage")));
+            this.tuto1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tuto1.Location = new System.Drawing.Point(0, 0);
+            this.tuto1.Name = "tuto1";
+            this.tuto1.Size = new System.Drawing.Size(1366, 788);
+            this.tuto1.TabIndex = 0;
+            this.tuto1.Visible = false;
             // 
-            // panel1
+            // Menubutton
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel1.Controls.Add(this.MenuExitButton);
-            this.panel1.Controls.Add(this.MenuSettingsButton);
-            this.panel1.Controls.Add(this.MenuGamesButton);
-            this.panel1.Controls.Add(this.MenuDiccionarioButton);
-            this.panel1.Controls.Add(this.MenuLectionsButton);
-            this.panel1.Controls.Add(this.MenuHomeButton);
-            this.panel1.Location = new System.Drawing.Point(0, -23);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(332, 807);
-            this.panel1.TabIndex = 2;
+            this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
+            this.Menubutton.FlatAppearance.BorderSize = 0;
+            this.Menubutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Menubutton.Location = new System.Drawing.Point(0, 0);
+            this.Menubutton.Name = "Menubutton";
+            this.Menubutton.Size = new System.Drawing.Size(100, 75);
+            this.Menubutton.TabIndex = 3;
+            this.Menubutton.UseVisualStyleBackColor = true;
+            this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
             // MenuExitButton
             // 
@@ -1067,150 +1212,6 @@
             this.MenuHomeButton.UseVisualStyleBackColor = false;
             this.MenuHomeButton.Click += new System.EventHandler(this.MenuHomeButton_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 200;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // Menubutton
-            // 
-            this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
-            this.Menubutton.FlatAppearance.BorderSize = 0;
-            this.Menubutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menubutton.Location = new System.Drawing.Point(0, 0);
-            this.Menubutton.Name = "Menubutton";
-            this.Menubutton.Size = new System.Drawing.Size(100, 75);
-            this.Menubutton.TabIndex = 3;
-            this.Menubutton.UseVisualStyleBackColor = true;
-            this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
-            // 
-            // dBNum2
-            // 
-            this.dBNum2.Location = new System.Drawing.Point(339, 157);
-            this.dBNum2.Name = "dBNum2";
-            this.dBNum2.Size = new System.Drawing.Size(200, 200);
-            this.dBNum2.TabIndex = 0;
-            this.dBNum2.Text = "2";
-            this.dBNum2.UseVisualStyleBackColor = true;
-            // 
-            // dBNum3
-            // 
-            this.dBNum3.Location = new System.Drawing.Point(567, 157);
-            this.dBNum3.Name = "dBNum3";
-            this.dBNum3.Size = new System.Drawing.Size(200, 200);
-            this.dBNum3.TabIndex = 1;
-            this.dBNum3.Text = "3";
-            this.dBNum3.UseVisualStyleBackColor = true;
-            // 
-            // dBNum8
-            // 
-            this.dBNum8.Location = new System.Drawing.Point(567, 419);
-            this.dBNum8.Name = "dBNum8";
-            this.dBNum8.Size = new System.Drawing.Size(200, 200);
-            this.dBNum8.TabIndex = 2;
-            this.dBNum8.Text = "8";
-            this.dBNum8.UseVisualStyleBackColor = true;
-            // 
-            // dBNum7
-            // 
-            this.dBNum7.Location = new System.Drawing.Point(339, 419);
-            this.dBNum7.Name = "dBNum7";
-            this.dBNum7.Size = new System.Drawing.Size(200, 200);
-            this.dBNum7.TabIndex = 3;
-            this.dBNum7.Text = "7";
-            this.dBNum7.UseVisualStyleBackColor = true;
-            // 
-            // dBNum9
-            // 
-            this.dBNum9.Location = new System.Drawing.Point(810, 419);
-            this.dBNum9.Name = "dBNum9";
-            this.dBNum9.Size = new System.Drawing.Size(200, 200);
-            this.dBNum9.TabIndex = 7;
-            this.dBNum9.Text = "9";
-            this.dBNum9.UseVisualStyleBackColor = true;
-            // 
-            // dBNum10
-            // 
-            this.dBNum10.Location = new System.Drawing.Point(1058, 419);
-            this.dBNum10.Name = "dBNum10";
-            this.dBNum10.Size = new System.Drawing.Size(200, 200);
-            this.dBNum10.TabIndex = 6;
-            this.dBNum10.Text = "10";
-            this.dBNum10.UseVisualStyleBackColor = true;
-            // 
-            // dBNum5
-            // 
-            this.dBNum5.Location = new System.Drawing.Point(1058, 157);
-            this.dBNum5.Name = "dBNum5";
-            this.dBNum5.Size = new System.Drawing.Size(200, 200);
-            this.dBNum5.TabIndex = 5;
-            this.dBNum5.Text = "5";
-            this.dBNum5.UseVisualStyleBackColor = true;
-            // 
-            // dBNum4
-            // 
-            this.dBNum4.Location = new System.Drawing.Point(810, 157);
-            this.dBNum4.Name = "dBNum4";
-            this.dBNum4.Size = new System.Drawing.Size(200, 200);
-            this.dBNum4.TabIndex = 4;
-            this.dBNum4.Text = "4";
-            this.dBNum4.UseVisualStyleBackColor = true;
-            // 
-            // dBNum6
-            // 
-            this.dBNum6.Location = new System.Drawing.Point(101, 419);
-            this.dBNum6.Name = "dBNum6";
-            this.dBNum6.Size = new System.Drawing.Size(200, 200);
-            this.dBNum6.TabIndex = 9;
-            this.dBNum6.Text = "6";
-            this.dBNum6.UseVisualStyleBackColor = true;
-            // 
-            // dBNum1
-            // 
-            this.dBNum1.Location = new System.Drawing.Point(101, 157);
-            this.dBNum1.Name = "dBNum1";
-            this.dBNum1.Size = new System.Drawing.Size(200, 200);
-            this.dBNum1.TabIndex = 8;
-            this.dBNum1.Text = "1";
-            this.dBNum1.UseVisualStyleBackColor = true;
-            // 
-            // NumBack
-            // 
-            this.NumBack.BackColor = System.Drawing.Color.Transparent;
-            this.NumBack.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
-            this.NumBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.NumBack.FlatAppearance.BorderSize = 0;
-            this.NumBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NumBack.Location = new System.Drawing.Point(42, 42);
-            this.NumBack.Name = "NumBack";
-            this.NumBack.Size = new System.Drawing.Size(96, 60);
-            this.NumBack.TabIndex = 10;
-            this.NumBack.UseVisualStyleBackColor = false;
-            this.NumBack.Click += new System.EventHandler(this.NumBack_Click);
-            // 
-            // race1
-            // 
-            this.race1.BackColor = System.Drawing.Color.SteelBlue;
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(2, -12);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1430, 823);
-            this.race1.TabIndex = 2;
-            this.race1.Visible = false;
-            // 
-            // tuto1
-            // 
-            this.tuto1.BackColor = System.Drawing.Color.LightBlue;
-            this.tuto1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tuto1.BackgroundImage")));
-            this.tuto1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tuto1.Location = new System.Drawing.Point(0, 0);
-            this.tuto1.Name = "tuto1";
-            this.tuto1.Size = new System.Drawing.Size(1366, 788);
-            this.tuto1.TabIndex = 0;
-            this.tuto1.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1223,6 +1224,8 @@
             this.Text = "SignIt!";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.signIt.ResumeLayout(false);
+            this.Lecciones_y_Ejercicios.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.IdS.ResumeLayout(false);
             this.IdS.PerformLayout();
             this.CdU.ResumeLayout(false);
@@ -1237,8 +1240,6 @@
             this.juegos.ResumeLayout(false);
             this.Ajustes.ResumeLayout(false);
             this.Ajustes.PerformLayout();
-            this.Lecciones_y_Ejercicios.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
