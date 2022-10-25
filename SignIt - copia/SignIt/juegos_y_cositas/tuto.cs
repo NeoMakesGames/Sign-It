@@ -31,7 +31,6 @@ namespace SignIt
         }
         private void tutoTimer_Tick_1(object sender, EventArgs e)
         {
-           label1.Text = Convert.ToString(progreso);
            switch (progreso)
            {         
                       case 0:

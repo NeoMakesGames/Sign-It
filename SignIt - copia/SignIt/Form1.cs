@@ -19,22 +19,23 @@ namespace SignIt
     public partial class Form1 : Form
     {
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
-        public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        public static string imagePath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Resources";
-        //public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        //public static string videosPath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs\\";
+        //public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        //public static string imagePath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Resources";
+        public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        public static string imagePath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Resources";
 
         Image myimage;
         string HS_URL;
         string botonBI;
+        string botondiseño;
         int menuX = -332;
         int UserXp;
         int UserLvl;
         int NextLvl = 10;
         int homeSlider = 0;
         double home_slider = 0;
-        public static int avance;
-
+        public static int avance; 
+        bool continuar = false;
 
         public bool menu = false;
         public bool fullscr = true;
@@ -91,9 +92,9 @@ namespace SignIt
 
             else if (homeSlider == 1)
             {
-                if (HS_URL != Form1.path.Remove(75, 14) + "\\Resources\\fundasor.PNG")
+                if (HS_URL != Form1.path.Remove(72, 14) + "\\Resources\\fundasor.PNG")
                 {
-                    HS_URL = Form1.path.Remove(75, 14) + "\\Resources\\fundasor.PNG";
+                    HS_URL = Form1.path.Remove(72, 14) + "\\Resources\\fundasor.PNG";
                     myimage = new Bitmap(HS_URL);
                     sliderHome.BackgroundImage = myimage;
                 }
@@ -101,9 +102,9 @@ namespace SignIt
 
             else if (homeSlider == 2)
             {
-                if (HS_URL != Form1.path.Remove(75, 14) + "\\Resources\\Logo-CAS.PNG")
+                if (HS_URL != Form1.path.Remove(72, 14) + "\\Resources\\Logo-CAS.PNG")
                 {
-                    HS_URL = Form1.path.Remove(75, 14) + "\\Resources\\Logo-CAS.PNG";
+                    HS_URL = Form1.path.Remove(72, 14) + "\\Resources\\Logo-CAS.PNG";
                     myimage = new Bitmap(HS_URL);
                     sliderHome.BackgroundImage = myimage;
                 }
@@ -111,9 +112,9 @@ namespace SignIt
 
             else if (homeSlider == 3)
             {
-                if (HS_URL != Form1.path.Remove(75, 14) + "\\Resources\\logo.PNG")
+                if (HS_URL != Form1.path.Remove(72, 14) + "\\Resources\\logo.PNG")
                 {
-                    HS_URL = Form1.path.Remove(75, 14) + "\\Resources\\logo.PNG";
+                    HS_URL = Form1.path.Remove(72, 14) + "\\Resources\\logo.PNG";
                     myimage = new Bitmap(HS_URL);
                     sliderHome.BackgroundImage = myimage;
                 }
@@ -126,23 +127,36 @@ namespace SignIt
 
         private void tutorial()
         {
-            signIt.SelectedTab = Lecciones_y_Ejercicios;
-            tuto1.Show();
+            signIt.SelectedTab = Enseñanza;
+            //tuto1.Show();
             DatabaseFunctions.SetAvance(DatabaseFunctions.currentUser, 1, path);
         }
 
-        public void ensañanza(string t)
+        public async void ensañanza(string tipo)
         {
+            signIt.SelectedTab = Enseñanza;
             int z = 0;
             int[] videos = new int[20];
+            EnseñanzaPlayer.settings.setMode("loop", true);
 
             for (int i = 0; i <= 60; i++)
             {
-                if (t == DatabaseFunctions.getString(i, "clasificación", path))
+                if (tipo == DatabaseFunctions.getString(i, "clasificación", path))
                 {
                     videos[z] = i;
                     z++;
                 }
+            }
+            foreach (int id in videos)
+            {
+                EnseñanzaPlayer.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                EnseñanzaPlayer.Ctlcontrols.play();
+                PalabraEns.Text = DatabaseFunctions.getString(id, "Sign", path);
+                while (!continuar)
+                {
+                    await Task.Delay(250);
+                }
+                continuar = false;
             }
 
         }
@@ -186,8 +200,9 @@ namespace SignIt
             signIt.SelectedTab = CdU;
             label1CdU.Hide();
             label2IdS.Hide();
-            UserCdU.Text = "";
-            UserIdS.Text = "";
+            UserCdU.Text = "Ingresar nombre";
+            UserIdS.Text = "Ingresar Usuario";
+            UserAgeCdU.Text = "Ingresar edad";
         }
         private void SalirIdS_Click(object sender, EventArgs e)
         {
@@ -196,21 +211,9 @@ namespace SignIt
 
 //Creación de Usuario
         private void ComenzarCdU_Click(object sender, EventArgs e)
-        {
-            if (!DatabaseFunctions.checkIfThereAreUsers(path))
+        {   if (UserCdU.Text != "" && UserAgeCdU.Text != "")
             {
-                DatabaseFunctions.addUser(UserCdU.Text, path);
-                
-                DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserCdU.Text, path);
-
-                DatabaseFunctions.SetAvance(DatabaseFunctions.currentUser, 0, path);
-                avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
-                
-                tutorial();
-            }
-            else if (DatabaseFunctions.checkIfThereAreUsers(path))
-            {
-                if (!DatabaseFunctions.checkIfNameExists(UserCdU.Text, path))
+                if (!DatabaseFunctions.checkIfThereAreUsers(path))
                 {
                     DatabaseFunctions.addUser(UserCdU.Text, path);
 
@@ -218,11 +221,25 @@ namespace SignIt
 
                     DatabaseFunctions.SetAvance(DatabaseFunctions.currentUser, 0, path);
                     avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
+
                     tutorial();
                 }
-                else
+                else if (DatabaseFunctions.checkIfThereAreUsers(path))
                 {
-                    label1CdU.Show();
+                    if (!DatabaseFunctions.checkIfNameExists(UserCdU.Text, path))
+                    {
+                        DatabaseFunctions.addUser(UserCdU.Text, path);
+
+                        DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserCdU.Text, path);
+
+                        DatabaseFunctions.SetAvance(DatabaseFunctions.currentUser, 0, path);
+                        avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
+                        tutorial();
+                    }
+                    else
+                    {
+                        label1CdU.Show();
+                    }
                 }
             }
         }
@@ -232,8 +249,9 @@ namespace SignIt
             signIt.SelectedTab = IdS;
             label1CdU.Hide();
             label2IdS.Hide();
-            UserCdU.Text = "";
-            UserIdS.Text = "";
+            UserCdU.Text = "Ingresar nombre";
+            UserIdS.Text = "Ingresar Usuario";
+            UserAgeCdU.Text = "Ingresar edad";
         }
 
 //Home
@@ -408,8 +426,28 @@ namespace SignIt
             {
                 cierre();
             }
-            
-//Ajustes
+
+        //Lecciones
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ensañanza("basico");
+            if (avance >= 1)
+            {
+                ensañanza("basico");
+            }
+            else
+            {
+
+            }
+        }
+
+        private void contEnseñanza_Click(object sender, EventArgs e)
+        {
+            continuar = true;
+        }
+
+        //Ajustes
 
         private void FullScrButtonSett_Click(object sender, EventArgs e)
         {
@@ -511,7 +549,7 @@ namespace SignIt
         private void timer1_Tick(object sender, EventArgs e)
         {
             {
-                if (signIt.SelectedTab == juegos || signIt.SelectedTab == Lecciones_y_Ejercicios)
+                if (signIt.SelectedTab == juegos || signIt.SelectedTab == Enseñanza)
                 {
                     if (externalmenu == true)
                     {
@@ -584,6 +622,70 @@ namespace SignIt
         private void ComenzarIds_MouseHover(object sender, EventArgs e)
         {
 
+        }
+
+        private void ComenzarIds_MouseClick(object sender, MouseEventArgs e)
+        { 
+        
+        }
+        private void UserAgeCdU_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        //Botones
+        private void label4_MouseDown(object sender, MouseEventArgs e)
+        {
+            Image mYimage;
+            botondiseño = path.Remove(72, 14) + "\\Resources\\Botón (1).png";
+            mYimage = new Bitmap(botondiseño);
+            ComenzarIds.BackgroundImage = mYimage;
+        }
+
+        private void ComenzarIds_MouseEnter(object sender, EventArgs e)
+        {
+            Image mYimage;
+            botondiseño = path.Remove(72, 14) + "\\Resources\\Botón (2).png";
+            mYimage = new Bitmap(botondiseño);
+            ComenzarIds.BackgroundImage = mYimage;
+        }
+
+        private void ComenzarIds_MouseLeave(object sender, EventArgs e)
+        {
+            Image mYimage;
+            botondiseño = path.Remove(72, 14) + "\\Resources\\Botón.png";
+            mYimage = new Bitmap(botondiseño);
+            ComenzarIds.BackgroundImage = mYimage;
+        }
+
+        private void UserIdS_Click(object sender, EventArgs e)
+        {
+            UserIdS.Text = "";
+        }
+
+        private void UserCdU_Click(object sender, EventArgs e)
+        {
+            UserCdU.Text = "";
+        }
+
+        private void UserAgeCdU_Click(object sender, EventArgs e)
+        {
+            UserAgeCdU.Text = "";
+        }
+
+        private void ComenzarCdU_MouseEnter(object sender, EventArgs e)
+        {
+            Image mYimage;
+            botondiseño = path.Remove(72, 14) + "\\Resources\\Botón seleccionado.png";
+            mYimage = new Bitmap(botondiseño);
+            ComenzarCdU.BackgroundImage = mYimage;
+        }
+
+        private void ComenzarCdU_MouseLeave(object sender, EventArgs e)
+        {
+            Image mYimage;
+            botondiseño = path.Remove(72, 14) + "\\Resources\\Botón (3).png";
+            mYimage = new Bitmap(botondiseño);
+            ComenzarCdU.BackgroundImage = mYimage;
         }
     }
 }

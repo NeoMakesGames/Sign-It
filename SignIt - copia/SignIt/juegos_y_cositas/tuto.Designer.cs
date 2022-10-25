@@ -34,7 +34,6 @@
             this.skipTutorial = new System.Windows.Forms.Button();
             this.tutocont = new System.Windows.Forms.Button();
             this.tutoReg = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.endTutorial = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -54,6 +53,7 @@
             // 
             // skipTutorial
             // 
+            this.skipTutorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.skipTutorial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.skipTutorial.Location = new System.Drawing.Point(1120, 635);
             this.skipTutorial.Name = "skipTutorial";
@@ -93,15 +93,6 @@
             this.tutoReg.UseVisualStyleBackColor = false;
             this.tutoReg.Click += new System.EventHandler(this.tutoReg_Click_1);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1293, 152);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
-            // 
             // endTutorial
             // 
             this.endTutorial.BackColor = System.Drawing.Color.Transparent;
@@ -125,7 +116,6 @@
             this.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.endTutorial);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.tutoReg);
             this.Controls.Add(this.tutocont);
             this.Controls.Add(this.skipTutorial);
@@ -135,7 +125,6 @@
             this.Size = new System.Drawing.Size(1366, 788);
             this.Load += new System.EventHandler(this.tuto_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -146,7 +135,6 @@
         private System.Windows.Forms.Button skipTutorial;
         private System.Windows.Forms.Button tutocont;
         private System.Windows.Forms.Button tutoReg;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button endTutorial;
     }
 }

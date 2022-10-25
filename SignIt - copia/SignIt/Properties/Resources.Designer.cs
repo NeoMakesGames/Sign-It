@@ -183,9 +183,29 @@ namespace SignIt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Botón__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Botón (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Botón_seleccionado {
             get {
                 object obj = ResourceManager.GetObject("Botón seleccionado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Botón1 {
+            get {
+                object obj = ResourceManager.GetObject("Botón1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

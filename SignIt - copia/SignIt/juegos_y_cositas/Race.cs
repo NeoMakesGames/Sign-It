@@ -161,7 +161,7 @@ namespace SignIt
         private void TimerRace_Tick(object sender, EventArgs e)
         {
             
-            if (RaceTextBox.Text == "hola")//DatabaseFunctions.GetNameOfVideo(id_, Form1.path))
+            if (RaceTextBox.Text == DatabaseFunctions.getString(id_,"Signs",Form1.path))
             {
                 raceTimer += 3000;
                 reproduccion();

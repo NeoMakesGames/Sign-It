@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.signIt = new System.Windows.Forms.TabControl();
             this.IdS = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2IdS = new System.Windows.Forms.Label();
             this.SalirIdS = new System.Windows.Forms.Button();
@@ -40,6 +39,7 @@
             this.linkLabel1IdS = new System.Windows.Forms.LinkLabel();
             this.UserIdS = new System.Windows.Forms.TextBox();
             this.CdU = new System.Windows.Forms.TabPage();
+            this.UserAgeCdU = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -105,7 +105,10 @@
             this.FullScrButtonSett = new System.Windows.Forms.Button();
             this.PantallaSett = new System.Windows.Forms.Label();
             this.UserNameSett = new System.Windows.Forms.Label();
-            this.Lecciones_y_Ejercicios = new System.Windows.Forms.TabPage();
+            this.Enseñanza = new System.Windows.Forms.TabPage();
+            this.EnseñanzaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
+            this.PalabraEns = new System.Windows.Forms.Label();
+            this.contEnseñanza = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.MenuExitButton = new System.Windows.Forms.Button();
             this.MenuSettingsButton = new System.Windows.Forms.Button();
@@ -126,6 +129,8 @@
             this.dBNros.SuspendLayout();
             this.juegos.SuspendLayout();
             this.Ajustes.SuspendLayout();
+            this.Enseñanza.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EnseñanzaPlayer)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -138,7 +143,7 @@
             this.signIt.Controls.Add(this.Diccionario);
             this.signIt.Controls.Add(this.juegos);
             this.signIt.Controls.Add(this.Ajustes);
-            this.signIt.Controls.Add(this.Lecciones_y_Ejercicios);
+            this.signIt.Controls.Add(this.Enseñanza);
             this.signIt.Location = new System.Drawing.Point(-5, 0);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
@@ -150,7 +155,6 @@
             this.IdS.BackColor = System.Drawing.Color.LightBlue;
             this.IdS.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.IdS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.IdS.Controls.Add(this.label1);
             this.IdS.Controls.Add(this.panel2);
             this.IdS.Controls.Add(this.label2IdS);
             this.IdS.Controls.Add(this.SalirIdS);
@@ -164,17 +168,6 @@
             this.IdS.TabIndex = 0;
             this.IdS.Text = "Inicio de Sesión";
             this.IdS.Click += new System.EventHandler(this.IdS_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Cambria", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(68, 317);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(359, 34);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Ingresar nombre de usuario:";
             // 
             // panel2
             // 
@@ -226,6 +219,9 @@
             this.ComenzarIds.TabIndex = 3;
             this.ComenzarIds.UseVisualStyleBackColor = false;
             this.ComenzarIds.Click += new System.EventHandler(this.ComenzarIds_Click);
+            this.ComenzarIds.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ComenzarIds_MouseClick);
+            this.ComenzarIds.MouseEnter += new System.EventHandler(this.ComenzarIds_MouseEnter);
+            this.ComenzarIds.MouseLeave += new System.EventHandler(this.ComenzarIds_MouseLeave);
             this.ComenzarIds.MouseHover += new System.EventHandler(this.ComenzarIds_MouseHover);
             // 
             // linkLabel1IdS
@@ -245,11 +241,14 @@
             // 
             // UserIdS
             // 
-            this.UserIdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
+            this.UserIdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 43F);
+            this.UserIdS.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.UserIdS.Location = new System.Drawing.Point(454, 290);
             this.UserIdS.Name = "UserIdS";
-            this.UserIdS.Size = new System.Drawing.Size(435, 83);
+            this.UserIdS.Size = new System.Drawing.Size(435, 72);
             this.UserIdS.TabIndex = 0;
+            this.UserIdS.Text = "Ingresar Usuario";
+            this.UserIdS.Click += new System.EventHandler(this.UserIdS_Click);
             this.UserIdS.TextChanged += new System.EventHandler(this.UserIdS_TextChanged);
             // 
             // CdU
@@ -257,6 +256,7 @@
             this.CdU.BackColor = System.Drawing.Color.LightBlue;
             this.CdU.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.CdU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CdU.Controls.Add(this.UserAgeCdU);
             this.CdU.Controls.Add(this.label3);
             this.CdU.Controls.Add(this.label2);
             this.CdU.Controls.Add(this.panel3);
@@ -270,6 +270,18 @@
             this.CdU.Size = new System.Drawing.Size(1429, 805);
             this.CdU.TabIndex = 1;
             this.CdU.Text = "Creación de usuario";
+            // 
+            // UserAgeCdU
+            // 
+            this.UserAgeCdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserAgeCdU.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.UserAgeCdU.Location = new System.Drawing.Point(454, 388);
+            this.UserAgeCdU.Name = "UserAgeCdU";
+            this.UserAgeCdU.Size = new System.Drawing.Size(435, 71);
+            this.UserAgeCdU.TabIndex = 10;
+            this.UserAgeCdU.Text = "Ingresar edad";
+            this.UserAgeCdU.Click += new System.EventHandler(this.UserAgeCdU_Click);
+            this.UserAgeCdU.TextChanged += new System.EventHandler(this.UserAgeCdU_TextChanged);
             // 
             // label3
             // 
@@ -304,11 +316,14 @@
             // 
             // UserCdU
             // 
-            this.UserCdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
+            this.UserCdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserCdU.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.UserCdU.Location = new System.Drawing.Point(454, 290);
             this.UserCdU.Name = "UserCdU";
-            this.UserCdU.Size = new System.Drawing.Size(435, 83);
+            this.UserCdU.Size = new System.Drawing.Size(435, 71);
             this.UserCdU.TabIndex = 3;
+            this.UserCdU.Text = "Ingresar nombre";
+            this.UserCdU.Click += new System.EventHandler(this.UserCdU_Click);
             // 
             // label1CdU
             // 
@@ -316,26 +331,28 @@
             this.label1CdU.BackColor = System.Drawing.Color.Transparent;
             this.label1CdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1CdU.ForeColor = System.Drawing.Color.IndianRed;
-            this.label1CdU.Location = new System.Drawing.Point(541, 416);
+            this.label1CdU.Location = new System.Drawing.Point(460, 473);
             this.label1CdU.Name = "label1CdU";
-            this.label1CdU.Size = new System.Drawing.Size(260, 31);
+            this.label1CdU.Size = new System.Drawing.Size(423, 31);
             this.label1CdU.TabIndex = 2;
-            this.label1CdU.Text = "Usuario ya existente";
+            this.label1CdU.Text = "Este nombre de usuario ya existre";
             // 
             // ComenzarCdU
             // 
             this.ComenzarCdU.BackColor = System.Drawing.Color.Transparent;
-            this.ComenzarCdU.BackgroundImage = global::SignIt.Properties.Resources.Botón__1_;
+            this.ComenzarCdU.BackgroundImage = global::SignIt.Properties.Resources.Botón__3_;
             this.ComenzarCdU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ComenzarCdU.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ComenzarCdU.FlatAppearance.BorderSize = 0;
             this.ComenzarCdU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComenzarCdU.Location = new System.Drawing.Point(461, 481);
+            this.ComenzarCdU.Location = new System.Drawing.Point(461, 523);
             this.ComenzarCdU.Name = "ComenzarCdU";
             this.ComenzarCdU.Size = new System.Drawing.Size(420, 85);
             this.ComenzarCdU.TabIndex = 1;
             this.ComenzarCdU.UseVisualStyleBackColor = false;
             this.ComenzarCdU.Click += new System.EventHandler(this.ComenzarCdU_Click);
+            this.ComenzarCdU.MouseEnter += new System.EventHandler(this.ComenzarCdU_MouseEnter);
+            this.ComenzarCdU.MouseLeave += new System.EventHandler(this.ComenzarCdU_MouseLeave);
             // 
             // SnapBackToReality
             // 
@@ -399,7 +416,7 @@
             // 
             // sliderHome
             // 
-            this.sliderHome.BackColor = System.Drawing.Color.Transparent;
+            this.sliderHome.BackColor = System.Drawing.Color.RoyalBlue;
             this.sliderHome.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
             this.sliderHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sliderHome.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -556,6 +573,7 @@
             this.button1.Size = new System.Drawing.Size(196, 83);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Diccionario
             // 
@@ -1072,15 +1090,53 @@
             this.UserNameSett.TabIndex = 1;
             this.UserNameSett.Text = "Nombre de Usuario: ";
             // 
-            // Lecciones_y_Ejercicios
+            // Enseñanza
             // 
-            this.Lecciones_y_Ejercicios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Lecciones_y_Ejercicios.Location = new System.Drawing.Point(4, 22);
-            this.Lecciones_y_Ejercicios.Name = "Lecciones_y_Ejercicios";
-            this.Lecciones_y_Ejercicios.Size = new System.Drawing.Size(1429, 805);
-            this.Lecciones_y_Ejercicios.TabIndex = 7;
-            this.Lecciones_y_Ejercicios.Text = "Lecciones y Ejercicios";
-            this.Lecciones_y_Ejercicios.UseVisualStyleBackColor = true;
+            this.Enseñanza.BackColor = System.Drawing.Color.LightBlue;
+            this.Enseñanza.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Enseñanza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Enseñanza.Controls.Add(this.EnseñanzaPlayer);
+            this.Enseñanza.Controls.Add(this.PalabraEns);
+            this.Enseñanza.Controls.Add(this.contEnseñanza);
+            this.Enseñanza.Location = new System.Drawing.Point(4, 22);
+            this.Enseñanza.Name = "Enseñanza";
+            this.Enseñanza.Size = new System.Drawing.Size(1429, 805);
+            this.Enseñanza.TabIndex = 7;
+            this.Enseñanza.Text = "Enseñanza";
+            // 
+            // EnseñanzaPlayer
+            // 
+            this.EnseñanzaPlayer.Enabled = true;
+            this.EnseñanzaPlayer.Location = new System.Drawing.Point(528, 292);
+            this.EnseñanzaPlayer.Name = "EnseñanzaPlayer";
+            this.EnseñanzaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("EnseñanzaPlayer.OcxState")));
+            this.EnseñanzaPlayer.Size = new System.Drawing.Size(269, 171);
+            this.EnseñanzaPlayer.TabIndex = 2;
+            // 
+            // PalabraEns
+            // 
+            this.PalabraEns.AutoSize = true;
+            this.PalabraEns.BackColor = System.Drawing.Color.Transparent;
+            this.PalabraEns.Location = new System.Drawing.Point(663, 662);
+            this.PalabraEns.Name = "PalabraEns";
+            this.PalabraEns.Size = new System.Drawing.Size(43, 13);
+            this.PalabraEns.TabIndex = 1;
+            this.PalabraEns.Text = "Palabra";
+            this.PalabraEns.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label4_MouseDown);
+            // 
+            // contEnseñanza
+            // 
+            this.contEnseñanza.BackColor = System.Drawing.Color.Transparent;
+            this.contEnseñanza.BackgroundImage = global::SignIt.Properties.Resources.Botón1;
+            this.contEnseñanza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.contEnseñanza.FlatAppearance.BorderSize = 0;
+            this.contEnseñanza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.contEnseñanza.Location = new System.Drawing.Point(1139, 635);
+            this.contEnseñanza.Name = "contEnseñanza";
+            this.contEnseñanza.Size = new System.Drawing.Size(182, 66);
+            this.contEnseñanza.TabIndex = 0;
+            this.contEnseñanza.UseVisualStyleBackColor = false;
+            this.contEnseñanza.Click += new System.EventHandler(this.contEnseñanza_Click);
             // 
             // panel1
             // 
@@ -1224,6 +1280,9 @@
             this.juegos.ResumeLayout(false);
             this.Ajustes.ResumeLayout(false);
             this.Ajustes.PerformLayout();
+            this.Enseñanza.ResumeLayout(false);
+            this.Enseñanza.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EnseñanzaPlayer)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1238,7 +1297,7 @@
         private System.Windows.Forms.TabPage Diccionario;
         private System.Windows.Forms.TabPage Ajustes;
         private System.Windows.Forms.TabPage juegos;
-        private System.Windows.Forms.TabPage Lecciones_y_Ejercicios;
+        private System.Windows.Forms.TabPage Enseñanza;
         private System.Windows.Forms.Button SalirIdS;
         private System.Windows.Forms.Button ComenzarIds;
         private System.Windows.Forms.LinkLabel linkLabel1IdS;
@@ -1293,7 +1352,6 @@
         private System.Windows.Forms.Label XpLvlSett;
         private System.Windows.Forms.Label userNameSett2;
         private System.Windows.Forms.Label experienciaSett2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabControl diccionarioBeta;
@@ -1317,6 +1375,10 @@
         private System.Windows.Forms.Button dBNum3;
         private System.Windows.Forms.Button dBNum2;
         private System.Windows.Forms.Button NumBack;
+        private System.Windows.Forms.Button contEnseñanza;
+        private System.Windows.Forms.Label PalabraEns;
+        private System.Windows.Forms.TextBox UserAgeCdU;
+        private AxWMPLib.AxWindowsMediaPlayer EnseñanzaPlayer;
     }
 }
 

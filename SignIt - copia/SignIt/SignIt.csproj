@@ -313,5 +313,13 @@
   <ItemGroup>
     <None Include="Resources\Botón seleccionado.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botón1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Botón %282%29.png" />
+    <Content Include="Resources\Botón %283%29.png" />
+    <None Include="Resources\Botón %283%291.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
