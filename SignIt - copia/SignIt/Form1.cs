@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Media;
+using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Security.Policy;
 using System.Text;
@@ -22,7 +23,7 @@ namespace SignIt
         //public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
         //public static string imagePath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Resources";
         public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        public static string imagePath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Resources";
+        public static string imagePath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Resources\\";
 
         Image myimage;
         string HS_URL;
@@ -93,9 +94,9 @@ namespace SignIt
 
             else if (homeSlider == 1)
             {
-                if (HS_URL != Form1.path.Remove(72, 14) + "\\Resources\\fundasor.PNG")
+                if (HS_URL != imagePath + "fundasor.PNG")
                 {
-                    HS_URL = Form1.path.Remove(72, 14) + "\\Resources\\fundasor.PNG";
+                    HS_URL = imagePath + "fundasor.PNG";
                     myimage = new Bitmap(HS_URL);
                     sliderHome.BackgroundImage = myimage;
                 }
@@ -103,9 +104,9 @@ namespace SignIt
 
             else if (homeSlider == 2)
             {
-                if (HS_URL != Form1.path.Remove(72, 14) + "\\Resources\\Logo-CAS.PNG")
+                if (HS_URL != imagePath + "Logo-CAS.PNG")
                 {
-                    HS_URL = Form1.path.Remove(72, 14) + "\\Resources\\Logo-CAS.PNG";
+                    HS_URL = imagePath + "Logo-CAS.PNG";
                     myimage = new Bitmap(HS_URL);
                     sliderHome.BackgroundImage = myimage;
                 }
@@ -113,9 +114,9 @@ namespace SignIt
 
             else if (homeSlider == 3)
             {
-                if (HS_URL != Form1.path.Remove(72, 14) + "\\Resources\\logo.PNG")
+                if (HS_URL != imagePath + "logo.PNG")
                 {
-                    HS_URL = Form1.path.Remove(72, 14) + "\\Resources\\logo.PNG";
+                    HS_URL = imagePath + "logo.PNG";
                     myimage = new Bitmap(HS_URL);
                     sliderHome.BackgroundImage = myimage;
                 }

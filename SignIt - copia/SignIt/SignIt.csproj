@@ -82,12 +82,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="juegos_y_cositas\Memotest.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="juegos_y_cositas\Memotest.Designer.cs">
-      <DependentUpon>Memotest.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="juegos_y_cositas\Race.cs">

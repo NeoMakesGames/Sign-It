@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SignIt
 {
-    public partial class Memotest : UserControl
+    public partial class diccionario : UserControl
     {
-        public Memotest()
+        public diccionario()
         {
             InitializeComponent();
         }

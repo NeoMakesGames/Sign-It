@@ -1,6 +1,6 @@
 ﻿namespace SignIt
 {
-    partial class Memotest
+    partial class diccionario
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
