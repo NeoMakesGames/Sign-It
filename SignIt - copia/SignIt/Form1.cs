@@ -139,7 +139,7 @@ namespace SignIt
             int[] videos = new int[20];
             EnseñanzaPlayer.settings.setMode("loop", true);
 
-            for (int i = 0; i <= 60; i++)
+            for (int i = 0; i <= 64; i++)
             {
                 if (tipo == DatabaseFunctions.getString(i, "clasificación", path))
                 {
@@ -149,16 +149,130 @@ namespace SignIt
             }
             foreach (int id in videos)
             {
-                EnseñanzaPlayer.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                EnseñanzaPlayer.Ctlcontrols.play();
-                PalabraEns.Text = DatabaseFunctions.getString(id, "Sign", path);
-                while (!continuar)
+                if (id != null)
                 {
-                    await Task.Delay(250);
+                    EnseñanzaPlayer.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                    EnseñanzaPlayer.Ctlcontrols.play();
+                    PalabraEns.Text = DatabaseFunctions.getString(id, "Sign", path);
+                    while (!continuar)
+                    {
+                        await Task.Delay(250);
+                    }
+                    continuar = false;
                 }
-                continuar = false;
+            }
+            DatabaseFunctions.addAvance(1 , path);
+            avance++;
+        }
+
+        public async void ejercicios(string tipo)
+        {
+            continuar = false;
+            signIt.SelectedTab = Enseñanza;
+            int z = 0;
+            int[] videos = new int[4];
+            for (int o = 0; o < 5;)
+            {
+                Random rdn = new Random();
+                int id_ = rdn.Next(0, 64);
+
+                if (tipo == DatabaseFunctions.getString(id_, "clasificación", path))
+                {
+                    videos[z] = id_;
+                    z++;
+                    o++;
+                } 
             }
 
+            z = 0;
+
+            foreach (int id in videos)
+            {
+                if (z < 2)
+                {
+                    signIt.SelectedTab = Enseñanza;
+                    EnseñanzaPlayer.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                    PalabraEns.Text = DatabaseFunctions.getString(id, "Sign", path);
+
+                    while (!continuar)
+                    {
+                        await Task.Delay(250);
+                    }
+
+                    continuar = false;
+                }
+                else if (z >= 2)
+                {
+                    Random rdn = new Random();
+                    int TipoDeEjercicio = rdn.Next(0, 2);
+                    switch(TipoDeEjercicio)
+                    {
+                        case 0:
+                            char c, g, e = 'b';
+                            int a, b = 0;
+                            signIt.SelectedTab = ejercicio1;
+                            for (int o = 0; o < 2;)
+                                {
+                                    Random random = new Random();
+                                    int id_ = random.Next(0, 63);
+
+                                    if (tipo == DatabaseFunctions.getString(id_, "clasificación", path))
+                                    {
+                                        if (o == 0 && id_ != id)
+                                        {
+                                            a = id_;
+                                        }
+
+                                        if (o == 1)
+                                        {
+                                            b = id_;
+                                        }
+                                        
+                                        z++;
+                                        o++;
+                                    }
+                                }
+                            Random rm = new Random();
+                            int f = rm.Next(0, 2);
+                            switch(f)
+                            {
+                                case 0:
+                                    ejercicio1VideoA.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                                    ejercicio1VideoB.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                    ejercicio1VideoC.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                                    
+                                    while (c == 'b' || g == 'b' || e  == 'b')
+                                    {
+                                        await Task.Delay(250);
+                                    }
+                                    if (c == 'a')
+                                    {
+                                        //ganaste
+                                    }
+                                    else if (d == 'a')
+                                    {
+
+                                    }
+                                    else if (e == 'a')
+                                    {
+
+                                    }
+                                    break;
+                            }
+
+                            break;
+                        case 1:
+                            signIt.SelectedTab = ejercicio2;
+                            break;
+                        case 2:
+                            signIt.SelectedTab = ejercicio3;
+                            break;
+                    }
+                    
+                    EnseñanzaPlayer.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                }
+                z++;
+            }
         }
             
 
@@ -438,7 +552,7 @@ namespace SignIt
             }
             else
             {
-
+                ejercicios("basico");
             }
         }
 
@@ -623,6 +737,10 @@ namespace SignIt
         {
 
         }
+        private void ejercicio1VideoA_Enter(object sender, EventArgs e)
+        {
+
+        }
 
         private void ComenzarIds_MouseClick(object sender, MouseEventArgs e)
         { 
@@ -687,5 +805,6 @@ namespace SignIt
             mYimage = new Bitmap(botondiseño);
             ComenzarCdU.BackgroundImage = mYimage;
         }
+
     }
 }
