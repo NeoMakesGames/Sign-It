@@ -108,6 +108,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="juegos_y_cositas\Ej0.resx">
+      <DependentUpon>Ej0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="juegos_y_cositas\Ej1.resx">
+      <DependentUpon>Ej1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="juegos_y_cositas\Race.resx">
       <DependentUpon>Race.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +325,8 @@
   <ItemGroup>
     <Content Include="Resources\Botón %282%29.png" />
     <Content Include="Resources\Botón %283%29.png" />
+    <None Include="Resources\Group 62 %281%29.png" />
+    <None Include="Resources\Group 611.png" />
     <None Include="Resources\Botón %283%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

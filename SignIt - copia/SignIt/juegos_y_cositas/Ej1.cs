@@ -16,5 +16,10 @@ namespace SignIt
         {
             InitializeComponent();
         }
+
+        private void ej0cont_Click(object sender, EventArgs e)
+        {
+            Form1.continuar = true;
+        }
     }
 }

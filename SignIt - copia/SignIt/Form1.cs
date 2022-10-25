@@ -36,7 +36,7 @@ namespace SignIt
         int vidas = 0;
         double home_slider = 0;
         public static int avance; 
-        bool continuar = false;
+        public static bool continuar = false;
 
         public bool menu = false;
         public bool fullscr = true;
@@ -160,6 +160,7 @@ namespace SignIt
                         await Task.Delay(250);
                     }
                     continuar = false;
+                    EnseñanzaPlayer.Ctlcontrols.stop();
                 }
             }
             DatabaseFunctions.addAvance(1 , path);
@@ -172,6 +173,7 @@ namespace SignIt
             signIt.SelectedTab = Enseñanza;
             int z = 0;
             int[] videos = new int[4];
+            int xpGanada = 5;
             for (int o = 0; o < 5;)
             {
                 Random rdn = new Random();
@@ -206,12 +208,17 @@ namespace SignIt
                 {
                     Random rdn = new Random();
                     int TipoDeEjercicio = rdn.Next(0, 2);
-                    switch(TipoDeEjercicio)
+                    switch (TipoDeEjercicio)
                     {
+
                         case 0:
-                            bool h = false;
-                            bool g = false; 
-                            bool u = false;
+                            ej1palabra.Text = ej1palabra.Text + " " + DatabaseFunctions.getString(id, "Signs", path) + "?";
+                            ejercicio1VideoA.settings.setMode("loop", true);
+                            ejercicio1VideoB.settings.setMode("loop", true);
+                            ejercicio1VideoC.settings.setMode("loop", true);
+                            bool rta1 = false;
+                            bool rta2 = false; 
+                            bool rta3 = false;
                             int a = 0;
                             int b = 0;
                             signIt.SelectedTab = ejercicio1;
@@ -245,43 +252,136 @@ namespace SignIt
                                     ejercicio1VideoB.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
                                     ejercicio1VideoC.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
                                     
-                                    while (h == false && g == true && u  == false)
+                                    while (rta1 == false && rta2 == true && rta3  == false)
                                     {
                                         await Task.Delay(250);
                                     }
-                                    if (h == true)
+                                    if (rta1 == true)
                                     {
-                                        //ganar
+                                        ganar_0_perder(ej01);
+                                        xpGanada += 3;
                                     }
-                                    else if (g == true)
+                                    else if (rta2 == true)
                                     {
-                                        //perdiste
+                                        ganar_0_perder(ej11);
                                     }
-                                    else if (u == true)
+                                    else if (rta3 == true)
                                     {
-                                        //perdiste
+                                        ganar_0_perder(ej11);
+                                    }
+                                    break;
+
+
+                                case 1:
+                                    ejercicio1VideoA.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                                    ejercicio1VideoB.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                                    ejercicio1VideoC.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+
+                                    while (rta1 == false && rta2 == true && rta3 == false)
+                                    {
+                                        await Task.Delay(250);
+                                    }
+                                    if (rta1 == true)
+                                    {
+                                        ganar_0_perder(ej11);
+                                    }
+                                    else if (rta2 == true)
+                                    {
+                                        ganar_0_perder(ej01);
+                                        xpGanada += 1;
+                                    }
+                                    else if (rta3 == true)
+                                    {
+                                        ganar_0_perder(ej11);
+                                    }
+                                    break;
+
+                                case 2:
+                                    ejercicio1VideoA.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                                    ejercicio1VideoB.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                    ejercicio1VideoC.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+
+                                    while (rta1 == false && rta2 == true && rta3 == false)
+                                    {
+                                        await Task.Delay(250);
+                                    }
+                                    if (rta1 == true)
+                                    {
+                                        ganar_0_perder(ej11);
+                                    }
+                                    else if (rta2 == true)
+                                    {
+                                        ganar_0_perder(ej11);
+                                    }
+                                    else if (rta3 == true)
+                                    {
+                                        ganar_0_perder(ej01);
+                                        xpGanada += 2;
                                     }
                                     break;
                             }
+                            while(!continuar)
+                            {
+                                await Task.Delay(250);
+                            }
+                            ej01.Hide();
+                            ej11.Hide();
+                            continuar = false;
+                            
+                            break;
 
-                            break;
                         case 1:
+                            string respuesta = DatabaseFunctions.getString(id, "Signs" , path);
+
+                            ej2player.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                            
                             signIt.SelectedTab = ejercicio2;
+                            
+                            while(!continuar)
+                            {
+                                await Task.Delay(250);
+                            }
+                           
+                            continuar = false;
+                            
+                            if (respuesta == rtaEj2.Text)
+                            {
+                                ej01.Show();
+                                Random ram = new Random();
+                                int xp_ = ram.Next(0, 2);
+                                xpGanada += xp_;
+                            }
+                            
+                            else
+                            {
+                                ej11.Show();
+                            }
+                            
+                            while (!continuar)
+                            {
+                                await Task.Delay(250);
+                            }
+                            
+                            ej01.Hide();
+                            ej11.Hide();
+                            
+                            continuar = false;
+                            
                             break;
+
+
                         case 2:
                             signIt.SelectedTab = ejercicio3;
                             break;
                     }
-                    
-                    EnseñanzaPlayer.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                 }
                 z++;
             }
         }
 
-        private void ganar_0_perder(Panel panel)
+        private void ganar_0_perder(UserControl uc)
         {
-            panel.Show();
+            uc.Show();
         }
 
 
@@ -295,6 +395,8 @@ namespace SignIt
             signIt.SelectedTab = IdS;
             label1CdU.Hide();
             label2IdS.Hide();
+            ej01.Hide();
+            ej11.Hide();
         }
 
 //Inicio de Sesión
@@ -550,7 +652,7 @@ namespace SignIt
                 cierre();
             }
 
-        //Lecciones
+//Lecciones
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -569,7 +671,10 @@ namespace SignIt
         {
             continuar = true;
         }
-
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            continuar = true;
+        }
         //Ajustes
 
         private void FullScrButtonSett_Click(object sender, EventArgs e)
@@ -814,6 +919,5 @@ namespace SignIt
             mYimage = new Bitmap(botondiseño);
             ComenzarCdU.BackgroundImage = mYimage;
         }
-
     }
 }

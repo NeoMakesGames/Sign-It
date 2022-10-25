@@ -109,6 +109,15 @@
             this.EnseñanzaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.PalabraEns = new System.Windows.Forms.Label();
             this.contEnseñanza = new System.Windows.Forms.Button();
+            this.ejercicio1 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.ej01 = new SignIt.Ej0();
+            this.ejercicio1VideoC = new AxWMPLib.AxWindowsMediaPlayer();
+            this.ejercicio1VideoB = new AxWMPLib.AxWindowsMediaPlayer();
+            this.ejercicio1VideoA = new AxWMPLib.AxWindowsMediaPlayer();
+            this.ej1palabra = new System.Windows.Forms.Label();
+            this.ejercicio2 = new System.Windows.Forms.TabPage();
+            this.ejercicio3 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.MenuExitButton = new System.Windows.Forms.Button();
             this.MenuSettingsButton = new System.Windows.Forms.Button();
@@ -118,13 +127,12 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.ejercicio1 = new System.Windows.Forms.TabPage();
-            this.ejercicio2 = new System.Windows.Forms.TabPage();
-            this.ejercicio3 = new System.Windows.Forms.TabPage();
+            this.ej11 = new SignIt.Ej1();
+            this.ej2player = new AxWMPLib.AxWindowsMediaPlayer();
             this.label1 = new System.Windows.Forms.Label();
-            this.ejercicio1VideoA = new AxWMPLib.AxWindowsMediaPlayer();
-            this.ejercicio1VideoB = new AxWMPLib.AxWindowsMediaPlayer();
-            this.ejercicio1VideoC = new AxWMPLib.AxWindowsMediaPlayer();
+            this.rtaEj2 = new System.Windows.Forms.TextBox();
+            this.ej02 = new SignIt.Ej0();
+            this.ej12 = new SignIt.Ej1();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -138,11 +146,13 @@
             this.Ajustes.SuspendLayout();
             this.Enseñanza.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EnseñanzaPlayer)).BeginInit();
-            this.panel1.SuspendLayout();
             this.ejercicio1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoA)).BeginInit();
+            this.ejercicio2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ej2player)).BeginInit();
             this.SuspendLayout();
             // 
             // signIt
@@ -1152,6 +1162,113 @@
             this.contEnseñanza.UseVisualStyleBackColor = false;
             this.contEnseñanza.Click += new System.EventHandler(this.contEnseñanza_Click);
             // 
+            // ejercicio1
+            // 
+            this.ejercicio1.BackColor = System.Drawing.Color.LightBlue;
+            this.ejercicio1.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.ejercicio1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ejercicio1.Controls.Add(this.ej11);
+            this.ejercicio1.Controls.Add(this.button4);
+            this.ejercicio1.Controls.Add(this.ej01);
+            this.ejercicio1.Controls.Add(this.ejercicio1VideoC);
+            this.ejercicio1.Controls.Add(this.ejercicio1VideoB);
+            this.ejercicio1.Controls.Add(this.ejercicio1VideoA);
+            this.ejercicio1.Controls.Add(this.ej1palabra);
+            this.ejercicio1.Location = new System.Drawing.Point(4, 22);
+            this.ejercicio1.Name = "ejercicio1";
+            this.ejercicio1.Size = new System.Drawing.Size(1429, 805);
+            this.ejercicio1.TabIndex = 9;
+            this.ejercicio1.Text = "Ejercicio1";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = global::SignIt.Properties.Resources.Botón1;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(1157, 486);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(182, 66);
+            this.button4.TabIndex = 5;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
+            // ej01
+            // 
+            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
+            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej01.Location = new System.Drawing.Point(0, 577);
+            this.ej01.Name = "ej01";
+            this.ej01.Size = new System.Drawing.Size(1366, 150);
+            this.ej01.TabIndex = 4;
+            // 
+            // ejercicio1VideoC
+            // 
+            this.ejercicio1VideoC.Enabled = true;
+            this.ejercicio1VideoC.Location = new System.Drawing.Point(955, 280);
+            this.ejercicio1VideoC.Name = "ejercicio1VideoC";
+            this.ejercicio1VideoC.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoC.OcxState")));
+            this.ejercicio1VideoC.Size = new System.Drawing.Size(300, 200);
+            this.ejercicio1VideoC.TabIndex = 3;
+            // 
+            // ejercicio1VideoB
+            // 
+            this.ejercicio1VideoB.Enabled = true;
+            this.ejercicio1VideoB.Location = new System.Drawing.Point(522, 280);
+            this.ejercicio1VideoB.Name = "ejercicio1VideoB";
+            this.ejercicio1VideoB.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoB.OcxState")));
+            this.ejercicio1VideoB.Size = new System.Drawing.Size(300, 200);
+            this.ejercicio1VideoB.TabIndex = 2;
+            // 
+            // ejercicio1VideoA
+            // 
+            this.ejercicio1VideoA.Enabled = true;
+            this.ejercicio1VideoA.Location = new System.Drawing.Point(92, 280);
+            this.ejercicio1VideoA.Name = "ejercicio1VideoA";
+            this.ejercicio1VideoA.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoA.OcxState")));
+            this.ejercicio1VideoA.Size = new System.Drawing.Size(300, 200);
+            this.ejercicio1VideoA.TabIndex = 1;
+            this.ejercicio1VideoA.Enter += new System.EventHandler(this.ejercicio1VideoA_Enter);
+            // 
+            // ej1palabra
+            // 
+            this.ej1palabra.AutoSize = true;
+            this.ej1palabra.BackColor = System.Drawing.Color.Transparent;
+            this.ej1palabra.Font = new System.Drawing.Font("Corbel", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ej1palabra.Location = new System.Drawing.Point(363, 45);
+            this.ej1palabra.Name = "ej1palabra";
+            this.ej1palabra.Size = new System.Drawing.Size(448, 36);
+            this.ej1palabra.TabIndex = 0;
+            this.ej1palabra.Text = "¿Cual seña correspone a la palabra:";
+            // 
+            // ejercicio2
+            // 
+            this.ejercicio2.BackColor = System.Drawing.Color.LightBlue;
+            this.ejercicio2.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.ejercicio2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ejercicio2.Controls.Add(this.ej12);
+            this.ejercicio2.Controls.Add(this.ej02);
+            this.ejercicio2.Controls.Add(this.rtaEj2);
+            this.ejercicio2.Controls.Add(this.label1);
+            this.ejercicio2.Controls.Add(this.ej2player);
+            this.ejercicio2.Location = new System.Drawing.Point(4, 22);
+            this.ejercicio2.Name = "ejercicio2";
+            this.ejercicio2.Size = new System.Drawing.Size(1429, 805);
+            this.ejercicio2.TabIndex = 10;
+            this.ejercicio2.Text = "ejercicio2";
+            // 
+            // ejercicio3
+            // 
+            this.ejercicio3.BackColor = System.Drawing.Color.LightBlue;
+            this.ejercicio3.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.ejercicio3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ejercicio3.Location = new System.Drawing.Point(4, 22);
+            this.ejercicio3.Name = "ejercicio3";
+            this.ejercicio3.Size = new System.Drawing.Size(1429, 805);
+            this.ejercicio3.TabIndex = 11;
+            this.ejercicio3.Text = "ejercicio3";
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
@@ -1268,81 +1385,59 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // ejercicio1
+            // ej11
             // 
-            this.ejercicio1.BackColor = System.Drawing.Color.LightBlue;
-            this.ejercicio1.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
-            this.ejercicio1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ejercicio1.Controls.Add(this.ejercicio1VideoC);
-            this.ejercicio1.Controls.Add(this.ejercicio1VideoB);
-            this.ejercicio1.Controls.Add(this.ejercicio1VideoA);
-            this.ejercicio1.Controls.Add(this.label1);
-            this.ejercicio1.Location = new System.Drawing.Point(4, 22);
-            this.ejercicio1.Name = "ejercicio1";
-            this.ejercicio1.Size = new System.Drawing.Size(1429, 805);
-            this.ejercicio1.TabIndex = 9;
-            this.ejercicio1.Text = "Ejercicio1";
+            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
+            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej11.Location = new System.Drawing.Point(0, 577);
+            this.ej11.Name = "ej11";
+            this.ej11.Size = new System.Drawing.Size(1366, 150);
+            this.ej11.TabIndex = 6;
             // 
-            // ejercicio2
+            // ej2player
             // 
-            this.ejercicio2.BackColor = System.Drawing.Color.LightBlue;
-            this.ejercicio2.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
-            this.ejercicio2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ejercicio2.Location = new System.Drawing.Point(4, 22);
-            this.ejercicio2.Name = "ejercicio2";
-            this.ejercicio2.Size = new System.Drawing.Size(1429, 805);
-            this.ejercicio2.TabIndex = 10;
-            this.ejercicio2.Text = "ejercicio2";
-            // 
-            // ejercicio3
-            // 
-            this.ejercicio3.BackColor = System.Drawing.Color.LightBlue;
-            this.ejercicio3.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
-            this.ejercicio3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ejercicio3.Location = new System.Drawing.Point(4, 22);
-            this.ejercicio3.Name = "ejercicio3";
-            this.ejercicio3.Size = new System.Drawing.Size(1429, 805);
-            this.ejercicio3.TabIndex = 11;
-            this.ejercicio3.Text = "ejercicio3";
+            this.ej2player.Enabled = true;
+            this.ej2player.Location = new System.Drawing.Point(65, 168);
+            this.ej2player.Name = "ej2player";
+            this.ej2player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ej2player.OcxState")));
+            this.ej2player.Size = new System.Drawing.Size(243, 152);
+            this.ej2player.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Corbel", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(363, 45);
+            this.label1.Location = new System.Drawing.Point(476, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(448, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "¿Cual seña correspone a la palabra:";
+            this.label1.Size = new System.Drawing.Size(98, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Traduce al español";
             // 
-            // ejercicio1VideoA
+            // rtaEj2
             // 
-            this.ejercicio1VideoA.Enabled = true;
-            this.ejercicio1VideoA.Location = new System.Drawing.Point(92, 280);
-            this.ejercicio1VideoA.Name = "ejercicio1VideoA";
-            this.ejercicio1VideoA.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoA.OcxState")));
-            this.ejercicio1VideoA.Size = new System.Drawing.Size(300, 200);
-            this.ejercicio1VideoA.TabIndex = 1;
-            this.ejercicio1VideoA.Enter += new System.EventHandler(this.ejercicio1VideoA_Enter);
+            this.rtaEj2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.rtaEj2.Location = new System.Drawing.Point(540, 229);
+            this.rtaEj2.Name = "rtaEj2";
+            this.rtaEj2.Size = new System.Drawing.Size(425, 45);
+            this.rtaEj2.TabIndex = 2;
             // 
-            // ejercicio1VideoB
+            // ej02
             // 
-            this.ejercicio1VideoB.Enabled = true;
-            this.ejercicio1VideoB.Location = new System.Drawing.Point(522, 280);
-            this.ejercicio1VideoB.Name = "ejercicio1VideoB";
-            this.ejercicio1VideoB.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoB.OcxState")));
-            this.ejercicio1VideoB.Size = new System.Drawing.Size(300, 200);
-            this.ejercicio1VideoB.TabIndex = 2;
+            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
+            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej02.Location = new System.Drawing.Point(0, 577);
+            this.ej02.Name = "ej02";
+            this.ej02.Size = new System.Drawing.Size(1366, 150);
+            this.ej02.TabIndex = 3;
             // 
-            // ejercicio1VideoC
+            // ej12
             // 
-            this.ejercicio1VideoC.Enabled = true;
-            this.ejercicio1VideoC.Location = new System.Drawing.Point(955, 280);
-            this.ejercicio1VideoC.Name = "ejercicio1VideoC";
-            this.ejercicio1VideoC.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoC.OcxState")));
-            this.ejercicio1VideoC.Size = new System.Drawing.Size(300, 200);
-            this.ejercicio1VideoC.TabIndex = 3;
+            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
+            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej12.Location = new System.Drawing.Point(0, 577);
+            this.ej12.Name = "ej12";
+            this.ej12.Size = new System.Drawing.Size(1366, 150);
+            this.ej12.TabIndex = 4;
             // 
             // Form1
             // 
@@ -1373,12 +1468,15 @@
             this.Enseñanza.ResumeLayout(false);
             this.Enseñanza.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EnseñanzaPlayer)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ejercicio1.ResumeLayout(false);
             this.ejercicio1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoA)).EndInit();
+            this.ejercicio2.ResumeLayout(false);
+            this.ejercicio2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ej2player)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1480,7 +1578,15 @@
         private AxWMPLib.AxWindowsMediaPlayer ejercicio1VideoC;
         private AxWMPLib.AxWindowsMediaPlayer ejercicio1VideoB;
         private AxWMPLib.AxWindowsMediaPlayer ejercicio1VideoA;
+        private System.Windows.Forms.Label ej1palabra;
+        private System.Windows.Forms.Button button4;
+        private Ej0 ej01;
+        private Ej1 ej11;
+        private AxWMPLib.AxWindowsMediaPlayer ej2player;
+        private System.Windows.Forms.TextBox rtaEj2;
         private System.Windows.Forms.Label label1;
+        private Ej1 ej12;
+        private Ej0 ej02;
     }
 }
 
