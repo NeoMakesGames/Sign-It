@@ -33,6 +33,7 @@ namespace SignIt
         int UserLvl;
         int NextLvl = 10;
         int homeSlider = 0;
+        int vidas = 0;
         double home_slider = 0;
         public static int avance; 
         bool continuar = false;
@@ -208,8 +209,11 @@ namespace SignIt
                     switch(TipoDeEjercicio)
                     {
                         case 0:
-                            char c, g, e = 'b';
-                            int a, b = 0;
+                            bool h = false;
+                            bool g = false; 
+                            bool u = false;
+                            int a = 0;
+                            int b = 0;
                             signIt.SelectedTab = ejercicio1;
                             for (int o = 0; o < 2;)
                                 {
@@ -241,19 +245,19 @@ namespace SignIt
                                     ejercicio1VideoB.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
                                     ejercicio1VideoC.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
                                     
-                                    while (c == 'b' || g == 'b' || e  == 'b')
+                                    while (h == false && g == true && u  == false)
                                     {
                                         await Task.Delay(250);
                                     }
-                                    if (c == 'a')
+                                    if (h == true)
                                     {
-                                        //ganaste
+                                        //ganar
                                     }
-                                    else if (d == 'a')
+                                    else if (g == true)
                                     {
                                         //perdiste
                                     }
-                                    else if (e == 'a')
+                                    else if (u == true)
                                     {
                                         //perdiste
                                     }
@@ -274,9 +278,14 @@ namespace SignIt
                 z++;
             }
         }
-            
 
-//Comienzo
+        private void ganar_0_perder(Panel panel)
+        {
+            panel.Show();
+        }
+
+
+        //Comienzo
 
         private void Form1_Load(object sender, EventArgs e)
         {
