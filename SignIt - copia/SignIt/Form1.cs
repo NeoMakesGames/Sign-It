@@ -251,11 +251,11 @@ namespace SignIt
                                     }
                                     else if (d == 'a')
                                     {
-
+                                        //perdiste
                                     }
                                     else if (e == 'a')
                                     {
-
+                                        //perdiste
                                     }
                                     break;
                             }
