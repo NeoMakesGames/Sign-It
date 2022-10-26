@@ -22,6 +22,7 @@ namespace SignIt
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
         public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
         public static string imagePath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Resources\\";
+        public static string signsPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs";
         //public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
         //public static string imagePath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Resources\\";
 
@@ -143,7 +144,7 @@ namespace SignIt
 
             for (int i = 0; i <= 64; i++)
             {
-                if (tipo == DatabaseFunctions.getString(i, "Categoria", path))
+                if (tipo == DatabaseFunctions.getStringFromSigns (i, "Categoria", path))
                 {
                     videos[z] = i;
                     z++;
@@ -178,9 +179,9 @@ namespace SignIt
             for (int o = 0; o < 5;)
             {
                 Random rdn = new Random();
-                int id_ = rdn.Next(0, 64);
+                int id_ = rdn.Next(0, 20);
 
-                if (tipo == DatabaseFunctions.getString(id_, "Categoria", path))
+                if (tipo == DatabaseFunctions.getString(id_, "Categoria", signsPath))
                 {
                     videos[z] = id_;
                     z++;
@@ -196,7 +197,7 @@ namespace SignIt
                 {
                     signIt.SelectedTab = Enseñanza;
                     EnseñanzaPlayer.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                    PalabraEns.Text = DatabaseFunctions.getString(id, "Sign", path);
+                    PalabraEns.Text = DatabaseFunctions.getString(id, "Sign", signsPath);
 
                     while (!continuar)
                     {
