@@ -32,6 +32,24 @@ namespace SignIt
             return result;
         }
 
+        public static string getStringFromSigns(int id, string objID, string path)
+        {
+            //Establece una coneccion a la base de datos
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
+            con.Open();
+            //Crea un comando que colecciona toda la informacion de un usuario especificado por id
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Signs WHERE id = " + id, con);
+            //Crea una variable que lee los datos
+            OleDbDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            //Obtiene el resultado deseado en objID del usuario seleccionado
+            string result = reader[objID].ToString();
+            //Cierra la coneccion a la base de datos
+            con.Close();
+            //Devuelve como string el resultado que se buscaba
+            return result;
+        }
+
         public static bool checkIfNameExists(string name, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
