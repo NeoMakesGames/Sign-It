@@ -20,9 +20,9 @@ namespace SignIt
     public partial class Form1 : Form
     {
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
-        public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        public static string imagePath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Resources\\";
-        public static string signsPath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Signs";
+        public static string path = "Usuarios.accdb";
+        public static string imagePath = "Imagenes\\";
+        public static string signsPath = "Signs\\";
         //public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
         //public static string imagePath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Resources\\";
 
@@ -138,22 +138,21 @@ namespace SignIt
         public async void ensañanza(string tipo)
         {
             signIt.SelectedTab = Enseñanza;
-            int z = 0;
+            int z = 1;
             List<int> videos = new List<int>();
             EnseñanzaPlayer.settings.setMode("loop", true);
 
-            for (int i = 0; i <= 64; i++)
+            for (int id = 1; id <= 64; id++)
             {
-                if (tipo == DatabaseFunctions.GetCategoria(i, signsPath))
+                if (tipo == DatabaseFunctions.GetCategoria(id, "Usuarios.accdb"))
                 {
-                    videos[z] = i;
+                    int a = id;
+                    videos[z] = a;
                     z++;
                 }
             }
             foreach (int id in videos)
             {
-                if (id != null)
-                {
                     EnseñanzaPlayer.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                     EnseñanzaPlayer.Ctlcontrols.play();
                     PalabraEns.Text = DatabaseFunctions.getString(id, "Sign", path);
@@ -163,7 +162,6 @@ namespace SignIt
                     }
                     continuar = false;
                     EnseñanzaPlayer.Ctlcontrols.stop();
-                }
             }
             DatabaseFunctions.addAvance(1 , path);
             avance++;
@@ -179,11 +177,11 @@ namespace SignIt
             for (int o = 0; o < 5;)
             {
                 Random rdn = new Random();
-                int id_ = rdn.Next(0, 20);
+                int IDs_ = rdn.Next(1, 60);
 
-                if (tipo == DatabaseFunctions.getString(id_, "Categoria", signsPath))
+                if (tipo == DatabaseFunctions.GetCategoria(1, "Usuarios.accdb"))
                 {
-                    videos[z] = id_;
+                    videos[z] = IDs_;
                     z++;
                     o++;
                 } 
@@ -401,7 +399,7 @@ namespace SignIt
         }
 
 
-        //Comienzo
+    //Comienzo
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -499,45 +497,45 @@ namespace SignIt
 
         private void DiccionarioHome_Click_1(object sender, EventArgs e)
         {
-            signIt.SelectedTab = Diccionario;
-            if (avance < 2)
-            {
-                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
-                myimage = new Bitmap(botonBI);
-                basicoDiccionario.BackgroundImage = myimage;
-            }
-            if (avance < 3)
-            {
-                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
-                myimage = new Bitmap(botonBI);
-                comidaDiccionario.BackgroundImage = myimage;
-            }
-            if (avance < 4)
-            {
-                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
-                myimage = new Bitmap(botonBI);
-                coloresDiccionario.BackgroundImage = myimage;
-            }
-            if (avance < 5)
-            {
-                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
-                myimage = new Bitmap(botonBI);
-                lugaresDiccionario.BackgroundImage = myimage;
-            }
-            if (avance < 6)
-            {
-                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
-                myimage = new Bitmap(botonBI);
-                pronombresDiccionario.BackgroundImage = myimage;
-            }
-            if (avance < 7)
-            {
-                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
-                myimage = new Bitmap(botonBI);
-                verbosDiccionario.BackgroundImage = myimage;
-            }
-            panel1.SendToBack();
-            menu = false;
+       //    signIt.SelectedTab = Diccionario;
+       //    if (avance < 2)
+       //    {
+       //        botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+       //        myimage = new Bitmap(botonBI);
+       //        basicoDiccionario.BackgroundImage = myimage;
+       //    }
+       //    if (avance < 3)
+       //    {
+       //        botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+       //        myimage = new Bitmap(botonBI);
+       //        comidaDiccionario.BackgroundImage = myimage;
+       //    }
+       //    if (avance < 4)
+       //    {
+       //        botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+       //        myimage = new Bitmap(botonBI);
+       //        coloresDiccionario.BackgroundImage = myimage;
+       //    }
+       //    if (avance < 5)
+       //    {
+       //        botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+       //        myimage = new Bitmap(botonBI);
+       //        lugaresDiccionario.BackgroundImage = myimage;
+       //    }
+       //    if (avance < 6)
+       //    {
+       //        botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+       //        myimage = new Bitmap(botonBI);
+       //        pronombresDiccionario.BackgroundImage = myimage;
+       //    }
+       //    if (avance < 7)
+       //    {
+       //        botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
+       //        myimage = new Bitmap(botonBI);
+       //        verbosDiccionario.BackgroundImage = myimage;
+       //    }
+       //    panel1.SendToBack();
+       //    menu = false;
         }
         private void LeccionesHome_Click_1(object sender, EventArgs e)
         {
@@ -672,14 +670,13 @@ namespace SignIt
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ensañanza("basico");
-            if (avance >= 1)
+            if (10>1)//(avance >= 1)
             {
-                ensañanza("basico");
+                ensañanza("Basico");
             }
             else
             {
-                ejercicios("basico");
+                ejercicios("Basico");
             }
         }
 
