@@ -53,13 +53,13 @@
             this.LeccionesHome = new System.Windows.Forms.Button();
             this.UserHome = new System.Windows.Forms.Label();
             this.LeccionesMenu = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.examenlecc = new System.Windows.Forms.Button();
+            this.verbosLecc = new System.Windows.Forms.Button();
+            this.pronombresLecc = new System.Windows.Forms.Button();
+            this.lugaresLecc = new System.Windows.Forms.Button();
+            this.coloresLecc = new System.Windows.Forms.Button();
+            this.comidaLecc = new System.Windows.Forms.Button();
+            this.basicoLecc = new System.Windows.Forms.Button();
             this.Diccionario = new System.Windows.Forms.TabPage();
             this.diccionarioBeta = new System.Windows.Forms.TabControl();
             this.dB0 = new System.Windows.Forms.TabPage();
@@ -116,6 +116,7 @@
             this.ejercicio1VideoA = new AxWMPLib.AxWindowsMediaPlayer();
             this.ej1palabra = new System.Windows.Forms.Label();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.ej12 = new SignIt.Ej1();
             this.ej02 = new SignIt.Ej0();
             this.rtaEj2 = new System.Windows.Forms.TextBox();
@@ -131,7 +132,6 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -468,13 +468,13 @@
             this.LeccionesMenu.BackColor = System.Drawing.Color.LightBlue;
             this.LeccionesMenu.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.LeccionesMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LeccionesMenu.Controls.Add(this.button8);
-            this.LeccionesMenu.Controls.Add(this.button7);
-            this.LeccionesMenu.Controls.Add(this.button6);
-            this.LeccionesMenu.Controls.Add(this.button5);
-            this.LeccionesMenu.Controls.Add(this.button3);
-            this.LeccionesMenu.Controls.Add(this.button2);
-            this.LeccionesMenu.Controls.Add(this.button1);
+            this.LeccionesMenu.Controls.Add(this.examenlecc);
+            this.LeccionesMenu.Controls.Add(this.verbosLecc);
+            this.LeccionesMenu.Controls.Add(this.pronombresLecc);
+            this.LeccionesMenu.Controls.Add(this.lugaresLecc);
+            this.LeccionesMenu.Controls.Add(this.coloresLecc);
+            this.LeccionesMenu.Controls.Add(this.comidaLecc);
+            this.LeccionesMenu.Controls.Add(this.basicoLecc);
             this.LeccionesMenu.Location = new System.Drawing.Point(4, 22);
             this.LeccionesMenu.Name = "LeccionesMenu";
             this.LeccionesMenu.Size = new System.Drawing.Size(1429, 805);
@@ -482,97 +482,97 @@
             this.LeccionesMenu.Text = "LeccionesMenu";
             this.LeccionesMenu.Click += new System.EventHandler(this.LeccionesMenu_Click);
             // 
-            // button8
+            // examenlecc
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.BackgroundImage = global::SignIt.Properties.Resources.Básico__6_;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(478, 365);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(292, 130);
-            this.button8.TabIndex = 7;
-            this.button8.UseVisualStyleBackColor = false;
+            this.examenlecc.BackColor = System.Drawing.Color.Transparent;
+            this.examenlecc.BackgroundImage = global::SignIt.Properties.Resources.Básico__6_;
+            this.examenlecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.examenlecc.FlatAppearance.BorderSize = 0;
+            this.examenlecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.examenlecc.Location = new System.Drawing.Point(478, 365);
+            this.examenlecc.Name = "examenlecc";
+            this.examenlecc.Size = new System.Drawing.Size(292, 130);
+            this.examenlecc.TabIndex = 7;
+            this.examenlecc.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // verbosLecc
             // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.BackgroundImage = global::SignIt.Properties.Resources.Básico__5_;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(134, 583);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(196, 83);
-            this.button7.TabIndex = 6;
-            this.button7.UseVisualStyleBackColor = false;
+            this.verbosLecc.BackColor = System.Drawing.Color.Transparent;
+            this.verbosLecc.BackgroundImage = global::SignIt.Properties.Resources.Básico__5_;
+            this.verbosLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.verbosLecc.FlatAppearance.BorderSize = 0;
+            this.verbosLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.verbosLecc.Location = new System.Drawing.Point(134, 583);
+            this.verbosLecc.Name = "verbosLecc";
+            this.verbosLecc.Size = new System.Drawing.Size(196, 83);
+            this.verbosLecc.TabIndex = 6;
+            this.verbosLecc.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // pronombresLecc
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.BackgroundImage = global::SignIt.Properties.Resources.Básico__4_;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(526, 583);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(196, 83);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = false;
+            this.pronombresLecc.BackColor = System.Drawing.Color.Transparent;
+            this.pronombresLecc.BackgroundImage = global::SignIt.Properties.Resources.Básico__4_;
+            this.pronombresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pronombresLecc.FlatAppearance.BorderSize = 0;
+            this.pronombresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pronombresLecc.Location = new System.Drawing.Point(526, 583);
+            this.pronombresLecc.Name = "pronombresLecc";
+            this.pronombresLecc.Size = new System.Drawing.Size(196, 83);
+            this.pronombresLecc.TabIndex = 5;
+            this.pronombresLecc.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // lugaresLecc
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BackgroundImage = global::SignIt.Properties.Resources.Básico__3_;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(900, 583);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(196, 83);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = false;
+            this.lugaresLecc.BackColor = System.Drawing.Color.Transparent;
+            this.lugaresLecc.BackgroundImage = global::SignIt.Properties.Resources.Básico__3_;
+            this.lugaresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lugaresLecc.FlatAppearance.BorderSize = 0;
+            this.lugaresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lugaresLecc.Location = new System.Drawing.Point(900, 583);
+            this.lugaresLecc.Name = "lugaresLecc";
+            this.lugaresLecc.Size = new System.Drawing.Size(196, 83);
+            this.lugaresLecc.TabIndex = 4;
+            this.lugaresLecc.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // coloresLecc
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::SignIt.Properties.Resources.Básico__2_;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(900, 196);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(196, 83);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = false;
+            this.coloresLecc.BackColor = System.Drawing.Color.Transparent;
+            this.coloresLecc.BackgroundImage = global::SignIt.Properties.Resources.Básico__2_;
+            this.coloresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.coloresLecc.FlatAppearance.BorderSize = 0;
+            this.coloresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.coloresLecc.Location = new System.Drawing.Point(900, 196);
+            this.coloresLecc.Name = "coloresLecc";
+            this.coloresLecc.Size = new System.Drawing.Size(196, 83);
+            this.coloresLecc.TabIndex = 2;
+            this.coloresLecc.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // comidaLecc
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::SignIt.Properties.Resources.Básico__1_;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(526, 196);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(196, 83);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = false;
+            this.comidaLecc.BackColor = System.Drawing.Color.Transparent;
+            this.comidaLecc.BackgroundImage = global::SignIt.Properties.Resources.Básico__1_;
+            this.comidaLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.comidaLecc.FlatAppearance.BorderSize = 0;
+            this.comidaLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comidaLecc.Location = new System.Drawing.Point(526, 196);
+            this.comidaLecc.Name = "comidaLecc";
+            this.comidaLecc.Size = new System.Drawing.Size(196, 83);
+            this.comidaLecc.TabIndex = 1;
+            this.comidaLecc.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // basicoLecc
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::SignIt.Properties.Resources.Básico;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(134, 196);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 83);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.basicoLecc.BackColor = System.Drawing.Color.Transparent;
+            this.basicoLecc.BackgroundImage = global::SignIt.Properties.Resources.Básico;
+            this.basicoLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.basicoLecc.FlatAppearance.BorderSize = 0;
+            this.basicoLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.basicoLecc.Location = new System.Drawing.Point(134, 196);
+            this.basicoLecc.Name = "basicoLecc";
+            this.basicoLecc.Size = new System.Drawing.Size(196, 83);
+            this.basicoLecc.TabIndex = 0;
+            this.basicoLecc.UseVisualStyleBackColor = false;
+            this.basicoLecc.Click += new System.EventHandler(this.button1_Click);
             // 
             // Diccionario
             // 
@@ -1243,6 +1243,14 @@
             this.ejercicio2.TabIndex = 10;
             this.ejercicio2.Text = "ejercicio2";
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Location = new System.Drawing.Point(65, 373);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(381, 47);
+            this.panel4.TabIndex = 5;
+            // 
             // ej12
             // 
             this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
@@ -1416,14 +1424,6 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Location = new System.Drawing.Point(65, 373);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(381, 47);
-            this.panel4.TabIndex = 5;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1510,13 +1510,13 @@
         private System.Windows.Forms.Panel sliderHome;
         private tuto tuto1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button examenlecc;
+        private System.Windows.Forms.Button verbosLecc;
+        private System.Windows.Forms.Button pronombresLecc;
+        private System.Windows.Forms.Button coloresLecc;
+        private System.Windows.Forms.Button comidaLecc;
+        private System.Windows.Forms.Button basicoLecc;
+        private System.Windows.Forms.Button lugaresLecc;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button pronombresDiccionario;
         private System.Windows.Forms.Button lugaresDiccionario;

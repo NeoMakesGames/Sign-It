@@ -44,16 +44,13 @@ namespace SignIt
         private void reproduccion()
         {
             Random rdn = new Random();
-            int id = rdn.Next(0, 60);
+            int id = rdn.Next(1, 60);
             id_ = id;
 
             OpenFileDialog opf = new OpenFileDialog();
-            axWindowsMediaPlayer1.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, Form1.path) + ".wmv";
-            MessageBox.Show(axWindowsMediaPlayer1.URL);
+            axWindowsMediaPlayer1.URL = Form1.signsPath + DatabaseFunctions.GetNameOfVideo(id, Form1.path);
+            axWindowsMediaPlayer1.URL = axWindowsMediaPlayer1.URL + ".wmv";
             axWindowsMediaPlayer1.Ctlcontrols.play();
-
-            palabra = DatabaseFunctions.GetNameOfVideo(id_, Form1.path);
-            MessageBox.Show(palabra);
         }
         private void reStart()
         {
@@ -80,8 +77,9 @@ namespace SignIt
 
             Form1.externalmenu = true;
         }
-        private void raceEndpanel()
+        private async void raceEndpanel()
         {
+            await Task.Delay(100);
             endRacePanel.Show();
             if (puntos <= 3)
             {
@@ -139,7 +137,7 @@ namespace SignIt
             puntos = 0;
 
             RacePoints.Text = "Tus puntos: 0";
-            Contador.Text = "00:10";
+            Contador.Text = "00:30";
 
             TimerRace.Start();
             TimerRace2.Start();
@@ -151,7 +149,7 @@ namespace SignIt
             axWindowsMediaPlayer1.Show();
             imagenTimer.Show();
 
-            raceTimer = 10000;
+            raceTimer = 30000;
 
             reproduccion();
         }
@@ -161,11 +159,11 @@ namespace SignIt
         private void TimerRace_Tick(object sender, EventArgs e)
         {
             
-            if (RaceTextBox.Text == DatabaseFunctions.getString(id_,"Signs",Form1.path))
+            if (RaceTextBox.Text == DatabaseFunctions.GetNameOfVideo(id_, Form1.path))
             {
                 raceTimer += 3000;
-                reproduccion();
                 RaceTextBox.Text = "";
+                reproduccion();
                 puntos++;
                 RacePoints.Text = "Tus puntos:" + Convert.ToString(puntos);
             }

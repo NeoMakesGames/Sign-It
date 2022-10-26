@@ -102,6 +102,7 @@
             // TimerRace2
             // 
             this.TimerRace2.Enabled = true;
+            this.TimerRace2.Interval = 1000;
             this.TimerRace2.Tick += new System.EventHandler(this.TimerRace2_Tick);
             // 
             // Contador
