@@ -32,24 +32,6 @@ namespace SignIt
             return result;
         }
 
-        public static string GetCategoria(int id, string path)
-        {
-            //Establece una coneccion a la base de datos
-            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
-            con.Open();
-            //Crea un comando que colecciona toda la informacion de un usuario especificado por id
-            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Signs WHERE id = " + id, con);
-            //Crea una variable que lee los datos
-            OleDbDataReader reader = cmd.ExecuteReader();
-            reader.Read();
-            //Obtiene el resultado deseado en objID del usuario seleccionado
-            string result = reader["Categoria"].ToString();
-            //Cierra la coneccion a la base de datos
-            con.Close();
-            //Devuelve como string el resultado que se buscaba
-            return result;
-        }
-
         public static bool checkIfNameExists(string name, string path)
         {
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
@@ -218,6 +200,23 @@ namespace SignIt
             reader.Read();
             int result = Convert.ToInt32(reader["id"]);
             con.Close();
+            return result;
+        }
+        public static string GetCategoria(int id, string path)
+        {
+            //Establece una coneccion a la base de datos
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
+            con.Open();
+            //Crea un comando que colecciona toda la informacion de un usuario especificado por id
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Signs WHERE id = " + id, con);
+            //Crea una variable que lee los datos
+            OleDbDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            //Obtiene el resultado deseado en objID del usuario seleccionado
+            string result = reader["Categoria"].ToString();
+            //Cierra la coneccion a la base de datos
+            con.Close();
+            //Devuelve como string el resultado que se buscaba
             return result;
         }
     }
