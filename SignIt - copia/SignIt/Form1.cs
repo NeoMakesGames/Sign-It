@@ -20,10 +20,10 @@ namespace SignIt
     public partial class Form1 : Form
     {
         //public static string path = "C:\\Users\\47436334\\Documents\\GitHub\\Sign-It\\Sign It App\\Sign It App\\Usuarios.accdb";
-        //public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        //public static string imagePath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Resources";
-        public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
-        public static string imagePath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Resources\\";
+        public static string path = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        public static string imagePath = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Resources\\";
+        //public static string path = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Usuarios.accdb";
+        //public static string imagePath = "C:\\Users\\benjd\\source\\repos\\NeoMakesGames\\Sign-It\\SignIt - copia\\SignIt\\Resources\\";
 
         Image myimage;
         string HS_URL;
@@ -138,12 +138,12 @@ namespace SignIt
         {
             signIt.SelectedTab = Enseñanza;
             int z = 0;
-            int[] videos = new int[20];
+            List<int> videos = new List<int>();
             EnseñanzaPlayer.settings.setMode("loop", true);
 
             for (int i = 0; i <= 64; i++)
             {
-                if (tipo == DatabaseFunctions.getString(i, "clasificación", path))
+                if (tipo == DatabaseFunctions.getString(i, "Categoria", path))
                 {
                     videos[z] = i;
                     z++;
@@ -180,7 +180,7 @@ namespace SignIt
                 Random rdn = new Random();
                 int id_ = rdn.Next(0, 64);
 
-                if (tipo == DatabaseFunctions.getString(id_, "clasificación", path))
+                if (tipo == DatabaseFunctions.getString(id_, "Categoria", path))
                 {
                     videos[z] = id_;
                     z++;
@@ -228,7 +228,7 @@ namespace SignIt
                                     Random random = new Random();
                                     int id_ = random.Next(0, 63);
 
-                                    if (tipo == DatabaseFunctions.getString(id_, "clasificación", path))
+                                    if (tipo == DatabaseFunctions.getString(id_, "Categoria", path))
                                     {
                                         if (o == 0 && id_ != id)
                                         {
@@ -869,7 +869,7 @@ namespace SignIt
         private void label4_MouseDown(object sender, MouseEventArgs e)
         {
             Image mYimage;
-            botondiseño = path.Remove(72, 14) + "\\Resources\\Botón (1).png";
+            botondiseño = imagePath + "Botón (1).png";
             mYimage = new Bitmap(botondiseño);
             ComenzarIds.BackgroundImage = mYimage;
         }
@@ -877,7 +877,7 @@ namespace SignIt
         private void ComenzarIds_MouseEnter(object sender, EventArgs e)
         {
             Image mYimage;
-            botondiseño = path.Remove(72, 14) + "\\Resources\\Botón (2).png";
+            botondiseño = imagePath + "Botón (2).png";
             mYimage = new Bitmap(botondiseño);
             ComenzarIds.BackgroundImage = mYimage;
         }
@@ -885,7 +885,7 @@ namespace SignIt
         private void ComenzarIds_MouseLeave(object sender, EventArgs e)
         {
             Image mYimage;
-            botondiseño = path.Remove(72, 14) + "\\Resources\\Botón.png";
+            botondiseño = imagePath + "Botón.png";
             mYimage = new Bitmap(botondiseño);
             ComenzarIds.BackgroundImage = mYimage;
         }
@@ -908,7 +908,7 @@ namespace SignIt
         private void ComenzarCdU_MouseEnter(object sender, EventArgs e)
         {
             Image mYimage;
-            botondiseño = path.Remove(72, 14) + "\\Resources\\Botón seleccionado.png";
+            botondiseño = imagePath + "Botón seleccionado.png";
             mYimage = new Bitmap(botondiseño);
             ComenzarCdU.BackgroundImage = mYimage;
         }
@@ -916,7 +916,7 @@ namespace SignIt
         private void ComenzarCdU_MouseLeave(object sender, EventArgs e)
         {
             Image mYimage;
-            botondiseño = path.Remove(72, 14) + "\\Resources\\Botón (3).png";
+            botondiseño = imagePath + "Botón (3).png";
             mYimage = new Bitmap(botondiseño);
             ComenzarCdU.BackgroundImage = mYimage;
         }
