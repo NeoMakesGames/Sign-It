@@ -144,7 +144,7 @@ namespace SignIt
 
             for (int i = 0; i <= 64; i++)
             {
-                if (tipo == DatabaseFunctions.getStringFromSigns (i, "Categoria", path))
+                if (tipo == DatabaseFunctions.GetCategoria(i, signsPath))
                 {
                     videos[z] = i;
                     z++;
@@ -219,42 +219,45 @@ namespace SignIt
                             ejercicio1VideoB.settings.setMode("loop", true);
                             ejercicio1VideoC.settings.setMode("loop", true);
                             bool rta1 = false;
-                            bool rta2 = false; 
+                            bool rta2 = false;
                             bool rta3 = false;
                             int a = 0;
                             int b = 0;
                             signIt.SelectedTab = ejercicio1;
                             for (int o = 0; o < 2;)
+                            {
+                                Random random = new Random();
+                                int id_ = random.Next(0, 63);
+
+                                if (tipo == DatabaseFunctions.getString(id_, "Categoria", path))
                                 {
-                                    Random random = new Random();
-                                    int id_ = random.Next(0, 63);
-
-                                    if (tipo == DatabaseFunctions.getString(id_, "Categoria", path))
+                                    if (o == 0 && id_ != id)
                                     {
-                                        if (o == 0 && id_ != id)
-                                        {
-                                            a = id_;
-                                        }
-
-                                        if (o == 1)
-                                        {
-                                            b = id_;
-                                        }
-                                        
-                                        z++;
-                                        o++;
+                                        a = id_;
                                     }
+
+                                    if (o == 1)
+                                    {
+                                        b = id_;
+                                    }
+
+                                    z++;
+                                    o++;
                                 }
+                            }
                             Random rm = new Random();
                             int f = rm.Next(0, 2);
-                            switch(f)
+                            switch (f)
                             {
                                 case 0:
                                     ejercicio1VideoA.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                                     ejercicio1VideoB.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
                                     ejercicio1VideoC.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
-                                    
-                                    while (rta1 == false && rta2 == true && rta3  == false)
+                                    ejercicio1VideoA.Ctlcontrols.play();
+                                    ejercicio1VideoB.Ctlcontrols.play();
+                                    ejercicio1VideoC.Ctlcontrols.play();
+
+                                    while (rta1 == false && rta2 == true && rta3 == false)
                                     {
                                         await Task.Delay(250);
                                     }
@@ -278,6 +281,9 @@ namespace SignIt
                                     ejercicio1VideoA.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
                                     ejercicio1VideoB.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                                     ejercicio1VideoC.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                    ejercicio1VideoA.Ctlcontrols.play();
+                                    ejercicio1VideoB.Ctlcontrols.play();
+                                    ejercicio1VideoC.Ctlcontrols.play();
 
                                     while (rta1 == false && rta2 == true && rta3 == false)
                                     {
@@ -302,6 +308,9 @@ namespace SignIt
                                     ejercicio1VideoA.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
                                     ejercicio1VideoB.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
                                     ejercicio1VideoC.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                                    ejercicio1VideoA.Ctlcontrols.play();
+                                    ejercicio1VideoB.Ctlcontrols.play();
+                                    ejercicio1VideoC.Ctlcontrols.play();
 
                                     while (rta1 == false && rta2 == true && rta3 == false)
                                     {
@@ -322,30 +331,34 @@ namespace SignIt
                                     }
                                     break;
                             }
-                            while(!continuar)
+                            ejercicio1VideoA.Ctlcontrols.stop();
+                            ejercicio1VideoB.Ctlcontrols.stop();
+                            ejercicio1VideoC.Ctlcontrols.stop();
+                            while (!continuar)
                             {
                                 await Task.Delay(250);
                             }
                             ej01.Hide();
                             ej11.Hide();
                             continuar = false;
-                            
+
                             break;
 
                         case 1:
-                            string respuesta = DatabaseFunctions.getString(id, "Signs" , path);
+                            string respuesta = DatabaseFunctions.getString(id, "Signs", path);
 
                             ej2player.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                            
+                            ej2player.Ctlcontrols.play();
+
                             signIt.SelectedTab = ejercicio2;
-                            
-                            while(!continuar)
+
+                            while (!continuar)
                             {
                                 await Task.Delay(250);
                             }
-                           
+
                             continuar = false;
-                            
+
                             if (respuesta == rtaEj2.Text)
                             {
                                 ej01.Show();
@@ -353,17 +366,18 @@ namespace SignIt
                                 int xp_ = ram.Next(0, 2);
                                 xpGanada += xp_;
                             }
-                            
+
                             else
                             {
                                 ej11.Show();
                             }
-                            
+
                             while (!continuar)
                             {
                                 await Task.Delay(250);
                             }
-                            
+
+                            ej2player.Ctlcontrols.stop();
                             ej01.Hide();
                             ej11.Hide();
                             
