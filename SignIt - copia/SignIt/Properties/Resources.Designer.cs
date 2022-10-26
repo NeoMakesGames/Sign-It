@@ -203,6 +203,26 @@ namespace SignIt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ADC {
+            get {
+                object obj = ResourceManager.GetObject("ADC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ADC1 {
+            get {
+                object obj = ResourceManager.GetObject("ADC1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Básico {
             get {
                 object obj = ResourceManager.GetObject("Básico", resourceCulture);
@@ -303,6 +323,16 @@ namespace SignIt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Botón__4_ {
+            get {
+                object obj = ResourceManager.GetObject("Botón (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Botón_seleccionado {
             get {
                 object obj = ResourceManager.GetObject("Botón seleccionado", resourceCulture);
@@ -316,6 +346,26 @@ namespace SignIt.Properties {
         internal static System.Drawing.Bitmap Botón1 {
             get {
                 object obj = ResourceManager.GetObject("Botón1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Caracol_boceto_3 {
+            get {
+                object obj = ResourceManager.GetObject("Caracol boceto 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ellipse_4 {
+            get {
+                object obj = ResourceManager.GetObject("Ellipse 4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -653,9 +703,29 @@ namespace SignIt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_75 {
+            get {
+                object obj = ResourceManager.GetObject("Group 75", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ícono_de_salir__1_ {
             get {
                 object obj = ResourceManager.GetObject("Ícono de salir (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ícono_del_perfil {
+            get {
+                object obj = ResourceManager.GetObject("Ícono del perfil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

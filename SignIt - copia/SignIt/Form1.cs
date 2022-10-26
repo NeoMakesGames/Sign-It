@@ -19,10 +19,14 @@ namespace SignIt
 {
     public partial class Form1 : Form
     {
+        Image myimage;
+
+        public static bool externalmenu = false;
+        public static bool endTutorial = false;
+
         public static string path = "Usuarios.accdb";
         public static string imagePath = "Imagenes\\";
         public static string signsPath = "signs\\";
-        Image myimage;
         string HS_URL;
         string botonBI;
         string botondiseño;
@@ -33,13 +37,15 @@ namespace SignIt
         int NextLvl = 10;
         int homeSlider = 0;
         int vidas = 0;
+        int lastpage = 0;
+        public static int avance;
+
+        float progreso;
         double home_slider = 0;
-        public static int avance; 
+        
         public static bool continuar = false;
         public bool menu = false;
         public bool fullscr = true;
-        public static bool externalmenu = false;
-        public static bool endTutorial = false;
         bool rta1 = false;
         bool rta2 = false;
         bool rta3 = false;
@@ -663,7 +669,7 @@ namespace SignIt
                 aparicionDelMenu();
                 
                 signIt.SelectedTab = Home;
-            
+
             }
             else
             {
@@ -738,6 +744,7 @@ namespace SignIt
            botonesDiccionario();
            panel1.SendToBack();
            menu = false;
+            lastpage = 1;
         }
         private void LeccionesHome_Click_1(object sender, EventArgs e)
         {
@@ -745,6 +752,7 @@ namespace SignIt
             botonesLecciones();
             panel1.SendToBack();
             menu = false;
+            lastpage = 2;
         }
         private void sliderHomeIz_Click(object sender, EventArgs e)
         {
@@ -759,7 +767,6 @@ namespace SignIt
 
         private async void Menubutton_Click(object sender, EventArgs e)
         {
-            experiencia();
             Menubutton.Enabled = false;
             if (menu == false)
             {
@@ -794,6 +801,7 @@ namespace SignIt
             signIt.SelectedTab = Home;
             Menubutton_Click(sender, e);
             menu = false;
+            lastpage = 3;
         }
 
         private void MenuLectionsButton_Click(object sender, EventArgs e)
@@ -802,6 +810,7 @@ namespace SignIt
             botonesLecciones();
             Menubutton_Click(sender, e);
             menu = false;
+            lastpage = 2;
         }
 
         private void MenuDiccionarioButton_Click(object sender, EventArgs e)
@@ -811,6 +820,7 @@ namespace SignIt
             menu = false;
             signIt.SelectedTab = Diccionario;
             botonesDiccionario();
+            lastpage = 1;
         }
 
         private void MenuGamesButton_Click(object sender, EventArgs e)
@@ -818,16 +828,22 @@ namespace SignIt
             signIt.SelectedTab = juegos;
             Menubutton_Click(sender, e);
             menu = false;
+            lastpage = 4;
         }
 
         private void MenuSettingsButton_Click(object sender, EventArgs e)
         {
+            experiencia();
             signIt.SelectedTab = Ajustes;
             userNameSett2.Text = DatabaseFunctions.getString(DatabaseFunctions.currentUser,"Nombre",path);
-            experienciaSett2.Text = Convert.ToString(UserLvl) + "          " + Convert.ToString(UserXp) + "/" + Convert.ToString(NextLvl);
-
+            experiencia();
+            xpB.Text = Convert.ToString(UserLvl);
+            xProgressBar.Maximum = NextLvl;
+            xProgressBar.Value = UserXp;
+            progresoSett2.Text = Convert.ToString(avance) + " / 8";
             Menubutton_Click(sender, e);
             menu = false;
+            lastpage = 5;
         }
 
         private void MenuExitButton_Click(object sender, EventArgs e)
@@ -843,7 +859,7 @@ namespace SignIt
             {
                 ensañanza("Basico");
             }
-            else
+            else if (avance > 1)
             {
                 ejercicios("Basico");
             }
@@ -936,23 +952,29 @@ namespace SignIt
             {
                 this.FormBorderStyle = FormBorderStyle.None;
                 this.WindowState = FormWindowState.Maximized;
-                FullScrButtonSett.Text = "Activado";
+                myimage = new Bitmap(imagePath + "Group 75.PNG");
+                FullScrButtonSett.BackgroundImage = myimage;
                 fullscr = true;
             }
             else if (fullscr == true)
             {
                 this.FormBorderStyle = FormBorderStyle.Sizable;
                 this.WindowState = FormWindowState.Normal;
-                FullScrButtonSett.Text = "Desactivado";
+                myimage = new Bitmap(imagePath + "Group 77.PNG");
+                FullScrButtonSett.BackgroundImage = myimage;
                 fullscr = false;
             }
         }
 
-//Diccionario
-        private void tabPage1_Click(object sender, EventArgs e)
+        private void caracolsett_Click(object sender, EventArgs e)
         {
-
+            signIt.SelectedTab = caracol;
+            myimage = new Bitmap(imagePath + "ASC.PNG");
+            caracol.BackgroundImage = myimage;
         }
+
+        //Diccionario
+
         private void button4_Click(object sender, EventArgs e)
         {
             if(avance > 1)
@@ -1011,6 +1033,13 @@ namespace SignIt
             diccionarioBeta.SelectedTab = dBNros;
             myimage = new Bitmap(imagePath + "fndb.PNG");
             DBeta.BackgroundImage = myimage;
+            desaparicionDelMenu();
+        }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            signIt.SelectedTab = caracol;
+            myimage = new Bitmap(imagePath + "ADC.PNG");
+            caracol.BackgroundImage = myimage;
             desaparicionDelMenu();
         }
 
@@ -1150,7 +1179,10 @@ namespace SignIt
         {
 
         }
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
 
+        }
         private void LeccionesMenu_Click(object sender, EventArgs e)
         {
 
@@ -1306,6 +1338,38 @@ namespace SignIt
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void caracolExit_Click(object sender, EventArgs e)
+        {
+            switch(lastpage)
+            {
+                case 1:
+                    signIt.SelectedTab = Diccionario;
+                    break;
+
+                case 2:
+                    signIt.SelectedTab = LeccionesMenu;
+                    break;
+
+                case 3:
+                    signIt.SelectedTab = Home;
+                    break;
+
+                case 4:
+                    signIt.SelectedTab = juegos;
+                    break;
+
+                case 5:
+                    signIt.SelectedTab = Ajustes;
+                    break;
+            }
+            aparicionDelMenu();
+        }
+
+        private void Ajustes_Click(object sender, EventArgs e)
         {
 
         }
