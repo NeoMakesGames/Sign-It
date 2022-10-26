@@ -32,7 +32,7 @@ namespace SignIt
             return result;
         }
 
-        public static string getStringFromSigns(int id, string objID, string path)
+        public static string GetCategoria(int id, string path)
         {
             //Establece una coneccion a la base de datos
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path);
@@ -43,7 +43,7 @@ namespace SignIt
             OleDbDataReader reader = cmd.ExecuteReader();
             reader.Read();
             //Obtiene el resultado deseado en objID del usuario seleccionado
-            string result = reader[objID].ToString();
+            string result = reader["Categoria"].ToString();
             //Cierra la coneccion a la base de datos
             con.Close();
             //Devuelve como string el resultado que se buscaba
