@@ -386,7 +386,7 @@ namespace SignIt
         }
 
 
-//Comienzo
+        //Comienzo
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -527,65 +527,6 @@ namespace SignIt
         private void LeccionesHome_Click_1(object sender, EventArgs e)
         {
             signIt.SelectedTab = LeccionesMenu;
-
-            if (avance < 1)
-            {
-                Image myimage;
-                myimage = new Bitmap(imagePath + "candado.PNG");
-                leccionesBasico.BackgroundImage = myimage;
-            }
-            else
-            {
-                Image myimage;
-                myimage = new Bitmap(imagePath + "basico.PNG");
-                leccionesBasico.BackgroundImage = myimage;
-            }
-
-            if (avance < 2)
-            {
-                Image myimage;
-                myimage = new Bitmap(imagePath + "candado.PNG");
-                comidaDiccionario.BackgroundImage = myimage;
-            }
-            else
-            {
-                Image myimage;
-                myimage = new Bitmap(imagePath + "comida.PNG");
-                leccionesBasico.BackgroundImage = myimage;
-            }
-
-            if (avance < 3)
-            {
-                Image myimage;
-                myimage = new Bitmap(imagePath + "candado.PNG");
-                coloresDiccionario.BackgroundImage = myimage;
-            }
-            else
-            {
-                Image myimage;
-                myimage = new Bitmap(imagePath + "colores.PNG");
-                leccionesBasico.BackgroundImage = myimage;
-            }
-
-            if (avance < 4)
-            {
-                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
-                myimage = new Bitmap(botonBI);
-                lugaresDiccionario.BackgroundImage = myimage;
-            }
-            if (avance < 5)
-            {
-                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
-                myimage = new Bitmap(botonBI);
-                pronombresDiccionario.BackgroundImage = myimage;
-            }
-            if (avance < 6)
-            {
-                botonBI = Form1.path.Remove(75, 14) + "\\Resources\\candado.PNG";
-                myimage = new Bitmap(botonBI);
-                verbosDiccionario.BackgroundImage = myimage;
-            }
-
             panel1.SendToBack();
             menu = false;
         }
@@ -716,13 +657,14 @@ namespace SignIt
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ensañanza("basico");
             if (avance >= 1)
             {
-                ensañanza("Basico");
+                ensañanza("basico");
             }
             else
             {
-                ejercicios("Basico");
+                ejercicios("basico");
             }
         }
 
