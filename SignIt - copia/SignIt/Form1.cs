@@ -132,6 +132,7 @@ namespace SignIt
 
         public async void ensañanza(string tipo)
         {
+            desaparicionDelMenu();
             signIt.SelectedTab = Enseñanza;
             int z = 0;
             int[] videos = new int[20];
@@ -162,12 +163,15 @@ namespace SignIt
                     EnseñanzaPlayer.Ctlcontrols.stop();
                 }
             }
+            aparicionDelMenu();
+            signIt.SelectedTab = LeccionesMenu;
             DatabaseFunctions.addAvance(1 , path);
             avance++;
         }
 
         public async void ejercicios(string tipo)
         {
+            desaparicionDelMenu();
             continuar = false;
             signIt.SelectedTab = Enseñanza;
             int z = 0;
@@ -403,6 +407,7 @@ namespace SignIt
                 }
                 z++;
             }
+            aparicionDelMenu();
             signIt.SelectedTab = LeccionesMenu;
         }
 
@@ -1211,6 +1216,11 @@ namespace SignIt
             botondiseño = imagePath + "Botón (3).png";
             mYimage = new Bitmap(botondiseño);
             ComenzarCdU.BackgroundImage = mYimage;
+        }
+
+        private void ej2cont_Click(object sender, EventArgs e)
+        {
+            continuar = true;
         }
     }
 }
