@@ -36,7 +36,6 @@ namespace SignIt
         double home_slider = 0;
         public static int avance; 
         public static bool continuar = false;
-
         public bool menu = false;
         public bool fullscr = true;
         public static bool externalmenu = false;
@@ -45,7 +44,6 @@ namespace SignIt
         public Form1()
         {
             InitializeComponent();
-            timer1.Enabled = false;
         }
 
         //Funciones
@@ -173,12 +171,12 @@ namespace SignIt
             continuar = false;
             signIt.SelectedTab = Enseñanza;
             int z = 0;
-            int[] videos = new int[4];
+            int[] videos = new int[5];
             int xpGanada = 5;
             for (int o = 0; o < 5;)
             {
                 Random rdn = new Random();
-                int IDs_ = rdn.Next(1, 60);
+                int IDs_ = rdn.Next(1, 64);
 
                 if (tipo == DatabaseFunctions.GetCategoria(1, "Usuarios.accdb"))
                 {
@@ -195,8 +193,11 @@ namespace SignIt
                 if (z < 2)
                 {
                     signIt.SelectedTab = Enseñanza;
-                    EnseñanzaPlayer.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                    PalabraEns.Text = DatabaseFunctions.getString(id, "Sign", signsPath);
+                    EnseñanzaPlayer.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                    EnseñanzaPlayer.settings.setMode("loop" , true);
+                    PalabraEns.Text = DatabaseFunctions.GetNameOfVideo(id, path);
+                    MessageBox.Show(EnseñanzaPlayer.URL);
+                    EnseñanzaPlayer.Ctlcontrols.play();
 
                     while (!continuar)
                     {
@@ -213,7 +214,7 @@ namespace SignIt
                     {
 
                         case 0:
-                            ej1palabra.Text = ej1palabra.Text + " " + DatabaseFunctions.getString(id, "Signs", path) + "?";
+                            ej1palabra.Text = ej1palabra.Text + " " + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
                             ejercicio1VideoA.settings.setMode("loop", true);
                             ejercicio1VideoB.settings.setMode("loop", true);
                             ejercicio1VideoC.settings.setMode("loop", true);
@@ -249,9 +250,9 @@ namespace SignIt
                             switch (f)
                             {
                                 case 0:
-                                    ejercicio1VideoA.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                                    ejercicio1VideoB.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
-                                    ejercicio1VideoC.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                                    ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                                    ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                    ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
                                     ejercicio1VideoA.Ctlcontrols.play();
                                     ejercicio1VideoB.Ctlcontrols.play();
                                     ejercicio1VideoC.Ctlcontrols.play();
@@ -277,9 +278,9 @@ namespace SignIt
 
 
                                 case 1:
-                                    ejercicio1VideoA.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
-                                    ejercicio1VideoB.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                                    ejercicio1VideoC.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                    ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                                    ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                                    ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
                                     ejercicio1VideoA.Ctlcontrols.play();
                                     ejercicio1VideoB.Ctlcontrols.play();
                                     ejercicio1VideoC.Ctlcontrols.play();
@@ -304,9 +305,9 @@ namespace SignIt
                                     break;
 
                                 case 2:
-                                    ejercicio1VideoA.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
-                                    ejercicio1VideoB.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
-                                    ejercicio1VideoC.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                                    ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                                    ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                    ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                                     ejercicio1VideoA.Ctlcontrols.play();
                                     ejercicio1VideoB.Ctlcontrols.play();
                                     ejercicio1VideoC.Ctlcontrols.play();
@@ -344,9 +345,9 @@ namespace SignIt
                             break;
 
                         case 1:
-                            string respuesta = DatabaseFunctions.getString(id, "Signs", path);
+                            string respuesta = DatabaseFunctions.GetNameOfVideo(id, path);
 
-                            ej2player.URL = "C:\\Users\\48110679\\source\\repos\\NeoMakesGames\\Sign - It\\SignIt - copia\\SignIt\\Signs" + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                            ej2player.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                             ej2player.Ctlcontrols.play();
 
                             signIt.SelectedTab = ejercicio2;
@@ -385,13 +386,14 @@ namespace SignIt
                             break;
 
 
-                        case 2:
-                            signIt.SelectedTab = ejercicio3;
-                            break;
+                       // case 2:
+                       //     signIt.SelectedTab = ejercicio3;
+                       //     break;
                     }
                 }
                 z++;
             }
+            signIt.SelectedTab = LeccionesMenu;
         }
 
         private void ganar_0_perder(UserControl uc)
@@ -498,83 +500,84 @@ namespace SignIt
 
         private void DiccionarioHome_Click_1(object sender, EventArgs e)
         {
+            Image notmyimage;
            signIt.SelectedTab = Diccionario;
            if (avance < 2)
            {
                botonBI = imagePath + "candado.PNG";
-               myimage = new Bitmap(botonBI);
-               basicoDiccionario.BackgroundImage = myimage;
+               notmyimage = new Bitmap(botonBI);
+               basicoDiccionario.BackgroundImage = notmyimage;
            }
            else
            {
-               botonBI = imagePath + "Básico";
-               myimage = new Bitmap(botonBI);
-               basicoDiccionario.BackgroundImage = myimage;
+               botonBI = imagePath + "Básico.PNG";
+               notmyimage = new Bitmap(botonBI);
+               basicoDiccionario.BackgroundImage = notmyimage;
            }
 
            if (avance < 3)
            {
                botonBI = imagePath + "candado.PNG";
-               myimage = new Bitmap(botonBI);
-               comidaDiccionario.BackgroundImage = myimage;
+               notmyimage = new Bitmap(botonBI);
+               comidaDiccionario.BackgroundImage = notmyimage;
            }
            else
            {
                 botonBI = imagePath + "Básico(1).PNG";
-                myimage = new Bitmap(botonBI);
-                comidaDiccionario.BackgroundImage = myimage;
+                notmyimage = new Bitmap(botonBI);
+                comidaDiccionario.BackgroundImage = notmyimage;
            }
 
            if (avance < 4)
            {
                botonBI = imagePath + "candado.PNG";
-               myimage = new Bitmap(botonBI);
-               coloresDiccionario.BackgroundImage = myimage;
+               notmyimage = new Bitmap(botonBI);
+               coloresDiccionario.BackgroundImage = notmyimage;
            }
            else
            {
                 botonBI = imagePath + "Básico (2)";
-                myimage = new Bitmap(botonBI);
-                coloresDiccionario.BackgroundImage = myimage;
+                notmyimage = new Bitmap(botonBI);
+                coloresDiccionario.BackgroundImage = notmyimage;
             }
 
            if (avance < 5)
            {
                botonBI = imagePath + "candado.PNG";
-               myimage = new Bitmap(botonBI);
-               lugaresDiccionario.BackgroundImage = myimage;
+               notmyimage = new Bitmap(botonBI);
+               lugaresDiccionario.BackgroundImage = notmyimage;
            }
            else
            {
                botonBI = imagePath + "Básico (3)";
-               myimage = new Bitmap(botonBI);
-               lugaresDiccionario.BackgroundImage = myimage;
+               notmyimage = new Bitmap(botonBI);
+               lugaresDiccionario.BackgroundImage = notmyimage;
            }
 
            if (avance < 6)
            {
                botonBI = imagePath + "candado.PNG";
-               myimage = new Bitmap(botonBI);
-               pronombresDiccionario.BackgroundImage = myimage;
+               notmyimage = new Bitmap(botonBI);
+               pronombresDiccionario.BackgroundImage = notmyimage;
            }
            else
            {
                botonBI = imagePath + "Básico (4).PNG";
-               myimage = new Bitmap(botonBI);
-               pronombresDiccionario.BackgroundImage = myimage;
+               notmyimage = new Bitmap(botonBI);
+               pronombresDiccionario.BackgroundImage = notmyimage;
            }
 
            if (avance < 7)
            {
                botonBI = imagePath + "candado.PNG";
-               myimage = new Bitmap(botonBI);
-               verbosDiccionario.BackgroundImage = myimage;
+               notmyimage = new Bitmap(botonBI);
+               verbosDiccionario.BackgroundImage = notmyimage;
            }
            else
            {
                botonBI = imagePath + "Básico (5).PNG";
-               myimage = new Bitmap(botonBI);
-               verbosDiccionario.BackgroundImage = myimage;
+               notmyimage = new Bitmap(botonBI);
+               verbosDiccionario.BackgroundImage = notmyimage;
            }
 
            panel1.SendToBack();
@@ -583,95 +586,96 @@ namespace SignIt
         private void LeccionesHome_Click_1(object sender, EventArgs e)
         {
             signIt.SelectedTab = LeccionesMenu;
+            Image notmyimage;
 
             if (avance < 1)
             {
                 botonBI = imagePath + "candado.PNG";
-                myimage = new Bitmap(botonBI);
-                basicoLecc.BackgroundImage = myimage;
+                notmyimage = new Bitmap(botonBI);
+                basicoLecc.BackgroundImage = notmyimage;
             }
             else
             {
-                botonBI = imagePath + "Básico";
-                myimage = new Bitmap(botonBI);
-                basicoLecc.BackgroundImage = myimage;
+                botonBI = imagePath + "Básico.PNG";
+                notmyimage = new Bitmap(botonBI);
+                basicoLecc.BackgroundImage = notmyimage;
             }
 
             if (avance < 2)
             {
                 botonBI = imagePath + "candado.PNG";
-                myimage = new Bitmap(botonBI);
-                comidaLecc.BackgroundImage = myimage;
+                notmyimage = new Bitmap(botonBI);
+                comidaLecc.BackgroundImage = notmyimage;
             }
             else
             {
-                botonBI = imagePath + "Básico(1).PNG";
-                myimage = new Bitmap(botonBI);
-                comidaLecc.BackgroundImage = myimage;
+                botonBI = imagePath + "Básico (1).PNG";
+                notmyimage = new Bitmap(botonBI);
+                comidaLecc.BackgroundImage = notmyimage;
             }
 
             if (avance < 3)
             {
                 botonBI = imagePath + "candado.PNG";
-                myimage = new Bitmap(botonBI);
-                coloresLecc.BackgroundImage = myimage;
+                notmyimage = new Bitmap(botonBI);
+                coloresLecc.BackgroundImage = notmyimage;
             }
             else
             {
                 botonBI = imagePath + "Básico (2)";
-                myimage = new Bitmap(botonBI);
-                coloresLecc.BackgroundImage = myimage;
+                notmyimage = new Bitmap(botonBI);
+                coloresLecc.BackgroundImage = notmyimage;
             }
 
             if (avance < 4)
             {
                 botonBI = imagePath + "candado.PNG";
-                myimage = new Bitmap(botonBI);
-                lugaresLecc.BackgroundImage = myimage;
+                notmyimage = new Bitmap(botonBI);
+                lugaresLecc.BackgroundImage = notmyimage;
             }
             else
             {
                 botonBI = imagePath + "Básico (3)";
-                myimage = new Bitmap(botonBI);
-                lugaresLecc.BackgroundImage = myimage;
+                notmyimage = new Bitmap(botonBI);
+                lugaresLecc.BackgroundImage = notmyimage;
             }
 
             if (avance < 5)
             {
                 botonBI = imagePath + "candado.PNG";
-                myimage = new Bitmap(botonBI);
-                pronombresLecc.BackgroundImage = myimage;
+                notmyimage = new Bitmap(botonBI);
+                pronombresLecc.BackgroundImage = notmyimage;
             }
             else
             {
                 botonBI = imagePath + "Básico (4).PNG";
-                myimage = new Bitmap(botonBI);
-                pronombresLecc.BackgroundImage = myimage;
+                notmyimage = new Bitmap(botonBI);
+                pronombresLecc.BackgroundImage = notmyimage;
             }
 
             if (avance < 6)
             {
                 botonBI = imagePath + "candado.PNG";
-                myimage = new Bitmap(botonBI);
-                verbosLecc.BackgroundImage = myimage;
+                notmyimage = new Bitmap(botonBI);
+                verbosLecc.BackgroundImage = notmyimage;
             }
             else
             {
                 botonBI = imagePath + "Básico (5).PNG";
-                myimage = new Bitmap(botonBI);
-                 verbosLecc.BackgroundImage = myimage;
+                notmyimage = new Bitmap(botonBI);
+                 verbosLecc.BackgroundImage = notmyimage;
             }
             if (avance < 7)
             {
                 botonBI = imagePath + "candado.PNG";
-                myimage = new Bitmap(botonBI);
-                examenlecc.BackgroundImage = myimage;
+                notmyimage = new Bitmap(botonBI);
+                examenlecc.BackgroundImage = notmyimage;
             }
             else
             {
                 botonBI = imagePath + "Básico (5).PNG";
-                myimage = new Bitmap(botonBI);
-                 examenlecc.BackgroundImage = myimage;
+                notmyimage = new Bitmap(botonBI);
+                 examenlecc.BackgroundImage = notmyimage;
             }
 
             panel1.SendToBack();
@@ -936,7 +940,7 @@ namespace SignIt
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (10>1)//(avance >= 1)
+            if (avance == 1)
             {
                 ensañanza("Basico");
             }
