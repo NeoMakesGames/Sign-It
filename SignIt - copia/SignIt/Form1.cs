@@ -220,9 +220,6 @@ namespace SignIt
 
                         case 0:
                             ej1palabra.Text = ej1palabra.Text + " " + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
-                            ejercicio1VideoA.settings.setMode("loop", true);
-                            ejercicio1VideoB.settings.setMode("loop", true);
-                            ejercicio1VideoC.settings.setMode("loop", true);
                             ej01.Hide();
                             ej11.Hide();
                             bool rta1 = false;
@@ -243,7 +240,7 @@ namespace SignIt
                                         a = id_;
                                     }
 
-                                    if (o == 1)
+                                    if (o == 1 && id_ != id && id_ != a)
                                     {
                                         b = id_;
                                     }
@@ -260,6 +257,9 @@ namespace SignIt
                                     ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                                     ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
                                     ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                                    ejercicio1VideoA.settings.setMode("loop", true);
+                                    ejercicio1VideoB.settings.setMode("loop", true);
+                                    ejercicio1VideoC.settings.setMode("loop", true);
                                     ejercicio1VideoA.Ctlcontrols.play();
                                     ejercicio1VideoB.Ctlcontrols.play();
                                     ejercicio1VideoC.Ctlcontrols.play();
@@ -290,6 +290,9 @@ namespace SignIt
                                     ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
                                     ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                                     ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                    ejercicio1VideoA.settings.setMode("loop", true);
+                                    ejercicio1VideoB.settings.setMode("loop", true);
+                                    ejercicio1VideoC.settings.setMode("loop", true);
                                     ejercicio1VideoA.Ctlcontrols.play();
                                     ejercicio1VideoB.Ctlcontrols.play();
                                     ejercicio1VideoC.Ctlcontrols.play();
@@ -319,6 +322,9 @@ namespace SignIt
                                     ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
                                     ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
                                     ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                                    ejercicio1VideoA.settings.setMode("loop", true);
+                                    ejercicio1VideoB.settings.setMode("loop", true);
+                                    ejercicio1VideoC.settings.setMode("loop", true);
                                     ejercicio1VideoA.Ctlcontrols.play();
                                     ejercicio1VideoB.Ctlcontrols.play();
                                     ejercicio1VideoC.Ctlcontrols.play();
@@ -964,6 +970,17 @@ namespace SignIt
                 ejercicios("Basico");
             }
         }
+        private void comidaLecc_Click(object sender, EventArgs e)
+        {
+            if (avance == 1)
+            {
+                ensañanza("comida");
+            }
+            else
+            {
+                ejercicios("comida");
+            }
+        }
 
         private void contEnseñanza_Click(object sender, EventArgs e)
         {
@@ -973,7 +990,8 @@ namespace SignIt
         {
             continuar = true;
         }
-        //Ajustes
+
+ //Ajustes
 
         private void FullScrButtonSett_Click(object sender, EventArgs e)
         {
@@ -993,7 +1011,7 @@ namespace SignIt
             }
         }
 
-        //Diccionario
+//Diccionario
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
