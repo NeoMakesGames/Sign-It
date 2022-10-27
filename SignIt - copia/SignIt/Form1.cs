@@ -133,7 +133,6 @@ namespace SignIt
         public async void ensañanza(string tipo)
         {
             desaparicionDelMenu();
-            signIt.SelectedTab = Enseñanza;
             int z = 0;
             int[] videos = new int[20];
             EnseñanzaPlayer.settings.setMode("loop", true);
@@ -147,6 +146,8 @@ namespace SignIt
                     z++;
                 }
             }
+            signIt.SelectedTab = Enseñanza;
+
             foreach (int id in videos)
             {
                 if (id != null)
@@ -173,7 +174,6 @@ namespace SignIt
         {
             desaparicionDelMenu();
             continuar = false;
-            signIt.SelectedTab = Enseñanza;
             int z = 0;
             int[] videos = new int[5];
             int xpGanada = 5;
