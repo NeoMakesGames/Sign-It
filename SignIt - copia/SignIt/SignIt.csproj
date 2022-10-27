@@ -96,6 +96,12 @@
     <Compile Include="juegos_y_cositas\tuto.Designer.cs">
       <DependentUpon>tuto.cs</DependentUpon>
     </Compile>
+    <Compile Include="juegos_y_cositas\tutorial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="juegos_y_cositas\tutorial.Designer.cs">
+      <DependentUpon>tutorial.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="diccionarioBeta.resx">
       <DependentUpon>diccionarioBeta.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="juegos_y_cositas\tuto.resx">
       <DependentUpon>tuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="juegos_y_cositas\tutorial.resx">
+      <DependentUpon>tutorial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -319,6 +328,7 @@
   <ItemGroup>
     <Content Include="Resources\Botón %282%29.png" />
     <Content Include="Resources\Botón %283%29.png" />
+    <None Include="Resources\Flecha2.png" />
     <None Include="Resources\Group 62 %281%29.png" />
     <None Include="Resources\Group 611.png" />
     <None Include="Resources\Botón %283%291.png" />
