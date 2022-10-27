@@ -155,7 +155,7 @@ namespace SignIt
             }
             else
             {
-                botonBI = imagePath + "Básico (5).PNG";
+                botonBI = imagePath + "Básico (6).PNG";
                 yepMyImage = new Bitmap(botonBI);
                 examenlecc.BackgroundImage = yepMyImage;
             }
@@ -209,9 +209,8 @@ namespace SignIt
                 lugaresDiccionario.BackgroundImage = notmyimage;
             }
             else
-            {
-                botonBI = imagePath + "Básico (3)";
-                notmyimage = new Bitmap(botonBI);
+            { 
+                notmyimage = new Bitmap(imagePath + "Básico (3).PNG");
                 lugaresDiccionario.BackgroundImage = notmyimage;
             }
 
