@@ -66,6 +66,7 @@ namespace SignIt
             Menubutton.BringToFront();
         }
 
+
         private void botonesLecciones()
         {
             Image yepMyImage;
@@ -103,7 +104,7 @@ namespace SignIt
             }
             else
             {
-                botonBI = imagePath + "Básico (2)";
+                botonBI = imagePath + "Básico (2).PNG";
                 yepMyImage = new Bitmap(botonBI);
                 coloresLecc.BackgroundImage = yepMyImage;
             }
@@ -116,7 +117,7 @@ namespace SignIt
             }
             else
             {
-                botonBI = imagePath + "Básico (3)";
+                botonBI = imagePath + "Básico (3).PNG";
                 yepMyImage = new Bitmap(botonBI);
                 lugaresLecc.BackgroundImage = yepMyImage;
             }
@@ -159,6 +160,7 @@ namespace SignIt
                 examenlecc.BackgroundImage = yepMyImage;
             }
         }
+
         private void botonesDiccionario()
         {
             Image notmyimage;
@@ -183,7 +185,7 @@ namespace SignIt
             }
             else
             {
-                botonBI = imagePath + "Básico(1).PNG";
+                botonBI = imagePath + "Básico (1).PNG";
                 notmyimage = new Bitmap(botonBI);
                 comidaDiccionario.BackgroundImage = notmyimage;
             }
@@ -196,8 +198,7 @@ namespace SignIt
             }
             else
             {
-                botonBI = imagePath + "Básico (2)";
-                notmyimage = new Bitmap(botonBI);
+                notmyimage = new Bitmap(imagePath + "Básico (2).PNG");
                 coloresDiccionario.BackgroundImage = notmyimage;
             }
 
@@ -240,6 +241,7 @@ namespace SignIt
                 verbosDiccionario.BackgroundImage = notmyimage;
             }
         }
+
         private void cierre()
         {
             this.Close();
@@ -255,6 +257,7 @@ namespace SignIt
                 NextLvl *= 2;
             }
         }
+
         private void sliderDeLaHome()
         {
 
@@ -324,6 +327,8 @@ namespace SignIt
                 }
             }
             signIt.SelectedTab = Enseñanza;
+            DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
+            avance++;
 
             foreach (int id in videos)
             {
@@ -341,6 +346,7 @@ namespace SignIt
                     EnseñanzaPlayer.Ctlcontrols.stop();
                 }
             }
+            botonesLecciones();
             aparicionDelMenu();
             signIt.SelectedTab = LeccionesMenu;
             DatabaseFunctions.addAvance(1 , path);
@@ -610,6 +616,7 @@ namespace SignIt
                 }
                 z++;
             }
+            botonesLecciones();
             aparicionDelMenu();
             signIt.SelectedTab = LeccionesMenu;
         }
@@ -843,6 +850,52 @@ namespace SignIt
                 ejercicios("Comida");
             }
         }
+        private void coloresLecc_Click(object sender, EventArgs e)
+        {
+            if (avance == 3)
+            {
+                ensañanza("Colores");
+            }
+            else if (avance > 3)
+            {
+                ejercicios("Colores");
+            }
+        }
+        private void lugaresLecc_Click(object sender, EventArgs e)
+        {
+            if (avance == 4)
+            {
+                ensañanza("Lugares");
+            }
+            else if (avance > 4)
+            {
+                ejercicios("Lugares");
+            }
+        }
+
+        private void pronombresLecc_Click(object sender, EventArgs e)
+        {
+            if (avance == 5)
+            {
+                ensañanza("Pronombres");
+            }
+            else if (avance > 5)
+            {
+                ejercicios("Pronombres");
+            }
+        }
+
+        private void verbosLecc_Click(object sender, EventArgs e)
+        {
+            if (avance == 6)
+            {
+                ensañanza("Verbos");
+            }
+            else if (avance > 6)
+            {
+                ejercicios("Verbos");
+            }
+        }
 
         private void contEnseñanza_Click(object sender, EventArgs e)
         {
@@ -866,7 +919,7 @@ namespace SignIt
         }
 
 
-        //Ajustes
+//Ajustes
 
         private void FullScrButtonSett_Click(object sender, EventArgs e)
         {
@@ -1155,5 +1208,7 @@ namespace SignIt
             rta3 = true;
             continuar = true;
         }
+
+
     }
 }
