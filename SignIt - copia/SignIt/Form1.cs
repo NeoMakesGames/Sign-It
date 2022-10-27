@@ -40,6 +40,9 @@ namespace SignIt
         public bool fullscr = true;
         public static bool externalmenu = false;
         public static bool endTutorial = false;
+        bool rta1 = false;
+        bool rta2 = false;
+        bool rta3 = false;
 
         public Form1()
         {
@@ -63,6 +66,180 @@ namespace SignIt
             Menubutton.BringToFront();
         }
 
+        private void botonesLecciones()
+        {
+            Image yepMyImage;
+            if (avance < 1)
+            {
+                botonBI = imagePath + "candado.PNG";
+                yepMyImage = new Bitmap(botonBI);
+                basicoLecc.BackgroundImage = yepMyImage;
+            }
+            else
+            {
+                botonBI = imagePath + "Básico.PNG";
+                yepMyImage = new Bitmap(botonBI);
+                basicoLecc.BackgroundImage = yepMyImage;
+            }
+
+            if (avance < 2)
+            {
+                botonBI = imagePath + "candado.PNG";
+                yepMyImage = new Bitmap(botonBI);
+                comidaLecc.BackgroundImage = yepMyImage;
+            }
+            else
+            {
+                botonBI = imagePath + "Básico (1).PNG";
+                yepMyImage = new Bitmap(botonBI);
+                comidaLecc.BackgroundImage = yepMyImage;
+            }
+
+            if (avance < 3)
+            {
+                botonBI = imagePath + "candado.PNG";
+                yepMyImage = new Bitmap(botonBI);
+                coloresLecc.BackgroundImage = yepMyImage;
+            }
+            else
+            {
+                botonBI = imagePath + "Básico (2)";
+                yepMyImage = new Bitmap(botonBI);
+                coloresLecc.BackgroundImage = yepMyImage;
+            }
+
+            if (avance < 4)
+            {
+                botonBI = imagePath + "candado.PNG";
+                yepMyImage = new Bitmap(botonBI);
+                lugaresLecc.BackgroundImage = yepMyImage;
+            }
+            else
+            {
+                botonBI = imagePath + "Básico (3)";
+                yepMyImage = new Bitmap(botonBI);
+                lugaresLecc.BackgroundImage = yepMyImage;
+            }
+
+            if (avance < 5)
+            {
+                botonBI = imagePath + "candado.PNG";
+                yepMyImage = new Bitmap(botonBI);
+                pronombresLecc.BackgroundImage = yepMyImage;
+            }
+            else
+            {
+                botonBI = imagePath + "Básico (4).PNG";
+                yepMyImage = new Bitmap(botonBI);
+                pronombresLecc.BackgroundImage = yepMyImage;
+            }
+
+            if (avance < 6)
+            {
+                botonBI = imagePath + "candado.PNG";
+                myimage = new Bitmap(botonBI);
+                verbosLecc.BackgroundImage = myimage;
+            }
+            else
+            {
+                botonBI = imagePath + "Básico (5).PNG";
+                yepMyImage = new Bitmap(botonBI);
+                verbosLecc.BackgroundImage = yepMyImage;
+            }
+            if (avance < 7)
+            {
+                botonBI = imagePath + "candado.PNG";
+                yepMyImage = new Bitmap(botonBI);
+                examenlecc.BackgroundImage = yepMyImage;
+            }
+            else
+            {
+                botonBI = imagePath + "Básico (5).PNG";
+                yepMyImage = new Bitmap(botonBI);
+                examenlecc.BackgroundImage = yepMyImage;
+            }
+        }
+        private void botonesDiccionario()
+        {
+            Image notmyimage;
+            if (avance < 2)
+            {
+                botonBI = imagePath + "candado.PNG";
+                notmyimage = new Bitmap(botonBI);
+                basicoDiccionario.BackgroundImage = notmyimage;
+            }
+            else
+            {
+                botonBI = imagePath + "Básico.PNG";
+                notmyimage = new Bitmap(botonBI);
+                basicoDiccionario.BackgroundImage = notmyimage;
+            }
+
+            if (avance < 3)
+            {
+                botonBI = imagePath + "candado.PNG";
+                notmyimage = new Bitmap(botonBI);
+                comidaDiccionario.BackgroundImage = notmyimage;
+            }
+            else
+            {
+                botonBI = imagePath + "Básico(1).PNG";
+                notmyimage = new Bitmap(botonBI);
+                comidaDiccionario.BackgroundImage = notmyimage;
+            }
+
+            if (avance < 4)
+            {
+                botonBI = imagePath + "candado.PNG";
+                notmyimage = new Bitmap(botonBI);
+                coloresDiccionario.BackgroundImage = notmyimage;
+            }
+            else
+            {
+                botonBI = imagePath + "Básico (2)";
+                notmyimage = new Bitmap(botonBI);
+                coloresDiccionario.BackgroundImage = notmyimage;
+            }
+
+            if (avance < 5)
+            {
+                botonBI = imagePath + "candado.PNG";
+                notmyimage = new Bitmap(botonBI);
+                lugaresDiccionario.BackgroundImage = notmyimage;
+            }
+            else
+            {
+                botonBI = imagePath + "Básico (3)";
+                notmyimage = new Bitmap(botonBI);
+                lugaresDiccionario.BackgroundImage = notmyimage;
+            }
+
+            if (avance < 6)
+            {
+                botonBI = imagePath + "candado.PNG";
+                notmyimage = new Bitmap(botonBI);
+                pronombresDiccionario.BackgroundImage = notmyimage;
+            }
+            else
+            {
+                botonBI = imagePath + "Básico (4).PNG";
+                notmyimage = new Bitmap(botonBI);
+                pronombresDiccionario.BackgroundImage = notmyimage;
+            }
+
+            if (avance < 7)
+            {
+                botonBI = imagePath + "candado.PNG";
+                notmyimage = new Bitmap(botonBI);
+                verbosDiccionario.BackgroundImage = notmyimage;
+            }
+            else
+            {
+                botonBI = imagePath + "Básico (5).PNG";
+                notmyimage = new Bitmap(botonBI);
+                verbosDiccionario.BackgroundImage = notmyimage;
+            }
+        }
         private void cierre()
         {
             this.Close();
@@ -150,7 +327,7 @@ namespace SignIt
 
             foreach (int id in videos)
             {
-                if (id != null)
+                if (id != 0)
                 {
                     EnseñanzaPlayer.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                     MessageBox.Show(EnseñanzaPlayer.URL);
@@ -219,12 +396,10 @@ namespace SignIt
                     {
 
                         case 0:
+                            ej1palabra.Text = "¿Cual seña corresponde a la palabra: ";
                             ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
                             ej01.Hide();
                             ej11.Hide();
-                            bool rta1 = false;
-                            bool rta2 = false;
-                            bool rta3 = false;
                             int a = 0;
                             int b = 0;
                             signIt.SelectedTab = ejercicio1;
@@ -266,10 +441,13 @@ namespace SignIt
                                     ej01.Hide();
                                     ej11.Hide();
 
-                                    while (rta1 == false && rta2 == true && rta3 == false)
+                                    while (!continuar)
                                     {
                                         await Task.Delay(250);
                                     }
+
+                                    continuar = false;
+
                                     if (rta1 == true)
                                     {
                                         ganar_0_perder(ej01);
@@ -283,13 +461,16 @@ namespace SignIt
                                     {
                                         ganar_0_perder(ej11);
                                     }
+                                    rta1 = false;
+                                    rta2 = false;
+                                    rta3 = false;
                                     break;
 
 
                                 case 1:
-                                    ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
                                     ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                                     ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                    ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
                                     ejercicio1VideoA.settings.setMode("loop", true);
                                     ejercicio1VideoB.settings.setMode("loop", true);
                                     ejercicio1VideoC.settings.setMode("loop", true);
@@ -299,10 +480,13 @@ namespace SignIt
                                     ej01.Hide();
                                     ej11.Hide();
 
-                                    while (rta1 == false && rta2 == true && rta3 == false)
+                                    while (!continuar)
                                     {
                                         await Task.Delay(250);
                                     }
+
+                                    continuar = false;
+
                                     if (rta1 == true)
                                     {
                                         ganar_0_perder(ej11);
@@ -316,6 +500,9 @@ namespace SignIt
                                     {
                                         ganar_0_perder(ej11);
                                     }
+                                    rta1 = false;
+                                    rta2 = false;
+                                    rta3 = false;
                                     break;
 
                                 case 2:
@@ -329,10 +516,13 @@ namespace SignIt
                                     ejercicio1VideoB.Ctlcontrols.play();
                                     ejercicio1VideoC.Ctlcontrols.play();
 
-                                    while (rta1 == false && rta2 == true && rta3 == false)
+                                    while (!continuar)
                                     {
                                         await Task.Delay(250);
                                     }
+
+                                    continuar = false;
+
                                     if (rta1 == true)
                                     {
                                         ganar_0_perder(ej11);
@@ -346,6 +536,9 @@ namespace SignIt
                                         ganar_0_perder(ej01);
                                         xpGanada += 2;
                                     }
+                                    rta1 = false;
+                                    rta2 = false;
+                                    rta3 = false;
                                     break;
                             }
                             ejercicio1VideoA.Ctlcontrols.stop();
@@ -365,6 +558,7 @@ namespace SignIt
                             string respuesta = DatabaseFunctions.GetNameOfVideo(id, path);
 
                             ej2player.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                            MessageBox.Show(ej2player.URL);
                             ej2player.settings.setMode("loop", true);
                             ej2player.Ctlcontrols.play();
                             ej02.Hide();
@@ -426,7 +620,7 @@ namespace SignIt
         }
 
 
-    //Comienzo
+//Comienzo
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -524,184 +718,15 @@ namespace SignIt
 
         private void DiccionarioHome_Click_1(object sender, EventArgs e)
         {
-            Image notmyimage;
            signIt.SelectedTab = Diccionario;
-           if (avance < 2)
-           {
-               botonBI = imagePath + "candado.PNG";
-               notmyimage = new Bitmap(botonBI);
-               basicoDiccionario.BackgroundImage = notmyimage;
-           }
-           else
-           {
-               botonBI = imagePath + "Básico.PNG";
-               notmyimage = new Bitmap(botonBI);
-               basicoDiccionario.BackgroundImage = notmyimage;
-           }
-
-           if (avance < 3)
-           {
-               botonBI = imagePath + "candado.PNG";
-               notmyimage = new Bitmap(botonBI);
-               comidaDiccionario.BackgroundImage = notmyimage;
-           }
-           else
-           {
-                botonBI = imagePath + "Básico(1).PNG";
-                notmyimage = new Bitmap(botonBI);
-                comidaDiccionario.BackgroundImage = notmyimage;
-           }
-
-           if (avance < 4)
-           {
-               botonBI = imagePath + "candado.PNG";
-               notmyimage = new Bitmap(botonBI);
-               coloresDiccionario.BackgroundImage = notmyimage;
-           }
-           else
-           {
-                botonBI = imagePath + "Básico (2)";
-                notmyimage = new Bitmap(botonBI);
-                coloresDiccionario.BackgroundImage = notmyimage;
-            }
-
-           if (avance < 5)
-           {
-               botonBI = imagePath + "candado.PNG";
-               notmyimage = new Bitmap(botonBI);
-               lugaresDiccionario.BackgroundImage = notmyimage;
-           }
-           else
-           {
-               botonBI = imagePath + "Básico (3)";
-               notmyimage = new Bitmap(botonBI);
-               lugaresDiccionario.BackgroundImage = notmyimage;
-           }
-
-           if (avance < 6)
-           {
-               botonBI = imagePath + "candado.PNG";
-               notmyimage = new Bitmap(botonBI);
-               pronombresDiccionario.BackgroundImage = notmyimage;
-           }
-           else
-           {
-               botonBI = imagePath + "Básico (4).PNG";
-               notmyimage = new Bitmap(botonBI);
-               pronombresDiccionario.BackgroundImage = notmyimage;
-           }
-
-           if (avance < 7)
-           {
-               botonBI = imagePath + "candado.PNG";
-               notmyimage = new Bitmap(botonBI);
-               verbosDiccionario.BackgroundImage = notmyimage;
-           }
-           else
-           {
-               botonBI = imagePath + "Básico (5).PNG";
-               notmyimage = new Bitmap(botonBI);
-               verbosDiccionario.BackgroundImage = notmyimage;
-           }
-
+           botonesDiccionario();
            panel1.SendToBack();
            menu = false;
         }
         private void LeccionesHome_Click_1(object sender, EventArgs e)
         {
             signIt.SelectedTab = LeccionesMenu;
-            Image notmyimage;
-
-            if (avance < 1)
-            {
-                botonBI = imagePath + "candado.PNG";
-                notmyimage = new Bitmap(botonBI);
-                basicoLecc.BackgroundImage = notmyimage;
-            }
-            else
-            {
-                botonBI = imagePath + "Básico.PNG";
-                notmyimage = new Bitmap(botonBI);
-                basicoLecc.BackgroundImage = notmyimage;
-            }
-
-            if (avance < 2)
-            {
-                botonBI = imagePath + "candado.PNG";
-                notmyimage = new Bitmap(botonBI);
-                comidaLecc.BackgroundImage = notmyimage;
-            }
-            else
-            {
-                botonBI = imagePath + "Básico (1).PNG";
-                notmyimage = new Bitmap(botonBI);
-                comidaLecc.BackgroundImage = notmyimage;
-            }
-
-            if (avance < 3)
-            {
-                botonBI = imagePath + "candado.PNG";
-                notmyimage = new Bitmap(botonBI);
-                coloresLecc.BackgroundImage = notmyimage;
-            }
-            else
-            {
-                botonBI = imagePath + "Básico (2)";
-                notmyimage = new Bitmap(botonBI);
-                coloresLecc.BackgroundImage = notmyimage;
-            }
-
-            if (avance < 4)
-            {
-                botonBI = imagePath + "candado.PNG";
-                notmyimage = new Bitmap(botonBI);
-                lugaresLecc.BackgroundImage = notmyimage;
-            }
-            else
-            {
-                botonBI = imagePath + "Básico (3)";
-                notmyimage = new Bitmap(botonBI);
-                lugaresLecc.BackgroundImage = notmyimage;
-            }
-
-            if (avance < 5)
-            {
-                botonBI = imagePath + "candado.PNG";
-                notmyimage = new Bitmap(botonBI);
-                pronombresLecc.BackgroundImage = notmyimage;
-            }
-            else
-            {
-                botonBI = imagePath + "Básico (4).PNG";
-                notmyimage = new Bitmap(botonBI);
-                pronombresLecc.BackgroundImage = notmyimage;
-            }
-
-            if (avance < 6)
-            {
-                botonBI = imagePath + "candado.PNG";
-                notmyimage = new Bitmap(botonBI);
-                verbosLecc.BackgroundImage = notmyimage;
-            }
-            else
-            {
-                botonBI = imagePath + "Básico (5).PNG";
-                notmyimage = new Bitmap(botonBI);
-                 verbosLecc.BackgroundImage = notmyimage;
-            }
-            if (avance < 7)
-            {
-                botonBI = imagePath + "candado.PNG";
-                notmyimage = new Bitmap(botonBI);
-                examenlecc.BackgroundImage = notmyimage;
-            }
-            else
-            {
-                botonBI = imagePath + "Básico (5).PNG";
-                notmyimage = new Bitmap(botonBI);
-                 examenlecc.BackgroundImage = notmyimage;
-            }
-
+            botonesLecciones();
             panel1.SendToBack();
             menu = false;
         }
@@ -758,97 +783,7 @@ namespace SignIt
         private void MenuLectionsButton_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = LeccionesMenu;
-
-            if (avance < 1)
-            {
-                botonBI = imagePath + "candado.PNG";
-                myimage = new Bitmap(botonBI);
-                basicoLecc.BackgroundImage = myimage;
-            }
-            else
-            {
-                botonBI = imagePath + "Básico";
-                myimage = new Bitmap(botonBI);
-                basicoLecc.BackgroundImage = myimage;
-            }
-
-            if (avance < 2)
-            {
-                botonBI = imagePath + "candado.PNG";
-                myimage = new Bitmap(botonBI);
-                comidaLecc.BackgroundImage = myimage;
-            }
-            else
-            {
-                botonBI = imagePath + "Básico(1).PNG";
-                myimage = new Bitmap(botonBI);
-                comidaLecc.BackgroundImage = myimage;
-            }
-
-            if (avance < 3)
-            {
-                botonBI = imagePath + "candado.PNG";
-                myimage = new Bitmap(botonBI);
-                coloresLecc.BackgroundImage = myimage;
-            }
-            else
-            {
-                botonBI = imagePath + "Básico (2)";
-                myimage = new Bitmap(botonBI);
-                coloresLecc.BackgroundImage = myimage;
-            }
-
-            if (avance < 4)
-            {
-                botonBI = imagePath + "candado.PNG";
-                myimage = new Bitmap(botonBI);
-                lugaresLecc.BackgroundImage = myimage;
-            }
-            else
-            {
-                botonBI = imagePath + "Básico (3)";
-                myimage = new Bitmap(botonBI);
-                lugaresLecc.BackgroundImage = myimage;
-            }
-
-            if (avance < 5)
-            {
-                botonBI = imagePath + "candado.PNG";
-                myimage = new Bitmap(botonBI);
-                pronombresLecc.BackgroundImage = myimage;
-            }
-            else
-            {
-                botonBI = imagePath + "Básico (4).PNG";
-                myimage = new Bitmap(botonBI);
-                pronombresLecc.BackgroundImage = myimage;
-            }
-
-            if (avance < 6)
-            {
-                botonBI = imagePath + "candado.PNG";
-                myimage = new Bitmap(botonBI);
-                verbosLecc.BackgroundImage = myimage;
-            }
-            else
-            {
-                botonBI = imagePath + "Básico (5).PNG";
-                myimage = new Bitmap(botonBI);
-                verbosLecc.BackgroundImage = myimage;
-            }
-            if (avance < 7)
-            {
-                botonBI = imagePath + "candado.PNG";
-                myimage = new Bitmap(botonBI);
-                examenlecc.BackgroundImage = myimage;
-            }
-            else
-            {
-                botonBI = imagePath + "Básico (5).PNG";
-                myimage = new Bitmap(botonBI);
-                examenlecc.BackgroundImage = myimage;
-            }
-
+            botonesLecciones();
             Menubutton_Click(sender, e);
             menu = false;
         }
@@ -859,83 +794,7 @@ namespace SignIt
             Menubutton_Click(sender, e);
             menu = false;
             signIt.SelectedTab = Diccionario;
-            if (avance < 2)
-           {
-               botonBI = imagePath + "candado.PNG";
-               myimage = new Bitmap(botonBI);
-               basicoDiccionario.BackgroundImage = myimage;
-           }
-           else
-           {
-               botonBI = imagePath + "Básico";
-               myimage = new Bitmap(botonBI);
-               basicoDiccionario.BackgroundImage = myimage;
-           }
-
-           if (avance < 3)
-           {
-               botonBI = imagePath + "candado.PNG";
-               myimage = new Bitmap(botonBI);
-               comidaDiccionario.BackgroundImage = myimage;
-           }
-           else
-           {
-                botonBI = imagePath + "Básico(1).PNG";
-                myimage = new Bitmap(botonBI);
-                comidaDiccionario.BackgroundImage = myimage;
-           }
-
-           if (avance < 4)
-           {
-               botonBI = imagePath + "candado.PNG";
-               myimage = new Bitmap(botonBI);
-               coloresDiccionario.BackgroundImage = myimage;
-           }
-           else
-           {
-                botonBI = imagePath + "Básico (2)";
-                myimage = new Bitmap(botonBI);
-                coloresDiccionario.BackgroundImage = myimage;
-            }
-
-           if (avance < 5)
-           {
-               botonBI = imagePath + "candado.PNG";
-               myimage = new Bitmap(botonBI);
-               lugaresDiccionario.BackgroundImage = myimage;
-           }
-           else
-           {
-               botonBI = imagePath + "Básico (3)";
-               myimage = new Bitmap(botonBI);
-               lugaresDiccionario.BackgroundImage = myimage;
-           }
-
-           if (avance < 6)
-           {
-               botonBI = imagePath + "candado.PNG";
-               myimage = new Bitmap(botonBI);
-               pronombresDiccionario.BackgroundImage = myimage;
-           }
-           else
-           {
-               botonBI = imagePath + "Básico (4).PNG";
-               myimage = new Bitmap(botonBI);
-               pronombresDiccionario.BackgroundImage = myimage;
-           }
-
-           if (avance < 7)
-           {
-               botonBI = imagePath + "candado.PNG";
-               myimage = new Bitmap(botonBI);
-               verbosDiccionario.BackgroundImage = myimage;
-           }
-           else
-           {
-               botonBI = imagePath + "Básico (5).PNG";
-               myimage = new Bitmap(botonBI);
-               verbosDiccionario.BackgroundImage = myimage;
-           }
+            botonesDiccionario();
         }
 
         private void MenuGamesButton_Click(object sender, EventArgs e)
@@ -975,13 +834,13 @@ namespace SignIt
         }
         private void comidaLecc_Click(object sender, EventArgs e)
         {
-            if (avance == 1)
+            if (avance == 2)
             {
-                ensañanza("comida");
+                ensañanza("Comida");
             }
-            else
+            else if (avance > 2)
             {
-                ejercicios("comida");
+                ejercicios("Comida");
             }
         }
 
@@ -989,12 +848,25 @@ namespace SignIt
         {
             continuar = true;
         }
-        private void button4_Click_1(object sender, EventArgs e)
+
+        private void ej2videoA_Click(object sender, EventArgs e)
         {
             continuar = true;
+            rta1 = true;
+        }
+        private void ej2videoB_Click(object sender, EventArgs e)
+        {
+            continuar = true;
+            rta2 = true;
+        }
+        private void ej2videoC_Click(object sender, EventArgs e)
+        {
+            continuar = true;
+            rta3 = true;
         }
 
- //Ajustes
+
+        //Ajustes
 
         private void FullScrButtonSett_Click(object sender, EventArgs e)
         {
@@ -1183,6 +1055,34 @@ namespace SignIt
         {
 
         }
+        private void ej2cont_Click(object sender, EventArgs e)
+        {
+            continuar = true;
+        }
+
+        private void rtaEj2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void ejercicio1VideoA_ClickEvent(object sender, AxWMPLib._WMPOCXEvents_ClickEvent e)
+        {
+
+        }
+
+        private void ejercicio1VideoB_ClickEvent(object sender, AxWMPLib._WMPOCXEvents_ClickEvent e)
+        {
+
+        }
+        private void ejercicio1VideoC_ClickEvent(object sender, AxWMPLib._WMPOCXEvents_ClickEvent e)
+        {
+
+        }
+
         //Botones
         private void label4_MouseDown(object sender, MouseEventArgs e)
         {
@@ -1239,8 +1139,20 @@ namespace SignIt
             ComenzarCdU.BackgroundImage = mYimage;
         }
 
-        private void ej2cont_Click(object sender, EventArgs e)
+        private void ejercicio1VideoB_Enter(object sender, EventArgs e)
         {
+
+        }
+
+        private void ej2videoB_Click_1(object sender, EventArgs e)
+        {
+            rta2 = true;
+            continuar = true;
+        }
+
+        private void ej2videoC_Click_1(object sender, EventArgs e)
+        {
+            rta3 = true;
             continuar = true;
         }
     }
