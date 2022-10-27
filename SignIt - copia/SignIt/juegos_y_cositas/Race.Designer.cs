@@ -212,7 +212,7 @@
             this.finalRaceText.BackColor = System.Drawing.Color.Transparent;
             this.finalRaceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F);
             this.finalRaceText.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.finalRaceText.Location = new System.Drawing.Point(378, 222);
+            this.finalRaceText.Location = new System.Drawing.Point(233, 225);
             this.finalRaceText.Name = "finalRaceText";
             this.finalRaceText.Size = new System.Drawing.Size(232, 44);
             this.finalRaceText.TabIndex = 0;

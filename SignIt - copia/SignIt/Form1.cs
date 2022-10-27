@@ -219,7 +219,7 @@ namespace SignIt
                     {
 
                         case 0:
-                            ej1palabra.Text = ej1palabra.Text + " " + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
+                            ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
                             ej01.Hide();
                             ej11.Hide();
                             bool rta1 = false;
@@ -381,15 +381,16 @@ namespace SignIt
 
                             if (respuesta == rtaEj2.Text)
                             {
-                                ej01.Show();
+                                ej02.Show();
+                                ej02.BringToFront();
                                 Random ram = new Random();
                                 int xp_ = ram.Next(0, 2);
                                 xpGanada += xp_;
                             }
-
-                            else
+                            else if (respuesta != rtaEj2.Text)
                             {
-                                ej11.Show();
+                                ej12.Show();
+                                ej12.BringToFront();
                             }
 
                             while (!continuar)
@@ -400,6 +401,8 @@ namespace SignIt
                             ej2player.Ctlcontrols.stop();
                             ej01.Hide();
                             ej11.Hide();
+
+                            rtaEj2.Text = "";
                             
                             continuar = false;
                             
