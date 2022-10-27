@@ -178,7 +178,7 @@ namespace SignIt
                 Random rdn = new Random();
                 int IDs_ = rdn.Next(1, 64);
 
-                if (tipo == DatabaseFunctions.GetCategoria(1, "Usuarios.accdb"))
+                if (tipo == DatabaseFunctions.GetCategoria(IDs_, "Usuarios.accdb"))
                 {
                     videos[z] = IDs_;
                     z++;
@@ -195,6 +195,7 @@ namespace SignIt
                     signIt.SelectedTab = Enseñanza;
                     EnseñanzaPlayer.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                     EnseñanzaPlayer.settings.setMode("loop" , true);
+
                     PalabraEns.Text = DatabaseFunctions.GetNameOfVideo(id, path);
                     MessageBox.Show(EnseñanzaPlayer.URL);
                     EnseñanzaPlayer.Ctlcontrols.play();
@@ -218,6 +219,8 @@ namespace SignIt
                             ejercicio1VideoA.settings.setMode("loop", true);
                             ejercicio1VideoB.settings.setMode("loop", true);
                             ejercicio1VideoC.settings.setMode("loop", true);
+                            ej01.Hide();
+                            ej11.Hide();
                             bool rta1 = false;
                             bool rta2 = false;
                             bool rta3 = false;
@@ -227,9 +230,9 @@ namespace SignIt
                             for (int o = 0; o < 2;)
                             {
                                 Random random = new Random();
-                                int id_ = random.Next(0, 63);
+                                int id_ = random.Next(1, 64);
 
-                                if (tipo == DatabaseFunctions.getString(id_, "Categoria", path))
+                                if (tipo == DatabaseFunctions.GetCategoria(id_, "Usuarios.accdb"))
                                 {
                                     if (o == 0 && id_ != id)
                                     {
@@ -256,6 +259,8 @@ namespace SignIt
                                     ejercicio1VideoA.Ctlcontrols.play();
                                     ejercicio1VideoB.Ctlcontrols.play();
                                     ejercicio1VideoC.Ctlcontrols.play();
+                                    ej01.Hide();
+                                    ej11.Hide();
 
                                     while (rta1 == false && rta2 == true && rta3 == false)
                                     {
@@ -284,6 +289,8 @@ namespace SignIt
                                     ejercicio1VideoA.Ctlcontrols.play();
                                     ejercicio1VideoB.Ctlcontrols.play();
                                     ejercicio1VideoC.Ctlcontrols.play();
+                                    ej01.Hide();
+                                    ej11.Hide();
 
                                     while (rta1 == false && rta2 == true && rta3 == false)
                                     {
@@ -348,7 +355,10 @@ namespace SignIt
                             string respuesta = DatabaseFunctions.GetNameOfVideo(id, path);
 
                             ej2player.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                            ej2player.settings.setMode("loop", true);
                             ej2player.Ctlcontrols.play();
+                            ej02.Hide();
+                            ej12.Hide();
 
                             signIt.SelectedTab = ejercicio2;
 
