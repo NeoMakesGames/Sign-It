@@ -49,7 +49,6 @@ namespace SignIt
 
             OpenFileDialog opf = new OpenFileDialog();
             axWindowsMediaPlayer1.URL = Form1.signsPath + DatabaseFunctions.GetNameOfVideo(id, Form1.path) + ".wmv";
-            MessageBox.Show(axWindowsMediaPlayer1.URL); 
             axWindowsMediaPlayer1.Ctlcontrols.play();
         }
         private void reStart()

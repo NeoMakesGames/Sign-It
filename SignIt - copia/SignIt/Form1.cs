@@ -334,7 +334,6 @@ namespace SignIt
                 if (id != 0)
                 {
                     EnseñanzaPlayer.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                    MessageBox.Show(EnseñanzaPlayer.URL);
                     EnseñanzaPlayer.Ctlcontrols.play();
                     PalabraEns.Text = DatabaseFunctions.GetNameOfVideo(id, path);
                     while (!continuar)
@@ -383,7 +382,6 @@ namespace SignIt
                     EnseñanzaPlayer.settings.setMode("loop" , true);
 
                     PalabraEns.Text = DatabaseFunctions.GetNameOfVideo(id, path);
-                    MessageBox.Show(EnseñanzaPlayer.URL);
                     EnseñanzaPlayer.Ctlcontrols.play();
 
                     while (!continuar)
@@ -563,7 +561,6 @@ namespace SignIt
                             string respuesta = DatabaseFunctions.GetNameOfVideo(id, path);
 
                             ej2player.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                            MessageBox.Show(ej2player.URL);
                             ej2player.settings.setMode("loop", true);
                             ej2player.Ctlcontrols.play();
                             ej02.Hide();

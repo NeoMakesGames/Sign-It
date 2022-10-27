@@ -494,7 +494,7 @@
             this.examenlecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.examenlecc.FlatAppearance.BorderSize = 0;
             this.examenlecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.examenlecc.Location = new System.Drawing.Point(478, 365);
+            this.examenlecc.Location = new System.Drawing.Point(537, 338);
             this.examenlecc.Name = "examenlecc";
             this.examenlecc.Size = new System.Drawing.Size(292, 130);
             this.examenlecc.TabIndex = 7;
@@ -521,7 +521,7 @@
             this.pronombresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pronombresLecc.FlatAppearance.BorderSize = 0;
             this.pronombresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pronombresLecc.Location = new System.Drawing.Point(526, 583);
+            this.pronombresLecc.Location = new System.Drawing.Point(585, 583);
             this.pronombresLecc.Name = "pronombresLecc";
             this.pronombresLecc.Size = new System.Drawing.Size(196, 83);
             this.pronombresLecc.TabIndex = 5;
@@ -535,7 +535,7 @@
             this.lugaresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lugaresLecc.FlatAppearance.BorderSize = 0;
             this.lugaresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lugaresLecc.Location = new System.Drawing.Point(900, 583);
+            this.lugaresLecc.Location = new System.Drawing.Point(1008, 583);
             this.lugaresLecc.Name = "lugaresLecc";
             this.lugaresLecc.Size = new System.Drawing.Size(196, 83);
             this.lugaresLecc.TabIndex = 4;
@@ -549,7 +549,7 @@
             this.coloresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.coloresLecc.FlatAppearance.BorderSize = 0;
             this.coloresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.coloresLecc.Location = new System.Drawing.Point(900, 196);
+            this.coloresLecc.Location = new System.Drawing.Point(1008, 111);
             this.coloresLecc.Name = "coloresLecc";
             this.coloresLecc.Size = new System.Drawing.Size(196, 83);
             this.coloresLecc.TabIndex = 2;
@@ -563,7 +563,7 @@
             this.comidaLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.comidaLecc.FlatAppearance.BorderSize = 0;
             this.comidaLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comidaLecc.Location = new System.Drawing.Point(526, 196);
+            this.comidaLecc.Location = new System.Drawing.Point(585, 111);
             this.comidaLecc.Name = "comidaLecc";
             this.comidaLecc.Size = new System.Drawing.Size(196, 83);
             this.comidaLecc.TabIndex = 1;
@@ -577,7 +577,7 @@
             this.basicoLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.basicoLecc.FlatAppearance.BorderSize = 0;
             this.basicoLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.basicoLecc.Location = new System.Drawing.Point(134, 196);
+            this.basicoLecc.Location = new System.Drawing.Point(134, 111);
             this.basicoLecc.Name = "basicoLecc";
             this.basicoLecc.Size = new System.Drawing.Size(196, 83);
             this.basicoLecc.TabIndex = 0;
