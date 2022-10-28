@@ -112,6 +112,7 @@
             this.juegos = new System.Windows.Forms.TabPage();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.userNameSett2 = new System.Windows.Forms.Label();
             this.experienciaSett2 = new System.Windows.Forms.Label();
@@ -194,10 +195,10 @@
             this.signIt.Controls.Add(this.ejercicio1);
             this.signIt.Controls.Add(this.ejercicio2);
             this.signIt.Controls.Add(this.ejercicio3);
-            this.signIt.Location = new System.Drawing.Point(-5, 0);
+            this.signIt.Location = new System.Drawing.Point(-9, -22);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
-            this.signIt.Size = new System.Drawing.Size(1366, 788);
+            this.signIt.Size = new System.Drawing.Size(1400, 800);
             this.signIt.TabIndex = 0;
             // 
             // IdS
@@ -615,7 +616,7 @@
             this.Diccionario.Controls.Add(this.DBeta);
             this.Diccionario.Location = new System.Drawing.Point(4, 22);
             this.Diccionario.Name = "Diccionario";
-            this.Diccionario.Size = new System.Drawing.Size(1358, 762);
+            this.Diccionario.Size = new System.Drawing.Size(1392, 774);
             this.Diccionario.TabIndex = 4;
             this.Diccionario.Text = "Diccionario";
             // 
@@ -630,10 +631,10 @@
             this.diccionarioBeta.Controls.Add(this.dB5);
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
-            this.diccionarioBeta.Location = new System.Drawing.Point(-4, 0);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-4, -23);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
-            this.diccionarioBeta.Size = new System.Drawing.Size(1366, 788);
+            this.diccionarioBeta.Size = new System.Drawing.Size(1376, 788);
             this.diccionarioBeta.TabIndex = 8;
             // 
             // dB0
@@ -652,7 +653,7 @@
             this.dB0.Location = new System.Drawing.Point(4, 22);
             this.dB0.Name = "dB0";
             this.dB0.Padding = new System.Windows.Forms.Padding(3);
-            this.dB0.Size = new System.Drawing.Size(1358, 762);
+            this.dB0.Size = new System.Drawing.Size(1368, 762);
             this.dB0.TabIndex = 0;
             this.dB0.Text = "dB0";
             this.dB0.Click += new System.EventHandler(this.tabPage1_Click);
@@ -1042,8 +1043,10 @@
             // dBNum6
             // 
             this.dBNum6.BackColor = System.Drawing.Color.Transparent;
-            this.dBNum6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNum6.BackgroundImage = global::SignIt.Properties.Resources._6;
+            this.dBNum6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.dBNum6.FlatAppearance.BorderSize = 0;
+            this.dBNum6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum6.Location = new System.Drawing.Point(892, 316);
             this.dBNum6.Name = "dBNum6";
             this.dBNum6.Size = new System.Drawing.Size(140, 140);
@@ -1068,26 +1071,29 @@
             // dBNum9
             // 
             this.dBNum9.BackColor = System.Drawing.Color.Transparent;
+            this.dBNum9.BackgroundImage = global::SignIt.Properties.Resources._9;
             this.dBNum9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum9.FlatAppearance.BorderSize = 0;
+            this.dBNum9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum9.Location = new System.Drawing.Point(756, 517);
             this.dBNum9.Name = "dBNum9";
             this.dBNum9.Size = new System.Drawing.Size(140, 140);
             this.dBNum9.TabIndex = 7;
-            this.dBNum9.Text = "9";
             this.dBNum9.UseVisualStyleBackColor = false;
             this.dBNum9.Click += new System.EventHandler(this.dBNum9_Click);
             // 
             // dBNum10
             // 
             this.dBNum10.BackColor = System.Drawing.Color.Transparent;
+            this.dBNum10.BackgroundImage = global::SignIt.Properties.Resources._10;
             this.dBNum10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNum10.Cursor = System.Windows.Forms.Cursors.Default;
             this.dBNum10.FlatAppearance.BorderSize = 0;
+            this.dBNum10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum10.Location = new System.Drawing.Point(1031, 517);
             this.dBNum10.Name = "dBNum10";
             this.dBNum10.Size = new System.Drawing.Size(140, 140);
             this.dBNum10.TabIndex = 6;
-            this.dBNum10.Text = "10";
             this.dBNum10.UseVisualStyleBackColor = false;
             this.dBNum10.Click += new System.EventHandler(this.dBNum10_Click);
             // 
@@ -1122,26 +1128,28 @@
             // dBNum7
             // 
             this.dBNum7.BackColor = System.Drawing.Color.Transparent;
+            this.dBNum7.BackgroundImage = global::SignIt.Properties.Resources._7;
             this.dBNum7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum7.FlatAppearance.BorderSize = 0;
+            this.dBNum7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum7.Location = new System.Drawing.Point(200, 517);
             this.dBNum7.Name = "dBNum7";
             this.dBNum7.Size = new System.Drawing.Size(140, 140);
             this.dBNum7.TabIndex = 3;
-            this.dBNum7.Text = "7";
             this.dBNum7.UseVisualStyleBackColor = false;
             this.dBNum7.Click += new System.EventHandler(this.dBNum7_Click);
             // 
             // dBNum8
             // 
             this.dBNum8.BackColor = System.Drawing.Color.Transparent;
+            this.dBNum8.BackgroundImage = global::SignIt.Properties.Resources._8;
             this.dBNum8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum8.FlatAppearance.BorderSize = 0;
+            this.dBNum8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum8.Location = new System.Drawing.Point(478, 517);
             this.dBNum8.Name = "dBNum8";
             this.dBNum8.Size = new System.Drawing.Size(140, 140);
             this.dBNum8.TabIndex = 2;
-            this.dBNum8.Text = "8";
             this.dBNum8.UseVisualStyleBackColor = false;
             this.dBNum8.Click += new System.EventHandler(this.dBNum8_Click);
             // 
@@ -1244,6 +1252,7 @@
             this.juegos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.juegos.Controls.Add(this.MemotestGamesButton);
             this.juegos.Controls.Add(this.RaceGamesButton);
+            this.juegos.Controls.Add(this.race1);
             this.juegos.Location = new System.Drawing.Point(4, 22);
             this.juegos.Name = "juegos";
             this.juegos.Size = new System.Drawing.Size(1358, 762);
@@ -1277,6 +1286,16 @@
             this.RaceGamesButton.TabIndex = 0;
             this.RaceGamesButton.UseVisualStyleBackColor = false;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
+            // 
+            // race1
+            // 
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(-4, -18);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1366, 788);
+            this.race1.TabIndex = 2;
+            this.race1.Visible = false;
             // 
             // Ajustes
             // 
@@ -1846,7 +1865,6 @@
         private System.Windows.Forms.Label label2IdS;
         private System.Windows.Forms.Button MemotestGamesButton;
         private System.Windows.Forms.Button RaceGamesButton;
-        private Race race1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TabPage Home;
@@ -1941,6 +1959,7 @@
         private Ej0 ej01;
         private Ej1 ej12;
         private Ej0 ej02;
+        private Race race1;
     }
 }
 

@@ -397,7 +397,6 @@ namespace SignIt
                     EnseñanzaPlayer.settings.setMode("loop" , true);
 
                     PalabraEns.Text = DatabaseFunctions.GetNameOfVideo(id, path);
-                    MessageBox.Show(EnseñanzaPlayer.URL);
                     EnseñanzaPlayer.Ctlcontrols.play();
 
                     while (!continuar)
@@ -1012,6 +1011,7 @@ namespace SignIt
             diccionarioBeta.SelectedTab = dBNros;
             myimage = new Bitmap(imagePath + "fndb.PNG");
             DBeta.BackgroundImage = myimage;
+            desaparicionDelMenu();
         }
 
         //Números
