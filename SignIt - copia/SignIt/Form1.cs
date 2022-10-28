@@ -373,7 +373,7 @@ namespace SignIt
                 Random rdn = new Random();
                 int IDs_ = rdn.Next(1, 64);
 
-                if (tipo == DatabaseFunctions.GetCategoria(IDs_, "Usuarios.accdb"))
+                if (tipo == DatabaseFunctions.GetCategoria(IDs_, "Usuarios.accdb") && IDs_ != 0)
                 {
                     videos[z] = IDs_;
                     z++;
@@ -385,6 +385,8 @@ namespace SignIt
 
             foreach (int id in videos)
             {
+                ej01.Hide();
+                ej11.Hide();
                 ej02.Hide();
                 ej12.Hide();
                 ej2player.settings.setMode("loop", true);
@@ -415,42 +417,28 @@ namespace SignIt
                         case 0:
                             ej1palabra.Text = "¿Cual seña corresponde a la palabra: ";
                             ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
-                            ej01.Hide();
-                            ej11.Hide();
-                            int id_ = id;
-                            int a = 0;
-                            int b = 0;
-                            for (int o = 0; o < 2;)
+                            int b = 1;
+                            int a = 1;
+                            for (int o = 0; o > 2;)
                             {
-
-                                if (tipo == DatabaseFunctions.GetCategoria(id_, "Usuarios.accdb"))
+                                int ids = rdn.Next(1, 64);
+                                if (tipo == DatabaseFunctions.GetCategoria(ids, "Usuarios.accdb") && ids != id && o == 0)
                                 {
-                                    if (o == 0 && id_ != id && id_ <= 61)
-                                    {
-                                        a = id_ + 3;
-                                    }
-                                    else if (o == 0 && id_ != id && id_ > 6)
-                                    {
-                                        a = id_ - 6;
-                                    }
-
-                                    if (o == 1 && id_ != id && id_ != a && id_ > 3)
-                                    {
-                                        b = id_ - 3;
-                                    }
-                                    else if (o == 1 && id_ != id && id_ < 58)
-                                    {
-                                        b = id_ + 6;
-                                    }
-
+                                    a = ids;
+                                    z++;
+                                    o++;
+                                }
+                                if (tipo == DatabaseFunctions.GetCategoria(ids, "Usuarios.accdb") && ids != id && o == 1)
+                                {
+                                    b = ids;
                                     z++;
                                     o++;
                                 }
                             }
                             Random rm = new Random();
                             int f = rm.Next(0, 2);
-                            MessageBox.Show(Convert.ToString(a));
-                            MessageBox.Show(Convert.ToString(b));
+                            a = rdn.Next(1, 64);
+                            b = rdn.Next(1, 64);
                             switch (f)
                             {
                                 
@@ -464,8 +452,8 @@ namespace SignIt
                                     ejercicio1VideoA.Ctlcontrols.play();
                                     ejercicio1VideoB.Ctlcontrols.play();
                                     ejercicio1VideoC.Ctlcontrols.play();
-                                    ej01.Hide();
-                                    ej11.Hide();
+                                    ej02.Hide();
+                                    ej12.Hide();
                                     signIt.SelectedTab = ejercicio1;
                                     while (!continuar)
                                     {
@@ -503,8 +491,8 @@ namespace SignIt
                                     ejercicio1VideoA.Ctlcontrols.play();
                                     ejercicio1VideoB.Ctlcontrols.play();
                                     ejercicio1VideoC.Ctlcontrols.play();
-                                    ej01.Hide();
-                                    ej11.Hide();
+                                    ej02.Hide();
+                                    ej12.Hide();
                                     signIt.SelectedTab = ejercicio1;
                                     while (!continuar)
                                     {
@@ -574,8 +562,8 @@ namespace SignIt
                             {
                                 await Task.Delay(250);
                             }
-                            ej01.Hide();
-                            ej11.Hide();
+                            ej02.Hide();
+                            ej12.Hide();
                             continuar = false;
 
                             break;
@@ -613,8 +601,8 @@ namespace SignIt
                             {
                                 await Task.Delay(250);
                             }
-                            ej01.Hide();
-                            ej11.Hide();
+                            ej02.Hide();
+                            ej12.Hide();
 
                             rtaEj2.Text = "";
                             
@@ -654,8 +642,8 @@ namespace SignIt
             signIt.SelectedTab = IdS;
             label1CdU.Hide();
             label2IdS.Hide();
-            ej01.Hide();
-            ej11.Hide();
+            ej02.Hide();
+            ej12.Hide();
             DBeta.SendToBack();
         }
 

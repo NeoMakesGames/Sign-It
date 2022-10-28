@@ -1455,7 +1455,7 @@
             // 
             this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
             this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej11.Location = new System.Drawing.Point(-15, 577);
+            this.ej11.Location = new System.Drawing.Point(-15, 550);
             this.ej11.Name = "ej11";
             this.ej11.Size = new System.Drawing.Size(1366, 150);
             this.ej11.TabIndex = 10;
@@ -1464,7 +1464,7 @@
             // 
             this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
             this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej01.Location = new System.Drawing.Point(-15, 577);
+            this.ej01.Location = new System.Drawing.Point(-15, 550);
             this.ej01.Name = "ej01";
             this.ej01.Size = new System.Drawing.Size(1366, 150);
             this.ej01.TabIndex = 9;
@@ -1475,9 +1475,9 @@
             this.panel5.Controls.Add(this.ej2videoC);
             this.panel5.Controls.Add(this.ej2videoB);
             this.panel5.Controls.Add(this.ej2videoA);
-            this.panel5.Location = new System.Drawing.Point(48, 436);
+            this.panel5.Location = new System.Drawing.Point(48, 424);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1253, 55);
+            this.panel5.Size = new System.Drawing.Size(1253, 67);
             this.panel5.TabIndex = 8;
             // 
             // ej2videoC
@@ -1572,7 +1572,7 @@
             // 
             this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
             this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej12.Location = new System.Drawing.Point(-15, 577);
+            this.ej12.Location = new System.Drawing.Point(-15, 550);
             this.ej12.Name = "ej12";
             this.ej12.Size = new System.Drawing.Size(1366, 150);
             this.ej12.TabIndex = 8;
@@ -1581,7 +1581,7 @@
             // 
             this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
             this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej02.Location = new System.Drawing.Point(-15, 577);
+            this.ej02.Location = new System.Drawing.Point(-15, 550);
             this.ej02.Name = "ej02";
             this.ej02.Size = new System.Drawing.Size(1366, 150);
             this.ej02.TabIndex = 7;
@@ -1856,7 +1856,6 @@
         private System.Windows.Forms.Button sliderHomeDer;
         private System.Windows.Forms.Button sliderHomeIz;
         private System.Windows.Forms.Panel sliderHome;
-        private tuto tuto1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button examenlecc;
         private System.Windows.Forms.Button verbosLecc;
@@ -1924,10 +1923,6 @@
         private System.Windows.Forms.Label palabraDB;
         private System.Windows.Forms.Button exitDB;
         private System.Windows.Forms.Panel panel7;
-        private Ej1 ej11;
-        private Ej0 ej01;
-        private Ej1 ej12;
-        private Ej0 ej02;
         private System.Windows.Forms.Label labelDBNum0;
         private System.Windows.Forms.Label labelDBNum1;
         private System.Windows.Forms.Label labelDBNum5;
@@ -1942,6 +1937,10 @@
         private System.Windows.Forms.Panel panel6;
         private AxWMPLib.AxWindowsMediaPlayer dbplayer;
         private System.Windows.Forms.Label label2;
+        private Ej1 ej11;
+        private Ej0 ej01;
+        private Ej1 ej12;
+        private Ej0 ej02;
     }
 }
 
