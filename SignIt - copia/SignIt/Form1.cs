@@ -1032,6 +1032,7 @@ namespace SignIt
             diccionarioBeta.SelectedTab = dB0;
             DBeta.SendToBack();
             dbplayer.Ctlcontrols.stop();
+            aparicionDelMenu();
         }
         private void dBNum0_Click(object sender, EventArgs e)
         {

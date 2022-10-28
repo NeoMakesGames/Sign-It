@@ -326,6 +326,10 @@
     <None Include="Resources\Botón1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\0.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\3.png" />
     <Content Include="Resources\Botón %282%29.png" />
     <Content Include="Resources\Botón %283%29.png" />
     <None Include="Resources\Rectangle 177.png" />
