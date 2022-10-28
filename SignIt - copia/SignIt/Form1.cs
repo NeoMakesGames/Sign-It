@@ -81,7 +81,7 @@ namespace SignIt
             Image yepMyImage;
             if (avance < 1)
             {
-                botonBI = imagePath + "candado.PNG";
+                botonBI = imagePath + "BásicoX.PNG";
                 yepMyImage = new Bitmap(botonBI);
                 basicoLecc.BackgroundImage = yepMyImage;
             }
@@ -94,7 +94,7 @@ namespace SignIt
 
             if (avance < 2)
             {
-                botonBI = imagePath + "candado.PNG";
+                botonBI = imagePath + "ComidaX.PNG";
                 yepMyImage = new Bitmap(botonBI);
                 comidaLecc.BackgroundImage = yepMyImage;
             }
@@ -107,7 +107,7 @@ namespace SignIt
 
             if (avance < 3)
             {
-                botonBI = imagePath + "candado.PNG";
+                botonBI = imagePath + "ColoresX.PNG";
                 yepMyImage = new Bitmap(botonBI);
                 coloresLecc.BackgroundImage = yepMyImage;
             }
@@ -120,7 +120,7 @@ namespace SignIt
 
             if (avance < 4)
             {
-                botonBI = imagePath + "candado.PNG";
+                botonBI = imagePath + "LugaresX.PNG";
                 yepMyImage = new Bitmap(botonBI);
                 lugaresLecc.BackgroundImage = yepMyImage;
             }
@@ -133,7 +133,7 @@ namespace SignIt
 
             if (avance < 5)
             {
-                botonBI = imagePath + "candado.PNG";
+                botonBI = imagePath + "PronombresX.PNG";
                 yepMyImage = new Bitmap(botonBI);
                 pronombresLecc.BackgroundImage = yepMyImage;
             }
@@ -146,7 +146,7 @@ namespace SignIt
 
             if (avance < 6)
             {
-                botonBI = imagePath + "candado.PNG";
+                botonBI = imagePath + "VerbosX.PNG";
                 myimage = new Bitmap(botonBI);
                 verbosLecc.BackgroundImage = myimage;
             }
@@ -158,7 +158,7 @@ namespace SignIt
             }
             if (avance < 7)
             {
-                botonBI = imagePath + "candado.PNG";
+                botonBI = imagePath + "ExámenX.PNG";
                 yepMyImage = new Bitmap(botonBI);
                 examenlecc.BackgroundImage = yepMyImage;
             }
@@ -175,7 +175,7 @@ namespace SignIt
             Image notmyimage;
             if (avance < 2)
             {
-                botonBI = imagePath + "candado.PNG";
+                botonBI = imagePath + "BásicoX.PNG";
                 notmyimage = new Bitmap(botonBI);
                 basicoDiccionario.BackgroundImage = notmyimage;
             }
@@ -188,7 +188,7 @@ namespace SignIt
 
             if (avance < 3)
             {
-                botonBI = imagePath + "candado.PNG";
+                botonBI = imagePath + "ComidaX.PNG";
                 notmyimage = new Bitmap(botonBI);
                 comidaDiccionario.BackgroundImage = notmyimage;
             }
@@ -201,7 +201,7 @@ namespace SignIt
 
             if (avance < 4)
             {
-                botonBI = imagePath + "candado.PNG";
+                botonBI = imagePath + "ColoresX.PNG";
                 notmyimage = new Bitmap(botonBI);
                 coloresDiccionario.BackgroundImage = notmyimage;
             }
@@ -213,7 +213,7 @@ namespace SignIt
 
             if (avance < 5)
             {
-                botonBI = imagePath + "candado.PNG";
+                botonBI = imagePath + "LugaresX.PNG";
                 notmyimage = new Bitmap(botonBI);
                 lugaresDiccionario.BackgroundImage = notmyimage;
             }
@@ -225,7 +225,7 @@ namespace SignIt
 
             if (avance < 6)
             {
-                botonBI = imagePath + "candado.PNG";
+                botonBI = imagePath + "PronombresX.PNG";
                 notmyimage = new Bitmap(botonBI);
                 pronombresDiccionario.BackgroundImage = notmyimage;
             }
@@ -238,7 +238,7 @@ namespace SignIt
 
             if (avance < 7)
             {
-                botonBI = imagePath + "candado.PNG";
+                botonBI = imagePath + "VerbosX.PNG";
                 notmyimage = new Bitmap(botonBI);
                 verbosDiccionario.BackgroundImage = notmyimage;
             }
@@ -384,6 +384,9 @@ namespace SignIt
 
             foreach (int id in videos)
             {
+                ej02.Hide();
+                ej12.Hide();
+                ej2player.settings.setMode("loop", true);
                 if (z < 2)
                 {
                     signIt.SelectedTab = Enseñanza;
@@ -391,6 +394,7 @@ namespace SignIt
                     EnseñanzaPlayer.settings.setMode("loop" , true);
 
                     PalabraEns.Text = DatabaseFunctions.GetNameOfVideo(id, path);
+                    MessageBox.Show(EnseñanzaPlayer.URL);
                     EnseñanzaPlayer.Ctlcontrols.play();
 
                     while (!continuar)
@@ -412,24 +416,30 @@ namespace SignIt
                             ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
                             ej01.Hide();
                             ej11.Hide();
+                            int id_ = id;
                             int a = 0;
                             int b = 0;
-                            signIt.SelectedTab = ejercicio1;
                             for (int o = 0; o < 2;)
                             {
-                                Random random = new Random();
-                                int id_ = random.Next(1, 64);
 
                                 if (tipo == DatabaseFunctions.GetCategoria(id_, "Usuarios.accdb"))
                                 {
-                                    if (o == 0 && id_ != id)
+                                    if (o == 0 && id_ != id && id_ <= 61)
                                     {
-                                        a = id_;
+                                        a = id_ + 3;
+                                    }
+                                    else if (o == 0 && id_ != id && id_ > 6)
+                                    {
+                                        a = id_ - 6;
                                     }
 
-                                    if (o == 1 && id_ != id && id_ != a)
+                                    if (o == 1 && id_ != id && id_ != a && id_ > 3)
                                     {
-                                        b = id_;
+                                        b = id_ - 3;
+                                    }
+                                    else if (o == 1 && id_ != id && id_ < 58)
+                                    {
+                                        b = id_ + 6;
                                     }
 
                                     z++;
@@ -438,8 +448,11 @@ namespace SignIt
                             }
                             Random rm = new Random();
                             int f = rm.Next(0, 2);
+                            MessageBox.Show(Convert.ToString(a));
+                            MessageBox.Show(Convert.ToString(b));
                             switch (f)
                             {
+                                
                                 case 0:
                                     ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                                     ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
@@ -452,7 +465,7 @@ namespace SignIt
                                     ejercicio1VideoC.Ctlcontrols.play();
                                     ej01.Hide();
                                     ej11.Hide();
-
+                                    signIt.SelectedTab = ejercicio1;
                                     while (!continuar)
                                     {
                                         await Task.Delay(250);
@@ -491,7 +504,7 @@ namespace SignIt
                                     ejercicio1VideoC.Ctlcontrols.play();
                                     ej01.Hide();
                                     ej11.Hide();
-
+                                    signIt.SelectedTab = ejercicio1;
                                     while (!continuar)
                                     {
                                         await Task.Delay(250);
@@ -527,7 +540,7 @@ namespace SignIt
                                     ejercicio1VideoA.Ctlcontrols.play();
                                     ejercicio1VideoB.Ctlcontrols.play();
                                     ejercicio1VideoC.Ctlcontrols.play();
-
+                                    signIt.SelectedTab = ejercicio1;
                                     while (!continuar)
                                     {
                                         await Task.Delay(250);
@@ -570,11 +583,8 @@ namespace SignIt
                             string respuesta = DatabaseFunctions.GetNameOfVideo(id, path);
 
                             ej2player.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                            ej2player.settings.setMode("loop", true);
                             ej2player.Ctlcontrols.play();
-                            ej02.Hide();
-                            ej12.Hide();
-
+                            
                             signIt.SelectedTab = ejercicio2;
 
                             while (!continuar)
@@ -602,8 +612,6 @@ namespace SignIt
                             {
                                 await Task.Delay(250);
                             }
-
-                            ej2player.Ctlcontrols.stop();
                             ej01.Hide();
                             ej11.Hide();
 
@@ -621,9 +629,12 @@ namespace SignIt
                 }
                 z++;
             }
+            ej2player.Ctlcontrols.stop();
             botonesLecciones();
             aparicionDelMenu();
             signIt.SelectedTab = LeccionesMenu;
+            DatabaseFunctions.addXP(DatabaseFunctions.currentUser, xpGanada, path);
+            experiencia();
         }
 
         private void ganar_0_perder(UserControl uc)
@@ -657,9 +668,13 @@ namespace SignIt
                 experiencia();
 
                 timer1.Enabled = true;
+
                 UserHome.Text = (DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path));
-                signIt.SelectedTab = Home;
+                
                 aparicionDelMenu();
+                
+                signIt.SelectedTab = Home;
+            
             }
             else
             {

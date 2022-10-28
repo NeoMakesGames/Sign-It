@@ -79,6 +79,17 @@
             this.dB5 = new System.Windows.Forms.TabPage();
             this.dBAbecedario = new System.Windows.Forms.TabPage();
             this.dBNros = new System.Windows.Forms.TabPage();
+            this.labelDBNum9 = new System.Windows.Forms.Label();
+            this.labelDBNum10 = new System.Windows.Forms.Label();
+            this.labelDBNum5 = new System.Windows.Forms.Label();
+            this.labelDBNum6 = new System.Windows.Forms.Label();
+            this.labelDBNum7 = new System.Windows.Forms.Label();
+            this.labelDBNum8 = new System.Windows.Forms.Label();
+            this.labelDBNum4 = new System.Windows.Forms.Label();
+            this.labelDBNum3 = new System.Windows.Forms.Label();
+            this.labelDBNum2 = new System.Windows.Forms.Label();
+            this.labelDBNum1 = new System.Windows.Forms.Label();
+            this.labelDBNum0 = new System.Windows.Forms.Label();
             this.dBNum0 = new System.Windows.Forms.Button();
             this.NumBack = new System.Windows.Forms.Button();
             this.dBNum6 = new System.Windows.Forms.Button();
@@ -113,6 +124,8 @@
             this.PalabraEns = new System.Windows.Forms.Label();
             this.contEnseñanza = new System.Windows.Forms.Button();
             this.ejercicio1 = new System.Windows.Forms.TabPage();
+            this.ej11 = new SignIt.Ej1();
+            this.ej01 = new SignIt.Ej0();
             this.panel5 = new System.Windows.Forms.Panel();
             this.ej2videoC = new System.Windows.Forms.Button();
             this.ej2videoB = new System.Windows.Forms.Button();
@@ -122,6 +135,8 @@
             this.ejercicio1VideoA = new AxWMPLib.AxWindowsMediaPlayer();
             this.ej1palabra = new System.Windows.Forms.Label();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
+            this.ej12 = new SignIt.Ej1();
+            this.ej02 = new SignIt.Ej0();
             this.panel4 = new System.Windows.Forms.Panel();
             this.rtaEj2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -137,21 +152,6 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.ej11 = new SignIt.Ej1();
-            this.ej01 = new SignIt.Ej0();
-            this.ej12 = new SignIt.Ej1();
-            this.ej02 = new SignIt.Ej0();
-            this.labelDBNum0 = new System.Windows.Forms.Label();
-            this.labelDBNum1 = new System.Windows.Forms.Label();
-            this.labelDBNum2 = new System.Windows.Forms.Label();
-            this.labelDBNum3 = new System.Windows.Forms.Label();
-            this.labelDBNum4 = new System.Windows.Forms.Label();
-            this.labelDBNum8 = new System.Windows.Forms.Label();
-            this.labelDBNum7 = new System.Windows.Forms.Label();
-            this.labelDBNum6 = new System.Windows.Forms.Label();
-            this.labelDBNum5 = new System.Windows.Forms.Label();
-            this.labelDBNum9 = new System.Windows.Forms.Label();
-            this.labelDBNum10 = new System.Windows.Forms.Label();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -626,7 +626,7 @@
             this.diccionarioBeta.Controls.Add(this.dB5);
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
-            this.diccionarioBeta.Location = new System.Drawing.Point(-4, 0);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-4, 772);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
             this.diccionarioBeta.Size = new System.Drawing.Size(1366, 788);
@@ -866,6 +866,130 @@
             this.dBNros.TabIndex = 2;
             this.dBNros.Text = "dbNros";
             this.dBNros.Click += new System.EventHandler(this.dBNros_Click);
+            // 
+            // labelDBNum9
+            // 
+            this.labelDBNum9.AutoSize = true;
+            this.labelDBNum9.BackColor = System.Drawing.Color.Transparent;
+            this.labelDBNum9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.labelDBNum9.Location = new System.Drawing.Point(899, 669);
+            this.labelDBNum9.Name = "labelDBNum9";
+            this.labelDBNum9.Size = new System.Drawing.Size(29, 31);
+            this.labelDBNum9.TabIndex = 22;
+            this.labelDBNum9.Text = "9";
+            // 
+            // labelDBNum10
+            // 
+            this.labelDBNum10.AutoSize = true;
+            this.labelDBNum10.BackColor = System.Drawing.Color.Transparent;
+            this.labelDBNum10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.labelDBNum10.Location = new System.Drawing.Point(1179, 665);
+            this.labelDBNum10.Name = "labelDBNum10";
+            this.labelDBNum10.Size = new System.Drawing.Size(44, 31);
+            this.labelDBNum10.TabIndex = 21;
+            this.labelDBNum10.Text = "10";
+            // 
+            // labelDBNum5
+            // 
+            this.labelDBNum5.AutoSize = true;
+            this.labelDBNum5.BackColor = System.Drawing.Color.Transparent;
+            this.labelDBNum5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.labelDBNum5.Location = new System.Drawing.Point(773, 464);
+            this.labelDBNum5.Name = "labelDBNum5";
+            this.labelDBNum5.Size = new System.Drawing.Size(29, 31);
+            this.labelDBNum5.TabIndex = 20;
+            this.labelDBNum5.Text = "5";
+            // 
+            // labelDBNum6
+            // 
+            this.labelDBNum6.AutoSize = true;
+            this.labelDBNum6.BackColor = System.Drawing.Color.Transparent;
+            this.labelDBNum6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.labelDBNum6.Location = new System.Drawing.Point(1040, 464);
+            this.labelDBNum6.Name = "labelDBNum6";
+            this.labelDBNum6.Size = new System.Drawing.Size(29, 31);
+            this.labelDBNum6.TabIndex = 19;
+            this.labelDBNum6.Text = "6";
+            // 
+            // labelDBNum7
+            // 
+            this.labelDBNum7.AutoSize = true;
+            this.labelDBNum7.BackColor = System.Drawing.Color.Transparent;
+            this.labelDBNum7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.labelDBNum7.Location = new System.Drawing.Point(339, 669);
+            this.labelDBNum7.Name = "labelDBNum7";
+            this.labelDBNum7.Size = new System.Drawing.Size(29, 31);
+            this.labelDBNum7.TabIndex = 18;
+            this.labelDBNum7.Text = "7";
+            this.labelDBNum7.Click += new System.EventHandler(this.label3_Click_1);
+            // 
+            // labelDBNum8
+            // 
+            this.labelDBNum8.AutoSize = true;
+            this.labelDBNum8.BackColor = System.Drawing.Color.Transparent;
+            this.labelDBNum8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.labelDBNum8.Location = new System.Drawing.Point(623, 665);
+            this.labelDBNum8.Name = "labelDBNum8";
+            this.labelDBNum8.Size = new System.Drawing.Size(29, 31);
+            this.labelDBNum8.TabIndex = 17;
+            this.labelDBNum8.Text = "8";
+            this.labelDBNum8.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // labelDBNum4
+            // 
+            this.labelDBNum4.AutoSize = true;
+            this.labelDBNum4.BackColor = System.Drawing.Color.Transparent;
+            this.labelDBNum4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.labelDBNum4.Location = new System.Drawing.Point(485, 469);
+            this.labelDBNum4.Name = "labelDBNum4";
+            this.labelDBNum4.Size = new System.Drawing.Size(29, 31);
+            this.labelDBNum4.TabIndex = 16;
+            this.labelDBNum4.Text = "4";
+            // 
+            // labelDBNum3
+            // 
+            this.labelDBNum3.AutoSize = true;
+            this.labelDBNum3.BackColor = System.Drawing.Color.Transparent;
+            this.labelDBNum3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.labelDBNum3.Location = new System.Drawing.Point(1179, 252);
+            this.labelDBNum3.Name = "labelDBNum3";
+            this.labelDBNum3.Size = new System.Drawing.Size(29, 31);
+            this.labelDBNum3.TabIndex = 15;
+            this.labelDBNum3.Text = "3";
+            // 
+            // labelDBNum2
+            // 
+            this.labelDBNum2.AutoSize = true;
+            this.labelDBNum2.BackColor = System.Drawing.Color.Transparent;
+            this.labelDBNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.labelDBNum2.Location = new System.Drawing.Point(905, 252);
+            this.labelDBNum2.Name = "labelDBNum2";
+            this.labelDBNum2.Size = new System.Drawing.Size(29, 31);
+            this.labelDBNum2.TabIndex = 14;
+            this.labelDBNum2.Text = "2";
+            // 
+            // labelDBNum1
+            // 
+            this.labelDBNum1.AutoSize = true;
+            this.labelDBNum1.BackColor = System.Drawing.Color.Transparent;
+            this.labelDBNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.labelDBNum1.Location = new System.Drawing.Point(627, 254);
+            this.labelDBNum1.Name = "labelDBNum1";
+            this.labelDBNum1.Size = new System.Drawing.Size(29, 31);
+            this.labelDBNum1.TabIndex = 13;
+            this.labelDBNum1.Text = "1";
+            // 
+            // labelDBNum0
+            // 
+            this.labelDBNum0.AutoSize = true;
+            this.labelDBNum0.BackColor = System.Drawing.Color.Transparent;
+            this.labelDBNum0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.labelDBNum0.Location = new System.Drawing.Point(349, 254);
+            this.labelDBNum0.Name = "labelDBNum0";
+            this.labelDBNum0.Size = new System.Drawing.Size(29, 31);
+            this.labelDBNum0.TabIndex = 12;
+            this.labelDBNum0.Text = "0";
+            this.labelDBNum0.Click += new System.EventHandler(this.labelDBNum1_Click);
             // 
             // dBNum0
             // 
@@ -1260,6 +1384,24 @@
             this.ejercicio1.TabIndex = 9;
             this.ejercicio1.Text = "Ejercicio1";
             // 
+            // ej11
+            // 
+            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
+            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej11.Location = new System.Drawing.Point(-15, 577);
+            this.ej11.Name = "ej11";
+            this.ej11.Size = new System.Drawing.Size(1366, 150);
+            this.ej11.TabIndex = 10;
+            // 
+            // ej01
+            // 
+            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
+            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej01.Location = new System.Drawing.Point(-15, 577);
+            this.ej01.Name = "ej01";
+            this.ej01.Size = new System.Drawing.Size(1366, 150);
+            this.ej01.TabIndex = 9;
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
@@ -1358,6 +1500,24 @@
             this.ejercicio2.Size = new System.Drawing.Size(1358, 762);
             this.ejercicio2.TabIndex = 10;
             this.ejercicio2.Text = "ejercicio2";
+            // 
+            // ej12
+            // 
+            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
+            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej12.Location = new System.Drawing.Point(-15, 577);
+            this.ej12.Name = "ej12";
+            this.ej12.Size = new System.Drawing.Size(1366, 150);
+            this.ej12.TabIndex = 8;
+            // 
+            // ej02
+            // 
+            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
+            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej02.Location = new System.Drawing.Point(-15, 577);
+            this.ej02.Name = "ej02";
+            this.ej02.Size = new System.Drawing.Size(1366, 150);
+            this.ej02.TabIndex = 7;
             // 
             // panel4
             // 
@@ -1537,166 +1697,6 @@
             this.Menubutton.TabIndex = 3;
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
-            // 
-            // ej11
-            // 
-            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
-            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej11.Location = new System.Drawing.Point(-15, 577);
-            this.ej11.Name = "ej11";
-            this.ej11.Size = new System.Drawing.Size(1366, 150);
-            this.ej11.TabIndex = 10;
-            // 
-            // ej01
-            // 
-            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
-            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej01.Location = new System.Drawing.Point(-15, 577);
-            this.ej01.Name = "ej01";
-            this.ej01.Size = new System.Drawing.Size(1366, 150);
-            this.ej01.TabIndex = 9;
-            // 
-            // ej12
-            // 
-            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
-            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej12.Location = new System.Drawing.Point(-15, 577);
-            this.ej12.Name = "ej12";
-            this.ej12.Size = new System.Drawing.Size(1366, 150);
-            this.ej12.TabIndex = 8;
-            // 
-            // ej02
-            // 
-            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
-            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej02.Location = new System.Drawing.Point(-15, 577);
-            this.ej02.Name = "ej02";
-            this.ej02.Size = new System.Drawing.Size(1366, 150);
-            this.ej02.TabIndex = 7;
-            // 
-            // labelDBNum0
-            // 
-            this.labelDBNum0.AutoSize = true;
-            this.labelDBNum0.BackColor = System.Drawing.Color.Transparent;
-            this.labelDBNum0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.labelDBNum0.Location = new System.Drawing.Point(349, 254);
-            this.labelDBNum0.Name = "labelDBNum0";
-            this.labelDBNum0.Size = new System.Drawing.Size(29, 31);
-            this.labelDBNum0.TabIndex = 12;
-            this.labelDBNum0.Text = "0";
-            this.labelDBNum0.Click += new System.EventHandler(this.labelDBNum1_Click);
-            // 
-            // labelDBNum1
-            // 
-            this.labelDBNum1.AutoSize = true;
-            this.labelDBNum1.BackColor = System.Drawing.Color.Transparent;
-            this.labelDBNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.labelDBNum1.Location = new System.Drawing.Point(627, 254);
-            this.labelDBNum1.Name = "labelDBNum1";
-            this.labelDBNum1.Size = new System.Drawing.Size(29, 31);
-            this.labelDBNum1.TabIndex = 13;
-            this.labelDBNum1.Text = "1";
-            // 
-            // labelDBNum2
-            // 
-            this.labelDBNum2.AutoSize = true;
-            this.labelDBNum2.BackColor = System.Drawing.Color.Transparent;
-            this.labelDBNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.labelDBNum2.Location = new System.Drawing.Point(905, 252);
-            this.labelDBNum2.Name = "labelDBNum2";
-            this.labelDBNum2.Size = new System.Drawing.Size(29, 31);
-            this.labelDBNum2.TabIndex = 14;
-            this.labelDBNum2.Text = "2";
-            // 
-            // labelDBNum3
-            // 
-            this.labelDBNum3.AutoSize = true;
-            this.labelDBNum3.BackColor = System.Drawing.Color.Transparent;
-            this.labelDBNum3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.labelDBNum3.Location = new System.Drawing.Point(1179, 252);
-            this.labelDBNum3.Name = "labelDBNum3";
-            this.labelDBNum3.Size = new System.Drawing.Size(29, 31);
-            this.labelDBNum3.TabIndex = 15;
-            this.labelDBNum3.Text = "3";
-            // 
-            // labelDBNum4
-            // 
-            this.labelDBNum4.AutoSize = true;
-            this.labelDBNum4.BackColor = System.Drawing.Color.Transparent;
-            this.labelDBNum4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.labelDBNum4.Location = new System.Drawing.Point(485, 469);
-            this.labelDBNum4.Name = "labelDBNum4";
-            this.labelDBNum4.Size = new System.Drawing.Size(29, 31);
-            this.labelDBNum4.TabIndex = 16;
-            this.labelDBNum4.Text = "4";
-            // 
-            // labelDBNum8
-            // 
-            this.labelDBNum8.AutoSize = true;
-            this.labelDBNum8.BackColor = System.Drawing.Color.Transparent;
-            this.labelDBNum8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.labelDBNum8.Location = new System.Drawing.Point(623, 665);
-            this.labelDBNum8.Name = "labelDBNum8";
-            this.labelDBNum8.Size = new System.Drawing.Size(29, 31);
-            this.labelDBNum8.TabIndex = 17;
-            this.labelDBNum8.Text = "8";
-            this.labelDBNum8.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // labelDBNum7
-            // 
-            this.labelDBNum7.AutoSize = true;
-            this.labelDBNum7.BackColor = System.Drawing.Color.Transparent;
-            this.labelDBNum7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.labelDBNum7.Location = new System.Drawing.Point(339, 669);
-            this.labelDBNum7.Name = "labelDBNum7";
-            this.labelDBNum7.Size = new System.Drawing.Size(29, 31);
-            this.labelDBNum7.TabIndex = 18;
-            this.labelDBNum7.Text = "7";
-            this.labelDBNum7.Click += new System.EventHandler(this.label3_Click_1);
-            // 
-            // labelDBNum6
-            // 
-            this.labelDBNum6.AutoSize = true;
-            this.labelDBNum6.BackColor = System.Drawing.Color.Transparent;
-            this.labelDBNum6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.labelDBNum6.Location = new System.Drawing.Point(1040, 464);
-            this.labelDBNum6.Name = "labelDBNum6";
-            this.labelDBNum6.Size = new System.Drawing.Size(29, 31);
-            this.labelDBNum6.TabIndex = 19;
-            this.labelDBNum6.Text = "6";
-            // 
-            // labelDBNum5
-            // 
-            this.labelDBNum5.AutoSize = true;
-            this.labelDBNum5.BackColor = System.Drawing.Color.Transparent;
-            this.labelDBNum5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.labelDBNum5.Location = new System.Drawing.Point(773, 464);
-            this.labelDBNum5.Name = "labelDBNum5";
-            this.labelDBNum5.Size = new System.Drawing.Size(29, 31);
-            this.labelDBNum5.TabIndex = 20;
-            this.labelDBNum5.Text = "5";
-            // 
-            // labelDBNum9
-            // 
-            this.labelDBNum9.AutoSize = true;
-            this.labelDBNum9.BackColor = System.Drawing.Color.Transparent;
-            this.labelDBNum9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.labelDBNum9.Location = new System.Drawing.Point(899, 669);
-            this.labelDBNum9.Name = "labelDBNum9";
-            this.labelDBNum9.Size = new System.Drawing.Size(29, 31);
-            this.labelDBNum9.TabIndex = 22;
-            this.labelDBNum9.Text = "9";
-            // 
-            // labelDBNum10
-            // 
-            this.labelDBNum10.AutoSize = true;
-            this.labelDBNum10.BackColor = System.Drawing.Color.Transparent;
-            this.labelDBNum10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.labelDBNum10.Location = new System.Drawing.Point(1179, 665);
-            this.labelDBNum10.Name = "labelDBNum10";
-            this.labelDBNum10.Size = new System.Drawing.Size(44, 31);
-            this.labelDBNum10.TabIndex = 21;
-            this.labelDBNum10.Text = "10";
             // 
             // Form1
             // 
