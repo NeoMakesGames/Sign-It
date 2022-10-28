@@ -61,6 +61,11 @@
             this.comidaLecc = new System.Windows.Forms.Button();
             this.basicoLecc = new System.Windows.Forms.Button();
             this.Diccionario = new System.Windows.Forms.TabPage();
+            this.DBeta = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.palabraDB = new System.Windows.Forms.Label();
+            this.exitDB = new System.Windows.Forms.Button();
             this.diccionarioBeta = new System.Windows.Forms.TabControl();
             this.dB0 = new System.Windows.Forms.TabPage();
             this.button12 = new System.Windows.Forms.Button();
@@ -102,11 +107,6 @@
             this.dBNum8 = new System.Windows.Forms.Button();
             this.dBNum3 = new System.Windows.Forms.Button();
             this.dBNum2 = new System.Windows.Forms.Button();
-            this.DBeta = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.dBplayer = new AxWMPLib.AxWindowsMediaPlayer();
-            this.palabraDB = new System.Windows.Forms.Label();
-            this.exitDB = new System.Windows.Forms.Button();
             this.juegos = new System.Windows.Forms.TabPage();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
@@ -124,8 +124,6 @@
             this.PalabraEns = new System.Windows.Forms.Label();
             this.contEnseñanza = new System.Windows.Forms.Button();
             this.ejercicio1 = new System.Windows.Forms.TabPage();
-            this.ej11 = new SignIt.Ej1();
-            this.ej01 = new SignIt.Ej0();
             this.panel5 = new System.Windows.Forms.Panel();
             this.ej2videoC = new System.Windows.Forms.Button();
             this.ej2videoB = new System.Windows.Forms.Button();
@@ -135,8 +133,6 @@
             this.ejercicio1VideoA = new AxWMPLib.AxWindowsMediaPlayer();
             this.ej1palabra = new System.Windows.Forms.Label();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
-            this.ej12 = new SignIt.Ej1();
-            this.ej02 = new SignIt.Ej0();
             this.panel4 = new System.Windows.Forms.Panel();
             this.rtaEj2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -152,17 +148,23 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
+            this.dbplayer = new AxWMPLib.AxWindowsMediaPlayer();
+            this.ej11 = new SignIt.Ej1();
+            this.ej01 = new SignIt.Ej0();
+            this.ej12 = new SignIt.Ej1();
+            this.ej02 = new SignIt.Ej0();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
             this.Home.SuspendLayout();
             this.LeccionesMenu.SuspendLayout();
             this.Diccionario.SuspendLayout();
+            this.DBeta.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.diccionarioBeta.SuspendLayout();
             this.dB0.SuspendLayout();
             this.dBNros.SuspendLayout();
-            this.DBeta.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dBplayer)).BeginInit();
             this.juegos.SuspendLayout();
             this.Ajustes.SuspendLayout();
             this.Enseñanza.SuspendLayout();
@@ -175,6 +177,7 @@
             this.ejercicio2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ej2player)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dbplayer)).BeginInit();
             this.SuspendLayout();
             // 
             // signIt
@@ -607,13 +610,68 @@
             this.Diccionario.BackColor = System.Drawing.Color.LightBlue;
             this.Diccionario.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Diccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Diccionario.Controls.Add(this.diccionarioBeta);
             this.Diccionario.Controls.Add(this.DBeta);
+            this.Diccionario.Controls.Add(this.diccionarioBeta);
             this.Diccionario.Location = new System.Drawing.Point(4, 22);
             this.Diccionario.Name = "Diccionario";
             this.Diccionario.Size = new System.Drawing.Size(1358, 762);
             this.Diccionario.TabIndex = 4;
             this.Diccionario.Text = "Diccionario";
+            // 
+            // DBeta
+            // 
+            this.DBeta.BackColor = System.Drawing.Color.Transparent;
+            this.DBeta.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__1_1;
+            this.DBeta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.DBeta.Controls.Add(this.panel6);
+            this.DBeta.Location = new System.Drawing.Point(-4, -22);
+            this.DBeta.Name = "DBeta";
+            this.DBeta.Size = new System.Drawing.Size(1400, 800);
+            this.DBeta.TabIndex = 9;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = global::SignIt.Properties.Resources.Rectangle_177;
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Controls.Add(this.dbplayer);
+            this.panel6.Controls.Add(this.exitDB);
+            this.panel6.Location = new System.Drawing.Point(471, 153);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(450, 450);
+            this.panel6.TabIndex = 4;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.palabraDB);
+            this.panel7.Location = new System.Drawing.Point(4, 311);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(443, 144);
+            this.panel7.TabIndex = 3;
+            // 
+            // palabraDB
+            // 
+            this.palabraDB.AutoSize = true;
+            this.palabraDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.palabraDB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.palabraDB.Location = new System.Drawing.Point(197, 44);
+            this.palabraDB.Name = "palabraDB";
+            this.palabraDB.Size = new System.Drawing.Size(36, 39);
+            this.palabraDB.TabIndex = 1;
+            this.palabraDB.Text = "a";
+            // 
+            // exitDB
+            // 
+            this.exitDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
+            this.exitDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exitDB.FlatAppearance.BorderSize = 0;
+            this.exitDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitDB.Location = new System.Drawing.Point(25, 23);
+            this.exitDB.Name = "exitDB";
+            this.exitDB.Size = new System.Drawing.Size(75, 50);
+            this.exitDB.TabIndex = 0;
+            this.exitDB.UseVisualStyleBackColor = true;
+            this.exitDB.Click += new System.EventHandler(this.exitDB_Click);
             // 
             // diccionarioBeta
             // 
@@ -626,7 +684,7 @@
             this.diccionarioBeta.Controls.Add(this.dB5);
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
-            this.diccionarioBeta.Location = new System.Drawing.Point(-4, 772);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-4, 0);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
             this.diccionarioBeta.Size = new System.Drawing.Size(1366, 788);
@@ -650,7 +708,7 @@
             this.dB0.Padding = new System.Windows.Forms.Padding(3);
             this.dB0.Size = new System.Drawing.Size(1358, 762);
             this.dB0.TabIndex = 0;
-            this.dB0.Text = "0";
+            this.dB0.Text = "dB0";
             this.dB0.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // button12
@@ -773,7 +831,7 @@
             this.dB1.Padding = new System.Windows.Forms.Padding(3);
             this.dB1.Size = new System.Drawing.Size(1358, 762);
             this.dB1.TabIndex = 1;
-            this.dB1.Text = "1";
+            this.dB1.Text = "dB1";
             this.dB1.UseVisualStyleBackColor = true;
             // 
             // dB2
@@ -1115,61 +1173,6 @@
             this.dBNum2.UseVisualStyleBackColor = true;
             this.dBNum2.Click += new System.EventHandler(this.dBNum2_Click);
             // 
-            // DBeta
-            // 
-            this.DBeta.BackColor = System.Drawing.Color.Transparent;
-            this.DBeta.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__1_1;
-            this.DBeta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.DBeta.Controls.Add(this.panel7);
-            this.DBeta.Controls.Add(this.dBplayer);
-            this.DBeta.Controls.Add(this.palabraDB);
-            this.DBeta.Controls.Add(this.exitDB);
-            this.DBeta.Location = new System.Drawing.Point(426, 42);
-            this.DBeta.Name = "DBeta";
-            this.DBeta.Size = new System.Drawing.Size(604, 544);
-            this.DBeta.TabIndex = 9;
-            // 
-            // panel7
-            // 
-            this.panel7.Location = new System.Drawing.Point(24, 323);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(547, 92);
-            this.panel7.TabIndex = 3;
-            // 
-            // dBplayer
-            // 
-            this.dBplayer.Enabled = true;
-            this.dBplayer.Location = new System.Drawing.Point(45, 105);
-            this.dBplayer.Name = "dBplayer";
-            this.dBplayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("dBplayer.OcxState")));
-            this.dBplayer.Size = new System.Drawing.Size(512, 292);
-            this.dBplayer.TabIndex = 2;
-            this.dBplayer.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
-            // 
-            // palabraDB
-            // 
-            this.palabraDB.AutoSize = true;
-            this.palabraDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.palabraDB.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.palabraDB.Location = new System.Drawing.Point(279, 444);
-            this.palabraDB.Name = "palabraDB";
-            this.palabraDB.Size = new System.Drawing.Size(36, 39);
-            this.palabraDB.TabIndex = 1;
-            this.palabraDB.Text = "a";
-            // 
-            // exitDB
-            // 
-            this.exitDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
-            this.exitDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.exitDB.FlatAppearance.BorderSize = 0;
-            this.exitDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitDB.Location = new System.Drawing.Point(23, 30);
-            this.exitDB.Name = "exitDB";
-            this.exitDB.Size = new System.Drawing.Size(75, 50);
-            this.exitDB.TabIndex = 0;
-            this.exitDB.UseVisualStyleBackColor = true;
-            this.exitDB.Click += new System.EventHandler(this.exitDB_Click);
-            // 
             // juegos
             // 
             this.juegos.BackColor = System.Drawing.Color.LightBlue;
@@ -1384,24 +1387,6 @@
             this.ejercicio1.TabIndex = 9;
             this.ejercicio1.Text = "Ejercicio1";
             // 
-            // ej11
-            // 
-            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
-            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej11.Location = new System.Drawing.Point(-15, 577);
-            this.ej11.Name = "ej11";
-            this.ej11.Size = new System.Drawing.Size(1366, 150);
-            this.ej11.TabIndex = 10;
-            // 
-            // ej01
-            // 
-            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
-            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej01.Location = new System.Drawing.Point(-15, 577);
-            this.ej01.Name = "ej01";
-            this.ej01.Size = new System.Drawing.Size(1366, 150);
-            this.ej01.TabIndex = 9;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
@@ -1500,24 +1485,6 @@
             this.ejercicio2.Size = new System.Drawing.Size(1358, 762);
             this.ejercicio2.TabIndex = 10;
             this.ejercicio2.Text = "ejercicio2";
-            // 
-            // ej12
-            // 
-            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
-            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej12.Location = new System.Drawing.Point(-15, 577);
-            this.ej12.Name = "ej12";
-            this.ej12.Size = new System.Drawing.Size(1366, 150);
-            this.ej12.TabIndex = 8;
-            // 
-            // ej02
-            // 
-            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
-            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej02.Location = new System.Drawing.Point(-15, 577);
-            this.ej02.Name = "ej02";
-            this.ej02.Size = new System.Drawing.Size(1366, 150);
-            this.ej02.TabIndex = 7;
             // 
             // panel4
             // 
@@ -1698,6 +1665,51 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
+            // dbplayer
+            // 
+            this.dbplayer.Enabled = true;
+            this.dbplayer.Location = new System.Drawing.Point(37, 89);
+            this.dbplayer.Name = "dbplayer";
+            this.dbplayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("dbplayer.OcxState")));
+            this.dbplayer.Size = new System.Drawing.Size(375, 343);
+            this.dbplayer.TabIndex = 0;
+            // 
+            // ej11
+            // 
+            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
+            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej11.Location = new System.Drawing.Point(-15, 577);
+            this.ej11.Name = "ej11";
+            this.ej11.Size = new System.Drawing.Size(1366, 150);
+            this.ej11.TabIndex = 10;
+            // 
+            // ej01
+            // 
+            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
+            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej01.Location = new System.Drawing.Point(-15, 577);
+            this.ej01.Name = "ej01";
+            this.ej01.Size = new System.Drawing.Size(1366, 150);
+            this.ej01.TabIndex = 9;
+            // 
+            // ej12
+            // 
+            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
+            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej12.Location = new System.Drawing.Point(-15, 577);
+            this.ej12.Name = "ej12";
+            this.ej12.Size = new System.Drawing.Size(1366, 150);
+            this.ej12.TabIndex = 8;
+            // 
+            // ej02
+            // 
+            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
+            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej02.Location = new System.Drawing.Point(-15, 577);
+            this.ej02.Name = "ej02";
+            this.ej02.Size = new System.Drawing.Size(1366, 150);
+            this.ej02.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1718,13 +1730,14 @@
             this.Home.PerformLayout();
             this.LeccionesMenu.ResumeLayout(false);
             this.Diccionario.ResumeLayout(false);
+            this.DBeta.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.diccionarioBeta.ResumeLayout(false);
             this.dB0.ResumeLayout(false);
             this.dBNros.ResumeLayout(false);
             this.dBNros.PerformLayout();
-            this.DBeta.ResumeLayout(false);
-            this.DBeta.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dBplayer)).EndInit();
             this.juegos.ResumeLayout(false);
             this.Ajustes.ResumeLayout(false);
             this.Ajustes.PerformLayout();
@@ -1741,6 +1754,7 @@
             this.ejercicio2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ej2player)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dbplayer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1852,7 +1866,6 @@
         private System.Windows.Forms.Button ej2videoA;
         private System.Windows.Forms.Button dBNum0;
         private System.Windows.Forms.Panel DBeta;
-        private AxWMPLib.AxWindowsMediaPlayer dBplayer;
         private System.Windows.Forms.Label palabraDB;
         private System.Windows.Forms.Button exitDB;
         private System.Windows.Forms.Panel panel7;
@@ -1871,6 +1884,8 @@
         private System.Windows.Forms.Label labelDBNum2;
         private System.Windows.Forms.Label labelDBNum9;
         private System.Windows.Forms.Label labelDBNum10;
+        private System.Windows.Forms.Panel panel6;
+        private AxWMPLib.AxWindowsMediaPlayer dbplayer;
     }
 }
 

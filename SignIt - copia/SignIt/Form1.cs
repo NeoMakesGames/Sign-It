@@ -22,7 +22,6 @@ namespace SignIt
         public static string path = "Usuarios.accdb";
         public static string imagePath = "Imagenes\\";
         public static string signsPath = "signs\\";
-        
         Image myimage;
         string HS_URL;
         string botonBI;
@@ -55,10 +54,11 @@ namespace SignIt
         {
             palabraDB.Text = palabra;
 
-            dBplayer.URL = signsPath + palabra + ".wmv";
-            dBplayer.settings.setMode("loop", true);
+            dbplayer.URL = signsPath + palabra + ".wmv";
+            dbplayer.settings.setMode("loop", true);
             DBeta.BringToFront();
-            dBplayer.Ctlcontrols.play();
+            dbplayer.Ctlcontrols.play();
+            desaparicionDelMenu();
         }
         private void desaparicionDelMenu()
         {
@@ -172,6 +172,7 @@ namespace SignIt
 
         private void botonesDiccionario()
         {
+            diccionarioBeta.SelectedTab = dB0;
             Image notmyimage;
             if (avance < 2)
             {
@@ -655,6 +656,7 @@ namespace SignIt
             label2IdS.Hide();
             ej01.Hide();
             ej11.Hide();
+            DBeta.SendToBack();
         }
 
 //Inicio de Sesión
@@ -1020,6 +1022,8 @@ namespace SignIt
         private void button12_Click(object sender, EventArgs e)
         {
             diccionarioBeta.SelectedTab = dBNros;
+            myimage = new Bitmap(imagePath + "fndb.PNG");
+            DBeta.BackgroundImage = myimage;
         }
 
         //Números
@@ -1027,7 +1031,7 @@ namespace SignIt
         {
             diccionarioBeta.SelectedTab = dB0;
             DBeta.SendToBack();
-            dBplayer.Ctlcontrols.stop();
+            dbplayer.Ctlcontrols.stop();
         }
         private void dBNum0_Click(object sender, EventArgs e)
         {
@@ -1299,7 +1303,7 @@ namespace SignIt
         private void exitDB_Click(object sender, EventArgs e)
         {
             DBeta.SendToBack();
-            dBplayer.Ctlcontrols.stop();
+            dbplayer.Ctlcontrols.stop();
         }
 
         private void labelDBNum1_Click(object sender, EventArgs e)
