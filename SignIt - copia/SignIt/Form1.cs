@@ -29,6 +29,7 @@ namespace SignIt
         string botondiseño;
         int menuX = -332;
         int UserXp;
+        int id;
         int UserLvl;
         int NextLvl = 10;
         int homeSlider = 0;
@@ -50,7 +51,15 @@ namespace SignIt
         }
 
         //Funciones
+        private void diccionario (string palabra)
+        {
+            palabraDB.Text = palabra;
 
+            dBplayer.URL = signsPath + palabra + ".wmv";
+            dBplayer.settings.setMode("loop", true);
+            DBeta.BringToFront();
+            dBplayer.Ctlcontrols.play();
+        }
         private void desaparicionDelMenu()
         {
             Menubutton.Hide();
@@ -998,7 +1007,69 @@ namespace SignIt
             diccionarioBeta.SelectedTab = dBNros;
         }
 
-//Juegos
+        //Números
+        private void NumBack_Click(object sender, EventArgs e)
+        {
+            diccionarioBeta.SelectedTab = dB0;
+            DBeta.SendToBack();
+            dBplayer.Ctlcontrols.stop();
+        }
+        private void dBNum0_Click(object sender, EventArgs e)
+        {
+            diccionario("0");
+        }
+
+        private void dBNum1_Click(object sender, EventArgs e)
+        {
+            diccionario("1");
+        }
+
+        private void dBNum2_Click(object sender, EventArgs e)
+        {
+            diccionario("2");
+        }
+
+        private void dBNum3_Click(object sender, EventArgs e)
+        {
+            diccionario("3");
+        }
+
+        private void dBNum4_Click(object sender, EventArgs e)
+        {
+            diccionario("4");
+        }
+
+        private void dBNum5_Click(object sender, EventArgs e)
+        {
+            diccionario("5");
+        }
+
+        private void dBNum6_Click(object sender, EventArgs e)
+        {
+            diccionario("6");
+        }
+
+        private void dBNum7_Click(object sender, EventArgs e)
+        {
+            diccionario("7");
+        }
+
+        private void dBNum8_Click(object sender, EventArgs e)
+        {
+            diccionario("8");
+        }
+
+        private void dBNum9_Click(object sender, EventArgs e)
+        {
+            diccionario("9");
+        }
+
+        private void dBNum10_Click(object sender, EventArgs e)
+        {
+            diccionario("10");
+        }
+
+        //Juegos
 
         private void RaceGamesButton_Click(object sender, EventArgs e)
         {
@@ -1082,16 +1153,15 @@ namespace SignIt
 
         }
 
-        private void NumBack_Click(object sender, EventArgs e)
-        {
-            diccionarioBeta.SelectedTab = dB0;
-        }
-
         private void ComenzarIds_MouseHover(object sender, EventArgs e)
         {
 
         }
         private void ejercicio1VideoA_Enter(object sender, EventArgs e)
+        {
+
+        }
+        private void dBNros_Click(object sender, EventArgs e)
         {
 
         }
@@ -1206,5 +1276,30 @@ namespace SignIt
         }
 
 
+        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitDB_Click(object sender, EventArgs e)
+        {
+            DBeta.SendToBack();
+            dBplayer.Ctlcontrols.stop();
+        }
+
+        private void labelDBNum1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
