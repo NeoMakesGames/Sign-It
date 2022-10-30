@@ -136,6 +136,7 @@
             this.PalabraEns = new System.Windows.Forms.Label();
             this.contEnseñanza = new System.Windows.Forms.Button();
             this.ejercicio1 = new System.Windows.Forms.TabPage();
+            this.caracolEJ1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.ej2videoC = new System.Windows.Forms.Button();
             this.ej2videoB = new System.Windows.Forms.Button();
@@ -145,6 +146,7 @@
             this.ejercicio1VideoA = new AxWMPLib.AxWindowsMediaPlayer();
             this.ej1palabra = new System.Windows.Forms.Label();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
+            this.caracolEJ2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.rtaEj2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -163,12 +165,13 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
+            this.caracolEnsenanza = new System.Windows.Forms.Button();
+            this.caracolLecciones = new System.Windows.Forms.Button();
             this.race1 = new SignIt.Race();
             this.ej11 = new SignIt.Ej1();
             this.ej01 = new SignIt.Ej0();
             this.ej12 = new SignIt.Ej1();
             this.ej02 = new SignIt.Ej0();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -513,6 +516,7 @@
             this.LeccionesMenu.BackColor = System.Drawing.Color.LightBlue;
             this.LeccionesMenu.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.LeccionesMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LeccionesMenu.Controls.Add(this.caracolLecciones);
             this.LeccionesMenu.Controls.Add(this.examenlecc);
             this.LeccionesMenu.Controls.Add(this.verbosLecc);
             this.LeccionesMenu.Controls.Add(this.pronombresLecc);
@@ -534,11 +538,12 @@
             this.examenlecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.examenlecc.FlatAppearance.BorderSize = 0;
             this.examenlecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.examenlecc.Location = new System.Drawing.Point(537, 338);
+            this.examenlecc.Location = new System.Drawing.Point(554, 332);
             this.examenlecc.Name = "examenlecc";
             this.examenlecc.Size = new System.Drawing.Size(292, 130);
             this.examenlecc.TabIndex = 7;
             this.examenlecc.UseVisualStyleBackColor = false;
+            this.examenlecc.Click += new System.EventHandler(this.examenlecc_Click);
             // 
             // verbosLecc
             // 
@@ -547,7 +552,7 @@
             this.verbosLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.verbosLecc.FlatAppearance.BorderSize = 0;
             this.verbosLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.verbosLecc.Location = new System.Drawing.Point(134, 583);
+            this.verbosLecc.Location = new System.Drawing.Point(134, 619);
             this.verbosLecc.Name = "verbosLecc";
             this.verbosLecc.Size = new System.Drawing.Size(196, 83);
             this.verbosLecc.TabIndex = 6;
@@ -561,7 +566,7 @@
             this.pronombresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pronombresLecc.FlatAppearance.BorderSize = 0;
             this.pronombresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pronombresLecc.Location = new System.Drawing.Point(585, 583);
+            this.pronombresLecc.Location = new System.Drawing.Point(602, 619);
             this.pronombresLecc.Name = "pronombresLecc";
             this.pronombresLecc.Size = new System.Drawing.Size(196, 83);
             this.pronombresLecc.TabIndex = 5;
@@ -575,7 +580,7 @@
             this.lugaresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lugaresLecc.FlatAppearance.BorderSize = 0;
             this.lugaresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lugaresLecc.Location = new System.Drawing.Point(1008, 583);
+            this.lugaresLecc.Location = new System.Drawing.Point(981, 619);
             this.lugaresLecc.Name = "lugaresLecc";
             this.lugaresLecc.Size = new System.Drawing.Size(196, 83);
             this.lugaresLecc.TabIndex = 4;
@@ -589,7 +594,7 @@
             this.coloresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.coloresLecc.FlatAppearance.BorderSize = 0;
             this.coloresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.coloresLecc.Location = new System.Drawing.Point(1008, 111);
+            this.coloresLecc.Location = new System.Drawing.Point(981, 111);
             this.coloresLecc.Name = "coloresLecc";
             this.coloresLecc.Size = new System.Drawing.Size(196, 83);
             this.coloresLecc.TabIndex = 2;
@@ -603,7 +608,7 @@
             this.comidaLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.comidaLecc.FlatAppearance.BorderSize = 0;
             this.comidaLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comidaLecc.Location = new System.Drawing.Point(585, 111);
+            this.comidaLecc.Location = new System.Drawing.Point(602, 111);
             this.comidaLecc.Name = "comidaLecc";
             this.comidaLecc.Size = new System.Drawing.Size(196, 83);
             this.comidaLecc.TabIndex = 1;
@@ -1564,6 +1569,7 @@
             this.Enseñanza.BackColor = System.Drawing.Color.LightBlue;
             this.Enseñanza.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Enseñanza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Enseñanza.Controls.Add(this.caracolEnsenanza);
             this.Enseñanza.Controls.Add(this.panel8);
             this.Enseñanza.Controls.Add(this.EnseñanzaPlayer);
             this.Enseñanza.Controls.Add(this.PalabraEns);
@@ -1624,18 +1630,33 @@
             this.ejercicio1.BackColor = System.Drawing.Color.LightBlue;
             this.ejercicio1.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.ejercicio1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ejercicio1.Controls.Add(this.ej11);
-            this.ejercicio1.Controls.Add(this.ej01);
+            this.ejercicio1.Controls.Add(this.caracolEJ1);
             this.ejercicio1.Controls.Add(this.panel5);
             this.ejercicio1.Controls.Add(this.ejercicio1VideoC);
             this.ejercicio1.Controls.Add(this.ejercicio1VideoB);
             this.ejercicio1.Controls.Add(this.ejercicio1VideoA);
             this.ejercicio1.Controls.Add(this.ej1palabra);
+            this.ejercicio1.Controls.Add(this.ej11);
+            this.ejercicio1.Controls.Add(this.ej01);
             this.ejercicio1.Location = new System.Drawing.Point(4, 22);
             this.ejercicio1.Name = "ejercicio1";
             this.ejercicio1.Size = new System.Drawing.Size(1392, 774);
             this.ejercicio1.TabIndex = 9;
             this.ejercicio1.Text = "Ejercicio1";
+            // 
+            // caracolEJ1
+            // 
+            this.caracolEJ1.BackColor = System.Drawing.Color.Transparent;
+            this.caracolEJ1.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
+            this.caracolEJ1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.caracolEJ1.FlatAppearance.BorderSize = 0;
+            this.caracolEJ1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.caracolEJ1.Location = new System.Drawing.Point(1215, 38);
+            this.caracolEJ1.Name = "caracolEJ1";
+            this.caracolEJ1.Size = new System.Drawing.Size(150, 150);
+            this.caracolEJ1.TabIndex = 11;
+            this.caracolEJ1.UseVisualStyleBackColor = false;
+            this.caracolEJ1.Click += new System.EventHandler(this.caracolEJ1_Click);
             // 
             // panel5
             // 
@@ -1723,19 +1744,33 @@
             this.ejercicio2.BackColor = System.Drawing.Color.LightBlue;
             this.ejercicio2.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.ejercicio2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ejercicio2.Controls.Add(this.panel9);
-            this.ejercicio2.Controls.Add(this.ej12);
-            this.ejercicio2.Controls.Add(this.ej02);
+            this.ejercicio2.Controls.Add(this.caracolEJ2);
             this.ejercicio2.Controls.Add(this.panel4);
             this.ejercicio2.Controls.Add(this.rtaEj2);
             this.ejercicio2.Controls.Add(this.label1);
             this.ejercicio2.Controls.Add(this.ej2player);
             this.ejercicio2.Controls.Add(this.ej2cont);
+            this.ejercicio2.Controls.Add(this.ej12);
+            this.ejercicio2.Controls.Add(this.ej02);
             this.ejercicio2.Location = new System.Drawing.Point(4, 22);
             this.ejercicio2.Name = "ejercicio2";
             this.ejercicio2.Size = new System.Drawing.Size(1392, 774);
             this.ejercicio2.TabIndex = 10;
             this.ejercicio2.Text = "ejercicio2";
+            // 
+            // caracolEJ2
+            // 
+            this.caracolEJ2.BackColor = System.Drawing.Color.Transparent;
+            this.caracolEJ2.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
+            this.caracolEJ2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.caracolEJ2.FlatAppearance.BorderSize = 0;
+            this.caracolEJ2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.caracolEJ2.Location = new System.Drawing.Point(1215, 38);
+            this.caracolEJ2.Name = "caracolEJ2";
+            this.caracolEJ2.Size = new System.Drawing.Size(150, 150);
+            this.caracolEJ2.TabIndex = 12;
+            this.caracolEJ2.UseVisualStyleBackColor = false;
+            this.caracolEJ2.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // panel4
             // 
@@ -1958,6 +1993,34 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
+            // caracolEnsenanza
+            // 
+            this.caracolEnsenanza.BackColor = System.Drawing.Color.Transparent;
+            this.caracolEnsenanza.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
+            this.caracolEnsenanza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.caracolEnsenanza.FlatAppearance.BorderSize = 0;
+            this.caracolEnsenanza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.caracolEnsenanza.Location = new System.Drawing.Point(1215, 38);
+            this.caracolEnsenanza.Name = "caracolEnsenanza";
+            this.caracolEnsenanza.Size = new System.Drawing.Size(150, 150);
+            this.caracolEnsenanza.TabIndex = 13;
+            this.caracolEnsenanza.UseVisualStyleBackColor = false;
+            this.caracolEnsenanza.Click += new System.EventHandler(this.button1_Click_3);
+            // 
+            // caracolLecciones
+            // 
+            this.caracolLecciones.BackColor = System.Drawing.Color.Transparent;
+            this.caracolLecciones.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
+            this.caracolLecciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.caracolLecciones.FlatAppearance.BorderSize = 0;
+            this.caracolLecciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.caracolLecciones.Location = new System.Drawing.Point(1210, 34);
+            this.caracolLecciones.Name = "caracolLecciones";
+            this.caracolLecciones.Size = new System.Drawing.Size(150, 150);
+            this.caracolLecciones.TabIndex = 13;
+            this.caracolLecciones.UseVisualStyleBackColor = false;
+            this.caracolLecciones.Click += new System.EventHandler(this.caracolLecciones_Click);
+            // 
             // race1
             // 
             this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
@@ -2003,16 +2066,6 @@
             this.ej02.Name = "ej02";
             this.ej02.Size = new System.Drawing.Size(1366, 150);
             this.ej02.TabIndex = 7;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Transparent;
-            this.panel9.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
-            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel9.Location = new System.Drawing.Point(1215, 38);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(150, 150);
-            this.panel9.TabIndex = 9;
             // 
             // Form1
             // 
@@ -2204,7 +2257,10 @@
         private System.Windows.Forms.Button questo;
         private System.Windows.Forms.Button caracolExit2;
         private System.Windows.Forms.Button questo2;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button caracolEJ1;
+        private System.Windows.Forms.Button caracolEJ2;
+        private System.Windows.Forms.Button caracolEnsenanza;
+        private System.Windows.Forms.Button caracolLecciones;
     }
 }
 

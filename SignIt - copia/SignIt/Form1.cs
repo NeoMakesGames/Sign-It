@@ -42,7 +42,7 @@ namespace SignIt
 
         float progreso;
         double home_slider = 0;
-        
+
         public static bool continuar = false;
         public bool menu = false;
         public bool fullscr = true;
@@ -57,7 +57,7 @@ namespace SignIt
         }
 
         //Funciones
-        private void diccionario (string palabra)
+        private void diccionario(string palabra)
         {
             palabraDB.Text = palabra;
 
@@ -82,7 +82,13 @@ namespace SignIt
             Menubutton.BringToFront();
         }
 
-
+        private void caracolayuda (string imagen, int page)
+        {
+            myimage = new Bitmap(imagePath + imagen + ".PNG");
+            caracol.BackgroundImage = myimage;
+            signIt.SelectedTab = caracol;
+            lastpage = page;
+        }
         private void botonesLecciones()
         {
             Image yepMyImage;
@@ -226,7 +232,7 @@ namespace SignIt
                 lugaresDiccionario.BackgroundImage = notmyimage;
             }
             else
-            { 
+            {
                 notmyimage = new Bitmap(imagePath + "Básico (3).PNG");
                 lugaresDiccionario.BackgroundImage = notmyimage;
             }
@@ -321,9 +327,9 @@ namespace SignIt
 
         private void tutorial()
         {
-            myimage = new Bitmap (imagePath + "Presentacion.PNG");
+            myimage = new Bitmap(imagePath + "Presentacion.PNG");
             caracol.BackgroundImage = myimage;
-            myimage = new Bitmap (imagePath + "Botón (3).PNG");
+            myimage = new Bitmap(imagePath + "Botón (3).PNG");
             caracolExit.BackgroundImage = myimage;
             signIt.SelectedTab = caracol;
             lastpage = 3;
@@ -366,8 +372,11 @@ namespace SignIt
             botonesLecciones();
             aparicionDelMenu();
             signIt.SelectedTab = LeccionesMenu;
-            DatabaseFunctions.addAvance(1 , path);
+            DatabaseFunctions.addAvance(1, path);
             avance++;
+            caracolEJ1.Hide();
+            caracolEJ2.Hide();
+            caracolEnsenanza.Hide();
         }
 
         public async void ejercicios(string tipo, int avA)
@@ -388,7 +397,7 @@ namespace SignIt
                     videos[z] = IDs_;
                     z++;
                     o++;
-                } 
+                }
             }
 
             z = 0;
@@ -404,7 +413,7 @@ namespace SignIt
                 {
                     signIt.SelectedTab = Enseñanza;
                     EnseñanzaPlayer.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                    EnseñanzaPlayer.settings.setMode("loop" , true);
+                    EnseñanzaPlayer.settings.setMode("loop", true);
 
                     PalabraEns.Text = DatabaseFunctions.GetNameOfVideo(id, path);
                     EnseñanzaPlayer.Ctlcontrols.play();
@@ -426,31 +435,13 @@ namespace SignIt
                         case 0:
                             ej1palabra.Text = "¿Cual seña corresponde a la palabra: ";
                             ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
-                            int b = 1;
-                            int a = 1;
-                            for (int o = 0; o > 2;)
-                            {
-                                int ids = rdn.Next(1, 64);
-                                if (tipo == DatabaseFunctions.GetCategoria(ids, "Usuarios.accdb") && ids != id && o == 0)
-                                {
-                                    a = ids;
-                                    z++;
-                                    o++;
-                                }
-                                if (tipo == DatabaseFunctions.GetCategoria(ids, "Usuarios.accdb") && ids != id && o == 1)
-                                {
-                                    b = ids;
-                                    z++;
-                                    o++;
-                                }
-                            }
                             Random rm = new Random();
                             int f = rm.Next(0, 2);
-                            a = rdn.Next(1, 64);
-                            b = rdn.Next(1, 64);
+                            int a = rdn.Next(1, 64);
+                            int b = rdn.Next(1, 64);
                             switch (f)
                             {
-                                
+
                                 case 0:
                                     ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                                     ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
@@ -588,7 +579,7 @@ namespace SignIt
 
                             ej2player.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                             ej2player.Ctlcontrols.play();
-                            
+
                             signIt.SelectedTab = ejercicio2;
 
                             while (!continuar)
@@ -620,35 +611,38 @@ namespace SignIt
                             ej12.Hide();
 
                             rtaEj2.Text = "";
-                            
+
                             continuar = false;
                             ej2player.Ctlcontrols.stop();
-                            
+
                             break;
-                        }
                     }
-                    z++;
                 }
+                z++;
+            }
             aparicionDelMenu();
             DatabaseFunctions.addXP(DatabaseFunctions.currentUser, xpGanada, path);
-            if(errores == 3 && avance == avA)
+            if (errores == 3 && avance == avA)
             {
                 DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
                 avance++;
             }
             botonesLecciones();
             signIt.SelectedTab = LeccionesMenu;
-
+            caracolEJ1.Hide();
+            caracolEJ2.Hide();
+            caracolEnsenanza.Hide();
             experiencia();
         }
 
         private void ganar_0_perder(UserControl uc)
         {
             uc.Show();
+            uc.BringToFront();
         }
 
 
-//Comienzo
+        //Comienzo
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -662,24 +656,27 @@ namespace SignIt
             ej12.Hide();
             DBeta.SendToBack();
             caracolExit2.Hide();
+            caracolEJ1.Hide();
+            caracolEJ2.Hide();
+            caracolEnsenanza.Hide();
         }
 
-//Inicio de Sesión
+        //Inicio de Sesión
         private void ComenzarIds_Click(object sender, EventArgs e)
-        {   
-                if (DatabaseFunctions.checkIfNameExists(UserIdS.Text, path) == true)
+        {
+            if (DatabaseFunctions.checkIfNameExists(UserIdS.Text, path) == true)
             {
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
-                avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser,"Avance" ,path));
+                avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
 
                 experiencia();
 
                 timer1.Enabled = true;
 
                 UserHome.Text = (DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path));
-                
+
                 aparicionDelMenu();
-                
+
                 signIt.SelectedTab = Home;
 
             }
@@ -703,7 +700,7 @@ namespace SignIt
             cierre();
         }
 
-//Creación de Usuario
+        //Creación de Usuario
         private void ComenzarCdU_Click(object sender, EventArgs e)
         {
             int sip;
@@ -711,21 +708,8 @@ namespace SignIt
             if (int.TryParse(UserAgeCdU.Text, out sip) && Convert.ToInt32(UserAgeCdU.Text) < 100)
             {
                 if (UserCdU.Text != "" && UserAgeCdU.Text != "")
-            {
-                if (!DatabaseFunctions.checkIfThereAreUsers(path))
                 {
-                    DatabaseFunctions.addUser(UserCdU.Text, path);
-
-                    DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserCdU.Text, path);
-
-                    DatabaseFunctions.SetAvance(DatabaseFunctions.currentUser, 0, path);
-                    avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
-
-                    tutorial();
-                }
-                else if (DatabaseFunctions.checkIfThereAreUsers(path))
-                {
-                    if (!DatabaseFunctions.checkIfNameExists(UserCdU.Text, path))
+                    if (!DatabaseFunctions.checkIfThereAreUsers(path))
                     {
                         DatabaseFunctions.addUser(UserCdU.Text, path);
 
@@ -733,22 +717,35 @@ namespace SignIt
 
                         DatabaseFunctions.SetAvance(DatabaseFunctions.currentUser, 0, path);
                         avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
+
                         tutorial();
                     }
-                    else
+                    else if (DatabaseFunctions.checkIfThereAreUsers(path))
                     {
-                        label1CdU.Show();
-                        label1CdU.Text = "Este nombre de usuario ya existe";
+                        if (!DatabaseFunctions.checkIfNameExists(UserCdU.Text, path))
+                        {
+                            DatabaseFunctions.addUser(UserCdU.Text, path);
+
+                            DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserCdU.Text, path);
+
+                            DatabaseFunctions.SetAvance(DatabaseFunctions.currentUser, 0, path);
+                            avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
+                            tutorial();
+                        }
+                        else
+                        {
+                            label1CdU.Show();
+                            label1CdU.Text = "Este nombre de usuario ya existe";
+                        }
                     }
                 }
             }
-        }
             else
             {
                 label1CdU.Show();
                 label1CdU.Text = "Por favor ingrese una valor coherente";
             }
-    }
+        }
 
         private void SnapBackToReality_Click(object sender, EventArgs e)
         {
@@ -763,14 +760,14 @@ namespace SignIt
             UserAgeCdU.ForeColor = Color.Silver;
         }
 
-//Home
+        //Home
 
         private void DiccionarioHome_Click_1(object sender, EventArgs e)
         {
-           signIt.SelectedTab = Diccionario;
-           botonesDiccionario();
-           panel1.SendToBack();
-           menu = false;
+            signIt.SelectedTab = Diccionario;
+            botonesDiccionario();
+            panel1.SendToBack();
+            menu = false;
             lastpage = 1;
         }
         private void LeccionesHome_Click_1(object sender, EventArgs e)
@@ -790,7 +787,7 @@ namespace SignIt
             homeSlider += 1;
         }
 
-//Menu
+        //Menu
 
         private async void Menubutton_Click(object sender, EventArgs e)
         {
@@ -828,7 +825,6 @@ namespace SignIt
             signIt.SelectedTab = Home;
             Menubutton_Click(sender, e);
             menu = false;
-            lastpage = 3;
         }
 
         private void MenuLectionsButton_Click(object sender, EventArgs e)
@@ -837,7 +833,6 @@ namespace SignIt
             botonesLecciones();
             Menubutton_Click(sender, e);
             menu = false;
-            lastpage = 2;
         }
 
         private void MenuDiccionarioButton_Click(object sender, EventArgs e)
@@ -847,7 +842,6 @@ namespace SignIt
             menu = false;
             signIt.SelectedTab = Diccionario;
             botonesDiccionario();
-            lastpage = 1;
         }
 
         private void MenuGamesButton_Click(object sender, EventArgs e)
@@ -855,40 +849,42 @@ namespace SignIt
             signIt.SelectedTab = juegos;
             Menubutton_Click(sender, e);
             menu = false;
-            lastpage = 4;
         }
 
         private void MenuSettingsButton_Click(object sender, EventArgs e)
         {
             experiencia();
             signIt.SelectedTab = Ajustes;
-            userNameSett2.Text = DatabaseFunctions.getString(DatabaseFunctions.currentUser,"Nombre",path);
+            userNameSett2.Text = DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path);
             experiencia();
             xpB.Text = Convert.ToString(UserLvl);
             xProgressBar.Maximum = NextLvl;
             xProgressBar.Value = UserXp;
-            progresoSett2.Text = Convert.ToString(avance) + " / 8";
+            progresoSett2.Text = Convert.ToString(avance) + " / 14";
             Menubutton_Click(sender, e);
             menu = false;
-            lastpage = 5;
         }
 
         private void MenuExitButton_Click(object sender, EventArgs e)
-            {
-                cierre();
-            }
+        {
+            cierre();
+        }
 
-//Lecciones
+        //Lecciones
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (avance == 1)
             {
+                caracolEJ1.Show();
+                caracolEJ2.Show();
                 ensañanza("Basico");
             }
             else if (avance > 1)
             {
-                ejercicios("Basico", 2 );
+                caracolEJ1.Show();
+                caracolEJ2.Show();
+                ejercicios("Basico", 2);
             }
         }
         private void comidaLecc_Click(object sender, EventArgs e)
@@ -970,8 +966,25 @@ namespace SignIt
             rta3 = true;
         }
 
+        private void caracolEJ1_Click(object sender, EventArgs e)
+        {
+            caracolayuda("ACEJ1", 11);
+        }
 
-//Ajustes
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            caracolayuda("ACEJ2", 12);
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            caracolayuda("ACE", 10);
+        }
+        private void caracolLecciones_Click(object sender, EventArgs e)
+        {
+            caracolayuda("ACL", 2);
+        }
+        //Ajustes
 
         private void FullScrButtonSett_Click(object sender, EventArgs e)
         {
@@ -995,9 +1008,7 @@ namespace SignIt
 
         private void caracolsett_Click(object sender, EventArgs e)
         {
-            signIt.SelectedTab = caracol;
-            myimage = new Bitmap(imagePath + "ASC.PNG");
-            caracol.BackgroundImage = myimage;
+            caracolayuda("ASC", 5);
         }
 
         //Diccionario
@@ -1064,10 +1075,7 @@ namespace SignIt
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
-            signIt.SelectedTab = caracol;
-            myimage = new Bitmap(imagePath + "ADC.PNG");
-            caracol.BackgroundImage = myimage;
-            desaparicionDelMenu();
+            caracolayuda("ADC", 1);
         }
 
         //Números
@@ -1321,6 +1329,18 @@ namespace SignIt
                 case 5:
                     signIt.SelectedTab = Ajustes;
                     break;
+
+                case 10:
+                    signIt.SelectedTab = Enseñanza;
+                    break;
+
+                case 11:
+                    signIt.SelectedTab = ejercicio1;
+                    break;
+
+                case 12:
+                    signIt.SelectedTab = ejercicio2;
+                    break;
             }
             aparicionDelMenu();
         }
@@ -1492,7 +1512,214 @@ namespace SignIt
         {
 
         }
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
 
-       
+        }
+
+        private async void examenlecc_Click(object sender, EventArgs e)
+        {
+            int vidas = 5;
+
+            List<int> videosExamen = new List<int>() {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,442,43,44,45,46,47,48,49,50,51,5253,54,55,56,57,58,59,60,61,62,63,64};
+            Random rand = new Random();
+            var shuffled = videosExamen.OrderBy(_ => rand.Next()).ToList();
+
+            foreach (int video in videosExamen)
+            {
+                ej2player.settings.setMode("loop", true);
+                ej2player.settings.setMode("loop", true);
+                ejercicio1VideoA.settings.setMode("loop", true);
+                ejercicio1VideoB.settings.setMode("loop", true);
+                ejercicio1VideoC.settings.setMode("loop", true);
+                {
+                    Random rdn = new Random();
+                    int TipoDeEjercicio = rdn.Next(0, 2);
+                    switch (TipoDeEjercicio)
+                    {
+
+                        case 0:
+                            ej1palabra.Text = "¿Cual seña corresponde a la palabra: ";
+                            ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(video, path) + "?";
+                            Random rm = new Random();
+                            int a = rdn.Next(1, 64);
+                            int b = rdn.Next(1, 64);
+                            int f = rm.Next(0, 2);
+                            switch (f)
+                            {
+
+                                case 0:
+                                    ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(video, path) + ".wmv";
+                                    ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                    ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                                    ejercicio1VideoA.Ctlcontrols.play();
+                                    ejercicio1VideoB.Ctlcontrols.play();
+                                    ejercicio1VideoC.Ctlcontrols.play();
+                                    ej02.Hide();
+                                    ej12.Hide();
+                                    signIt.SelectedTab = ejercicio1;
+                                    while (!continuar)
+                                    {
+                                        await Task.Delay(250);
+                                    }
+
+                                    continuar = false;
+
+                                    if (rta1 == true)
+                                    {
+                                        ganar_0_perder(ej01);
+                                    }
+                                    else if (rta2 == true)
+                                    {
+                                        ganar_0_perder(ej11);
+                                        vidas--;
+                                    }
+                                    else if (rta3 == true)
+                                    {
+                                        ganar_0_perder(ej11);
+                                        vidas--;
+                                    }
+                                    rta1 = false;
+                                    rta2 = false;
+                                    rta3 = false;
+                                    break;
+
+
+                                case 1:
+                                    ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(video, path) + ".wmv";
+                                    ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                    ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                                    ejercicio1VideoA.Ctlcontrols.play();
+                                    ejercicio1VideoB.Ctlcontrols.play();
+                                    ejercicio1VideoC.Ctlcontrols.play();
+                                    ej02.Hide();
+                                    ej12.Hide();
+                                    signIt.SelectedTab = ejercicio1;
+                                    while (!continuar)
+                                    {
+                                        await Task.Delay(250);
+                                    }
+
+                                    continuar = false;
+
+                                    if (rta1 == true)
+                                    {
+                                        ganar_0_perder(ej11);
+                                        vidas--;
+                                    }
+                                    else if (rta2 == true)
+                                    {
+                                        ganar_0_perder(ej01);
+                                        vidas += 1;
+                                    }
+                                    else if (rta3 == true)
+                                    {
+                                        ganar_0_perder(ej11);
+                                        vidas--;
+                                    }
+                                    rta1 = false;
+                                    rta2 = false;
+                                    rta3 = false;
+                                    break;
+
+                                case 2:
+                                    ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                                    ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                    ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(video, path) + ".wmv";
+                                    ejercicio1VideoA.Ctlcontrols.play();
+                                    ejercicio1VideoB.Ctlcontrols.play();
+                                    ejercicio1VideoC.Ctlcontrols.play();
+                                    signIt.SelectedTab = ejercicio1;
+                                    while (!continuar)
+                                    {
+                                        await Task.Delay(250);
+                                    }
+
+                                    continuar = false;
+
+                                    if (rta1 == true)
+                                    {
+                                        ganar_0_perder(ej11);
+                                        vidas--;
+                                    }
+                                    else if (rta2 == true)
+                                    {
+                                        ganar_0_perder(ej11);
+                                        vidas--;
+                                    }
+                                    else if (rta3 == true)
+                                    {
+                                        ganar_0_perder(ej01);
+                                    }
+                                    rta1 = false;
+                                    rta2 = false;
+                                    rta3 = false;
+                                    break;
+                            }
+                            ejercicio1VideoA.Ctlcontrols.stop();
+                            ejercicio1VideoB.Ctlcontrols.stop();
+                            ejercicio1VideoC.Ctlcontrols.stop();
+                            while (!continuar)
+                            {
+                                await Task.Delay(250);
+                            }
+                            ej02.Hide();
+                            ej12.Hide();
+                            continuar = false;
+
+                            break;
+
+                        case 1:
+                            string respuesta = DatabaseFunctions.GetNameOfVideo(video, path);
+
+                            ej2player.URL = signsPath + DatabaseFunctions.GetNameOfVideo(video, path) + ".wmv";
+                            ej2player.Ctlcontrols.play();
+
+                            signIt.SelectedTab = ejercicio2;
+
+                            while (!continuar)
+                            {
+                                await Task.Delay(250);
+                            }
+
+                            continuar = false;
+
+                            if (respuesta == rtaEj2.Text)
+                            {
+                                ej02.Show();
+                                ej02.BringToFront();
+                                Random ram = new Random();
+                            }
+                            else if (respuesta != rtaEj2.Text)
+                            {
+                                ganar_0_perder(ej12);
+                                vidas--;
+                            }
+
+                            while (!continuar)
+                            {
+                                await Task.Delay(250);
+                            }
+                            ej02.Hide();
+                            ej12.Hide();
+
+                            rtaEj2.Text = "";
+
+                            continuar = false;
+                            ej2player.Ctlcontrols.stop();
+
+                            break;
+                    }
+                    if (vidas == 0)
+                    {
+
+                    }
+                }
+            }
+            aparicionDelMenu();
+            DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
+            avance++;
+            signIt.SelectedTab = LeccionesMenu;
+        }
     }
 }
