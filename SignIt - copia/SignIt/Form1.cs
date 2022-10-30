@@ -1437,5 +1437,10 @@ namespace SignIt
         {
 
         }
+
+        private void PalabraEns_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

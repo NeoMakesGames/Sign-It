@@ -164,6 +164,7 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -1537,6 +1538,7 @@
             this.Enseñanza.BackColor = System.Drawing.Color.LightBlue;
             this.Enseñanza.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Enseñanza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Enseñanza.Controls.Add(this.panel8);
             this.Enseñanza.Controls.Add(this.EnseñanzaPlayer);
             this.Enseñanza.Controls.Add(this.PalabraEns);
             this.Enseñanza.Controls.Add(this.contEnseñanza);
@@ -1549,21 +1551,23 @@
             // EnseñanzaPlayer
             // 
             this.EnseñanzaPlayer.Enabled = true;
-            this.EnseñanzaPlayer.Location = new System.Drawing.Point(528, 292);
+            this.EnseñanzaPlayer.Location = new System.Drawing.Point(379, 84);
             this.EnseñanzaPlayer.Name = "EnseñanzaPlayer";
             this.EnseñanzaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("EnseñanzaPlayer.OcxState")));
-            this.EnseñanzaPlayer.Size = new System.Drawing.Size(269, 171);
+            this.EnseñanzaPlayer.Size = new System.Drawing.Size(642, 491);
             this.EnseñanzaPlayer.TabIndex = 2;
             // 
             // PalabraEns
             // 
             this.PalabraEns.AutoSize = true;
             this.PalabraEns.BackColor = System.Drawing.Color.Transparent;
-            this.PalabraEns.Location = new System.Drawing.Point(663, 662);
+            this.PalabraEns.Font = new System.Drawing.Font("Inter ExtraBold", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PalabraEns.Location = new System.Drawing.Point(616, 643);
             this.PalabraEns.Name = "PalabraEns";
-            this.PalabraEns.Size = new System.Drawing.Size(43, 13);
+            this.PalabraEns.Size = new System.Drawing.Size(169, 49);
             this.PalabraEns.TabIndex = 1;
             this.PalabraEns.Text = "Palabra";
+            this.PalabraEns.Click += new System.EventHandler(this.PalabraEns_Click);
             this.PalabraEns.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label4_MouseDown);
             // 
             // contEnseñanza
@@ -1573,7 +1577,7 @@
             this.contEnseñanza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.contEnseñanza.FlatAppearance.BorderSize = 0;
             this.contEnseñanza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.contEnseñanza.Location = new System.Drawing.Point(1139, 635);
+            this.contEnseñanza.Location = new System.Drawing.Point(1139, 626);
             this.contEnseñanza.Name = "contEnseñanza";
             this.contEnseñanza.Size = new System.Drawing.Size(182, 66);
             this.contEnseñanza.TabIndex = 0;
@@ -1622,9 +1626,9 @@
             this.panel5.Controls.Add(this.ej2videoC);
             this.panel5.Controls.Add(this.ej2videoB);
             this.panel5.Controls.Add(this.ej2videoA);
-            this.panel5.Location = new System.Drawing.Point(48, 424);
+            this.panel5.Location = new System.Drawing.Point(48, 410);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1253, 67);
+            this.panel5.Size = new System.Drawing.Size(1253, 81);
             this.panel5.TabIndex = 8;
             // 
             // ej2videoC
@@ -1939,6 +1943,15 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel8.Location = new System.Drawing.Point(379, 486);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(642, 89);
+            this.panel8.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2125,6 +2138,7 @@
         private System.Windows.Forms.Button caracolsett;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox Tipgrafia;
+        private System.Windows.Forms.Panel panel8;
     }
 }
 
