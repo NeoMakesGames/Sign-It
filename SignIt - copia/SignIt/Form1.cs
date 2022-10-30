@@ -368,10 +368,11 @@ namespace SignIt
             avance++;
         }
 
-        public async void ejercicios(string tipo)
+        public async void ejercicios(string tipo, int avA)
         {
             desaparicionDelMenu();
             continuar = false;
+            int errores = 0;
             int z = 0;
             int[] videos = new int[5];
             int xpGanada = 5;
@@ -476,10 +477,12 @@ namespace SignIt
                                     else if (rta2 == true)
                                     {
                                         ganar_0_perder(ej11);
+                                        errores++;
                                     }
                                     else if (rta3 == true)
                                     {
                                         ganar_0_perder(ej11);
+                                        errores++;
                                     }
                                     rta1 = false;
                                     rta2 = false;
@@ -510,6 +513,7 @@ namespace SignIt
                                     if (rta1 == true)
                                     {
                                         ganar_0_perder(ej11);
+                                        errores++;
                                     }
                                     else if (rta2 == true)
                                     {
@@ -519,6 +523,7 @@ namespace SignIt
                                     else if (rta3 == true)
                                     {
                                         ganar_0_perder(ej11);
+                                        errores++;
                                     }
                                     rta1 = false;
                                     rta2 = false;
@@ -546,10 +551,12 @@ namespace SignIt
                                     if (rta1 == true)
                                     {
                                         ganar_0_perder(ej11);
+                                        errores++;
                                     }
                                     else if (rta2 == true)
                                     {
                                         ganar_0_perder(ej11);
+                                        errores++;
                                     }
                                     else if (rta3 == true)
                                     {
@@ -599,8 +606,8 @@ namespace SignIt
                             }
                             else if (respuesta != rtaEj2.Text)
                             {
-                                ej12.Show();
-                                ej12.BringToFront();
+                                ganar_0_perder(ej12);
+                                errores++;
                             }
 
                             while (!continuar)
@@ -630,6 +637,11 @@ namespace SignIt
             signIt.SelectedTab = LeccionesMenu;
             DatabaseFunctions.addXP(DatabaseFunctions.currentUser, xpGanada, path);
             experiencia();
+            if(errores == 0 && avance == avA)
+            {
+                DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
+                avance++;
+            }
         }
 
         private void ganar_0_perder(UserControl uc)
@@ -878,64 +890,64 @@ namespace SignIt
             }
             else if (avance > 1)
             {
-                ejercicios("Basico");
+                ejercicios("Basico", 2 );
             }
         }
         private void comidaLecc_Click(object sender, EventArgs e)
         {
-            if (avance == 2)
+            if (avance == 3)
             {
                 ensañanza("Comida");
             }
-            else if (avance > 2)
+            else if (avance > 3)
             {
-                ejercicios("Comida");
+                ejercicios("Comida", 4);
             }
         }
         private void coloresLecc_Click(object sender, EventArgs e)
         {
-            if (avance == 3)
+            if (avance == 5)
             {
                 ensañanza("Colores");
             }
-            else if (avance > 3)
+            else if (avance > 5)
             {
-                ejercicios("Colores");
+                ejercicios("Colores", 6);
             }
         }
         private void lugaresLecc_Click(object sender, EventArgs e)
         {
-            if (avance == 4)
+            if (avance == 7)
             {
                 ensañanza("Lugares");
             }
-            else if (avance > 4)
+            else if (avance > 7)
             {
-                ejercicios("Lugares");
+                ejercicios("Lugares", 8);
             }
         }
 
         private void pronombresLecc_Click(object sender, EventArgs e)
         {
-            if (avance == 5)
+            if (avance == 9)
             {
                 ensañanza("Pronombres");
             }
-            else if (avance > 5)
+            else if (avance > 9)
             {
-                ejercicios("Pronombres");
+                ejercicios("Pronombres", 10);
             }
         }
 
         private void verbosLecc_Click(object sender, EventArgs e)
         {
-            if (avance == 6)
+            if (avance == 11)
             {
                 ensañanza("Verbos");
             }
-            else if (avance > 6)
+            else if (avance > 11)
             {
-                ejercicios("Verbos");
+                ejercicios("Verbos", 12);
             }
         }
 
@@ -1140,19 +1152,23 @@ namespace SignIt
         private void questo2_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = caracol;
-            myimage = new Bitmap(imagePath + "Group 78.PNG");
+            myimage = new Bitmap(imagePath + "CAC.PNG");
             caracol.BackgroundImage = myimage;
             caracolExit.Hide();
+            caracolExit2.Show();
             caracol.BackColor = Color.FromArgb(192, 255, 255);
+            desaparicionDelMenu();
         }
 
         private void questo_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = caracol;
-            myimage = new Bitmap(imagePath + "Group 79.PNG");
+            myimage = new Bitmap(imagePath + "CAM.PNG");
             caracol.BackgroundImage = myimage;
             caracolExit.Hide();
+            caracolExit2.Show();
             caracol.BackColor = Color.FromArgb(192, 255, 255);
+            desaparicionDelMenu();
         }
 
 
@@ -1466,6 +1482,8 @@ namespace SignIt
 
         private void caracolExit2_Click(object sender, EventArgs e)
         {
+            aparicionDelMenu();
+            signIt.SelectedTab = juegos;
             caracolExit2.Hide();
             caracolExit.Show();
             caracol.BackColor = Color.FromArgb(128, 128, 255);
