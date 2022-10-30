@@ -333,6 +333,16 @@ namespace SignIt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Botón__4_1 {
+            get {
+                object obj = ResourceManager.GetObject("Botón (4)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Botón_seleccionado {
             get {
                 object obj = ResourceManager.GetObject("Botón seleccionado", resourceCulture);
@@ -403,6 +413,16 @@ namespace SignIt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Flecha3 {
+            get {
+                object obj = ResourceManager.GetObject("Flecha3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondo {
             get {
                 object obj = ResourceManager.GetObject("fondo", resourceCulture);
@@ -456,6 +476,16 @@ namespace SignIt.Properties {
         internal static System.Drawing.Bitmap Fondo_triángulos_prendidos__2_ {
             get {
                 object obj = ResourceManager.GetObject("Fondo triángulos prendidos (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_34 {
+            get {
+                object obj = ResourceManager.GetObject("Group 34", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

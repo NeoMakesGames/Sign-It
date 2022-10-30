@@ -111,9 +111,10 @@
             this.dbplayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.exitDB = new System.Windows.Forms.Button();
             this.juegos = new System.Windows.Forms.TabPage();
+            this.questo2 = new System.Windows.Forms.Button();
+            this.questo = new System.Windows.Forms.Button();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Tipgrafia = new System.Windows.Forms.ComboBox();
@@ -130,12 +131,11 @@
             this.PantallaSett = new System.Windows.Forms.Label();
             this.xProgressBar = new System.Windows.Forms.ProgressBar();
             this.Enseñanza = new System.Windows.Forms.TabPage();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.EnseñanzaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.PalabraEns = new System.Windows.Forms.Label();
             this.contEnseñanza = new System.Windows.Forms.Button();
             this.ejercicio1 = new System.Windows.Forms.TabPage();
-            this.ej11 = new SignIt.Ej1();
-            this.ej01 = new SignIt.Ej0();
             this.panel5 = new System.Windows.Forms.Panel();
             this.ej2videoC = new System.Windows.Forms.Button();
             this.ej2videoB = new System.Windows.Forms.Button();
@@ -145,8 +145,6 @@
             this.ejercicio1VideoA = new AxWMPLib.AxWindowsMediaPlayer();
             this.ej1palabra = new System.Windows.Forms.Label();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
-            this.ej12 = new SignIt.Ej1();
-            this.ej02 = new SignIt.Ej0();
             this.panel4 = new System.Windows.Forms.Panel();
             this.rtaEj2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -154,6 +152,7 @@
             this.ej2cont = new System.Windows.Forms.Button();
             this.ejercicio3 = new System.Windows.Forms.TabPage();
             this.caracol = new System.Windows.Forms.TabPage();
+            this.caracolExit2 = new System.Windows.Forms.Button();
             this.caracolExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.MenuExitButton = new System.Windows.Forms.Button();
@@ -164,7 +163,11 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.race1 = new SignIt.Race();
+            this.ej11 = new SignIt.Ej1();
+            this.ej01 = new SignIt.Ej0();
+            this.ej12 = new SignIt.Ej1();
+            this.ej02 = new SignIt.Ej0();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -1289,6 +1292,8 @@
             this.juegos.BackColor = System.Drawing.Color.LightBlue;
             this.juegos.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.juegos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.juegos.Controls.Add(this.questo2);
+            this.juegos.Controls.Add(this.questo);
             this.juegos.Controls.Add(this.MemotestGamesButton);
             this.juegos.Controls.Add(this.RaceGamesButton);
             this.juegos.Controls.Add(this.race1);
@@ -1297,6 +1302,36 @@
             this.juegos.Size = new System.Drawing.Size(1392, 774);
             this.juegos.TabIndex = 6;
             this.juegos.Text = "juegos";
+            // 
+            // questo2
+            // 
+            this.questo2.BackColor = System.Drawing.Color.Transparent;
+            this.questo2.BackgroundImage = global::SignIt.Properties.Resources.Group_34;
+            this.questo2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.questo2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.questo2.FlatAppearance.BorderSize = 0;
+            this.questo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.questo2.Location = new System.Drawing.Point(893, 486);
+            this.questo2.Name = "questo2";
+            this.questo2.Size = new System.Drawing.Size(75, 75);
+            this.questo2.TabIndex = 4;
+            this.questo2.UseVisualStyleBackColor = false;
+            this.questo2.Click += new System.EventHandler(this.questo2_Click);
+            // 
+            // questo
+            // 
+            this.questo.BackColor = System.Drawing.Color.Transparent;
+            this.questo.BackgroundImage = global::SignIt.Properties.Resources.Group_34;
+            this.questo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.questo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.questo.FlatAppearance.BorderSize = 0;
+            this.questo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.questo.Location = new System.Drawing.Point(403, 486);
+            this.questo.Name = "questo";
+            this.questo.Size = new System.Drawing.Size(75, 75);
+            this.questo.TabIndex = 3;
+            this.questo.UseVisualStyleBackColor = false;
+            this.questo.Click += new System.EventHandler(this.questo_Click);
             // 
             // MemotestGamesButton
             // 
@@ -1325,16 +1360,6 @@
             this.RaceGamesButton.TabIndex = 0;
             this.RaceGamesButton.UseVisualStyleBackColor = false;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
-            // 
-            // race1
-            // 
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(-4, -18);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1366, 788);
-            this.race1.TabIndex = 2;
-            this.race1.Visible = false;
             // 
             // Ajustes
             // 
@@ -1548,6 +1573,15 @@
             this.Enseñanza.TabIndex = 7;
             this.Enseñanza.Text = "Enseñanza";
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel8.Location = new System.Drawing.Point(379, 486);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(642, 89);
+            this.panel8.TabIndex = 3;
+            // 
             // EnseñanzaPlayer
             // 
             this.EnseñanzaPlayer.Enabled = true;
@@ -1601,24 +1635,6 @@
             this.ejercicio1.Size = new System.Drawing.Size(1392, 774);
             this.ejercicio1.TabIndex = 9;
             this.ejercicio1.Text = "Ejercicio1";
-            // 
-            // ej11
-            // 
-            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
-            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej11.Location = new System.Drawing.Point(-15, 550);
-            this.ej11.Name = "ej11";
-            this.ej11.Size = new System.Drawing.Size(1366, 150);
-            this.ej11.TabIndex = 10;
-            // 
-            // ej01
-            // 
-            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
-            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej01.Location = new System.Drawing.Point(-15, 550);
-            this.ej01.Name = "ej01";
-            this.ej01.Size = new System.Drawing.Size(1366, 150);
-            this.ej01.TabIndex = 9;
             // 
             // panel5
             // 
@@ -1719,24 +1735,6 @@
             this.ejercicio2.TabIndex = 10;
             this.ejercicio2.Text = "ejercicio2";
             // 
-            // ej12
-            // 
-            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
-            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej12.Location = new System.Drawing.Point(-15, 550);
-            this.ej12.Name = "ej12";
-            this.ej12.Size = new System.Drawing.Size(1366, 150);
-            this.ej12.TabIndex = 8;
-            // 
-            // ej02
-            // 
-            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
-            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej02.Location = new System.Drawing.Point(-15, 550);
-            this.ej02.Name = "ej02";
-            this.ej02.Size = new System.Drawing.Size(1366, 150);
-            this.ej02.TabIndex = 7;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
@@ -1802,15 +1800,30 @@
             // 
             // caracol
             // 
-            this.caracol.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.caracol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.caracol.BackgroundImage = global::SignIt.Properties.Resources.ADC;
             this.caracol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.caracol.Controls.Add(this.caracolExit2);
             this.caracol.Controls.Add(this.caracolExit);
             this.caracol.Location = new System.Drawing.Point(4, 22);
             this.caracol.Name = "caracol";
             this.caracol.Size = new System.Drawing.Size(1392, 774);
             this.caracol.TabIndex = 12;
             this.caracol.Text = "caracol";
+            // 
+            // caracolExit2
+            // 
+            this.caracolExit2.BackColor = System.Drawing.Color.Transparent;
+            this.caracolExit2.BackgroundImage = global::SignIt.Properties.Resources.Flecha3;
+            this.caracolExit2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.caracolExit2.FlatAppearance.BorderSize = 0;
+            this.caracolExit2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.caracolExit2.Location = new System.Drawing.Point(30, 16);
+            this.caracolExit2.Name = "caracolExit2";
+            this.caracolExit2.Size = new System.Drawing.Size(98, 67);
+            this.caracolExit2.TabIndex = 1;
+            this.caracolExit2.UseVisualStyleBackColor = false;
+            this.caracolExit2.Click += new System.EventHandler(this.caracolExit2_Click);
             // 
             // caracolExit
             // 
@@ -1943,14 +1956,51 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // panel8
+            // race1
             // 
-            this.panel8.BackColor = System.Drawing.Color.Transparent;
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel8.Location = new System.Drawing.Point(379, 486);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(642, 89);
-            this.panel8.TabIndex = 3;
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(-4, -18);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1366, 788);
+            this.race1.TabIndex = 2;
+            this.race1.Visible = false;
+            // 
+            // ej11
+            // 
+            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
+            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej11.Location = new System.Drawing.Point(-15, 550);
+            this.ej11.Name = "ej11";
+            this.ej11.Size = new System.Drawing.Size(1366, 150);
+            this.ej11.TabIndex = 10;
+            // 
+            // ej01
+            // 
+            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
+            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej01.Location = new System.Drawing.Point(-15, 550);
+            this.ej01.Name = "ej01";
+            this.ej01.Size = new System.Drawing.Size(1366, 150);
+            this.ej01.TabIndex = 9;
+            // 
+            // ej12
+            // 
+            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
+            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej12.Location = new System.Drawing.Point(-15, 550);
+            this.ej12.Name = "ej12";
+            this.ej12.Size = new System.Drawing.Size(1366, 150);
+            this.ej12.TabIndex = 8;
+            // 
+            // ej02
+            // 
+            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
+            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej02.Location = new System.Drawing.Point(-15, 550);
+            this.ej02.Name = "ej02";
+            this.ej02.Size = new System.Drawing.Size(1366, 150);
+            this.ej02.TabIndex = 7;
             // 
             // Form1
             // 
@@ -2139,6 +2189,9 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox Tipgrafia;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button questo;
+        private System.Windows.Forms.Button caracolExit2;
+        private System.Windows.Forms.Button questo2;
     }
 }
 

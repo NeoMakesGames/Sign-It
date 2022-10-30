@@ -326,6 +326,9 @@
     <None Include="Resources\Botón1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Flecha3.png" />
+    <None Include="Resources\Botón %284%291.png" />
+    <None Include="Resources\Group 34.png" />
     <None Include="Resources\Ellipse 4.png" />
     <None Include="Resources\Ícono del perfil.png" />
     <None Include="Resources\Botón %284%29.png" />

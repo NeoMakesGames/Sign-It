@@ -651,6 +651,7 @@ namespace SignIt
             ej02.Hide();
             ej12.Hide();
             DBeta.SendToBack();
+            caracolExit2.Hide();
         }
 
 //Inicio de Sesión
@@ -1136,7 +1137,26 @@ namespace SignIt
             //Memotest1.Show();
         }
 
-//constantCheck
+        private void questo2_Click(object sender, EventArgs e)
+        {
+            signIt.SelectedTab = caracol;
+            myimage = new Bitmap(imagePath + "Group 78.PNG");
+            caracol.BackgroundImage = myimage;
+            caracolExit.Hide();
+            caracol.BackColor = Color.FromArgb(192, 255, 255);
+        }
+
+        private void questo_Click(object sender, EventArgs e)
+        {
+            signIt.SelectedTab = caracol;
+            myimage = new Bitmap(imagePath + "Group 79.PNG");
+            caracol.BackgroundImage = myimage;
+            caracolExit.Hide();
+            caracol.BackColor = Color.FromArgb(192, 255, 255);
+        }
+
+
+        //constantCheck
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -1361,33 +1381,6 @@ namespace SignIt
 
         }
 
-        private void caracolExit_Click(object sender, EventArgs e)
-        {
-            switch(lastpage)
-            {
-                case 1:
-                    signIt.SelectedTab = Diccionario;
-                    break;
-
-                case 2:
-                    signIt.SelectedTab = LeccionesMenu;
-                    break;
-
-                case 3:
-                    signIt.SelectedTab = Home;
-                    break;
-
-                case 4:
-                    signIt.SelectedTab = juegos;
-                    break;
-
-                case 5:
-                    signIt.SelectedTab = Ajustes;
-                    break;
-            }
-            aparicionDelMenu();
-        }
-
         private void Ajustes_Click(object sender, EventArgs e)
         {
 
@@ -1441,6 +1434,41 @@ namespace SignIt
         private void PalabraEns_Click(object sender, EventArgs e)
         {
 
+        }
+
+        //Ayuda
+        private void caracolExit_Click(object sender, EventArgs e)
+        {
+            switch (lastpage)
+            {
+                case 1:
+                    signIt.SelectedTab = Diccionario;
+                    break;
+
+                case 2:
+                    signIt.SelectedTab = LeccionesMenu;
+                    break;
+
+                case 3:
+                    signIt.SelectedTab = Home;
+                    break;
+
+                case 4:
+                    signIt.SelectedTab = juegos;
+                    break;
+
+                case 5:
+                    signIt.SelectedTab = Ajustes;
+                    break;
+            }
+            aparicionDelMenu();
+        }
+
+        private void caracolExit2_Click(object sender, EventArgs e)
+        {
+            caracolExit2.Hide();
+            caracolExit.Show();
+            caracol.BackColor = Color.FromArgb(128, 128, 255);
         }
     }
 }
