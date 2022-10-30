@@ -57,6 +57,7 @@ namespace SignIt
         }
 
         //Funciones
+
         private void diccionario(string palabra)
         {
             palabraDB.Text = palabra;
@@ -1527,6 +1528,10 @@ namespace SignIt
 
             foreach (int video in videosExamen)
             {
+                ej01.Hide();
+                ej11.Hide();
+                ej02.Hide();
+                ej12.Hide();
                 ej2player.settings.setMode("loop", true);
                 ej2player.settings.setMode("loop", true);
                 ejercicio1VideoA.settings.setMode("loop", true);
