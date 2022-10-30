@@ -90,18 +90,6 @@
     <Compile Include="juegos_y_cositas\Race.Designer.cs">
       <DependentUpon>Race.cs</DependentUpon>
     </Compile>
-    <Compile Include="juegos_y_cositas\tuto.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="juegos_y_cositas\tuto.Designer.cs">
-      <DependentUpon>tuto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="juegos_y_cositas\tutorial.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="juegos_y_cositas\tutorial.Designer.cs">
-      <DependentUpon>tutorial.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="diccionarioBeta.resx">
       <DependentUpon>diccionarioBeta.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,12 +104,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="juegos_y_cositas\Race.resx">
       <DependentUpon>Race.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="juegos_y_cositas\tuto.resx">
-      <DependentUpon>tuto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="juegos_y_cositas\tutorial.resx">
-      <DependentUpon>tutorial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

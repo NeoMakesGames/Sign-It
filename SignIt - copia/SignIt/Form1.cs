@@ -23,7 +23,6 @@ namespace SignIt
         Image myimage;
 
         public static bool externalmenu = false;
-        public static bool endTutorial = false;
 
         public static string path = "Usuarios.accdb";
         public static string imagePath = "Imagenes\\";
@@ -50,6 +49,7 @@ namespace SignIt
         bool rta1 = false;
         bool rta2 = false;
         bool rta3 = false;
+        bool turorial;
 
         public Form1()
         {
@@ -99,7 +99,7 @@ namespace SignIt
                 basicoLecc.BackgroundImage = yepMyImage;
             }
 
-            if (avance < 2)
+            if (avance < 3)
             {
                 botonBI = imagePath + "ComidaX.PNG";
                 yepMyImage = new Bitmap(botonBI);
@@ -112,7 +112,7 @@ namespace SignIt
                 comidaLecc.BackgroundImage = yepMyImage;
             }
 
-            if (avance < 3)
+            if (avance < 5)
             {
                 botonBI = imagePath + "ColoresX.PNG";
                 yepMyImage = new Bitmap(botonBI);
@@ -125,7 +125,7 @@ namespace SignIt
                 coloresLecc.BackgroundImage = yepMyImage;
             }
 
-            if (avance < 4)
+            if (avance < 7)
             {
                 botonBI = imagePath + "LugaresX.PNG";
                 yepMyImage = new Bitmap(botonBI);
@@ -138,7 +138,7 @@ namespace SignIt
                 lugaresLecc.BackgroundImage = yepMyImage;
             }
 
-            if (avance < 5)
+            if (avance < 9)
             {
                 botonBI = imagePath + "PronombresX.PNG";
                 yepMyImage = new Bitmap(botonBI);
@@ -151,7 +151,7 @@ namespace SignIt
                 pronombresLecc.BackgroundImage = yepMyImage;
             }
 
-            if (avance < 6)
+            if (avance < 11)
             {
                 botonBI = imagePath + "VerbosX.PNG";
                 myimage = new Bitmap(botonBI);
@@ -163,7 +163,7 @@ namespace SignIt
                 yepMyImage = new Bitmap(botonBI);
                 verbosLecc.BackgroundImage = yepMyImage;
             }
-            if (avance < 7)
+            if (avance < 13)
             {
                 botonBI = imagePath + "ExámenX.PNG";
                 yepMyImage = new Bitmap(botonBI);
@@ -194,7 +194,7 @@ namespace SignIt
                 basicoDiccionario.BackgroundImage = notmyimage;
             }
 
-            if (avance < 3)
+            if (avance < 4)
             {
                 botonBI = imagePath + "ComidaX.PNG";
                 notmyimage = new Bitmap(botonBI);
@@ -207,7 +207,7 @@ namespace SignIt
                 comidaDiccionario.BackgroundImage = notmyimage;
             }
 
-            if (avance < 4)
+            if (avance < 6)
             {
                 botonBI = imagePath + "ColoresX.PNG";
                 notmyimage = new Bitmap(botonBI);
@@ -219,7 +219,7 @@ namespace SignIt
                 coloresDiccionario.BackgroundImage = notmyimage;
             }
 
-            if (avance < 5)
+            if (avance < 8)
             {
                 botonBI = imagePath + "LugaresX.PNG";
                 notmyimage = new Bitmap(botonBI);
@@ -231,7 +231,7 @@ namespace SignIt
                 lugaresDiccionario.BackgroundImage = notmyimage;
             }
 
-            if (avance < 6)
+            if (avance < 10)
             {
                 botonBI = imagePath + "PronombresX.PNG";
                 notmyimage = new Bitmap(botonBI);
@@ -244,7 +244,7 @@ namespace SignIt
                 pronombresDiccionario.BackgroundImage = notmyimage;
             }
 
-            if (avance < 7)
+            if (avance < 12)
             {
                 botonBI = imagePath + "VerbosX.PNG";
                 notmyimage = new Bitmap(botonBI);
@@ -321,9 +321,14 @@ namespace SignIt
 
         private void tutorial()
         {
-            signIt.SelectedTab = Enseñanza;
-            //tuto1.Show();
-            DatabaseFunctions.SetAvance(DatabaseFunctions.currentUser, 1, path);
+            myimage = new Bitmap (imagePath + "Presentacion.PNG");
+            caracol.BackgroundImage = myimage;
+            myimage = new Bitmap (imagePath + "Botón (3).PNG");
+            caracolExit.BackgroundImage = myimage;
+            signIt.SelectedTab = caracol;
+            lastpage = 3;
+            turorial = true;
+            UserHome.Text = (DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path));
         }
 
         public async void ensañanza(string tipo)
@@ -343,9 +348,6 @@ namespace SignIt
                 }
             }
             signIt.SelectedTab = Enseñanza;
-            DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
-            avance++;
-
             foreach (int id in videos)
             {
                 if (id != 0)
@@ -372,7 +374,7 @@ namespace SignIt
         {
             desaparicionDelMenu();
             continuar = false;
-            int errores = 0;
+            int errores = 3;
             int z = 0;
             int[] videos = new int[5];
             int xpGanada = 5;
@@ -477,12 +479,12 @@ namespace SignIt
                                     else if (rta2 == true)
                                     {
                                         ganar_0_perder(ej11);
-                                        errores++;
+                                        errores--;
                                     }
                                     else if (rta3 == true)
                                     {
                                         ganar_0_perder(ej11);
-                                        errores++;
+                                        errores--;
                                     }
                                     rta1 = false;
                                     rta2 = false;
@@ -513,7 +515,7 @@ namespace SignIt
                                     if (rta1 == true)
                                     {
                                         ganar_0_perder(ej11);
-                                        errores++;
+                                        errores--;
                                     }
                                     else if (rta2 == true)
                                     {
@@ -523,7 +525,7 @@ namespace SignIt
                                     else if (rta3 == true)
                                     {
                                         ganar_0_perder(ej11);
-                                        errores++;
+                                        errores--;
                                     }
                                     rta1 = false;
                                     rta2 = false;
@@ -551,12 +553,12 @@ namespace SignIt
                                     if (rta1 == true)
                                     {
                                         ganar_0_perder(ej11);
-                                        errores++;
+                                        errores--;
                                     }
                                     else if (rta2 == true)
                                     {
                                         ganar_0_perder(ej11);
-                                        errores++;
+                                        errores--;
                                     }
                                     else if (rta3 == true)
                                     {
@@ -607,7 +609,7 @@ namespace SignIt
                             else if (respuesta != rtaEj2.Text)
                             {
                                 ganar_0_perder(ej12);
-                                errores++;
+                                errores--;
                             }
 
                             while (!continuar)
@@ -620,28 +622,24 @@ namespace SignIt
                             rtaEj2.Text = "";
                             
                             continuar = false;
+                            ej2player.Ctlcontrols.stop();
                             
                             break;
-
-
-                       // case 2:
-                       //     signIt.SelectedTab = ejercicio3;
-                       //     break;
+                        }
                     }
+                    z++;
                 }
-                z++;
-            }
-            ej2player.Ctlcontrols.stop();
-            botonesLecciones();
             aparicionDelMenu();
-            signIt.SelectedTab = LeccionesMenu;
             DatabaseFunctions.addXP(DatabaseFunctions.currentUser, xpGanada, path);
-            experiencia();
-            if(errores == 0 && avance == avA)
+            if(errores == 3 && avance == avA)
             {
                 DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
                 avance++;
             }
+            botonesLecciones();
+            signIt.SelectedTab = LeccionesMenu;
+
+            experiencia();
         }
 
         private void ganar_0_perder(UserControl uc)
@@ -1184,12 +1182,6 @@ namespace SignIt
                         aparicionDelMenu();
                         externalmenu = false;
                     }
-                    else if (endTutorial == true)
-                    {
-                        aparicionDelMenu();
-                        UserHome.Text = (DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path));
-                        signIt.SelectedTab = Home;
-                    }
                 }
                 else if (signIt.SelectedTab == Home)
                 {
@@ -1293,6 +1285,55 @@ namespace SignIt
         {
 
         }
+
+
+        //Ayuda
+        private void caracolExit_Click(object sender, EventArgs e)
+        {
+            if (turorial == true)
+            {
+                signIt.SelectedTab = caracol;
+                lastpage = 3;
+                aparicionDelMenu();
+                DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
+                avance++;
+                myimage = new Bitmap(imagePath + "Botón (4).PNG");
+                caracolExit.BackgroundImage = myimage;
+            }
+            switch (lastpage)
+            {
+                case 1:
+                    signIt.SelectedTab = Diccionario;
+                    break;
+
+                case 2:
+                    signIt.SelectedTab = LeccionesMenu;
+                    break;
+
+                case 3:
+                    signIt.SelectedTab = Home;
+                    break;
+
+                case 4:
+                    signIt.SelectedTab = juegos;
+                    break;
+
+                case 5:
+                    signIt.SelectedTab = Ajustes;
+                    break;
+            }
+            aparicionDelMenu();
+        }
+
+        private void caracolExit2_Click(object sender, EventArgs e)
+        {
+            aparicionDelMenu();
+            signIt.SelectedTab = juegos;
+            caracolExit2.Hide();
+            caracolExit.Show();
+            caracol.BackColor = Color.FromArgb(128, 128, 255);
+        }
+
 
         //Botones
         private void label4_MouseDown(object sender, MouseEventArgs e)
@@ -1452,41 +1493,6 @@ namespace SignIt
 
         }
 
-        //Ayuda
-        private void caracolExit_Click(object sender, EventArgs e)
-        {
-            switch (lastpage)
-            {
-                case 1:
-                    signIt.SelectedTab = Diccionario;
-                    break;
-
-                case 2:
-                    signIt.SelectedTab = LeccionesMenu;
-                    break;
-
-                case 3:
-                    signIt.SelectedTab = Home;
-                    break;
-
-                case 4:
-                    signIt.SelectedTab = juegos;
-                    break;
-
-                case 5:
-                    signIt.SelectedTab = Ajustes;
-                    break;
-            }
-            aparicionDelMenu();
-        }
-
-        private void caracolExit2_Click(object sender, EventArgs e)
-        {
-            aparicionDelMenu();
-            signIt.SelectedTab = juegos;
-            caracolExit2.Hide();
-            caracolExit.Show();
-            caracol.BackColor = Color.FromArgb(128, 128, 255);
-        }
+       
     }
 }

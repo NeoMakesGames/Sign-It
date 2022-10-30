@@ -168,6 +168,7 @@
             this.ej01 = new SignIt.Ej0();
             this.ej12 = new SignIt.Ej1();
             this.ej02 = new SignIt.Ej0();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -1722,6 +1723,7 @@
             this.ejercicio2.BackColor = System.Drawing.Color.LightBlue;
             this.ejercicio2.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.ejercicio2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ejercicio2.Controls.Add(this.panel9);
             this.ejercicio2.Controls.Add(this.ej12);
             this.ejercicio2.Controls.Add(this.ej02);
             this.ejercicio2.Controls.Add(this.panel4);
@@ -1833,9 +1835,9 @@
             this.caracolExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.caracolExit.FlatAppearance.BorderSize = 0;
             this.caracolExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolExit.Location = new System.Drawing.Point(479, 592);
+            this.caracolExit.Location = new System.Drawing.Point(479, 599);
             this.caracolExit.Name = "caracolExit";
-            this.caracolExit.Size = new System.Drawing.Size(430, 100);
+            this.caracolExit.Size = new System.Drawing.Size(430, 86);
             this.caracolExit.TabIndex = 0;
             this.caracolExit.UseVisualStyleBackColor = false;
             this.caracolExit.Click += new System.EventHandler(this.caracolExit_Click);
@@ -2001,6 +2003,16 @@
             this.ej02.Name = "ej02";
             this.ej02.Size = new System.Drawing.Size(1366, 150);
             this.ej02.TabIndex = 7;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Transparent;
+            this.panel9.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
+            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel9.Location = new System.Drawing.Point(1215, 38);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(150, 150);
+            this.panel9.TabIndex = 9;
             // 
             // Form1
             // 
@@ -2192,6 +2204,7 @@
         private System.Windows.Forms.Button questo;
         private System.Windows.Forms.Button caracolExit2;
         private System.Windows.Forms.Button questo2;
+        private System.Windows.Forms.Panel panel9;
     }
 }
 
