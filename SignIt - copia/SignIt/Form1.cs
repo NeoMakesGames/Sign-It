@@ -13,6 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Image = System.Drawing.Image;
 
 namespace SignIt
@@ -654,8 +655,8 @@ namespace SignIt
 
 //Inicio de Sesión
         private void ComenzarIds_Click(object sender, EventArgs e)
-        {
-            if (DatabaseFunctions.checkIfNameExists(UserIdS.Text, path) == true)
+        {   
+                if (DatabaseFunctions.checkIfNameExists(UserIdS.Text, path) == true)
             {
                 DatabaseFunctions.currentUser = DatabaseFunctions.getIDFromName(UserIdS.Text, path);
                 avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser,"Avance" ,path));
@@ -693,7 +694,12 @@ namespace SignIt
 
 //Creación de Usuario
         private void ComenzarCdU_Click(object sender, EventArgs e)
-        {   if (UserCdU.Text != "" && UserAgeCdU.Text != "")
+        {
+            int sip;
+
+            if (int.TryParse(UserAgeCdU.Text, out sip) && Convert.ToInt32(UserAgeCdU.Text) < 100)
+            {
+                if (UserCdU.Text != "" && UserAgeCdU.Text != "")
             {
                 if (!DatabaseFunctions.checkIfThereAreUsers(path))
                 {
@@ -721,10 +727,17 @@ namespace SignIt
                     else
                     {
                         label1CdU.Show();
+                        label1CdU.Text = "Este nombre de usuario ya existe";
                     }
                 }
             }
         }
+            else
+            {
+                label1CdU.Show();
+                label1CdU.Text = "Por favor ingrese una valor coherente";
+            }
+    }
 
         private void SnapBackToReality_Click(object sender, EventArgs e)
         {
@@ -732,8 +745,11 @@ namespace SignIt
             label1CdU.Hide();
             label2IdS.Hide();
             UserCdU.Text = "Ingresar nombre";
+            UserCdU.ForeColor = Color.Silver;
             UserIdS.Text = "Ingresar Usuario";
+            UserIdS.ForeColor = Color.Silver;
             UserAgeCdU.Text = "Ingresar edad";
+            UserAgeCdU.ForeColor = Color.Silver;
         }
 
 //Home
@@ -1270,16 +1286,19 @@ namespace SignIt
         private void UserIdS_Click(object sender, EventArgs e)
         {
             UserIdS.Text = "";
+            UserIdS.ForeColor = Color.Black;
         }
 
         private void UserCdU_Click(object sender, EventArgs e)
         {
             UserCdU.Text = "";
+            UserCdU.ForeColor = Color.Black;
         }
 
         private void UserAgeCdU_Click(object sender, EventArgs e)
         {
             UserAgeCdU.Text = "";
+            UserAgeCdU.ForeColor = Color.Black;
         }
 
         private void ComenzarCdU_MouseEnter(object sender, EventArgs e)
@@ -1370,6 +1389,51 @@ namespace SignIt
         }
 
         private void Ajustes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelDBNum2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelDBNum1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelDBNum3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelDBNum6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void XpLvlSett_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progresoSett_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PantallaSett_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserCdU_TextChanged(object sender, EventArgs e)
         {
 
         }

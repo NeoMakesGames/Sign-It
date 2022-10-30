@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SignIt - copia",
+    "\\SignIt - copia\\SignIt"
   ],
-  "SelectedNode": "\\SignIt.sln",
+  "SelectedNode": "\\SignIt - copia\\SignIt\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
