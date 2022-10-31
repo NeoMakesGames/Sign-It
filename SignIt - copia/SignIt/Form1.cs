@@ -89,6 +89,7 @@ namespace SignIt
             caracol.BackgroundImage = myimage;
             signIt.SelectedTab = caracol;
             lastpage = page;
+            desaparicionDelMenu();
         }
         private void botonesLecciones()
         {
@@ -276,7 +277,7 @@ namespace SignIt
             while (UserXp > NextLvl)
             {
                 UserLvl += 1;
-                UserXp -= NextLvl;
+                UserXp = UserXp - NextLvl;
                 NextLvl *= 2;
             }
         }
@@ -434,12 +435,43 @@ namespace SignIt
                     {
 
                         case 0:
+                            int a = rdn.Next(1, 64);
+                            int b = rdn.Next(1, 64);
+                            bool abc = false;
                             ej1palabra.Text = "¿Cual seña corresponde a la palabra: ";
                             ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
                             Random rm = new Random();
                             int f = rm.Next(0, 2);
-                            int a = rdn.Next(1, 64);
-                            int b = rdn.Next(1, 64);
+                            for (int i = 0; i < 1;)
+                            {
+                                a = rdn.Next(1, 64);
+                                foreach (int video in videos)
+                                {
+                                    if (video == a)
+                                    {
+                                        abc = true;
+                                    }
+                                }
+                                if (abc == false)
+                                {
+                                    i++;
+                                }
+                            }
+                            for (int i = 0; i < 1;)
+                            {
+                                b = rdn.Next(1, 64);
+                                foreach(int video in videos)
+                                {
+                                    if (video == b)
+                                    {
+                                        abc = true;
+                                    }
+                                }
+                                if (abc == false)
+                                {
+                                    i++;
+                                }
+                            }
                             switch (f)
                             {
 
@@ -621,13 +653,13 @@ namespace SignIt
                 }
                 z++;
             }
-            aparicionDelMenu();
             DatabaseFunctions.addXP(DatabaseFunctions.currentUser, xpGanada, path);
             if (errores == 3 && avance == avA)
             {
                 DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
                 avance++;
             }
+            aparicionDelMenu();
             botonesLecciones();
             signIt.SelectedTab = LeccionesMenu;
             caracolEJ1.Hide();
@@ -879,12 +911,14 @@ namespace SignIt
             {
                 caracolEJ1.Show();
                 caracolEJ2.Show();
+                caracolEnsenanza.Show();
                 ensañanza("Basico");
             }
             else if (avance > 1)
             {
                 caracolEJ1.Show();
                 caracolEJ2.Show();
+                caracolEnsenanza.Show();
                 ejercicios("Basico", 2);
             }
         }
@@ -1313,22 +1347,27 @@ namespace SignIt
             {
                 case 1:
                     signIt.SelectedTab = Diccionario;
+                    aparicionDelMenu();
                     break;
 
                 case 2:
                     signIt.SelectedTab = LeccionesMenu;
+                    aparicionDelMenu();
                     break;
 
                 case 3:
                     signIt.SelectedTab = Home;
+                    aparicionDelMenu();
                     break;
 
                 case 4:
                     signIt.SelectedTab = juegos;
+                    aparicionDelMenu();
                     break;
 
                 case 5:
                     signIt.SelectedTab = Ajustes;
+                    aparicionDelMenu();
                     break;
 
                 case 10:
@@ -1343,7 +1382,6 @@ namespace SignIt
                     signIt.SelectedTab = ejercicio2;
                     break;
             }
-            aparicionDelMenu();
         }
 
         private void caracolExit2_Click(object sender, EventArgs e)
@@ -1725,6 +1763,46 @@ namespace SignIt
             DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
             avance++;
             signIt.SelectedTab = LeccionesMenu;
+        }
+
+        private void sliderHome_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void userpfp_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void userNameSett2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void xpB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void xProgressBar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ej12_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ej2player_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

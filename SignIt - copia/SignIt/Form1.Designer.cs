@@ -53,6 +53,7 @@
             this.LeccionesHome = new System.Windows.Forms.Button();
             this.UserHome = new System.Windows.Forms.Label();
             this.LeccionesMenu = new System.Windows.Forms.TabPage();
+            this.caracolLecciones = new System.Windows.Forms.Button();
             this.examenlecc = new System.Windows.Forms.Button();
             this.verbosLecc = new System.Windows.Forms.Button();
             this.pronombresLecc = new System.Windows.Forms.Button();
@@ -115,6 +116,7 @@
             this.questo = new System.Windows.Forms.Button();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Tipgrafia = new System.Windows.Forms.ComboBox();
@@ -131,6 +133,7 @@
             this.PantallaSett = new System.Windows.Forms.Label();
             this.xProgressBar = new System.Windows.Forms.ProgressBar();
             this.Enseñanza = new System.Windows.Forms.TabPage();
+            this.caracolEnsenanza = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.EnseñanzaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.PalabraEns = new System.Windows.Forms.Label();
@@ -145,6 +148,8 @@
             this.ejercicio1VideoB = new AxWMPLib.AxWindowsMediaPlayer();
             this.ejercicio1VideoA = new AxWMPLib.AxWindowsMediaPlayer();
             this.ej1palabra = new System.Windows.Forms.Label();
+            this.ej11 = new SignIt.Ej1();
+            this.ej01 = new SignIt.Ej0();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
             this.caracolEJ2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -152,6 +157,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ej2player = new AxWMPLib.AxWindowsMediaPlayer();
             this.ej2cont = new System.Windows.Forms.Button();
+            this.ej12 = new SignIt.Ej1();
+            this.ej02 = new SignIt.Ej0();
             this.ejercicio3 = new System.Windows.Forms.TabPage();
             this.caracol = new System.Windows.Forms.TabPage();
             this.caracolExit2 = new System.Windows.Forms.Button();
@@ -165,13 +172,6 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.caracolEnsenanza = new System.Windows.Forms.Button();
-            this.caracolLecciones = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
-            this.ej11 = new SignIt.Ej1();
-            this.ej01 = new SignIt.Ej0();
-            this.ej12 = new SignIt.Ej1();
-            this.ej02 = new SignIt.Ej0();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -214,10 +214,10 @@
             this.signIt.Controls.Add(this.ejercicio2);
             this.signIt.Controls.Add(this.ejercicio3);
             this.signIt.Controls.Add(this.caracol);
-            this.signIt.Location = new System.Drawing.Point(-9, 0);
+            this.signIt.Location = new System.Drawing.Point(-10, -23);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
-            this.signIt.Size = new System.Drawing.Size(1400, 800);
+            this.signIt.Size = new System.Drawing.Size(1450, 901);
             this.signIt.TabIndex = 0;
             // 
             // IdS
@@ -234,7 +234,7 @@
             this.IdS.Location = new System.Drawing.Point(4, 22);
             this.IdS.Name = "IdS";
             this.IdS.Padding = new System.Windows.Forms.Padding(3);
-            this.IdS.Size = new System.Drawing.Size(1392, 774);
+            this.IdS.Size = new System.Drawing.Size(1442, 875);
             this.IdS.TabIndex = 0;
             this.IdS.Text = "Inicio de Sesión";
             this.IdS.Click += new System.EventHandler(this.IdS_Click);
@@ -242,10 +242,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_1;
-            this.panel2.Location = new System.Drawing.Point(454, 55);
+            this.panel2.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_2__1_;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(426, 100);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(435, 206);
+            this.panel2.Size = new System.Drawing.Size(500, 210);
             this.panel2.TabIndex = 6;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -255,7 +256,7 @@
             this.label2IdS.BackColor = System.Drawing.Color.Transparent;
             this.label2IdS.Font = new System.Drawing.Font("Inter", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2IdS.ForeColor = System.Drawing.Color.IndianRed;
-            this.label2IdS.Location = new System.Drawing.Point(555, 416);
+            this.label2IdS.Location = new System.Drawing.Point(555, 461);
             this.label2IdS.Name = "label2IdS";
             this.label2IdS.Size = new System.Drawing.Size(250, 33);
             this.label2IdS.TabIndex = 5;
@@ -283,7 +284,7 @@
             this.ComenzarIds.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ComenzarIds.FlatAppearance.BorderSize = 0;
             this.ComenzarIds.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComenzarIds.Location = new System.Drawing.Point(462, 481);
+            this.ComenzarIds.Location = new System.Drawing.Point(461, 555);
             this.ComenzarIds.Name = "ComenzarIds";
             this.ComenzarIds.Size = new System.Drawing.Size(420, 85);
             this.ComenzarIds.TabIndex = 3;
@@ -301,7 +302,7 @@
             this.linkLabel1IdS.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1IdS.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel1IdS.Font = new System.Drawing.Font("Inter", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1IdS.Location = new System.Drawing.Point(439, 613);
+            this.linkLabel1IdS.Location = new System.Drawing.Point(439, 670);
             this.linkLabel1IdS.Name = "linkLabel1IdS";
             this.linkLabel1IdS.Size = new System.Drawing.Size(466, 33);
             this.linkLabel1IdS.TabIndex = 1;
@@ -313,7 +314,7 @@
             // 
             this.UserIdS.Font = new System.Drawing.Font("Inter", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.UserIdS.ForeColor = System.Drawing.Color.Silver;
-            this.UserIdS.Location = new System.Drawing.Point(454, 318);
+            this.UserIdS.Location = new System.Drawing.Point(454, 363);
             this.UserIdS.Name = "UserIdS";
             this.UserIdS.Size = new System.Drawing.Size(435, 56);
             this.UserIdS.TabIndex = 0;
@@ -335,7 +336,7 @@
             this.CdU.Location = new System.Drawing.Point(4, 22);
             this.CdU.Name = "CdU";
             this.CdU.Padding = new System.Windows.Forms.Padding(3);
-            this.CdU.Size = new System.Drawing.Size(1392, 774);
+            this.CdU.Size = new System.Drawing.Size(1442, 875);
             this.CdU.TabIndex = 1;
             this.CdU.Text = "Creación de usuario";
             // 
@@ -343,7 +344,7 @@
             // 
             this.UserAgeCdU.Font = new System.Drawing.Font("Inter", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.UserAgeCdU.ForeColor = System.Drawing.Color.Silver;
-            this.UserAgeCdU.Location = new System.Drawing.Point(454, 388);
+            this.UserAgeCdU.Location = new System.Drawing.Point(454, 423);
             this.UserAgeCdU.Name = "UserAgeCdU";
             this.UserAgeCdU.Size = new System.Drawing.Size(435, 56);
             this.UserAgeCdU.TabIndex = 10;
@@ -354,17 +355,18 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_1;
-            this.panel3.Location = new System.Drawing.Point(454, 55);
+            this.panel3.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_2__1_1;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(421, 100);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(435, 206);
+            this.panel3.Size = new System.Drawing.Size(500, 210);
             this.panel3.TabIndex = 7;
             // 
             // UserCdU
             // 
             this.UserCdU.Font = new System.Drawing.Font("Inter", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.UserCdU.ForeColor = System.Drawing.Color.Silver;
-            this.UserCdU.Location = new System.Drawing.Point(454, 290);
+            this.UserCdU.Location = new System.Drawing.Point(454, 335);
             this.UserCdU.Name = "UserCdU";
             this.UserCdU.Size = new System.Drawing.Size(435, 56);
             this.UserCdU.TabIndex = 3;
@@ -378,7 +380,7 @@
             this.label1CdU.BackColor = System.Drawing.Color.Transparent;
             this.label1CdU.Font = new System.Drawing.Font("Inter", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1CdU.ForeColor = System.Drawing.Color.IndianRed;
-            this.label1CdU.Location = new System.Drawing.Point(449, 473);
+            this.label1CdU.Location = new System.Drawing.Point(449, 502);
             this.label1CdU.Name = "label1CdU";
             this.label1CdU.Size = new System.Drawing.Size(442, 33);
             this.label1CdU.TabIndex = 2;
@@ -392,7 +394,7 @@
             this.ComenzarCdU.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ComenzarCdU.FlatAppearance.BorderSize = 0;
             this.ComenzarCdU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComenzarCdU.Location = new System.Drawing.Point(461, 523);
+            this.ComenzarCdU.Location = new System.Drawing.Point(461, 555);
             this.ComenzarCdU.Name = "ComenzarCdU";
             this.ComenzarCdU.Size = new System.Drawing.Size(420, 85);
             this.ComenzarCdU.TabIndex = 1;
@@ -409,7 +411,7 @@
             this.SnapBackToReality.FlatAppearance.BorderSize = 0;
             this.SnapBackToReality.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SnapBackToReality.ForeColor = System.Drawing.Color.Black;
-            this.SnapBackToReality.Location = new System.Drawing.Point(31, 26);
+            this.SnapBackToReality.Location = new System.Drawing.Point(31, 64);
             this.SnapBackToReality.Name = "SnapBackToReality";
             this.SnapBackToReality.Size = new System.Drawing.Size(125, 102);
             this.SnapBackToReality.TabIndex = 0;
@@ -429,7 +431,7 @@
             this.Home.Controls.Add(this.UserHome);
             this.Home.Location = new System.Drawing.Point(4, 22);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(1392, 774);
+            this.Home.Size = new System.Drawing.Size(1442, 875);
             this.Home.TabIndex = 8;
             this.Home.Text = "Home";
             // 
@@ -440,7 +442,7 @@
             this.sliderHomeDer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sliderHomeDer.FlatAppearance.BorderSize = 0;
             this.sliderHomeDer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sliderHomeDer.Location = new System.Drawing.Point(1299, 312);
+            this.sliderHomeDer.Location = new System.Drawing.Point(1299, 349);
             this.sliderHomeDer.Name = "sliderHomeDer";
             this.sliderHomeDer.Size = new System.Drawing.Size(40, 80);
             this.sliderHomeDer.TabIndex = 5;
@@ -454,7 +456,7 @@
             this.sliderHomeIz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sliderHomeIz.FlatAppearance.BorderSize = 0;
             this.sliderHomeIz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sliderHomeIz.Location = new System.Drawing.Point(821, 312);
+            this.sliderHomeIz.Location = new System.Drawing.Point(821, 349);
             this.sliderHomeIz.Name = "sliderHomeIz";
             this.sliderHomeIz.Size = new System.Drawing.Size(40, 80);
             this.sliderHomeIz.TabIndex = 4;
@@ -467,10 +469,11 @@
             this.sliderHome.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
             this.sliderHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sliderHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sliderHome.Location = new System.Drawing.Point(846, 153);
+            this.sliderHome.Location = new System.Drawing.Point(846, 190);
             this.sliderHome.Name = "sliderHome";
             this.sliderHome.Size = new System.Drawing.Size(470, 399);
             this.sliderHome.TabIndex = 3;
+            this.sliderHome.Paint += new System.Windows.Forms.PaintEventHandler(this.sliderHome_Paint);
             // 
             // DiccionarioHome
             // 
@@ -479,7 +482,7 @@
             this.DiccionarioHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.DiccionarioHome.FlatAppearance.BorderSize = 0;
             this.DiccionarioHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DiccionarioHome.Location = new System.Drawing.Point(372, 392);
+            this.DiccionarioHome.Location = new System.Drawing.Point(372, 429);
             this.DiccionarioHome.Name = "DiccionarioHome";
             this.DiccionarioHome.Size = new System.Drawing.Size(388, 160);
             this.DiccionarioHome.TabIndex = 2;
@@ -493,7 +496,7 @@
             this.LeccionesHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.LeccionesHome.FlatAppearance.BorderSize = 0;
             this.LeccionesHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LeccionesHome.Location = new System.Drawing.Point(372, 153);
+            this.LeccionesHome.Location = new System.Drawing.Point(372, 190);
             this.LeccionesHome.Name = "LeccionesHome";
             this.LeccionesHome.Size = new System.Drawing.Size(388, 160);
             this.LeccionesHome.TabIndex = 1;
@@ -526,10 +529,24 @@
             this.LeccionesMenu.Controls.Add(this.basicoLecc);
             this.LeccionesMenu.Location = new System.Drawing.Point(4, 22);
             this.LeccionesMenu.Name = "LeccionesMenu";
-            this.LeccionesMenu.Size = new System.Drawing.Size(1392, 774);
+            this.LeccionesMenu.Size = new System.Drawing.Size(1442, 875);
             this.LeccionesMenu.TabIndex = 3;
             this.LeccionesMenu.Text = "LeccionesMenu";
             this.LeccionesMenu.Click += new System.EventHandler(this.LeccionesMenu_Click);
+            // 
+            // caracolLecciones
+            // 
+            this.caracolLecciones.BackColor = System.Drawing.Color.Transparent;
+            this.caracolLecciones.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
+            this.caracolLecciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.caracolLecciones.FlatAppearance.BorderSize = 0;
+            this.caracolLecciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.caracolLecciones.Location = new System.Drawing.Point(1210, 34);
+            this.caracolLecciones.Name = "caracolLecciones";
+            this.caracolLecciones.Size = new System.Drawing.Size(150, 150);
+            this.caracolLecciones.TabIndex = 13;
+            this.caracolLecciones.UseVisualStyleBackColor = false;
+            this.caracolLecciones.Click += new System.EventHandler(this.caracolLecciones_Click);
             // 
             // examenlecc
             // 
@@ -538,7 +555,7 @@
             this.examenlecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.examenlecc.FlatAppearance.BorderSize = 0;
             this.examenlecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.examenlecc.Location = new System.Drawing.Point(554, 332);
+            this.examenlecc.Location = new System.Drawing.Point(554, 348);
             this.examenlecc.Name = "examenlecc";
             this.examenlecc.Size = new System.Drawing.Size(292, 130);
             this.examenlecc.TabIndex = 7;
@@ -552,7 +569,7 @@
             this.verbosLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.verbosLecc.FlatAppearance.BorderSize = 0;
             this.verbosLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.verbosLecc.Location = new System.Drawing.Point(134, 619);
+            this.verbosLecc.Location = new System.Drawing.Point(134, 635);
             this.verbosLecc.Name = "verbosLecc";
             this.verbosLecc.Size = new System.Drawing.Size(196, 83);
             this.verbosLecc.TabIndex = 6;
@@ -566,7 +583,7 @@
             this.pronombresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pronombresLecc.FlatAppearance.BorderSize = 0;
             this.pronombresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pronombresLecc.Location = new System.Drawing.Point(602, 619);
+            this.pronombresLecc.Location = new System.Drawing.Point(602, 635);
             this.pronombresLecc.Name = "pronombresLecc";
             this.pronombresLecc.Size = new System.Drawing.Size(196, 83);
             this.pronombresLecc.TabIndex = 5;
@@ -580,7 +597,7 @@
             this.lugaresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lugaresLecc.FlatAppearance.BorderSize = 0;
             this.lugaresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lugaresLecc.Location = new System.Drawing.Point(981, 619);
+            this.lugaresLecc.Location = new System.Drawing.Point(981, 635);
             this.lugaresLecc.Name = "lugaresLecc";
             this.lugaresLecc.Size = new System.Drawing.Size(196, 83);
             this.lugaresLecc.TabIndex = 4;
@@ -594,7 +611,7 @@
             this.coloresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.coloresLecc.FlatAppearance.BorderSize = 0;
             this.coloresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.coloresLecc.Location = new System.Drawing.Point(981, 111);
+            this.coloresLecc.Location = new System.Drawing.Point(981, 127);
             this.coloresLecc.Name = "coloresLecc";
             this.coloresLecc.Size = new System.Drawing.Size(196, 83);
             this.coloresLecc.TabIndex = 2;
@@ -608,7 +625,7 @@
             this.comidaLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.comidaLecc.FlatAppearance.BorderSize = 0;
             this.comidaLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comidaLecc.Location = new System.Drawing.Point(602, 111);
+            this.comidaLecc.Location = new System.Drawing.Point(602, 127);
             this.comidaLecc.Name = "comidaLecc";
             this.comidaLecc.Size = new System.Drawing.Size(196, 83);
             this.comidaLecc.TabIndex = 1;
@@ -622,7 +639,7 @@
             this.basicoLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.basicoLecc.FlatAppearance.BorderSize = 0;
             this.basicoLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.basicoLecc.Location = new System.Drawing.Point(134, 111);
+            this.basicoLecc.Location = new System.Drawing.Point(134, 127);
             this.basicoLecc.Name = "basicoLecc";
             this.basicoLecc.Size = new System.Drawing.Size(196, 83);
             this.basicoLecc.TabIndex = 0;
@@ -638,7 +655,7 @@
             this.Diccionario.Controls.Add(this.DBeta);
             this.Diccionario.Location = new System.Drawing.Point(4, 22);
             this.Diccionario.Name = "Diccionario";
-            this.Diccionario.Size = new System.Drawing.Size(1392, 774);
+            this.Diccionario.Size = new System.Drawing.Size(1442, 875);
             this.Diccionario.TabIndex = 4;
             this.Diccionario.Text = "Diccionario";
             // 
@@ -653,10 +670,10 @@
             this.diccionarioBeta.Controls.Add(this.dB5);
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
-            this.diccionarioBeta.Location = new System.Drawing.Point(-4, 0);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-4, -39);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
-            this.diccionarioBeta.Size = new System.Drawing.Size(1376, 788);
+            this.diccionarioBeta.Size = new System.Drawing.Size(1400, 900);
             this.diccionarioBeta.TabIndex = 8;
             // 
             // dB0
@@ -676,7 +693,7 @@
             this.dB0.Location = new System.Drawing.Point(4, 22);
             this.dB0.Name = "dB0";
             this.dB0.Padding = new System.Windows.Forms.Padding(3);
-            this.dB0.Size = new System.Drawing.Size(1368, 762);
+            this.dB0.Size = new System.Drawing.Size(1392, 874);
             this.dB0.TabIndex = 0;
             this.dB0.Text = "dB0";
             this.dB0.Click += new System.EventHandler(this.tabPage1_Click);
@@ -688,7 +705,7 @@
             this.ayudaDicionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ayudaDicionario.FlatAppearance.BorderSize = 0;
             this.ayudaDicionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ayudaDicionario.Location = new System.Drawing.Point(1225, 25);
+            this.ayudaDicionario.Location = new System.Drawing.Point(1225, 76);
             this.ayudaDicionario.Name = "ayudaDicionario";
             this.ayudaDicionario.Size = new System.Drawing.Size(120, 120);
             this.ayudaDicionario.TabIndex = 8;
@@ -702,7 +719,7 @@
             this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(796, 450);
+            this.button12.Location = new System.Drawing.Point(796, 477);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(220, 220);
             this.button12.TabIndex = 5;
@@ -716,7 +733,7 @@
             this.verbosDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.verbosDiccionario.FlatAppearance.BorderSize = 0;
             this.verbosDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.verbosDiccionario.Location = new System.Drawing.Point(978, 287);
+            this.verbosDiccionario.Location = new System.Drawing.Point(978, 314);
             this.verbosDiccionario.Name = "verbosDiccionario";
             this.verbosDiccionario.Size = new System.Drawing.Size(236, 110);
             this.verbosDiccionario.TabIndex = 7;
@@ -730,7 +747,7 @@
             this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button13.FlatAppearance.BorderSize = 0;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(351, 450);
+            this.button13.Location = new System.Drawing.Point(351, 477);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(220, 220);
             this.button13.TabIndex = 4;
@@ -745,7 +762,7 @@
             this.basicoDiccionario.FlatAppearance.BorderSize = 0;
             this.basicoDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.basicoDiccionario.ForeColor = System.Drawing.Color.Black;
-            this.basicoDiccionario.Location = new System.Drawing.Point(142, 98);
+            this.basicoDiccionario.Location = new System.Drawing.Point(142, 125);
             this.basicoDiccionario.Name = "basicoDiccionario";
             this.basicoDiccionario.Size = new System.Drawing.Size(220, 110);
             this.basicoDiccionario.TabIndex = 0;
@@ -759,7 +776,7 @@
             this.lugaresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lugaresDiccionario.FlatAppearance.BorderSize = 0;
             this.lugaresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lugaresDiccionario.Location = new System.Drawing.Point(142, 287);
+            this.lugaresDiccionario.Location = new System.Drawing.Point(142, 314);
             this.lugaresDiccionario.Name = "lugaresDiccionario";
             this.lugaresDiccionario.Size = new System.Drawing.Size(220, 110);
             this.lugaresDiccionario.TabIndex = 2;
@@ -773,7 +790,7 @@
             this.coloresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.coloresDiccionario.FlatAppearance.BorderSize = 0;
             this.coloresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.coloresDiccionario.Location = new System.Drawing.Point(978, 98);
+            this.coloresDiccionario.Location = new System.Drawing.Point(978, 125);
             this.coloresDiccionario.Name = "coloresDiccionario";
             this.coloresDiccionario.Size = new System.Drawing.Size(220, 110);
             this.coloresDiccionario.TabIndex = 6;
@@ -787,7 +804,7 @@
             this.comidaDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.comidaDiccionario.FlatAppearance.BorderSize = 0;
             this.comidaDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comidaDiccionario.Location = new System.Drawing.Point(573, 98);
+            this.comidaDiccionario.Location = new System.Drawing.Point(573, 125);
             this.comidaDiccionario.Name = "comidaDiccionario";
             this.comidaDiccionario.Size = new System.Drawing.Size(220, 110);
             this.comidaDiccionario.TabIndex = 1;
@@ -801,7 +818,7 @@
             this.pronombresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pronombresDiccionario.FlatAppearance.BorderSize = 0;
             this.pronombresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pronombresDiccionario.Location = new System.Drawing.Point(573, 287);
+            this.pronombresDiccionario.Location = new System.Drawing.Point(573, 314);
             this.pronombresDiccionario.Name = "pronombresDiccionario";
             this.pronombresDiccionario.Size = new System.Drawing.Size(220, 110);
             this.pronombresDiccionario.TabIndex = 3;
@@ -813,7 +830,7 @@
             this.dB1.Location = new System.Drawing.Point(4, 22);
             this.dB1.Name = "dB1";
             this.dB1.Padding = new System.Windows.Forms.Padding(3);
-            this.dB1.Size = new System.Drawing.Size(1368, 762);
+            this.dB1.Size = new System.Drawing.Size(1392, 874);
             this.dB1.TabIndex = 1;
             this.dB1.Text = "dB1";
             this.dB1.UseVisualStyleBackColor = true;
@@ -822,7 +839,7 @@
             // 
             this.dB2.Location = new System.Drawing.Point(4, 22);
             this.dB2.Name = "dB2";
-            this.dB2.Size = new System.Drawing.Size(1368, 762);
+            this.dB2.Size = new System.Drawing.Size(1392, 874);
             this.dB2.TabIndex = 5;
             this.dB2.Text = "dB2";
             this.dB2.UseVisualStyleBackColor = true;
@@ -831,7 +848,7 @@
             // 
             this.dB6.Location = new System.Drawing.Point(4, 22);
             this.dB6.Name = "dB6";
-            this.dB6.Size = new System.Drawing.Size(1368, 762);
+            this.dB6.Size = new System.Drawing.Size(1392, 874);
             this.dB6.TabIndex = 4;
             this.dB6.Text = "dB6";
             this.dB6.UseVisualStyleBackColor = true;
@@ -840,7 +857,7 @@
             // 
             this.dB3.Location = new System.Drawing.Point(4, 22);
             this.dB3.Name = "dB3";
-            this.dB3.Size = new System.Drawing.Size(1368, 762);
+            this.dB3.Size = new System.Drawing.Size(1392, 874);
             this.dB3.TabIndex = 6;
             this.dB3.Text = "dB3";
             this.dB3.UseVisualStyleBackColor = true;
@@ -849,7 +866,7 @@
             // 
             this.dB4.Location = new System.Drawing.Point(4, 22);
             this.dB4.Name = "dB4";
-            this.dB4.Size = new System.Drawing.Size(1368, 762);
+            this.dB4.Size = new System.Drawing.Size(1392, 874);
             this.dB4.TabIndex = 7;
             this.dB4.Text = "dB4";
             this.dB4.UseVisualStyleBackColor = true;
@@ -858,7 +875,7 @@
             // 
             this.dB5.Location = new System.Drawing.Point(4, 22);
             this.dB5.Name = "dB5";
-            this.dB5.Size = new System.Drawing.Size(1368, 762);
+            this.dB5.Size = new System.Drawing.Size(1392, 874);
             this.dB5.TabIndex = 8;
             this.dB5.Text = "dB5";
             this.dB5.UseVisualStyleBackColor = true;
@@ -870,7 +887,7 @@
             this.dBAbecedario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBAbecedario.Location = new System.Drawing.Point(4, 22);
             this.dBAbecedario.Name = "dBAbecedario";
-            this.dBAbecedario.Size = new System.Drawing.Size(1368, 762);
+            this.dBAbecedario.Size = new System.Drawing.Size(1392, 874);
             this.dBAbecedario.TabIndex = 3;
             this.dBAbecedario.Text = "dBAbecedario";
             // 
@@ -905,7 +922,7 @@
             this.dBNros.Controls.Add(this.dBNum2);
             this.dBNros.Location = new System.Drawing.Point(4, 22);
             this.dBNros.Name = "dBNros";
-            this.dBNros.Size = new System.Drawing.Size(1368, 762);
+            this.dBNros.Size = new System.Drawing.Size(1392, 874);
             this.dBNros.TabIndex = 2;
             this.dBNros.Text = "dbNros";
             this.dBNros.Click += new System.EventHandler(this.dBNros_Click);
@@ -1305,7 +1322,7 @@
             this.juegos.Controls.Add(this.race1);
             this.juegos.Location = new System.Drawing.Point(4, 22);
             this.juegos.Name = "juegos";
-            this.juegos.Size = new System.Drawing.Size(1392, 774);
+            this.juegos.Size = new System.Drawing.Size(1442, 875);
             this.juegos.TabIndex = 6;
             this.juegos.Text = "juegos";
             // 
@@ -1317,7 +1334,7 @@
             this.questo2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.questo2.FlatAppearance.BorderSize = 0;
             this.questo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.questo2.Location = new System.Drawing.Point(893, 486);
+            this.questo2.Location = new System.Drawing.Point(893, 513);
             this.questo2.Name = "questo2";
             this.questo2.Size = new System.Drawing.Size(75, 75);
             this.questo2.TabIndex = 4;
@@ -1332,7 +1349,7 @@
             this.questo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.questo.FlatAppearance.BorderSize = 0;
             this.questo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.questo.Location = new System.Drawing.Point(403, 486);
+            this.questo.Location = new System.Drawing.Point(403, 513);
             this.questo.Name = "questo";
             this.questo.Size = new System.Drawing.Size(75, 75);
             this.questo.TabIndex = 3;
@@ -1346,7 +1363,7 @@
             this.MemotestGamesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MemotestGamesButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MemotestGamesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MemotestGamesButton.Location = new System.Drawing.Point(780, 98);
+            this.MemotestGamesButton.Location = new System.Drawing.Point(780, 125);
             this.MemotestGamesButton.Name = "MemotestGamesButton";
             this.MemotestGamesButton.Size = new System.Drawing.Size(300, 350);
             this.MemotestGamesButton.TabIndex = 1;
@@ -1360,12 +1377,22 @@
             this.RaceGamesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.RaceGamesButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RaceGamesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RaceGamesButton.Location = new System.Drawing.Point(290, 98);
+            this.RaceGamesButton.Location = new System.Drawing.Point(290, 125);
             this.RaceGamesButton.Name = "RaceGamesButton";
             this.RaceGamesButton.Size = new System.Drawing.Size(300, 350);
             this.RaceGamesButton.TabIndex = 0;
             this.RaceGamesButton.UseVisualStyleBackColor = false;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
+            // 
+            // race1
+            // 
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(-4, -19);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1443, 800);
+            this.race1.TabIndex = 2;
+            this.race1.Visible = false;
             // 
             // Ajustes
             // 
@@ -1389,7 +1416,7 @@
             this.Ajustes.Font = new System.Drawing.Font("Inter ExtraBold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ajustes.Location = new System.Drawing.Point(4, 22);
             this.Ajustes.Name = "Ajustes";
-            this.Ajustes.Size = new System.Drawing.Size(1392, 774);
+            this.Ajustes.Size = new System.Drawing.Size(1442, 875);
             this.Ajustes.TabIndex = 5;
             this.Ajustes.Text = "Ajustes";
             this.Ajustes.Click += new System.EventHandler(this.Ajustes_Click);
@@ -1403,7 +1430,7 @@
             "Chica",
             "Media",
             "Grande"});
-            this.comboBox1.Location = new System.Drawing.Point(706, 551);
+            this.comboBox1.Location = new System.Drawing.Point(706, 582);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 28);
             this.comboBox1.TabIndex = 18;
@@ -1416,7 +1443,7 @@
             this.Tipgrafia.Items.AddRange(new object[] {
             "Inter",
             "Microsoft Sans Serif"});
-            this.Tipgrafia.Location = new System.Drawing.Point(706, 446);
+            this.Tipgrafia.Location = new System.Drawing.Point(706, 477);
             this.Tipgrafia.Name = "Tipgrafia";
             this.Tipgrafia.Size = new System.Drawing.Size(121, 28);
             this.Tipgrafia.TabIndex = 17;
@@ -1444,19 +1471,20 @@
             this.xpB.FlatAppearance.BorderSize = 0;
             this.xpB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.xpB.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.xpB.Location = new System.Drawing.Point(706, 218);
+            this.xpB.Location = new System.Drawing.Point(706, 249);
             this.xpB.Name = "xpB";
             this.xpB.Size = new System.Drawing.Size(75, 75);
             this.xpB.TabIndex = 14;
             this.xpB.Text = "1";
             this.xpB.UseVisualStyleBackColor = false;
+            this.xpB.Click += new System.EventHandler(this.xpB_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Inter ExtraBold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(302, 643);
+            this.label4.Location = new System.Drawing.Point(302, 674);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(392, 49);
             this.label4.TabIndex = 13;
@@ -1467,7 +1495,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Inter ExtraBold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(557, 537);
+            this.label3.Location = new System.Drawing.Point(557, 568);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(136, 49);
             this.label3.TabIndex = 12;
@@ -1479,28 +1507,30 @@
             this.userpfp.BackColor = System.Drawing.Color.Transparent;
             this.userpfp.BackgroundImage = global::SignIt.Properties.Resources.Ícono_del_perfil;
             this.userpfp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userpfp.Location = new System.Drawing.Point(526, 49);
+            this.userpfp.Location = new System.Drawing.Point(526, 97);
             this.userpfp.Name = "userpfp";
             this.userpfp.Size = new System.Drawing.Size(99, 100);
             this.userpfp.TabIndex = 10;
+            this.userpfp.Paint += new System.Windows.Forms.PaintEventHandler(this.userpfp_Paint);
             // 
             // userNameSett2
             // 
             this.userNameSett2.AutoSize = true;
             this.userNameSett2.BackColor = System.Drawing.Color.Transparent;
             this.userNameSett2.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userNameSett2.Location = new System.Drawing.Point(631, 77);
+            this.userNameSett2.Location = new System.Drawing.Point(631, 125);
             this.userNameSett2.Name = "userNameSett2";
             this.userNameSett2.Size = new System.Drawing.Size(41, 49);
             this.userNameSett2.TabIndex = 9;
             this.userNameSett2.Text = "1";
+            this.userNameSett2.Click += new System.EventHandler(this.userNameSett2_Click);
             // 
             // progresoSett2
             // 
             this.progresoSett2.AutoSize = true;
             this.progresoSett2.BackColor = System.Drawing.Color.Transparent;
             this.progresoSett2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Italic);
-            this.progresoSett2.Location = new System.Drawing.Point(717, 332);
+            this.progresoSett2.Location = new System.Drawing.Point(717, 363);
             this.progresoSett2.Name = "progresoSett2";
             this.progresoSett2.Size = new System.Drawing.Size(42, 46);
             this.progresoSett2.TabIndex = 7;
@@ -1512,7 +1542,7 @@
             this.progresoSett.AutoSize = true;
             this.progresoSett.BackColor = System.Drawing.Color.Transparent;
             this.progresoSett.Font = new System.Drawing.Font("Inter ExtraBold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.progresoSett.Location = new System.Drawing.Point(373, 328);
+            this.progresoSett.Location = new System.Drawing.Point(373, 359);
             this.progresoSett.Name = "progresoSett";
             this.progresoSett.Size = new System.Drawing.Size(323, 49);
             this.progresoSett.TabIndex = 6;
@@ -1524,7 +1554,7 @@
             this.XpLvlSett.AutoSize = true;
             this.XpLvlSett.BackColor = System.Drawing.Color.Transparent;
             this.XpLvlSett.Font = new System.Drawing.Font("Inter ExtraBold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XpLvlSett.Location = new System.Drawing.Point(264, 229);
+            this.XpLvlSett.Location = new System.Drawing.Point(264, 260);
             this.XpLvlSett.Name = "XpLvlSett";
             this.XpLvlSett.Size = new System.Drawing.Size(432, 49);
             this.XpLvlSett.TabIndex = 5;
@@ -1538,7 +1568,7 @@
             this.FullScrButtonSett.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.FullScrButtonSett.FlatAppearance.BorderSize = 0;
             this.FullScrButtonSett.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FullScrButtonSett.Location = new System.Drawing.Point(700, 637);
+            this.FullScrButtonSett.Location = new System.Drawing.Point(700, 668);
             this.FullScrButtonSett.Name = "FullScrButtonSett";
             this.FullScrButtonSett.Size = new System.Drawing.Size(165, 66);
             this.FullScrButtonSett.TabIndex = 4;
@@ -1550,7 +1580,7 @@
             this.PantallaSett.AutoSize = true;
             this.PantallaSett.BackColor = System.Drawing.Color.Transparent;
             this.PantallaSett.Font = new System.Drawing.Font("Inter ExtraBold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PantallaSett.Location = new System.Drawing.Point(458, 431);
+            this.PantallaSett.Location = new System.Drawing.Point(458, 462);
             this.PantallaSett.Name = "PantallaSett";
             this.PantallaSett.Size = new System.Drawing.Size(238, 49);
             this.PantallaSett.TabIndex = 3;
@@ -1559,10 +1589,11 @@
             // 
             // xProgressBar
             // 
-            this.xProgressBar.Location = new System.Drawing.Point(778, 241);
+            this.xProgressBar.Location = new System.Drawing.Point(778, 272);
             this.xProgressBar.Name = "xProgressBar";
             this.xProgressBar.Size = new System.Drawing.Size(174, 30);
             this.xProgressBar.TabIndex = 15;
+            this.xProgressBar.Click += new System.EventHandler(this.xProgressBar_Click);
             // 
             // Enseñanza
             // 
@@ -1576,15 +1607,29 @@
             this.Enseñanza.Controls.Add(this.contEnseñanza);
             this.Enseñanza.Location = new System.Drawing.Point(4, 22);
             this.Enseñanza.Name = "Enseñanza";
-            this.Enseñanza.Size = new System.Drawing.Size(1392, 774);
+            this.Enseñanza.Size = new System.Drawing.Size(1442, 875);
             this.Enseñanza.TabIndex = 7;
             this.Enseñanza.Text = "Enseñanza";
+            // 
+            // caracolEnsenanza
+            // 
+            this.caracolEnsenanza.BackColor = System.Drawing.Color.Transparent;
+            this.caracolEnsenanza.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
+            this.caracolEnsenanza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.caracolEnsenanza.FlatAppearance.BorderSize = 0;
+            this.caracolEnsenanza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.caracolEnsenanza.Location = new System.Drawing.Point(1215, 38);
+            this.caracolEnsenanza.Name = "caracolEnsenanza";
+            this.caracolEnsenanza.Size = new System.Drawing.Size(150, 150);
+            this.caracolEnsenanza.TabIndex = 13;
+            this.caracolEnsenanza.UseVisualStyleBackColor = false;
+            this.caracolEnsenanza.Click += new System.EventHandler(this.button1_Click_3);
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel8.Location = new System.Drawing.Point(379, 486);
+            this.panel8.Location = new System.Drawing.Point(379, 510);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(642, 89);
             this.panel8.TabIndex = 3;
@@ -1592,7 +1637,7 @@
             // EnseñanzaPlayer
             // 
             this.EnseñanzaPlayer.Enabled = true;
-            this.EnseñanzaPlayer.Location = new System.Drawing.Point(379, 84);
+            this.EnseñanzaPlayer.Location = new System.Drawing.Point(379, 108);
             this.EnseñanzaPlayer.Name = "EnseñanzaPlayer";
             this.EnseñanzaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("EnseñanzaPlayer.OcxState")));
             this.EnseñanzaPlayer.Size = new System.Drawing.Size(642, 491);
@@ -1603,7 +1648,7 @@
             this.PalabraEns.AutoSize = true;
             this.PalabraEns.BackColor = System.Drawing.Color.Transparent;
             this.PalabraEns.Font = new System.Drawing.Font("Inter ExtraBold", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PalabraEns.Location = new System.Drawing.Point(616, 643);
+            this.PalabraEns.Location = new System.Drawing.Point(616, 667);
             this.PalabraEns.Name = "PalabraEns";
             this.PalabraEns.Size = new System.Drawing.Size(169, 49);
             this.PalabraEns.TabIndex = 1;
@@ -1618,7 +1663,7 @@
             this.contEnseñanza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.contEnseñanza.FlatAppearance.BorderSize = 0;
             this.contEnseñanza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.contEnseñanza.Location = new System.Drawing.Point(1139, 626);
+            this.contEnseñanza.Location = new System.Drawing.Point(1139, 650);
             this.contEnseñanza.Name = "contEnseñanza";
             this.contEnseñanza.Size = new System.Drawing.Size(182, 66);
             this.contEnseñanza.TabIndex = 0;
@@ -1640,7 +1685,7 @@
             this.ejercicio1.Controls.Add(this.ej01);
             this.ejercicio1.Location = new System.Drawing.Point(4, 22);
             this.ejercicio1.Name = "ejercicio1";
-            this.ejercicio1.Size = new System.Drawing.Size(1392, 774);
+            this.ejercicio1.Size = new System.Drawing.Size(1442, 875);
             this.ejercicio1.TabIndex = 9;
             this.ejercicio1.Text = "Ejercicio1";
             // 
@@ -1651,7 +1696,7 @@
             this.caracolEJ1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.caracolEJ1.FlatAppearance.BorderSize = 0;
             this.caracolEJ1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolEJ1.Location = new System.Drawing.Point(1215, 38);
+            this.caracolEJ1.Location = new System.Drawing.Point(1215, 65);
             this.caracolEJ1.Name = "caracolEJ1";
             this.caracolEJ1.Size = new System.Drawing.Size(150, 150);
             this.caracolEJ1.TabIndex = 11;
@@ -1664,14 +1709,14 @@
             this.panel5.Controls.Add(this.ej2videoC);
             this.panel5.Controls.Add(this.ej2videoB);
             this.panel5.Controls.Add(this.ej2videoA);
-            this.panel5.Location = new System.Drawing.Point(48, 410);
+            this.panel5.Location = new System.Drawing.Point(48, 435);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1253, 81);
             this.panel5.TabIndex = 8;
             // 
             // ej2videoC
             // 
-            this.ej2videoC.Location = new System.Drawing.Point(882, 0);
+            this.ej2videoC.Location = new System.Drawing.Point(882, 25);
             this.ej2videoC.Name = "ej2videoC";
             this.ej2videoC.Size = new System.Drawing.Size(371, 55);
             this.ej2videoC.TabIndex = 11;
@@ -1680,7 +1725,7 @@
             // 
             // ej2videoB
             // 
-            this.ej2videoB.Location = new System.Drawing.Point(443, 0);
+            this.ej2videoB.Location = new System.Drawing.Point(443, 25);
             this.ej2videoB.Name = "ej2videoB";
             this.ej2videoB.Size = new System.Drawing.Size(370, 55);
             this.ej2videoB.TabIndex = 10;
@@ -1689,7 +1734,7 @@
             // 
             // ej2videoA
             // 
-            this.ej2videoA.Location = new System.Drawing.Point(0, 0);
+            this.ej2videoA.Location = new System.Drawing.Point(0, 25);
             this.ej2videoA.Name = "ej2videoA";
             this.ej2videoA.Size = new System.Drawing.Size(370, 55);
             this.ej2videoA.TabIndex = 9;
@@ -1699,7 +1744,7 @@
             // ejercicio1VideoC
             // 
             this.ejercicio1VideoC.Enabled = true;
-            this.ejercicio1VideoC.Location = new System.Drawing.Point(930, 231);
+            this.ejercicio1VideoC.Location = new System.Drawing.Point(930, 256);
             this.ejercicio1VideoC.Name = "ejercicio1VideoC";
             this.ejercicio1VideoC.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoC.OcxState")));
             this.ejercicio1VideoC.Size = new System.Drawing.Size(370, 250);
@@ -1709,7 +1754,7 @@
             // ejercicio1VideoB
             // 
             this.ejercicio1VideoB.Enabled = true;
-            this.ejercicio1VideoB.Location = new System.Drawing.Point(491, 230);
+            this.ejercicio1VideoB.Location = new System.Drawing.Point(491, 255);
             this.ejercicio1VideoB.Name = "ejercicio1VideoB";
             this.ejercicio1VideoB.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoB.OcxState")));
             this.ejercicio1VideoB.Size = new System.Drawing.Size(370, 250);
@@ -1720,7 +1765,7 @@
             // ejercicio1VideoA
             // 
             this.ejercicio1VideoA.Enabled = true;
-            this.ejercicio1VideoA.Location = new System.Drawing.Point(48, 230);
+            this.ejercicio1VideoA.Location = new System.Drawing.Point(48, 255);
             this.ejercicio1VideoA.Name = "ejercicio1VideoA";
             this.ejercicio1VideoA.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoA.OcxState")));
             this.ejercicio1VideoA.Size = new System.Drawing.Size(370, 250);
@@ -1733,11 +1778,29 @@
             this.ej1palabra.AutoSize = true;
             this.ej1palabra.BackColor = System.Drawing.Color.Transparent;
             this.ej1palabra.Font = new System.Drawing.Font("Corbel", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ej1palabra.Location = new System.Drawing.Point(363, 45);
+            this.ej1palabra.Location = new System.Drawing.Point(363, 70);
             this.ej1palabra.Name = "ej1palabra";
             this.ej1palabra.Size = new System.Drawing.Size(448, 36);
             this.ej1palabra.TabIndex = 0;
             this.ej1palabra.Text = "¿Cual seña correspone a la palabra:";
+            // 
+            // ej11
+            // 
+            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
+            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej11.Location = new System.Drawing.Point(-15, 585);
+            this.ej11.Name = "ej11";
+            this.ej11.Size = new System.Drawing.Size(1550, 160);
+            this.ej11.TabIndex = 10;
+            // 
+            // ej01
+            // 
+            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
+            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej01.Location = new System.Drawing.Point(-15, 585);
+            this.ej01.Name = "ej01";
+            this.ej01.Size = new System.Drawing.Size(1550, 160);
+            this.ej01.TabIndex = 9;
             // 
             // ejercicio2
             // 
@@ -1754,7 +1817,7 @@
             this.ejercicio2.Controls.Add(this.ej02);
             this.ejercicio2.Location = new System.Drawing.Point(4, 22);
             this.ejercicio2.Name = "ejercicio2";
-            this.ejercicio2.Size = new System.Drawing.Size(1392, 774);
+            this.ejercicio2.Size = new System.Drawing.Size(1442, 875);
             this.ejercicio2.TabIndex = 10;
             this.ejercicio2.Text = "ejercicio2";
             // 
@@ -1765,7 +1828,7 @@
             this.caracolEJ2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.caracolEJ2.FlatAppearance.BorderSize = 0;
             this.caracolEJ2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolEJ2.Location = new System.Drawing.Point(1215, 38);
+            this.caracolEJ2.Location = new System.Drawing.Point(1215, 65);
             this.caracolEJ2.Name = "caracolEJ2";
             this.caracolEJ2.Size = new System.Drawing.Size(150, 150);
             this.caracolEJ2.TabIndex = 12;
@@ -1775,15 +1838,16 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Location = new System.Drawing.Point(65, 454);
+            this.panel4.Location = new System.Drawing.Point(65, 479);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(534, 68);
             this.panel4.TabIndex = 5;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // rtaEj2
             // 
             this.rtaEj2.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F);
-            this.rtaEj2.Location = new System.Drawing.Point(718, 380);
+            this.rtaEj2.Location = new System.Drawing.Point(718, 405);
             this.rtaEj2.Name = "rtaEj2";
             this.rtaEj2.Size = new System.Drawing.Size(425, 60);
             this.rtaEj2.TabIndex = 2;
@@ -1794,7 +1858,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Corbel", 25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label1.Location = new System.Drawing.Point(711, 147);
+            this.label1.Location = new System.Drawing.Point(711, 172);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(283, 41);
             this.label1.TabIndex = 1;
@@ -1804,11 +1868,12 @@
             // ej2player
             // 
             this.ej2player.Enabled = true;
-            this.ej2player.Location = new System.Drawing.Point(65, 107);
+            this.ej2player.Location = new System.Drawing.Point(65, 132);
             this.ej2player.Name = "ej2player";
             this.ej2player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ej2player.OcxState")));
             this.ej2player.Size = new System.Drawing.Size(534, 415);
             this.ej2player.TabIndex = 0;
+            this.ej2player.Enter += new System.EventHandler(this.ej2player_Enter);
             // 
             // ej2cont
             // 
@@ -1817,12 +1882,31 @@
             this.ej2cont.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ej2cont.FlatAppearance.BorderSize = 0;
             this.ej2cont.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ej2cont.Location = new System.Drawing.Point(1147, 621);
+            this.ej2cont.Location = new System.Drawing.Point(1145, 625);
             this.ej2cont.Name = "ej2cont";
-            this.ej2cont.Size = new System.Drawing.Size(182, 66);
+            this.ej2cont.Size = new System.Drawing.Size(182, 70);
             this.ej2cont.TabIndex = 6;
             this.ej2cont.UseVisualStyleBackColor = false;
             this.ej2cont.Click += new System.EventHandler(this.ej2cont_Click);
+            // 
+            // ej12
+            // 
+            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
+            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej12.Location = new System.Drawing.Point(-15, 585);
+            this.ej12.Name = "ej12";
+            this.ej12.Size = new System.Drawing.Size(1550, 160);
+            this.ej12.TabIndex = 8;
+            this.ej12.Load += new System.EventHandler(this.ej12_Load);
+            // 
+            // ej02
+            // 
+            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
+            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej02.Location = new System.Drawing.Point(-15, 586);
+            this.ej02.Name = "ej02";
+            this.ej02.Size = new System.Drawing.Size(1550, 160);
+            this.ej02.TabIndex = 7;
             // 
             // ejercicio3
             // 
@@ -1831,7 +1915,7 @@
             this.ejercicio3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ejercicio3.Location = new System.Drawing.Point(4, 22);
             this.ejercicio3.Name = "ejercicio3";
-            this.ejercicio3.Size = new System.Drawing.Size(1392, 774);
+            this.ejercicio3.Size = new System.Drawing.Size(1442, 875);
             this.ejercicio3.TabIndex = 11;
             this.ejercicio3.Text = "ejercicio3";
             // 
@@ -1839,12 +1923,11 @@
             // 
             this.caracol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.caracol.BackgroundImage = global::SignIt.Properties.Resources.ADC;
-            this.caracol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.caracol.Controls.Add(this.caracolExit2);
             this.caracol.Controls.Add(this.caracolExit);
             this.caracol.Location = new System.Drawing.Point(4, 22);
             this.caracol.Name = "caracol";
-            this.caracol.Size = new System.Drawing.Size(1392, 774);
+            this.caracol.Size = new System.Drawing.Size(1442, 875);
             this.caracol.TabIndex = 12;
             this.caracol.Text = "caracol";
             // 
@@ -1855,7 +1938,7 @@
             this.caracolExit2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.caracolExit2.FlatAppearance.BorderSize = 0;
             this.caracolExit2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolExit2.Location = new System.Drawing.Point(30, 16);
+            this.caracolExit2.Location = new System.Drawing.Point(30, 17);
             this.caracolExit2.Name = "caracolExit2";
             this.caracolExit2.Size = new System.Drawing.Size(98, 67);
             this.caracolExit2.TabIndex = 1;
@@ -1870,7 +1953,7 @@
             this.caracolExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.caracolExit.FlatAppearance.BorderSize = 0;
             this.caracolExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolExit.Location = new System.Drawing.Point(479, 599);
+            this.caracolExit.Location = new System.Drawing.Point(463, 597);
             this.caracolExit.Name = "caracolExit";
             this.caracolExit.Size = new System.Drawing.Size(430, 86);
             this.caracolExit.TabIndex = 0;
@@ -1993,85 +2076,12 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // caracolEnsenanza
-            // 
-            this.caracolEnsenanza.BackColor = System.Drawing.Color.Transparent;
-            this.caracolEnsenanza.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
-            this.caracolEnsenanza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.caracolEnsenanza.FlatAppearance.BorderSize = 0;
-            this.caracolEnsenanza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolEnsenanza.Location = new System.Drawing.Point(1215, 38);
-            this.caracolEnsenanza.Name = "caracolEnsenanza";
-            this.caracolEnsenanza.Size = new System.Drawing.Size(150, 150);
-            this.caracolEnsenanza.TabIndex = 13;
-            this.caracolEnsenanza.UseVisualStyleBackColor = false;
-            this.caracolEnsenanza.Click += new System.EventHandler(this.button1_Click_3);
-            // 
-            // caracolLecciones
-            // 
-            this.caracolLecciones.BackColor = System.Drawing.Color.Transparent;
-            this.caracolLecciones.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
-            this.caracolLecciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.caracolLecciones.FlatAppearance.BorderSize = 0;
-            this.caracolLecciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolLecciones.Location = new System.Drawing.Point(1210, 34);
-            this.caracolLecciones.Name = "caracolLecciones";
-            this.caracolLecciones.Size = new System.Drawing.Size(150, 150);
-            this.caracolLecciones.TabIndex = 13;
-            this.caracolLecciones.UseVisualStyleBackColor = false;
-            this.caracolLecciones.Click += new System.EventHandler(this.caracolLecciones_Click);
-            // 
-            // race1
-            // 
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(-4, -18);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1366, 788);
-            this.race1.TabIndex = 2;
-            this.race1.Visible = false;
-            // 
-            // ej11
-            // 
-            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
-            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej11.Location = new System.Drawing.Point(-15, 550);
-            this.ej11.Name = "ej11";
-            this.ej11.Size = new System.Drawing.Size(1366, 150);
-            this.ej11.TabIndex = 10;
-            // 
-            // ej01
-            // 
-            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
-            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej01.Location = new System.Drawing.Point(-15, 550);
-            this.ej01.Name = "ej01";
-            this.ej01.Size = new System.Drawing.Size(1366, 150);
-            this.ej01.TabIndex = 9;
-            // 
-            // ej12
-            // 
-            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
-            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej12.Location = new System.Drawing.Point(-15, 550);
-            this.ej12.Name = "ej12";
-            this.ej12.Size = new System.Drawing.Size(1366, 150);
-            this.ej12.TabIndex = 8;
-            // 
-            // ej02
-            // 
-            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
-            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej02.Location = new System.Drawing.Point(-15, 550);
-            this.ej02.Name = "ej02";
-            this.ej02.Size = new System.Drawing.Size(1366, 150);
-            this.ej02.TabIndex = 7;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.signIt);
             this.Controls.Add(this.Menubutton);
             this.Controls.Add(this.panel1);
@@ -2131,7 +2141,6 @@
         private System.Windows.Forms.Button ComenzarIds;
         private System.Windows.Forms.LinkLabel linkLabel1IdS;
         private System.Windows.Forms.TextBox UserIdS;
-        private System.Windows.Forms.Button ComenzarCdU;
         private System.Windows.Forms.Button SnapBackToReality;
         private System.Windows.Forms.TextBox UserCdU;
         private System.Windows.Forms.Label label1CdU;
@@ -2261,6 +2270,7 @@
         private System.Windows.Forms.Button caracolEJ2;
         private System.Windows.Forms.Button caracolEnsenanza;
         private System.Windows.Forms.Button caracolLecciones;
+        private System.Windows.Forms.Button ComenzarCdU;
     }
 }
 
