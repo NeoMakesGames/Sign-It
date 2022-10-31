@@ -111,7 +111,7 @@ namespace SignIt
             OleDbCommand cmd = new OleDbCommand("UPDATE Usuarios SET XP = XP + " + amount + " WHERE id = " + id, con);
             cmd.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("¡XP agregada! (Se sumó " + amount + ")");
+            //MessageBox.Show("¡XP agregada! (Se sumó " + amount + ")");
         }
 
         public static void addAvance(int id, string path)

@@ -42,7 +42,7 @@ namespace SignIt
 
         float progreso;
         double home_slider = 0;
-
+        int tuto = 0;
         public static bool continuar = false;
         public bool menu = false;
         public bool fullscr = true;
@@ -329,12 +329,9 @@ namespace SignIt
 
         private void tutorial()
         {
-            myimage = new Bitmap(imagePath + "Presentacion.PNG");
-            caracol.BackgroundImage = myimage;
+            caracolayuda("Presentacion", 3);
             myimage = new Bitmap(imagePath + "Botón (3).PNG");
             caracolExit.BackgroundImage = myimage;
-            signIt.SelectedTab = caracol;
-            lastpage = 3;
             turorial = true;
             UserHome.Text = (DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path));
         }
@@ -1331,56 +1328,75 @@ namespace SignIt
 
 
         //Ayuda
-        private void caracolExit_Click(object sender, EventArgs e)
+        private async void caracolExit_Click(object sender, EventArgs e)
         {
             if (turorial == true)
             {
-                signIt.SelectedTab = caracol;
-                lastpage = 3;
-                aparicionDelMenu();
-                DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
-                avance++;
-                myimage = new Bitmap(imagePath + "Botón (4).PNG");
-                caracolExit.BackgroundImage = myimage;
+                tuto++;
+                switch (tuto)
+                {
+                    case 0:
+                        caracolayuda("T1", 3);
+                        break;
+                    case 1:
+                        caracolayuda("T2", 3);
+                        break;
+                    case 2:
+                        caracolayuda("T3", 3);
+                        break;
+                    case 3:
+                        aparicionDelMenu();
+                        signIt.SelectedTab = Home;
+                        DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
+                        avance++;
+                        myimage = new Bitmap(imagePath + "Botón (4).PNG");
+                        caracolExit.BackgroundImage = myimage;
+                        turorial = false;
+                        break;
+                }
+                await Task.Delay(300);
             }
-            switch (lastpage)
+            else
             {
-                case 1:
-                    signIt.SelectedTab = Diccionario;
-                    aparicionDelMenu();
-                    break;
+                switch (lastpage)
+                {
+                    case 1:
+                        signIt.SelectedTab = Diccionario;
+                        aparicionDelMenu();
+                        break;
 
-                case 2:
-                    signIt.SelectedTab = LeccionesMenu;
-                    aparicionDelMenu();
-                    break;
+                    case 2:
+                        signIt.SelectedTab = LeccionesMenu;
+                        aparicionDelMenu();
+                        break;
 
-                case 3:
-                    signIt.SelectedTab = Home;
-                    aparicionDelMenu();
-                    break;
+                    case 3:
+                        signIt.SelectedTab = Home;
+                        aparicionDelMenu();
+                        break;
 
-                case 4:
-                    signIt.SelectedTab = juegos;
-                    aparicionDelMenu();
-                    break;
+                    case 4:
+                        signIt.SelectedTab = juegos;
+                        aparicionDelMenu();
+                        break;
 
-                case 5:
-                    signIt.SelectedTab = Ajustes;
-                    aparicionDelMenu();
-                    break;
+                    case 5:
+                        signIt.SelectedTab = Ajustes;
+                        aparicionDelMenu();
+                        break;
 
-                case 10:
-                    signIt.SelectedTab = Enseñanza;
-                    break;
+                    case 10:
+                        signIt.SelectedTab = Enseñanza;
+                        break;
 
-                case 11:
-                    signIt.SelectedTab = ejercicio1;
-                    break;
+                    case 11:
+                        signIt.SelectedTab = ejercicio1;
+                        break;
 
-                case 12:
-                    signIt.SelectedTab = ejercicio2;
-                    break;
+                    case 12:
+                        signIt.SelectedTab = ejercicio2;
+                        break;
+                }
             }
         }
 
