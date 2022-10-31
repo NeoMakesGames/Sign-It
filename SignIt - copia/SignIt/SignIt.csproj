@@ -58,12 +58,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseFunctions.cs" />
-    <Compile Include="diccionarioBeta.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="diccionarioBeta.Designer.cs">
-      <DependentUpon>diccionarioBeta.cs</DependentUpon>
-    </Compile>
     <Compile Include="juegos_y_cositas\Ej1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -90,9 +84,6 @@
     <Compile Include="juegos_y_cositas\Race.Designer.cs">
       <DependentUpon>Race.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="diccionarioBeta.resx">
-      <DependentUpon>diccionarioBeta.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

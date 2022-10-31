@@ -680,7 +680,8 @@ namespace SignIt
             caracolEJ1.Hide();
             caracolEJ2.Hide();
             caracolEnsenanza.Hide();
-            caracolExit.Hide();
+            continuarTutorial.Hide();
+            atrasTutorial.Hide();
         }
 
         //Inicio de Sesión
@@ -1332,17 +1333,19 @@ namespace SignIt
                         caracolayuda("T1", 3);
                         caracolExit.Hide();
                         atrasTutorial.Show();
-                        continuarTutorial1.Show();
+                        continuarTutorial.Show();
                         break;
                     case 1:
                         caracolayuda("T2", 3);
                         atrasTutorial.Show();
-                        continuarTutorial1.Show();
+                        continuarTutorial.Show();
+                        caracolExit.Hide();
                         break;
                     case 2:
                         caracolayuda("T3", 3);
-                        continuarTutorial1.Show();
-                        atrasTutorial.Hide();
+                        continuarTutorial.Show();
+                        atrasTutorial.Show();
+                        caracolExit.Hide();
                         break;
                     case 3:
                         aparicionDelMenu();
@@ -1399,7 +1402,83 @@ namespace SignIt
                 }
             }
         }
+        private void button1_Click_4(object sender, EventArgs e)
+        {
+            if (turorial == true)
+            {
+                tuto++;
+                switch (tuto)
+                {
+                    case 0:
+                        caracolayuda("T1", 3);
+                        caracolExit.Hide();
+                        atrasTutorial.Show();
+                        continuarTutorial.Show();
+                        break;
+                    case 1:
+                        caracolayuda("T2", 3);
+                        atrasTutorial.Show();
+                        continuarTutorial.Show();
+                        caracolExit.Hide();
+                        break;
+                    case 2:
+                        caracolayuda("T3", 3);
+                        continuarTutorial.Show();
+                        atrasTutorial.Show();
+                        caracolExit.Hide();
+                        break;
+                    case 3:
+                        aparicionDelMenu();
+                        signIt.SelectedTab = Home;
+                        DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
+                        avance++;
+                        myimage = new Bitmap(imagePath + "Botón (4).PNG");
+                        caracolExit.BackgroundImage = myimage;
+                        caracolExit.Show();
+                        turorial = false;
+                        break;
+                }
+            }
+        }
 
+        private void button1_Click_5(object sender, EventArgs e)
+        {
+            if (turorial == true)
+            {
+                tuto--;
+                switch (tuto)
+                {
+                    case 0:
+                        caracolayuda("T1", 3);
+                        caracolExit.Hide();
+                        atrasTutorial.Show();
+                        continuarTutorial.Show();
+                        break;
+                    case 1:
+                        caracolayuda("T2", 3);
+                        atrasTutorial.Show();
+                        continuarTutorial.Show();
+                        caracolExit.Hide();
+                        break;
+                    case 2:
+                        caracolayuda("T3", 3);
+                        continuarTutorial.Show();
+                        atrasTutorial.Show();
+                        caracolExit.Hide();
+                        break;
+                    case 3:
+                        aparicionDelMenu();
+                        signIt.SelectedTab = Home;
+                        DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
+                        avance++;
+                        myimage = new Bitmap(imagePath + "Botón (4).PNG");
+                        caracolExit.BackgroundImage = myimage;
+                        caracolExit.Show();
+                        turorial = false;
+                        break;
+                }
+            }
+        }
         private void caracolExit2_Click(object sender, EventArgs e)
         {
             aparicionDelMenu();

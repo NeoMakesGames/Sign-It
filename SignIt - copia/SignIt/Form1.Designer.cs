@@ -167,14 +167,13 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
+            this.continuarTutorial = new System.Windows.Forms.Button();
             this.atrasTutorial = new System.Windows.Forms.Button();
-            this.continuarTutorial1 = new System.Windows.Forms.Button();
             this.race1 = new SignIt.Race();
             this.ej11 = new SignIt.Ej1();
             this.ej01 = new SignIt.Ej0();
             this.ej12 = new SignIt.Ej1();
             this.ej02 = new SignIt.Ej0();
-            this.button1 = new System.Windows.Forms.Button();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -217,7 +216,7 @@
             this.signIt.Controls.Add(this.ejercicio2);
             this.signIt.Controls.Add(this.ejercicio3);
             this.signIt.Controls.Add(this.caracol);
-            this.signIt.Location = new System.Drawing.Point(-10, 0);
+            this.signIt.Location = new System.Drawing.Point(-10, -23);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1450, 901);
@@ -1879,9 +1878,8 @@
             // 
             this.caracol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.caracol.BackgroundImage = global::SignIt.Properties.Resources.T2;
-            this.caracol.Controls.Add(this.button1);
-            this.caracol.Controls.Add(this.continuarTutorial1);
             this.caracol.Controls.Add(this.atrasTutorial);
+            this.caracol.Controls.Add(this.continuarTutorial);
             this.caracol.Controls.Add(this.caracolExit2);
             this.caracol.Controls.Add(this.caracolExit);
             this.caracol.Location = new System.Drawing.Point(4, 22);
@@ -2035,33 +2033,25 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
+            // continuarTutorial
+            // 
+            this.continuarTutorial.Location = new System.Drawing.Point(981, 597);
+            this.continuarTutorial.Name = "continuarTutorial";
+            this.continuarTutorial.Size = new System.Drawing.Size(338, 123);
+            this.continuarTutorial.TabIndex = 4;
+            this.continuarTutorial.Text = "button1";
+            this.continuarTutorial.UseVisualStyleBackColor = true;
+            this.continuarTutorial.Click += new System.EventHandler(this.button1_Click_4);
+            // 
             // atrasTutorial
             // 
-            this.atrasTutorial.BackColor = System.Drawing.Color.Transparent;
-            this.atrasTutorial.BackgroundImage = global::SignIt.Properties.Resources.Botón__4_;
-            this.atrasTutorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.atrasTutorial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.atrasTutorial.FlatAppearance.BorderSize = 0;
-            this.atrasTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.atrasTutorial.Location = new System.Drawing.Point(68, 610);
+            this.atrasTutorial.Location = new System.Drawing.Point(65, 609);
             this.atrasTutorial.Name = "atrasTutorial";
-            this.atrasTutorial.Size = new System.Drawing.Size(331, 124);
-            this.atrasTutorial.TabIndex = 2;
-            this.atrasTutorial.UseVisualStyleBackColor = false;
-            // 
-            // continuarTutorial1
-            // 
-            this.continuarTutorial1.BackColor = System.Drawing.Color.Transparent;
-            this.continuarTutorial1.BackgroundImage = global::SignIt.Properties.Resources.Botón__4_;
-            this.continuarTutorial1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.continuarTutorial1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.continuarTutorial1.FlatAppearance.BorderSize = 0;
-            this.continuarTutorial1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.continuarTutorial1.Location = new System.Drawing.Point(981, 597);
-            this.continuarTutorial1.Name = "continuarTutorial1";
-            this.continuarTutorial1.Size = new System.Drawing.Size(336, 124);
-            this.continuarTutorial1.TabIndex = 3;
-            this.continuarTutorial1.UseVisualStyleBackColor = false;
+            this.atrasTutorial.Size = new System.Drawing.Size(338, 122);
+            this.atrasTutorial.TabIndex = 5;
+            this.atrasTutorial.Text = "button1";
+            this.atrasTutorial.UseVisualStyleBackColor = true;
+            this.atrasTutorial.Click += new System.EventHandler(this.button1_Click_5);
             // 
             // race1
             // 
@@ -2109,15 +2099,6 @@
             this.ej02.Name = "ej02";
             this.ej02.Size = new System.Drawing.Size(1550, 160);
             this.ej02.TabIndex = 7;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1148, 430);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -2314,9 +2295,8 @@
         private System.Windows.Forms.Button caracolEnsenanza;
         private System.Windows.Forms.Button caracolLecciones;
         private System.Windows.Forms.Button ComenzarCdU;
-        private System.Windows.Forms.Button continuarTutorial1;
+        private System.Windows.Forms.Button continuarTutorial;
         private System.Windows.Forms.Button atrasTutorial;
-        private System.Windows.Forms.Button button1;
     }
 }
 
