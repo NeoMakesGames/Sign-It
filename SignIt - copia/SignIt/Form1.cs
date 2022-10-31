@@ -96,7 +96,7 @@ namespace SignIt
                 basicoLecc.BackgroundImage = yepMyImage;
             }
 
-            if (avance < 3)
+            if (avance < 2)
             {
                 botonBI = imagePath + "ComidaX.PNG";
                 yepMyImage = new Bitmap(botonBI);
@@ -109,7 +109,7 @@ namespace SignIt
                 comidaLecc.BackgroundImage = yepMyImage;
             }
 
-            if (avance < 5)
+            if (avance < 3)
             {
                 botonBI = imagePath + "ColoresX.PNG";
                 yepMyImage = new Bitmap(botonBI);
@@ -122,7 +122,7 @@ namespace SignIt
                 coloresLecc.BackgroundImage = yepMyImage;
             }
 
-            if (avance < 7)
+            if (avance < 4)
             {
                 botonBI = imagePath + "LugaresX.PNG";
                 yepMyImage = new Bitmap(botonBI);
@@ -135,7 +135,7 @@ namespace SignIt
                 lugaresLecc.BackgroundImage = yepMyImage;
             }
 
-            if (avance < 9)
+            if (avance < 5)
             {
                 botonBI = imagePath + "PronombresX.PNG";
                 yepMyImage = new Bitmap(botonBI);
@@ -148,7 +148,7 @@ namespace SignIt
                 pronombresLecc.BackgroundImage = yepMyImage;
             }
 
-            if (avance < 11)
+            if (avance < 6)
             {
                 botonBI = imagePath + "VerbosX.PNG";
                 myimage = new Bitmap(botonBI);
@@ -160,7 +160,7 @@ namespace SignIt
                 yepMyImage = new Bitmap(botonBI);
                 verbosLecc.BackgroundImage = yepMyImage;
             }
-            if (avance < 13)
+            if (avance < 7)
             {
                 botonBI = imagePath + "ExámenX.PNG";
                 yepMyImage = new Bitmap(botonBI);
@@ -191,7 +191,7 @@ namespace SignIt
                 basicoDiccionario.BackgroundImage = notmyimage;
             }
 
-            if (avance < 4)
+            if (avance < 3)
             {
                 botonBI = imagePath + "ComidaX.PNG";
                 notmyimage = new Bitmap(botonBI);
@@ -204,7 +204,7 @@ namespace SignIt
                 comidaDiccionario.BackgroundImage = notmyimage;
             }
 
-            if (avance < 6)
+            if (avance < 4)
             {
                 botonBI = imagePath + "ColoresX.PNG";
                 notmyimage = new Bitmap(botonBI);
@@ -216,7 +216,7 @@ namespace SignIt
                 coloresDiccionario.BackgroundImage = notmyimage;
             }
 
-            if (avance < 8)
+            if (avance < 5)
             {
                 botonBI = imagePath + "LugaresX.PNG";
                 notmyimage = new Bitmap(botonBI);
@@ -228,7 +228,7 @@ namespace SignIt
                 lugaresDiccionario.BackgroundImage = notmyimage;
             }
 
-            if (avance < 10)
+            if (avance < 6)
             {
                 botonBI = imagePath + "PronombresX.PNG";
                 notmyimage = new Bitmap(botonBI);
@@ -241,7 +241,7 @@ namespace SignIt
                 pronombresDiccionario.BackgroundImage = notmyimage;
             }
 
-            if (avance < 12)
+            if (avance < 7)
             {
                 botonBI = imagePath + "VerbosX.PNG";
                 notmyimage = new Bitmap(botonBI);
@@ -367,7 +367,7 @@ namespace SignIt
             caracolEnsenanza.Hide();
         }
 
-        public async void ejercicios(string tipo, int avA)
+        public async void ejercicios(string tipo)
         {
             desaparicionDelMenu();
             continuar = false;
@@ -639,12 +639,12 @@ namespace SignIt
                 }
                 z++;
             }
-            DatabaseFunctions.addXP(DatabaseFunctions.currentUser, xpGanada, path);
-            if (errores == 3 && avance == avA)
-            {
-                DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
-                avance++;
-            }
+            //DatabaseFunctions.addXP(DatabaseFunctions.currentUser, xpGanada, path);
+            //if (errores == 3 && avance == avA)
+            //{
+            //    DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
+            //    avance++;
+            //}
             aparicionDelMenu();
             botonesLecciones();
             signIt.SelectedTab = LeccionesMenu;
@@ -881,7 +881,7 @@ namespace SignIt
             xpB.Text = Convert.ToString(UserLvl);
             xProgressBar.Maximum = NextLvl;
             xProgressBar.Value = UserXp;
-            progresoSett2.Text = Convert.ToString(avance) + " / 14";
+            progresoSett2.Text = Convert.ToString(avance) + " / 8";
             Menubutton_Click(sender, e);
             menu = false;
         }
@@ -907,64 +907,64 @@ namespace SignIt
                 caracolEJ1.Show();
                 caracolEJ2.Show();
                 caracolEnsenanza.Show();
-                ejercicios("Basico", 2);
+                ejercicios("Basico");
             }
         }
         private void comidaLecc_Click(object sender, EventArgs e)
         {
-            if (avance == 3)
+            if (avance == 2)
             {
                 ensañanza("Comida");
             }
-            else if (avance > 3)
+            else if (avance > 2)
             {
-                ejercicios("Comida", 4);
+                ejercicios("Comida");
             }
         }
         private void coloresLecc_Click(object sender, EventArgs e)
         {
-            if (avance == 5)
+            if (avance == 3)
             {
                 ensañanza("Colores");
             }
-            else if (avance > 5)
+            else if (avance > 3)
             {
-                ejercicios("Colores", 6);
+                ejercicios("Colores");
             }
         }
         private void lugaresLecc_Click(object sender, EventArgs e)
         {
-            if (avance == 7)
+            if (avance == 4)
             {
                 ensañanza("Lugares");
             }
-            else if (avance > 7)
+            else if (avance > 4)
             {
-                ejercicios("Lugares", 8);
+                ejercicios("Lugares");
             }
         }
 
         private void pronombresLecc_Click(object sender, EventArgs e)
         {
-            if (avance == 9)
+            if (avance == 5)
             {
                 ensañanza("Pronombres");
             }
-            else if (avance > 9)
+            else if (avance > 5)
             {
-                ejercicios("Pronombres", 10);
+                ejercicios("Pronombres");
             }
         }
 
         private void verbosLecc_Click(object sender, EventArgs e)
         {
-            if (avance == 11)
+            if (avance == 6)
             {
                 ensañanza("Verbos");
             }
-            else if (avance > 11)
+            else if (avance > 6)
             {
-                ejercicios("Verbos", 12);
+                ejercicios("Verbos");
             }
         }
 
