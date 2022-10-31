@@ -308,6 +308,7 @@
     <None Include="Resources\Botón1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\T2.png" />
     <None Include="Resources\nros.PNG" />
     <None Include="Resources\logo azul sin fondo 2 %281%291.png" />
     <None Include="Resources\logo azul sin fondo 2 %281%29.png" />

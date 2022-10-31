@@ -1,19 +1,10 @@
-﻿using SignIt.Properties;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Media;
-using System.Resources;
-using System.Runtime.CompilerServices;
-using System.Security.Policy;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Image = System.Drawing.Image;
 
 namespace SignIt
@@ -83,7 +74,7 @@ namespace SignIt
             Menubutton.BringToFront();
         }
 
-        private void caracolayuda (string imagen, int page)
+        private void caracolayuda(string imagen, int page)
         {
             myimage = new Bitmap(imagePath + imagen + ".PNG");
             caracol.BackgroundImage = myimage;
@@ -457,7 +448,7 @@ namespace SignIt
                             for (int i = 0; i < 1;)
                             {
                                 b = rdn.Next(1, 64);
-                                foreach(int video in videos)
+                                foreach (int video in videos)
                                 {
                                     if (video == b)
                                     {
@@ -689,6 +680,7 @@ namespace SignIt
             caracolEJ1.Hide();
             caracolEJ2.Hide();
             caracolEnsenanza.Hide();
+            caracolExit.Hide();
         }
 
         //Inicio de Sesión
@@ -1047,7 +1039,7 @@ namespace SignIt
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if(avance > 1)
+            if (avance > 1)
             {
                 signIt.SelectedTab = dB1;
             }
@@ -1235,7 +1227,7 @@ namespace SignIt
                 }
             }
         }
-//sobras
+        //sobras
 
         private void race2_Load(object sender, EventArgs e)
         {
@@ -1247,7 +1239,7 @@ namespace SignIt
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
         private void UserIdS_TextChanged(object sender, EventArgs e)
         {
@@ -1257,7 +1249,8 @@ namespace SignIt
         {
 
         }
-        private void IdS_Click(object sender, EventArgs e) {
+        private void IdS_Click(object sender, EventArgs e)
+        {
         }
         private void Chekeos_Tick(object sender, EventArgs e)
         {
@@ -1291,8 +1284,8 @@ namespace SignIt
         }
 
         private void ComenzarIds_MouseClick(object sender, MouseEventArgs e)
-        { 
-        
+        {
+
         }
         private void UserAgeCdU_TextChanged(object sender, EventArgs e)
         {
@@ -1337,12 +1330,19 @@ namespace SignIt
                 {
                     case 0:
                         caracolayuda("T1", 3);
+                        caracolExit.Hide();
+                        atrasTutorial.Show();
+                        continuarTutorial1.Show();
                         break;
                     case 1:
                         caracolayuda("T2", 3);
+                        atrasTutorial.Show();
+                        continuarTutorial1.Show();
                         break;
                     case 2:
                         caracolayuda("T3", 3);
+                        continuarTutorial1.Show();
+                        atrasTutorial.Hide();
                         break;
                     case 3:
                         aparicionDelMenu();
@@ -1351,10 +1351,10 @@ namespace SignIt
                         avance++;
                         myimage = new Bitmap(imagePath + "Botón (4).PNG");
                         caracolExit.BackgroundImage = myimage;
+                        caracolExit.Show();
                         turorial = false;
                         break;
                 }
-                await Task.Delay(300);
             }
             else
             {
@@ -1576,7 +1576,7 @@ namespace SignIt
         {
             int vidas = 5;
 
-            List<int> videosExamen = new List<int>() {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,442,43,44,45,46,47,48,49,50,51,5253,54,55,56,57,58,59,60,61,62,63,64};
+            List<int> videosExamen = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 442, 43, 44, 45, 46, 47, 48, 49, 50, 51, 5253, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64 };
             Random rand = new Random();
             var shuffled = videosExamen.OrderBy(_ => rand.Next()).ToList();
 
