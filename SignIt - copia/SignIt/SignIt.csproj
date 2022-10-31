@@ -299,6 +299,11 @@
     <None Include="Resources\Botón1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Group 86 %281%29.png" />
+    <None Include="Resources\Group 87 %283%29.png" />
+    <None Include="Resources\Group 85.png" />
+    <None Include="Resources\Group 84.png" />
+    <None Include="Resources\Botón2.png" />
     <None Include="Resources\T2.png" />
     <None Include="Resources\nros.PNG" />
     <None Include="Resources\logo azul sin fondo 2 %281%291.png" />

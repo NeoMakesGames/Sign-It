@@ -53,6 +53,7 @@
             this.LeccionesHome = new System.Windows.Forms.Button();
             this.UserHome = new System.Windows.Forms.Label();
             this.LeccionesMenu = new System.Windows.Forms.TabPage();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.caracolLecciones = new System.Windows.Forms.Button();
             this.examenlecc = new System.Windows.Forms.Button();
             this.verbosLecc = new System.Windows.Forms.Button();
@@ -116,6 +117,7 @@
             this.questo = new System.Windows.Forms.Button();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Tipgrafia = new System.Windows.Forms.ComboBox();
@@ -147,6 +149,8 @@
             this.ejercicio1VideoB = new AxWMPLib.AxWindowsMediaPlayer();
             this.ejercicio1VideoA = new AxWMPLib.AxWindowsMediaPlayer();
             this.ej1palabra = new System.Windows.Forms.Label();
+            this.ej11 = new SignIt.Ej1();
+            this.ej01 = new SignIt.Ej0();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
             this.caracolEJ2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -154,8 +158,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ej2player = new AxWMPLib.AxWindowsMediaPlayer();
             this.ej2cont = new System.Windows.Forms.Button();
+            this.ej12 = new SignIt.Ej1();
+            this.ej02 = new SignIt.Ej0();
             this.ejercicio3 = new System.Windows.Forms.TabPage();
             this.caracol = new System.Windows.Forms.TabPage();
+            this.atrasTutorial = new System.Windows.Forms.Button();
+            this.continuarTutorial = new System.Windows.Forms.Button();
             this.caracolExit2 = new System.Windows.Forms.Button();
             this.caracolExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -167,13 +175,6 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.continuarTutorial = new System.Windows.Forms.Button();
-            this.atrasTutorial = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
-            this.ej11 = new SignIt.Ej1();
-            this.ej01 = new SignIt.Ej0();
-            this.ej12 = new SignIt.Ej1();
-            this.ej02 = new SignIt.Ej0();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -216,7 +217,7 @@
             this.signIt.Controls.Add(this.ejercicio2);
             this.signIt.Controls.Add(this.ejercicio3);
             this.signIt.Controls.Add(this.caracol);
-            this.signIt.Location = new System.Drawing.Point(-10, -23);
+            this.signIt.Location = new System.Drawing.Point(-10, -43);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1450, 901);
@@ -529,12 +530,23 @@
             this.LeccionesMenu.Controls.Add(this.coloresLecc);
             this.LeccionesMenu.Controls.Add(this.comidaLecc);
             this.LeccionesMenu.Controls.Add(this.basicoLecc);
+            this.LeccionesMenu.Controls.Add(this.panel9);
             this.LeccionesMenu.Location = new System.Drawing.Point(4, 22);
             this.LeccionesMenu.Name = "LeccionesMenu";
             this.LeccionesMenu.Size = new System.Drawing.Size(1442, 875);
             this.LeccionesMenu.TabIndex = 3;
             this.LeccionesMenu.Text = "LeccionesMenu";
             this.LeccionesMenu.Click += new System.EventHandler(this.LeccionesMenu_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Transparent;
+            this.panel9.BackgroundImage = global::SignIt.Properties.Resources.Group_86__1_;
+            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel9.Location = new System.Drawing.Point(225, 209);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1000, 500);
+            this.panel9.TabIndex = 14;
             // 
             // caracolLecciones
             // 
@@ -557,7 +569,7 @@
             this.examenlecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.examenlecc.FlatAppearance.BorderSize = 0;
             this.examenlecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.examenlecc.Location = new System.Drawing.Point(554, 348);
+            this.examenlecc.Location = new System.Drawing.Point(554, 380);
             this.examenlecc.Name = "examenlecc";
             this.examenlecc.Size = new System.Drawing.Size(292, 130);
             this.examenlecc.TabIndex = 7;
@@ -571,7 +583,7 @@
             this.verbosLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.verbosLecc.FlatAppearance.BorderSize = 0;
             this.verbosLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.verbosLecc.Location = new System.Drawing.Point(134, 635);
+            this.verbosLecc.Location = new System.Drawing.Point(134, 630);
             this.verbosLecc.Name = "verbosLecc";
             this.verbosLecc.Size = new System.Drawing.Size(196, 83);
             this.verbosLecc.TabIndex = 6;
@@ -585,7 +597,7 @@
             this.pronombresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pronombresLecc.FlatAppearance.BorderSize = 0;
             this.pronombresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pronombresLecc.Location = new System.Drawing.Point(602, 635);
+            this.pronombresLecc.Location = new System.Drawing.Point(602, 630);
             this.pronombresLecc.Name = "pronombresLecc";
             this.pronombresLecc.Size = new System.Drawing.Size(196, 83);
             this.pronombresLecc.TabIndex = 5;
@@ -599,7 +611,7 @@
             this.lugaresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lugaresLecc.FlatAppearance.BorderSize = 0;
             this.lugaresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lugaresLecc.Location = new System.Drawing.Point(981, 635);
+            this.lugaresLecc.Location = new System.Drawing.Point(1089, 630);
             this.lugaresLecc.Name = "lugaresLecc";
             this.lugaresLecc.Size = new System.Drawing.Size(196, 83);
             this.lugaresLecc.TabIndex = 4;
@@ -613,7 +625,7 @@
             this.coloresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.coloresLecc.FlatAppearance.BorderSize = 0;
             this.coloresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.coloresLecc.Location = new System.Drawing.Point(981, 127);
+            this.coloresLecc.Location = new System.Drawing.Point(1089, 210);
             this.coloresLecc.Name = "coloresLecc";
             this.coloresLecc.Size = new System.Drawing.Size(196, 83);
             this.coloresLecc.TabIndex = 2;
@@ -627,7 +639,7 @@
             this.comidaLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.comidaLecc.FlatAppearance.BorderSize = 0;
             this.comidaLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comidaLecc.Location = new System.Drawing.Point(602, 127);
+            this.comidaLecc.Location = new System.Drawing.Point(602, 210);
             this.comidaLecc.Name = "comidaLecc";
             this.comidaLecc.Size = new System.Drawing.Size(196, 83);
             this.comidaLecc.TabIndex = 1;
@@ -641,7 +653,7 @@
             this.basicoLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.basicoLecc.FlatAppearance.BorderSize = 0;
             this.basicoLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.basicoLecc.Location = new System.Drawing.Point(134, 127);
+            this.basicoLecc.Location = new System.Drawing.Point(134, 210);
             this.basicoLecc.Name = "basicoLecc";
             this.basicoLecc.Size = new System.Drawing.Size(196, 83);
             this.basicoLecc.TabIndex = 0;
@@ -1386,6 +1398,16 @@
             this.RaceGamesButton.UseVisualStyleBackColor = false;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
             // 
+            // race1
+            // 
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(-4, -19);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1443, 800);
+            this.race1.TabIndex = 2;
+            this.race1.Visible = false;
+            // 
             // Ajustes
             // 
             this.Ajustes.BackColor = System.Drawing.Color.LightBlue;
@@ -1776,6 +1798,24 @@
             this.ej1palabra.TabIndex = 0;
             this.ej1palabra.Text = "¿Cual seña correspone a la palabra:";
             // 
+            // ej11
+            // 
+            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
+            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej11.Location = new System.Drawing.Point(-15, 585);
+            this.ej11.Name = "ej11";
+            this.ej11.Size = new System.Drawing.Size(1550, 160);
+            this.ej11.TabIndex = 10;
+            // 
+            // ej01
+            // 
+            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
+            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej01.Location = new System.Drawing.Point(-15, 585);
+            this.ej01.Name = "ej01";
+            this.ej01.Size = new System.Drawing.Size(1550, 160);
+            this.ej01.TabIndex = 9;
+            // 
             // ejercicio2
             // 
             this.ejercicio2.BackColor = System.Drawing.Color.LightBlue;
@@ -1863,6 +1903,25 @@
             this.ej2cont.UseVisualStyleBackColor = false;
             this.ej2cont.Click += new System.EventHandler(this.ej2cont_Click);
             // 
+            // ej12
+            // 
+            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
+            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej12.Location = new System.Drawing.Point(-15, 585);
+            this.ej12.Name = "ej12";
+            this.ej12.Size = new System.Drawing.Size(1550, 160);
+            this.ej12.TabIndex = 8;
+            this.ej12.Load += new System.EventHandler(this.ej12_Load);
+            // 
+            // ej02
+            // 
+            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
+            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej02.Location = new System.Drawing.Point(-15, 586);
+            this.ej02.Name = "ej02";
+            this.ej02.Size = new System.Drawing.Size(1550, 160);
+            this.ej02.TabIndex = 7;
+            // 
             // ejercicio3
             // 
             this.ejercicio3.BackColor = System.Drawing.Color.LightBlue;
@@ -1887,6 +1946,36 @@
             this.caracol.Size = new System.Drawing.Size(1442, 875);
             this.caracol.TabIndex = 12;
             this.caracol.Text = "caracol";
+            // 
+            // atrasTutorial
+            // 
+            this.atrasTutorial.BackColor = System.Drawing.Color.Transparent;
+            this.atrasTutorial.BackgroundImage = global::SignIt.Properties.Resources.Botón2;
+            this.atrasTutorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.atrasTutorial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.atrasTutorial.FlatAppearance.BorderSize = 0;
+            this.atrasTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.atrasTutorial.Location = new System.Drawing.Point(63, 592);
+            this.atrasTutorial.Name = "atrasTutorial";
+            this.atrasTutorial.Size = new System.Drawing.Size(340, 140);
+            this.atrasTutorial.TabIndex = 5;
+            this.atrasTutorial.UseVisualStyleBackColor = false;
+            this.atrasTutorial.Click += new System.EventHandler(this.button1_Click_5);
+            // 
+            // continuarTutorial
+            // 
+            this.continuarTutorial.BackColor = System.Drawing.Color.Transparent;
+            this.continuarTutorial.BackgroundImage = global::SignIt.Properties.Resources.Group_85;
+            this.continuarTutorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.continuarTutorial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.continuarTutorial.FlatAppearance.BorderSize = 0;
+            this.continuarTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.continuarTutorial.Location = new System.Drawing.Point(981, 592);
+            this.continuarTutorial.Name = "continuarTutorial";
+            this.continuarTutorial.Size = new System.Drawing.Size(340, 140);
+            this.continuarTutorial.TabIndex = 4;
+            this.continuarTutorial.UseVisualStyleBackColor = false;
+            this.continuarTutorial.Click += new System.EventHandler(this.button1_Click_4);
             // 
             // caracolExit2
             // 
@@ -2032,73 +2121,6 @@
             this.Menubutton.TabIndex = 3;
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
-            // 
-            // continuarTutorial
-            // 
-            this.continuarTutorial.Location = new System.Drawing.Point(981, 597);
-            this.continuarTutorial.Name = "continuarTutorial";
-            this.continuarTutorial.Size = new System.Drawing.Size(338, 123);
-            this.continuarTutorial.TabIndex = 4;
-            this.continuarTutorial.Text = "button1";
-            this.continuarTutorial.UseVisualStyleBackColor = true;
-            this.continuarTutorial.Click += new System.EventHandler(this.button1_Click_4);
-            // 
-            // atrasTutorial
-            // 
-            this.atrasTutorial.Location = new System.Drawing.Point(65, 609);
-            this.atrasTutorial.Name = "atrasTutorial";
-            this.atrasTutorial.Size = new System.Drawing.Size(338, 122);
-            this.atrasTutorial.TabIndex = 5;
-            this.atrasTutorial.Text = "button1";
-            this.atrasTutorial.UseVisualStyleBackColor = true;
-            this.atrasTutorial.Click += new System.EventHandler(this.button1_Click_5);
-            // 
-            // race1
-            // 
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(-4, -19);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1443, 800);
-            this.race1.TabIndex = 2;
-            this.race1.Visible = false;
-            // 
-            // ej11
-            // 
-            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
-            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej11.Location = new System.Drawing.Point(-15, 585);
-            this.ej11.Name = "ej11";
-            this.ej11.Size = new System.Drawing.Size(1550, 160);
-            this.ej11.TabIndex = 10;
-            // 
-            // ej01
-            // 
-            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
-            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej01.Location = new System.Drawing.Point(-15, 585);
-            this.ej01.Name = "ej01";
-            this.ej01.Size = new System.Drawing.Size(1550, 160);
-            this.ej01.TabIndex = 9;
-            // 
-            // ej12
-            // 
-            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
-            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej12.Location = new System.Drawing.Point(-15, 585);
-            this.ej12.Name = "ej12";
-            this.ej12.Size = new System.Drawing.Size(1550, 160);
-            this.ej12.TabIndex = 8;
-            this.ej12.Load += new System.EventHandler(this.ej12_Load);
-            // 
-            // ej02
-            // 
-            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
-            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej02.Location = new System.Drawing.Point(-15, 586);
-            this.ej02.Name = "ej02";
-            this.ej02.Size = new System.Drawing.Size(1550, 160);
-            this.ej02.TabIndex = 7;
             // 
             // Form1
             // 
@@ -2297,6 +2319,7 @@
         private System.Windows.Forms.Button ComenzarCdU;
         private System.Windows.Forms.Button continuarTutorial;
         private System.Windows.Forms.Button atrasTutorial;
+        private System.Windows.Forms.Panel panel9;
     }
 }
 

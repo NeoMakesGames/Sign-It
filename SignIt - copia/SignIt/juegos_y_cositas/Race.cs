@@ -21,7 +21,6 @@ namespace SignIt
         int puntos;
         int segundos, minutos;
         int id_;
-        string palabra;
         public Race()
         {
             InitializeComponent();

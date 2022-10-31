@@ -30,8 +30,6 @@ namespace SignIt
         int vidas = 0;
         int lastpage = 0;
         public static int avance;
-
-        float progreso;
         double home_slider = 0;
         int tuto = 0;
         public static bool continuar = false;
@@ -1322,32 +1320,38 @@ namespace SignIt
 
 
         //Ayuda
-        private async void caracolExit_Click(object sender, EventArgs e)
+        private void caracolExit_Click(object sender, EventArgs e)
         {
             if (turorial == true)
             {
                 tuto++;
                 switch (tuto)
                 {
-                    case 0:
-                        caracolayuda("T1", 3);
-                        caracolExit.Hide();
-                        atrasTutorial.Show();
-                        continuarTutorial.Show();
-                        break;
                     case 1:
-                        caracolayuda("T2", 3);
-                        atrasTutorial.Show();
-                        continuarTutorial.Show();
                         caracolExit.Hide();
+                        atrasTutorial.Hide();
+                        continuarTutorial.Show();
+                        caracolayuda("T1", 3);
                         break;
                     case 2:
-                        caracolayuda("T3", 3);
+                        atrasTutorial.Show();
+                        continuarTutorial.Show();
+                        caracolExit.Hide();
+                        caracolayuda("T2", 3);
+                        break;
+                    case 3:
                         continuarTutorial.Show();
                         atrasTutorial.Show();
                         caracolExit.Hide();
+                        caracolayuda("T3", 3);
                         break;
-                    case 3:
+                    case 4:
+                        continuarTutorial.Show();
+                        atrasTutorial.Show();
+                        caracolExit.Hide();
+                        caracolayuda("T4", 3);
+                        break;
+                    case 5:
                         aparicionDelMenu();
                         signIt.SelectedTab = Home;
                         DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
@@ -1409,25 +1413,31 @@ namespace SignIt
                 tuto++;
                 switch (tuto)
                 {
-                    case 0:
-                        caracolayuda("T1", 3);
-                        caracolExit.Hide();
-                        atrasTutorial.Show();
-                        continuarTutorial.Show();
-                        break;
                     case 1:
-                        caracolayuda("T2", 3);
-                        atrasTutorial.Show();
-                        continuarTutorial.Show();
                         caracolExit.Hide();
+                        atrasTutorial.Hide();
+                        continuarTutorial.Show();
+                        caracolayuda("T1", 3);
                         break;
                     case 2:
-                        caracolayuda("T3", 3);
+                        atrasTutorial.Show();
+                        continuarTutorial.Show();
+                        caracolExit.Hide();
+                        caracolayuda("T2", 3);
+                        break;
+                    case 3:
                         continuarTutorial.Show();
                         atrasTutorial.Show();
                         caracolExit.Hide();
+                        caracolayuda("T3", 3);
                         break;
-                    case 3:
+                    case 4:
+                        continuarTutorial.Show();
+                        atrasTutorial.Show();
+                        caracolExit.Hide();
+                        caracolayuda("T4", 3);
+                        break;
+                    case 5:
                         aparicionDelMenu();
                         signIt.SelectedTab = Home;
                         DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
@@ -1448,25 +1458,31 @@ namespace SignIt
                 tuto--;
                 switch (tuto)
                 {
-                    case 0:
-                        caracolayuda("T1", 3);
-                        caracolExit.Hide();
-                        atrasTutorial.Show();
-                        continuarTutorial.Show();
-                        break;
                     case 1:
-                        caracolayuda("T2", 3);
-                        atrasTutorial.Show();
-                        continuarTutorial.Show();
                         caracolExit.Hide();
+                        atrasTutorial.Hide();
+                        continuarTutorial.Show();
+                        caracolayuda("T1", 3);
                         break;
                     case 2:
-                        caracolayuda("T3", 3);
+                        atrasTutorial.Show();
+                        continuarTutorial.Show();
+                        caracolExit.Hide();
+                        caracolayuda("T2", 3);
+                        break;
+                    case 3:
                         continuarTutorial.Show();
                         atrasTutorial.Show();
                         caracolExit.Hide();
+                        caracolayuda("T3", 3);
                         break;
-                    case 3:
+                    case 4:
+                        continuarTutorial.Show();
+                        atrasTutorial.Show();
+                        caracolExit.Hide();
+                        caracolayuda("T4", 3);
+                        break;
+                    case 5:
                         aparicionDelMenu();
                         signIt.SelectedTab = Home;
                         DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);

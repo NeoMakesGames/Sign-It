@@ -363,6 +363,16 @@ namespace SignIt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Botón2 {
+            get {
+                object obj = ResourceManager.GetObject("Botón2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Caracol_boceto_3 {
             get {
                 object obj = ResourceManager.GetObject("Caracol boceto 3", resourceCulture);
@@ -736,6 +746,46 @@ namespace SignIt.Properties {
         internal static System.Drawing.Bitmap Group_75 {
             get {
                 object obj = ResourceManager.GetObject("Group 75", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_84 {
+            get {
+                object obj = ResourceManager.GetObject("Group 84", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_85 {
+            get {
+                object obj = ResourceManager.GetObject("Group 85", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_86__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 86 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_87__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 87 (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
