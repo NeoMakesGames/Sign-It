@@ -357,11 +357,12 @@ namespace SignIt
                     EnseñanzaPlayer.Ctlcontrols.stop();
                 }
             }
+            DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
+            avance++;
             botonesLecciones();
             aparicionDelMenu();
+            botonesLecciones();
             signIt.SelectedTab = LeccionesMenu;
-            DatabaseFunctions.addAvance(1, path);
-            avance++;
             caracolEJ1.Hide();
             caracolEJ2.Hide();
             caracolEnsenanza.Hide();
@@ -645,6 +646,7 @@ namespace SignIt
             //    DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
             //    avance++;
             //}
+            botonesLecciones();
             aparicionDelMenu();
             botonesLecciones();
             signIt.SelectedTab = LeccionesMenu;
