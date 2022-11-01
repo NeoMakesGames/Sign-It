@@ -40,11 +40,9 @@
             this.imagenTimer = new System.Windows.Forms.Button();
             this.ExitRace = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.endRacePanel = new System.Windows.Forms.Panel();
-            this.endRacePoints = new System.Windows.Forms.Label();
             this.finalRaceText = new System.Windows.Forms.Label();
+            this.endRacePoints = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
-            this.endRacePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // RaceTextBox
@@ -107,11 +105,11 @@
             // 
             this.Contador.AutoSize = true;
             this.Contador.BackColor = System.Drawing.Color.Transparent;
-            this.Contador.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.Contador.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Contador.Location = new System.Drawing.Point(1174, 673);
+            this.Contador.Font = new System.Drawing.Font("Inter", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Contador.Location = new System.Drawing.Point(1175, 676);
             this.Contador.Name = "Contador";
-            this.Contador.Size = new System.Drawing.Size(82, 31);
+            this.Contador.Size = new System.Drawing.Size(99, 33);
             this.Contador.TabIndex = 6;
             this.Contador.Text = "00:00";
             // 
@@ -149,41 +147,26 @@
             this.panel1.Size = new System.Drawing.Size(630, 71);
             this.panel1.TabIndex = 0;
             // 
-            // endRacePanel
+            // finalRaceText
             // 
-            this.endRacePanel.BackColor = System.Drawing.Color.Transparent;
-            this.endRacePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.endRacePanel.Controls.Add(this.endRacePoints);
-            this.endRacePanel.Controls.Add(this.finalRaceText);
-            this.endRacePanel.Location = new System.Drawing.Point(326, 21);
-            this.endRacePanel.Name = "endRacePanel";
-            this.endRacePanel.Size = new System.Drawing.Size(743, 500);
-            this.endRacePanel.TabIndex = 8;
-            this.endRacePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.endRacePanel_Paint);
+            this.finalRaceText.AutoSize = true;
+            this.finalRaceText.Font = new System.Drawing.Font("Inter", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalRaceText.Location = new System.Drawing.Point(520, 231);
+            this.finalRaceText.Name = "finalRaceText";
+            this.finalRaceText.Size = new System.Drawing.Size(216, 39);
+            this.finalRaceText.TabIndex = 8;
+            this.finalRaceText.Text = "Buen intento";
             // 
             // endRacePoints
             // 
             this.endRacePoints.AutoSize = true;
             this.endRacePoints.BackColor = System.Drawing.Color.Transparent;
-            this.endRacePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.endRacePoints.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.endRacePoints.Location = new System.Drawing.Point(286, 294);
+            this.endRacePoints.Font = new System.Drawing.Font("Inter", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.endRacePoints.Location = new System.Drawing.Point(622, 297);
             this.endRacePoints.Name = "endRacePoints";
-            this.endRacePoints.Size = new System.Drawing.Size(97, 31);
-            this.endRacePoints.TabIndex = 1;
+            this.endRacePoints.Size = new System.Drawing.Size(114, 35);
+            this.endRacePoints.TabIndex = 9;
             this.endRacePoints.Text = "Hiciste";
-            // 
-            // finalRaceText
-            // 
-            this.finalRaceText.AutoSize = true;
-            this.finalRaceText.BackColor = System.Drawing.Color.Transparent;
-            this.finalRaceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F);
-            this.finalRaceText.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.finalRaceText.Location = new System.Drawing.Point(251, 222);
-            this.finalRaceText.Name = "finalRaceText";
-            this.finalRaceText.Size = new System.Drawing.Size(232, 44);
-            this.finalRaceText.TabIndex = 0;
-            this.finalRaceText.Text = "Buen intento";
             // 
             // Race
             // 
@@ -191,7 +174,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.endRacePanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.imagenTimer);
             this.Controls.Add(this.Contador);
@@ -200,13 +182,13 @@
             this.Controls.Add(this.RacePoints);
             this.Controls.Add(this.RaceTextBox);
             this.Controls.Add(this.axWindowsMediaPlayer1);
+            this.Controls.Add(this.endRacePoints);
+            this.Controls.Add(this.finalRaceText);
             this.DoubleBuffered = true;
             this.Name = "Race";
             this.Size = new System.Drawing.Size(1366, 788);
             this.Load += new System.EventHandler(this.Race_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
-            this.endRacePanel.ResumeLayout(false);
-            this.endRacePanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,8 +206,7 @@
         private System.Windows.Forms.Label Contador;
         private System.Windows.Forms.Button imagenTimer;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel endRacePanel;
-        private System.Windows.Forms.Label endRacePoints;
         private System.Windows.Forms.Label finalRaceText;
+        private System.Windows.Forms.Label endRacePoints;
     }
 }

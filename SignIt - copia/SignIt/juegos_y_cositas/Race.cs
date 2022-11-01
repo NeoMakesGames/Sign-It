@@ -36,9 +36,7 @@ namespace SignIt
 
             reStart();
 
-            endRacePanel.BringToFront();
             axWindowsMediaPlayer1.settings.setMode("loop", true);
-            endRacePanel.Hide();
         }
         private void reproduccion()
         {
@@ -56,8 +54,9 @@ namespace SignIt
             RaceTextBox.Hide();
             imagenTimer.Hide();
             axWindowsMediaPlayer1.Hide();
-            notraceEndpanel();
 
+            finalRaceText.Hide();
+            endRacePoints.Hide();
             RacePoints.Text = "";
             RaceTextBox.Text = "";
             Contador.Text = "";
@@ -74,12 +73,6 @@ namespace SignIt
             TimerRace2.Enabled = false;
 
             Form1.externalmenu = true;
-        }
-        private void notraceEndpanel()
-        {
-            endRacePanel.Hide();
-            finalRaceText.Text = "";
-            endRacePoints.Text = "";
         }
 
         private void counTer()
@@ -138,7 +131,7 @@ namespace SignIt
 
         private void TimerRace_Tick(object sender, EventArgs e)
         {
-            if (RaceTextBox.Text == DatabaseFunctions.GetNameOfVideo(id_, Form1.path))
+            if (RaceTextBox.Text.ToLowerInvariant() == DatabaseFunctions.GetNameOfVideo(id_, Form1.path).ToLowerInvariant())
             {
                 raceTimer += 3000;
                 RaceTextBox.Text = "";
@@ -153,18 +146,26 @@ namespace SignIt
             raceTimer = raceTimer - 1000;
             counTer();
 
-            if (raceTimer < 1)
+            if (raceTimer < 1000)
             {
                 TimerRace.Stop();
-                TimerRace2.Stop();             
+                TimerRace2.Stop();
                 TimerRace.Enabled = false;
                 TimerRace2.Enabled = false;
+
+                finalRaceText.Text = finalRaceText.Text + ": " + DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre" , Form1.path);
+                endRacePoints.Text = endRacePoints.Text + ": " + Convert.ToString(puntos);
+
+                finalRaceText.Show();
+                endRacePoints.Show();
+                imagenTimer.Hide();
 
                 TimerRace2.Stop();
                 TimerRace2.Enabled= false;
                 axWindowsMediaPlayer1.URL = "";
-                endRacePanel.BringToFront();
-                endRacePanel.Show();
+                RaceTextBox.Hide();
+
+                RaceButtonStart.Show();
 
                 axWindowsMediaPlayer1.Hide();
                 axWindowsMediaPlayer1.URL = "";
@@ -186,13 +187,8 @@ namespace SignIt
             RaceButtonStart.Show();
             axWindowsMediaPlayer1.URL = "";
             Form1.externalmenu = true;
-            endRacePanel.Hide();
-            endRacePanel.SendToBack();
-        }
-
-        private void restartEndRaceButton_Click(object sender, EventArgs e)
-        {
-            reStart();
+            finalRaceText.Hide();
+            endRacePoints.Hide();
         }
 
         //----//

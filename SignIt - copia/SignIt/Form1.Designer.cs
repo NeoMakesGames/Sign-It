@@ -238,6 +238,7 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -1484,7 +1485,7 @@
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.Transparent;
-            this.button11.BackgroundImage = global::SignIt.Properties.Resources._0;
+            this.button11.BackgroundImage = global::SignIt.Properties.Resources.Group_96;
             this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1497,7 +1498,7 @@
             // button14
             // 
             this.button14.BackColor = System.Drawing.Color.Transparent;
-            this.button14.BackgroundImage = global::SignIt.Properties.Resources._0;
+            this.button14.BackgroundImage = global::SignIt.Properties.Resources.Group_97;
             this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button14.FlatAppearance.BorderSize = 0;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1510,7 +1511,7 @@
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.Transparent;
-            this.button15.BackgroundImage = global::SignIt.Properties.Resources._0;
+            this.button15.BackgroundImage = global::SignIt.Properties.Resources.Group_98;
             this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -2132,6 +2133,7 @@
             this.juegos.Controls.Add(this.questo);
             this.juegos.Controls.Add(this.MemotestGamesButton);
             this.juegos.Controls.Add(this.RaceGamesButton);
+            this.juegos.Controls.Add(this.race1);
             this.juegos.Location = new System.Drawing.Point(4, 22);
             this.juegos.Name = "juegos";
             this.juegos.Size = new System.Drawing.Size(1442, 875);
@@ -3024,6 +3026,16 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
+            // race1
+            // 
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(1, 3);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1366, 788);
+            this.race1.TabIndex = 5;
+            this.race1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3196,7 +3208,6 @@
         private System.Windows.Forms.Label labelDBNum10;
         private System.Windows.Forms.Panel panel6;
         private AxWMPLib.AxWindowsMediaPlayer dbplayer;
-        private Race race1;
         private System.Windows.Forms.TabPage caracol;
         private System.Windows.Forms.Button ayudaDicionario;
         private System.Windows.Forms.Button caracolExit;
@@ -3292,6 +3303,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button A;
+        private Race race1;
     }
 }
 
