@@ -75,24 +75,6 @@ namespace SignIt
 
             Form1.externalmenu = true;
         }
-        private async void raceEndpanel()
-        {
-            await Task.Delay(100);
-            endRacePanel.Show();
-            if (puntos <= 3)
-            {
-                finalRaceText.Text = "Mala leche " + DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", Form1.path) + "...Habrá que seguir practicando.";
-            }
-            else if (puntos > 3 && puntos < 10)
-            {
-                finalRaceText.Text = "Bien hecho " + DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", Form1.path) + ". Continua estudiando.";
-            }
-            else if (puntos > 10)
-            {
-                finalRaceText.Text = "Muy bien " + DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", Form1.path) + "! Continua intentado para conseguir más puntos";
-            }
-            endRacePoints.Text = "Puntuación: " + Convert.ToString(puntos);
-        }
         private void notraceEndpanel()
         {
             endRacePanel.Hide();
@@ -114,11 +96,11 @@ namespace SignIt
             {
                 Contador.Text = "0" + Convert.ToString(minutos) + ":" + "0" + Convert.ToString(segundos);
             }
-            else if (minutos < 10)
+            else if (minutos < 10 && segundos > 10)
             {
                 Contador.Text = "0" + Convert.ToString(minutos) + ":" + Convert.ToString(segundos);
             }
-            if (segundos < 10)
+            else if (segundos < 10 && minutos > 10)
             {
                 Contador.Text = Convert.ToString(minutos) + ":" + "0" + Convert.ToString(segundos);
             }
@@ -134,8 +116,8 @@ namespace SignIt
         {
             puntos = 0;
 
-            RacePoints.Text = "Tus puntos: 0";
-            Contador.Text = "00:30";
+            RacePoints.Text = "Tus puntos:  0";
+            Contador.Text = "00:15";
 
             TimerRace.Start();
             TimerRace2.Start();
@@ -147,7 +129,7 @@ namespace SignIt
             axWindowsMediaPlayer1.Show();
             imagenTimer.Show();
 
-            raceTimer = 30000;
+            raceTimer = 15000;
 
             reproduccion();
         }
@@ -179,7 +161,6 @@ namespace SignIt
                 TimerRace.Enabled = false;
                 TimerRace2.Enabled = false;
 
-                raceEndpanel();
                 TimerRace2.Stop();
                 TimerRace2.Enabled= false;
                 axWindowsMediaPlayer1.URL = "";

@@ -24,7 +24,6 @@ namespace SignIt
         string botondiseño;
         int menuX = -332;
         int UserXp;
-        int id;
         int UserLvl;
         int NextLvl = 10;
         int homeSlider = 0;
@@ -328,6 +327,10 @@ namespace SignIt
 
         public async void ensañanza(string tipo)
         {
+            ej01.Hide();
+            ej11.Hide();
+            ej02.Hide();
+            ej12.Hide();
             desaparicionDelMenu();
             int z = 0;
             int[] videos = new int[20];
@@ -604,6 +607,10 @@ namespace SignIt
 
         public async void ejercicios(string tipo)
         {
+            ej01.Hide();
+            ej11.Hide();
+            ej02.Hide();
+            ej12.Hide();
             desaparicionDelMenu();
             continuar = false;
             int errores = 3;
@@ -874,12 +881,7 @@ namespace SignIt
                 }
                 z++;
             }
-            //DatabaseFunctions.addXP(DatabaseFunctions.currentUser, xpGanada, path);
-            //if (errores == 3 && avance == avA)
-            //{
-            //    DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
-            //    avance++;
-            //}
+
             botonesLecciones();
             aparicionDelMenu();
             botonesLecciones();
@@ -1243,6 +1245,24 @@ namespace SignIt
         {
             caracolayuda("ACL", 2);
         }
+
+        private void endExitRaceButton_Click(object sender, EventArgs e)
+        {
+            aparicionDelMenu();
+            signIt.SelectedTab = LeccionesMenu;
+            ej2player.Ctlcontrols.stop();
+            ejercicio1VideoA.Ctlcontrols.stop();
+            ejercicio1VideoB.Ctlcontrols.stop();
+            ejercicio1VideoC.Ctlcontrols.stop();
+        }
+        private void endExitRaceButton_Click_1(object sender, EventArgs e)
+        {
+            endExitRaceButton_Click(sender, e);
+        }
+        private void enseñanzaExit_Click(object sender, EventArgs e)
+        {
+            endExitRaceButton_Click(sender, e);
+        }
         //Ajustes
 
         private void FullScrButtonSett_Click(object sender, EventArgs e)
@@ -1417,7 +1437,7 @@ namespace SignIt
         private void questo2_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = caracol;
-            myimage = new Bitmap(imagePath + "CAC.PNG");
+            myimage = new Bitmap(imagePath + "CAM.PNG");
             caracol.BackgroundImage = myimage;
             caracolExit.Hide();
             caracolExit2.Show();
@@ -1428,7 +1448,7 @@ namespace SignIt
         private void questo_Click(object sender, EventArgs e)
         {
             signIt.SelectedTab = caracol;
-            myimage = new Bitmap(imagePath + "CAM.PNG");
+            myimage = new Bitmap(imagePath + "CAC.PNG");
             caracol.BackgroundImage = myimage;
             caracolExit.Hide();
             caracolExit2.Show();
@@ -2148,6 +2168,11 @@ namespace SignIt
         }
 
         private void ej2player_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ejercicio1VideoC_Enter(object sender, EventArgs e)
         {
 
         }
