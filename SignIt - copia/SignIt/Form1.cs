@@ -355,20 +355,12 @@ namespace SignIt
                         await Task.Delay(250);
                     }
                     continuar = false;
+                    EnseñanzaPlayer.Ctlcontrols.stop();
                 }
             }
-
-            EnseñanzaPlayer.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-            EnseñanzaPlayer.Ctlcontrols.play();
-            PalabraEns.Text = DatabaseFunctions.GetNameOfVideo(id, path);
-
             DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
             avance++;
 
-            ejercicio1VideoA.settings.setMode("loop", true);
-            ejercicio1VideoB.settings.setMode("loop", true);
-            ejercicio1VideoC.settings.setMode("loop", true);
-            ej2player.settings.setMode("loop", true);
 
             int[] videdos = new int[5];
             int xpGanada = 5;
@@ -1010,8 +1002,6 @@ namespace SignIt
                 label1CdU.Show();
                 label1CdU.Text = "Por favor ingrese una valor coherente";
             }
-            myimage = new Bitmap(imagePath + "HomeEmpezar" + ".PNG");
-            LeccionesHome.BackgroundImage = myimage;
         }
 
         private void SnapBackToReality_Click(object sender, EventArgs e)
@@ -1092,16 +1082,6 @@ namespace SignIt
             signIt.SelectedTab = Home;
             Menubutton_Click(sender, e);
             menu = false;
-            if (avance < 2)
-            {
-                myimage = new Bitmap(imagePath + "HomeEmpezar" + ".PNG");
-                LeccionesHome.BackgroundImage = myimage;
-            }
-            else
-            {
-                myimage = new Bitmap(imagePath + "HomeContinuar" + ".PNG");
-                LeccionesHome.BackgroundImage = myimage;
-            }
         }
 
         private void MenuLectionsButton_Click(object sender, EventArgs e)

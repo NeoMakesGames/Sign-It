@@ -169,7 +169,6 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.race1 = new SignIt.Race();
             this.ej11 = new SignIt.Ej1();
             this.ej01 = new SignIt.Ej0();
@@ -183,7 +182,6 @@
             this.Diccionario.SuspendLayout();
             this.diccionarioBeta.SuspendLayout();
             this.dB0.SuspendLayout();
-            this.dBAbecedario.SuspendLayout();
             this.dBNros.SuspendLayout();
             this.DBeta.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -886,7 +884,6 @@
             this.dBAbecedario.BackColor = System.Drawing.Color.LightBlue;
             this.dBAbecedario.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.dBAbecedario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.dBAbecedario.Controls.Add(this.button1);
             this.dBAbecedario.Location = new System.Drawing.Point(4, 22);
             this.dBAbecedario.Name = "dBAbecedario";
             this.dBAbecedario.Size = new System.Drawing.Size(1392, 874);
@@ -1416,28 +1413,28 @@
             // comboBox1
             // 
             this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Chica",
             "Media",
             "Grande"});
-            this.comboBox1.Location = new System.Drawing.Point(700, 576);
+            this.comboBox1.Location = new System.Drawing.Point(706, 582);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(182, 39);
+            this.comboBox1.Size = new System.Drawing.Size(121, 28);
             this.comboBox1.TabIndex = 18;
             // 
             // Tipgrafia
             // 
             this.Tipgrafia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tipgrafia.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.Tipgrafia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Tipgrafia.FormattingEnabled = true;
             this.Tipgrafia.Items.AddRange(new object[] {
             "Inter",
             "Microsoft Sans Serif"});
-            this.Tipgrafia.Location = new System.Drawing.Point(699, 467);
+            this.Tipgrafia.Location = new System.Drawing.Point(706, 477);
             this.Tipgrafia.Name = "Tipgrafia";
-            this.Tipgrafia.Size = new System.Drawing.Size(182, 39);
+            this.Tipgrafia.Size = new System.Drawing.Size(121, 28);
             this.Tipgrafia.TabIndex = 17;
             // 
             // caracolsett
@@ -2063,19 +2060,6 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(42, 42);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 60);
-            this.button1.TabIndex = 11;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // race1
             // 
             this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
@@ -2146,7 +2130,6 @@
             this.Diccionario.ResumeLayout(false);
             this.diccionarioBeta.ResumeLayout(false);
             this.dB0.ResumeLayout(false);
-            this.dBAbecedario.ResumeLayout(false);
             this.dBNros.ResumeLayout(false);
             this.dBNros.PerformLayout();
             this.DBeta.ResumeLayout(false);
@@ -2321,7 +2304,6 @@
         private System.Windows.Forms.Button continuarTutorial;
         private System.Windows.Forms.Button atrasTutorial;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button button1;
     }
 }
 
