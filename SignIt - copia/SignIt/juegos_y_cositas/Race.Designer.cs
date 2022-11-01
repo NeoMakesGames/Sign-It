@@ -40,19 +40,17 @@
             this.imagenTimer = new System.Windows.Forms.Button();
             this.ExitRace = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.endRacePanel = new System.Windows.Forms.Panel();
-            this.restartEndRaceButton = new System.Windows.Forms.Button();
-            this.endExitRaceButton = new System.Windows.Forms.Button();
             this.endRacePoints = new System.Windows.Forms.Label();
             this.finalRaceText = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
-            this.endRacePanel.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // RaceTextBox
             // 
             this.RaceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.RaceTextBox.Location = new System.Drawing.Point(382, 459);
+            this.RaceTextBox.Location = new System.Drawing.Point(382, 584);
             this.RaceTextBox.Name = "RaceTextBox";
             this.RaceTextBox.Size = new System.Drawing.Size(630, 53);
             this.RaceTextBox.TabIndex = 1;
@@ -79,10 +77,10 @@
             // axWindowsMediaPlayer1
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(382, 62);
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(33, 43);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(630, 391);
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(428, 391);
             this.axWindowsMediaPlayer1.TabIndex = 0;
             this.axWindowsMediaPlayer1.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
             // 
@@ -92,7 +90,7 @@
             this.RaceButtonStart.BackgroundImage = global::SignIt.Properties.Resources.Group_56;
             this.RaceButtonStart.FlatAppearance.BorderSize = 0;
             this.RaceButtonStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RaceButtonStart.Location = new System.Drawing.Point(547, 527);
+            this.RaceButtonStart.Location = new System.Drawing.Point(547, 665);
             this.RaceButtonStart.Name = "RaceButtonStart";
             this.RaceButtonStart.Size = new System.Drawing.Size(300, 70);
             this.RaceButtonStart.TabIndex = 3;
@@ -110,8 +108,8 @@
             this.Contador.AutoSize = true;
             this.Contador.BackColor = System.Drawing.Color.Transparent;
             this.Contador.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.Contador.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Contador.Location = new System.Drawing.Point(1174, 673);
+            this.Contador.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Contador.Location = new System.Drawing.Point(1174, 679);
             this.Contador.Name = "Contador";
             this.Contador.Size = new System.Drawing.Size(82, 31);
             this.Contador.TabIndex = 6;
@@ -146,61 +144,19 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(382, 382);
+            this.panel1.Location = new System.Drawing.Point(33, 363);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(630, 71);
+            this.panel1.Size = new System.Drawing.Size(429, 71);
             this.panel1.TabIndex = 0;
-            // 
-            // endRacePanel
-            // 
-            this.endRacePanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.endRacePanel.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__1_2;
-            this.endRacePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.endRacePanel.Controls.Add(this.restartEndRaceButton);
-            this.endRacePanel.Controls.Add(this.endExitRaceButton);
-            this.endRacePanel.Controls.Add(this.endRacePoints);
-            this.endRacePanel.Controls.Add(this.finalRaceText);
-            this.endRacePanel.Location = new System.Drawing.Point(-5, -38);
-            this.endRacePanel.Name = "endRacePanel";
-            this.endRacePanel.Size = new System.Drawing.Size(1533, 858);
-            this.endRacePanel.TabIndex = 8;
-            this.endRacePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.endRacePanel_Paint);
-            // 
-            // restartEndRaceButton
-            // 
-            this.restartEndRaceButton.BackColor = System.Drawing.Color.Transparent;
-            this.restartEndRaceButton.BackgroundImage = global::SignIt.Properties.Resources.restar_150x150;
-            this.restartEndRaceButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.restartEndRaceButton.FlatAppearance.BorderSize = 0;
-            this.restartEndRaceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.restartEndRaceButton.Location = new System.Drawing.Point(612, 464);
-            this.restartEndRaceButton.Name = "restartEndRaceButton";
-            this.restartEndRaceButton.Size = new System.Drawing.Size(150, 151);
-            this.restartEndRaceButton.TabIndex = 3;
-            this.restartEndRaceButton.UseVisualStyleBackColor = false;
-            this.restartEndRaceButton.Click += new System.EventHandler(this.restartEndRaceButton_Click);
-            // 
-            // endExitRaceButton
-            // 
-            this.endExitRaceButton.BackColor = System.Drawing.Color.Transparent;
-            this.endExitRaceButton.BackgroundImage = global::SignIt.Properties.Resources.Flecha1;
-            this.endExitRaceButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.endExitRaceButton.FlatAppearance.BorderSize = 0;
-            this.endExitRaceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.endExitRaceButton.Location = new System.Drawing.Point(69, 57);
-            this.endExitRaceButton.Name = "endExitRaceButton";
-            this.endExitRaceButton.Size = new System.Drawing.Size(108, 82);
-            this.endExitRaceButton.TabIndex = 2;
-            this.endExitRaceButton.UseVisualStyleBackColor = false;
-            this.endExitRaceButton.Click += new System.EventHandler(this.endExitRaceButton_Click_1);
             // 
             // endRacePoints
             // 
             this.endRacePoints.AutoSize = true;
             this.endRacePoints.BackColor = System.Drawing.Color.Transparent;
+            this.endRacePoints.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.endRacePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.endRacePoints.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.endRacePoints.Location = new System.Drawing.Point(528, 335);
+            this.endRacePoints.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.endRacePoints.Location = new System.Drawing.Point(139, 279);
             this.endRacePoints.Name = "endRacePoints";
             this.endRacePoints.Size = new System.Drawing.Size(97, 31);
             this.endRacePoints.TabIndex = 1;
@@ -210,36 +166,50 @@
             // 
             this.finalRaceText.AutoSize = true;
             this.finalRaceText.BackColor = System.Drawing.Color.Transparent;
+            this.finalRaceText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finalRaceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F);
-            this.finalRaceText.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.finalRaceText.Location = new System.Drawing.Point(233, 225);
+            this.finalRaceText.ForeColor = System.Drawing.Color.Turquoise;
+            this.finalRaceText.Location = new System.Drawing.Point(137, 205);
             this.finalRaceText.Name = "finalRaceText";
             this.finalRaceText.Size = new System.Drawing.Size(232, 44);
             this.finalRaceText.TabIndex = 0;
             this.finalRaceText.Text = "Buen intento";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = global::SignIt.Properties.Resources.Rectangle_8__1_;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.endRacePoints);
+            this.panel2.Controls.Add(this.finalRaceText);
+            this.panel2.Controls.Add(this.axWindowsMediaPlayer1);
+            this.panel2.Location = new System.Drawing.Point(447, 44);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(500, 500);
+            this.panel2.TabIndex = 8;
+            // 
             // Race
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SignIt.Properties.Resources.Group_55__1_;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.endRacePanel);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.imagenTimer);
             this.Controls.Add(this.Contador);
             this.Controls.Add(this.ExitRace);
             this.Controls.Add(this.RaceButtonStart);
             this.Controls.Add(this.RacePoints);
             this.Controls.Add(this.RaceTextBox);
-            this.Controls.Add(this.axWindowsMediaPlayer1);
             this.DoubleBuffered = true;
             this.Name = "Race";
             this.Size = new System.Drawing.Size(1366, 788);
             this.Load += new System.EventHandler(this.Race_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
-            this.endRacePanel.ResumeLayout(false);
-            this.endRacePanel.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,10 +227,8 @@
         private System.Windows.Forms.Label Contador;
         private System.Windows.Forms.Button imagenTimer;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel endRacePanel;
-        private System.Windows.Forms.Button restartEndRaceButton;
-        private System.Windows.Forms.Button endExitRaceButton;
         private System.Windows.Forms.Label endRacePoints;
         private System.Windows.Forms.Label finalRaceText;
+        private System.Windows.Forms.Panel panel2;
     }
 }
