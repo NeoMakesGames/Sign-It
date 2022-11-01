@@ -178,7 +178,10 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.ej13 = new SignIt.Ej1();
+            this.ej01 = new SignIt.Ej0();
+            this.ej11 = new SignIt.Ej1();
+            this.ej02 = new SignIt.Ej0();
+            this.ej12 = new SignIt.Ej1();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -462,7 +465,7 @@
             // 
             // sliderHome
             // 
-            this.sliderHome.BackColor = System.Drawing.Color.RoyalBlue;
+            this.sliderHome.BackColor = System.Drawing.Color.Transparent;
             this.sliderHome.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
             this.sliderHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sliderHome.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -1675,7 +1678,8 @@
             this.ejercicio1.BackColor = System.Drawing.Color.LightBlue;
             this.ejercicio1.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.ejercicio1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ejercicio1.Controls.Add(this.ej13);
+            this.ejercicio1.Controls.Add(this.ej11);
+            this.ejercicio1.Controls.Add(this.ej01);
             this.ejercicio1.Controls.Add(this.exitEj);
             this.ejercicio1.Controls.Add(this.panel12);
             this.ejercicio1.Controls.Add(this.panel11);
@@ -1717,18 +1721,18 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Transparent;
-            this.panel13.Location = new System.Drawing.Point(38, 239);
+            this.panel13.Location = new System.Drawing.Point(38, 262);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(250, 49);
+            this.panel13.Size = new System.Drawing.Size(250, 57);
             this.panel13.TabIndex = 12;
             // 
             // ejercicio1VideoC
             // 
             this.ejercicio1VideoC.Enabled = true;
-            this.ejercicio1VideoC.Location = new System.Drawing.Point(38, 38);
+            this.ejercicio1VideoC.Location = new System.Drawing.Point(38, 55);
             this.ejercicio1VideoC.Name = "ejercicio1VideoC";
             this.ejercicio1VideoC.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoC.OcxState")));
-            this.ejercicio1VideoC.Size = new System.Drawing.Size(250, 250);
+            this.ejercicio1VideoC.Size = new System.Drawing.Size(250, 265);
             this.ejercicio1VideoC.TabIndex = 3;
             this.ejercicio1VideoC.ClickEvent += new AxWMPLib._WMPOCXEvents_ClickEventHandler(this.ejercicio1VideoC_ClickEvent);
             this.ejercicio1VideoC.Enter += new System.EventHandler(this.ejercicio1VideoC_Enter);
@@ -1747,18 +1751,18 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.Transparent;
-            this.panel14.Location = new System.Drawing.Point(35, 241);
+            this.panel14.Location = new System.Drawing.Point(35, 264);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(250, 49);
+            this.panel14.Size = new System.Drawing.Size(250, 57);
             this.panel14.TabIndex = 13;
             // 
             // ejercicio1VideoB
             // 
             this.ejercicio1VideoB.Enabled = true;
-            this.ejercicio1VideoB.Location = new System.Drawing.Point(36, 38);
+            this.ejercicio1VideoB.Location = new System.Drawing.Point(36, 55);
             this.ejercicio1VideoB.Name = "ejercicio1VideoB";
             this.ejercicio1VideoB.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoB.OcxState")));
-            this.ejercicio1VideoB.Size = new System.Drawing.Size(250, 250);
+            this.ejercicio1VideoB.Size = new System.Drawing.Size(250, 265);
             this.ejercicio1VideoB.TabIndex = 2;
             this.ejercicio1VideoB.ClickEvent += new AxWMPLib._WMPOCXEvents_ClickEventHandler(this.ejercicio1VideoB_ClickEvent);
             this.ejercicio1VideoB.Enter += new System.EventHandler(this.ejercicio1VideoB_Enter);
@@ -1777,18 +1781,18 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.Transparent;
-            this.panel15.Location = new System.Drawing.Point(37, 239);
+            this.panel15.Location = new System.Drawing.Point(37, 262);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(250, 49);
+            this.panel15.Size = new System.Drawing.Size(250, 57);
             this.panel15.TabIndex = 14;
             // 
             // ejercicio1VideoA
             // 
             this.ejercicio1VideoA.Enabled = true;
-            this.ejercicio1VideoA.Location = new System.Drawing.Point(37, 38);
+            this.ejercicio1VideoA.Location = new System.Drawing.Point(37, 55);
             this.ejercicio1VideoA.Name = "ejercicio1VideoA";
             this.ejercicio1VideoA.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoA.OcxState")));
-            this.ejercicio1VideoA.Size = new System.Drawing.Size(250, 250);
+            this.ejercicio1VideoA.Size = new System.Drawing.Size(250, 265);
             this.ejercicio1VideoA.TabIndex = 1;
             this.ejercicio1VideoA.ClickEvent += new AxWMPLib._WMPOCXEvents_ClickEventHandler(this.ejercicio1VideoA_ClickEvent);
             this.ejercicio1VideoA.Enter += new System.EventHandler(this.ejercicio1VideoA_Enter);
@@ -1863,6 +1867,8 @@
             this.ejercicio2.BackColor = System.Drawing.Color.LightBlue;
             this.ejercicio2.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.ejercicio2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ejercicio2.Controls.Add(this.ej12);
+            this.ejercicio2.Controls.Add(this.ej02);
             this.ejercicio2.Controls.Add(this.exitEj2);
             this.ejercicio2.Controls.Add(this.panel16);
             this.ejercicio2.Controls.Add(this.caracolEJ2);
@@ -1903,18 +1909,18 @@
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.Transparent;
-            this.panel17.Location = new System.Drawing.Point(38, 314);
+            this.panel17.Location = new System.Drawing.Point(39, 318);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(320, 49);
+            this.panel17.Size = new System.Drawing.Size(320, 73);
             this.panel17.TabIndex = 12;
             // 
             // ej2player
             // 
             this.ej2player.Enabled = true;
-            this.ej2player.Location = new System.Drawing.Point(38, 43);
+            this.ej2player.Location = new System.Drawing.Point(39, 76);
             this.ej2player.Name = "ej2player";
             this.ej2player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ej2player.OcxState")));
-            this.ej2player.Size = new System.Drawing.Size(320, 320);
+            this.ej2player.Size = new System.Drawing.Size(320, 299);
             this.ej2player.TabIndex = 0;
             this.ej2player.Enter += new System.EventHandler(this.ej2player_Enter);
             // 
@@ -2168,14 +2174,41 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // ej13
+            // ej01
             // 
-            this.ej13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej13.BackgroundImage")));
-            this.ej13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej13.Location = new System.Drawing.Point(0, 585);
-            this.ej13.Name = "ej13";
-            this.ej13.Size = new System.Drawing.Size(1379, 150);
-            this.ej13.TabIndex = 16;
+            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
+            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej01.Location = new System.Drawing.Point(4, 579);
+            this.ej01.Name = "ej01";
+            this.ej01.Size = new System.Drawing.Size(1378, 150);
+            this.ej01.TabIndex = 16;
+            // 
+            // ej11
+            // 
+            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
+            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej11.Location = new System.Drawing.Point(4, 579);
+            this.ej11.Name = "ej11";
+            this.ej11.Size = new System.Drawing.Size(1366, 150);
+            this.ej11.TabIndex = 17;
+            // 
+            // ej02
+            // 
+            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
+            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej02.Location = new System.Drawing.Point(4, 579);
+            this.ej02.Name = "ej02";
+            this.ej02.Size = new System.Drawing.Size(1377, 150);
+            this.ej02.TabIndex = 17;
+            // 
+            // ej12
+            // 
+            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
+            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej12.Location = new System.Drawing.Point(0, 579);
+            this.ej12.Name = "ej12";
+            this.ej12.Size = new System.Drawing.Size(1381, 150);
+            this.ej12.TabIndex = 18;
             // 
             // Form1
             // 
@@ -2384,6 +2417,10 @@
         private System.Windows.Forms.Button exitEj2;
         private System.Windows.Forms.Button enseñanzaExit;
         private Ej1 ej13;
+        private Ej1 ej11;
+        private Ej0 ej01;
+        private Ej1 ej12;
+        private Ej0 ej02;
     }
 }
 
