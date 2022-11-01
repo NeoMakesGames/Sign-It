@@ -29,6 +29,8 @@ namespace SignIt
         int homeSlider = 0;
         int vidas = 0;
         int lastpage = 0;
+        int tipografia = 1;
+        int tamano = 1;
         public static int avance;
         double home_slider = 0;
         int tuto = 0;
@@ -47,7 +49,13 @@ namespace SignIt
         }
 
         //Funciones
-
+        private void byeDB()
+        {
+            diccionarioBeta.SelectedTab = dB0;
+            DBeta.SendToBack();
+            dbplayer.Ctlcontrols.stop();
+            aparicionDelMenu();
+        }
         private void diccionario(string palabra)
         {
             palabraDB.Text = palabra;
@@ -1123,6 +1131,12 @@ namespace SignIt
             progresoSett2.Text = Convert.ToString(avance) + " / 8";
             Menubutton_Click(sender, e);
             menu = false;
+            switch(tamano)
+            {
+                case 1:
+                    Tipgrafia.Text = "Inter";
+                    break;
+            }
         }
 
         private void MenuExitButton_Click(object sender, EventArgs e)
@@ -1344,6 +1358,9 @@ namespace SignIt
         private void button13_Click(object sender, EventArgs e)
         {
             diccionarioBeta.SelectedTab = dBAbecedario;
+            myimage = new Bitmap(imagePath + "abecedario.PNG");
+            DBeta.BackgroundImage = myimage;
+            desaparicionDelMenu();
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -1358,13 +1375,13 @@ namespace SignIt
             caracolayuda("ADC", 1);
         }
 
+
         //Números
+
+
         private void NumBack_Click(object sender, EventArgs e)
         {
-            diccionarioBeta.SelectedTab = dB0;
-            DBeta.SendToBack();
-            dbplayer.Ctlcontrols.stop();
-            aparicionDelMenu();
+            byeDB();
         }
         private void dBNum0_Click(object sender, EventArgs e)
         {
@@ -1420,6 +1437,15 @@ namespace SignIt
         {
             diccionario("10");
         }
+
+
+        //Abecedario
+
+        private void abecedarioExit_Click(object sender, EventArgs e)
+        {
+            byeDB();
+        }
+
 
         //Juegos
 
@@ -2176,6 +2202,11 @@ namespace SignIt
         private void ejercicio1VideoC_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void Tipgrafia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -299,6 +299,24 @@
     <None Include="Resources\Botón1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Group 99.png" />
+    <None Include="Resources\Group 100.png" />
+    <None Include="Resources\Group 101.png" />
+    <None Include="Resources\Group 102.png" />
+    <None Include="Resources\Group 103.png" />
+    <None Include="Resources\Group 104.png" />
+    <None Include="Resources\Group 931.png" />
+    <None Include="Resources\Group 95.png" />
+    <None Include="Resources\Group 94.png" />
+    <None Include="Resources\Group 93.png" />
+    <None Include="Resources\Group 92.png" />
+    <None Include="Resources\Group 91.png" />
+    <None Include="Resources\Group 901.png" />
+    <None Include="Resources\Group 90.png" />
+    <None Include="Resources\Group 89.png" />
+    <None Include="Resources\Rectangle 53 %281%291.png" />
+    <None Include="Resources\Group 114.png" />
+    <None Include="Resources\Rectangle 53 %281%29.png" />
     <None Include="Resources\Rectangle 38.png" />
     <None Include="Resources\Group 86 %281%29.png" />
     <None Include="Resources\Group 87 %283%29.png" />

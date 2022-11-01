@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\SignIt - copia",
-    "\\SignIt - copia\\SignIt"
+    "\\SignIt - copia\\SignIt",
+    "\\SignIt - copia\\SignIt\\juegos_y_cositas"
   ],
-  "SelectedNode": "\\SignIt - copia\\SignIt\\Form1.cs",
+  "SelectedNode": "\\SignIt - copia\\SignIt\\juegos_y_cositas\\Race.cs",
   "PreviewInSolutionExplorer": false
 }
