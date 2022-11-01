@@ -34,7 +34,6 @@
             this.IdS = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2IdS = new System.Windows.Forms.Label();
-            this.SalirIdS = new System.Windows.Forms.Button();
             this.ComenzarIds = new System.Windows.Forms.Button();
             this.linkLabel1IdS = new System.Windows.Forms.LinkLabel();
             this.UserIdS = new System.Windows.Forms.TextBox();
@@ -53,7 +52,6 @@
             this.LeccionesHome = new System.Windows.Forms.Button();
             this.UserHome = new System.Windows.Forms.Label();
             this.LeccionesMenu = new System.Windows.Forms.TabPage();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.caracolLecciones = new System.Windows.Forms.Button();
             this.examenlecc = new System.Windows.Forms.Button();
             this.verbosLecc = new System.Windows.Forms.Button();
@@ -62,6 +60,7 @@
             this.coloresLecc = new System.Windows.Forms.Button();
             this.comidaLecc = new System.Windows.Forms.Button();
             this.basicoLecc = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.Diccionario = new System.Windows.Forms.TabPage();
             this.diccionarioBeta = new System.Windows.Forms.TabControl();
             this.dB0 = new System.Windows.Forms.TabPage();
@@ -117,7 +116,6 @@
             this.questo = new System.Windows.Forms.Button();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Tipgrafia = new System.Windows.Forms.ComboBox();
@@ -149,8 +147,6 @@
             this.ejercicio1VideoB = new AxWMPLib.AxWindowsMediaPlayer();
             this.ejercicio1VideoA = new AxWMPLib.AxWindowsMediaPlayer();
             this.ej1palabra = new System.Windows.Forms.Label();
-            this.ej11 = new SignIt.Ej1();
-            this.ej01 = new SignIt.Ej0();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
             this.caracolEJ2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -158,8 +154,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ej2player = new AxWMPLib.AxWindowsMediaPlayer();
             this.ej2cont = new System.Windows.Forms.Button();
-            this.ej12 = new SignIt.Ej1();
-            this.ej02 = new SignIt.Ej0();
             this.ejercicio3 = new System.Windows.Forms.TabPage();
             this.caracol = new System.Windows.Forms.TabPage();
             this.atrasTutorial = new System.Windows.Forms.Button();
@@ -175,6 +169,11 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
+            this.ej11 = new SignIt.Ej1();
+            this.ej01 = new SignIt.Ej0();
+            this.ej12 = new SignIt.Ej1();
+            this.ej02 = new SignIt.Ej0();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -217,7 +216,7 @@
             this.signIt.Controls.Add(this.ejercicio2);
             this.signIt.Controls.Add(this.ejercicio3);
             this.signIt.Controls.Add(this.caracol);
-            this.signIt.Location = new System.Drawing.Point(-10, -43);
+            this.signIt.Location = new System.Drawing.Point(-10, 0);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1450, 901);
@@ -230,7 +229,6 @@
             this.IdS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.IdS.Controls.Add(this.panel2);
             this.IdS.Controls.Add(this.label2IdS);
-            this.IdS.Controls.Add(this.SalirIdS);
             this.IdS.Controls.Add(this.ComenzarIds);
             this.IdS.Controls.Add(this.linkLabel1IdS);
             this.IdS.Controls.Add(this.UserIdS);
@@ -265,19 +263,6 @@
             this.label2IdS.TabIndex = 5;
             this.label2IdS.Text = "Usuario incorrecto";
             this.label2IdS.Click += new System.EventHandler(this.label2IdS_Click);
-            // 
-            // SalirIdS
-            // 
-            this.SalirIdS.BackColor = System.Drawing.Color.Transparent;
-            this.SalirIdS.BackgroundImage = global::SignIt.Properties.Resources.Ícono_de_salir__1_;
-            this.SalirIdS.FlatAppearance.BorderSize = 0;
-            this.SalirIdS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SalirIdS.Location = new System.Drawing.Point(1246, 645);
-            this.SalirIdS.Name = "SalirIdS";
-            this.SalirIdS.Size = new System.Drawing.Size(64, 59);
-            this.SalirIdS.TabIndex = 4;
-            this.SalirIdS.UseVisualStyleBackColor = false;
-            this.SalirIdS.Click += new System.EventHandler(this.SalirIdS_Click);
             // 
             // ComenzarIds
             // 
@@ -538,16 +523,6 @@
             this.LeccionesMenu.Text = "LeccionesMenu";
             this.LeccionesMenu.Click += new System.EventHandler(this.LeccionesMenu_Click);
             // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Transparent;
-            this.panel9.BackgroundImage = global::SignIt.Properties.Resources.Group_86__1_;
-            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel9.Location = new System.Drawing.Point(225, 209);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1000, 500);
-            this.panel9.TabIndex = 14;
-            // 
             // caracolLecciones
             // 
             this.caracolLecciones.BackColor = System.Drawing.Color.Transparent;
@@ -660,6 +635,16 @@
             this.basicoLecc.UseVisualStyleBackColor = false;
             this.basicoLecc.Click += new System.EventHandler(this.button1_Click);
             // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Transparent;
+            this.panel9.BackgroundImage = global::SignIt.Properties.Resources.Group_86__1_;
+            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel9.Location = new System.Drawing.Point(225, 209);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1000, 500);
+            this.panel9.TabIndex = 14;
+            // 
             // Diccionario
             // 
             this.Diccionario.BackColor = System.Drawing.Color.LightBlue;
@@ -684,7 +669,7 @@
             this.diccionarioBeta.Controls.Add(this.dB5);
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
-            this.diccionarioBeta.Location = new System.Drawing.Point(-4, -39);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-4, -2);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
             this.diccionarioBeta.Size = new System.Drawing.Size(1400, 900);
@@ -946,7 +931,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label2.Location = new System.Drawing.Point(606, 42);
+            this.label2.Location = new System.Drawing.Point(606, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(155, 39);
             this.label2.TabIndex = 23;
@@ -958,7 +943,7 @@
             this.labelDBNum9.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum9.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum9.Location = new System.Drawing.Point(812, 663);
+            this.labelDBNum9.Location = new System.Drawing.Point(812, 696);
             this.labelDBNum9.Name = "labelDBNum9";
             this.labelDBNum9.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum9.TabIndex = 22;
@@ -970,7 +955,7 @@
             this.labelDBNum10.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum10.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum10.Location = new System.Drawing.Point(1079, 663);
+            this.labelDBNum10.Location = new System.Drawing.Point(1079, 696);
             this.labelDBNum10.Name = "labelDBNum10";
             this.labelDBNum10.Size = new System.Drawing.Size(46, 31);
             this.labelDBNum10.TabIndex = 21;
@@ -982,7 +967,7 @@
             this.labelDBNum5.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum5.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum5.Location = new System.Drawing.Point(678, 459);
+            this.labelDBNum5.Location = new System.Drawing.Point(678, 492);
             this.labelDBNum5.Name = "labelDBNum5";
             this.labelDBNum5.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum5.TabIndex = 20;
@@ -994,7 +979,7 @@
             this.labelDBNum6.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum6.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum6.Location = new System.Drawing.Point(948, 459);
+            this.labelDBNum6.Location = new System.Drawing.Point(948, 492);
             this.labelDBNum6.Name = "labelDBNum6";
             this.labelDBNum6.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum6.TabIndex = 19;
@@ -1007,7 +992,7 @@
             this.labelDBNum7.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum7.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum7.Location = new System.Drawing.Point(256, 663);
+            this.labelDBNum7.Location = new System.Drawing.Point(256, 696);
             this.labelDBNum7.Name = "labelDBNum7";
             this.labelDBNum7.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum7.TabIndex = 18;
@@ -1020,7 +1005,7 @@
             this.labelDBNum8.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum8.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum8.Location = new System.Drawing.Point(534, 663);
+            this.labelDBNum8.Location = new System.Drawing.Point(534, 696);
             this.labelDBNum8.Name = "labelDBNum8";
             this.labelDBNum8.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum8.TabIndex = 17;
@@ -1033,7 +1018,7 @@
             this.labelDBNum4.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum4.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum4.Location = new System.Drawing.Point(395, 459);
+            this.labelDBNum4.Location = new System.Drawing.Point(395, 492);
             this.labelDBNum4.Name = "labelDBNum4";
             this.labelDBNum4.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum4.TabIndex = 16;
@@ -1045,7 +1030,7 @@
             this.labelDBNum3.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum3.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum3.Location = new System.Drawing.Point(1087, 258);
+            this.labelDBNum3.Location = new System.Drawing.Point(1087, 291);
             this.labelDBNum3.Name = "labelDBNum3";
             this.labelDBNum3.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum3.TabIndex = 15;
@@ -1058,7 +1043,7 @@
             this.labelDBNum2.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum2.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum2.Location = new System.Drawing.Point(812, 258);
+            this.labelDBNum2.Location = new System.Drawing.Point(812, 291);
             this.labelDBNum2.Name = "labelDBNum2";
             this.labelDBNum2.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum2.TabIndex = 14;
@@ -1071,7 +1056,7 @@
             this.labelDBNum1.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum1.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum1.Location = new System.Drawing.Point(534, 258);
+            this.labelDBNum1.Location = new System.Drawing.Point(534, 291);
             this.labelDBNum1.Name = "labelDBNum1";
             this.labelDBNum1.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum1.TabIndex = 13;
@@ -1084,7 +1069,7 @@
             this.labelDBNum0.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum0.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum0.Location = new System.Drawing.Point(256, 258);
+            this.labelDBNum0.Location = new System.Drawing.Point(256, 291);
             this.labelDBNum0.Name = "labelDBNum0";
             this.labelDBNum0.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum0.TabIndex = 12;
@@ -1098,7 +1083,7 @@
             this.dBNum0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum0.FlatAppearance.BorderSize = 0;
             this.dBNum0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum0.Location = new System.Drawing.Point(200, 116);
+            this.dBNum0.Location = new System.Drawing.Point(200, 149);
             this.dBNum0.Name = "dBNum0";
             this.dBNum0.Size = new System.Drawing.Size(140, 140);
             this.dBNum0.TabIndex = 11;
@@ -1126,7 +1111,7 @@
             this.dBNum6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.dBNum6.FlatAppearance.BorderSize = 0;
             this.dBNum6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum6.Location = new System.Drawing.Point(892, 316);
+            this.dBNum6.Location = new System.Drawing.Point(892, 349);
             this.dBNum6.Name = "dBNum6";
             this.dBNum6.Size = new System.Drawing.Size(140, 140);
             this.dBNum6.TabIndex = 9;
@@ -1140,7 +1125,7 @@
             this.dBNum1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum1.FlatAppearance.BorderSize = 0;
             this.dBNum1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum1.Location = new System.Drawing.Point(478, 116);
+            this.dBNum1.Location = new System.Drawing.Point(478, 149);
             this.dBNum1.Name = "dBNum1";
             this.dBNum1.Size = new System.Drawing.Size(140, 140);
             this.dBNum1.TabIndex = 8;
@@ -1154,7 +1139,7 @@
             this.dBNum9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum9.FlatAppearance.BorderSize = 0;
             this.dBNum9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum9.Location = new System.Drawing.Point(756, 517);
+            this.dBNum9.Location = new System.Drawing.Point(756, 550);
             this.dBNum9.Name = "dBNum9";
             this.dBNum9.Size = new System.Drawing.Size(140, 140);
             this.dBNum9.TabIndex = 7;
@@ -1169,7 +1154,7 @@
             this.dBNum10.Cursor = System.Windows.Forms.Cursors.Default;
             this.dBNum10.FlatAppearance.BorderSize = 0;
             this.dBNum10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum10.Location = new System.Drawing.Point(1031, 517);
+            this.dBNum10.Location = new System.Drawing.Point(1031, 550);
             this.dBNum10.Name = "dBNum10";
             this.dBNum10.Size = new System.Drawing.Size(140, 140);
             this.dBNum10.TabIndex = 6;
@@ -1183,7 +1168,7 @@
             this.dBNum5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum5.FlatAppearance.BorderSize = 0;
             this.dBNum5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum5.Location = new System.Drawing.Point(622, 316);
+            this.dBNum5.Location = new System.Drawing.Point(622, 349);
             this.dBNum5.Name = "dBNum5";
             this.dBNum5.Size = new System.Drawing.Size(140, 140);
             this.dBNum5.TabIndex = 5;
@@ -1197,7 +1182,7 @@
             this.dBNum4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum4.FlatAppearance.BorderSize = 0;
             this.dBNum4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum4.Location = new System.Drawing.Point(339, 316);
+            this.dBNum4.Location = new System.Drawing.Point(339, 349);
             this.dBNum4.Name = "dBNum4";
             this.dBNum4.Size = new System.Drawing.Size(140, 140);
             this.dBNum4.TabIndex = 4;
@@ -1211,7 +1196,7 @@
             this.dBNum7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum7.FlatAppearance.BorderSize = 0;
             this.dBNum7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum7.Location = new System.Drawing.Point(200, 517);
+            this.dBNum7.Location = new System.Drawing.Point(200, 550);
             this.dBNum7.Name = "dBNum7";
             this.dBNum7.Size = new System.Drawing.Size(140, 140);
             this.dBNum7.TabIndex = 3;
@@ -1225,7 +1210,7 @@
             this.dBNum8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum8.FlatAppearance.BorderSize = 0;
             this.dBNum8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum8.Location = new System.Drawing.Point(478, 517);
+            this.dBNum8.Location = new System.Drawing.Point(478, 550);
             this.dBNum8.Name = "dBNum8";
             this.dBNum8.Size = new System.Drawing.Size(140, 140);
             this.dBNum8.TabIndex = 2;
@@ -1239,7 +1224,7 @@
             this.dBNum3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum3.FlatAppearance.BorderSize = 0;
             this.dBNum3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum3.Location = new System.Drawing.Point(1031, 116);
+            this.dBNum3.Location = new System.Drawing.Point(1031, 149);
             this.dBNum3.Name = "dBNum3";
             this.dBNum3.Size = new System.Drawing.Size(140, 140);
             this.dBNum3.TabIndex = 1;
@@ -1253,7 +1238,7 @@
             this.dBNum2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum2.FlatAppearance.BorderSize = 0;
             this.dBNum2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum2.Location = new System.Drawing.Point(756, 116);
+            this.dBNum2.Location = new System.Drawing.Point(756, 149);
             this.dBNum2.Name = "dBNum2";
             this.dBNum2.Size = new System.Drawing.Size(140, 140);
             this.dBNum2.TabIndex = 0;
@@ -1397,16 +1382,6 @@
             this.RaceGamesButton.TabIndex = 0;
             this.RaceGamesButton.UseVisualStyleBackColor = false;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
-            // 
-            // race1
-            // 
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(-4, -19);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1443, 800);
-            this.race1.TabIndex = 2;
-            this.race1.Visible = false;
             // 
             // Ajustes
             // 
@@ -1798,24 +1773,6 @@
             this.ej1palabra.TabIndex = 0;
             this.ej1palabra.Text = "¿Cual seña correspone a la palabra:";
             // 
-            // ej11
-            // 
-            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
-            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej11.Location = new System.Drawing.Point(-15, 585);
-            this.ej11.Name = "ej11";
-            this.ej11.Size = new System.Drawing.Size(1550, 160);
-            this.ej11.TabIndex = 10;
-            // 
-            // ej01
-            // 
-            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
-            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej01.Location = new System.Drawing.Point(-15, 585);
-            this.ej01.Name = "ej01";
-            this.ej01.Size = new System.Drawing.Size(1550, 160);
-            this.ej01.TabIndex = 9;
-            // 
             // ejercicio2
             // 
             this.ejercicio2.BackColor = System.Drawing.Color.LightBlue;
@@ -1902,25 +1859,6 @@
             this.ej2cont.TabIndex = 6;
             this.ej2cont.UseVisualStyleBackColor = false;
             this.ej2cont.Click += new System.EventHandler(this.ej2cont_Click);
-            // 
-            // ej12
-            // 
-            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
-            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej12.Location = new System.Drawing.Point(-15, 585);
-            this.ej12.Name = "ej12";
-            this.ej12.Size = new System.Drawing.Size(1550, 160);
-            this.ej12.TabIndex = 8;
-            this.ej12.Load += new System.EventHandler(this.ej12_Load);
-            // 
-            // ej02
-            // 
-            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
-            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej02.Location = new System.Drawing.Point(-15, 586);
-            this.ej02.Name = "ej02";
-            this.ej02.Size = new System.Drawing.Size(1550, 160);
-            this.ej02.TabIndex = 7;
             // 
             // ejercicio3
             // 
@@ -2122,6 +2060,53 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
+            // race1
+            // 
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(-4, -19);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1443, 800);
+            this.race1.TabIndex = 2;
+            this.race1.Visible = false;
+            // 
+            // ej11
+            // 
+            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
+            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej11.Location = new System.Drawing.Point(-15, 585);
+            this.ej11.Name = "ej11";
+            this.ej11.Size = new System.Drawing.Size(1550, 160);
+            this.ej11.TabIndex = 10;
+            // 
+            // ej01
+            // 
+            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
+            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej01.Location = new System.Drawing.Point(-15, 585);
+            this.ej01.Name = "ej01";
+            this.ej01.Size = new System.Drawing.Size(1550, 160);
+            this.ej01.TabIndex = 9;
+            // 
+            // ej12
+            // 
+            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
+            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej12.Location = new System.Drawing.Point(-15, 585);
+            this.ej12.Name = "ej12";
+            this.ej12.Size = new System.Drawing.Size(1550, 160);
+            this.ej12.TabIndex = 8;
+            this.ej12.Load += new System.EventHandler(this.ej12_Load);
+            // 
+            // ej02
+            // 
+            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
+            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej02.Location = new System.Drawing.Point(-15, 586);
+            this.ej02.Name = "ej02";
+            this.ej02.Size = new System.Drawing.Size(1550, 160);
+            this.ej02.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2183,7 +2168,6 @@
         private System.Windows.Forms.TabPage Ajustes;
         private System.Windows.Forms.TabPage juegos;
         private System.Windows.Forms.TabPage Enseñanza;
-        private System.Windows.Forms.Button SalirIdS;
         private System.Windows.Forms.Button ComenzarIds;
         private System.Windows.Forms.LinkLabel linkLabel1IdS;
         private System.Windows.Forms.TextBox UserIdS;
