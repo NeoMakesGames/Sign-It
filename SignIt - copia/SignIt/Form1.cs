@@ -326,8 +326,13 @@ namespace SignIt
             UserHome.Text = (DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path));
         }
 
+        
         public async void ensañanza(string tipo)
         {
+            ej01.Hide();
+            ej11.Hide();
+            ej02.Hide();
+            ej12.Hide();
             desaparicionDelMenu();
             int z = 0;
             int[] videos = new int[20];
@@ -358,9 +363,7 @@ namespace SignIt
                 }
             }
 
-            EnseñanzaPlayer.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-            EnseñanzaPlayer.Ctlcontrols.play();
-            PalabraEns.Text = DatabaseFunctions.GetNameOfVideo(id, path);
+            EnseñanzaPlayer.Ctlcontrols.stop();
 
             DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
             avance++;
@@ -433,6 +436,7 @@ namespace SignIt
                         {
 
                             case 0:
+                                ej1(,,,);
                                 ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                                 ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
                                 ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
