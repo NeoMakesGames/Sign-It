@@ -331,7 +331,6 @@ namespace SignIt
             myimage = new Bitmap(imagePath + "Botón (3).PNG");
             caracolExit.BackgroundImage = myimage;
             turorial = true;
-            UserHome.Text = (DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path));
         }
 
         public async void ensañanza(string tipo)
@@ -939,9 +938,7 @@ namespace SignIt
 
                 experiencia();
 
-                timer1.Enabled = true;
-
-                UserHome.Text = (DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Nombre", path));
+                timer1.Enabled = true; //sirve para algunas funciones, linea 1495
 
                 aparicionDelMenu();
 
@@ -1463,24 +1460,32 @@ namespace SignIt
 
         private void questo2_Click(object sender, EventArgs e)
         {
+            desaparicionDelMenu();
+            if (menu == true)
+            {
+                Menubutton_Click(sender, e);
+            }
             signIt.SelectedTab = caracol;
             myimage = new Bitmap(imagePath + "CAM.PNG");
             caracol.BackgroundImage = myimage;
             caracolExit.Hide();
             caracolExit2.Show();
             caracol.BackColor = Color.FromArgb(192, 255, 255);
-            desaparicionDelMenu();
         }
 
         private void questo_Click(object sender, EventArgs e)
         {
+            desaparicionDelMenu();
+            if (menu == true)
+            {
+                Menubutton_Click(sender, e);
+            }
             signIt.SelectedTab = caracol;
             myimage = new Bitmap(imagePath + "CAC.PNG");
             caracol.BackgroundImage = myimage;
             caracolExit.Hide();
             caracolExit2.Show();
             caracol.BackColor = Color.FromArgb(192, 255, 255);
-            desaparicionDelMenu();
         }
 
 
@@ -2208,5 +2213,6 @@ namespace SignIt
         {
             
         }
+
     }
 }

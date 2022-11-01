@@ -493,6 +493,16 @@ namespace SignIt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fundasor {
+            get {
+                object obj = ResourceManager.GetObject("fundasor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_100 {
             get {
                 object obj = ResourceManager.GetObject("Group 100", resourceCulture);
@@ -1006,6 +1016,16 @@ namespace SignIt.Properties {
         internal static System.Drawing.Bitmap logo_azul_sin_fondo_1 {
             get {
                 object obj = ResourceManager.GetObject("logo azul sin fondo 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_azul_sin_fondo_2 {
+            get {
+                object obj = ResourceManager.GetObject("logo azul sin fondo 2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

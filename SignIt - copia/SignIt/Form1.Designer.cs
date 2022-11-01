@@ -45,12 +45,11 @@
             this.ComenzarCdU = new System.Windows.Forms.Button();
             this.SnapBackToReality = new System.Windows.Forms.Button();
             this.Home = new System.Windows.Forms.TabPage();
-            this.sliderHomeDer = new System.Windows.Forms.Button();
             this.sliderHomeIz = new System.Windows.Forms.Button();
+            this.sliderHomeDer = new System.Windows.Forms.Button();
             this.sliderHome = new System.Windows.Forms.Panel();
             this.DiccionarioHome = new System.Windows.Forms.Button();
             this.LeccionesHome = new System.Windows.Forms.Button();
-            this.UserHome = new System.Windows.Forms.Label();
             this.LeccionesMenu = new System.Windows.Forms.TabPage();
             this.caracolLecciones = new System.Windows.Forms.Button();
             this.examenlecc = new System.Windows.Forms.Button();
@@ -171,6 +170,7 @@
             this.questo = new System.Windows.Forms.Button();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Tipgrafia = new System.Windows.Forms.ComboBox();
@@ -238,7 +238,6 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -286,7 +285,7 @@
             this.signIt.Controls.Add(this.ejercicio2);
             this.signIt.Controls.Add(this.ejercicio3);
             this.signIt.Controls.Add(this.caracol);
-            this.signIt.Location = new System.Drawing.Point(-10, 0);
+            this.signIt.Location = new System.Drawing.Point(-9, 0);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1450, 901);
@@ -313,11 +312,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_2__1_;
+            this.panel2.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_2;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(426, 100);
+            this.panel2.Location = new System.Drawing.Point(371, 100);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(500, 210);
+            this.panel2.Size = new System.Drawing.Size(600, 220);
             this.panel2.TabIndex = 6;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -481,31 +480,16 @@
             this.Home.BackColor = System.Drawing.Color.LightBlue;
             this.Home.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Home.Controls.Add(this.sliderHomeDer);
             this.Home.Controls.Add(this.sliderHomeIz);
+            this.Home.Controls.Add(this.sliderHomeDer);
             this.Home.Controls.Add(this.sliderHome);
             this.Home.Controls.Add(this.DiccionarioHome);
             this.Home.Controls.Add(this.LeccionesHome);
-            this.Home.Controls.Add(this.UserHome);
             this.Home.Location = new System.Drawing.Point(4, 22);
             this.Home.Name = "Home";
             this.Home.Size = new System.Drawing.Size(1442, 875);
             this.Home.TabIndex = 8;
             this.Home.Text = "Home";
-            // 
-            // sliderHomeDer
-            // 
-            this.sliderHomeDer.BackColor = System.Drawing.Color.Transparent;
-            this.sliderHomeDer.BackgroundImage = global::SignIt.Properties.Resources.Group_57;
-            this.sliderHomeDer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.sliderHomeDer.FlatAppearance.BorderSize = 0;
-            this.sliderHomeDer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sliderHomeDer.Location = new System.Drawing.Point(1299, 349);
-            this.sliderHomeDer.Name = "sliderHomeDer";
-            this.sliderHomeDer.Size = new System.Drawing.Size(40, 80);
-            this.sliderHomeDer.TabIndex = 5;
-            this.sliderHomeDer.UseVisualStyleBackColor = false;
-            this.sliderHomeDer.Click += new System.EventHandler(this.sliderHomeDer_Click);
             // 
             // sliderHomeIz
             // 
@@ -514,22 +498,36 @@
             this.sliderHomeIz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sliderHomeIz.FlatAppearance.BorderSize = 0;
             this.sliderHomeIz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sliderHomeIz.Location = new System.Drawing.Point(821, 349);
+            this.sliderHomeIz.Location = new System.Drawing.Point(774, 356);
             this.sliderHomeIz.Name = "sliderHomeIz";
             this.sliderHomeIz.Size = new System.Drawing.Size(40, 80);
             this.sliderHomeIz.TabIndex = 4;
             this.sliderHomeIz.UseVisualStyleBackColor = false;
             this.sliderHomeIz.Click += new System.EventHandler(this.sliderHomeIz_Click);
             // 
+            // sliderHomeDer
+            // 
+            this.sliderHomeDer.BackColor = System.Drawing.Color.Transparent;
+            this.sliderHomeDer.BackgroundImage = global::SignIt.Properties.Resources.Group_57;
+            this.sliderHomeDer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sliderHomeDer.FlatAppearance.BorderSize = 0;
+            this.sliderHomeDer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sliderHomeDer.Location = new System.Drawing.Point(1221, 356);
+            this.sliderHomeDer.Name = "sliderHomeDer";
+            this.sliderHomeDer.Size = new System.Drawing.Size(40, 80);
+            this.sliderHomeDer.TabIndex = 5;
+            this.sliderHomeDer.UseVisualStyleBackColor = false;
+            this.sliderHomeDer.Click += new System.EventHandler(this.sliderHomeDer_Click);
+            // 
             // sliderHome
             // 
             this.sliderHome.BackColor = System.Drawing.Color.Transparent;
-            this.sliderHome.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
+            this.sliderHome.BackgroundImage = global::SignIt.Properties.Resources.fundasor;
             this.sliderHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sliderHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sliderHome.Location = new System.Drawing.Point(846, 190);
+            this.sliderHome.Location = new System.Drawing.Point(793, 169);
             this.sliderHome.Name = "sliderHome";
-            this.sliderHome.Size = new System.Drawing.Size(470, 399);
+            this.sliderHome.Size = new System.Drawing.Size(450, 450);
             this.sliderHome.TabIndex = 3;
             this.sliderHome.Paint += new System.Windows.Forms.PaintEventHandler(this.sliderHome_Paint);
             // 
@@ -540,7 +538,7 @@
             this.DiccionarioHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.DiccionarioHome.FlatAppearance.BorderSize = 0;
             this.DiccionarioHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DiccionarioHome.Location = new System.Drawing.Point(372, 429);
+            this.DiccionarioHome.Location = new System.Drawing.Point(254, 429);
             this.DiccionarioHome.Name = "DiccionarioHome";
             this.DiccionarioHome.Size = new System.Drawing.Size(388, 160);
             this.DiccionarioHome.TabIndex = 2;
@@ -554,23 +552,12 @@
             this.LeccionesHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.LeccionesHome.FlatAppearance.BorderSize = 0;
             this.LeccionesHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LeccionesHome.Location = new System.Drawing.Point(372, 190);
+            this.LeccionesHome.Location = new System.Drawing.Point(254, 190);
             this.LeccionesHome.Name = "LeccionesHome";
             this.LeccionesHome.Size = new System.Drawing.Size(388, 160);
             this.LeccionesHome.TabIndex = 1;
             this.LeccionesHome.UseVisualStyleBackColor = false;
             this.LeccionesHome.Click += new System.EventHandler(this.LeccionesHome_Click_1);
-            // 
-            // UserHome
-            // 
-            this.UserHome.AutoSize = true;
-            this.UserHome.BackColor = System.Drawing.Color.Transparent;
-            this.UserHome.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserHome.Location = new System.Drawing.Point(1155, 40);
-            this.UserHome.Name = "UserHome";
-            this.UserHome.Size = new System.Drawing.Size(114, 42);
-            this.UserHome.TabIndex = 0;
-            this.UserHome.Text = "label1";
             // 
             // LeccionesMenu
             // 
@@ -2198,6 +2185,16 @@
             this.RaceGamesButton.UseVisualStyleBackColor = false;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
             // 
+            // race1
+            // 
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(1, 3);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1366, 788);
+            this.race1.TabIndex = 5;
+            this.race1.Visible = false;
+            // 
             // Ajustes
             // 
             this.Ajustes.BackColor = System.Drawing.Color.LightBlue;
@@ -3026,16 +3023,6 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // race1
-            // 
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(1, 3);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1366, 788);
-            this.race1.TabIndex = 5;
-            this.race1.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3054,7 +3041,6 @@
             this.CdU.ResumeLayout(false);
             this.CdU.PerformLayout();
             this.Home.ResumeLayout(false);
-            this.Home.PerformLayout();
             this.LeccionesMenu.ResumeLayout(false);
             this.Diccionario.ResumeLayout(false);
             this.diccionarioBeta.ResumeLayout(false);
@@ -3126,7 +3112,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TabPage Home;
         private System.Windows.Forms.Button LeccionesHome;
-        private System.Windows.Forms.Label UserHome;
         private System.Windows.Forms.Button DiccionarioHome;
         private System.Windows.Forms.Button sliderHomeDer;
         private System.Windows.Forms.Button sliderHomeIz;

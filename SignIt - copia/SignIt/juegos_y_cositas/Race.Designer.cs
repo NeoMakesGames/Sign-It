@@ -150,7 +150,9 @@
             // finalRaceText
             // 
             this.finalRaceText.AutoSize = true;
+            this.finalRaceText.BackColor = System.Drawing.Color.Transparent;
             this.finalRaceText.Font = new System.Drawing.Font("Inter", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalRaceText.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.finalRaceText.Location = new System.Drawing.Point(520, 231);
             this.finalRaceText.Name = "finalRaceText";
             this.finalRaceText.Size = new System.Drawing.Size(216, 39);
@@ -162,6 +164,7 @@
             this.endRacePoints.AutoSize = true;
             this.endRacePoints.BackColor = System.Drawing.Color.Transparent;
             this.endRacePoints.Font = new System.Drawing.Font("Inter", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.endRacePoints.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.endRacePoints.Location = new System.Drawing.Point(622, 297);
             this.endRacePoints.Name = "endRacePoints";
             this.endRacePoints.Size = new System.Drawing.Size(114, 35);
