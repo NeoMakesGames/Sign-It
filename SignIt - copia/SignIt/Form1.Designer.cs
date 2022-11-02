@@ -2546,7 +2546,7 @@
             this.ejercicio1.Controls.Add(this.ej11);
             this.ejercicio1.Location = new System.Drawing.Point(4, 22);
             this.ejercicio1.Name = "ejercicio1";
-            this.ejercicio1.Size = new System.Drawing.Size(1442, 875);
+            this.ejercicio1.Size = new System.Drawing.Size(1620, 875);
             this.ejercicio1.TabIndex = 9;
             this.ejercicio1.Text = "Ejercicio1";
             // 
@@ -2624,7 +2624,7 @@
             this.panel14.BackColor = System.Drawing.Color.Transparent;
             this.panel14.Location = new System.Drawing.Point(35, 264);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(250, 57);
+            this.panel14.Size = new System.Drawing.Size(251, 57);
             this.panel14.TabIndex = 13;
             // 
             // ejercicio1VideoB

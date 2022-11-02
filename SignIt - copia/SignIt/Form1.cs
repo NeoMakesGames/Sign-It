@@ -1525,11 +1525,23 @@ namespace SignIt
         {
             continuar = true;
         }
-
+        
         private void ej2videoA_Click(object sender, EventArgs e)
         {
             continuar = true;
             rta1 = true;
+        }
+
+        private void ej2videoB_Click_1(object sender, EventArgs e)
+        {
+            continuar = true;
+            rta2 = true;
+        }
+
+        private void ej2videoC_Click_1(object sender, EventArgs e)
+        {
+            continuar = true;
+            rta3 = true;
         }
 
         private void ej2videoB_Click(object sender, EventArgs e)
@@ -2370,15 +2382,6 @@ namespace SignIt
         
 
         private void ejercicio1VideoB_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ej2videoB_Click_1(object sender, EventArgs e)
-        {
-        }
-
-        private void ej2videoC_Click_1(object sender, EventArgs e)
         {
 
         }
