@@ -45,6 +45,7 @@
             this.ComenzarCdU = new System.Windows.Forms.Button();
             this.SnapBackToReality = new System.Windows.Forms.Button();
             this.Home = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.sliderHomeIz = new System.Windows.Forms.Button();
             this.sliderHomeDer = new System.Windows.Forms.Button();
             this.sliderHome = new System.Windows.Forms.Panel();
@@ -108,20 +109,20 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.Z = new System.Windows.Forms.Button();
+            this.Y = new System.Windows.Forms.Button();
+            this.X = new System.Windows.Forms.Button();
+            this.W = new System.Windows.Forms.Button();
+            this.V = new System.Windows.Forms.Button();
+            this.U = new System.Windows.Forms.Button();
+            this.T = new System.Windows.Forms.Button();
+            this.S = new System.Windows.Forms.Button();
+            this.R = new System.Windows.Forms.Button();
+            this.Q = new System.Windows.Forms.Button();
+            this.P = new System.Windows.Forms.Button();
+            this.O = new System.Windows.Forms.Button();
+            this.Ñ = new System.Windows.Forms.Button();
+            this.N = new System.Windows.Forms.Button();
             this.M = new System.Windows.Forms.Button();
             this.L = new System.Windows.Forms.Button();
             this.K = new System.Windows.Forms.Button();
@@ -194,6 +195,7 @@
             this.PalabraEns = new System.Windows.Forms.Label();
             this.contEnseñanza = new System.Windows.Forms.Button();
             this.ejercicio1 = new System.Windows.Forms.TabPage();
+            this.caracolEJ1 = new System.Windows.Forms.Button();
             this.ej01 = new SignIt.Ej0();
             this.exitEj = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -205,7 +207,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.ejercicio1VideoA = new AxWMPLib.AxWindowsMediaPlayer();
-            this.caracolEJ1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.ej2videoC = new System.Windows.Forms.Button();
             this.ej2videoB = new System.Windows.Forms.Button();
@@ -238,7 +239,6 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -493,6 +493,20 @@
             this.Home.Size = new System.Drawing.Size(1442, 875);
             this.Home.TabIndex = 8;
             this.Home.Text = "Home";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(1243, 39);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 120);
+            this.button1.TabIndex = 9;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_6);
             // 
             // sliderHomeIz
             // 
@@ -973,20 +987,20 @@
             this.dBAbecedario.Controls.Add(this.label7);
             this.dBAbecedario.Controls.Add(this.label5);
             this.dBAbecedario.Controls.Add(this.label2);
-            this.dBAbecedario.Controls.Add(this.button22);
-            this.dBAbecedario.Controls.Add(this.button23);
-            this.dBAbecedario.Controls.Add(this.button24);
-            this.dBAbecedario.Controls.Add(this.button25);
-            this.dBAbecedario.Controls.Add(this.button26);
-            this.dBAbecedario.Controls.Add(this.button27);
-            this.dBAbecedario.Controls.Add(this.button28);
-            this.dBAbecedario.Controls.Add(this.button29);
-            this.dBAbecedario.Controls.Add(this.button30);
-            this.dBAbecedario.Controls.Add(this.button11);
-            this.dBAbecedario.Controls.Add(this.button14);
-            this.dBAbecedario.Controls.Add(this.button15);
-            this.dBAbecedario.Controls.Add(this.button16);
-            this.dBAbecedario.Controls.Add(this.button17);
+            this.dBAbecedario.Controls.Add(this.Z);
+            this.dBAbecedario.Controls.Add(this.Y);
+            this.dBAbecedario.Controls.Add(this.X);
+            this.dBAbecedario.Controls.Add(this.W);
+            this.dBAbecedario.Controls.Add(this.V);
+            this.dBAbecedario.Controls.Add(this.U);
+            this.dBAbecedario.Controls.Add(this.T);
+            this.dBAbecedario.Controls.Add(this.S);
+            this.dBAbecedario.Controls.Add(this.R);
+            this.dBAbecedario.Controls.Add(this.Q);
+            this.dBAbecedario.Controls.Add(this.P);
+            this.dBAbecedario.Controls.Add(this.O);
+            this.dBAbecedario.Controls.Add(this.Ñ);
+            this.dBAbecedario.Controls.Add(this.N);
             this.dBAbecedario.Controls.Add(this.M);
             this.dBAbecedario.Controls.Add(this.L);
             this.dBAbecedario.Controls.Add(this.K);
@@ -1019,6 +1033,7 @@
             this.A.Size = new System.Drawing.Size(120, 120);
             this.A.TabIndex = 67;
             this.A.UseVisualStyleBackColor = false;
+            this.A.Click += new System.EventHandler(this.A_Click);
             // 
             // label31
             // 
@@ -1355,187 +1370,201 @@
             this.label2.TabIndex = 39;
             this.label2.Text = "A";
             // 
-            // button22
+            // Z
             // 
-            this.button22.BackColor = System.Drawing.Color.Transparent;
-            this.button22.BackgroundImage = global::SignIt.Properties.Resources._0;
-            this.button22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Location = new System.Drawing.Point(1236, 557);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(120, 120);
-            this.button22.TabIndex = 38;
-            this.button22.UseVisualStyleBackColor = false;
+            this.Z.BackColor = System.Drawing.Color.Transparent;
+            this.Z.BackgroundImage = global::SignIt.Properties.Resources.Group_113;
+            this.Z.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Z.FlatAppearance.BorderSize = 0;
+            this.Z.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Z.Location = new System.Drawing.Point(1236, 557);
+            this.Z.Name = "Z";
+            this.Z.Size = new System.Drawing.Size(120, 120);
+            this.Z.TabIndex = 38;
+            this.Z.UseVisualStyleBackColor = false;
+            this.Z.Click += new System.EventHandler(this.Z_Click);
             // 
-            // button23
+            // Y
             // 
-            this.button23.BackColor = System.Drawing.Color.Transparent;
-            this.button23.BackgroundImage = global::SignIt.Properties.Resources._0;
-            this.button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button23.FlatAppearance.BorderSize = 0;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Location = new System.Drawing.Point(1086, 557);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(120, 120);
-            this.button23.TabIndex = 37;
-            this.button23.UseVisualStyleBackColor = false;
+            this.Y.BackColor = System.Drawing.Color.Transparent;
+            this.Y.BackgroundImage = global::SignIt.Properties.Resources.Group_112;
+            this.Y.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Y.FlatAppearance.BorderSize = 0;
+            this.Y.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Y.Location = new System.Drawing.Point(1086, 557);
+            this.Y.Name = "Y";
+            this.Y.Size = new System.Drawing.Size(120, 120);
+            this.Y.TabIndex = 37;
+            this.Y.UseVisualStyleBackColor = false;
+            this.Y.Click += new System.EventHandler(this.Y_Click);
             // 
-            // button24
+            // X
             // 
-            this.button24.BackColor = System.Drawing.Color.Transparent;
-            this.button24.BackgroundImage = global::SignIt.Properties.Resources._0;
-            this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Location = new System.Drawing.Point(936, 557);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(120, 120);
-            this.button24.TabIndex = 36;
-            this.button24.UseVisualStyleBackColor = false;
+            this.X.BackColor = System.Drawing.Color.Transparent;
+            this.X.BackgroundImage = global::SignIt.Properties.Resources.Group_111;
+            this.X.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.X.FlatAppearance.BorderSize = 0;
+            this.X.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.X.Location = new System.Drawing.Point(936, 557);
+            this.X.Name = "X";
+            this.X.Size = new System.Drawing.Size(120, 120);
+            this.X.TabIndex = 36;
+            this.X.UseVisualStyleBackColor = false;
+            this.X.Click += new System.EventHandler(this.X_Click);
             // 
-            // button25
+            // W
             // 
-            this.button25.BackColor = System.Drawing.Color.Transparent;
-            this.button25.BackgroundImage = global::SignIt.Properties.Resources._0;
-            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button25.FlatAppearance.BorderSize = 0;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Location = new System.Drawing.Point(786, 557);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(120, 120);
-            this.button25.TabIndex = 35;
-            this.button25.UseVisualStyleBackColor = false;
+            this.W.BackColor = System.Drawing.Color.Transparent;
+            this.W.BackgroundImage = global::SignIt.Properties.Resources.Group_110;
+            this.W.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.W.FlatAppearance.BorderSize = 0;
+            this.W.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.W.Location = new System.Drawing.Point(786, 557);
+            this.W.Name = "W";
+            this.W.Size = new System.Drawing.Size(120, 120);
+            this.W.TabIndex = 35;
+            this.W.UseVisualStyleBackColor = false;
+            this.W.Click += new System.EventHandler(this.W_Click);
             // 
-            // button26
+            // V
             // 
-            this.button26.BackColor = System.Drawing.Color.Transparent;
-            this.button26.BackgroundImage = global::SignIt.Properties.Resources._0;
-            this.button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button26.FlatAppearance.BorderSize = 0;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Location = new System.Drawing.Point(636, 557);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(120, 120);
-            this.button26.TabIndex = 34;
-            this.button26.UseVisualStyleBackColor = false;
+            this.V.BackColor = System.Drawing.Color.Transparent;
+            this.V.BackgroundImage = global::SignIt.Properties.Resources.Group_109;
+            this.V.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.V.FlatAppearance.BorderSize = 0;
+            this.V.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.V.Location = new System.Drawing.Point(636, 557);
+            this.V.Name = "V";
+            this.V.Size = new System.Drawing.Size(120, 120);
+            this.V.TabIndex = 34;
+            this.V.UseVisualStyleBackColor = false;
+            this.V.Click += new System.EventHandler(this.V_Click);
             // 
-            // button27
+            // U
             // 
-            this.button27.BackColor = System.Drawing.Color.Transparent;
-            this.button27.BackgroundImage = global::SignIt.Properties.Resources._0;
-            this.button27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button27.FlatAppearance.BorderSize = 0;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Location = new System.Drawing.Point(486, 557);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(120, 120);
-            this.button27.TabIndex = 33;
-            this.button27.UseVisualStyleBackColor = false;
+            this.U.BackColor = System.Drawing.Color.Transparent;
+            this.U.BackgroundImage = global::SignIt.Properties.Resources.Group_108;
+            this.U.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.U.FlatAppearance.BorderSize = 0;
+            this.U.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.U.Location = new System.Drawing.Point(486, 557);
+            this.U.Name = "U";
+            this.U.Size = new System.Drawing.Size(120, 120);
+            this.U.TabIndex = 33;
+            this.U.UseVisualStyleBackColor = false;
+            this.U.Click += new System.EventHandler(this.U_Click);
             // 
-            // button28
+            // T
             // 
-            this.button28.BackColor = System.Drawing.Color.Transparent;
-            this.button28.BackgroundImage = global::SignIt.Properties.Resources._0;
-            this.button28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button28.FlatAppearance.BorderSize = 0;
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.Location = new System.Drawing.Point(336, 557);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(120, 120);
-            this.button28.TabIndex = 32;
-            this.button28.UseVisualStyleBackColor = false;
+            this.T.BackColor = System.Drawing.Color.Transparent;
+            this.T.BackgroundImage = global::SignIt.Properties.Resources.Group_107;
+            this.T.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.T.FlatAppearance.BorderSize = 0;
+            this.T.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.T.Location = new System.Drawing.Point(336, 557);
+            this.T.Name = "T";
+            this.T.Size = new System.Drawing.Size(120, 120);
+            this.T.TabIndex = 32;
+            this.T.UseVisualStyleBackColor = false;
+            this.T.Click += new System.EventHandler(this.T_Click);
             // 
-            // button29
+            // S
             // 
-            this.button29.BackColor = System.Drawing.Color.Transparent;
-            this.button29.BackgroundImage = global::SignIt.Properties.Resources._0;
-            this.button29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button29.FlatAppearance.BorderSize = 0;
-            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button29.Location = new System.Drawing.Point(186, 557);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(120, 120);
-            this.button29.TabIndex = 31;
-            this.button29.UseVisualStyleBackColor = false;
+            this.S.BackColor = System.Drawing.Color.Transparent;
+            this.S.BackgroundImage = global::SignIt.Properties.Resources.Group_106;
+            this.S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.S.FlatAppearance.BorderSize = 0;
+            this.S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.S.Location = new System.Drawing.Point(186, 557);
+            this.S.Name = "S";
+            this.S.Size = new System.Drawing.Size(120, 120);
+            this.S.TabIndex = 31;
+            this.S.UseVisualStyleBackColor = false;
+            this.S.Click += new System.EventHandler(this.S_Click);
             // 
-            // button30
+            // R
             // 
-            this.button30.BackColor = System.Drawing.Color.Transparent;
-            this.button30.BackgroundImage = global::SignIt.Properties.Resources._0;
-            this.button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button30.FlatAppearance.BorderSize = 0;
-            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button30.Location = new System.Drawing.Point(36, 557);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(120, 120);
-            this.button30.TabIndex = 30;
-            this.button30.UseVisualStyleBackColor = false;
+            this.R.BackColor = System.Drawing.Color.Transparent;
+            this.R.BackgroundImage = global::SignIt.Properties.Resources.Group_105;
+            this.R.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.R.FlatAppearance.BorderSize = 0;
+            this.R.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.R.Location = new System.Drawing.Point(36, 557);
+            this.R.Name = "R";
+            this.R.Size = new System.Drawing.Size(120, 120);
+            this.R.TabIndex = 30;
+            this.R.UseVisualStyleBackColor = false;
+            this.R.Click += new System.EventHandler(this.R_Click);
             // 
-            // button11
+            // Q
             // 
-            this.button11.BackColor = System.Drawing.Color.Transparent;
-            this.button11.BackgroundImage = global::SignIt.Properties.Resources.Group_96;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(1236, 366);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(120, 120);
-            this.button11.TabIndex = 29;
-            this.button11.UseVisualStyleBackColor = false;
+            this.Q.BackColor = System.Drawing.Color.Transparent;
+            this.Q.BackgroundImage = global::SignIt.Properties.Resources.Group_96;
+            this.Q.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Q.FlatAppearance.BorderSize = 0;
+            this.Q.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Q.Location = new System.Drawing.Point(1236, 366);
+            this.Q.Name = "Q";
+            this.Q.Size = new System.Drawing.Size(120, 120);
+            this.Q.TabIndex = 29;
+            this.Q.UseVisualStyleBackColor = false;
+            this.Q.Click += new System.EventHandler(this.Q_Click);
             // 
-            // button14
+            // P
             // 
-            this.button14.BackColor = System.Drawing.Color.Transparent;
-            this.button14.BackgroundImage = global::SignIt.Properties.Resources.Group_97;
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(1086, 366);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(120, 120);
-            this.button14.TabIndex = 28;
-            this.button14.UseVisualStyleBackColor = false;
+            this.P.BackColor = System.Drawing.Color.Transparent;
+            this.P.BackgroundImage = global::SignIt.Properties.Resources.Group_97;
+            this.P.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.P.FlatAppearance.BorderSize = 0;
+            this.P.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.P.Location = new System.Drawing.Point(1086, 366);
+            this.P.Name = "P";
+            this.P.Size = new System.Drawing.Size(120, 120);
+            this.P.TabIndex = 28;
+            this.P.UseVisualStyleBackColor = false;
+            this.P.Click += new System.EventHandler(this.P_Click);
             // 
-            // button15
+            // O
             // 
-            this.button15.BackColor = System.Drawing.Color.Transparent;
-            this.button15.BackgroundImage = global::SignIt.Properties.Resources.Group_98;
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Location = new System.Drawing.Point(936, 366);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(120, 120);
-            this.button15.TabIndex = 27;
-            this.button15.UseVisualStyleBackColor = false;
+            this.O.BackColor = System.Drawing.Color.Transparent;
+            this.O.BackgroundImage = global::SignIt.Properties.Resources.Group_98;
+            this.O.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.O.FlatAppearance.BorderSize = 0;
+            this.O.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.O.Location = new System.Drawing.Point(936, 366);
+            this.O.Name = "O";
+            this.O.Size = new System.Drawing.Size(120, 120);
+            this.O.TabIndex = 27;
+            this.O.UseVisualStyleBackColor = false;
+            this.O.Click += new System.EventHandler(this.O_Click);
             // 
-            // button16
+            // Ñ
             // 
-            this.button16.BackColor = System.Drawing.Color.Transparent;
-            this.button16.BackgroundImage = global::SignIt.Properties.Resources.Group_99;
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Location = new System.Drawing.Point(786, 366);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(120, 120);
-            this.button16.TabIndex = 26;
-            this.button16.UseVisualStyleBackColor = false;
+            this.Ñ.BackColor = System.Drawing.Color.Transparent;
+            this.Ñ.BackgroundImage = global::SignIt.Properties.Resources.Group_99;
+            this.Ñ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ñ.FlatAppearance.BorderSize = 0;
+            this.Ñ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Ñ.Location = new System.Drawing.Point(786, 366);
+            this.Ñ.Name = "Ñ";
+            this.Ñ.Size = new System.Drawing.Size(120, 120);
+            this.Ñ.TabIndex = 26;
+            this.Ñ.UseVisualStyleBackColor = false;
+            this.Ñ.Click += new System.EventHandler(this.Ñ_Click);
             // 
-            // button17
+            // N
             // 
-            this.button17.BackColor = System.Drawing.Color.Transparent;
-            this.button17.BackgroundImage = global::SignIt.Properties.Resources.Group_100;
-            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Location = new System.Drawing.Point(636, 366);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(120, 120);
-            this.button17.TabIndex = 25;
-            this.button17.UseVisualStyleBackColor = false;
+            this.N.BackColor = System.Drawing.Color.Transparent;
+            this.N.BackgroundImage = global::SignIt.Properties.Resources.Group_100;
+            this.N.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.N.FlatAppearance.BorderSize = 0;
+            this.N.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.N.Location = new System.Drawing.Point(636, 366);
+            this.N.Name = "N";
+            this.N.Size = new System.Drawing.Size(120, 120);
+            this.N.TabIndex = 25;
+            this.N.UseVisualStyleBackColor = false;
+            this.N.Click += new System.EventHandler(this.N_Click);
             // 
             // M
             // 
@@ -1549,6 +1578,7 @@
             this.M.Size = new System.Drawing.Size(120, 120);
             this.M.TabIndex = 24;
             this.M.UseVisualStyleBackColor = false;
+            this.M.Click += new System.EventHandler(this.M_Click);
             // 
             // L
             // 
@@ -1562,6 +1592,7 @@
             this.L.Size = new System.Drawing.Size(120, 120);
             this.L.TabIndex = 23;
             this.L.UseVisualStyleBackColor = false;
+            this.L.Click += new System.EventHandler(this.L_Click);
             // 
             // K
             // 
@@ -1575,6 +1606,7 @@
             this.K.Size = new System.Drawing.Size(120, 120);
             this.K.TabIndex = 22;
             this.K.UseVisualStyleBackColor = false;
+            this.K.Click += new System.EventHandler(this.K_Click);
             // 
             // J
             // 
@@ -1588,6 +1620,7 @@
             this.J.Size = new System.Drawing.Size(120, 120);
             this.J.TabIndex = 21;
             this.J.UseVisualStyleBackColor = false;
+            this.J.Click += new System.EventHandler(this.J_Click);
             // 
             // I
             // 
@@ -1601,6 +1634,7 @@
             this.I.Size = new System.Drawing.Size(120, 120);
             this.I.TabIndex = 20;
             this.I.UseVisualStyleBackColor = false;
+            this.I.Click += new System.EventHandler(this.I_Click);
             // 
             // H
             // 
@@ -1614,6 +1648,7 @@
             this.H.Size = new System.Drawing.Size(120, 120);
             this.H.TabIndex = 19;
             this.H.UseVisualStyleBackColor = false;
+            this.H.Click += new System.EventHandler(this.H_Click);
             // 
             // G
             // 
@@ -1627,6 +1662,7 @@
             this.G.Size = new System.Drawing.Size(120, 120);
             this.G.TabIndex = 18;
             this.G.UseVisualStyleBackColor = false;
+            this.G.Click += new System.EventHandler(this.G_Click);
             // 
             // F
             // 
@@ -1640,6 +1676,7 @@
             this.F.Size = new System.Drawing.Size(120, 120);
             this.F.TabIndex = 17;
             this.F.UseVisualStyleBackColor = false;
+            this.F.Click += new System.EventHandler(this.F_Click);
             // 
             // E
             // 
@@ -1653,6 +1690,7 @@
             this.E.Size = new System.Drawing.Size(120, 120);
             this.E.TabIndex = 16;
             this.E.UseVisualStyleBackColor = false;
+            this.E.Click += new System.EventHandler(this.E_Click);
             // 
             // D
             // 
@@ -1666,6 +1704,7 @@
             this.D.Size = new System.Drawing.Size(120, 120);
             this.D.TabIndex = 15;
             this.D.UseVisualStyleBackColor = false;
+            this.D.Click += new System.EventHandler(this.D_Click);
             // 
             // C
             // 
@@ -1679,6 +1718,7 @@
             this.C.Size = new System.Drawing.Size(120, 120);
             this.C.TabIndex = 14;
             this.C.UseVisualStyleBackColor = false;
+            this.C.Click += new System.EventHandler(this.C_Click);
             // 
             // button3
             // 
@@ -1688,10 +1728,11 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(185, 178);
-            this.button3.Name = "button3";
+            this.button3.Name = "B";
             this.button3.Size = new System.Drawing.Size(120, 120);
             this.button3.TabIndex = 13;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.B_Click);
             // 
             // abecedarioExit
             // 
@@ -2510,6 +2551,20 @@
             this.ejercicio1.TabIndex = 9;
             this.ejercicio1.Text = "Ejercicio1";
             // 
+            // caracolEJ1
+            // 
+            this.caracolEJ1.BackColor = System.Drawing.Color.Transparent;
+            this.caracolEJ1.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
+            this.caracolEJ1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.caracolEJ1.FlatAppearance.BorderSize = 0;
+            this.caracolEJ1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.caracolEJ1.Location = new System.Drawing.Point(1215, 40);
+            this.caracolEJ1.Name = "caracolEJ1";
+            this.caracolEJ1.Size = new System.Drawing.Size(150, 150);
+            this.caracolEJ1.TabIndex = 11;
+            this.caracolEJ1.UseVisualStyleBackColor = false;
+            this.caracolEJ1.Click += new System.EventHandler(this.caracolEJ1_Click);
+            // 
             // ej01
             // 
             this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
@@ -2622,20 +2677,6 @@
             this.ejercicio1VideoA.TabIndex = 1;
             this.ejercicio1VideoA.ClickEvent += new AxWMPLib._WMPOCXEvents_ClickEventHandler(this.ejercicio1VideoA_ClickEvent);
             this.ejercicio1VideoA.Enter += new System.EventHandler(this.ejercicio1VideoA_Enter);
-            // 
-            // caracolEJ1
-            // 
-            this.caracolEJ1.BackColor = System.Drawing.Color.Transparent;
-            this.caracolEJ1.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
-            this.caracolEJ1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.caracolEJ1.FlatAppearance.BorderSize = 0;
-            this.caracolEJ1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolEJ1.Location = new System.Drawing.Point(1215, 40);
-            this.caracolEJ1.Name = "caracolEJ1";
-            this.caracolEJ1.Size = new System.Drawing.Size(150, 150);
-            this.caracolEJ1.TabIndex = 11;
-            this.caracolEJ1.UseVisualStyleBackColor = false;
-            this.caracolEJ1.Click += new System.EventHandler(this.caracolEJ1_Click);
             // 
             // panel5
             // 
@@ -3032,20 +3073,6 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1243, 39);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 120);
-            this.button1.TabIndex = 9;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_6);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3255,20 +3282,20 @@
         private Ej0 ej01;
         private Ej1 ej12;
         private Ej0 ej02;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button Z;
+        private System.Windows.Forms.Button Y;
+        private System.Windows.Forms.Button X;
+        private System.Windows.Forms.Button W;
+        private System.Windows.Forms.Button V;
+        private System.Windows.Forms.Button U;
+        private System.Windows.Forms.Button T;
+        private System.Windows.Forms.Button S;
+        private System.Windows.Forms.Button R;
+        private System.Windows.Forms.Button Q;
+        private System.Windows.Forms.Button P;
+        private System.Windows.Forms.Button O;
+        private System.Windows.Forms.Button Ñ;
+        private System.Windows.Forms.Button N;
         private System.Windows.Forms.Button M;
         private System.Windows.Forms.Button L;
         private System.Windows.Forms.Button K;
