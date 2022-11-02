@@ -103,7 +103,7 @@ namespace SignIt
 
         private void caracolayuda(string imagen, int page)
         {
-            myimage = new Bitmap(imagePath + "Presentacion" + ".PNG");
+            myimage = new Bitmap(imagePath + imagen + ".PNG");
             caracol.BackgroundImage = myimage;
             signIt.SelectedTab = caracol;
             lastpage = page;
