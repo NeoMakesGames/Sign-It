@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -64,7 +65,7 @@ namespace SignIt
             DBeta.SendToBack();
             dbplayer.Ctlcontrols.stop();
             aparicionDelMenu();
-        }
+        }   //Devuelve al menu del diccionario.
 
 
 
@@ -77,7 +78,7 @@ namespace SignIt
             DBeta.BringToFront();
             dbplayer.Ctlcontrols.play();
             desaparicionDelMenu();
-        }
+        }   //Acciona los videos del dicionario.
 
 
 
@@ -86,7 +87,7 @@ namespace SignIt
             Menubutton.Hide();
             panel1.Hide();
             panel1.Location = new Point(-332, 0);
-        }
+        }   //Hace desaparecer el menu de opciones.
 
 
 
@@ -96,7 +97,7 @@ namespace SignIt
             panel1.BringToFront();
             Menubutton.Show();
             Menubutton.BringToFront();
-        }
+        }   //Hace aparecer el menu de opciones.
 
 
 
@@ -107,7 +108,7 @@ namespace SignIt
             signIt.SelectedTab = caracol;
             lastpage = page;
             desaparicionDelMenu();
-        }
+        }   //Muestra las pantallas de ayuda y guia.
 
 
 
@@ -203,7 +204,7 @@ namespace SignIt
                 yepMyImage = new Bitmap(botonBI);
                 examenlecc.BackgroundImage = yepMyImage;
             }
-        }
+        }   //Actualiza los botones del menu de lecciones según tu avance.
 
 
 
@@ -286,14 +287,14 @@ namespace SignIt
                 notmyimage = new Bitmap(botonBI);
                 verbosDiccionario.BackgroundImage = notmyimage;
             }
-        }
+        }   //Actualiza los botones del diccionario segú tu avance.
 
 
 
         private void cierre()
         {
             this.Close();
-        }
+        }   //Cierra la aplicación.
 
 
 
@@ -306,7 +307,7 @@ namespace SignIt
                 UserXp = UserXp - NextLvl;
                 NextLvl *= 2;
             }
-        }
+        }   //Actualiza tu experiencia.
 
 
 
@@ -353,7 +354,7 @@ namespace SignIt
             {
                 homeSlider = 3;
             }
-        }
+        }   //Muestra, en la home, diferentes imagenes que cambian cada determinado tiempo.
 
 
 
@@ -363,7 +364,7 @@ namespace SignIt
             myimage = new Bitmap(imagePath + "Botón (3).PNG");
             caracolExit.BackgroundImage = myimage;
             turorial = true;
-        }
+        }   //Muestra la pantalla del tutorial, la primera vez que inicias sesión. 
 
 
 
@@ -645,7 +646,7 @@ namespace SignIt
             caracolEJ1.Hide();
             caracolEJ2.Hide();
             caracolEnsenanza.Hide();
-        }
+        }   //Muestra todas las señas de una clasificación en especifico (verbos, comidas, etc...) y toma una puequeña actividad; unicamente se utiliza si es la primera vez que se aprende el tipo de señas con la clasificación.
 
 
 
@@ -934,7 +935,7 @@ namespace SignIt
             caracolEJ2.Hide();
             caracolEnsenanza.Hide();
             experiencia();
-        }
+        }   //Elige 5 señas, que pueden repetirse más de una vez, al azar de la clasificación elegida (verbos, comidas, etc...). Se enceñaran las dos primeras y se haran actividades del resto. 
 
 
 
@@ -942,7 +943,7 @@ namespace SignIt
         {
             uc.Show();
             uc.BringToFront();
-        }
+        }   //Define que "cartel" mostrar dependiendo si el usuario hizo bien, o no, la actividad.
 
 
 
@@ -1153,7 +1154,7 @@ namespace SignIt
             DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
             avance++;
             signIt.SelectedTab = LeccionesMenu;
-        }
+        }       //Se escojen 30 señas en total, al azar y de todas las clasificaciones (verbos, comidas, etc...). Luego se realizará una actividad para cada seña. Si el usuario hace mal 5 ejercicios pierde y debe comenzar de nuevo el mismo.
 
 
 
@@ -1184,7 +1185,16 @@ namespace SignIt
             atrasTutorial.Hide();
         }
 
-        //Inicio de Sesión
+
+
+
+
+//Inicio de Sesión
+        
+        
+        
+        
+        
         private void ComenzarIds_Click(object sender, EventArgs e)
         {
             if (DatabaseFunctions.checkIfNameExists(UserIdS.Text, path) == true)
@@ -1215,13 +1225,27 @@ namespace SignIt
             UserCdU.Text = "Ingresar nombre";
             UserIdS.Text = "Ingresar Usuario";
             UserAgeCdU.Text = "Ingresar edad";
+            foreach(Label a in )
+            {
+
+            }
         }
+
         private void SalirIdS_Click(object sender, EventArgs e)
         {
             cierre();
         }
 
-        //Creación de Usuario
+
+
+
+
+//Creación de Usuario
+
+
+
+
+
         private void ComenzarCdU_Click(object sender, EventArgs e)
         {
             int sip;
@@ -1281,7 +1305,7 @@ namespace SignIt
             UserAgeCdU.ForeColor = Color.Silver;
         }
 
-        //Home
+//Home
 
         private void DiccionarioHome_Click_1(object sender, EventArgs e)
         {
@@ -1311,7 +1335,15 @@ namespace SignIt
             caracolayuda("CAB", 3);
         }
 
-        //Menu
+
+
+
+
+//Menu
+
+
+
+
 
         private async void Menubutton_Click(object sender, EventArgs e)
         {
@@ -1400,7 +1432,15 @@ namespace SignIt
             cierre();
         }
 
-        //Lecciones
+
+
+
+
+//Lecciones
+
+
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -1547,7 +1587,7 @@ namespace SignIt
 
 
 
-        //Ajustes
+//Ajustes
 
 
 
@@ -1582,7 +1622,7 @@ namespace SignIt
 
 
 
-        //Diccionario
+//Diccionario
 
 
 
@@ -1651,14 +1691,22 @@ namespace SignIt
             DBeta.BackgroundImage = myimage;
             desaparicionDelMenu();
         }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
             caracolayuda("ADC", 1);
         }
 
+        private void exitDB_Click(object sender, EventArgs e)
+        {
+            DBeta.SendToBack();
+            dbplayer.Ctlcontrols.stop();
+        }
 
 
-        //Números
+        //Diccionario_Números
+
+
 
 
 
@@ -1724,7 +1772,11 @@ namespace SignIt
 
 
 
-        //Abecedario
+
+
+//Diccionario_Abecedario
+
+
 
 
 
@@ -1773,7 +1825,6 @@ namespace SignIt
         {
             diccionario("H");
         }
-
 
         private void I_Click(object sender, EventArgs e)
         {
@@ -1872,7 +1923,8 @@ namespace SignIt
 
 
 
-        //Juegos
+
+//Juegos
 
 
 
@@ -1924,7 +1976,7 @@ namespace SignIt
 
 
 
-        //constantCheck
+//constantCheck
 
 
 
@@ -1958,7 +2010,7 @@ namespace SignIt
 
 
 
-        //Ayuda
+//Caracol_Ayuda
         
         
         
@@ -2152,7 +2204,13 @@ namespace SignIt
 
 
 
-        //Botones
+
+//Botones
+
+
+
+
+
         private void label4_MouseDown(object sender, MouseEventArgs e)
         {
             Image mYimage;
@@ -2215,7 +2273,7 @@ namespace SignIt
 
 
 
-        //sobras
+//Codigo_Sobrante
 
 
 
@@ -2318,26 +2376,17 @@ namespace SignIt
 
         private void ej2videoB_Click_1(object sender, EventArgs e)
         {
-            rta2 = true;
-            continuar = true;
         }
 
         private void ej2videoC_Click_1(object sender, EventArgs e)
         {
-            rta3 = true;
-            continuar = true;
+
         }
 
 
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
 
-        }
-
-        private void exitDB_Click(object sender, EventArgs e)
-        {
-            DBeta.SendToBack();
-            dbplayer.Ctlcontrols.stop();
         }
 
         private void labelDBNum1_Click(object sender, EventArgs e)
