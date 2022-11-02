@@ -373,6 +373,16 @@ namespace SignIt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Caracol_boceto_2 {
+            get {
+                object obj = ResourceManager.GetObject("Caracol boceto 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Caracol_boceto_3 {
             get {
                 object obj = ResourceManager.GetObject("Caracol boceto 3", resourceCulture);
@@ -1013,6 +1023,16 @@ namespace SignIt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_azul_sin_fondo_1 {
             get {
                 object obj = ResourceManager.GetObject("logo azul sin fondo 1", resourceCulture);
@@ -1046,6 +1066,16 @@ namespace SignIt.Properties {
         internal static System.Drawing.Bitmap logo_azul_sin_fondo_2__1_1 {
             get {
                 object obj = ResourceManager.GetObject("logo azul sin fondo 2 (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_azul_sin_fondo_2__1_2 {
+            get {
+                object obj = ResourceManager.GetObject("logo azul sin fondo 2 (1)2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

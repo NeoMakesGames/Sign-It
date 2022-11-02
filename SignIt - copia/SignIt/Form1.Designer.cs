@@ -194,7 +194,6 @@
             this.PalabraEns = new System.Windows.Forms.Label();
             this.contEnseñanza = new System.Windows.Forms.Button();
             this.ejercicio1 = new System.Windows.Forms.TabPage();
-            this.ej11 = new SignIt.Ej1();
             this.ej01 = new SignIt.Ej0();
             this.exitEj = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -212,6 +211,7 @@
             this.ej2videoB = new System.Windows.Forms.Button();
             this.ej2videoA = new System.Windows.Forms.Button();
             this.ej1palabra = new System.Windows.Forms.Label();
+            this.ej11 = new SignIt.Ej1();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
             this.ej12 = new SignIt.Ej1();
             this.ej02 = new SignIt.Ej0();
@@ -238,6 +238,7 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -312,8 +313,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_2;
+            this.panel2.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_2__1_2;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.panel2.Location = new System.Drawing.Point(371, 100);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(600, 220);
@@ -480,6 +482,7 @@
             this.Home.BackColor = System.Drawing.Color.LightBlue;
             this.Home.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Home.Controls.Add(this.button1);
             this.Home.Controls.Add(this.sliderHomeIz);
             this.Home.Controls.Add(this.sliderHomeDer);
             this.Home.Controls.Add(this.sliderHome);
@@ -522,7 +525,7 @@
             // sliderHome
             // 
             this.sliderHome.BackColor = System.Drawing.Color.Transparent;
-            this.sliderHome.BackgroundImage = global::SignIt.Properties.Resources.fundasor;
+            this.sliderHome.BackgroundImage = global::SignIt.Properties.Resources.logo;
             this.sliderHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sliderHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sliderHome.Location = new System.Drawing.Point(793, 169);
@@ -583,7 +586,7 @@
             // caracolLecciones
             // 
             this.caracolLecciones.BackColor = System.Drawing.Color.Transparent;
-            this.caracolLecciones.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
+            this.caracolLecciones.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
             this.caracolLecciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.caracolLecciones.FlatAppearance.BorderSize = 0;
             this.caracolLecciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -757,11 +760,11 @@
             // ayudaDicionario
             // 
             this.ayudaDicionario.BackColor = System.Drawing.Color.Transparent;
-            this.ayudaDicionario.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
+            this.ayudaDicionario.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
             this.ayudaDicionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ayudaDicionario.FlatAppearance.BorderSize = 0;
             this.ayudaDicionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ayudaDicionario.Location = new System.Drawing.Point(1225, 76);
+            this.ayudaDicionario.Location = new System.Drawing.Point(1228, 37);
             this.ayudaDicionario.Name = "ayudaDicionario";
             this.ayudaDicionario.Size = new System.Drawing.Size(120, 120);
             this.ayudaDicionario.TabIndex = 8;
@@ -2252,7 +2255,7 @@
             // caracolsett
             // 
             this.caracolsett.BackColor = System.Drawing.Color.Transparent;
-            this.caracolsett.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
+            this.caracolsett.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
             this.caracolsett.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.caracolsett.Cursor = System.Windows.Forms.Cursors.Hand;
             this.caracolsett.FlatAppearance.BorderSize = 0;
@@ -2430,11 +2433,11 @@
             // caracolEnsenanza
             // 
             this.caracolEnsenanza.BackColor = System.Drawing.Color.Transparent;
-            this.caracolEnsenanza.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
+            this.caracolEnsenanza.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
             this.caracolEnsenanza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.caracolEnsenanza.FlatAppearance.BorderSize = 0;
             this.caracolEnsenanza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolEnsenanza.Location = new System.Drawing.Point(1215, 38);
+            this.caracolEnsenanza.Location = new System.Drawing.Point(1215, 40);
             this.caracolEnsenanza.Name = "caracolEnsenanza";
             this.caracolEnsenanza.Size = new System.Drawing.Size(150, 150);
             this.caracolEnsenanza.TabIndex = 13;
@@ -2491,29 +2494,21 @@
             this.ejercicio1.BackColor = System.Drawing.Color.LightBlue;
             this.ejercicio1.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.ejercicio1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ejercicio1.Controls.Add(this.ej11);
+            this.ejercicio1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ejercicio1.Controls.Add(this.caracolEJ1);
             this.ejercicio1.Controls.Add(this.ej01);
             this.ejercicio1.Controls.Add(this.exitEj);
             this.ejercicio1.Controls.Add(this.panel12);
             this.ejercicio1.Controls.Add(this.panel11);
             this.ejercicio1.Controls.Add(this.panel10);
-            this.ejercicio1.Controls.Add(this.caracolEJ1);
             this.ejercicio1.Controls.Add(this.panel5);
             this.ejercicio1.Controls.Add(this.ej1palabra);
+            this.ejercicio1.Controls.Add(this.ej11);
             this.ejercicio1.Location = new System.Drawing.Point(4, 22);
             this.ejercicio1.Name = "ejercicio1";
             this.ejercicio1.Size = new System.Drawing.Size(1442, 875);
             this.ejercicio1.TabIndex = 9;
             this.ejercicio1.Text = "Ejercicio1";
-            // 
-            // ej11
-            // 
-            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
-            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej11.Location = new System.Drawing.Point(4, 579);
-            this.ej11.Name = "ej11";
-            this.ej11.Size = new System.Drawing.Size(1366, 150);
-            this.ej11.TabIndex = 17;
             // 
             // ej01
             // 
@@ -2544,7 +2539,7 @@
             this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel12.Controls.Add(this.panel13);
             this.panel12.Controls.Add(this.ejercicio1VideoC);
-            this.panel12.Location = new System.Drawing.Point(916, 166);
+            this.panel12.Location = new System.Drawing.Point(901, 166);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(320, 320);
             this.panel12.TabIndex = 14;
@@ -2604,7 +2599,7 @@
             this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel10.Controls.Add(this.panel15);
             this.panel10.Controls.Add(this.ejercicio1VideoA);
-            this.panel10.Location = new System.Drawing.Point(100, 166);
+            this.panel10.Location = new System.Drawing.Point(115, 166);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(320, 320);
             this.panel10.TabIndex = 12;
@@ -2631,11 +2626,11 @@
             // caracolEJ1
             // 
             this.caracolEJ1.BackColor = System.Drawing.Color.Transparent;
-            this.caracolEJ1.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
+            this.caracolEJ1.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
             this.caracolEJ1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.caracolEJ1.FlatAppearance.BorderSize = 0;
             this.caracolEJ1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolEJ1.Location = new System.Drawing.Point(1229, 18);
+            this.caracolEJ1.Location = new System.Drawing.Point(1215, 40);
             this.caracolEJ1.Name = "caracolEJ1";
             this.caracolEJ1.Size = new System.Drawing.Size(150, 150);
             this.caracolEJ1.TabIndex = 11;
@@ -2655,27 +2650,32 @@
             // 
             // ej2videoC
             // 
-            this.ej2videoC.Location = new System.Drawing.Point(868, 23);
+            this.ej2videoC.BackColor = System.Drawing.Color.Navy;
+            this.ej2videoC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ej2videoC.Location = new System.Drawing.Point(853, -2);
             this.ej2videoC.Name = "ej2videoC";
             this.ej2videoC.Size = new System.Drawing.Size(320, 55);
             this.ej2videoC.TabIndex = 11;
-            this.ej2videoC.UseVisualStyleBackColor = true;
+            this.ej2videoC.UseVisualStyleBackColor = false;
             this.ej2videoC.Click += new System.EventHandler(this.ej2videoC_Click_1);
             // 
             // ej2videoB
             // 
-            this.ej2videoB.Location = new System.Drawing.Point(465, 23);
+            this.ej2videoB.BackColor = System.Drawing.Color.Navy;
+            this.ej2videoB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ej2videoB.Location = new System.Drawing.Point(466, -2);
             this.ej2videoB.Name = "ej2videoB";
             this.ej2videoB.Size = new System.Drawing.Size(320, 55);
             this.ej2videoB.TabIndex = 10;
-            this.ej2videoB.UseVisualStyleBackColor = true;
+            this.ej2videoB.UseVisualStyleBackColor = false;
             this.ej2videoB.Click += new System.EventHandler(this.ej2videoB_Click_1);
             // 
             // ej2videoA
             // 
-            this.ej2videoA.BackColor = System.Drawing.Color.Transparent;
+            this.ej2videoA.BackColor = System.Drawing.Color.Navy;
+            this.ej2videoA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ej2videoA.FlatAppearance.BorderSize = 0;
-            this.ej2videoA.Location = new System.Drawing.Point(52, 23);
+            this.ej2videoA.Location = new System.Drawing.Point(66, -2);
             this.ej2videoA.Name = "ej2videoA";
             this.ej2videoA.Size = new System.Drawing.Size(320, 55);
             this.ej2videoA.TabIndex = 9;
@@ -2687,11 +2687,20 @@
             this.ej1palabra.AutoSize = true;
             this.ej1palabra.BackColor = System.Drawing.Color.Transparent;
             this.ej1palabra.Font = new System.Drawing.Font("Corbel", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ej1palabra.Location = new System.Drawing.Point(363, 70);
+            this.ej1palabra.Location = new System.Drawing.Point(351, 109);
             this.ej1palabra.Name = "ej1palabra";
             this.ej1palabra.Size = new System.Drawing.Size(448, 36);
             this.ej1palabra.TabIndex = 0;
             this.ej1palabra.Text = "¿Cual seña correspone a la palabra:";
+            // 
+            // ej11
+            // 
+            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
+            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej11.Location = new System.Drawing.Point(4, 579);
+            this.ej11.Name = "ej11";
+            this.ej11.Size = new System.Drawing.Size(1366, 150);
+            this.ej11.TabIndex = 17;
             // 
             // ejercicio2
             // 
@@ -2776,7 +2785,7 @@
             // caracolEJ2
             // 
             this.caracolEJ2.BackColor = System.Drawing.Color.Transparent;
-            this.caracolEJ2.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_3;
+            this.caracolEJ2.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
             this.caracolEJ2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.caracolEJ2.FlatAppearance.BorderSize = 0;
             this.caracolEJ2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -2900,9 +2909,9 @@
             this.caracolExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.caracolExit.FlatAppearance.BorderSize = 0;
             this.caracolExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolExit.Location = new System.Drawing.Point(463, 597);
+            this.caracolExit.Location = new System.Drawing.Point(463, 596);
             this.caracolExit.Name = "caracolExit";
-            this.caracolExit.Size = new System.Drawing.Size(430, 86);
+            this.caracolExit.Size = new System.Drawing.Size(431, 86);
             this.caracolExit.TabIndex = 0;
             this.caracolExit.UseVisualStyleBackColor = false;
             this.caracolExit.Click += new System.EventHandler(this.caracolExit_Click);
@@ -3023,11 +3032,25 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(1243, 39);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 120);
+            this.button1.TabIndex = 9;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_6);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.signIt);
             this.Controls.Add(this.Menubutton);
@@ -3289,6 +3312,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button A;
         private Race race1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

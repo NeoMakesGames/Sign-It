@@ -299,6 +299,9 @@
     <None Include="Resources\Botón1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Caracol boceto 2.png" />
+    <None Include="Resources\logo1.png" />
+    <None Include="Resources\logo azul sin fondo 2 %281%292.png" />
     <None Include="Resources\logo azul sin fondo 2.png" />
     <None Include="Resources\fundasor1.png" />
     <None Include="Resources\Group 96.png" />

@@ -83,7 +83,7 @@ namespace SignIt
 
         private void caracolayuda(string imagen, int page)
         {
-            myimage = new Bitmap(imagePath + imagen + ".PNG");
+            myimage = new Bitmap(imagePath + "Presentacion" + ".PNG");
             caracol.BackgroundImage = myimage;
             signIt.SelectedTab = caracol;
             lastpage = page;
@@ -1050,6 +1050,11 @@ namespace SignIt
         private void sliderHomeDer_Click(object sender, EventArgs e)
         {
             homeSlider += 1;
+        }
+
+        private void button1_Click_6(object sender, EventArgs e)
+        {
+            caracolayuda("CAB", 3);
         }
 
         //Menu
