@@ -1273,11 +1273,11 @@ namespace SignIt
             signIt.SelectedTab = IdS;
             label1CdU.Hide();
             label2IdS.Hide();
+            UserAgeCdU.Text = "Ingresar edad";
+            UserIdS.ForeColor = Color.Silver;
             UserCdU.Text = "Ingresar nombre";
             UserCdU.ForeColor = Color.Silver;
             UserIdS.Text = "Ingresar Usuario";
-            UserIdS.ForeColor = Color.Silver;
-            UserAgeCdU.Text = "Ingresar edad";
             UserAgeCdU.ForeColor = Color.Silver;
         }
 
@@ -1289,7 +1289,6 @@ namespace SignIt
             botonesDiccionario();
             panel1.SendToBack();
             menu = false;
-            lastpage = 1;
         }
         private void LeccionesHome_Click_1(object sender, EventArgs e)
         {
@@ -1297,7 +1296,6 @@ namespace SignIt
             botonesLecciones();
             panel1.SendToBack();
             menu = false;
-            lastpage = 2;
         }
         private void sliderHomeIz_Click(object sender, EventArgs e)
         {
@@ -2237,7 +2235,7 @@ namespace SignIt
         }
         private void UserIdS_TextChanged(object sender, EventArgs e)
         {
-
+            UserIdS.ForeColor = Color.Black;
         }
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
