@@ -171,7 +171,6 @@
             this.questo = new System.Windows.Forms.Button();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Tipgrafia = new System.Windows.Forms.ComboBox();
@@ -196,7 +195,6 @@
             this.contEnseñanza = new System.Windows.Forms.Button();
             this.ejercicio1 = new System.Windows.Forms.TabPage();
             this.caracolEJ1 = new System.Windows.Forms.Button();
-            this.ej01 = new SignIt.Ej0();
             this.exitEj = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -212,10 +210,7 @@
             this.ej2videoB = new System.Windows.Forms.Button();
             this.ej2videoA = new System.Windows.Forms.Button();
             this.ej1palabra = new System.Windows.Forms.Label();
-            this.ej11 = new SignIt.Ej1();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
-            this.ej12 = new SignIt.Ej1();
-            this.ej02 = new SignIt.Ej0();
             this.exitEj2 = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
@@ -245,6 +240,11 @@
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.label32 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
+            this.ej01 = new SignIt.Ej0();
+            this.ej11 = new SignIt.Ej1();
+            this.ej12 = new SignIt.Ej1();
+            this.ej02 = new SignIt.Ej0();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -295,10 +295,10 @@
             this.signIt.Controls.Add(this.ejercicio2);
             this.signIt.Controls.Add(this.ejercicio3);
             this.signIt.Controls.Add(this.caracol);
-            this.signIt.Location = new System.Drawing.Point(-9, 0);
+            this.signIt.Location = new System.Drawing.Point(-10, 0);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
-            this.signIt.Size = new System.Drawing.Size(1450, 901);
+            this.signIt.Size = new System.Drawing.Size(1628, 901);
             this.signIt.TabIndex = 0;
             // 
             // IdS
@@ -314,7 +314,7 @@
             this.IdS.Location = new System.Drawing.Point(4, 22);
             this.IdS.Name = "IdS";
             this.IdS.Padding = new System.Windows.Forms.Padding(3);
-            this.IdS.Size = new System.Drawing.Size(1442, 875);
+            this.IdS.Size = new System.Drawing.Size(1620, 875);
             this.IdS.TabIndex = 0;
             this.IdS.Text = "Inicio de Sesión";
             this.IdS.Click += new System.EventHandler(this.IdS_Click);
@@ -325,7 +325,7 @@
             this.panel2.BackgroundImage = global::SignIt.Properties.Resources.logo_azul_sin_fondo_2__1_2;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.panel2.Location = new System.Drawing.Point(371, 100);
+            this.panel2.Location = new System.Drawing.Point(381, 100);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(600, 220);
             this.panel2.TabIndex = 6;
@@ -337,7 +337,7 @@
             this.label2IdS.BackColor = System.Drawing.Color.Transparent;
             this.label2IdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2IdS.ForeColor = System.Drawing.Color.IndianRed;
-            this.label2IdS.Location = new System.Drawing.Point(555, 461);
+            this.label2IdS.Location = new System.Drawing.Point(565, 461);
             this.label2IdS.Name = "label2IdS";
             this.label2IdS.Size = new System.Drawing.Size(235, 31);
             this.label2IdS.TabIndex = 5;
@@ -352,7 +352,7 @@
             this.ComenzarIds.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ComenzarIds.FlatAppearance.BorderSize = 0;
             this.ComenzarIds.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComenzarIds.Location = new System.Drawing.Point(461, 555);
+            this.ComenzarIds.Location = new System.Drawing.Point(471, 555);
             this.ComenzarIds.Name = "ComenzarIds";
             this.ComenzarIds.Size = new System.Drawing.Size(420, 85);
             this.ComenzarIds.TabIndex = 3;
@@ -370,7 +370,7 @@
             this.linkLabel1IdS.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1IdS.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel1IdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1IdS.Location = new System.Drawing.Point(439, 670);
+            this.linkLabel1IdS.Location = new System.Drawing.Point(449, 670);
             this.linkLabel1IdS.Name = "linkLabel1IdS";
             this.linkLabel1IdS.Size = new System.Drawing.Size(446, 31);
             this.linkLabel1IdS.TabIndex = 1;
@@ -382,7 +382,7 @@
             // 
             this.UserIdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.UserIdS.ForeColor = System.Drawing.Color.Silver;
-            this.UserIdS.Location = new System.Drawing.Point(454, 363);
+            this.UserIdS.Location = new System.Drawing.Point(464, 363);
             this.UserIdS.Name = "UserIdS";
             this.UserIdS.Size = new System.Drawing.Size(435, 53);
             this.UserIdS.TabIndex = 0;
@@ -524,7 +524,7 @@
             this.sliderHomeIz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sliderHomeIz.FlatAppearance.BorderSize = 0;
             this.sliderHomeIz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sliderHomeIz.Location = new System.Drawing.Point(774, 356);
+            this.sliderHomeIz.Location = new System.Drawing.Point(774, 357);
             this.sliderHomeIz.Name = "sliderHomeIz";
             this.sliderHomeIz.Size = new System.Drawing.Size(40, 80);
             this.sliderHomeIz.TabIndex = 4;
@@ -538,7 +538,7 @@
             this.sliderHomeDer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sliderHomeDer.FlatAppearance.BorderSize = 0;
             this.sliderHomeDer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sliderHomeDer.Location = new System.Drawing.Point(1221, 356);
+            this.sliderHomeDer.Location = new System.Drawing.Point(1221, 357);
             this.sliderHomeDer.Name = "sliderHomeDer";
             this.sliderHomeDer.Size = new System.Drawing.Size(40, 80);
             this.sliderHomeDer.TabIndex = 5;
@@ -564,7 +564,7 @@
             this.DiccionarioHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.DiccionarioHome.FlatAppearance.BorderSize = 0;
             this.DiccionarioHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DiccionarioHome.Location = new System.Drawing.Point(254, 429);
+            this.DiccionarioHome.Location = new System.Drawing.Point(254, 444);
             this.DiccionarioHome.Name = "DiccionarioHome";
             this.DiccionarioHome.Size = new System.Drawing.Size(388, 160);
             this.DiccionarioHome.TabIndex = 2;
@@ -578,7 +578,7 @@
             this.LeccionesHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.LeccionesHome.FlatAppearance.BorderSize = 0;
             this.LeccionesHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LeccionesHome.Location = new System.Drawing.Point(254, 190);
+            this.LeccionesHome.Location = new System.Drawing.Point(254, 188);
             this.LeccionesHome.Name = "LeccionesHome";
             this.LeccionesHome.Size = new System.Drawing.Size(388, 160);
             this.LeccionesHome.TabIndex = 1;
@@ -737,7 +737,7 @@
             this.Diccionario.Controls.Add(this.DBeta);
             this.Diccionario.Location = new System.Drawing.Point(4, 22);
             this.Diccionario.Name = "Diccionario";
-            this.Diccionario.Size = new System.Drawing.Size(1442, 875);
+            this.Diccionario.Size = new System.Drawing.Size(1620, 875);
             this.Diccionario.TabIndex = 4;
             this.Diccionario.Text = "Diccionario";
             // 
@@ -752,7 +752,7 @@
             this.diccionarioBeta.Controls.Add(this.dB5);
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
-            this.diccionarioBeta.Location = new System.Drawing.Point(-4, 0);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-4, -41);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
             this.diccionarioBeta.Size = new System.Drawing.Size(1400, 900);
@@ -2176,7 +2176,7 @@
             this.juegos.Controls.Add(this.race1);
             this.juegos.Location = new System.Drawing.Point(4, 22);
             this.juegos.Name = "juegos";
-            this.juegos.Size = new System.Drawing.Size(1442, 875);
+            this.juegos.Size = new System.Drawing.Size(1620, 875);
             this.juegos.TabIndex = 6;
             this.juegos.Text = "juegos";
             // 
@@ -2237,16 +2237,6 @@
             this.RaceGamesButton.TabIndex = 0;
             this.RaceGamesButton.UseVisualStyleBackColor = false;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
-            // 
-            // race1
-            // 
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(1, 3);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1366, 788);
-            this.race1.TabIndex = 5;
-            this.race1.Visible = false;
             // 
             // Ajustes
             // 
@@ -2546,13 +2536,13 @@
             this.ejercicio1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ejercicio1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ejercicio1.Controls.Add(this.caracolEJ1);
-            this.ejercicio1.Controls.Add(this.ej01);
             this.ejercicio1.Controls.Add(this.exitEj);
             this.ejercicio1.Controls.Add(this.panel12);
             this.ejercicio1.Controls.Add(this.panel11);
             this.ejercicio1.Controls.Add(this.panel10);
             this.ejercicio1.Controls.Add(this.panel5);
             this.ejercicio1.Controls.Add(this.ej1palabra);
+            this.ejercicio1.Controls.Add(this.ej01);
             this.ejercicio1.Controls.Add(this.ej11);
             this.ejercicio1.Location = new System.Drawing.Point(4, 22);
             this.ejercicio1.Name = "ejercicio1";
@@ -2573,15 +2563,6 @@
             this.caracolEJ1.TabIndex = 11;
             this.caracolEJ1.UseVisualStyleBackColor = false;
             this.caracolEJ1.Click += new System.EventHandler(this.caracolEJ1_Click);
-            // 
-            // ej01
-            // 
-            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
-            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej01.Location = new System.Drawing.Point(4, 579);
-            this.ej01.Name = "ej01";
-            this.ej01.Size = new System.Drawing.Size(1378, 150);
-            this.ej01.TabIndex = 16;
             // 
             // exitEj
             // 
@@ -2743,15 +2724,6 @@
             this.ej1palabra.TabIndex = 0;
             this.ej1palabra.Text = "¿Cual seña correspone a la palabra:";
             // 
-            // ej11
-            // 
-            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
-            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej11.Location = new System.Drawing.Point(4, 579);
-            this.ej11.Name = "ej11";
-            this.ej11.Size = new System.Drawing.Size(1366, 150);
-            this.ej11.TabIndex = 17;
-            // 
             // ejercicio2
             // 
             this.ejercicio2.BackColor = System.Drawing.Color.LightBlue;
@@ -2770,24 +2742,6 @@
             this.ejercicio2.Size = new System.Drawing.Size(1442, 875);
             this.ejercicio2.TabIndex = 10;
             this.ejercicio2.Text = "ejercicio2";
-            // 
-            // ej12
-            // 
-            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
-            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej12.Location = new System.Drawing.Point(0, 579);
-            this.ej12.Name = "ej12";
-            this.ej12.Size = new System.Drawing.Size(1381, 150);
-            this.ej12.TabIndex = 18;
-            // 
-            // ej02
-            // 
-            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
-            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej02.Location = new System.Drawing.Point(4, 579);
-            this.ej02.Name = "ej02";
-            this.ej02.Size = new System.Drawing.Size(1377, 150);
-            this.ej02.TabIndex = 17;
             // 
             // exitEj2
             // 
@@ -2907,7 +2861,7 @@
             this.caracol.Controls.Add(this.caracolExit);
             this.caracol.Location = new System.Drawing.Point(4, 22);
             this.caracol.Name = "caracol";
-            this.caracol.Size = new System.Drawing.Size(1442, 875);
+            this.caracol.Size = new System.Drawing.Size(1620, 875);
             this.caracol.TabIndex = 12;
             this.caracol.Text = "caracol";
             // 
@@ -3150,6 +3104,52 @@
             this.button4.Size = new System.Drawing.Size(150, 150);
             this.button4.TabIndex = 20;
             this.button4.UseVisualStyleBackColor = false;
+            // 
+            // race1
+            // 
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(1, 3);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1366, 788);
+            this.race1.TabIndex = 5;
+            this.race1.Visible = false;
+            // 
+            // ej01
+            // 
+            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
+            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej01.Location = new System.Drawing.Point(4, 579);
+            this.ej01.Name = "ej01";
+            this.ej01.Size = new System.Drawing.Size(1378, 150);
+            this.ej01.TabIndex = 16;
+            // 
+            // ej11
+            // 
+            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
+            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej11.Location = new System.Drawing.Point(4, 579);
+            this.ej11.Name = "ej11";
+            this.ej11.Size = new System.Drawing.Size(1366, 150);
+            this.ej11.TabIndex = 17;
+            // 
+            // ej12
+            // 
+            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
+            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej12.Location = new System.Drawing.Point(0, 579);
+            this.ej12.Name = "ej12";
+            this.ej12.Size = new System.Drawing.Size(1381, 150);
+            this.ej12.TabIndex = 18;
+            // 
+            // ej02
+            // 
+            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
+            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej02.Location = new System.Drawing.Point(4, 579);
+            this.ej02.Name = "ej02";
+            this.ej02.Size = new System.Drawing.Size(1377, 150);
+            this.ej02.TabIndex = 17;
             // 
             // Form1
             // 
