@@ -42,6 +42,7 @@ namespace SignIt
         bool rta2 = false;
         bool rta3 = false;
         bool turorial;
+                        bool respuesta = false;
 
 
         public Form1()
@@ -368,23 +369,20 @@ namespace SignIt
 
         private async void ej_2 (int idA, int idB, int idC, int xp, bool rtA, bool rtB, bool rtC)
         {
+            ejercicio1VideoA.settings.setMode("loop", true);
+            ejercicio1VideoB.settings.setMode("loop", true);
+            ejercicio1VideoC.settings.setMode("loop", true);
+
             signIt.SelectedTab = ejercicio1;
             ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(idA, path) + ".wmv";
             ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(idB, path) + ".wmv";
             ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(idC, path) + ".wmv";
 
-            MessageBox.Show(ejercicio1VideoA.URL);
+           // MessageBox.Show(ejercicio1VideoA.URL);
             
-            ejercicio1VideoA.Ctlcontrols.play();
-            ejercicio1VideoB.Ctlcontrols.play();
-            ejercicio1VideoC.Ctlcontrols.play();
-            ejercicio1VideoA.settings.setMode("loop", true);
-            ejercicio1VideoB.settings.setMode("loop", true);
-            ejercicio1VideoC.settings.setMode("loop", true);
-
-            ej02.Hide();
-            ej12.Hide();
-            
+           // ejercicio1VideoA.Ctlcontrols.play();
+           // ejercicio1VideoB.Ctlcontrols.play();
+           // ejercicio1VideoC.Ctlcontrols.play();
             
 
             while (!continuar)
@@ -408,6 +406,8 @@ namespace SignIt
                 ganar_0_perder(ej11);
             }
         }
+
+
 
         public async void ensañanza(string tipo)
         {
@@ -466,14 +466,17 @@ namespace SignIt
                 
             foreach(int id in videdos)
             {
+                ej01.Hide();
+                ej11.Hide();
+                ej02.Hide();
+                ej12.Hide();
                 int TipoDeEjercicio = rdn.Next(0, 2);
                 switch (TipoDeEjercicio)
                 {
-
+                    
                     case 0:
-                        int a = rdn.Next(1, 64);
+                        int a = rdn.Next(1, 64); ;
                         int b = rdn.Next(1, 64);
-                        bool abc = false;
                         ej1palabra.Text = "¿Cual seña corresponde a la palabra: ";
                         ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
                         Random rm = new Random();
@@ -481,14 +484,7 @@ namespace SignIt
                         for (int i = 0; i < 1;)
                         {
                             a = rdn.Next(1, 64);
-                            foreach (int video in videos)
-                            {
-                                if (video == a)
-                                {
-                                    abc = true;
-                                }
-                            }
-                            if (abc == false)
+                            if (id != a)
                             {
                                 i++;
                             }
@@ -496,14 +492,7 @@ namespace SignIt
                         for (int i = 0; i < 1;)
                         {
                             b = rdn.Next(1, 64);
-                            foreach (int video in videos)
-                            {
-                                if (video == b)
-                                {
-                                    abc = true;
-                                }
-                            }
-                            if (abc == false)
+                            if (id != b && a != b)
                             {
                                 i++;
                             }
@@ -512,110 +501,148 @@ namespace SignIt
                         {
 
                             case 0:
-                            //   ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                            //   ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
-                            //   ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
-                            //   ejercicio1VideoA.settings.setMode("loop", true);
-                            //   ejercicio1VideoB.settings.setMode("loop", true);
-                            //   ejercicio1VideoC.settings.setMode("loop", true);
-                            //   ejercicio1VideoA.Ctlcontrols.play();
-                            //   ejercicio1VideoB.Ctlcontrols.play();
-                            //   ejercicio1VideoC.Ctlcontrols.play();
-                            //   ej02.Hide();
-                            //   ej12.Hide();
-                            //   signIt.SelectedTab = ejercicio1;
-                            //   while (!continuar)
-                            //   {
-                            //       await Task.Delay(250);
-                            //   }
-                            //
-                            //   continuar = false;
-                            //
-                            //   if (rta1 == true)
-                            //   {
-                            //       ganar_0_perder(ej01);
-                            //       xpGanada += 3;
-                            //   }
-                            //   else if (rta2 == true)
-                            //   {
-                            //       ganar_0_perder(ej11);
-                            //   }
-                            //   else if (rta3 == true)
-                            //   {
-                            //       ganar_0_perder(ej11);
-                            //   }
-                                ej_2(id, b, a, xpGanada, rta1, rta2, rta3);
+                               ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                               ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                               ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                               ejercicio1VideoA.settings.setMode("loop", true);
+                               ejercicio1VideoB.settings.setMode("loop", true);
+                               ejercicio1VideoC.settings.setMode("loop", true);
+                               ejercicio1VideoA.Ctlcontrols.play();
+                               ejercicio1VideoB.Ctlcontrols.play();
+                               ejercicio1VideoC.Ctlcontrols.play();
+                               ej02.Hide();
+                               ej12.Hide();
+                               signIt.SelectedTab = ejercicio1;
+                                while (!continuar)
+                               {
+                                   await Task.Delay(250);
+                               }
+                            
+                               continuar = false;
+                            
+                               if (rta1 == true)
+                               {
+                                   ganar_0_perder(ej01);
+                                   xpGanada += 3;
+                               }
+                               else if (rta2 == true)
+                               {
+                                   ganar_0_perder(ej11);
+                               }
+                               else if (rta3 == true)
+                               {
+                                   ganar_0_perder(ej11);
+                               }
+
+                               ej2videoA.Enabled = false;
+                               ej2videoB.Enabled = false;
+                               ej2videoC.Enabled = false;
+                               
+
+                                while (!continuar)
+                                {
+                                    await Task.Delay(250);
+                                }
+
+                                ej2videoA.Enabled = true;
+                                ej2videoB.Enabled = true;
+                                ej2videoC.Enabled = true;
+
+                                //  ej_2(id, b, a, xpGanada, rta1, rta2, rta3);
                                 break;
 
 
                             case 1:
-                   //             ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                   //             ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
-                   //             ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
-                   //             ejercicio1VideoA.settings.setMode("loop", true);
-                   //             ejercicio1VideoB.settings.setMode("loop", true);
-                   //             ejercicio1VideoC.settings.setMode("loop", true);
-                   //             ejercicio1VideoA.Ctlcontrols.play();
-                   //             ejercicio1VideoB.Ctlcontrols.play();
-                   //             ejercicio1VideoC.Ctlcontrols.play();
-                   //             ej02.Hide();
-                   //             ej12.Hide();
-                   //             signIt.SelectedTab = ejercicio1;
-                   //             while (!continuar)
-                   //             {
-                   //                 await Task.Delay(250);
-                   //             }
-                   //
-                   //             continuar = false;
-                   //
-                   //             if (rta1 == true)
-                   //             {
-                   //                 ganar_0_perder(ej11);
-                   //             }
-                   //             else if (rta2 == true)
-                   //             {
-                   //                 ganar_0_perder(ej01);
-                   //                 xpGanada += 1;
-                   //             }
-                   //             else if (rta3 == true)
-                   //             {
-                   //                 ganar_0_perder(ej11);
-                   //             }
-                                ej_2(a, id, b, xpGanada, rta2, rta1, rta3);
+                               ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                               ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                               ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                               ejercicio1VideoA.settings.setMode("loop", true);
+                               ejercicio1VideoB.settings.setMode("loop", true);
+                               ejercicio1VideoC.settings.setMode("loop", true);
+                               ejercicio1VideoA.Ctlcontrols.play();
+                               ejercicio1VideoB.Ctlcontrols.play();
+                               ejercicio1VideoC.Ctlcontrols.play();
+                               ej02.Hide();
+                               ej12.Hide();
+                               signIt.SelectedTab = ejercicio1;
+                                while (!continuar)
+                               {
+                                   await Task.Delay(250);
+                               }
+                  
+                               continuar = false;
+                  
+                               if (rta1 == true)
+                               {
+                                   ganar_0_perder(ej11);
+                               }
+                               else if (rta2 == true)
+                               {
+                                   ganar_0_perder(ej01);
+                                   xpGanada += 1;
+                               }
+                               else if (rta3 == true)
+                               {
+                                   ganar_0_perder(ej11);
+                               }
+
+                                ej2videoA.Enabled = false;
+                                ej2videoB.Enabled = false;
+                                ej2videoC.Enabled = false;
+
+                                while (!continuar)
+                                {
+                                    await Task.Delay(250);
+                                }
+
+                                ej2videoA.Enabled = true;
+                                ej2videoB.Enabled = true;
+                                ej2videoC.Enabled = true;
+                                //ej_2(a, id, b, xpGanada, rta2, rta1, rta3);
                                 break;
 
                             case 2:
-                                //      ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
-                                //      ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
-                                //      ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                                //      ejercicio1VideoA.settings.setMode("loop", true);
-                                //      ejercicio1VideoB.settings.setMode("loop", true);
-                                //      ejercicio1VideoC.settings.setMode("loop", true);
-                                //      ejercicio1VideoA.Ctlcontrols.play();
-                                //      ejercicio1VideoB.Ctlcontrols.play();
-                                //      ejercicio1VideoC.Ctlcontrols.play();
-                                //      signIt.SelectedTab = ejercicio1;
-                                //      while (!continuar)
-                                //      {
-                                //          await Task.Delay(250);
-                                //      }
-                                //
-                                //      continuar = false;
-                                //
-                                //      if (rta1 == true)
-                                //      {
-                                //          ganar_0_perder(ej11);
-                                //      }
-                                //      else if (rta2 == true)
-                                //      {
-                                //          ganar_0_perder(ej11);
-                                //      }
-                                //      else if (rta3 == true)
-                                //      {
-                                //          ganar_0_perder(ej01);
-                                //          xpGanada += 2;
-                                //      }
-                                ej_2(a, b, id, xpGanada, rta3, rta2, rta1);
+                                ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                                ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                                ejercicio1VideoA.settings.setMode("loop", true);
+                                ejercicio1VideoB.settings.setMode("loop", true);
+                                ejercicio1VideoC.settings.setMode("loop", true);
+                                ejercicio1VideoA.Ctlcontrols.play();
+                                ejercicio1VideoB.Ctlcontrols.play();
+                                ejercicio1VideoC.Ctlcontrols.play();
+                                signIt.SelectedTab = ejercicio1;
+                                while (!continuar)
+                                {
+                                    await Task.Delay(250);
+                                }
+                          
+                                continuar = false;
+                          
+                                if (rta1 == true)
+                                {
+                                    ganar_0_perder(ej11);
+                                }
+                                else if (rta2 == true)
+                                {
+                                    ganar_0_perder(ej11);
+                                }
+                                else if (rta3 == true)
+                                {
+                                    ganar_0_perder(ej01);
+                                    xpGanada += 2;
+                                }
+                                ej2videoA.Enabled = false;
+                                ej2videoB.Enabled = false;
+                                ej2videoC.Enabled = false;
+                                while (!continuar)
+                                {
+                                    await Task.Delay(250);
+                                }
+                                ej2videoA.Enabled = true;
+                                ej2videoB.Enabled = true;
+                                ej2videoC.Enabled = true;
+                                //ej_2(a, b, id, xpGanada, rta3, rta2, rta1);
                                 break;
                         }
                         ejercicio1VideoA.Ctlcontrols.stop();
@@ -752,14 +779,7 @@ namespace SignIt
                             for (int i = 0; i < 1;)
                             {
                                 a = rdn.Next(1, 64);
-                                foreach (int video in videos)
-                                {
-                                    if (video == a)
-                                    {
-                                        abc = true;
-                                    }
-                                }
-                                if (abc == false)
+                                if (id != a)
                                 {
                                     i++;
                                 }
@@ -767,14 +787,7 @@ namespace SignIt
                             for (int i = 0; i < 1;)
                             {
                                 b = rdn.Next(1, 64);
-                                foreach (int video in videos)
-                                {
-                                    if (video == b)
-                                    {
-                                        abc = true;
-                                    }
-                                }
-                                if (abc == false)
+                                if (id != b && a != b)
                                 {
                                     i++;
                                 }
@@ -783,119 +796,131 @@ namespace SignIt
                             {
 
                                 case 0:
-                                    //         ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                                    //         ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
-                                    //         ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
-                                    //         ejercicio1VideoA.settings.setMode("loop", true);
-                                    //         ejercicio1VideoB.settings.setMode("loop", true);
-                                    //         ejercicio1VideoC.settings.setMode("loop", true);
-                                    //         ejercicio1VideoA.Ctlcontrols.play();
-                                    //         ejercicio1VideoB.Ctlcontrols.play();
-                                    //         ejercicio1VideoC.Ctlcontrols.play();
-                                    //         ej02.Hide();
-                                    //         ej12.Hide();
-                                    //         signIt.SelectedTab = ejercicio1;
-                                    //         while (!continuar)
-                                    //         {
-                                    //             await Task.Delay(250);
-                                    //         }
-                                    //
-                                    //         continuar = false;
-                                    //
-                                    //         if (rta1 == true)
-                                    //         {
-                                    //             ganar_0_perder(ej01);
-                                    //             xpGanada += 3;
-                                    //         }
-                                    //         else if (rta2 == true)
-                                    //         {
-                                    //             ganar_0_perder(ej11);
-                                    //             errores--;
-                                    //         }
-                                    //         else if (rta3 == true)
-                                    //         {
-                                    //             ganar_0_perder(ej11);
-                                    //             errores--;
-                                    //         }
+                                    ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                                    ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                    ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                                    ejercicio1VideoA.settings.setMode("loop", true);
+                                    ejercicio1VideoB.settings.setMode("loop", true);
+                                    ejercicio1VideoC.settings.setMode("loop", true);
+                                    ejercicio1VideoA.Ctlcontrols.play();
+                                    ejercicio1VideoB.Ctlcontrols.play();
+                                    ejercicio1VideoC.Ctlcontrols.play();
+                                    ej02.Hide();
+                                    ej12.Hide();
+                                    signIt.SelectedTab = ejercicio1;
+                                    while (!continuar)
+                                    {
+                                        await Task.Delay(250);
+                                    }
+                                  
+                                    continuar = false;
+                                  
+                                    if (rta1 == true)
+                                    {
+                                        ganar_0_perder(ej01);
+                                        xpGanada += 3;
+                                    }
+                                    else if (rta2 == true)
+                                    {
+                                        ganar_0_perder(ej11);
+                                        errores--;
+                                    }
+                                    else if (rta3 == true)
+                                    {
+                                        ganar_0_perder(ej11);
+                                        errores--;
+                                    }
+                                    while (!continuar)
+                                    {
+                                        await Task.Delay(250);
+                                    }
 
-                                    ej_2(id,b,a,xpGanada, rta1, rta2, rta3);
+                                    //ej_2(id,b,a,xpGanada, rta1, rta2, rta3);
                                     break;
 
 
                                 case 1:
-                                //  ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
-                                //  ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                                //  ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
-                                //  ejercicio1VideoA.settings.setMode("loop", true);
-                                //  ejercicio1VideoB.settings.setMode("loop", true);
-                                //  ejercicio1VideoC.settings.setMode("loop", true);
-                                //  ejercicio1VideoA.Ctlcontrols.play();
-                                //  ejercicio1VideoB.Ctlcontrols.play();
-                                //  ejercicio1VideoC.Ctlcontrols.play();
-                                //  ej02.Hide();
-                                //  ej12.Hide();
-                                //  signIt.SelectedTab = ejercicio1;
-                                //
-                                //  while (!continuar)
-                                //  {
-                                //      await Task.Delay(250);
-                                //  }
-                                //
-                                //  continuar = false;
-                                //
-                                //  if (rta1 == true)
-                                //  {
-                                //      ganar_0_perder(ej11);
-                                //      errores--;
-                                //  }
-                                //  else if (rta2 == true)
-                                //  {
-                                //      ganar_0_perder(ej01);
-                                //      xpGanada += 1;
-                                //  }
-                                //  else if (rta3 == true)
-                                //  {
-                                //      ganar_0_perder(ej11);
-                                //      errores--;
-                                //  }
+                                    ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                                    ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                                    ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                    ejercicio1VideoA.settings.setMode("loop", true);
+                                    ejercicio1VideoB.settings.setMode("loop", true);
+                                    ejercicio1VideoC.settings.setMode("loop", true);
+                                    ejercicio1VideoA.Ctlcontrols.play();
+                                    ejercicio1VideoB.Ctlcontrols.play();
+                                    ejercicio1VideoC.Ctlcontrols.play();
+                                    ej02.Hide();
+                                    ej12.Hide();
+                                    signIt.SelectedTab = ejercicio1;
+                                   
+                                    while (!continuar)
+                                    {
+                                        await Task.Delay(250);
+                                    }
+                                   
+                                    continuar = false;
+                                   
+                                    if (rta1 == true)
+                                    {
+                                        ganar_0_perder(ej11);
+                                        errores--;
+                                    }
+                                    else if (rta2 == true)
+                                    {
+                                        ganar_0_perder(ej01);
+                                        xpGanada += 1;
+                                    }
+                                    else if (rta3 == true)
+                                    {
+                                        ganar_0_perder(ej11);
+                                        errores--;
+                                    }
+                                    while (!continuar)
+                                    {
+                                        await Task.Delay(250);
+                                    }
 
-                                    ej_2(a,id,b,xpGanada,rta2, rta1, rta3);
+                                    // ej_2(a,id,b,xpGanada,rta2, rta1, rta3);
                                     break;
 
                                 case 2:
-                          //         ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
-                          //         ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
-                          //         ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                          //         ejercicio1VideoA.settings.setMode("loop", true);
-                          //         ejercicio1VideoB.settings.setMode("loop", true);
-                          //         ejercicio1VideoC.settings.setMode("loop", true);
-                          //         ejercicio1VideoA.Ctlcontrols.play();
-                          //         ejercicio1VideoB.Ctlcontrols.play();
-                          //         ejercicio1VideoC.Ctlcontrols.play();
-                          //         signIt.SelectedTab = ejercicio1;
-                          //         while (!continuar)
-                          //         {
-                          //             await Task.Delay(250);
-                          //         }
-                          //
-                          //         continuar = false;
-                          //
-                          //         if (rta1 == true)
-                          //         {
-                          //             ganar_0_perder(ej11);
-                          //             errores--;
-                          //         }
-                          //         else if (rta2 == true)
-                          //         {
-                          //             ganar_0_perder(ej11);
-                          //             errores--;
-                          //         }
-                          //         else if (rta3 == true)
-                          //         {
-                          //             ganar_0_perder(ej01);
-                          //             xpGanada += 2;
-                          //         }
-                                    ej_2(a,b,id,xpGanada,rta3, rta2, rta1);
+                                   ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
+                                   ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
+                                   ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                                   ejercicio1VideoA.settings.setMode("loop", true);
+                                   ejercicio1VideoB.settings.setMode("loop", true);
+                                   ejercicio1VideoC.settings.setMode("loop", true);
+                                   ejercicio1VideoA.Ctlcontrols.play();
+                                   ejercicio1VideoB.Ctlcontrols.play();
+                                   ejercicio1VideoC.Ctlcontrols.play();
+                                   signIt.SelectedTab = ejercicio1;
+                                   while (!continuar)
+                                   {
+                                       await Task.Delay(250);
+                                   }
+                          
+                                   continuar = false;
+                          
+                                   if (rta1 == true)
+                                   {
+                                       ganar_0_perder(ej11);
+                                       errores--;
+                                   }
+                                   else if (rta2 == true)
+                                   {
+                                       ganar_0_perder(ej11);
+                                       errores--;
+                                   }
+                                   else if (rta3 == true)
+                                   {
+                                       ganar_0_perder(ej01);
+                                       xpGanada += 2;
+                                   }
+                                    while (!continuar)
+                                   {
+                                       await Task.Delay(250);
+                                   }
+                                    //ej_2(a,b,id,xpGanada,rta3, rta2, rta1);
                                     break;
                             }
                             ejercicio1VideoA.Ctlcontrols.stop();
