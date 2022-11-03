@@ -207,6 +207,7 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.ejercicio1VideoA = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.ej1RespuestaCorrecta = new System.Windows.Forms.Label();
             this.ej2videoC = new System.Windows.Forms.Button();
             this.ej2videoB = new System.Windows.Forms.Button();
             this.ej2videoA = new System.Windows.Forms.Button();
@@ -214,6 +215,7 @@
             this.ej01 = new SignIt.Ej0();
             this.ej11 = new SignIt.Ej1();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
+            this.ej2RespuestaCorrecta = new System.Windows.Forms.Label();
             this.ej12 = new SignIt.Ej1();
             this.ej02 = new SignIt.Ej0();
             this.exitEj2 = new System.Windows.Forms.Button();
@@ -245,7 +247,6 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.rtaCorrectaej1 = new System.Windows.Forms.Label();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -2591,6 +2592,7 @@
             // 
             // panel12
             // 
+            this.panel12.BackColor = System.Drawing.Color.Transparent;
             this.panel12.BackgroundImage = global::SignIt.Properties.Resources.Rectangle_38;
             this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel12.Controls.Add(this.panel13);
@@ -2621,6 +2623,7 @@
             // 
             // panel11
             // 
+            this.panel11.BackColor = System.Drawing.Color.Transparent;
             this.panel11.BackgroundImage = global::SignIt.Properties.Resources.Rectangle_38;
             this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel11.Controls.Add(this.panel14);
@@ -2651,6 +2654,7 @@
             // 
             // panel10
             // 
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
             this.panel10.BackgroundImage = global::SignIt.Properties.Resources.Rectangle_38;
             this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel10.Controls.Add(this.panel15);
@@ -2682,14 +2686,25 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.Controls.Add(this.rtaCorrectaej1);
+            this.panel5.Controls.Add(this.ej1RespuestaCorrecta);
             this.panel5.Controls.Add(this.ej2videoC);
             this.panel5.Controls.Add(this.ej2videoB);
             this.panel5.Controls.Add(this.ej2videoA);
             this.panel5.Location = new System.Drawing.Point(48, 488);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1253, 84);
+            this.panel5.Size = new System.Drawing.Size(1173, 84);
             this.panel5.TabIndex = 8;
+            // 
+            // ej1RespuestaCorrecta
+            // 
+            this.ej1RespuestaCorrecta.AutoSize = true;
+            this.ej1RespuestaCorrecta.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ej1RespuestaCorrecta.ForeColor = System.Drawing.Color.Green;
+            this.ej1RespuestaCorrecta.Location = new System.Drawing.Point(71, 62);
+            this.ej1RespuestaCorrecta.Name = "ej1RespuestaCorrecta";
+            this.ej1RespuestaCorrecta.Size = new System.Drawing.Size(274, 19);
+            this.ej1RespuestaCorrecta.TabIndex = 12;
+            this.ej1RespuestaCorrecta.Text = "La respuesta correcta es el video ";
             // 
             // ej2videoC
             // 
@@ -2759,6 +2774,7 @@
             this.ejercicio2.BackColor = System.Drawing.Color.LightBlue;
             this.ejercicio2.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.ejercicio2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ejercicio2.Controls.Add(this.ej2RespuestaCorrecta);
             this.ejercicio2.Controls.Add(this.ej12);
             this.ejercicio2.Controls.Add(this.ej02);
             this.ejercicio2.Controls.Add(this.exitEj2);
@@ -2772,6 +2788,18 @@
             this.ejercicio2.Size = new System.Drawing.Size(1620, 875);
             this.ejercicio2.TabIndex = 10;
             this.ejercicio2.Text = "ejercicio2";
+            // 
+            // ej2RespuestaCorrecta
+            // 
+            this.ej2RespuestaCorrecta.AutoSize = true;
+            this.ej2RespuestaCorrecta.BackColor = System.Drawing.Color.Transparent;
+            this.ej2RespuestaCorrecta.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ej2RespuestaCorrecta.ForeColor = System.Drawing.Color.Green;
+            this.ej2RespuestaCorrecta.Location = new System.Drawing.Point(119, 551);
+            this.ej2RespuestaCorrecta.Name = "ej2RespuestaCorrecta";
+            this.ej2RespuestaCorrecta.Size = new System.Drawing.Size(214, 19);
+            this.ej2RespuestaCorrecta.TabIndex = 19;
+            this.ej2RespuestaCorrecta.Text = "La respuesta correcta es: ";
             // 
             // ej12
             // 
@@ -3153,15 +3181,6 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // rtaCorrectaej1
-            // 
-            this.rtaCorrectaej1.AutoSize = true;
-            this.rtaCorrectaej1.Location = new System.Drawing.Point(64, 71);
-            this.rtaCorrectaej1.Name = "rtaCorrectaej1";
-            this.rtaCorrectaej1.Size = new System.Drawing.Size(41, 13);
-            this.rtaCorrectaej1.TabIndex = 12;
-            this.rtaCorrectaej1.Text = "label33";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3440,7 +3459,8 @@
         private System.Windows.Forms.Panel panel18;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label rtaCorrectaej1;
+        private System.Windows.Forms.Label ej1RespuestaCorrecta;
+        private System.Windows.Forms.Label ej2RespuestaCorrecta;
     }
 }
 
