@@ -43,7 +43,7 @@ namespace SignIt
         bool rta2 = false;
         bool rta3 = false;
         bool turorial;
-        bool rtsIncorrecta;
+        bool rtaIncorrecta;
                         bool respuesta = false;
 
 
@@ -468,6 +468,8 @@ namespace SignIt
                 
             foreach(int id in videdos)
             {
+                ej1RespuestaCorrecta.Text = "La respuesta correcta es el video ";
+                ej2RespuestaCorrecta.Text = "La respuesta correcta es: ";
                 ej1RespuestaCorrecta.Hide();
                 ej2RespuestaCorrecta.Hide();
                 ej01.Hide();
@@ -530,12 +532,14 @@ namespace SignIt
                                    xpGanada += 3;
                                }
                                else if (rta2 == true)
-                               {
-                                   ganar_0_perder(ej11, id, "A");
+                                {
+                                    rtaIncorrecta = true;
+                                    ganar_0_perder(ej11, id, "A");
                                }
                                else if (rta3 == true)
-                               {
-                                   ganar_0_perder(ej11, id, "A");
+                                {
+                                    rtaIncorrecta = true;
+                                    ganar_0_perder(ej11, id, "A");
                                }
 
                                ej2videoA.Enabled = false;
@@ -577,8 +581,9 @@ namespace SignIt
                                continuar = false;
                   
                                if (rta1 == true)
-                               {
-                                   ganar_0_perder(ej11, id, "B");
+                                {
+                                    rtaIncorrecta = true;
+                                    ganar_0_perder(ej11, id, "B");
                                }
                                else if (rta2 == true)
                                {
@@ -586,8 +591,9 @@ namespace SignIt
                                    xpGanada += 1;
                                }
                                else if (rta3 == true)
-                               {
-                                   ganar_0_perder(ej11, id, "B");
+                                {
+                                    rtaIncorrecta = true;
+                                    ganar_0_perder(ej11, id, "B");
                                }
 
                                 ej2videoA.Enabled = false;
@@ -625,10 +631,12 @@ namespace SignIt
                           
                                 if (rta1 == true)
                                 {
+                                    rtaIncorrecta = true;
                                     ganar_0_perder(ej11, id, "C");
                                 }
                                 else if (rta2 == true)
                                 {
+                                    rtaIncorrecta = true;
                                     ganar_0_perder(ej11, id, "C");
                                 }
                                 else if (rta3 == true)
@@ -688,8 +696,9 @@ namespace SignIt
                             int xp_ = ram.Next(0, 2);
                             xpGanada += xp_;
                         }
-                        else if (respuesta != rtaEj2.Text)
+                        else
                         {
+                            rtaIncorrecta = true;
                             ganar_0_perder(ej12, id, "");
                         }
 
@@ -744,6 +753,8 @@ namespace SignIt
 
             foreach (int id in videos)
             {
+                ej1RespuestaCorrecta.Text = "La respuesta correcta es el video ";
+                ej2RespuestaCorrecta.Text = "La respuesta correcta es: ";
                 ej1RespuestaCorrecta.Hide();
                 ej2RespuestaCorrecta.Hide();
                 ej01.Hide();
@@ -828,11 +839,13 @@ namespace SignIt
                                     }
                                     else if (rta2 == true)
                                     {
+                                        rtaIncorrecta = true;
                                         ganar_0_perder(ej11, id, "A");
                                         errores--;
                                     }
                                     else if (rta3 == true)
                                     {
+                                        rtaIncorrecta = true;
                                         ganar_0_perder(ej11, id, "A");
                                         errores--;
                                     }
@@ -868,6 +881,7 @@ namespace SignIt
                                    
                                     if (rta1 == true)
                                     {
+                                        rtaIncorrecta = true;
                                         ganar_0_perder(ej11, id, "B");
                                         errores--;
                                     }
@@ -878,6 +892,7 @@ namespace SignIt
                                     }
                                     else if (rta3 == true)
                                     {
+                                        rtaIncorrecta = true;
                                         ganar_0_perder(ej11, id, "B");
                                         errores--;
                                     }
@@ -908,13 +923,15 @@ namespace SignIt
                                    continuar = false;
                           
                                    if (rta1 == true)
-                                   {
-                                       ganar_0_perder(ej11, id, "C");
+                                    {
+                                        rtaIncorrecta = true;
+                                        ganar_0_perder(ej11, id, "C");
                                        errores--;
                                    }
                                    else if (rta2 == true)
                                    {
-                                       ganar_0_perder(ej11, id, "C");
+                                        rtaIncorrecta = true;
+                                        ganar_0_perder(ej11, id, "C");
                                        errores--;
                                    }
                                    else if (rta3 == true)
@@ -973,8 +990,9 @@ namespace SignIt
                                 int xp_ = ram.Next(0, 2);
                                 xpGanada += xp_;
                             }
-                            else if (respuesta != rtaEj2.Text)
+                            else
                             {
+                                rtaIncorrecta = true;
                                 ganar_0_perder(ej12, id, "");
                                 errores--;
                             }
@@ -1019,13 +1037,14 @@ namespace SignIt
 
             foreach (int id in videosExamen)
             {
+                ej1RespuestaCorrecta.Text = "La respuesta correcta es el video ";
+                ej2RespuestaCorrecta.Text = "La respuesta correcta es: ";
                 ej1RespuestaCorrecta.Hide();
                 ej2RespuestaCorrecta.Hide();
                 ej01.Hide();
                 ej11.Hide();
                 ej02.Hide();
                 ej12.Hide();
-                ej2player.settings.setMode("loop", true);
                 ej2player.settings.setMode("loop", true);
                 ejercicio1VideoA.settings.setMode("loop", true);
                 ejercicio1VideoB.settings.setMode("loop", true);
@@ -1069,11 +1088,13 @@ namespace SignIt
                                     }
                                     else if (rta2 == true)
                                     {
+                                        rtaIncorrecta = true;
                                         ganar_0_perder(ej11, id, "A");
                                         vidas--;
                                     }
                                     else if (rta3 == true)
                                     {
+                                        rtaIncorrecta = true;
                                         ganar_0_perder(ej11, id, "A");
                                         vidas--;
                                     }
@@ -1102,6 +1123,7 @@ namespace SignIt
 
                                     if (rta1 == true)
                                     {
+                                        rtaIncorrecta = true;
                                         ganar_0_perder(ej11, id, "B");
                                         vidas--;
                                     }
@@ -1111,6 +1133,7 @@ namespace SignIt
                                     }
                                     else if (rta3 == true)
                                     {
+                                        rtaIncorrecta = true;
                                         ganar_0_perder(ej11, id, "B");
                                         vidas--;
                                     }
@@ -1136,11 +1159,13 @@ namespace SignIt
 
                                     if (rta1 == true)
                                     {
+                                        rtaIncorrecta = true;
                                         ganar_0_perder(ej11, id, "C");
                                         vidas--;
                                     }
                                     else if (rta2 == true)
                                     {
+                                        rtaIncorrecta = true;
                                         ganar_0_perder(ej11, id, "C");
                                         vidas--;
                                     }
@@ -1187,8 +1212,9 @@ namespace SignIt
                                 ej02.BringToFront();
                                 Random ram = new Random();
                             }
-                            else if (respuesta != rtaEj2.Text)
+                            else
                             {
+                                rtaIncorrecta = true;
                                 ganar_0_perder(ej12, id, "");
                                 vidas--;
                             }
@@ -1223,14 +1249,14 @@ namespace SignIt
 
         private void ganar_0_perder(UserControl uc, int ids, string rta)
         {
-            if (uc == ej11)
+            if (rtaIncorrecta == true)
             {
-                ej1RespuestaCorrecta.Text = ej1RespuestaCorrecta.Text + " " + rta;
+                ej1RespuestaCorrecta.Text = ej1RespuestaCorrecta.Text + " " + rta + ".";
+                ej2RespuestaCorrecta.Text = ej2RespuestaCorrecta.Text + " " + DatabaseFunctions.GetNameOfVideo(ids, path) + ".";
+                rtaIncorrecta = false;
             }
-            else if (uc == ej12)
-            {
-                ej2RespuestaCorrecta.Text = ej2RespuestaCorrecta.Text + " " + DatabaseFunctions.GetNameOfVideo(ids, path);
-            }
+            ej1RespuestaCorrecta.Show();
+            ej2RespuestaCorrecta.Show(); 
             uc.Show();
             uc.BringToFront();
         }   //Define que "cartel" mostrar dependiendo si el usuario hizo bien, o no, la actividad.
