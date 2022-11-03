@@ -415,7 +415,6 @@ namespace SignIt
             ej11.Hide();
             ej02.Hide();
             ej12.Hide();
-            desaparicionDelMenu();
             int z = 0;
             int[] videos = new int[20];
             EnseñanzaPlayer.settings.setMode("loop", true);
@@ -429,6 +428,7 @@ namespace SignIt
                     z++;
                 }
             }
+            desaparicionDelMenu();
             signIt.SelectedTab = Enseñanza;
             foreach (int id in videos)
             {
