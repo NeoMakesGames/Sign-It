@@ -1192,7 +1192,7 @@ namespace SignIt
                             break;
 
                         case 1:
-                            string respuesta = DatabaseFunctions.GetNameOfVideo(id, path);
+                            string respuesta = DatabaseFunctions.GetNameOfVideo(id, path).ToLower();
 
                             ej2player.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                             ej2player.Ctlcontrols.play();
@@ -1206,7 +1206,7 @@ namespace SignIt
 
                             continuar = false;
 
-                            if (respuesta == rtaEj2.Text)
+                            if (respuesta == rtaEj2.Text.ToLower())
                             {
                                 ej02.Show();
                                 ej02.BringToFront();
@@ -1254,9 +1254,9 @@ namespace SignIt
                 ej1RespuestaCorrecta.Text = ej1RespuestaCorrecta.Text + " " + rta + ".";
                 ej2RespuestaCorrecta.Text = ej2RespuestaCorrecta.Text + " " + DatabaseFunctions.GetNameOfVideo(ids, path) + ".";
                 rtaIncorrecta = false;
+                ej1RespuestaCorrecta.Show();
+                ej2RespuestaCorrecta.Show();
             }
-            ej1RespuestaCorrecta.Show();
-            ej2RespuestaCorrecta.Show(); 
             uc.Show();
             uc.BringToFront();
         }   //Define que "cartel" mostrar dependiendo si el usuario hizo bien, o no, la actividad.
