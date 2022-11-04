@@ -1436,7 +1436,7 @@ namespace SignIt
 
         private void button1_Click_6(object sender, EventArgs e)
         {
-            caracolayuda("CAB", 3);
+            caracolayuda("Presentacion", 3);
         }
 
 
