@@ -297,7 +297,7 @@
             this.signIt.Controls.Add(this.ejercicio2);
             this.signIt.Controls.Add(this.ejercicio3);
             this.signIt.Controls.Add(this.caracol);
-            this.signIt.Location = new System.Drawing.Point(-10, 0);
+            this.signIt.Location = new System.Drawing.Point(-10, -39);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1628, 901);
@@ -754,7 +754,7 @@
             this.diccionarioBeta.Controls.Add(this.dB5);
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
-            this.diccionarioBeta.Location = new System.Drawing.Point(-4, -40);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-4, -42);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
             this.diccionarioBeta.Size = new System.Drawing.Size(1400, 900);
@@ -1800,7 +1800,7 @@
             this.labelDBNum9.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum9.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum9.Location = new System.Drawing.Point(812, 696);
+            this.labelDBNum9.Location = new System.Drawing.Point(812, 720);
             this.labelDBNum9.Name = "labelDBNum9";
             this.labelDBNum9.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum9.TabIndex = 22;
@@ -1812,7 +1812,7 @@
             this.labelDBNum10.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum10.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum10.Location = new System.Drawing.Point(1079, 696);
+            this.labelDBNum10.Location = new System.Drawing.Point(1079, 720);
             this.labelDBNum10.Name = "labelDBNum10";
             this.labelDBNum10.Size = new System.Drawing.Size(46, 31);
             this.labelDBNum10.TabIndex = 21;
@@ -1824,7 +1824,7 @@
             this.labelDBNum5.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum5.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum5.Location = new System.Drawing.Point(678, 492);
+            this.labelDBNum5.Location = new System.Drawing.Point(678, 516);
             this.labelDBNum5.Name = "labelDBNum5";
             this.labelDBNum5.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum5.TabIndex = 20;
@@ -1836,7 +1836,7 @@
             this.labelDBNum6.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum6.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum6.Location = new System.Drawing.Point(948, 492);
+            this.labelDBNum6.Location = new System.Drawing.Point(948, 516);
             this.labelDBNum6.Name = "labelDBNum6";
             this.labelDBNum6.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum6.TabIndex = 19;
@@ -1849,7 +1849,7 @@
             this.labelDBNum7.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum7.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum7.Location = new System.Drawing.Point(256, 696);
+            this.labelDBNum7.Location = new System.Drawing.Point(256, 720);
             this.labelDBNum7.Name = "labelDBNum7";
             this.labelDBNum7.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum7.TabIndex = 18;
@@ -1862,7 +1862,7 @@
             this.labelDBNum8.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum8.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum8.Location = new System.Drawing.Point(534, 696);
+            this.labelDBNum8.Location = new System.Drawing.Point(534, 720);
             this.labelDBNum8.Name = "labelDBNum8";
             this.labelDBNum8.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum8.TabIndex = 17;
@@ -1875,7 +1875,7 @@
             this.labelDBNum4.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum4.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum4.Location = new System.Drawing.Point(395, 492);
+            this.labelDBNum4.Location = new System.Drawing.Point(395, 516);
             this.labelDBNum4.Name = "labelDBNum4";
             this.labelDBNum4.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum4.TabIndex = 16;
@@ -1887,7 +1887,7 @@
             this.labelDBNum3.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum3.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum3.Location = new System.Drawing.Point(1087, 291);
+            this.labelDBNum3.Location = new System.Drawing.Point(1087, 315);
             this.labelDBNum3.Name = "labelDBNum3";
             this.labelDBNum3.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum3.TabIndex = 15;
@@ -1900,7 +1900,7 @@
             this.labelDBNum2.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum2.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum2.Location = new System.Drawing.Point(812, 291);
+            this.labelDBNum2.Location = new System.Drawing.Point(812, 315);
             this.labelDBNum2.Name = "labelDBNum2";
             this.labelDBNum2.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum2.TabIndex = 14;
@@ -1913,7 +1913,7 @@
             this.labelDBNum1.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum1.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum1.Location = new System.Drawing.Point(534, 291);
+            this.labelDBNum1.Location = new System.Drawing.Point(534, 315);
             this.labelDBNum1.Name = "labelDBNum1";
             this.labelDBNum1.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum1.TabIndex = 13;
@@ -1926,7 +1926,7 @@
             this.labelDBNum0.BackColor = System.Drawing.Color.Transparent;
             this.labelDBNum0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNum0.ForeColor = System.Drawing.Color.Blue;
-            this.labelDBNum0.Location = new System.Drawing.Point(256, 291);
+            this.labelDBNum0.Location = new System.Drawing.Point(256, 315);
             this.labelDBNum0.Name = "labelDBNum0";
             this.labelDBNum0.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum0.TabIndex = 12;
@@ -1940,7 +1940,7 @@
             this.dBNum0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum0.FlatAppearance.BorderSize = 0;
             this.dBNum0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum0.Location = new System.Drawing.Point(200, 149);
+            this.dBNum0.Location = new System.Drawing.Point(200, 173);
             this.dBNum0.Name = "dBNum0";
             this.dBNum0.Size = new System.Drawing.Size(140, 140);
             this.dBNum0.TabIndex = 11;
@@ -1954,7 +1954,7 @@
             this.NumBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.NumBack.FlatAppearance.BorderSize = 0;
             this.NumBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NumBack.Location = new System.Drawing.Point(42, 42);
+            this.NumBack.Location = new System.Drawing.Point(42, 77);
             this.NumBack.Name = "NumBack";
             this.NumBack.Size = new System.Drawing.Size(96, 60);
             this.NumBack.TabIndex = 10;
@@ -1968,7 +1968,7 @@
             this.dBNum6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.dBNum6.FlatAppearance.BorderSize = 0;
             this.dBNum6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum6.Location = new System.Drawing.Point(892, 349);
+            this.dBNum6.Location = new System.Drawing.Point(892, 373);
             this.dBNum6.Name = "dBNum6";
             this.dBNum6.Size = new System.Drawing.Size(140, 140);
             this.dBNum6.TabIndex = 9;
@@ -1982,7 +1982,7 @@
             this.dBNum1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum1.FlatAppearance.BorderSize = 0;
             this.dBNum1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum1.Location = new System.Drawing.Point(478, 149);
+            this.dBNum1.Location = new System.Drawing.Point(478, 173);
             this.dBNum1.Name = "dBNum1";
             this.dBNum1.Size = new System.Drawing.Size(140, 140);
             this.dBNum1.TabIndex = 8;
@@ -1996,7 +1996,7 @@
             this.dBNum9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum9.FlatAppearance.BorderSize = 0;
             this.dBNum9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum9.Location = new System.Drawing.Point(756, 550);
+            this.dBNum9.Location = new System.Drawing.Point(756, 574);
             this.dBNum9.Name = "dBNum9";
             this.dBNum9.Size = new System.Drawing.Size(140, 140);
             this.dBNum9.TabIndex = 7;
@@ -2011,7 +2011,7 @@
             this.dBNum10.Cursor = System.Windows.Forms.Cursors.Default;
             this.dBNum10.FlatAppearance.BorderSize = 0;
             this.dBNum10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum10.Location = new System.Drawing.Point(1031, 550);
+            this.dBNum10.Location = new System.Drawing.Point(1031, 574);
             this.dBNum10.Name = "dBNum10";
             this.dBNum10.Size = new System.Drawing.Size(140, 140);
             this.dBNum10.TabIndex = 6;
@@ -2025,7 +2025,7 @@
             this.dBNum5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum5.FlatAppearance.BorderSize = 0;
             this.dBNum5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum5.Location = new System.Drawing.Point(622, 349);
+            this.dBNum5.Location = new System.Drawing.Point(622, 373);
             this.dBNum5.Name = "dBNum5";
             this.dBNum5.Size = new System.Drawing.Size(140, 140);
             this.dBNum5.TabIndex = 5;
@@ -2039,7 +2039,7 @@
             this.dBNum4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum4.FlatAppearance.BorderSize = 0;
             this.dBNum4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum4.Location = new System.Drawing.Point(339, 349);
+            this.dBNum4.Location = new System.Drawing.Point(339, 373);
             this.dBNum4.Name = "dBNum4";
             this.dBNum4.Size = new System.Drawing.Size(140, 140);
             this.dBNum4.TabIndex = 4;
@@ -2053,7 +2053,7 @@
             this.dBNum7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum7.FlatAppearance.BorderSize = 0;
             this.dBNum7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum7.Location = new System.Drawing.Point(200, 550);
+            this.dBNum7.Location = new System.Drawing.Point(200, 574);
             this.dBNum7.Name = "dBNum7";
             this.dBNum7.Size = new System.Drawing.Size(140, 140);
             this.dBNum7.TabIndex = 3;
@@ -2067,7 +2067,7 @@
             this.dBNum8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum8.FlatAppearance.BorderSize = 0;
             this.dBNum8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum8.Location = new System.Drawing.Point(478, 550);
+            this.dBNum8.Location = new System.Drawing.Point(478, 574);
             this.dBNum8.Name = "dBNum8";
             this.dBNum8.Size = new System.Drawing.Size(140, 140);
             this.dBNum8.TabIndex = 2;
@@ -2081,7 +2081,7 @@
             this.dBNum3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum3.FlatAppearance.BorderSize = 0;
             this.dBNum3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum3.Location = new System.Drawing.Point(1031, 149);
+            this.dBNum3.Location = new System.Drawing.Point(1031, 173);
             this.dBNum3.Name = "dBNum3";
             this.dBNum3.Size = new System.Drawing.Size(140, 140);
             this.dBNum3.TabIndex = 1;
@@ -2095,7 +2095,7 @@
             this.dBNum2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum2.FlatAppearance.BorderSize = 0;
             this.dBNum2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dBNum2.Location = new System.Drawing.Point(756, 149);
+            this.dBNum2.Location = new System.Drawing.Point(756, 173);
             this.dBNum2.Name = "dBNum2";
             this.dBNum2.Size = new System.Drawing.Size(140, 140);
             this.dBNum2.TabIndex = 0;
@@ -2110,7 +2110,7 @@
             this.DBeta.Controls.Add(this.panel6);
             this.DBeta.Location = new System.Drawing.Point(-4, -22);
             this.DBeta.Name = "DBeta";
-            this.DBeta.Size = new System.Drawing.Size(1800, 800);
+            this.DBeta.Size = new System.Drawing.Size(1380, 800);
             this.DBeta.TabIndex = 9;
             // 
             // panel6
