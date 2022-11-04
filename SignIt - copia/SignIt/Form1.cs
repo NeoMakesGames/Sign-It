@@ -411,25 +411,11 @@ namespace SignIt
 
 
 
-        public async void ensañanza(string tipo)
+        public async void ensañanza(string tipo, int[] videos)
         {
-            ej01.Hide();
-            ej11.Hide();
-            ej02.Hide();
-            ej12.Hide();
             int z = 0;
-            int[] videos = new int[20];
             EnseñanzaPlayer.settings.setMode("loop", true);
 
-            for (int id = 1; id <= 64; id++)
-            {
-                if (tipo == DatabaseFunctions.GetCategoria(id, path))
-                {
-                    int a = id;
-                    videos[z] = id;
-                    z++;
-                }
-            }
             desaparicionDelMenu();
             signIt.SelectedTab = Enseñanza;
             foreach (int id in videos)
@@ -1553,7 +1539,8 @@ namespace SignIt
                 caracolEJ1.Show();
                 caracolEJ2.Show();
                 caracolEnsenanza.Show();
-                ensañanza("Basico");
+                int[] basico = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
+                ensañanza("Basico", basico);
             }
             else if (avance > 1)
             {
@@ -1567,7 +1554,8 @@ namespace SignIt
         {
             if (avance == 2)
             {
-                ensañanza("Comida");
+                int[] comida = { 14, 15, 16, 17, 18, 19, 20, 21 };
+                ensañanza("Comida", comida);
             }
             else if (avance > 2)
             {
@@ -1578,7 +1566,8 @@ namespace SignIt
         {
             if (avance == 3)
             {
-                ensañanza("Colores");
+                int[] colores = { 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
+                ensañanza("Colores", colores);
             }
             else if (avance > 3)
             {
@@ -1589,7 +1578,8 @@ namespace SignIt
         {
             if (avance == 4)
             {
-                ensañanza("Lugares");
+                int[] lugares = { 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64 };
+                ensañanza("Lugares", lugares);
             }
             else if (avance > 4)
             {
@@ -1601,7 +1591,8 @@ namespace SignIt
         {
             if (avance == 5)
             {
-                ensañanza("Pronombres");
+                int[] pronombres = { 33, 34, 35, 36, 37, 38, 39 };
+                ensañanza("Pronombres", pronombres);
             }
             else if (avance > 5)
             {
@@ -1613,7 +1604,8 @@ namespace SignIt
         {
             if (avance == 6)
             {
-                ensañanza("Verbos");
+                int[] verbos = { 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51 };
+                ensañanza("Verbos", verbos);
             }
             else if (avance > 6)
             {
