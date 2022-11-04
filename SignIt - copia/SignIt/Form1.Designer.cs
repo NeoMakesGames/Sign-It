@@ -789,7 +789,7 @@
             this.ayudaDicionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ayudaDicionario.FlatAppearance.BorderSize = 0;
             this.ayudaDicionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ayudaDicionario.Location = new System.Drawing.Point(1228, 37);
+            this.ayudaDicionario.Location = new System.Drawing.Point(1228, 68);
             this.ayudaDicionario.Name = "ayudaDicionario";
             this.ayudaDicionario.Size = new System.Drawing.Size(120, 120);
             this.ayudaDicionario.TabIndex = 8;
@@ -2698,11 +2698,11 @@
             // ej1RespuestaCorrecta
             // 
             this.ej1RespuestaCorrecta.AutoSize = true;
-            this.ej1RespuestaCorrecta.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ej1RespuestaCorrecta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ej1RespuestaCorrecta.ForeColor = System.Drawing.Color.Green;
             this.ej1RespuestaCorrecta.Location = new System.Drawing.Point(71, 62);
             this.ej1RespuestaCorrecta.Name = "ej1RespuestaCorrecta";
-            this.ej1RespuestaCorrecta.Size = new System.Drawing.Size(274, 19);
+            this.ej1RespuestaCorrecta.Size = new System.Drawing.Size(280, 20);
             this.ej1RespuestaCorrecta.TabIndex = 12;
             this.ej1RespuestaCorrecta.Text = "La respuesta correcta es el video ";
             // 
@@ -2793,11 +2793,11 @@
             // 
             this.ej2RespuestaCorrecta.AutoSize = true;
             this.ej2RespuestaCorrecta.BackColor = System.Drawing.Color.Transparent;
-            this.ej2RespuestaCorrecta.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ej2RespuestaCorrecta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ej2RespuestaCorrecta.ForeColor = System.Drawing.Color.Green;
             this.ej2RespuestaCorrecta.Location = new System.Drawing.Point(119, 551);
             this.ej2RespuestaCorrecta.Name = "ej2RespuestaCorrecta";
-            this.ej2RespuestaCorrecta.Size = new System.Drawing.Size(214, 19);
+            this.ej2RespuestaCorrecta.Size = new System.Drawing.Size(219, 20);
             this.ej2RespuestaCorrecta.TabIndex = 19;
             this.ej2RespuestaCorrecta.Text = "La respuesta correcta es: ";
             // 
