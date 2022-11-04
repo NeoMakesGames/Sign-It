@@ -420,22 +420,18 @@ namespace SignIt
             signIt.SelectedTab = Enseñanza;
             foreach (int id in videos)
             {
-                if (id != 0)
+                string palabra = DatabaseFunctions.GetNameOfVideo(id, path);
+                EnseñanzaPlayer.URL = signsPath + palabra + ".wmv";
+                EnseñanzaPlayer.Ctlcontrols.play();
+                await Task.Delay(50);
+                PalabraEns.Text = palabra;
+                while (!continuar)
                 {
-                    EnseñanzaPlayer.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
-                    EnseñanzaPlayer.Ctlcontrols.play();
-                    PalabraEns.Text = DatabaseFunctions.GetNameOfVideo(id, path);
-                    while (!continuar)
-                    {
-                        await Task.Delay(250);
-                    }
-                    continuar = false;
-                    EnseñanzaPlayer.Ctlcontrols.stop();
+                    await Task.Delay(250);
                 }
+                continuar = false;
+                EnseñanzaPlayer.Ctlcontrols.stop();
             }
-            DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
-            avance++;
-
 
             int[] videdos = new int[5];
             int xpGanada = 5;
@@ -704,6 +700,8 @@ namespace SignIt
                 }
             }
 
+            DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
+            avance++;
             aparicionDelMenu();
             botonesLecciones();
             signIt.SelectedTab = LeccionesMenu;
@@ -2163,6 +2161,8 @@ namespace SignIt
                         caracolExit.BackgroundImage = myimage;
                         caracolExit.Show();
                         turorial = false;
+                        continuarTutorial.Hide();
+                        atrasTutorial.Hide();
                         break;
                 }
             }
