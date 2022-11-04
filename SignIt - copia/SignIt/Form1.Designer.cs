@@ -382,7 +382,7 @@
             // 
             // UserIdS
             // 
-            this.UserIdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.UserIdS.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserIdS.ForeColor = System.Drawing.Color.Silver;
             this.UserIdS.Location = new System.Drawing.Point(464, 363);
             this.UserIdS.Name = "UserIdS";
@@ -754,7 +754,7 @@
             this.diccionarioBeta.Controls.Add(this.dB5);
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
-            this.diccionarioBeta.Location = new System.Drawing.Point(-4, -41);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-4, -40);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
             this.diccionarioBeta.Size = new System.Drawing.Size(1400, 900);
@@ -2110,7 +2110,7 @@
             this.DBeta.Controls.Add(this.panel6);
             this.DBeta.Location = new System.Drawing.Point(-4, -22);
             this.DBeta.Name = "DBeta";
-            this.DBeta.Size = new System.Drawing.Size(1400, 800);
+            this.DBeta.Size = new System.Drawing.Size(1800, 800);
             this.DBeta.TabIndex = 9;
             // 
             // panel6
