@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.signIt = new System.Windows.Forms.TabControl();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.IdS = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2IdS = new System.Windows.Forms.Label();
@@ -65,24 +63,45 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.Diccionario = new System.Windows.Forms.TabPage();
             this.diccionarioBeta = new System.Windows.Forms.TabControl();
-            this.dB0 = new System.Windows.Forms.TabPage();
+            this.MenuDB = new System.Windows.Forms.TabPage();
             this.SbarD = new System.Windows.Forms.Panel();
             this.SearchDiccionario = new System.Windows.Forms.TextBox();
             this.ayudaDicionario = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.NumerosDB = new System.Windows.Forms.Button();
             this.verbosDiccionario = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.AbecedarioDB = new System.Windows.Forms.Button();
             this.basicoDiccionario = new System.Windows.Forms.Button();
             this.lugaresDiccionario = new System.Windows.Forms.Button();
             this.coloresDiccionario = new System.Windows.Forms.Button();
             this.comidaDiccionario = new System.Windows.Forms.Button();
             this.pronombresDiccionario = new System.Windows.Forms.Button();
-            this.dB1 = new System.Windows.Forms.TabPage();
-            this.dB2 = new System.Windows.Forms.TabPage();
-            this.dB6 = new System.Windows.Forms.TabPage();
-            this.dB3 = new System.Windows.Forms.TabPage();
-            this.dB4 = new System.Windows.Forms.TabPage();
-            this.dB5 = new System.Windows.Forms.TabPage();
+            this.Basico = new System.Windows.Forms.TabPage();
+            this.Quién = new System.Windows.Forms.Button();
+            this.Gracias = new System.Windows.Forms.Button();
+            this.ExitBasicoDB = new System.Windows.Forms.Button();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.Hola = new System.Windows.Forms.Button();
+            this.Qué = new System.Windows.Forms.Button();
+            this.Como_Estas = new System.Windows.Forms.Button();
+            this.Si = new System.Windows.Forms.Button();
+            this.No = new System.Windows.Forms.Button();
+            this.Como = new System.Windows.Forms.Button();
+            this.Adios = new System.Windows.Forms.Button();
+            this.Dónde = new System.Windows.Forms.Button();
+            this.Por_Qué = new System.Windows.Forms.Button();
+            this.Por_Favor = new System.Windows.Forms.Button();
+            this.Bien = new System.Windows.Forms.Button();
+            this.Comida = new System.Windows.Forms.TabPage();
+            this.Colores = new System.Windows.Forms.TabPage();
+            this.Lugares = new System.Windows.Forms.TabPage();
+            this.Pronombres = new System.Windows.Forms.TabPage();
+            this.Verbos = new System.Windows.Forms.TabPage();
             this.dBAbecedario = new System.Windows.Forms.TabPage();
             this.A = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
@@ -175,12 +194,10 @@
             this.questo = new System.Windows.Forms.Button();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tiposDeLetra = new System.Windows.Forms.ComboBox();
             this.Tipgrafia = new System.Windows.Forms.ComboBox();
             this.caracolsett = new System.Windows.Forms.Button();
-            this.xpB = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.userpfp = new System.Windows.Forms.Panel();
@@ -190,7 +207,9 @@
             this.XpLvlSett = new System.Windows.Forms.Label();
             this.FullScrButtonSett = new System.Windows.Forms.Button();
             this.PantallaSett = new System.Windows.Forms.Label();
+            this.panel20 = new System.Windows.Forms.Panel();
             this.xProgressBar = new System.Windows.Forms.ProgressBar();
+            this.xpB = new System.Windows.Forms.Label();
             this.Enseñanza = new System.Windows.Forms.TabPage();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -216,8 +235,6 @@
             this.ej2videoB = new System.Windows.Forms.Button();
             this.ej2videoA = new System.Windows.Forms.Button();
             this.ej1palabra = new System.Windows.Forms.Label();
-            this.ej11 = new SignIt.Ej1();
-            this.ej01 = new SignIt.Ej0();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
             this.ej2RespuestaCorrecta = new System.Windows.Forms.Label();
             this.exitEj2 = new System.Windows.Forms.Button();
@@ -228,8 +245,6 @@
             this.rtaEj2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ej2cont = new System.Windows.Forms.Button();
-            this.ej12 = new SignIt.Ej1();
-            this.ej02 = new SignIt.Ej0();
             this.ejercicio3 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -242,23 +257,36 @@
             this.continuarTutorial = new System.Windows.Forms.Button();
             this.caracolExit2 = new System.Windows.Forms.Button();
             this.caracolExit = new System.Windows.Forms.Button();
-            this.Menubutton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.MenuExitButton = new System.Windows.Forms.Button();
             this.MenuSettingsButton = new System.Windows.Forms.Button();
             this.MenuGamesButton = new System.Windows.Forms.Button();
             this.MenuDiccionarioButton = new System.Windows.Forms.Button();
             this.MenuLectionsButton = new System.Windows.Forms.Button();
             this.MenuHomeButton = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Menubutton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
+            this.ej11 = new SignIt.Ej1();
+            this.ej01 = new SignIt.Ej0();
+            this.ej12 = new SignIt.Ej1();
+            this.ej02 = new SignIt.Ej0();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
             this.signIt.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
             this.Home.SuspendLayout();
             this.LeccionesMenu.SuspendLayout();
             this.Diccionario.SuspendLayout();
             this.diccionarioBeta.SuspendLayout();
-            this.dB0.SuspendLayout();
+            this.MenuDB.SuspendLayout();
             this.SbarD.SuspendLayout();
+            this.Basico.SuspendLayout();
             this.dBAbecedario.SuspendLayout();
             this.dBNros.SuspendLayout();
             this.DBeta.SuspendLayout();
@@ -267,6 +295,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dbplayer)).BeginInit();
             this.juegos.SuspendLayout();
             this.Ajustes.SuspendLayout();
+            this.panel20.SuspendLayout();
             this.Enseñanza.SuspendLayout();
             this.panel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EnseñanzaPlayer)).BeginInit();
@@ -285,6 +314,7 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.caracol.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // signIt
@@ -306,26 +336,6 @@
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1628, 901);
             this.signIt.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel1.Controls.Add(this.MenuExitButton);
-            this.panel1.Controls.Add(this.MenuSettingsButton);
-            this.panel1.Controls.Add(this.MenuGamesButton);
-            this.panel1.Controls.Add(this.MenuDiccionarioButton);
-            this.panel1.Controls.Add(this.MenuLectionsButton);
-            this.panel1.Controls.Add(this.MenuHomeButton);
-            this.panel1.Location = new System.Drawing.Point(0, -23);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(332, 807);
-            this.panel1.TabIndex = 2;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 200;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // IdS
             // 
@@ -769,43 +779,43 @@
             // 
             // diccionarioBeta
             // 
-            this.diccionarioBeta.Controls.Add(this.dB0);
-            this.diccionarioBeta.Controls.Add(this.dB1);
-            this.diccionarioBeta.Controls.Add(this.dB2);
-            this.diccionarioBeta.Controls.Add(this.dB6);
-            this.diccionarioBeta.Controls.Add(this.dB3);
-            this.diccionarioBeta.Controls.Add(this.dB4);
-            this.diccionarioBeta.Controls.Add(this.dB5);
+            this.diccionarioBeta.Controls.Add(this.MenuDB);
+            this.diccionarioBeta.Controls.Add(this.Basico);
+            this.diccionarioBeta.Controls.Add(this.Comida);
+            this.diccionarioBeta.Controls.Add(this.Colores);
+            this.diccionarioBeta.Controls.Add(this.Lugares);
+            this.diccionarioBeta.Controls.Add(this.Pronombres);
+            this.diccionarioBeta.Controls.Add(this.Verbos);
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
-            this.diccionarioBeta.Location = new System.Drawing.Point(-4, -42);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-4, 0);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
             this.diccionarioBeta.Size = new System.Drawing.Size(1400, 900);
             this.diccionarioBeta.TabIndex = 8;
             // 
-            // dB0
+            // MenuDB
             // 
-            this.dB0.BackColor = System.Drawing.Color.LightBlue;
-            this.dB0.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
-            this.dB0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.dB0.Controls.Add(this.SbarD);
-            this.dB0.Controls.Add(this.ayudaDicionario);
-            this.dB0.Controls.Add(this.button12);
-            this.dB0.Controls.Add(this.verbosDiccionario);
-            this.dB0.Controls.Add(this.button13);
-            this.dB0.Controls.Add(this.basicoDiccionario);
-            this.dB0.Controls.Add(this.lugaresDiccionario);
-            this.dB0.Controls.Add(this.coloresDiccionario);
-            this.dB0.Controls.Add(this.comidaDiccionario);
-            this.dB0.Controls.Add(this.pronombresDiccionario);
-            this.dB0.Location = new System.Drawing.Point(4, 22);
-            this.dB0.Name = "dB0";
-            this.dB0.Padding = new System.Windows.Forms.Padding(3);
-            this.dB0.Size = new System.Drawing.Size(1392, 874);
-            this.dB0.TabIndex = 0;
-            this.dB0.Text = "dB0";
-            this.dB0.Click += new System.EventHandler(this.tabPage1_Click);
+            this.MenuDB.BackColor = System.Drawing.Color.LightBlue;
+            this.MenuDB.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.MenuDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuDB.Controls.Add(this.SbarD);
+            this.MenuDB.Controls.Add(this.ayudaDicionario);
+            this.MenuDB.Controls.Add(this.NumerosDB);
+            this.MenuDB.Controls.Add(this.verbosDiccionario);
+            this.MenuDB.Controls.Add(this.AbecedarioDB);
+            this.MenuDB.Controls.Add(this.basicoDiccionario);
+            this.MenuDB.Controls.Add(this.lugaresDiccionario);
+            this.MenuDB.Controls.Add(this.coloresDiccionario);
+            this.MenuDB.Controls.Add(this.comidaDiccionario);
+            this.MenuDB.Controls.Add(this.pronombresDiccionario);
+            this.MenuDB.Location = new System.Drawing.Point(4, 22);
+            this.MenuDB.Name = "MenuDB";
+            this.MenuDB.Padding = new System.Windows.Forms.Padding(3);
+            this.MenuDB.Size = new System.Drawing.Size(1392, 874);
+            this.MenuDB.TabIndex = 0;
+            this.MenuDB.Text = "Menu";
+            this.MenuDB.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // SbarD
             // 
@@ -848,19 +858,19 @@
             this.ayudaDicionario.UseVisualStyleBackColor = false;
             this.ayudaDicionario.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // button12
+            // NumerosDB
             // 
-            this.button12.BackColor = System.Drawing.Color.Transparent;
-            this.button12.BackgroundImage = global::SignIt.Properties.Resources.Group_58__1_;
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(796, 552);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(220, 220);
-            this.button12.TabIndex = 5;
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.NumerosDB.BackColor = System.Drawing.Color.Transparent;
+            this.NumerosDB.BackgroundImage = global::SignIt.Properties.Resources.Group_58__1_;
+            this.NumerosDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.NumerosDB.FlatAppearance.BorderSize = 0;
+            this.NumerosDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NumerosDB.Location = new System.Drawing.Point(796, 552);
+            this.NumerosDB.Name = "NumerosDB";
+            this.NumerosDB.Size = new System.Drawing.Size(220, 220);
+            this.NumerosDB.TabIndex = 5;
+            this.NumerosDB.UseVisualStyleBackColor = false;
+            this.NumerosDB.Click += new System.EventHandler(this.Numeros_Click);
             // 
             // verbosDiccionario
             // 
@@ -876,19 +886,19 @@
             this.verbosDiccionario.UseVisualStyleBackColor = false;
             this.verbosDiccionario.Click += new System.EventHandler(this.verbosDiccionario_Click);
             // 
-            // button13
+            // AbecedarioDB
             // 
-            this.button13.BackColor = System.Drawing.Color.Transparent;
-            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(351, 552);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(220, 220);
-            this.button13.TabIndex = 4;
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.AbecedarioDB.BackColor = System.Drawing.Color.Transparent;
+            this.AbecedarioDB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AbecedarioDB.BackgroundImage")));
+            this.AbecedarioDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AbecedarioDB.FlatAppearance.BorderSize = 0;
+            this.AbecedarioDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AbecedarioDB.Location = new System.Drawing.Point(351, 552);
+            this.AbecedarioDB.Name = "AbecedarioDB";
+            this.AbecedarioDB.Size = new System.Drawing.Size(220, 220);
+            this.AbecedarioDB.TabIndex = 4;
+            this.AbecedarioDB.UseVisualStyleBackColor = false;
+            this.AbecedarioDB.Click += new System.EventHandler(this.AbecedarioDB_Click);
             // 
             // basicoDiccionario
             // 
@@ -961,60 +971,375 @@
             this.pronombresDiccionario.UseVisualStyleBackColor = false;
             this.pronombresDiccionario.Click += new System.EventHandler(this.pronombresDiccionario_Click);
             // 
-            // dB1
+            // Basico
             // 
-            this.dB1.Location = new System.Drawing.Point(4, 22);
-            this.dB1.Name = "dB1";
-            this.dB1.Padding = new System.Windows.Forms.Padding(3);
-            this.dB1.Size = new System.Drawing.Size(1392, 874);
-            this.dB1.TabIndex = 1;
-            this.dB1.Text = "dB1";
-            this.dB1.UseVisualStyleBackColor = true;
+            this.Basico.BackColor = System.Drawing.Color.LightBlue;
+            this.Basico.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Basico.Controls.Add(this.label42);
+            this.Basico.Controls.Add(this.label43);
+            this.Basico.Controls.Add(this.label44);
+            this.Basico.Controls.Add(this.label45);
+            this.Basico.Controls.Add(this.label41);
+            this.Basico.Controls.Add(this.label40);
+            this.Basico.Controls.Add(this.Quién);
+            this.Basico.Controls.Add(this.Gracias);
+            this.Basico.Controls.Add(this.ExitBasicoDB);
+            this.Basico.Controls.Add(this.label33);
+            this.Basico.Controls.Add(this.label34);
+            this.Basico.Controls.Add(this.label35);
+            this.Basico.Controls.Add(this.label36);
+            this.Basico.Controls.Add(this.label37);
+            this.Basico.Controls.Add(this.label38);
+            this.Basico.Controls.Add(this.label39);
+            this.Basico.Controls.Add(this.Hola);
+            this.Basico.Controls.Add(this.Qué);
+            this.Basico.Controls.Add(this.Como_Estas);
+            this.Basico.Controls.Add(this.Si);
+            this.Basico.Controls.Add(this.No);
+            this.Basico.Controls.Add(this.Como);
+            this.Basico.Controls.Add(this.Adios);
+            this.Basico.Controls.Add(this.Dónde);
+            this.Basico.Controls.Add(this.Por_Qué);
+            this.Basico.Controls.Add(this.Por_Favor);
+            this.Basico.Controls.Add(this.Bien);
+            this.Basico.Location = new System.Drawing.Point(4, 22);
+            this.Basico.Name = "Basico";
+            this.Basico.Padding = new System.Windows.Forms.Padding(3);
+            this.Basico.Size = new System.Drawing.Size(1392, 874);
+            this.Basico.TabIndex = 1;
+            this.Basico.Text = "Basico";
             // 
-            // dB2
+            // Quién
             // 
-            this.dB2.Location = new System.Drawing.Point(4, 22);
-            this.dB2.Name = "dB2";
-            this.dB2.Size = new System.Drawing.Size(1392, 874);
-            this.dB2.TabIndex = 5;
-            this.dB2.Text = "dB2";
-            this.dB2.UseVisualStyleBackColor = true;
+            this.Quién.BackColor = System.Drawing.Color.Transparent;
+            this.Quién.BackgroundImage = global::SignIt.Properties.Resources._6;
+            this.Quién.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Quién.FlatAppearance.BorderSize = 0;
+            this.Quién.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Quién.Location = new System.Drawing.Point(1194, 336);
+            this.Quién.Name = "Quién";
+            this.Quién.Size = new System.Drawing.Size(140, 140);
+            this.Quién.TabIndex = 41;
+            this.Quién.UseVisualStyleBackColor = false;
+            this.Quién.Click += new System.EventHandler(this.Quién_Click);
             // 
-            // dB6
+            // Gracias
             // 
-            this.dB6.Location = new System.Drawing.Point(4, 22);
-            this.dB6.Name = "dB6";
-            this.dB6.Size = new System.Drawing.Size(1392, 874);
-            this.dB6.TabIndex = 4;
-            this.dB6.Text = "dB6";
-            this.dB6.UseVisualStyleBackColor = true;
+            this.Gracias.BackColor = System.Drawing.Color.Transparent;
+            this.Gracias.BackgroundImage = global::SignIt.Properties.Resources._4;
+            this.Gracias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Gracias.FlatAppearance.BorderSize = 0;
+            this.Gracias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Gracias.Location = new System.Drawing.Point(56, 336);
+            this.Gracias.Name = "Gracias";
+            this.Gracias.Size = new System.Drawing.Size(140, 140);
+            this.Gracias.TabIndex = 40;
+            this.Gracias.UseVisualStyleBackColor = false;
+            this.Gracias.Click += new System.EventHandler(this.Gracias_Click);
             // 
-            // dB3
+            // ExitBasicoDB
             // 
-            this.dB3.Location = new System.Drawing.Point(4, 22);
-            this.dB3.Name = "dB3";
-            this.dB3.Size = new System.Drawing.Size(1392, 874);
-            this.dB3.TabIndex = 6;
-            this.dB3.Text = "dB3";
-            this.dB3.UseVisualStyleBackColor = true;
+            this.ExitBasicoDB.BackColor = System.Drawing.Color.Transparent;
+            this.ExitBasicoDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
+            this.ExitBasicoDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExitBasicoDB.FlatAppearance.BorderSize = 0;
+            this.ExitBasicoDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitBasicoDB.Location = new System.Drawing.Point(42, 77);
+            this.ExitBasicoDB.Name = "ExitBasicoDB";
+            this.ExitBasicoDB.Size = new System.Drawing.Size(96, 60);
+            this.ExitBasicoDB.TabIndex = 39;
+            this.ExitBasicoDB.UseVisualStyleBackColor = false;
+            this.ExitBasicoDB.Click += new System.EventHandler(this.ExitBasicoDB_Click);
             // 
-            // dB4
+            // label33
             // 
-            this.dB4.Location = new System.Drawing.Point(4, 22);
-            this.dB4.Name = "dB4";
-            this.dB4.Size = new System.Drawing.Size(1392, 874);
-            this.dB4.TabIndex = 7;
-            this.dB4.Text = "dB4";
-            this.dB4.UseVisualStyleBackColor = true;
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.Blue;
+            this.label33.Location = new System.Drawing.Point(642, 479);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(122, 31);
+            this.label33.TabIndex = 38;
+            this.label33.Text = "¿Como?";
             // 
-            // dB5
+            // label34
             // 
-            this.dB5.Location = new System.Drawing.Point(4, 22);
-            this.dB5.Name = "dB5";
-            this.dB5.Size = new System.Drawing.Size(1392, 874);
-            this.dB5.TabIndex = 8;
-            this.dB5.Text = "dB5";
-            this.dB5.UseVisualStyleBackColor = true;
+            this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.Blue;
+            this.label34.Location = new System.Drawing.Point(923, 479);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(100, 31);
+            this.label34.TabIndex = 37;
+            this.label34.Text = "¿Qué?";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.Transparent;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.Blue;
+            this.label35.Location = new System.Drawing.Point(377, 479);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(87, 31);
+            this.label35.TabIndex = 36;
+            this.label35.Text = "Adios";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.Color.Transparent;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.Blue;
+            this.label36.Location = new System.Drawing.Point(1046, 278);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(133, 31);
+            this.label36.TabIndex = 35;
+            this.label36.Text = "Por favor";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.BackColor = System.Drawing.Color.Transparent;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.Blue;
+            this.label37.Location = new System.Drawing.Point(801, 278);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(72, 31);
+            this.label37.TabIndex = 34;
+            this.label37.Text = "Bien";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.Color.Transparent;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.Blue;
+            this.label38.Location = new System.Drawing.Point(459, 278);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(201, 31);
+            this.label38.TabIndex = 33;
+            this.label38.Text = "¿Como estas?";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.Color.Transparent;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.Blue;
+            this.label39.Location = new System.Drawing.Point(244, 278);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(74, 31);
+            this.label39.TabIndex = 32;
+            this.label39.Text = "Hola";
+            // 
+            // Hola
+            // 
+            this.Hola.BackColor = System.Drawing.Color.Transparent;
+            this.Hola.BackgroundImage = global::SignIt.Properties.Resources._0;
+            this.Hola.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Hola.FlatAppearance.BorderSize = 0;
+            this.Hola.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hola.Location = new System.Drawing.Point(211, 136);
+            this.Hola.Name = "Hola";
+            this.Hola.Size = new System.Drawing.Size(140, 140);
+            this.Hola.TabIndex = 31;
+            this.Hola.UseVisualStyleBackColor = false;
+            this.Hola.Click += new System.EventHandler(this.Hola_Click);
+            // 
+            // Qué
+            // 
+            this.Qué.BackColor = System.Drawing.Color.Transparent;
+            this.Qué.BackgroundImage = global::SignIt.Properties.Resources._6;
+            this.Qué.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Qué.FlatAppearance.BorderSize = 0;
+            this.Qué.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Qué.Location = new System.Drawing.Point(903, 336);
+            this.Qué.Name = "Qué";
+            this.Qué.Size = new System.Drawing.Size(140, 140);
+            this.Qué.TabIndex = 30;
+            this.Qué.UseVisualStyleBackColor = false;
+            this.Qué.Click += new System.EventHandler(this.Qué_Click);
+            // 
+            // Como_Estas
+            // 
+            this.Como_Estas.BackColor = System.Drawing.Color.Transparent;
+            this.Como_Estas.BackgroundImage = global::SignIt.Properties.Resources._1;
+            this.Como_Estas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Como_Estas.FlatAppearance.BorderSize = 0;
+            this.Como_Estas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Como_Estas.Location = new System.Drawing.Point(489, 136);
+            this.Como_Estas.Name = "Como_Estas";
+            this.Como_Estas.Size = new System.Drawing.Size(140, 140);
+            this.Como_Estas.TabIndex = 29;
+            this.Como_Estas.UseVisualStyleBackColor = false;
+            this.Como_Estas.Click += new System.EventHandler(this.Como_Estas_Click);
+            // 
+            // Si
+            // 
+            this.Si.BackColor = System.Drawing.Color.Transparent;
+            this.Si.BackgroundImage = global::SignIt.Properties.Resources._9;
+            this.Si.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Si.FlatAppearance.BorderSize = 0;
+            this.Si.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Si.Location = new System.Drawing.Point(767, 537);
+            this.Si.Name = "Si";
+            this.Si.Size = new System.Drawing.Size(140, 140);
+            this.Si.TabIndex = 28;
+            this.Si.UseVisualStyleBackColor = false;
+            this.Si.Click += new System.EventHandler(this.Si_Click);
+            // 
+            // No
+            // 
+            this.No.BackColor = System.Drawing.Color.Transparent;
+            this.No.BackgroundImage = global::SignIt.Properties.Resources._10;
+            this.No.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.No.Cursor = System.Windows.Forms.Cursors.Default;
+            this.No.FlatAppearance.BorderSize = 0;
+            this.No.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.No.Location = new System.Drawing.Point(1042, 537);
+            this.No.Name = "No";
+            this.No.Size = new System.Drawing.Size(140, 140);
+            this.No.TabIndex = 27;
+            this.No.UseVisualStyleBackColor = false;
+            this.No.Click += new System.EventHandler(this.No_Click);
+            // 
+            // Como
+            // 
+            this.Como.BackColor = System.Drawing.Color.Transparent;
+            this.Como.BackgroundImage = global::SignIt.Properties.Resources._5;
+            this.Como.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Como.FlatAppearance.BorderSize = 0;
+            this.Como.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Como.Location = new System.Drawing.Point(633, 336);
+            this.Como.Name = "Como";
+            this.Como.Size = new System.Drawing.Size(140, 140);
+            this.Como.TabIndex = 26;
+            this.Como.UseVisualStyleBackColor = false;
+            this.Como.Click += new System.EventHandler(this.Como_Click);
+            // 
+            // Adios
+            // 
+            this.Adios.BackColor = System.Drawing.Color.Transparent;
+            this.Adios.BackgroundImage = global::SignIt.Properties.Resources._4;
+            this.Adios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Adios.FlatAppearance.BorderSize = 0;
+            this.Adios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Adios.Location = new System.Drawing.Point(350, 336);
+            this.Adios.Name = "Adios";
+            this.Adios.Size = new System.Drawing.Size(140, 140);
+            this.Adios.TabIndex = 25;
+            this.Adios.UseVisualStyleBackColor = false;
+            this.Adios.Click += new System.EventHandler(this.Adios_Click);
+            // 
+            // Dónde
+            // 
+            this.Dónde.BackColor = System.Drawing.Color.Transparent;
+            this.Dónde.BackgroundImage = global::SignIt.Properties.Resources._7;
+            this.Dónde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Dónde.FlatAppearance.BorderSize = 0;
+            this.Dónde.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Dónde.Location = new System.Drawing.Point(211, 537);
+            this.Dónde.Name = "Dónde";
+            this.Dónde.Size = new System.Drawing.Size(140, 140);
+            this.Dónde.TabIndex = 24;
+            this.Dónde.UseVisualStyleBackColor = false;
+            this.Dónde.Click += new System.EventHandler(this.Dónde_Click);
+            // 
+            // Por_Qué
+            // 
+            this.Por_Qué.BackColor = System.Drawing.Color.Transparent;
+            this.Por_Qué.BackgroundImage = global::SignIt.Properties.Resources._8;
+            this.Por_Qué.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Por_Qué.FlatAppearance.BorderSize = 0;
+            this.Por_Qué.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Por_Qué.Location = new System.Drawing.Point(489, 537);
+            this.Por_Qué.Name = "Por_Qué";
+            this.Por_Qué.Size = new System.Drawing.Size(140, 140);
+            this.Por_Qué.TabIndex = 23;
+            this.Por_Qué.UseVisualStyleBackColor = false;
+            this.Por_Qué.Click += new System.EventHandler(this.Por_Qué_Click);
+            // 
+            // Por_Favor
+            // 
+            this.Por_Favor.BackColor = System.Drawing.Color.Transparent;
+            this.Por_Favor.BackgroundImage = global::SignIt.Properties.Resources._3;
+            this.Por_Favor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Por_Favor.FlatAppearance.BorderSize = 0;
+            this.Por_Favor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Por_Favor.Location = new System.Drawing.Point(1042, 136);
+            this.Por_Favor.Name = "Por_Favor";
+            this.Por_Favor.Size = new System.Drawing.Size(140, 140);
+            this.Por_Favor.TabIndex = 22;
+            this.Por_Favor.UseVisualStyleBackColor = false;
+            this.Por_Favor.Click += new System.EventHandler(this.Por_Favor_Click);
+            // 
+            // Bien
+            // 
+            this.Bien.BackColor = System.Drawing.Color.Transparent;
+            this.Bien.BackgroundImage = global::SignIt.Properties.Resources._2;
+            this.Bien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bien.FlatAppearance.BorderSize = 0;
+            this.Bien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bien.Location = new System.Drawing.Point(767, 136);
+            this.Bien.Name = "Bien";
+            this.Bien.Size = new System.Drawing.Size(140, 140);
+            this.Bien.TabIndex = 21;
+            this.Bien.UseVisualStyleBackColor = false;
+            this.Bien.Click += new System.EventHandler(this.Bien_Click);
+            // 
+            // Comida
+            // 
+            this.Comida.BackColor = System.Drawing.Color.LightBlue;
+            this.Comida.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Comida.Location = new System.Drawing.Point(4, 22);
+            this.Comida.Name = "Comida";
+            this.Comida.Size = new System.Drawing.Size(1392, 874);
+            this.Comida.TabIndex = 5;
+            this.Comida.Text = "Comida";
+            // 
+            // Colores
+            // 
+            this.Colores.BackColor = System.Drawing.Color.LightBlue;
+            this.Colores.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Colores.Location = new System.Drawing.Point(4, 22);
+            this.Colores.Name = "Colores";
+            this.Colores.Size = new System.Drawing.Size(1392, 874);
+            this.Colores.TabIndex = 6;
+            this.Colores.Text = "Colores";
+            // 
+            // Lugares
+            // 
+            this.Lugares.BackColor = System.Drawing.Color.LightBlue;
+            this.Lugares.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Lugares.Location = new System.Drawing.Point(4, 22);
+            this.Lugares.Name = "Lugares";
+            this.Lugares.Size = new System.Drawing.Size(1392, 874);
+            this.Lugares.TabIndex = 7;
+            this.Lugares.Text = "Lugares";
+            // 
+            // Pronombres
+            // 
+            this.Pronombres.BackColor = System.Drawing.Color.LightBlue;
+            this.Pronombres.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Pronombres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pronombres.Location = new System.Drawing.Point(4, 22);
+            this.Pronombres.Name = "Pronombres";
+            this.Pronombres.Size = new System.Drawing.Size(1392, 874);
+            this.Pronombres.TabIndex = 8;
+            this.Pronombres.Text = "Pronombres";
+            // 
+            // Verbos
+            // 
+            this.Verbos.BackColor = System.Drawing.Color.LightBlue;
+            this.Verbos.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Verbos.Location = new System.Drawing.Point(4, 22);
+            this.Verbos.Name = "Verbos";
+            this.Verbos.Size = new System.Drawing.Size(1392, 874);
+            this.Verbos.TabIndex = 4;
+            this.Verbos.Text = "Verbos";
             // 
             // dBAbecedario
             // 
@@ -1804,7 +2129,7 @@
             this.abecedarioExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.abecedarioExit.FlatAppearance.BorderSize = 0;
             this.abecedarioExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.abecedarioExit.Location = new System.Drawing.Point(42, 59);
+            this.abecedarioExit.Location = new System.Drawing.Point(42, 77);
             this.abecedarioExit.Name = "abecedarioExit";
             this.abecedarioExit.Size = new System.Drawing.Size(96, 60);
             this.abecedarioExit.TabIndex = 11;
@@ -2017,7 +2342,7 @@
             // 
             this.dBNum6.BackColor = System.Drawing.Color.Transparent;
             this.dBNum6.BackgroundImage = global::SignIt.Properties.Resources._6;
-            this.dBNum6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.dBNum6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dBNum6.FlatAppearance.BorderSize = 0;
             this.dBNum6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum6.Location = new System.Drawing.Point(892, 373);
@@ -2187,10 +2512,13 @@
             // 
             // palabraDB
             // 
+            this.palabraDB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.palabraDB.AutoSize = true;
             this.palabraDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.palabraDB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.palabraDB.Location = new System.Drawing.Point(197, 44);
+            this.palabraDB.Location = new System.Drawing.Point(198, 44);
             this.palabraDB.Name = "palabraDB";
             this.palabraDB.Size = new System.Drawing.Size(36, 39);
             this.palabraDB.TabIndex = 1;
@@ -2292,25 +2620,14 @@
             this.RaceGamesButton.UseVisualStyleBackColor = false;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
             // 
-            // race1
-            // 
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(1, 3);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1366, 788);
-            this.race1.TabIndex = 5;
-            this.race1.Visible = false;
-            // 
             // Ajustes
             // 
             this.Ajustes.BackColor = System.Drawing.Color.LightBlue;
             this.Ajustes.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Ajustes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Ajustes.Controls.Add(this.comboBox1);
+            this.Ajustes.Controls.Add(this.tiposDeLetra);
             this.Ajustes.Controls.Add(this.Tipgrafia);
             this.Ajustes.Controls.Add(this.caracolsett);
-            this.Ajustes.Controls.Add(this.xpB);
             this.Ajustes.Controls.Add(this.label4);
             this.Ajustes.Controls.Add(this.label3);
             this.Ajustes.Controls.Add(this.userpfp);
@@ -2320,7 +2637,7 @@
             this.Ajustes.Controls.Add(this.XpLvlSett);
             this.Ajustes.Controls.Add(this.FullScrButtonSett);
             this.Ajustes.Controls.Add(this.PantallaSett);
-            this.Ajustes.Controls.Add(this.xProgressBar);
+            this.Ajustes.Controls.Add(this.panel20);
             this.Ajustes.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ajustes.Location = new System.Drawing.Point(4, 22);
             this.Ajustes.Name = "Ajustes";
@@ -2329,31 +2646,33 @@
             this.Ajustes.Text = "Ajustes";
             this.Ajustes.Click += new System.EventHandler(this.Ajustes_Click);
             // 
-            // comboBox1
+            // tiposDeLetra
             // 
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.tiposDeLetra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tiposDeLetra.Font = new System.Drawing.Font("Inter", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tiposDeLetra.FormattingEnabled = true;
+            this.tiposDeLetra.Items.AddRange(new object[] {
             "Chica",
             "Media",
             "Grande"});
-            this.comboBox1.Location = new System.Drawing.Point(706, 582);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 18;
+            this.tiposDeLetra.Location = new System.Drawing.Point(700, 576);
+            this.tiposDeLetra.Name = "tiposDeLetra";
+            this.tiposDeLetra.Size = new System.Drawing.Size(165, 41);
+            this.tiposDeLetra.TabIndex = 18;
+            this.tiposDeLetra.Text = "Inter";
             // 
             // Tipgrafia
             // 
             this.Tipgrafia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tipgrafia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Tipgrafia.Font = new System.Drawing.Font("Inter", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tipgrafia.FormattingEnabled = true;
             this.Tipgrafia.Items.AddRange(new object[] {
             "Inter"});
-            this.Tipgrafia.Location = new System.Drawing.Point(706, 477);
+            this.Tipgrafia.Location = new System.Drawing.Point(700, 469);
             this.Tipgrafia.Name = "Tipgrafia";
-            this.Tipgrafia.Size = new System.Drawing.Size(121, 28);
+            this.Tipgrafia.Size = new System.Drawing.Size(165, 41);
             this.Tipgrafia.TabIndex = 17;
+            this.Tipgrafia.Text = "Mediana";
             this.Tipgrafia.SelectedIndexChanged += new System.EventHandler(this.Tipgrafia_SelectedIndexChanged);
             // 
             // caracolsett
@@ -2371,30 +2690,14 @@
             this.caracolsett.UseVisualStyleBackColor = false;
             this.caracolsett.Click += new System.EventHandler(this.caracolsett_Click);
             // 
-            // xpB
-            // 
-            this.xpB.BackColor = System.Drawing.Color.Transparent;
-            this.xpB.BackgroundImage = global::SignIt.Properties.Resources.Ellipse_4;
-            this.xpB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.xpB.FlatAppearance.BorderSize = 0;
-            this.xpB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.xpB.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.xpB.Location = new System.Drawing.Point(706, 249);
-            this.xpB.Name = "xpB";
-            this.xpB.Size = new System.Drawing.Size(75, 75);
-            this.xpB.TabIndex = 14;
-            this.xpB.Text = "1";
-            this.xpB.UseVisualStyleBackColor = false;
-            this.xpB.Click += new System.EventHandler(this.xpB_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(302, 674);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(375, 46);
+            this.label4.Size = new System.Drawing.Size(390, 49);
             this.label4.TabIndex = 13;
             this.label4.Text = "Pantalla Completa:";
             // 
@@ -2402,10 +2705,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(557, 568);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 46);
+            this.label3.Size = new System.Drawing.Size(135, 49);
             this.label3.TabIndex = 12;
             this.label3.Text = "Letra:";
             this.label3.Click += new System.EventHandler(this.label3_Click_2);
@@ -2449,10 +2752,10 @@
             // 
             this.progresoSett.AutoSize = true;
             this.progresoSett.BackColor = System.Drawing.Color.Transparent;
-            this.progresoSett.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.progresoSett.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.progresoSett.Location = new System.Drawing.Point(373, 359);
             this.progresoSett.Name = "progresoSett";
-            this.progresoSett.Size = new System.Drawing.Size(309, 46);
+            this.progresoSett.Size = new System.Drawing.Size(319, 49);
             this.progresoSett.TabIndex = 6;
             this.progresoSett.Text = "Progreso Total:";
             this.progresoSett.Click += new System.EventHandler(this.progresoSett_Click);
@@ -2461,10 +2764,10 @@
             // 
             this.XpLvlSett.AutoSize = true;
             this.XpLvlSett.BackColor = System.Drawing.Color.Transparent;
-            this.XpLvlSett.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XpLvlSett.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XpLvlSett.Location = new System.Drawing.Point(264, 260);
             this.XpLvlSett.Name = "XpLvlSett";
-            this.XpLvlSett.Size = new System.Drawing.Size(411, 46);
+            this.XpLvlSett.Size = new System.Drawing.Size(428, 49);
             this.XpLvlSett.TabIndex = 5;
             this.XpLvlSett.Text = "Nivel de experiencia:";
             this.XpLvlSett.Click += new System.EventHandler(this.XpLvlSett_Click);
@@ -2487,21 +2790,45 @@
             // 
             this.PantallaSett.AutoSize = true;
             this.PantallaSett.BackColor = System.Drawing.Color.Transparent;
-            this.PantallaSett.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PantallaSett.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PantallaSett.Location = new System.Drawing.Point(458, 462);
             this.PantallaSett.Name = "PantallaSett";
-            this.PantallaSett.Size = new System.Drawing.Size(219, 46);
+            this.PantallaSett.Size = new System.Drawing.Size(234, 49);
             this.PantallaSett.TabIndex = 3;
             this.PantallaSett.Text = "Tipografía:";
             this.PantallaSett.Click += new System.EventHandler(this.PantallaSett_Click);
             // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.Transparent;
+            this.panel20.BackgroundImage = global::SignIt.Properties.Resources.Group_116;
+            this.panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel20.Controls.Add(this.xProgressBar);
+            this.panel20.Controls.Add(this.xpB);
+            this.panel20.Location = new System.Drawing.Point(711, 245);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(538, 85);
+            this.panel20.TabIndex = 19;
+            // 
             // xProgressBar
             // 
-            this.xProgressBar.Location = new System.Drawing.Point(778, 272);
+            this.xProgressBar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.xProgressBar.ForeColor = System.Drawing.Color.Lime;
+            this.xProgressBar.Location = new System.Drawing.Point(84, 26);
             this.xProgressBar.Name = "xProgressBar";
-            this.xProgressBar.Size = new System.Drawing.Size(174, 30);
+            this.xProgressBar.Size = new System.Drawing.Size(439, 33);
             this.xProgressBar.TabIndex = 15;
             this.xProgressBar.Click += new System.EventHandler(this.xProgressBar_Click);
+            // 
+            // xpB
+            // 
+            this.xpB.AutoSize = true;
+            this.xpB.BackColor = System.Drawing.Color.Transparent;
+            this.xpB.Location = new System.Drawing.Point(22, 16);
+            this.xpB.Name = "xpB";
+            this.xpB.Size = new System.Drawing.Size(42, 46);
+            this.xpB.TabIndex = 20;
+            this.xpB.Text = "x";
             // 
             // Enseñanza
             // 
@@ -2804,24 +3131,6 @@
             this.ej1palabra.TabIndex = 0;
             this.ej1palabra.Text = "¿Cual seña correspone a la palabra:";
             // 
-            // ej11
-            // 
-            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
-            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej11.Location = new System.Drawing.Point(-5, 579);
-            this.ej11.Name = "ej11";
-            this.ej11.Size = new System.Drawing.Size(1380, 150);
-            this.ej11.TabIndex = 17;
-            // 
-            // ej01
-            // 
-            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
-            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej01.Location = new System.Drawing.Point(5, 579);
-            this.ej01.Name = "ej01";
-            this.ej01.Size = new System.Drawing.Size(1378, 150);
-            this.ej01.TabIndex = 16;
-            // 
             // ejercicio2
             // 
             this.ejercicio2.BackColor = System.Drawing.Color.LightBlue;
@@ -2833,9 +3142,9 @@
             this.ejercicio2.Controls.Add(this.caracolEJ2);
             this.ejercicio2.Controls.Add(this.rtaEj2);
             this.ejercicio2.Controls.Add(this.label1);
+            this.ejercicio2.Controls.Add(this.ej2cont);
             this.ejercicio2.Controls.Add(this.ej12);
             this.ejercicio2.Controls.Add(this.ej02);
-            this.ejercicio2.Controls.Add(this.ej2cont);
             this.ejercicio2.Location = new System.Drawing.Point(4, 22);
             this.ejercicio2.Name = "ejercicio2";
             this.ejercicio2.Size = new System.Drawing.Size(1620, 875);
@@ -2947,24 +3256,6 @@
             this.ej2cont.TabIndex = 6;
             this.ej2cont.UseVisualStyleBackColor = false;
             this.ej2cont.Click += new System.EventHandler(this.ej2cont_Click);
-            // 
-            // ej12
-            // 
-            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
-            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej12.Location = new System.Drawing.Point(0, 579);
-            this.ej12.Name = "ej12";
-            this.ej12.Size = new System.Drawing.Size(1381, 150);
-            this.ej12.TabIndex = 18;
-            // 
-            // ej02
-            // 
-            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
-            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej02.Location = new System.Drawing.Point(4, 579);
-            this.ej02.Name = "ej02";
-            this.ej02.Size = new System.Drawing.Size(1377, 150);
-            this.ej02.TabIndex = 17;
             // 
             // ejercicio3
             // 
@@ -3120,17 +3411,19 @@
             this.caracolExit.UseVisualStyleBackColor = false;
             this.caracolExit.Click += new System.EventHandler(this.caracolExit_Click);
             // 
-            // Menubutton
+            // panel1
             // 
-            this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
-            this.Menubutton.FlatAppearance.BorderSize = 0;
-            this.Menubutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menubutton.Location = new System.Drawing.Point(0, 0);
-            this.Menubutton.Name = "Menubutton";
-            this.Menubutton.Size = new System.Drawing.Size(100, 75);
-            this.Menubutton.TabIndex = 3;
-            this.Menubutton.UseVisualStyleBackColor = true;
-            this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel1.Controls.Add(this.MenuExitButton);
+            this.panel1.Controls.Add(this.MenuSettingsButton);
+            this.panel1.Controls.Add(this.MenuGamesButton);
+            this.panel1.Controls.Add(this.MenuDiccionarioButton);
+            this.panel1.Controls.Add(this.MenuLectionsButton);
+            this.panel1.Controls.Add(this.MenuHomeButton);
+            this.panel1.Location = new System.Drawing.Point(0, -23);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(332, 807);
+            this.panel1.TabIndex = 2;
             // 
             // MenuExitButton
             // 
@@ -3216,6 +3509,142 @@
             this.MenuHomeButton.UseVisualStyleBackColor = false;
             this.MenuHomeButton.Click += new System.EventHandler(this.MenuHomeButton_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Menubutton
+            // 
+            this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
+            this.Menubutton.FlatAppearance.BorderSize = 0;
+            this.Menubutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Menubutton.Location = new System.Drawing.Point(0, 0);
+            this.Menubutton.Name = "Menubutton";
+            this.Menubutton.Size = new System.Drawing.Size(100, 75);
+            this.Menubutton.TabIndex = 3;
+            this.Menubutton.UseVisualStyleBackColor = true;
+            this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
+            // 
+            // race1
+            // 
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(1, 3);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1366, 788);
+            this.race1.TabIndex = 5;
+            this.race1.Visible = false;
+            // 
+            // ej11
+            // 
+            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
+            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej11.Location = new System.Drawing.Point(-5, 579);
+            this.ej11.Name = "ej11";
+            this.ej11.Size = new System.Drawing.Size(1380, 150);
+            this.ej11.TabIndex = 17;
+            // 
+            // ej01
+            // 
+            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
+            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej01.Location = new System.Drawing.Point(5, 579);
+            this.ej01.Name = "ej01";
+            this.ej01.Size = new System.Drawing.Size(1378, 150);
+            this.ej01.TabIndex = 16;
+            // 
+            // ej12
+            // 
+            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
+            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej12.Location = new System.Drawing.Point(0, 579);
+            this.ej12.Name = "ej12";
+            this.ej12.Size = new System.Drawing.Size(1381, 150);
+            this.ej12.TabIndex = 18;
+            // 
+            // ej02
+            // 
+            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
+            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej02.Location = new System.Drawing.Point(4, 579);
+            this.ej02.Name = "ej02";
+            this.ej02.Size = new System.Drawing.Size(1377, 150);
+            this.ej02.TabIndex = 17;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.Transparent;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.Blue;
+            this.label40.Location = new System.Drawing.Point(69, 479);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(115, 31);
+            this.label40.TabIndex = 42;
+            this.label40.Text = "Gracias";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.BackColor = System.Drawing.Color.Transparent;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.Blue;
+            this.label41.Location = new System.Drawing.Point(1203, 479);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(123, 31);
+            this.label41.TabIndex = 43;
+            this.label41.Text = "¿Quién?";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.BackColor = System.Drawing.Color.Transparent;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.Blue;
+            this.label42.Location = new System.Drawing.Point(1087, 678);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(51, 31);
+            this.label42.TabIndex = 47;
+            this.label42.Text = "No";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.BackColor = System.Drawing.Color.Transparent;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.Blue;
+            this.label43.Location = new System.Drawing.Point(486, 678);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(147, 31);
+            this.label43.TabIndex = 46;
+            this.label43.Text = "¿Por qué?";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.BackColor = System.Drawing.Color.Transparent;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.Blue;
+            this.label44.Location = new System.Drawing.Point(817, 678);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(40, 31);
+            this.label44.TabIndex = 45;
+            this.label44.Text = "Si";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.BackColor = System.Drawing.Color.Transparent;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.Blue;
+            this.label45.Location = new System.Drawing.Point(232, 678);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(99, 31);
+            this.label45.TabIndex = 44;
+            this.label45.Text = "Dónde";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3229,7 +3658,6 @@
             this.Text = "SignIt!";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.signIt.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.IdS.ResumeLayout(false);
             this.IdS.PerformLayout();
             this.CdU.ResumeLayout(false);
@@ -3238,9 +3666,11 @@
             this.LeccionesMenu.ResumeLayout(false);
             this.Diccionario.ResumeLayout(false);
             this.diccionarioBeta.ResumeLayout(false);
-            this.dB0.ResumeLayout(false);
+            this.MenuDB.ResumeLayout(false);
             this.SbarD.ResumeLayout(false);
             this.SbarD.PerformLayout();
+            this.Basico.ResumeLayout(false);
+            this.Basico.PerformLayout();
             this.dBAbecedario.ResumeLayout(false);
             this.dBAbecedario.PerformLayout();
             this.dBNros.ResumeLayout(false);
@@ -3253,6 +3683,8 @@
             this.juegos.ResumeLayout(false);
             this.Ajustes.ResumeLayout(false);
             this.Ajustes.PerformLayout();
+            this.panel20.ResumeLayout(false);
+            this.panel20.PerformLayout();
             this.Enseñanza.ResumeLayout(false);
             this.Enseñanza.PerformLayout();
             this.panel19.ResumeLayout(false);
@@ -3275,6 +3707,7 @@
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.caracol.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3324,28 +3757,28 @@
         private System.Windows.Forms.Button comidaLecc;
         private System.Windows.Forms.Button basicoLecc;
         private System.Windows.Forms.Button lugaresLecc;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button AbecedarioDB;
         private System.Windows.Forms.Button pronombresDiccionario;
         private System.Windows.Forms.Button lugaresDiccionario;
         private System.Windows.Forms.Button comidaDiccionario;
         private System.Windows.Forms.Button basicoDiccionario;
         private System.Windows.Forms.Button verbosDiccionario;
         private System.Windows.Forms.Button coloresDiccionario;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button NumerosDB;
         private System.Windows.Forms.Label progresoSett2;
         private System.Windows.Forms.Label progresoSett;
         private System.Windows.Forms.Label XpLvlSett;
         private System.Windows.Forms.Label userNameSett2;
         private System.Windows.Forms.TabControl diccionarioBeta;
-        private System.Windows.Forms.TabPage dB1;
-        private System.Windows.Forms.TabPage dB0;
+        private System.Windows.Forms.TabPage Basico;
+        private System.Windows.Forms.TabPage MenuDB;
         private System.Windows.Forms.TabPage dBNros;
         private System.Windows.Forms.TabPage dBAbecedario;
-        private System.Windows.Forms.TabPage dB2;
-        private System.Windows.Forms.TabPage dB6;
-        private System.Windows.Forms.TabPage dB3;
-        private System.Windows.Forms.TabPage dB4;
-        private System.Windows.Forms.TabPage dB5;
+        private System.Windows.Forms.TabPage Comida;
+        private System.Windows.Forms.TabPage Verbos;
+        private System.Windows.Forms.TabPage Colores;
+        private System.Windows.Forms.TabPage Lugares;
+        private System.Windows.Forms.TabPage Pronombres;
         private System.Windows.Forms.Button dBNum6;
         private System.Windows.Forms.Button dBNum1;
         private System.Windows.Forms.Button dBNum9;
@@ -3399,10 +3832,9 @@
         private System.Windows.Forms.Panel userpfp;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button xpB;
         private System.Windows.Forms.ProgressBar xProgressBar;
         private System.Windows.Forms.Button caracolsett;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox tiposDeLetra;
         private System.Windows.Forms.ComboBox Tipgrafia;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button questo;
@@ -3500,6 +3932,35 @@
         private System.Windows.Forms.Panel SbarD;
         private System.Windows.Forms.TextBox SearchDiccionario;
         private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.Label xpB;
+        private System.Windows.Forms.Button Quién;
+        private System.Windows.Forms.Button Gracias;
+        private System.Windows.Forms.Button ExitBasicoDB;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Button Hola;
+        private System.Windows.Forms.Button Qué;
+        private System.Windows.Forms.Button Como_Estas;
+        private System.Windows.Forms.Button Si;
+        private System.Windows.Forms.Button No;
+        private System.Windows.Forms.Button Como;
+        private System.Windows.Forms.Button Adios;
+        private System.Windows.Forms.Button Dónde;
+        private System.Windows.Forms.Button Por_Qué;
+        private System.Windows.Forms.Button Por_Favor;
+        private System.Windows.Forms.Button Bien;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
     }
 }
 

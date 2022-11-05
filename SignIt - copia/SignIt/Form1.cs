@@ -63,7 +63,7 @@ namespace SignIt
 
         private void byeDB()
         {
-            diccionarioBeta.SelectedTab = dB0;
+            diccionarioBeta.SelectedTab = MenuDB;
             DBeta.SendToBack();
             dbplayer.Ctlcontrols.stop();
             aparicionDelMenu();
@@ -221,7 +221,7 @@ namespace SignIt
 
         private void botonesDiccionario()
         {
-            diccionarioBeta.SelectedTab = dB0;
+            diccionarioBeta.SelectedTab = MenuDB;
             Image notmyimage;
             if (avance < 2)
             {
@@ -1749,7 +1749,7 @@ namespace SignIt
         {
             if (avance > 1)
             {
-                signIt.SelectedTab = dB1;
+                diccionarioBetas(Basico, "basicoDB");
             }
         }
 
@@ -1757,7 +1757,7 @@ namespace SignIt
         {
             if (avance > 2)
             {
-                signIt.SelectedTab = dB2;
+                signIt.SelectedTab = Comida;
             }
         }
 
@@ -1765,7 +1765,7 @@ namespace SignIt
         {
             if (avance > 3)
             {
-                signIt.SelectedTab = dB3;
+                signIt.SelectedTab = Colores;
             }
         }
 
@@ -1773,7 +1773,7 @@ namespace SignIt
         {
             if (avance > 4)
             {
-                signIt.SelectedTab = dB4;
+                signIt.SelectedTab = Lugares;
             }
         }
 
@@ -1781,7 +1781,7 @@ namespace SignIt
         {
             if (avance > 5)
             {
-                signIt.SelectedTab = dB5;
+                signIt.SelectedTab = Pronombres;
             }
         }
 
@@ -1789,16 +1789,16 @@ namespace SignIt
         {
             if (avance > 6)
             {
-                signIt.SelectedTab = dB6;
+                signIt.SelectedTab = Verbos;
             }
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void AbecedarioDB_Click(object sender, EventArgs e)
         {
             diccionarioBetas(dBAbecedario, "abecedario");
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void Numeros_Click(object sender, EventArgs e)
         {
             diccionarioBetas(dBNros, "fndb");
         }
@@ -1822,21 +1822,21 @@ namespace SignIt
 
         private void SearchDiccionario_KeyDown(object sender, KeyEventArgs e)
         {
-            string palabraDB = SearchDiccionario.Text.ToUpper();
+            string palabraDB = SearchDiccionario.Text;
             if (e.KeyData == Keys.Enter)
             {
-                if (DatabaseFunctions.checkIfNameExists(palabraDB, path))
+                if (DatabaseFunctions.checkIfVideoExists(palabraDB, path))
                 {
-                    switch (DatabaseFunctions.GetCategoria(DatabaseFunctions.getIDFromName(palabraDB, path), path))
+                    switch (DatabaseFunctions.GetCategoria(DatabaseFunctions.getVIDFromName(palabraDB, path), path))
                     {
-                        case "abecedario":
+                        case "Abecedario":
                             diccionarioBetas(dBAbecedario, "abecedario");
                             break;
-                        case "numeros":
+                        case "Numeros":
                             diccionarioBetas(dBNros, "numeros");
                             break;
-                        case "basico":
-                            diccionarioBetas(dBNros, "numeros");
+                        case "Basico":
+                            diccionarioBetas(dBNros, "fndb");
                             break;
                     }
                     diccionarioVideos(palabraDB);
@@ -1859,8 +1859,9 @@ namespace SignIt
         }
 
 
-        //Diccionario_Números
 
+
+        //Diccionario_Números
 
 
 
@@ -1928,9 +1929,7 @@ namespace SignIt
 
 
 
-
-//Diccionario_Abecedario
-
+        //Diccionario_Abecedario
 
 
 
@@ -2078,8 +2077,86 @@ namespace SignIt
 
 
 
+        //Diccionario_Basico
 
-//Juegos
+
+
+
+        private void ExitBasicoDB_Click(object sender, EventArgs e)
+        {
+            byeDB();
+        }
+
+        private void No_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("No");
+        }
+
+        private void Como_Estas_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("¿Como Estas?");
+        }
+
+        private void Bien_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Bien");
+        }
+
+        private void Por_Favor_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Por favor");
+        }
+
+        private void Quién_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Quién");
+        }
+
+        private void Qué_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("¿Qué?");
+        }
+
+        private void Como_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("¿Como?");
+        }
+
+        private void Adios_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Adios");
+        }
+
+        private void Gracias_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Gracias");
+        }
+
+        private void Dónde_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Dónde");
+        }
+
+        private void Hola_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Hola");
+        }
+
+        private void Si_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Si");
+        }
+
+        private void Por_Qué_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("No");
+        }
+
+
+
+
+
+        //Juegos
 
 
 
