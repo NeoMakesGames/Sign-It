@@ -1831,17 +1831,21 @@ namespace SignIt
 
         private void SearchDiccionario_KeyDown(object sender, KeyEventArgs e)
         {
+            string palabraDB = SearchDiccionario.Text.ToUpper();
             if (e.KeyData == Keys.Enter)
             {
-                if (DatabaseFunctions.checkIfNameExists(SearchDiccionario.Text, path))
+                if (DatabaseFunctions.checkIfNameExists(palabraDB, path))
                 {
-                    switch (DatabaseFunctions.GetCategoria(DatabaseFunctions.getIDFromName(SearchDiccionario.Text, path), path))
+                    switch (DatabaseFunctions.GetCategoria(DatabaseFunctions.getIDFromName(palabraDB, path), path))
                     {
                         case "abecedario":
                             diccionarioBetas(dBAbecedario, "abecedario");
                             break;
+                        case "numeros":
+                            diccionarioBetas(dBNros, "numeros");
+                            break;
                     }
-                    diccionarioVideos(SearchDiccionario.Text);
+                    diccionarioVideos(palabraDB);
                 }
                 else
                 {
