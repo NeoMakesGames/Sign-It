@@ -44,7 +44,7 @@ namespace SignIt
         bool rta3 = false;
         bool turorial;
         bool rtaIncorrecta;
-                        bool respuesta = false;
+        bool enter_ = false;
 
 
         public Form1()
@@ -72,7 +72,7 @@ namespace SignIt
 
 
 
-        private void diccionario(string palabra)
+        private void diccionarioVideos(string palabra)
         {
             palabraDB.Text = palabra;
 
@@ -83,6 +83,15 @@ namespace SignIt
             desaparicionDelMenu();
         }   //Acciona los videos del dicionario.
 
+
+
+        private void diccionarioBetas(System.Windows.Forms.TabPage tipo, string imagen)
+        {
+            diccionarioBeta.SelectedTab = tipo;
+            myimage = new Bitmap (imagePath + imagen + ".PNG");
+            DBeta.BackgroundImage = myimage;
+            desaparicionDelMenu();
+        }
 
 
         private void desaparicionDelMenu()
@@ -1271,6 +1280,7 @@ namespace SignIt
             caracolEnsenanza.Hide();
             continuarTutorial.Hide();
             atrasTutorial.Hide();
+            SearchDiccionario.BackColor = Color.FromArgb(235,228,228);
         }
 
 
@@ -1784,18 +1794,12 @@ namespace SignIt
 
         private void button13_Click(object sender, EventArgs e)
         {
-            diccionarioBeta.SelectedTab = dBAbecedario;
-            myimage = new Bitmap(imagePath + "abecedario.PNG");
-            DBeta.BackgroundImage = myimage;
-            desaparicionDelMenu();
+            diccionarioBetas(dBAbecedario, "abecedario");
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            diccionarioBeta.SelectedTab = dBNros;
-            myimage = new Bitmap(imagePath + "fndb.PNG");
-            DBeta.BackgroundImage = myimage;
-            desaparicionDelMenu();
+            diccionarioBetas(dBNros, "fndb");
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -1807,6 +1811,53 @@ namespace SignIt
         {
             DBeta.SendToBack();
             dbplayer.Ctlcontrols.stop();
+        }
+        private void SearchDiccionario_Click(object sender, EventArgs e)
+        {
+            SearchDiccionario.ForeColor = Color.Black;
+            SearchDiccionario.Text = "";
+        }
+
+
+
+        private void enter(object sender, KeyEventArgs c)
+        {
+            if (c.KeyData == Keys.Enter)
+            {
+                enter_ = true;
+            }
+        }
+
+
+        private void SearchDiccionario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                if (DatabaseFunctions.checkIfNameExists(SearchDiccionario.Text, path))
+                {
+                    switch (DatabaseFunctions.GetCategoria(DatabaseFunctions.getIDFromName(SearchDiccionario.Text, path), path))
+                    {
+                        case "abecedario":
+                            diccionarioBetas(dBAbecedario, "abecedario");
+                            break;
+                    }
+                    diccionarioVideos(SearchDiccionario.Text);
+                }
+                else
+                {
+                    SearchDiccionario.Text = "Seña no encontrada";
+                    SearchDiccionario.ForeColor = Color.Red;
+                }
+            }
+        }
+
+        private void SearchDiccionario_TextChanged(object sender, EventArgs e)
+        {
+            if(SearchDiccionario.ForeColor == Color.Red)
+            {
+                SearchDiccionario.ForeColor = Color.Black;
+                SearchDiccionario.Text = "";
+            }
         }
 
 
@@ -1823,57 +1874,57 @@ namespace SignIt
 
         private void dBNum0_Click(object sender, EventArgs e)
         {
-            diccionario("0");
+            diccionarioVideos("0");
         }
 
         private void dBNum1_Click(object sender, EventArgs e)
         {
-            diccionario("1");
+            diccionarioVideos("1");
         }
 
         private void dBNum2_Click(object sender, EventArgs e)
         {
-            diccionario("2");
+            diccionarioVideos("2");
         }
 
         private void dBNum3_Click(object sender, EventArgs e)
         {
-            diccionario("3");
+            diccionarioVideos("3");
         }
 
         private void dBNum4_Click(object sender, EventArgs e)
         {
-            diccionario("4");
+            diccionarioVideos("4");
         }
 
         private void dBNum5_Click(object sender, EventArgs e)
         {
-            diccionario("5");
+            diccionarioVideos("5");
         }
 
         private void dBNum6_Click(object sender, EventArgs e)
         {
-            diccionario("6");
+            diccionarioVideos("6");
         }
 
         private void dBNum7_Click(object sender, EventArgs e)
         {
-            diccionario("7");
+            diccionarioVideos("7");
         }
 
         private void dBNum8_Click(object sender, EventArgs e)
         {
-            diccionario("8");
+            diccionarioVideos("8");
         }
 
         private void dBNum9_Click(object sender, EventArgs e)
         {
-            diccionario("9");
+            diccionarioVideos("9");
         }
 
         private void dBNum10_Click(object sender, EventArgs e)
         {
-            diccionario("10");
+            diccionarioVideos("10");
         }
 
 
@@ -1894,136 +1945,136 @@ namespace SignIt
 
         private void A_Click(object sender, EventArgs e)
         {
-            diccionario("A");
+            diccionarioVideos("A");
         }
 
         private void B_Click(object sender, EventArgs e)
         {
-            diccionario("B");
+            diccionarioVideos("B");
         }
 
         private void C_Click(object sender, EventArgs e)
         {
-            diccionario("C");
+            diccionarioVideos("C");
         }
 
         private void D_Click(object sender, EventArgs e)
         {
-            diccionario("D");
+            diccionarioVideos("D");
         }
 
         private void E_Click(object sender, EventArgs e)
         {
-            diccionario("E");
+            diccionarioVideos("E");
         }
 
         private void F_Click(object sender, EventArgs e)
         {
-            diccionario("F");
+            diccionarioVideos("F");
         }
 
         private void G_Click(object sender, EventArgs e)
         {
-            diccionario("G");
+            diccionarioVideos("G");
         }
 
         private void H_Click(object sender, EventArgs e)
         {
-            diccionario("H");
+            diccionarioVideos("H");
         }
 
         private void I_Click(object sender, EventArgs e)
         {
-            diccionario("I");
+            diccionarioVideos("I");
         }
 
         private void J_Click(object sender, EventArgs e)
         {
-            diccionario("J");
+            diccionarioVideos("J");
         }
 
         private void K_Click(object sender, EventArgs e)
         {
-            diccionario("K");
+            diccionarioVideos("K");
         }
 
         private void L_Click(object sender, EventArgs e)
         {
-            diccionario("L");
+            diccionarioVideos("L");
         }
 
         private void M_Click(object sender, EventArgs e)
         {
-            diccionario("M");
+            diccionarioVideos("M");
         }
         private void N_Click(object sender, EventArgs e)
         {
-            diccionario("N");
+            diccionarioVideos("N");
         }
 
         private void Ñ_Click(object sender, EventArgs e)
         {
-            diccionario("Ñ");
+            diccionarioVideos("Ñ");
         }
 
         private void O_Click(object sender, EventArgs e)
         {
-            diccionario("O");
+            diccionarioVideos("O");
         }
 
         private void P_Click(object sender, EventArgs e)
         {
-            diccionario("P");
+            diccionarioVideos("P");
         }
 
         private void Q_Click(object sender, EventArgs e)
         {
-            diccionario("Q");
+            diccionarioVideos("Q");
         }
 
         private void R_Click(object sender, EventArgs e)
         {
-            diccionario("R");
+            diccionarioVideos("R");
         }
 
         private void S_Click(object sender, EventArgs e)
         {
-            diccionario("S");
+            diccionarioVideos("S");
         }
 
         private void T_Click(object sender, EventArgs e)
         {
-            diccionario("T");
+            diccionarioVideos("T");
         }
 
         private void U_Click(object sender, EventArgs e)
         {
-            diccionario("U");
+            diccionarioVideos("U");
         }
 
         private void V_Click(object sender, EventArgs e)
         {
-            diccionario("V");
+            diccionarioVideos("V");
         }
 
         private void W_Click(object sender, EventArgs e)
         {
-            diccionario("W");
+            diccionarioVideos("W");
         }
 
         private void X_Click(object sender, EventArgs e)
         {
-            diccionario("X");
+            diccionarioVideos("X");
         }
 
         private void Y_Click(object sender, EventArgs e)
         {
-            diccionario("Y");
+            diccionarioVideos("Y");
         }
 
         private void Z_Click(object sender, EventArgs e)
         {
-            diccionario("Z");
+            diccionarioVideos("Z");
         }
 
 
@@ -2611,7 +2662,5 @@ namespace SignIt
         {
             
         }
-
-       
     }
 }

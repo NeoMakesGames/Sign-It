@@ -64,6 +64,8 @@
             this.Diccionario = new System.Windows.Forms.TabPage();
             this.diccionarioBeta = new System.Windows.Forms.TabControl();
             this.dB0 = new System.Windows.Forms.TabPage();
+            this.SbarD = new System.Windows.Forms.Panel();
+            this.SearchDiccionario = new System.Windows.Forms.TextBox();
             this.ayudaDicionario = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.verbosDiccionario = new System.Windows.Forms.Button();
@@ -216,8 +218,6 @@
             this.ej11 = new SignIt.Ej1();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
             this.ej2RespuestaCorrecta = new System.Windows.Forms.Label();
-            this.ej12 = new SignIt.Ej1();
-            this.ej02 = new SignIt.Ej0();
             this.exitEj2 = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
@@ -226,6 +226,8 @@
             this.rtaEj2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ej2cont = new System.Windows.Forms.Button();
+            this.ej12 = new SignIt.Ej1();
+            this.ej02 = new SignIt.Ej0();
             this.ejercicio3 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -255,6 +257,7 @@
             this.Diccionario.SuspendLayout();
             this.diccionarioBeta.SuspendLayout();
             this.dB0.SuspendLayout();
+            this.SbarD.SuspendLayout();
             this.dBAbecedario.SuspendLayout();
             this.dBNros.SuspendLayout();
             this.DBeta.SuspendLayout();
@@ -297,7 +300,7 @@
             this.signIt.Controls.Add(this.ejercicio2);
             this.signIt.Controls.Add(this.ejercicio3);
             this.signIt.Controls.Add(this.caracol);
-            this.signIt.Location = new System.Drawing.Point(-10, -39);
+            this.signIt.Location = new System.Drawing.Point(-10, 0);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1628, 901);
@@ -765,6 +768,7 @@
             this.dB0.BackColor = System.Drawing.Color.LightBlue;
             this.dB0.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.dB0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dB0.Controls.Add(this.SbarD);
             this.dB0.Controls.Add(this.ayudaDicionario);
             this.dB0.Controls.Add(this.button12);
             this.dB0.Controls.Add(this.verbosDiccionario);
@@ -782,6 +786,33 @@
             this.dB0.Text = "dB0";
             this.dB0.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // SbarD
+            // 
+            this.SbarD.BackColor = System.Drawing.Color.Transparent;
+            this.SbarD.BackgroundImage = global::SignIt.Properties.Resources.Group_115;
+            this.SbarD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SbarD.Controls.Add(this.SearchDiccionario);
+            this.SbarD.Location = new System.Drawing.Point(335, 77);
+            this.SbarD.Name = "SbarD";
+            this.SbarD.Size = new System.Drawing.Size(730, 70);
+            this.SbarD.TabIndex = 10;
+            // 
+            // SearchDiccionario
+            // 
+            this.SearchDiccionario.BackColor = System.Drawing.Color.White;
+            this.SearchDiccionario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SearchDiccionario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.SearchDiccionario.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchDiccionario.ForeColor = System.Drawing.Color.Gray;
+            this.SearchDiccionario.Location = new System.Drawing.Point(76, 15);
+            this.SearchDiccionario.Name = "SearchDiccionario";
+            this.SearchDiccionario.Size = new System.Drawing.Size(586, 40);
+            this.SearchDiccionario.TabIndex = 9;
+            this.SearchDiccionario.Text = "Busca y aprende nuevas palabras";
+            this.SearchDiccionario.Click += new System.EventHandler(this.SearchDiccionario_Click);
+            this.SearchDiccionario.TextChanged += new System.EventHandler(this.SearchDiccionario_TextChanged);
+            this.SearchDiccionario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SearchDiccionario_KeyDown);
+            // 
             // ayudaDicionario
             // 
             this.ayudaDicionario.BackColor = System.Drawing.Color.Transparent;
@@ -789,7 +820,7 @@
             this.ayudaDicionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ayudaDicionario.FlatAppearance.BorderSize = 0;
             this.ayudaDicionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ayudaDicionario.Location = new System.Drawing.Point(1228, 68);
+            this.ayudaDicionario.Location = new System.Drawing.Point(1228, 118);
             this.ayudaDicionario.Name = "ayudaDicionario";
             this.ayudaDicionario.Size = new System.Drawing.Size(120, 120);
             this.ayudaDicionario.TabIndex = 8;
@@ -803,7 +834,7 @@
             this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(796, 477);
+            this.button12.Location = new System.Drawing.Point(796, 552);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(220, 220);
             this.button12.TabIndex = 5;
@@ -817,7 +848,7 @@
             this.verbosDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.verbosDiccionario.FlatAppearance.BorderSize = 0;
             this.verbosDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.verbosDiccionario.Location = new System.Drawing.Point(978, 314);
+            this.verbosDiccionario.Location = new System.Drawing.Point(978, 389);
             this.verbosDiccionario.Name = "verbosDiccionario";
             this.verbosDiccionario.Size = new System.Drawing.Size(236, 110);
             this.verbosDiccionario.TabIndex = 7;
@@ -831,7 +862,7 @@
             this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button13.FlatAppearance.BorderSize = 0;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(351, 477);
+            this.button13.Location = new System.Drawing.Point(351, 552);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(220, 220);
             this.button13.TabIndex = 4;
@@ -846,7 +877,7 @@
             this.basicoDiccionario.FlatAppearance.BorderSize = 0;
             this.basicoDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.basicoDiccionario.ForeColor = System.Drawing.Color.Black;
-            this.basicoDiccionario.Location = new System.Drawing.Point(142, 125);
+            this.basicoDiccionario.Location = new System.Drawing.Point(142, 200);
             this.basicoDiccionario.Name = "basicoDiccionario";
             this.basicoDiccionario.Size = new System.Drawing.Size(220, 110);
             this.basicoDiccionario.TabIndex = 0;
@@ -860,7 +891,7 @@
             this.lugaresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lugaresDiccionario.FlatAppearance.BorderSize = 0;
             this.lugaresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lugaresDiccionario.Location = new System.Drawing.Point(142, 314);
+            this.lugaresDiccionario.Location = new System.Drawing.Point(142, 389);
             this.lugaresDiccionario.Name = "lugaresDiccionario";
             this.lugaresDiccionario.Size = new System.Drawing.Size(220, 110);
             this.lugaresDiccionario.TabIndex = 2;
@@ -874,7 +905,7 @@
             this.coloresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.coloresDiccionario.FlatAppearance.BorderSize = 0;
             this.coloresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.coloresDiccionario.Location = new System.Drawing.Point(978, 125);
+            this.coloresDiccionario.Location = new System.Drawing.Point(978, 200);
             this.coloresDiccionario.Name = "coloresDiccionario";
             this.coloresDiccionario.Size = new System.Drawing.Size(220, 110);
             this.coloresDiccionario.TabIndex = 6;
@@ -888,7 +919,7 @@
             this.comidaDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.comidaDiccionario.FlatAppearance.BorderSize = 0;
             this.comidaDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comidaDiccionario.Location = new System.Drawing.Point(573, 125);
+            this.comidaDiccionario.Location = new System.Drawing.Point(573, 200);
             this.comidaDiccionario.Name = "comidaDiccionario";
             this.comidaDiccionario.Size = new System.Drawing.Size(220, 110);
             this.comidaDiccionario.TabIndex = 1;
@@ -902,7 +933,7 @@
             this.pronombresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pronombresDiccionario.FlatAppearance.BorderSize = 0;
             this.pronombresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pronombresDiccionario.Location = new System.Drawing.Point(573, 314);
+            this.pronombresDiccionario.Location = new System.Drawing.Point(573, 389);
             this.pronombresDiccionario.Name = "pronombresDiccionario";
             this.pronombresDiccionario.Size = new System.Drawing.Size(220, 110);
             this.pronombresDiccionario.TabIndex = 3;
@@ -2775,14 +2806,14 @@
             this.ejercicio2.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.ejercicio2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ejercicio2.Controls.Add(this.ej2RespuestaCorrecta);
-            this.ejercicio2.Controls.Add(this.ej12);
-            this.ejercicio2.Controls.Add(this.ej02);
             this.ejercicio2.Controls.Add(this.exitEj2);
             this.ejercicio2.Controls.Add(this.panel16);
             this.ejercicio2.Controls.Add(this.caracolEJ2);
             this.ejercicio2.Controls.Add(this.rtaEj2);
             this.ejercicio2.Controls.Add(this.label1);
             this.ejercicio2.Controls.Add(this.ej2cont);
+            this.ejercicio2.Controls.Add(this.ej12);
+            this.ejercicio2.Controls.Add(this.ej02);
             this.ejercicio2.Location = new System.Drawing.Point(4, 22);
             this.ejercicio2.Name = "ejercicio2";
             this.ejercicio2.Size = new System.Drawing.Size(1620, 875);
@@ -2800,24 +2831,6 @@
             this.ej2RespuestaCorrecta.Size = new System.Drawing.Size(219, 20);
             this.ej2RespuestaCorrecta.TabIndex = 19;
             this.ej2RespuestaCorrecta.Text = "La respuesta correcta es: ";
-            // 
-            // ej12
-            // 
-            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
-            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej12.Location = new System.Drawing.Point(0, 579);
-            this.ej12.Name = "ej12";
-            this.ej12.Size = new System.Drawing.Size(1381, 150);
-            this.ej12.TabIndex = 18;
-            // 
-            // ej02
-            // 
-            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
-            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej02.Location = new System.Drawing.Point(4, 579);
-            this.ej02.Name = "ej02";
-            this.ej02.Size = new System.Drawing.Size(1377, 150);
-            this.ej02.TabIndex = 17;
             // 
             // exitEj2
             // 
@@ -2911,6 +2924,24 @@
             this.ej2cont.TabIndex = 6;
             this.ej2cont.UseVisualStyleBackColor = false;
             this.ej2cont.Click += new System.EventHandler(this.ej2cont_Click);
+            // 
+            // ej12
+            // 
+            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
+            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej12.Location = new System.Drawing.Point(0, 579);
+            this.ej12.Name = "ej12";
+            this.ej12.Size = new System.Drawing.Size(1381, 150);
+            this.ej12.TabIndex = 18;
+            // 
+            // ej02
+            // 
+            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
+            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej02.Location = new System.Drawing.Point(4, 579);
+            this.ej02.Name = "ej02";
+            this.ej02.Size = new System.Drawing.Size(1377, 150);
+            this.ej02.TabIndex = 17;
             // 
             // ejercicio3
             // 
@@ -3203,6 +3234,8 @@
             this.Diccionario.ResumeLayout(false);
             this.diccionarioBeta.ResumeLayout(false);
             this.dB0.ResumeLayout(false);
+            this.SbarD.ResumeLayout(false);
+            this.SbarD.PerformLayout();
             this.dBAbecedario.ResumeLayout(false);
             this.dBAbecedario.PerformLayout();
             this.dBNros.ResumeLayout(false);
@@ -3461,6 +3494,8 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label ej1RespuestaCorrecta;
         private System.Windows.Forms.Label ej2RespuestaCorrecta;
+        private System.Windows.Forms.Panel SbarD;
+        private System.Windows.Forms.TextBox SearchDiccionario;
     }
 }
 
