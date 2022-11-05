@@ -76,6 +76,12 @@
             this.comidaDiccionario = new System.Windows.Forms.Button();
             this.pronombresDiccionario = new System.Windows.Forms.Button();
             this.Basico = new System.Windows.Forms.TabPage();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
             this.Quién = new System.Windows.Forms.Button();
             this.Gracias = new System.Windows.Forms.Button();
             this.ExitBasicoDB = new System.Windows.Forms.Button();
@@ -194,6 +200,7 @@
             this.questo = new System.Windows.Forms.Button();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.tiposDeLetra = new System.Windows.Forms.ComboBox();
             this.Tipgrafia = new System.Windows.Forms.ComboBox();
@@ -235,6 +242,8 @@
             this.ej2videoB = new System.Windows.Forms.Button();
             this.ej2videoA = new System.Windows.Forms.Button();
             this.ej1palabra = new System.Windows.Forms.Label();
+            this.ej11 = new SignIt.Ej1();
+            this.ej01 = new SignIt.Ej0();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
             this.ej2RespuestaCorrecta = new System.Windows.Forms.Label();
             this.exitEj2 = new System.Windows.Forms.Button();
@@ -245,6 +254,8 @@
             this.rtaEj2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ej2cont = new System.Windows.Forms.Button();
+            this.ej12 = new SignIt.Ej1();
+            this.ej02 = new SignIt.Ej0();
             this.ejercicio3 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -266,17 +277,6 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
-            this.ej11 = new SignIt.Ej1();
-            this.ej01 = new SignIt.Ej0();
-            this.ej12 = new SignIt.Ej1();
-            this.ej02 = new SignIt.Ej0();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -331,7 +331,7 @@
             this.signIt.Controls.Add(this.ejercicio2);
             this.signIt.Controls.Add(this.ejercicio3);
             this.signIt.Controls.Add(this.caracol);
-            this.signIt.Location = new System.Drawing.Point(-10, 0);
+            this.signIt.Location = new System.Drawing.Point(-10, -42);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1628, 901);
@@ -788,7 +788,7 @@
             this.diccionarioBeta.Controls.Add(this.Verbos);
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
-            this.diccionarioBeta.Location = new System.Drawing.Point(-4, 0);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-5, -46);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
             this.diccionarioBeta.Size = new System.Drawing.Size(1400, 900);
@@ -1009,14 +1009,86 @@
             this.Basico.TabIndex = 1;
             this.Basico.Text = "Basico";
             // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.BackColor = System.Drawing.Color.Transparent;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.Blue;
+            this.label42.Location = new System.Drawing.Point(1090, 715);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(51, 31);
+            this.label42.TabIndex = 47;
+            this.label42.Text = "No";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.BackColor = System.Drawing.Color.Transparent;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.Blue;
+            this.label43.Location = new System.Drawing.Point(486, 715);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(147, 31);
+            this.label43.TabIndex = 46;
+            this.label43.Text = "¿Por qué?";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.BackColor = System.Drawing.Color.Transparent;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.Blue;
+            this.label44.Location = new System.Drawing.Point(817, 715);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(40, 31);
+            this.label44.TabIndex = 45;
+            this.label44.Text = "Si";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.BackColor = System.Drawing.Color.Transparent;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.Blue;
+            this.label45.Location = new System.Drawing.Point(232, 715);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(99, 31);
+            this.label45.TabIndex = 44;
+            this.label45.Text = "Dónde";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.BackColor = System.Drawing.Color.Transparent;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.Blue;
+            this.label41.Location = new System.Drawing.Point(1203, 516);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(123, 31);
+            this.label41.TabIndex = 43;
+            this.label41.Text = "¿Quién?";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.Transparent;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.Blue;
+            this.label40.Location = new System.Drawing.Point(69, 516);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(115, 31);
+            this.label40.TabIndex = 42;
+            this.label40.Text = "Gracias";
+            // 
             // Quién
             // 
             this.Quién.BackColor = System.Drawing.Color.Transparent;
-            this.Quién.BackgroundImage = global::SignIt.Properties.Resources._6;
+            this.Quién.BackgroundImage = global::SignIt.Properties.Resources.Group_128;
             this.Quién.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Quién.FlatAppearance.BorderSize = 0;
             this.Quién.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Quién.Location = new System.Drawing.Point(1194, 336);
+            this.Quién.Location = new System.Drawing.Point(1194, 373);
             this.Quién.Name = "Quién";
             this.Quién.Size = new System.Drawing.Size(140, 140);
             this.Quién.TabIndex = 41;
@@ -1026,11 +1098,11 @@
             // Gracias
             // 
             this.Gracias.BackColor = System.Drawing.Color.Transparent;
-            this.Gracias.BackgroundImage = global::SignIt.Properties.Resources._4;
+            this.Gracias.BackgroundImage = global::SignIt.Properties.Resources.Group_119;
             this.Gracias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Gracias.FlatAppearance.BorderSize = 0;
             this.Gracias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Gracias.Location = new System.Drawing.Point(56, 336);
+            this.Gracias.Location = new System.Drawing.Point(56, 373);
             this.Gracias.Name = "Gracias";
             this.Gracias.Size = new System.Drawing.Size(140, 140);
             this.Gracias.TabIndex = 40;
@@ -1057,7 +1129,7 @@
             this.label33.BackColor = System.Drawing.Color.Transparent;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.Blue;
-            this.label33.Location = new System.Drawing.Point(642, 479);
+            this.label33.Location = new System.Drawing.Point(637, 516);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(122, 31);
             this.label33.TabIndex = 38;
@@ -1069,7 +1141,7 @@
             this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.Blue;
-            this.label34.Location = new System.Drawing.Point(923, 479);
+            this.label34.Location = new System.Drawing.Point(926, 516);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(100, 31);
             this.label34.TabIndex = 37;
@@ -1081,7 +1153,7 @@
             this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.Blue;
-            this.label35.Location = new System.Drawing.Point(377, 479);
+            this.label35.Location = new System.Drawing.Point(377, 516);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(87, 31);
             this.label35.TabIndex = 36;
@@ -1093,7 +1165,7 @@
             this.label36.BackColor = System.Drawing.Color.Transparent;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.Color.Blue;
-            this.label36.Location = new System.Drawing.Point(1046, 278);
+            this.label36.Location = new System.Drawing.Point(1049, 315);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(133, 31);
             this.label36.TabIndex = 35;
@@ -1105,7 +1177,7 @@
             this.label37.BackColor = System.Drawing.Color.Transparent;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.ForeColor = System.Drawing.Color.Blue;
-            this.label37.Location = new System.Drawing.Point(801, 278);
+            this.label37.Location = new System.Drawing.Point(801, 315);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(72, 31);
             this.label37.TabIndex = 34;
@@ -1117,7 +1189,7 @@
             this.label38.BackColor = System.Drawing.Color.Transparent;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.ForeColor = System.Drawing.Color.Blue;
-            this.label38.Location = new System.Drawing.Point(459, 278);
+            this.label38.Location = new System.Drawing.Point(459, 315);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(201, 31);
             this.label38.TabIndex = 33;
@@ -1129,7 +1201,7 @@
             this.label39.BackColor = System.Drawing.Color.Transparent;
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.ForeColor = System.Drawing.Color.Blue;
-            this.label39.Location = new System.Drawing.Point(244, 278);
+            this.label39.Location = new System.Drawing.Point(244, 315);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(74, 31);
             this.label39.TabIndex = 32;
@@ -1138,11 +1210,11 @@
             // Hola
             // 
             this.Hola.BackColor = System.Drawing.Color.Transparent;
-            this.Hola.BackgroundImage = global::SignIt.Properties.Resources._0;
+            this.Hola.BackgroundImage = global::SignIt.Properties.Resources.Group_118;
             this.Hola.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Hola.FlatAppearance.BorderSize = 0;
             this.Hola.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Hola.Location = new System.Drawing.Point(211, 136);
+            this.Hola.Location = new System.Drawing.Point(211, 173);
             this.Hola.Name = "Hola";
             this.Hola.Size = new System.Drawing.Size(140, 140);
             this.Hola.TabIndex = 31;
@@ -1152,11 +1224,11 @@
             // Qué
             // 
             this.Qué.BackColor = System.Drawing.Color.Transparent;
-            this.Qué.BackgroundImage = global::SignIt.Properties.Resources._6;
+            this.Qué.BackgroundImage = global::SignIt.Properties.Resources.Group_126;
             this.Qué.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Qué.FlatAppearance.BorderSize = 0;
             this.Qué.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Qué.Location = new System.Drawing.Point(903, 336);
+            this.Qué.Location = new System.Drawing.Point(906, 373);
             this.Qué.Name = "Qué";
             this.Qué.Size = new System.Drawing.Size(140, 140);
             this.Qué.TabIndex = 30;
@@ -1166,11 +1238,11 @@
             // Como_Estas
             // 
             this.Como_Estas.BackColor = System.Drawing.Color.Transparent;
-            this.Como_Estas.BackgroundImage = global::SignIt.Properties.Resources._1;
+            this.Como_Estas.BackgroundImage = global::SignIt.Properties.Resources.Group_117;
             this.Como_Estas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Como_Estas.FlatAppearance.BorderSize = 0;
             this.Como_Estas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Como_Estas.Location = new System.Drawing.Point(489, 136);
+            this.Como_Estas.Location = new System.Drawing.Point(489, 173);
             this.Como_Estas.Name = "Como_Estas";
             this.Como_Estas.Size = new System.Drawing.Size(140, 140);
             this.Como_Estas.TabIndex = 29;
@@ -1180,11 +1252,11 @@
             // Si
             // 
             this.Si.BackColor = System.Drawing.Color.Transparent;
-            this.Si.BackgroundImage = global::SignIt.Properties.Resources._9;
+            this.Si.BackgroundImage = global::SignIt.Properties.Resources.Group_123;
             this.Si.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Si.FlatAppearance.BorderSize = 0;
             this.Si.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Si.Location = new System.Drawing.Point(767, 537);
+            this.Si.Location = new System.Drawing.Point(767, 574);
             this.Si.Name = "Si";
             this.Si.Size = new System.Drawing.Size(140, 140);
             this.Si.TabIndex = 28;
@@ -1194,12 +1266,12 @@
             // No
             // 
             this.No.BackColor = System.Drawing.Color.Transparent;
-            this.No.BackgroundImage = global::SignIt.Properties.Resources._10;
+            this.No.BackgroundImage = global::SignIt.Properties.Resources.Group_129;
             this.No.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.No.Cursor = System.Windows.Forms.Cursors.Default;
             this.No.FlatAppearance.BorderSize = 0;
             this.No.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.No.Location = new System.Drawing.Point(1042, 537);
+            this.No.Location = new System.Drawing.Point(1045, 574);
             this.No.Name = "No";
             this.No.Size = new System.Drawing.Size(140, 140);
             this.No.TabIndex = 27;
@@ -1209,11 +1281,11 @@
             // Como
             // 
             this.Como.BackColor = System.Drawing.Color.Transparent;
-            this.Como.BackgroundImage = global::SignIt.Properties.Resources._5;
+            this.Como.BackgroundImage = global::SignIt.Properties.Resources.Group_124;
             this.Como.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Como.FlatAppearance.BorderSize = 0;
             this.Como.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Como.Location = new System.Drawing.Point(633, 336);
+            this.Como.Location = new System.Drawing.Point(628, 373);
             this.Como.Name = "Como";
             this.Como.Size = new System.Drawing.Size(140, 140);
             this.Como.TabIndex = 26;
@@ -1223,11 +1295,11 @@
             // Adios
             // 
             this.Adios.BackColor = System.Drawing.Color.Transparent;
-            this.Adios.BackgroundImage = global::SignIt.Properties.Resources._4;
+            this.Adios.BackgroundImage = global::SignIt.Properties.Resources.Group_120;
             this.Adios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Adios.FlatAppearance.BorderSize = 0;
             this.Adios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Adios.Location = new System.Drawing.Point(350, 336);
+            this.Adios.Location = new System.Drawing.Point(350, 373);
             this.Adios.Name = "Adios";
             this.Adios.Size = new System.Drawing.Size(140, 140);
             this.Adios.TabIndex = 25;
@@ -1237,11 +1309,11 @@
             // Dónde
             // 
             this.Dónde.BackColor = System.Drawing.Color.Transparent;
-            this.Dónde.BackgroundImage = global::SignIt.Properties.Resources._7;
+            this.Dónde.BackgroundImage = global::SignIt.Properties.Resources.Group_121;
             this.Dónde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Dónde.FlatAppearance.BorderSize = 0;
             this.Dónde.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Dónde.Location = new System.Drawing.Point(211, 537);
+            this.Dónde.Location = new System.Drawing.Point(211, 574);
             this.Dónde.Name = "Dónde";
             this.Dónde.Size = new System.Drawing.Size(140, 140);
             this.Dónde.TabIndex = 24;
@@ -1251,11 +1323,11 @@
             // Por_Qué
             // 
             this.Por_Qué.BackColor = System.Drawing.Color.Transparent;
-            this.Por_Qué.BackgroundImage = global::SignIt.Properties.Resources._8;
+            this.Por_Qué.BackgroundImage = global::SignIt.Properties.Resources.Group_122;
             this.Por_Qué.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Por_Qué.FlatAppearance.BorderSize = 0;
             this.Por_Qué.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Por_Qué.Location = new System.Drawing.Point(489, 537);
+            this.Por_Qué.Location = new System.Drawing.Point(489, 574);
             this.Por_Qué.Name = "Por_Qué";
             this.Por_Qué.Size = new System.Drawing.Size(140, 140);
             this.Por_Qué.TabIndex = 23;
@@ -1265,11 +1337,11 @@
             // Por_Favor
             // 
             this.Por_Favor.BackColor = System.Drawing.Color.Transparent;
-            this.Por_Favor.BackgroundImage = global::SignIt.Properties.Resources._3;
+            this.Por_Favor.BackgroundImage = global::SignIt.Properties.Resources.Group_127;
             this.Por_Favor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Por_Favor.FlatAppearance.BorderSize = 0;
             this.Por_Favor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Por_Favor.Location = new System.Drawing.Point(1042, 136);
+            this.Por_Favor.Location = new System.Drawing.Point(1045, 173);
             this.Por_Favor.Name = "Por_Favor";
             this.Por_Favor.Size = new System.Drawing.Size(140, 140);
             this.Por_Favor.TabIndex = 22;
@@ -1279,11 +1351,11 @@
             // Bien
             // 
             this.Bien.BackColor = System.Drawing.Color.Transparent;
-            this.Bien.BackgroundImage = global::SignIt.Properties.Resources._2;
+            this.Bien.BackgroundImage = global::SignIt.Properties.Resources.Group_125;
             this.Bien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bien.FlatAppearance.BorderSize = 0;
             this.Bien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bien.Location = new System.Drawing.Point(767, 136);
+            this.Bien.Location = new System.Drawing.Point(767, 173);
             this.Bien.Name = "Bien";
             this.Bien.Size = new System.Drawing.Size(140, 140);
             this.Bien.TabIndex = 21;
@@ -2485,7 +2557,7 @@
             this.DBeta.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__1_1;
             this.DBeta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.DBeta.Controls.Add(this.panel6);
-            this.DBeta.Location = new System.Drawing.Point(-4, -22);
+            this.DBeta.Location = new System.Drawing.Point(-4, 0);
             this.DBeta.Name = "DBeta";
             this.DBeta.Size = new System.Drawing.Size(1380, 800);
             this.DBeta.TabIndex = 9;
@@ -2619,6 +2691,16 @@
             this.RaceGamesButton.TabIndex = 0;
             this.RaceGamesButton.UseVisualStyleBackColor = false;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
+            // 
+            // race1
+            // 
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(1, 3);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1366, 788);
+            this.race1.TabIndex = 5;
+            this.race1.Visible = false;
             // 
             // Ajustes
             // 
@@ -3131,6 +3213,24 @@
             this.ej1palabra.TabIndex = 0;
             this.ej1palabra.Text = "¿Cual seña correspone a la palabra:";
             // 
+            // ej11
+            // 
+            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
+            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej11.Location = new System.Drawing.Point(-5, 579);
+            this.ej11.Name = "ej11";
+            this.ej11.Size = new System.Drawing.Size(1380, 150);
+            this.ej11.TabIndex = 17;
+            // 
+            // ej01
+            // 
+            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
+            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej01.Location = new System.Drawing.Point(5, 579);
+            this.ej01.Name = "ej01";
+            this.ej01.Size = new System.Drawing.Size(1378, 150);
+            this.ej01.TabIndex = 16;
+            // 
             // ejercicio2
             // 
             this.ejercicio2.BackColor = System.Drawing.Color.LightBlue;
@@ -3256,6 +3356,24 @@
             this.ej2cont.TabIndex = 6;
             this.ej2cont.UseVisualStyleBackColor = false;
             this.ej2cont.Click += new System.EventHandler(this.ej2cont_Click);
+            // 
+            // ej12
+            // 
+            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
+            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej12.Location = new System.Drawing.Point(0, 579);
+            this.ej12.Name = "ej12";
+            this.ej12.Size = new System.Drawing.Size(1381, 150);
+            this.ej12.TabIndex = 18;
+            // 
+            // ej02
+            // 
+            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
+            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej02.Location = new System.Drawing.Point(4, 579);
+            this.ej02.Name = "ej02";
+            this.ej02.Size = new System.Drawing.Size(1377, 150);
+            this.ej02.TabIndex = 17;
             // 
             // ejercicio3
             // 
@@ -3526,124 +3644,6 @@
             this.Menubutton.TabIndex = 3;
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
-            // 
-            // race1
-            // 
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(1, 3);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1366, 788);
-            this.race1.TabIndex = 5;
-            this.race1.Visible = false;
-            // 
-            // ej11
-            // 
-            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
-            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej11.Location = new System.Drawing.Point(-5, 579);
-            this.ej11.Name = "ej11";
-            this.ej11.Size = new System.Drawing.Size(1380, 150);
-            this.ej11.TabIndex = 17;
-            // 
-            // ej01
-            // 
-            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
-            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej01.Location = new System.Drawing.Point(5, 579);
-            this.ej01.Name = "ej01";
-            this.ej01.Size = new System.Drawing.Size(1378, 150);
-            this.ej01.TabIndex = 16;
-            // 
-            // ej12
-            // 
-            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
-            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej12.Location = new System.Drawing.Point(0, 579);
-            this.ej12.Name = "ej12";
-            this.ej12.Size = new System.Drawing.Size(1381, 150);
-            this.ej12.TabIndex = 18;
-            // 
-            // ej02
-            // 
-            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
-            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej02.Location = new System.Drawing.Point(4, 579);
-            this.ej02.Name = "ej02";
-            this.ej02.Size = new System.Drawing.Size(1377, 150);
-            this.ej02.TabIndex = 17;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.BackColor = System.Drawing.Color.Transparent;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.Blue;
-            this.label40.Location = new System.Drawing.Point(69, 479);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(115, 31);
-            this.label40.TabIndex = 42;
-            this.label40.Text = "Gracias";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.BackColor = System.Drawing.Color.Transparent;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.Blue;
-            this.label41.Location = new System.Drawing.Point(1203, 479);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(123, 31);
-            this.label41.TabIndex = 43;
-            this.label41.Text = "¿Quién?";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.BackColor = System.Drawing.Color.Transparent;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.Blue;
-            this.label42.Location = new System.Drawing.Point(1087, 678);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(51, 31);
-            this.label42.TabIndex = 47;
-            this.label42.Text = "No";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.BackColor = System.Drawing.Color.Transparent;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.Blue;
-            this.label43.Location = new System.Drawing.Point(486, 678);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(147, 31);
-            this.label43.TabIndex = 46;
-            this.label43.Text = "¿Por qué?";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.BackColor = System.Drawing.Color.Transparent;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.Blue;
-            this.label44.Location = new System.Drawing.Point(817, 678);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(40, 31);
-            this.label44.TabIndex = 45;
-            this.label44.Text = "Si";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.BackColor = System.Drawing.Color.Transparent;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.Blue;
-            this.label45.Location = new System.Drawing.Point(232, 678);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(99, 31);
-            this.label45.TabIndex = 44;
-            this.label45.Text = "Dónde";
             // 
             // Form1
             // 
