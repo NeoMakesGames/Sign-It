@@ -49,6 +49,7 @@ namespace SignIt
         public Form1()
         {
             InitializeComponent();
+
         }
 
 
@@ -374,7 +375,7 @@ namespace SignIt
             turorial = true;
         }   //Muestra la pantalla del tutorial, la primera vez que inicias sesión. 
 
-        private async void ej_2 (int idA, int idB, int idC, int xp, bool rtA, bool rtB, bool rtC)
+        private async void ej_1 (int idA, int idB, int idC, int xp, bool rtA, bool rtB, bool rtC)
         {
             ejercicio1VideoA.settings.setMode("loop", true);
             ejercicio1VideoB.settings.setMode("loop", true);
@@ -1280,13 +1281,6 @@ namespace SignIt
             SearchDiccionario.BackColor = Color.FromArgb(235,228,228);
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyData == Keys.Escape)
-            {
-                cierre();
-            }
-        }
 
 
 
@@ -1310,6 +1304,19 @@ namespace SignIt
 
                 aparicionDelMenu();
 
+
+                if (avance < 2)
+                {
+                    myimage = new Bitmap(imagePath + "EmpezarLecciones" + ".PNG");
+                    LeccionesHome.BackgroundImage = myimage;
+                }
+                else
+                {
+                    myimage = new Bitmap(imagePath + "ContinuarLecciones" + ".PNG");
+                    LeccionesHome.BackgroundImage = myimage;
+                }
+
+
                 signIt.SelectedTab = Home;
 
             }
@@ -1327,15 +1334,14 @@ namespace SignIt
             UserCdU.Text = "Ingresar nombre";
             UserIdS.Text = "Ingresar Usuario";
             UserAgeCdU.Text = "Ingresar edad";
-        //  foreach(Label a in )
-        //  {
-        //
-        //  }
         }
 
-        private void SalirIdS_Click(object sender, EventArgs e)
+        private void UserIdS_KeyDown(object sender, KeyEventArgs e)
         {
-            cierre();
+            if(e.KeyData == Keys.Enter)
+            {
+                ComenzarIds_Click(sender , e);
+            }
         }
 
 
@@ -1352,9 +1358,9 @@ namespace SignIt
         {
             int sip;
 
-            if (int.TryParse(UserAgeCdU.Text, out sip) && Convert.ToInt32(UserAgeCdU.Text) < 100)
+            if (int.TryParse(UserAgeCdU.Text, out sip) && Convert.ToInt32(UserAgeCdU.Text) < 100 && UserAgeCdU.Text != "" && UserCdU.Text != "")
             {
-                if (UserCdU.Text != "" && UserAgeCdU.Text != "")
+                if (UserCdU.Text != "")
                 {
                     if (!DatabaseFunctions.checkIfThereAreUsers(path))
                     {
@@ -1366,6 +1372,8 @@ namespace SignIt
                         avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
 
                         tutorial();
+                        myimage = new Bitmap(imagePath + "EmpezarLecciones" + ".PNG");
+                        LeccionesHome.BackgroundImage = myimage;
                     }
                     else if (DatabaseFunctions.checkIfThereAreUsers(path))
                     {
@@ -1378,6 +1386,8 @@ namespace SignIt
                             DatabaseFunctions.SetAvance(DatabaseFunctions.currentUser, 0, path);
                             avance = Convert.ToInt32(DatabaseFunctions.getString(DatabaseFunctions.currentUser, "Avance", path));
                             tutorial();
+                            myimage = new Bitmap(imagePath + "EmpezarLecciones" + ".PNG");
+                            LeccionesHome.BackgroundImage = myimage;
                         }
                         else
                         {
@@ -1406,8 +1416,31 @@ namespace SignIt
             UserIdS.Text = "Ingresar Usuario";
             UserAgeCdU.ForeColor = Color.Silver;
         }
+        private void UserCdU_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                ComenzarCdU_Click(sender, e);
+            }
+        }
 
-//Home
+        private void UserAgeCdU_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                ComenzarCdU_Click(sender, e);
+            }
+        }
+
+
+
+
+
+        //Home
+
+
+
+
 
         private void DiccionarioHome_Click_1(object sender, EventArgs e)
         {
@@ -1480,9 +1513,19 @@ namespace SignIt
 
         private void MenuHomeButton_Click(object sender, EventArgs e)
         {
-            signIt.SelectedTab = Home;
-            Menubutton_Click(sender, e);
+            if(avance < 2)
+            {
+                myimage = new Bitmap(imagePath + "EmpezarLecciones" + ".PNG");
+                LeccionesHome.BackgroundImage = myimage;
+            }
+            else
+            {
+                myimage = new Bitmap(imagePath + "ContinuarLecciones" + ".PNG");
+                LeccionesHome.BackgroundImage = myimage;
+            }
             menu = false;
+            Menubutton_Click(sender, e);
+            signIt.SelectedTab = Home;
         }
 
         private void MenuLectionsButton_Click(object sender, EventArgs e)
@@ -1805,7 +1848,7 @@ namespace SignIt
 
         private void AbecedarioDB_Click(object sender, EventArgs e)
         {
-            diccionarioBetas(dBAbecedario, "abecedario");
+            diccionarioBetas(dBAbecedario, "abeceDario");
             lastpage = 9;
         }
 
@@ -2273,7 +2316,60 @@ namespace SignIt
 
 
 
-        //        .
+        private void Rosa_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Rosa");
+        }
+
+        private void Naranja_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Naranja");
+        }
+
+        private void Amarillo_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Amarillo");
+        }
+
+        private void Verde_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Verde");
+        }
+
+        private void Violeta_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Violeta");
+        }
+
+        private void Blanco_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Blanco");
+        }
+
+        private void Gris_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Gris");
+        }
+
+        private void Celeste_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Celeste");
+        }
+
+        private void Negro_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Negro");
+        }
+
+        private void Azul_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Azul");
+        }
+
+        private void Rojo_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Rojo");
+        }        .
 
 
 
@@ -2799,159 +2895,6 @@ namespace SignIt
 
         }
         private void ejercicio1VideoC_ClickEvent(object sender, AxWMPLib._WMPOCXEvents_ClickEvent e)
-        {
-
-        }
-
-
-        
-
-        private void ejercicio1VideoB_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelDBNum1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Ajustes_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelDBNum2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelDBNum1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelDBNum3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelDBNum6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void XpLvlSett_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void progresoSett_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PantallaSett_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UserCdU_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PalabraEns_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void sliderHome_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void userpfp_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void userNameSett2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void xpB_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void xProgressBar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ej12_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void ej2player_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ejercicio1VideoC_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Tipgrafia_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void EnseñanzaPlayer_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label47_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel19_Paint(object sender, PaintEventArgs e)
         {
 
         }

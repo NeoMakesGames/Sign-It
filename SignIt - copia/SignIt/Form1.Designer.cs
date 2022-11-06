@@ -38,10 +38,11 @@
             this.linkLabel1IdS = new System.Windows.Forms.LinkLabel();
             this.UserIdS = new System.Windows.Forms.TextBox();
             this.CdU = new System.Windows.Forms.TabPage();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.label1CdU = new System.Windows.Forms.Label();
             this.UserAgeCdU = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.UserCdU = new System.Windows.Forms.TextBox();
-            this.label1CdU = new System.Windows.Forms.Label();
             this.ComenzarCdU = new System.Windows.Forms.Button();
             this.SnapBackToReality = new System.Windows.Forms.Button();
             this.Home = new System.Windows.Forms.TabPage();
@@ -262,12 +263,13 @@
             this.xProgressBar = new System.Windows.Forms.ProgressBar();
             this.xpB = new System.Windows.Forms.Label();
             this.Enseñanza = new System.Windows.Forms.TabPage();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.PalabraEns = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.EnseñanzaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.enseñanzaExit = new System.Windows.Forms.Button();
             this.caracolEnsenanza = new System.Windows.Forms.Button();
-            this.PalabraEns = new System.Windows.Forms.Label();
             this.contEnseñanza = new System.Windows.Forms.Button();
             this.ejercicio1 = new System.Windows.Forms.TabPage();
             this.caracolEJ1 = new System.Windows.Forms.Button();
@@ -321,10 +323,37 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.panel21 = new System.Windows.Forms.Panel();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.ExitColoresDB = new System.Windows.Forms.Button();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.Rojo = new System.Windows.Forms.Button();
+            this.Violeta = new System.Windows.Forms.Button();
+            this.Naranja = new System.Windows.Forms.Button();
+            this.Gris = new System.Windows.Forms.Button();
+            this.Blanco = new System.Windows.Forms.Button();
+            this.Celeste = new System.Windows.Forms.Button();
+            this.Azul = new System.Windows.Forms.Button();
+            this.Rosa = new System.Windows.Forms.Button();
+            this.Negro = new System.Windows.Forms.Button();
+            this.Verde = new System.Windows.Forms.Button();
+            this.Amarillo = new System.Windows.Forms.Button();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
+            this.panel22.SuspendLayout();
             this.Home.SuspendLayout();
             this.LeccionesMenu.SuspendLayout();
             this.Diccionario.SuspendLayout();
@@ -333,6 +362,7 @@
             this.SbarD.SuspendLayout();
             this.Basico.SuspendLayout();
             this.Comida.SuspendLayout();
+            this.Colores.SuspendLayout();
             this.Lugares.SuspendLayout();
             this.dBAbecedario.SuspendLayout();
             this.dBNros.SuspendLayout();
@@ -344,6 +374,7 @@
             this.Ajustes.SuspendLayout();
             this.panel20.SuspendLayout();
             this.Enseñanza.SuspendLayout();
+            this.panel21.SuspendLayout();
             this.panel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EnseñanzaPlayer)).BeginInit();
             this.ejercicio1.SuspendLayout();
@@ -362,7 +393,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.caracol.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel21.SuspendLayout();
             this.SuspendLayout();
             // 
             // signIt
@@ -473,24 +503,47 @@
             this.UserIdS.Text = "Ingresar Usuario";
             this.UserIdS.Click += new System.EventHandler(this.UserIdS_Click);
             this.UserIdS.TextChanged += new System.EventHandler(this.UserIdS_TextChanged);
+            this.UserIdS.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserIdS_KeyDown);
             // 
             // CdU
             // 
             this.CdU.BackColor = System.Drawing.Color.LightBlue;
             this.CdU.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.CdU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CdU.Controls.Add(this.panel22);
             this.CdU.Controls.Add(this.UserAgeCdU);
             this.CdU.Controls.Add(this.panel3);
             this.CdU.Controls.Add(this.UserCdU);
-            this.CdU.Controls.Add(this.label1CdU);
             this.CdU.Controls.Add(this.ComenzarCdU);
             this.CdU.Controls.Add(this.SnapBackToReality);
             this.CdU.Location = new System.Drawing.Point(4, 22);
             this.CdU.Name = "CdU";
             this.CdU.Padding = new System.Windows.Forms.Padding(3);
-            this.CdU.Size = new System.Drawing.Size(1620, 879);
+            this.CdU.Size = new System.Drawing.Size(1620, 875);
             this.CdU.TabIndex = 1;
             this.CdU.Text = "Creación de usuario";
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.Transparent;
+            this.panel22.Controls.Add(this.label1CdU);
+            this.panel22.Location = new System.Drawing.Point(383, 495);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(596, 51);
+            this.panel22.TabIndex = 11;
+            // 
+            // label1CdU
+            // 
+            this.label1CdU.BackColor = System.Drawing.Color.Transparent;
+            this.label1CdU.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1CdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1CdU.ForeColor = System.Drawing.Color.IndianRed;
+            this.label1CdU.Location = new System.Drawing.Point(0, 0);
+            this.label1CdU.Name = "label1CdU";
+            this.label1CdU.Size = new System.Drawing.Size(596, 51);
+            this.label1CdU.TabIndex = 2;
+            this.label1CdU.Text = "Este nombre de usuario ya existe";
+            this.label1CdU.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UserAgeCdU
             // 
@@ -503,6 +556,7 @@
             this.UserAgeCdU.Text = "Ingresar edad";
             this.UserAgeCdU.Click += new System.EventHandler(this.UserAgeCdU_Click);
             this.UserAgeCdU.TextChanged += new System.EventHandler(this.UserAgeCdU_TextChanged);
+            this.UserAgeCdU.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserAgeCdU_KeyDown);
             // 
             // panel3
             // 
@@ -524,19 +578,7 @@
             this.UserCdU.TabIndex = 3;
             this.UserCdU.Text = "Ingresar nombre";
             this.UserCdU.Click += new System.EventHandler(this.UserCdU_Click);
-            this.UserCdU.TextChanged += new System.EventHandler(this.UserCdU_TextChanged);
-            // 
-            // label1CdU
-            // 
-            this.label1CdU.AutoSize = true;
-            this.label1CdU.BackColor = System.Drawing.Color.Transparent;
-            this.label1CdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1CdU.ForeColor = System.Drawing.Color.IndianRed;
-            this.label1CdU.Location = new System.Drawing.Point(449, 502);
-            this.label1CdU.Name = "label1CdU";
-            this.label1CdU.Size = new System.Drawing.Size(414, 31);
-            this.label1CdU.TabIndex = 2;
-            this.label1CdU.Text = "Este nombre de usuario ya existe";
+            this.UserCdU.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserCdU_KeyDown);
             // 
             // ComenzarCdU
             // 
@@ -583,7 +625,7 @@
             this.Home.Controls.Add(this.LeccionesHome);
             this.Home.Location = new System.Drawing.Point(4, 22);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(1620, 879);
+            this.Home.Size = new System.Drawing.Size(1620, 875);
             this.Home.TabIndex = 8;
             this.Home.Text = "Home";
             // 
@@ -640,7 +682,6 @@
             this.sliderHome.Name = "sliderHome";
             this.sliderHome.Size = new System.Drawing.Size(450, 450);
             this.sliderHome.TabIndex = 3;
-            this.sliderHome.Paint += new System.Windows.Forms.PaintEventHandler(this.sliderHome_Paint);
             // 
             // DiccionarioHome
             // 
@@ -688,7 +729,7 @@
             this.LeccionesMenu.Controls.Add(this.panel9);
             this.LeccionesMenu.Location = new System.Drawing.Point(4, 22);
             this.LeccionesMenu.Name = "LeccionesMenu";
-            this.LeccionesMenu.Size = new System.Drawing.Size(1620, 879);
+            this.LeccionesMenu.Size = new System.Drawing.Size(1620, 875);
             this.LeccionesMenu.TabIndex = 3;
             this.LeccionesMenu.Text = "LeccionesMenu";
             this.LeccionesMenu.Click += new System.EventHandler(this.LeccionesMenu_Click);
@@ -831,7 +872,7 @@
             this.Diccionario.Controls.Add(this.diccionarioBeta);
             this.Diccionario.Location = new System.Drawing.Point(4, 22);
             this.Diccionario.Name = "Diccionario";
-            this.Diccionario.Size = new System.Drawing.Size(1620, 879);
+            this.Diccionario.Size = new System.Drawing.Size(1620, 875);
             this.Diccionario.TabIndex = 4;
             this.Diccionario.Text = "Diccionario";
             // 
@@ -1043,6 +1084,7 @@
             // 
             this.Basico.BackColor = System.Drawing.Color.LightBlue;
             this.Basico.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Basico.Controls.Add(this.label67);
             this.Basico.Controls.Add(this.label42);
             this.Basico.Controls.Add(this.label43);
             this.Basico.Controls.Add(this.label44);
@@ -1434,6 +1476,7 @@
             // 
             this.Comida.BackColor = System.Drawing.Color.LightBlue;
             this.Comida.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Comida.Controls.Add(this.label68);
             this.Comida.Controls.Add(this.label50);
             this.Comida.Controls.Add(this.label51);
             this.Comida.Controls.Add(this.label52);
@@ -1528,7 +1571,6 @@
             this.label47.Size = new System.Drawing.Size(135, 31);
             this.label47.TabIndex = 51;
             this.label47.Text = "Ensalada";
-            this.label47.Click += new System.EventHandler(this.label47_Click);
             // 
             // label48
             // 
@@ -1685,6 +1727,30 @@
             // 
             this.Colores.BackColor = System.Drawing.Color.LightBlue;
             this.Colores.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Colores.Controls.Add(this.label70);
+            this.Colores.Controls.Add(this.label71);
+            this.Colores.Controls.Add(this.label72);
+            this.Colores.Controls.Add(this.label73);
+            this.Colores.Controls.Add(this.label74);
+            this.Colores.Controls.Add(this.ExitColoresDB);
+            this.Colores.Controls.Add(this.label75);
+            this.Colores.Controls.Add(this.label76);
+            this.Colores.Controls.Add(this.label77);
+            this.Colores.Controls.Add(this.label78);
+            this.Colores.Controls.Add(this.label79);
+            this.Colores.Controls.Add(this.label80);
+            this.Colores.Controls.Add(this.label81);
+            this.Colores.Controls.Add(this.Rojo);
+            this.Colores.Controls.Add(this.Violeta);
+            this.Colores.Controls.Add(this.Naranja);
+            this.Colores.Controls.Add(this.Gris);
+            this.Colores.Controls.Add(this.Blanco);
+            this.Colores.Controls.Add(this.Celeste);
+            this.Colores.Controls.Add(this.Azul);
+            this.Colores.Controls.Add(this.Rosa);
+            this.Colores.Controls.Add(this.Negro);
+            this.Colores.Controls.Add(this.Verde);
+            this.Colores.Controls.Add(this.Amarillo);
             this.Colores.Location = new System.Drawing.Point(4, 22);
             this.Colores.Name = "Colores";
             this.Colores.Size = new System.Drawing.Size(1392, 874);
@@ -1695,6 +1761,7 @@
             // 
             this.Lugares.BackColor = System.Drawing.Color.LightBlue;
             this.Lugares.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Lugares.Controls.Add(this.label69);
             this.Lugares.Controls.Add(this.label54);
             this.Lugares.Controls.Add(this.label55);
             this.Lugares.Controls.Add(this.label56);
@@ -1835,7 +1902,7 @@
             this.ExitLugaresDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ExitLugaresDB.FlatAppearance.BorderSize = 0;
             this.ExitLugaresDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitLugaresDB.Location = new System.Drawing.Point(50, 103);
+            this.ExitLugaresDB.Location = new System.Drawing.Point(42, 77);
             this.ExitLugaresDB.Name = "ExitLugaresDB";
             this.ExitLugaresDB.Size = new System.Drawing.Size(96, 60);
             this.ExitLugaresDB.TabIndex = 66;
@@ -2979,7 +3046,6 @@
             this.labelDBNum6.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum6.TabIndex = 19;
             this.labelDBNum6.Text = "6";
-            this.labelDBNum6.Click += new System.EventHandler(this.labelDBNum6_Click);
             // 
             // labelDBNum7
             // 
@@ -2992,7 +3058,6 @@
             this.labelDBNum7.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum7.TabIndex = 18;
             this.labelDBNum7.Text = "7";
-            this.labelDBNum7.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // labelDBNum8
             // 
@@ -3005,7 +3070,6 @@
             this.labelDBNum8.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum8.TabIndex = 17;
             this.labelDBNum8.Text = "8";
-            this.labelDBNum8.Click += new System.EventHandler(this.label2_Click);
             // 
             // labelDBNum4
             // 
@@ -3030,7 +3094,6 @@
             this.labelDBNum3.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum3.TabIndex = 15;
             this.labelDBNum3.Text = "3";
-            this.labelDBNum3.Click += new System.EventHandler(this.labelDBNum3_Click);
             // 
             // labelDBNum2
             // 
@@ -3043,7 +3106,6 @@
             this.labelDBNum2.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum2.TabIndex = 14;
             this.labelDBNum2.Text = "2";
-            this.labelDBNum2.Click += new System.EventHandler(this.labelDBNum2_Click);
             // 
             // labelDBNum1
             // 
@@ -3056,7 +3118,6 @@
             this.labelDBNum1.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum1.TabIndex = 13;
             this.labelDBNum1.Text = "1";
-            this.labelDBNum1.Click += new System.EventHandler(this.labelDBNum1_Click_1);
             // 
             // labelDBNum0
             // 
@@ -3069,7 +3130,6 @@
             this.labelDBNum0.Size = new System.Drawing.Size(30, 31);
             this.labelDBNum0.TabIndex = 12;
             this.labelDBNum0.Text = "0";
-            this.labelDBNum0.Click += new System.EventHandler(this.labelDBNum1_Click);
             // 
             // dBNum0
             // 
@@ -3321,7 +3381,7 @@
             this.juegos.Controls.Add(this.race1);
             this.juegos.Location = new System.Drawing.Point(4, 22);
             this.juegos.Name = "juegos";
-            this.juegos.Size = new System.Drawing.Size(1620, 879);
+            this.juegos.Size = new System.Drawing.Size(1620, 875);
             this.juegos.TabIndex = 6;
             this.juegos.Text = "juegos";
             // 
@@ -3414,10 +3474,9 @@
             this.Ajustes.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ajustes.Location = new System.Drawing.Point(4, 22);
             this.Ajustes.Name = "Ajustes";
-            this.Ajustes.Size = new System.Drawing.Size(1620, 879);
+            this.Ajustes.Size = new System.Drawing.Size(1620, 875);
             this.Ajustes.TabIndex = 5;
             this.Ajustes.Text = "Ajustes";
-            this.Ajustes.Click += new System.EventHandler(this.Ajustes_Click);
             // 
             // tiposDeLetra
             // 
@@ -3446,7 +3505,6 @@
             this.Tipgrafia.Size = new System.Drawing.Size(165, 41);
             this.Tipgrafia.TabIndex = 17;
             this.Tipgrafia.Text = "Mediana";
-            this.Tipgrafia.SelectedIndexChanged += new System.EventHandler(this.Tipgrafia_SelectedIndexChanged);
             // 
             // caracolsett
             // 
@@ -3484,7 +3542,6 @@
             this.label3.Size = new System.Drawing.Size(135, 49);
             this.label3.TabIndex = 12;
             this.label3.Text = "Letra:";
-            this.label3.Click += new System.EventHandler(this.label3_Click_2);
             // 
             // userpfp
             // 
@@ -3495,7 +3552,6 @@
             this.userpfp.Name = "userpfp";
             this.userpfp.Size = new System.Drawing.Size(99, 100);
             this.userpfp.TabIndex = 10;
-            this.userpfp.Paint += new System.Windows.Forms.PaintEventHandler(this.userpfp_Paint);
             // 
             // userNameSett2
             // 
@@ -3507,7 +3563,6 @@
             this.userNameSett2.Size = new System.Drawing.Size(42, 46);
             this.userNameSett2.TabIndex = 9;
             this.userNameSett2.Text = "1";
-            this.userNameSett2.Click += new System.EventHandler(this.userNameSett2_Click);
             // 
             // progresoSett2
             // 
@@ -3531,7 +3586,6 @@
             this.progresoSett.Size = new System.Drawing.Size(319, 49);
             this.progresoSett.TabIndex = 6;
             this.progresoSett.Text = "Progreso Total:";
-            this.progresoSett.Click += new System.EventHandler(this.progresoSett_Click);
             // 
             // XpLvlSett
             // 
@@ -3543,7 +3597,6 @@
             this.XpLvlSett.Size = new System.Drawing.Size(428, 49);
             this.XpLvlSett.TabIndex = 5;
             this.XpLvlSett.Text = "Nivel de experiencia:";
-            this.XpLvlSett.Click += new System.EventHandler(this.XpLvlSett_Click);
             // 
             // FullScrButtonSett
             // 
@@ -3570,7 +3623,6 @@
             this.PantallaSett.Size = new System.Drawing.Size(234, 49);
             this.PantallaSett.TabIndex = 3;
             this.PantallaSett.Text = "Tipografía:";
-            this.PantallaSett.Click += new System.EventHandler(this.PantallaSett_Click);
             // 
             // panel20
             // 
@@ -3592,7 +3644,6 @@
             this.xProgressBar.Name = "xProgressBar";
             this.xProgressBar.Size = new System.Drawing.Size(442, 33);
             this.xProgressBar.TabIndex = 15;
-            this.xProgressBar.Click += new System.EventHandler(this.xProgressBar_Click);
             // 
             // xpB
             // 
@@ -3616,9 +3667,31 @@
             this.Enseñanza.Controls.Add(this.contEnseñanza);
             this.Enseñanza.Location = new System.Drawing.Point(4, 22);
             this.Enseñanza.Name = "Enseñanza";
-            this.Enseñanza.Size = new System.Drawing.Size(1620, 879);
+            this.Enseñanza.Size = new System.Drawing.Size(1620, 875);
             this.Enseñanza.TabIndex = 7;
             this.Enseñanza.Text = "Enseñanza";
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.Transparent;
+            this.panel21.Controls.Add(this.PalabraEns);
+            this.panel21.Location = new System.Drawing.Point(489, 650);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(418, 53);
+            this.panel21.TabIndex = 19;
+            // 
+            // PalabraEns
+            // 
+            this.PalabraEns.BackColor = System.Drawing.Color.Transparent;
+            this.PalabraEns.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PalabraEns.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PalabraEns.Location = new System.Drawing.Point(0, 0);
+            this.PalabraEns.Name = "PalabraEns";
+            this.PalabraEns.Size = new System.Drawing.Size(418, 53);
+            this.PalabraEns.TabIndex = 1;
+            this.PalabraEns.Text = "Palabra";
+            this.PalabraEns.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PalabraEns.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label4_MouseDown);
             // 
             // panel19
             // 
@@ -3631,7 +3704,6 @@
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(500, 500);
             this.panel19.TabIndex = 18;
-            this.panel19.Paint += new System.Windows.Forms.PaintEventHandler(this.panel19_Paint);
             // 
             // panel8
             // 
@@ -3650,7 +3722,6 @@
             this.EnseñanzaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("EnseñanzaPlayer.OcxState")));
             this.EnseñanzaPlayer.Size = new System.Drawing.Size(450, 450);
             this.EnseñanzaPlayer.TabIndex = 2;
-            this.EnseñanzaPlayer.Enter += new System.EventHandler(this.EnseñanzaPlayer_Enter);
             // 
             // enseñanzaExit
             // 
@@ -3680,20 +3751,6 @@
             this.caracolEnsenanza.TabIndex = 13;
             this.caracolEnsenanza.UseVisualStyleBackColor = false;
             this.caracolEnsenanza.Click += new System.EventHandler(this.button1_Click_3);
-            // 
-            // PalabraEns
-            // 
-            this.PalabraEns.BackColor = System.Drawing.Color.Transparent;
-            this.PalabraEns.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PalabraEns.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PalabraEns.Location = new System.Drawing.Point(0, 0);
-            this.PalabraEns.Name = "PalabraEns";
-            this.PalabraEns.Size = new System.Drawing.Size(418, 53);
-            this.PalabraEns.TabIndex = 1;
-            this.PalabraEns.Text = "Palabra";
-            this.PalabraEns.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.PalabraEns.Click += new System.EventHandler(this.PalabraEns_Click);
-            this.PalabraEns.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label4_MouseDown);
             // 
             // contEnseñanza
             // 
@@ -3789,7 +3846,6 @@
             this.ejercicio1VideoC.Size = new System.Drawing.Size(250, 265);
             this.ejercicio1VideoC.TabIndex = 3;
             this.ejercicio1VideoC.ClickEvent += new AxWMPLib._WMPOCXEvents_ClickEventHandler(this.ejercicio1VideoC_ClickEvent);
-            this.ejercicio1VideoC.Enter += new System.EventHandler(this.ejercicio1VideoC_Enter);
             // 
             // panel11
             // 
@@ -3820,7 +3876,6 @@
             this.ejercicio1VideoB.Size = new System.Drawing.Size(250, 265);
             this.ejercicio1VideoB.TabIndex = 2;
             this.ejercicio1VideoB.ClickEvent += new AxWMPLib._WMPOCXEvents_ClickEventHandler(this.ejercicio1VideoB_ClickEvent);
-            this.ejercicio1VideoB.Enter += new System.EventHandler(this.ejercicio1VideoB_Enter);
             // 
             // panel10
             // 
@@ -4013,7 +4068,6 @@
             this.ej2player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ej2player.OcxState")));
             this.ej2player.Size = new System.Drawing.Size(320, 299);
             this.ej2player.TabIndex = 0;
-            this.ej2player.Enter += new System.EventHandler(this.ej2player_Enter);
             // 
             // caracolEJ2
             // 
@@ -4096,7 +4150,7 @@
             this.ejercicio3.Controls.Add(this.label32);
             this.ejercicio3.Location = new System.Drawing.Point(4, 22);
             this.ejercicio3.Name = "ejercicio3";
-            this.ejercicio3.Size = new System.Drawing.Size(1620, 879);
+            this.ejercicio3.Size = new System.Drawing.Size(1620, 875);
             this.ejercicio3.TabIndex = 11;
             this.ejercicio3.Text = "ejercicio3";
             // 
@@ -4176,7 +4230,7 @@
             this.caracol.Controls.Add(this.caracolExit);
             this.caracol.Location = new System.Drawing.Point(4, 22);
             this.caracol.Name = "caracol";
-            this.caracol.Size = new System.Drawing.Size(1620, 879);
+            this.caracol.Size = new System.Drawing.Size(1620, 875);
             this.caracol.TabIndex = 12;
             this.caracol.Text = "caracol";
             // 
@@ -4362,14 +4416,349 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // panel21
+            // label67
             // 
-            this.panel21.BackColor = System.Drawing.Color.Transparent;
-            this.panel21.Controls.Add(this.PalabraEns);
-            this.panel21.Location = new System.Drawing.Point(489, 650);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(418, 53);
-            this.panel21.TabIndex = 19;
+            this.label67.AutoSize = true;
+            this.label67.BackColor = System.Drawing.Color.Transparent;
+            this.label67.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(620, 107);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(125, 40);
+            this.label67.TabIndex = 48;
+            this.label67.Text = "Básico";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.BackColor = System.Drawing.Color.Transparent;
+            this.label68.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(626, 107);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(141, 40);
+            this.label68.TabIndex = 57;
+            this.label68.Text = "Comida";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.BackColor = System.Drawing.Color.Transparent;
+            this.label69.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Location = new System.Drawing.Point(606, 107);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(148, 40);
+            this.label69.TabIndex = 75;
+            this.label69.Text = "Lugares";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.BackColor = System.Drawing.Color.Transparent;
+            this.label70.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Location = new System.Drawing.Point(696, 60);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(142, 40);
+            this.label70.TabIndex = 99;
+            this.label70.Text = "Colores";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.BackColor = System.Drawing.Color.Transparent;
+            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.ForeColor = System.Drawing.Color.Blue;
+            this.label71.Location = new System.Drawing.Point(1119, 670);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(103, 31);
+            this.label71.TabIndex = 98;
+            this.label71.Text = "Blanco";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.BackColor = System.Drawing.Color.Transparent;
+            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.ForeColor = System.Drawing.Color.Blue;
+            this.label72.Location = new System.Drawing.Point(596, 670);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(93, 31);
+            this.label72.TabIndex = 97;
+            this.label72.Text = "Negro";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.BackColor = System.Drawing.Color.Transparent;
+            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.ForeColor = System.Drawing.Color.Blue;
+            this.label73.Location = new System.Drawing.Point(862, 670);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(68, 31);
+            this.label73.TabIndex = 96;
+            this.label73.Text = "Gris";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.BackColor = System.Drawing.Color.Transparent;
+            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.ForeColor = System.Drawing.Color.Blue;
+            this.label74.Location = new System.Drawing.Point(306, 670);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(82, 31);
+            this.label74.TabIndex = 95;
+            this.label74.Text = "Rosa";
+            // 
+            // ExitColoresDB
+            // 
+            this.ExitColoresDB.BackColor = System.Drawing.Color.Transparent;
+            this.ExitColoresDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
+            this.ExitColoresDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExitColoresDB.FlatAppearance.BorderSize = 0;
+            this.ExitColoresDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitColoresDB.Location = new System.Drawing.Point(132, 30);
+            this.ExitColoresDB.Name = "ExitColoresDB";
+            this.ExitColoresDB.Size = new System.Drawing.Size(96, 60);
+            this.ExitColoresDB.TabIndex = 94;
+            this.ExitColoresDB.UseVisualStyleBackColor = false;
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.BackColor = System.Drawing.Color.Transparent;
+            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.ForeColor = System.Drawing.Color.Blue;
+            this.label75.Location = new System.Drawing.Point(733, 469);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(114, 31);
+            this.label75.TabIndex = 93;
+            this.label75.Text = "Celeste";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.BackColor = System.Drawing.Color.Transparent;
+            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.ForeColor = System.Drawing.Color.Blue;
+            this.label76.Location = new System.Drawing.Point(981, 469);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(104, 31);
+            this.label76.TabIndex = 92;
+            this.label76.Text = "Violeta";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.BackColor = System.Drawing.Color.Transparent;
+            this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.ForeColor = System.Drawing.Color.Blue;
+            this.label77.Location = new System.Drawing.Point(463, 469);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(71, 31);
+            this.label77.TabIndex = 91;
+            this.label77.Text = "Azul";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.BackColor = System.Drawing.Color.Transparent;
+            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.ForeColor = System.Drawing.Color.Blue;
+            this.label78.Location = new System.Drawing.Point(1129, 268);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(91, 31);
+            this.label78.TabIndex = 90;
+            this.label78.Text = "Verde";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.BackColor = System.Drawing.Color.Transparent;
+            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.ForeColor = System.Drawing.Color.Blue;
+            this.label79.Location = new System.Drawing.Point(810, 268);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(119, 31);
+            this.label79.TabIndex = 89;
+            this.label79.Text = "Amarillo";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.BackColor = System.Drawing.Color.Transparent;
+            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.ForeColor = System.Drawing.Color.Blue;
+            this.label80.Location = new System.Drawing.Point(577, 268);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(116, 31);
+            this.label80.TabIndex = 88;
+            this.label80.Text = "Naranja";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.BackColor = System.Drawing.Color.Transparent;
+            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label81.ForeColor = System.Drawing.Color.Blue;
+            this.label81.Location = new System.Drawing.Point(268, 268);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(74, 31);
+            this.label81.TabIndex = 87;
+            this.label81.Text = "Rojo";
+            // 
+            // Rojo
+            // 
+            this.Rojo.BackColor = System.Drawing.Color.Transparent;
+            this.Rojo.BackgroundImage = global::SignIt.Properties.Resources.Group_138;
+            this.Rojo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Rojo.FlatAppearance.BorderSize = 0;
+            this.Rojo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Rojo.Location = new System.Drawing.Point(285, 126);
+            this.Rojo.Name = "Rojo";
+            this.Rojo.Size = new System.Drawing.Size(140, 140);
+            this.Rojo.TabIndex = 86;
+            this.Rojo.UseVisualStyleBackColor = false;
+            this.Rojo.Click += new System.EventHandler(this.Rojo_Click);
+            // 
+            // Violeta
+            // 
+            this.Violeta.BackColor = System.Drawing.Color.Transparent;
+            this.Violeta.BackgroundImage = global::SignIt.Properties.Resources.Group_144;
+            this.Violeta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Violeta.FlatAppearance.BorderSize = 0;
+            this.Violeta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Violeta.Location = new System.Drawing.Point(978, 326);
+            this.Violeta.Name = "Violeta";
+            this.Violeta.Size = new System.Drawing.Size(140, 140);
+            this.Violeta.TabIndex = 85;
+            this.Violeta.UseVisualStyleBackColor = false;
+            this.Violeta.Click += new System.EventHandler(this.Violeta_Click);
+            // 
+            // Naranja
+            // 
+            this.Naranja.BackColor = System.Drawing.Color.Transparent;
+            this.Naranja.BackgroundImage = global::SignIt.Properties.Resources.Group_139;
+            this.Naranja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Naranja.FlatAppearance.BorderSize = 0;
+            this.Naranja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Naranja.Location = new System.Drawing.Point(563, 126);
+            this.Naranja.Name = "Naranja";
+            this.Naranja.Size = new System.Drawing.Size(140, 140);
+            this.Naranja.TabIndex = 84;
+            this.Naranja.UseVisualStyleBackColor = false;
+            this.Naranja.Click += new System.EventHandler(this.Naranja_Click);
+            // 
+            // Gris
+            // 
+            this.Gris.BackColor = System.Drawing.Color.Transparent;
+            this.Gris.BackgroundImage = global::SignIt.Properties.Resources.Group_150;
+            this.Gris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Gris.FlatAppearance.BorderSize = 0;
+            this.Gris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Gris.Location = new System.Drawing.Point(841, 527);
+            this.Gris.Name = "Gris";
+            this.Gris.Size = new System.Drawing.Size(140, 140);
+            this.Gris.TabIndex = 83;
+            this.Gris.UseVisualStyleBackColor = false;
+            this.Gris.Click += new System.EventHandler(this.Gris_Click);
+            // 
+            // Blanco
+            // 
+            this.Blanco.BackColor = System.Drawing.Color.Transparent;
+            this.Blanco.BackgroundImage = global::SignIt.Properties.Resources.Group_151;
+            this.Blanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Blanco.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Blanco.FlatAppearance.BorderSize = 0;
+            this.Blanco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Blanco.Location = new System.Drawing.Point(1119, 527);
+            this.Blanco.Name = "Blanco";
+            this.Blanco.Size = new System.Drawing.Size(140, 140);
+            this.Blanco.TabIndex = 82;
+            this.Blanco.UseVisualStyleBackColor = false;
+            this.Blanco.Click += new System.EventHandler(this.Blanco_Click);
+            // 
+            // Celeste
+            // 
+            this.Celeste.BackColor = System.Drawing.Color.Transparent;
+            this.Celeste.BackgroundImage = global::SignIt.Properties.Resources.Group_145;
+            this.Celeste.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Celeste.FlatAppearance.BorderSize = 0;
+            this.Celeste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Celeste.Location = new System.Drawing.Point(700, 326);
+            this.Celeste.Name = "Celeste";
+            this.Celeste.Size = new System.Drawing.Size(140, 140);
+            this.Celeste.TabIndex = 81;
+            this.Celeste.UseVisualStyleBackColor = false;
+            this.Celeste.Click += new System.EventHandler(this.Celeste_Click);
+            // 
+            // Azul
+            // 
+            this.Azul.BackColor = System.Drawing.Color.Transparent;
+            this.Azul.BackgroundImage = global::SignIt.Properties.Resources.Group_146;
+            this.Azul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Azul.FlatAppearance.BorderSize = 0;
+            this.Azul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Azul.Location = new System.Drawing.Point(422, 326);
+            this.Azul.Name = "Azul";
+            this.Azul.Size = new System.Drawing.Size(140, 140);
+            this.Azul.TabIndex = 80;
+            this.Azul.UseVisualStyleBackColor = false;
+            this.Azul.Click += new System.EventHandler(this.Azul_Click);
+            // 
+            // Rosa
+            // 
+            this.Rosa.BackColor = System.Drawing.Color.Transparent;
+            this.Rosa.BackgroundImage = global::SignIt.Properties.Resources.Group_148;
+            this.Rosa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Rosa.FlatAppearance.BorderSize = 0;
+            this.Rosa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Rosa.Location = new System.Drawing.Point(285, 527);
+            this.Rosa.Name = "Rosa";
+            this.Rosa.Size = new System.Drawing.Size(140, 140);
+            this.Rosa.TabIndex = 79;
+            this.Rosa.UseVisualStyleBackColor = false;
+            this.Rosa.Click += new System.EventHandler(this.Rosa_Click);
+            // 
+            // Negro
+            // 
+            this.Negro.BackColor = System.Drawing.Color.Transparent;
+            this.Negro.BackgroundImage = global::SignIt.Properties.Resources.Group_149;
+            this.Negro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Negro.FlatAppearance.BorderSize = 0;
+            this.Negro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Negro.Location = new System.Drawing.Point(563, 527);
+            this.Negro.Name = "Negro";
+            this.Negro.Size = new System.Drawing.Size(140, 140);
+            this.Negro.TabIndex = 78;
+            this.Negro.UseVisualStyleBackColor = false;
+            this.Negro.Click += new System.EventHandler(this.Negro_Click);
+            // 
+            // Verde
+            // 
+            this.Verde.BackColor = System.Drawing.Color.Transparent;
+            this.Verde.BackgroundImage = global::SignIt.Properties.Resources.Group_142;
+            this.Verde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Verde.FlatAppearance.BorderSize = 0;
+            this.Verde.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Verde.Location = new System.Drawing.Point(1119, 126);
+            this.Verde.Name = "Verde";
+            this.Verde.Size = new System.Drawing.Size(140, 140);
+            this.Verde.TabIndex = 77;
+            this.Verde.UseVisualStyleBackColor = false;
+            this.Verde.Click += new System.EventHandler(this.Verde_Click);
+            // 
+            // Amarillo
+            // 
+            this.Amarillo.BackColor = System.Drawing.Color.Transparent;
+            this.Amarillo.BackgroundImage = global::SignIt.Properties.Resources.Group_140;
+            this.Amarillo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Amarillo.FlatAppearance.BorderSize = 0;
+            this.Amarillo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Amarillo.Location = new System.Drawing.Point(841, 126);
+            this.Amarillo.Name = "Amarillo";
+            this.Amarillo.Size = new System.Drawing.Size(140, 140);
+            this.Amarillo.TabIndex = 76;
+            this.Amarillo.UseVisualStyleBackColor = false;
+            this.Amarillo.Click += new System.EventHandler(this.Amarillo_Click);
             // 
             // Form1
             // 
@@ -4383,12 +4772,12 @@
             this.Name = "Form1";
             this.Text = "SignIt!";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.signIt.ResumeLayout(false);
             this.IdS.ResumeLayout(false);
             this.IdS.PerformLayout();
             this.CdU.ResumeLayout(false);
             this.CdU.PerformLayout();
+            this.panel22.ResumeLayout(false);
             this.Home.ResumeLayout(false);
             this.LeccionesMenu.ResumeLayout(false);
             this.Diccionario.ResumeLayout(false);
@@ -4400,6 +4789,8 @@
             this.Basico.PerformLayout();
             this.Comida.ResumeLayout(false);
             this.Comida.PerformLayout();
+            this.Colores.ResumeLayout(false);
+            this.Colores.PerformLayout();
             this.Lugares.ResumeLayout(false);
             this.Lugares.PerformLayout();
             this.dBAbecedario.ResumeLayout(false);
@@ -4416,6 +4807,7 @@
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
             this.Enseñanza.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.EnseñanzaPlayer)).EndInit();
             this.ejercicio1.ResumeLayout(false);
@@ -4437,7 +4829,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.caracol.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -4736,6 +5127,34 @@
         private System.Windows.Forms.Label palabraDB;
         private System.Windows.Forms.TabPage videos;
         private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Button ExitColoresDB;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Button Rojo;
+        private System.Windows.Forms.Button Violeta;
+        private System.Windows.Forms.Button Naranja;
+        private System.Windows.Forms.Button Gris;
+        private System.Windows.Forms.Button Blanco;
+        private System.Windows.Forms.Button Celeste;
+        private System.Windows.Forms.Button Azul;
+        private System.Windows.Forms.Button Rosa;
+        private System.Windows.Forms.Button Negro;
+        private System.Windows.Forms.Button Verde;
+        private System.Windows.Forms.Button Amarillo;
+        private System.Windows.Forms.Label label69;
     }
 }
 
