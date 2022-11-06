@@ -300,6 +300,14 @@
     <None Include="Resources\Botón1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Group 137.png" />
+    <None Include="Resources\Group 136.png" />
+    <None Include="Resources\Group 135.png" />
+    <None Include="Resources\Group 134.png" />
+    <None Include="Resources\Group 133.png" />
+    <None Include="Resources\Group 132.png" />
+    <None Include="Resources\Group 131.png" />
+    <None Include="Resources\Group 130.png" />
     <None Include="Resources\Group 128.png" />
     <None Include="Resources\Group 129.png" />
     <None Include="Resources\Group 127.png" />

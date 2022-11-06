@@ -104,6 +104,23 @@
             this.Por_Favor = new System.Windows.Forms.Button();
             this.Bien = new System.Windows.Forms.Button();
             this.Comida = new System.Windows.Forms.TabPage();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.Pan = new System.Windows.Forms.Button();
+            this.Pizza = new System.Windows.Forms.Button();
+            this.Agua = new System.Windows.Forms.Button();
+            this.Leche = new System.Windows.Forms.Button();
+            this.Banana = new System.Windows.Forms.Button();
+            this.Carne = new System.Windows.Forms.Button();
+            this.Manzana = new System.Windows.Forms.Button();
+            this.Ensalada = new System.Windows.Forms.Button();
+            this.ExitComidaDB = new System.Windows.Forms.Button();
             this.Colores = new System.Windows.Forms.TabPage();
             this.Lugares = new System.Windows.Forms.TabPage();
             this.Pronombres = new System.Windows.Forms.TabPage();
@@ -287,6 +304,7 @@
             this.MenuDB.SuspendLayout();
             this.SbarD.SuspendLayout();
             this.Basico.SuspendLayout();
+            this.Comida.SuspendLayout();
             this.dBAbecedario.SuspendLayout();
             this.dBNros.SuspendLayout();
             this.DBeta.SuspendLayout();
@@ -331,7 +349,7 @@
             this.signIt.Controls.Add(this.ejercicio2);
             this.signIt.Controls.Add(this.ejercicio3);
             this.signIt.Controls.Add(this.caracol);
-            this.signIt.Location = new System.Drawing.Point(-10, -42);
+            this.signIt.Location = new System.Drawing.Point(-10, -22);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1628, 901);
@@ -781,14 +799,14 @@
             // 
             this.diccionarioBeta.Controls.Add(this.MenuDB);
             this.diccionarioBeta.Controls.Add(this.Basico);
-            this.diccionarioBeta.Controls.Add(this.Comida);
             this.diccionarioBeta.Controls.Add(this.Colores);
             this.diccionarioBeta.Controls.Add(this.Lugares);
             this.diccionarioBeta.Controls.Add(this.Pronombres);
             this.diccionarioBeta.Controls.Add(this.Verbos);
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
-            this.diccionarioBeta.Location = new System.Drawing.Point(-5, -46);
+            this.diccionarioBeta.Controls.Add(this.Comida);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-5, -41);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
             this.diccionarioBeta.Size = new System.Drawing.Size(1400, 900);
@@ -1366,11 +1384,252 @@
             // 
             this.Comida.BackColor = System.Drawing.Color.LightBlue;
             this.Comida.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Comida.Controls.Add(this.label50);
+            this.Comida.Controls.Add(this.label51);
+            this.Comida.Controls.Add(this.label52);
+            this.Comida.Controls.Add(this.label53);
+            this.Comida.Controls.Add(this.label46);
+            this.Comida.Controls.Add(this.label47);
+            this.Comida.Controls.Add(this.label48);
+            this.Comida.Controls.Add(this.label49);
+            this.Comida.Controls.Add(this.Pan);
+            this.Comida.Controls.Add(this.Pizza);
+            this.Comida.Controls.Add(this.Agua);
+            this.Comida.Controls.Add(this.Leche);
+            this.Comida.Controls.Add(this.Banana);
+            this.Comida.Controls.Add(this.Carne);
+            this.Comida.Controls.Add(this.Manzana);
+            this.Comida.Controls.Add(this.Ensalada);
+            this.Comida.Controls.Add(this.ExitComidaDB);
             this.Comida.Location = new System.Drawing.Point(4, 22);
             this.Comida.Name = "Comida";
             this.Comida.Size = new System.Drawing.Size(1392, 874);
             this.Comida.TabIndex = 5;
             this.Comida.Text = "Comida";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.BackColor = System.Drawing.Color.Transparent;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.Blue;
+            this.label50.Location = new System.Drawing.Point(1056, 588);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(93, 31);
+            this.label50.TabIndex = 56;
+            this.label50.Text = "Leche";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.BackColor = System.Drawing.Color.Transparent;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.Blue;
+            this.label51.Location = new System.Drawing.Point(783, 588);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(81, 31);
+            this.label51.TabIndex = 55;
+            this.label51.Text = "Agua";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.BackColor = System.Drawing.Color.Transparent;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.Blue;
+            this.label52.Location = new System.Drawing.Point(499, 588);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(93, 31);
+            this.label52.TabIndex = 54;
+            this.label52.Text = "Carne";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.BackColor = System.Drawing.Color.Transparent;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.Color.Blue;
+            this.label53.Location = new System.Drawing.Point(213, 588);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(113, 31);
+            this.label53.TabIndex = 53;
+            this.label53.Text = "Banana";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.BackColor = System.Drawing.Color.Transparent;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.Blue;
+            this.label46.Location = new System.Drawing.Point(1046, 309);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(132, 31);
+            this.label46.TabIndex = 52;
+            this.label46.Text = "Manzana";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.BackColor = System.Drawing.Color.Transparent;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.Blue;
+            this.label47.Location = new System.Drawing.Point(767, 309);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(135, 31);
+            this.label47.TabIndex = 51;
+            this.label47.Text = "Ensalada";
+            this.label47.Click += new System.EventHandler(this.label47_Click);
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.BackColor = System.Drawing.Color.Transparent;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.Blue;
+            this.label48.Location = new System.Drawing.Point(513, 309);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(86, 31);
+            this.label48.TabIndex = 50;
+            this.label48.Text = "Pizza";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.BackColor = System.Drawing.Color.Transparent;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.Blue;
+            this.label49.Location = new System.Drawing.Point(245, 309);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(65, 31);
+            this.label49.TabIndex = 49;
+            this.label49.Text = "Pan";
+            // 
+            // Pan
+            // 
+            this.Pan.BackColor = System.Drawing.Color.Transparent;
+            this.Pan.BackgroundImage = global::SignIt.Properties.Resources.Group_130;
+            this.Pan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pan.FlatAppearance.BorderSize = 0;
+            this.Pan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pan.Location = new System.Drawing.Point(209, 167);
+            this.Pan.Name = "Pan";
+            this.Pan.Size = new System.Drawing.Size(140, 140);
+            this.Pan.TabIndex = 48;
+            this.Pan.UseVisualStyleBackColor = false;
+            this.Pan.Click += new System.EventHandler(this.Pan_Click);
+            // 
+            // Pizza
+            // 
+            this.Pizza.BackColor = System.Drawing.Color.Transparent;
+            this.Pizza.BackgroundImage = global::SignIt.Properties.Resources.Group_131;
+            this.Pizza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pizza.FlatAppearance.BorderSize = 0;
+            this.Pizza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pizza.Location = new System.Drawing.Point(487, 167);
+            this.Pizza.Name = "Pizza";
+            this.Pizza.Size = new System.Drawing.Size(140, 140);
+            this.Pizza.TabIndex = 47;
+            this.Pizza.UseVisualStyleBackColor = false;
+            this.Pizza.Click += new System.EventHandler(this.Pizza_Click);
+            // 
+            // Agua
+            // 
+            this.Agua.BackColor = System.Drawing.Color.Transparent;
+            this.Agua.BackgroundImage = global::SignIt.Properties.Resources.Group_135;
+            this.Agua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Agua.FlatAppearance.BorderSize = 0;
+            this.Agua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Agua.Location = new System.Drawing.Point(755, 446);
+            this.Agua.Name = "Agua";
+            this.Agua.Size = new System.Drawing.Size(140, 140);
+            this.Agua.TabIndex = 46;
+            this.Agua.UseVisualStyleBackColor = false;
+            this.Agua.Click += new System.EventHandler(this.Agua_Click);
+            // 
+            // Leche
+            // 
+            this.Leche.BackColor = System.Drawing.Color.Transparent;
+            this.Leche.BackgroundImage = global::SignIt.Properties.Resources.Group_134;
+            this.Leche.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Leche.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Leche.FlatAppearance.BorderSize = 0;
+            this.Leche.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Leche.Location = new System.Drawing.Point(1033, 446);
+            this.Leche.Name = "Leche";
+            this.Leche.Size = new System.Drawing.Size(140, 140);
+            this.Leche.TabIndex = 45;
+            this.Leche.UseVisualStyleBackColor = false;
+            this.Leche.Click += new System.EventHandler(this.Leche_Click);
+            // 
+            // Banana
+            // 
+            this.Banana.BackColor = System.Drawing.Color.Transparent;
+            this.Banana.BackgroundImage = global::SignIt.Properties.Resources.Group_137;
+            this.Banana.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Banana.FlatAppearance.BorderSize = 0;
+            this.Banana.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Banana.Location = new System.Drawing.Point(199, 446);
+            this.Banana.Name = "Banana";
+            this.Banana.Size = new System.Drawing.Size(140, 140);
+            this.Banana.TabIndex = 44;
+            this.Banana.UseVisualStyleBackColor = false;
+            this.Banana.Click += new System.EventHandler(this.Banana_Click);
+            // 
+            // Carne
+            // 
+            this.Carne.BackColor = System.Drawing.Color.Transparent;
+            this.Carne.BackgroundImage = global::SignIt.Properties.Resources.Group_136;
+            this.Carne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Carne.FlatAppearance.BorderSize = 0;
+            this.Carne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Carne.Location = new System.Drawing.Point(477, 446);
+            this.Carne.Name = "Carne";
+            this.Carne.Size = new System.Drawing.Size(140, 140);
+            this.Carne.TabIndex = 43;
+            this.Carne.UseVisualStyleBackColor = false;
+            this.Carne.Click += new System.EventHandler(this.Carne_Click);
+            // 
+            // Manzana
+            // 
+            this.Manzana.BackColor = System.Drawing.Color.Transparent;
+            this.Manzana.BackgroundImage = global::SignIt.Properties.Resources.Group_133;
+            this.Manzana.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Manzana.FlatAppearance.BorderSize = 0;
+            this.Manzana.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Manzana.Location = new System.Drawing.Point(1043, 167);
+            this.Manzana.Name = "Manzana";
+            this.Manzana.Size = new System.Drawing.Size(140, 140);
+            this.Manzana.TabIndex = 42;
+            this.Manzana.UseVisualStyleBackColor = false;
+            this.Manzana.Click += new System.EventHandler(this.Manzana_Click);
+            // 
+            // Ensalada
+            // 
+            this.Ensalada.BackColor = System.Drawing.Color.Transparent;
+            this.Ensalada.BackgroundImage = global::SignIt.Properties.Resources.Group_132;
+            this.Ensalada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ensalada.FlatAppearance.BorderSize = 0;
+            this.Ensalada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Ensalada.Location = new System.Drawing.Point(765, 167);
+            this.Ensalada.Name = "Ensalada";
+            this.Ensalada.Size = new System.Drawing.Size(140, 140);
+            this.Ensalada.TabIndex = 41;
+            this.Ensalada.UseVisualStyleBackColor = false;
+            this.Ensalada.Click += new System.EventHandler(this.Ensalada_Click);
+            // 
+            // ExitComidaDB
+            // 
+            this.ExitComidaDB.BackColor = System.Drawing.Color.Transparent;
+            this.ExitComidaDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
+            this.ExitComidaDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExitComidaDB.FlatAppearance.BorderSize = 0;
+            this.ExitComidaDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitComidaDB.Location = new System.Drawing.Point(42, 77);
+            this.ExitComidaDB.Name = "ExitComidaDB";
+            this.ExitComidaDB.Size = new System.Drawing.Size(96, 60);
+            this.ExitComidaDB.TabIndex = 40;
+            this.ExitComidaDB.UseVisualStyleBackColor = false;
+            this.ExitComidaDB.Click += new System.EventHandler(this.ExitComidaDB_Click);
             // 
             // Colores
             // 
@@ -2553,17 +2812,18 @@
             // 
             // DBeta
             // 
-            this.DBeta.BackColor = System.Drawing.Color.Transparent;
+            this.DBeta.BackColor = System.Drawing.Color.DimGray;
             this.DBeta.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__1_1;
             this.DBeta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.DBeta.Controls.Add(this.panel6);
             this.DBeta.Location = new System.Drawing.Point(-4, 0);
             this.DBeta.Name = "DBeta";
-            this.DBeta.Size = new System.Drawing.Size(1380, 800);
+            this.DBeta.Size = new System.Drawing.Size(1408, 800);
             this.DBeta.TabIndex = 9;
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.BackgroundImage = global::SignIt.Properties.Resources.Rectangle_177;
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel6.Controls.Add(this.panel7);
@@ -2576,6 +2836,7 @@
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.Controls.Add(this.palabraDB);
             this.panel7.Location = new System.Drawing.Point(4, 311);
             this.panel7.Name = "panel7";
@@ -2607,6 +2868,7 @@
             // 
             // exitDB
             // 
+            this.exitDB.BackColor = System.Drawing.Color.Transparent;
             this.exitDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
             this.exitDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exitDB.FlatAppearance.BorderSize = 0;
@@ -2615,7 +2877,7 @@
             this.exitDB.Name = "exitDB";
             this.exitDB.Size = new System.Drawing.Size(75, 50);
             this.exitDB.TabIndex = 0;
-            this.exitDB.UseVisualStyleBackColor = true;
+            this.exitDB.UseVisualStyleBackColor = false;
             this.exitDB.Click += new System.EventHandler(this.exitDB_Click);
             // 
             // juegos
@@ -3671,6 +3933,8 @@
             this.SbarD.PerformLayout();
             this.Basico.ResumeLayout(false);
             this.Basico.PerformLayout();
+            this.Comida.ResumeLayout(false);
+            this.Comida.PerformLayout();
             this.dBAbecedario.ResumeLayout(false);
             this.dBAbecedario.PerformLayout();
             this.dBNros.ResumeLayout(false);
@@ -3961,6 +4225,23 @@
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Button ExitComidaDB;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Button Pan;
+        private System.Windows.Forms.Button Pizza;
+        private System.Windows.Forms.Button Agua;
+        private System.Windows.Forms.Button Leche;
+        private System.Windows.Forms.Button Banana;
+        private System.Windows.Forms.Button Carne;
+        private System.Windows.Forms.Button Manzana;
+        private System.Windows.Forms.Button Ensalada;
     }
 }
 

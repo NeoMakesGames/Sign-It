@@ -307,8 +307,6 @@ namespace SignIt
             this.Close();
         }   //Cierra la aplicación.
 
-
-
         private void experiencia()
         {
             UserXp = DatabaseFunctions.checkXP(DatabaseFunctions.currentUser, path);
@@ -1757,7 +1755,7 @@ namespace SignIt
         {
             if (avance > 2)
             {
-                signIt.SelectedTab = Comida;
+                diccionarioBetas(Comida, "ComidaDB");
             }
         }
 
@@ -1836,10 +1834,11 @@ namespace SignIt
                             diccionarioBetas(dBNros, "numeros");
                             break;
                         case "Basico":
-                            diccionarioBetas(dBNros, "fndb");
+                            diccionarioBetas(MenuDB, "MenuDB");
                             break;
                     }
                     diccionarioVideos(palabraDB);
+                    SearchDiccionario.Text = "";
                 }
                 else
                 {
@@ -1861,7 +1860,9 @@ namespace SignIt
 
 
 
+
         //Diccionario_Números
+
 
 
 
@@ -1925,6 +1926,7 @@ namespace SignIt
         {
             diccionarioVideos("10");
         }
+
 
 
 
@@ -2077,7 +2079,9 @@ namespace SignIt
 
 
 
+
         //Diccionario_Basico
+
 
 
 
@@ -2150,6 +2154,60 @@ namespace SignIt
         private void Por_Qué_Click(object sender, EventArgs e)
         {
             diccionarioVideos("No");
+        }
+
+
+
+
+
+        //Diccionario_Comida
+
+
+
+
+
+        private void ExitComidaDB_Click(object sender, EventArgs e)
+        {
+            byeDB();
+        }
+        private void Ensalada_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Ensalada");
+        }
+
+        private void Pan_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Pan");
+        }
+
+        private void Pizza_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Pizza");
+        }
+
+        private void Agua_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Agua");
+        }
+
+        private void Leche_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Leche");
+        }
+
+        private void Banana_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Banana");
+        }
+
+        private void Carne_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Carne");
+        }
+
+        private void Manzana_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Manzana");
         }
 
 
@@ -2440,7 +2498,7 @@ namespace SignIt
 
 
 //Botones
-
+        
 
 
 
@@ -2739,6 +2797,11 @@ namespace SignIt
         }
 
         private void EnseñanzaPlayer_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label47_Click(object sender, EventArgs e)
         {
 
         }
