@@ -64,7 +64,6 @@ namespace SignIt
         private void byeDB()
         {
             diccionarioBeta.SelectedTab = MenuDB;
-            DBeta.SendToBack();
             dbplayer.Ctlcontrols.stop();
             aparicionDelMenu();
         }   //Devuelve al menu del diccionario.
@@ -77,7 +76,7 @@ namespace SignIt
 
             dbplayer.URL = signsPath + palabra + ".wmv";
             dbplayer.settings.setMode("loop", true);
-            DBeta.BringToFront();
+            diccionarioBeta.SelectedTab = videos;
             dbplayer.Ctlcontrols.play();
             desaparicionDelMenu();
         }   //Acciona los videos del dicionario.
@@ -88,7 +87,7 @@ namespace SignIt
         {
             diccionarioBeta.SelectedTab = tipo;
             myimage = new Bitmap (imagePath + imagen + ".PNG");
-            DBeta.BackgroundImage = myimage;
+            videos.BackgroundImage = myimage;
             desaparicionDelMenu();
         }
 
@@ -1272,7 +1271,6 @@ namespace SignIt
             label2IdS.Hide();
             ej02.Hide();
             ej12.Hide();
-            DBeta.SendToBack();
             caracolExit2.Hide();
             caracolEJ1.Hide();
             caracolEJ2.Hide();
@@ -1755,6 +1753,7 @@ namespace SignIt
             if (avance > 1)
             {
                 diccionarioBetas(Basico, "basicoDB");
+                lastpage = 2;
             }
         }
 
@@ -1763,6 +1762,7 @@ namespace SignIt
             if (avance > 2)
             {
                 diccionarioBetas(Comida, "ComidaDB");
+                lastpage = 3;
             }
         }
 
@@ -1771,6 +1771,7 @@ namespace SignIt
             if (avance > 3)
             {
                 signIt.SelectedTab = Colores;
+                lastpage = 4;
             }
         }
 
@@ -1778,7 +1779,8 @@ namespace SignIt
         {
             if (avance > 4)
             {
-                diccionarioBetas(Lugares, "ComidaDB");
+                diccionarioBetas(Lugares, "LugaresDB");
+                lastpage = 5;
             }
         }
 
@@ -1787,6 +1789,7 @@ namespace SignIt
             if (avance > 5)
             {
                 signIt.SelectedTab = Pronombres;
+                lastpage = 6;
             }
         }
 
@@ -1795,17 +1798,20 @@ namespace SignIt
             if (avance > 6)
             {
                 signIt.SelectedTab = Verbos;
+                lastpage = 7;
             }
         }
 
         private void AbecedarioDB_Click(object sender, EventArgs e)
         {
             diccionarioBetas(dBAbecedario, "abecedario");
+            lastpage = 9;
         }
 
         private void Numeros_Click(object sender, EventArgs e)
         {
             diccionarioBetas(dBNros, "fndb");
+            lastpage = 8;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -1815,7 +1821,45 @@ namespace SignIt
 
         private void exitDB_Click(object sender, EventArgs e)
         {
-            DBeta.SendToBack();
+            switch (lastpage)
+            {
+                case 1:
+                    diccionarioBeta.SelectedTab = MenuDB;
+                    break;
+
+                case 2:
+                    diccionarioBeta.SelectedTab = Basico;
+                    break;
+
+                case 3:
+                    diccionarioBeta.SelectedTab = Comida;
+                    break;
+
+                case 4:
+                    diccionarioBeta.SelectedTab = Colores;
+                    break;
+
+                case 5:
+                    diccionarioBeta.SelectedTab = Lugares;
+                    break;
+
+                case 6:
+                    diccionarioBeta.SelectedTab = Pronombres;
+                    break;
+
+                case 7:
+                    diccionarioBeta.SelectedTab = Verbos;
+                    break;
+
+                case 8:
+                    diccionarioBeta.SelectedTab = dBNros;
+                    break;
+
+                case 9:
+                    diccionarioBeta.SelectedTab = dBAbecedario;
+                    break;
+
+            }
             dbplayer.Ctlcontrols.stop();
         }
         private void SearchDiccionario_Click(object sender, EventArgs e)
@@ -1844,6 +1888,7 @@ namespace SignIt
                             diccionarioBetas(MenuDB, "MenuDB");
                             break;
                     }
+                    lastpage = 1;
                     diccionarioVideos(palabraDB);
                     SearchDiccionario.Text = "";
                 }
@@ -2105,7 +2150,7 @@ namespace SignIt
 
         private void Como_Estas_Click(object sender, EventArgs e)
         {
-            diccionarioVideos("¿Como Estas?");
+            diccionarioVideos("Como Estas");
         }
 
         private void Bien_Click(object sender, EventArgs e)
@@ -2120,17 +2165,17 @@ namespace SignIt
 
         private void Quién_Click(object sender, EventArgs e)
         {
-            diccionarioVideos("Quién");
+            diccionarioVideos("Quien");
         }
 
         private void Qué_Click(object sender, EventArgs e)
         {
-            diccionarioVideos("¿Qué?");
+            diccionarioVideos("Que");
         }
 
         private void Como_Click(object sender, EventArgs e)
         {
-            diccionarioVideos("¿Como?");
+            diccionarioVideos("Como");
         }
 
         private void Adios_Click(object sender, EventArgs e)
@@ -2145,7 +2190,7 @@ namespace SignIt
 
         private void Dónde_Click(object sender, EventArgs e)
         {
-            diccionarioVideos("Dónde");
+            diccionarioVideos("Donde");
         }
 
         private void Hola_Click(object sender, EventArgs e)
@@ -2160,7 +2205,7 @@ namespace SignIt
 
         private void Por_Qué_Click(object sender, EventArgs e)
         {
-            diccionarioVideos("No");
+            diccionarioVideos("Por Que");
         }
 
 
@@ -2220,6 +2265,7 @@ namespace SignIt
 
 
 
+
         //Diccionario_Colores
 
 
@@ -2233,6 +2279,7 @@ namespace SignIt
 
 
         //Diccionario_Lugares
+
 
 
 
@@ -2264,7 +2311,7 @@ namespace SignIt
 
         private void Ciudad_Click(object sender, EventArgs e)
         {
-            diccionarioVideos("Ciudad");
+            diccionarioVideos("Lugar");
         }
 
         private void Teatro_Click(object sender, EventArgs e)

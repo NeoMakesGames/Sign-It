@@ -300,6 +300,8 @@
     <None Include="Resources\Botón1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Vector 97 %281%29.png" />
+    <None Include="Resources\Vector 97.png" />
     <None Include="Resources\Group 151.png" />
     <None Include="Resources\Group 150.png" />
     <None Include="Resources\Group 149.png" />

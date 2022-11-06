@@ -233,7 +233,7 @@
             this.dBNum8 = new System.Windows.Forms.Button();
             this.dBNum3 = new System.Windows.Forms.Button();
             this.dBNum2 = new System.Windows.Forms.Button();
-            this.DBeta = new System.Windows.Forms.Panel();
+            this.videos = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.palabraDB = new System.Windows.Forms.Label();
@@ -335,7 +335,7 @@
             this.Lugares.SuspendLayout();
             this.dBAbecedario.SuspendLayout();
             this.dBNros.SuspendLayout();
-            this.DBeta.SuspendLayout();
+            this.videos.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dbplayer)).BeginInit();
@@ -590,9 +590,10 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1243, 39);
+            this.button1.Location = new System.Drawing.Point(1221, 39);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 120);
             this.button1.TabIndex = 9;
@@ -644,6 +645,7 @@
             this.DiccionarioHome.BackColor = System.Drawing.Color.Transparent;
             this.DiccionarioHome.BackgroundImage = global::SignIt.Properties.Resources.Group_54__1_1;
             this.DiccionarioHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.DiccionarioHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DiccionarioHome.FlatAppearance.BorderSize = 0;
             this.DiccionarioHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DiccionarioHome.Location = new System.Drawing.Point(254, 444);
@@ -658,6 +660,7 @@
             this.LeccionesHome.BackColor = System.Drawing.Color.Transparent;
             this.LeccionesHome.BackgroundImage = global::SignIt.Properties.Resources.Group_41__2_;
             this.LeccionesHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LeccionesHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LeccionesHome.FlatAppearance.BorderSize = 0;
             this.LeccionesHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LeccionesHome.Location = new System.Drawing.Point(254, 188);
@@ -693,9 +696,10 @@
             this.caracolLecciones.BackColor = System.Drawing.Color.Transparent;
             this.caracolLecciones.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
             this.caracolLecciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.caracolLecciones.Cursor = System.Windows.Forms.Cursors.Hand;
             this.caracolLecciones.FlatAppearance.BorderSize = 0;
             this.caracolLecciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolLecciones.Location = new System.Drawing.Point(1210, 34);
+            this.caracolLecciones.Location = new System.Drawing.Point(1194, 34);
             this.caracolLecciones.Name = "caracolLecciones";
             this.caracolLecciones.Size = new System.Drawing.Size(150, 150);
             this.caracolLecciones.TabIndex = 13;
@@ -707,6 +711,7 @@
             this.examenlecc.BackColor = System.Drawing.Color.Transparent;
             this.examenlecc.BackgroundImage = global::SignIt.Properties.Resources.Básico__6_;
             this.examenlecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.examenlecc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.examenlecc.FlatAppearance.BorderSize = 0;
             this.examenlecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.examenlecc.Location = new System.Drawing.Point(554, 380);
@@ -721,6 +726,7 @@
             this.verbosLecc.BackColor = System.Drawing.Color.Transparent;
             this.verbosLecc.BackgroundImage = global::SignIt.Properties.Resources.Básico__5_;
             this.verbosLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.verbosLecc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.verbosLecc.FlatAppearance.BorderSize = 0;
             this.verbosLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.verbosLecc.Location = new System.Drawing.Point(134, 630);
@@ -735,6 +741,7 @@
             this.pronombresLecc.BackColor = System.Drawing.Color.Transparent;
             this.pronombresLecc.BackgroundImage = global::SignIt.Properties.Resources.Básico__4_;
             this.pronombresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pronombresLecc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pronombresLecc.FlatAppearance.BorderSize = 0;
             this.pronombresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pronombresLecc.Location = new System.Drawing.Point(602, 630);
@@ -749,6 +756,7 @@
             this.lugaresLecc.BackColor = System.Drawing.Color.Transparent;
             this.lugaresLecc.BackgroundImage = global::SignIt.Properties.Resources.Básico__3_;
             this.lugaresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lugaresLecc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lugaresLecc.FlatAppearance.BorderSize = 0;
             this.lugaresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lugaresLecc.Location = new System.Drawing.Point(1089, 630);
@@ -763,6 +771,7 @@
             this.coloresLecc.BackColor = System.Drawing.Color.Transparent;
             this.coloresLecc.BackgroundImage = global::SignIt.Properties.Resources.Básico__2_;
             this.coloresLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.coloresLecc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.coloresLecc.FlatAppearance.BorderSize = 0;
             this.coloresLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.coloresLecc.Location = new System.Drawing.Point(1089, 210);
@@ -777,6 +786,7 @@
             this.comidaLecc.BackColor = System.Drawing.Color.Transparent;
             this.comidaLecc.BackgroundImage = global::SignIt.Properties.Resources.Básico__1_;
             this.comidaLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.comidaLecc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comidaLecc.FlatAppearance.BorderSize = 0;
             this.comidaLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comidaLecc.Location = new System.Drawing.Point(602, 210);
@@ -791,6 +801,7 @@
             this.basicoLecc.BackColor = System.Drawing.Color.Transparent;
             this.basicoLecc.BackgroundImage = global::SignIt.Properties.Resources.Básico;
             this.basicoLecc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.basicoLecc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.basicoLecc.FlatAppearance.BorderSize = 0;
             this.basicoLecc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.basicoLecc.Location = new System.Drawing.Point(134, 210);
@@ -816,7 +827,6 @@
             this.Diccionario.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Diccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Diccionario.Controls.Add(this.diccionarioBeta);
-            this.Diccionario.Controls.Add(this.DBeta);
             this.Diccionario.Location = new System.Drawing.Point(4, 22);
             this.Diccionario.Name = "Diccionario";
             this.Diccionario.Size = new System.Drawing.Size(1620, 875);
@@ -834,6 +844,7 @@
             this.diccionarioBeta.Controls.Add(this.Verbos);
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
+            this.diccionarioBeta.Controls.Add(this.videos);
             this.diccionarioBeta.Location = new System.Drawing.Point(-4, 0);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
@@ -895,9 +906,10 @@
             this.ayudaDicionario.BackColor = System.Drawing.Color.Transparent;
             this.ayudaDicionario.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
             this.ayudaDicionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ayudaDicionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ayudaDicionario.FlatAppearance.BorderSize = 0;
             this.ayudaDicionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ayudaDicionario.Location = new System.Drawing.Point(1223, 118);
+            this.ayudaDicionario.Location = new System.Drawing.Point(1144, 59);
             this.ayudaDicionario.Name = "ayudaDicionario";
             this.ayudaDicionario.Size = new System.Drawing.Size(120, 120);
             this.ayudaDicionario.TabIndex = 8;
@@ -909,6 +921,7 @@
             this.NumerosDB.BackColor = System.Drawing.Color.Transparent;
             this.NumerosDB.BackgroundImage = global::SignIt.Properties.Resources.Group_58__1_;
             this.NumerosDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.NumerosDB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.NumerosDB.FlatAppearance.BorderSize = 0;
             this.NumerosDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NumerosDB.Location = new System.Drawing.Point(791, 552);
@@ -923,6 +936,7 @@
             this.verbosDiccionario.BackColor = System.Drawing.Color.Transparent;
             this.verbosDiccionario.BackgroundImage = global::SignIt.Properties.Resources.Básico__5_;
             this.verbosDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.verbosDiccionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.verbosDiccionario.FlatAppearance.BorderSize = 0;
             this.verbosDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.verbosDiccionario.Location = new System.Drawing.Point(973, 389);
@@ -937,6 +951,7 @@
             this.AbecedarioDB.BackColor = System.Drawing.Color.Transparent;
             this.AbecedarioDB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AbecedarioDB.BackgroundImage")));
             this.AbecedarioDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AbecedarioDB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AbecedarioDB.FlatAppearance.BorderSize = 0;
             this.AbecedarioDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AbecedarioDB.Location = new System.Drawing.Point(346, 552);
@@ -951,6 +966,7 @@
             this.basicoDiccionario.BackColor = System.Drawing.Color.Transparent;
             this.basicoDiccionario.BackgroundImage = global::SignIt.Properties.Resources.Básico;
             this.basicoDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.basicoDiccionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.basicoDiccionario.FlatAppearance.BorderSize = 0;
             this.basicoDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.basicoDiccionario.ForeColor = System.Drawing.Color.Black;
@@ -966,6 +982,7 @@
             this.lugaresDiccionario.BackColor = System.Drawing.Color.Transparent;
             this.lugaresDiccionario.BackgroundImage = global::SignIt.Properties.Resources.Básico__3_;
             this.lugaresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lugaresDiccionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lugaresDiccionario.FlatAppearance.BorderSize = 0;
             this.lugaresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lugaresDiccionario.Location = new System.Drawing.Point(137, 389);
@@ -980,6 +997,7 @@
             this.coloresDiccionario.BackColor = System.Drawing.Color.Transparent;
             this.coloresDiccionario.BackgroundImage = global::SignIt.Properties.Resources.Básico__2_;
             this.coloresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.coloresDiccionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.coloresDiccionario.FlatAppearance.BorderSize = 0;
             this.coloresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.coloresDiccionario.Location = new System.Drawing.Point(973, 200);
@@ -994,6 +1012,7 @@
             this.comidaDiccionario.BackColor = System.Drawing.Color.Transparent;
             this.comidaDiccionario.BackgroundImage = global::SignIt.Properties.Resources.Básico__1_;
             this.comidaDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.comidaDiccionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comidaDiccionario.FlatAppearance.BorderSize = 0;
             this.comidaDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comidaDiccionario.Location = new System.Drawing.Point(568, 200);
@@ -1008,6 +1027,7 @@
             this.pronombresDiccionario.BackColor = System.Drawing.Color.Transparent;
             this.pronombresDiccionario.BackgroundImage = global::SignIt.Properties.Resources.Básico__4_;
             this.pronombresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pronombresDiccionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pronombresDiccionario.FlatAppearance.BorderSize = 0;
             this.pronombresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pronombresDiccionario.Location = new System.Drawing.Point(568, 389);
@@ -3218,16 +3238,17 @@
             this.dBNum2.UseVisualStyleBackColor = false;
             this.dBNum2.Click += new System.EventHandler(this.dBNum2_Click);
             // 
-            // DBeta
+            // videos
             // 
-            this.DBeta.BackColor = System.Drawing.Color.DimGray;
-            this.DBeta.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__1_1;
-            this.DBeta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.DBeta.Controls.Add(this.panel6);
-            this.DBeta.Location = new System.Drawing.Point(-4, 3);
-            this.DBeta.Name = "DBeta";
-            this.DBeta.Size = new System.Drawing.Size(1408, 800);
-            this.DBeta.TabIndex = 9;
+            this.videos.BackColor = System.Drawing.Color.LightBlue;
+            this.videos.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.videos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.videos.Controls.Add(this.panel6);
+            this.videos.Location = new System.Drawing.Point(4, 22);
+            this.videos.Name = "videos";
+            this.videos.Size = new System.Drawing.Size(1392, 874);
+            this.videos.TabIndex = 9;
+            this.videos.Text = "Videos";
             // 
             // panel6
             // 
@@ -3237,7 +3258,7 @@
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.dbplayer);
             this.panel6.Controls.Add(this.exitDB);
-            this.panel6.Location = new System.Drawing.Point(471, 153);
+            this.panel6.Location = new System.Drawing.Point(474, 202);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(450, 450);
             this.panel6.TabIndex = 4;
@@ -3253,9 +3274,7 @@
             // 
             // palabraDB
             // 
-            this.palabraDB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.palabraDB.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.palabraDB.AutoSize = true;
             this.palabraDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.palabraDB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -3264,6 +3283,7 @@
             this.palabraDB.Size = new System.Drawing.Size(36, 39);
             this.palabraDB.TabIndex = 1;
             this.palabraDB.Text = "a";
+            this.palabraDB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dbplayer
             // 
@@ -3529,6 +3549,7 @@
             this.FullScrButtonSett.BackColor = System.Drawing.Color.Transparent;
             this.FullScrButtonSett.BackgroundImage = global::SignIt.Properties.Resources.Group_75;
             this.FullScrButtonSett.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.FullScrButtonSett.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FullScrButtonSett.FlatAppearance.BorderSize = 0;
             this.FullScrButtonSett.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FullScrButtonSett.Location = new System.Drawing.Point(700, 668);
@@ -3568,7 +3589,7 @@
             this.xProgressBar.ForeColor = System.Drawing.Color.Lime;
             this.xProgressBar.Location = new System.Drawing.Point(84, 26);
             this.xProgressBar.Name = "xProgressBar";
-            this.xProgressBar.Size = new System.Drawing.Size(439, 33);
+            this.xProgressBar.Size = new System.Drawing.Size(442, 33);
             this.xProgressBar.TabIndex = 15;
             this.xProgressBar.Click += new System.EventHandler(this.xProgressBar_Click);
             // 
@@ -3648,9 +3669,10 @@
             this.caracolEnsenanza.BackColor = System.Drawing.Color.Transparent;
             this.caracolEnsenanza.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
             this.caracolEnsenanza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.caracolEnsenanza.Cursor = System.Windows.Forms.Cursors.Hand;
             this.caracolEnsenanza.FlatAppearance.BorderSize = 0;
             this.caracolEnsenanza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolEnsenanza.Location = new System.Drawing.Point(1215, 40);
+            this.caracolEnsenanza.Location = new System.Drawing.Point(1139, 34);
             this.caracolEnsenanza.Name = "caracolEnsenanza";
             this.caracolEnsenanza.Size = new System.Drawing.Size(150, 150);
             this.caracolEnsenanza.TabIndex = 13;
@@ -3675,6 +3697,7 @@
             this.contEnseñanza.BackColor = System.Drawing.Color.Transparent;
             this.contEnseñanza.BackgroundImage = global::SignIt.Properties.Resources.Botón1;
             this.contEnseñanza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.contEnseñanza.Cursor = System.Windows.Forms.Cursors.Hand;
             this.contEnseñanza.FlatAppearance.BorderSize = 0;
             this.contEnseñanza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.contEnseñanza.Location = new System.Drawing.Point(1139, 650);
@@ -3710,6 +3733,7 @@
             this.caracolEJ1.BackColor = System.Drawing.Color.Transparent;
             this.caracolEJ1.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
             this.caracolEJ1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.caracolEJ1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.caracolEJ1.FlatAppearance.BorderSize = 0;
             this.caracolEJ1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.caracolEJ1.Location = new System.Drawing.Point(1215, 40);
@@ -3993,6 +4017,7 @@
             this.caracolEJ2.BackColor = System.Drawing.Color.Transparent;
             this.caracolEJ2.BackgroundImage = global::SignIt.Properties.Resources.Caracol_boceto_2;
             this.caracolEJ2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.caracolEJ2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.caracolEJ2.FlatAppearance.BorderSize = 0;
             this.caracolEJ2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.caracolEJ2.Location = new System.Drawing.Point(1177, 83);
@@ -4029,6 +4054,7 @@
             this.ej2cont.BackColor = System.Drawing.Color.Transparent;
             this.ej2cont.BackgroundImage = global::SignIt.Properties.Resources.Group_28;
             this.ej2cont.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej2cont.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ej2cont.FlatAppearance.BorderSize = 0;
             this.ej2cont.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ej2cont.Location = new System.Drawing.Point(1160, 623);
@@ -4229,6 +4255,7 @@
             this.MenuExitButton.BackColor = System.Drawing.Color.Transparent;
             this.MenuExitButton.BackgroundImage = global::SignIt.Properties.Resources.Group_55__2_;
             this.MenuExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuExitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MenuExitButton.FlatAppearance.BorderSize = 0;
             this.MenuExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MenuExitButton.Location = new System.Drawing.Point(3, 637);
@@ -4243,6 +4270,7 @@
             this.MenuSettingsButton.BackColor = System.Drawing.Color.Transparent;
             this.MenuSettingsButton.BackgroundImage = global::SignIt.Properties.Resources.Group_53;
             this.MenuSettingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuSettingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MenuSettingsButton.FlatAppearance.BorderSize = 0;
             this.MenuSettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MenuSettingsButton.Location = new System.Drawing.Point(3, 531);
@@ -4257,6 +4285,7 @@
             this.MenuGamesButton.BackColor = System.Drawing.Color.Transparent;
             this.MenuGamesButton.BackgroundImage = global::SignIt.Properties.Resources.Group_52;
             this.MenuGamesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuGamesButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MenuGamesButton.FlatAppearance.BorderSize = 0;
             this.MenuGamesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MenuGamesButton.Location = new System.Drawing.Point(3, 425);
@@ -4271,6 +4300,7 @@
             this.MenuDiccionarioButton.BackColor = System.Drawing.Color.Transparent;
             this.MenuDiccionarioButton.BackgroundImage = global::SignIt.Properties.Resources.Group_50;
             this.MenuDiccionarioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuDiccionarioButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MenuDiccionarioButton.FlatAppearance.BorderSize = 0;
             this.MenuDiccionarioButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MenuDiccionarioButton.Location = new System.Drawing.Point(3, 319);
@@ -4285,6 +4315,7 @@
             this.MenuLectionsButton.BackColor = System.Drawing.Color.Transparent;
             this.MenuLectionsButton.BackgroundImage = global::SignIt.Properties.Resources.Group_49;
             this.MenuLectionsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuLectionsButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MenuLectionsButton.FlatAppearance.BorderSize = 0;
             this.MenuLectionsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MenuLectionsButton.Location = new System.Drawing.Point(3, 213);
@@ -4299,6 +4330,7 @@
             this.MenuHomeButton.BackColor = System.Drawing.Color.Transparent;
             this.MenuHomeButton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas_botón;
             this.MenuHomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuHomeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MenuHomeButton.FlatAppearance.BorderSize = 0;
             this.MenuHomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MenuHomeButton.Location = new System.Drawing.Point(3, 104);
@@ -4317,6 +4349,7 @@
             // Menubutton
             // 
             this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
+            this.Menubutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menubutton.FlatAppearance.BorderSize = 0;
             this.Menubutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Menubutton.Location = new System.Drawing.Point(0, 0);
@@ -4331,7 +4364,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1350, 781);
+            this.ClientSize = new System.Drawing.Size(1350, 749);
             this.Controls.Add(this.signIt);
             this.Controls.Add(this.Menubutton);
             this.Controls.Add(this.panel1);
@@ -4361,7 +4394,7 @@
             this.dBAbecedario.PerformLayout();
             this.dBNros.ResumeLayout(false);
             this.dBNros.PerformLayout();
-            this.DBeta.ResumeLayout(false);
+            this.videos.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -4495,8 +4528,6 @@
         private System.Windows.Forms.Button ej2videoC;
         private System.Windows.Forms.Button ej2videoA;
         private System.Windows.Forms.Button dBNum0;
-        private System.Windows.Forms.Panel DBeta;
-        private System.Windows.Forms.Label palabraDB;
         private System.Windows.Forms.Button exitDB;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label labelDBNum0;
@@ -4691,6 +4722,8 @@
         private System.Windows.Forms.Button Cine;
         private System.Windows.Forms.Button Hospital;
         private System.Windows.Forms.Button Supermercado;
+        private System.Windows.Forms.Label palabraDB;
+        private System.Windows.Forms.TabPage videos;
     }
 }
 

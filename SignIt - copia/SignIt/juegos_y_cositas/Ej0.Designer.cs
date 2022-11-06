@@ -36,6 +36,7 @@
             this.ej0cont.BackColor = System.Drawing.Color.Transparent;
             this.ej0cont.BackgroundImage = global::SignIt.Properties.Resources.Botón1;
             this.ej0cont.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej0cont.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ej0cont.FlatAppearance.BorderSize = 0;
             this.ej0cont.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ej0cont.Location = new System.Drawing.Point(1160, 45);
