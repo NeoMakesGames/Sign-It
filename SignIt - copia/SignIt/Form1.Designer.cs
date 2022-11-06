@@ -475,7 +475,6 @@
             this.IdS.Size = new System.Drawing.Size(1620, 875);
             this.IdS.TabIndex = 0;
             this.IdS.Text = "Inicio de Sesión";
-            this.IdS.Click += new System.EventHandler(this.IdS_Click);
             // 
             // panel2
             // 
@@ -487,7 +486,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(600, 220);
             this.panel2.TabIndex = 6;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label2IdS
             // 
@@ -500,7 +498,6 @@
             this.label2IdS.Size = new System.Drawing.Size(235, 31);
             this.label2IdS.TabIndex = 5;
             this.label2IdS.Text = "Usuario incorrecto";
-            this.label2IdS.Click += new System.EventHandler(this.label2IdS_Click);
             // 
             // ComenzarIds
             // 
@@ -516,10 +513,8 @@
             this.ComenzarIds.TabIndex = 3;
             this.ComenzarIds.UseVisualStyleBackColor = false;
             this.ComenzarIds.Click += new System.EventHandler(this.ComenzarIds_Click);
-            this.ComenzarIds.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ComenzarIds_MouseClick);
             this.ComenzarIds.MouseEnter += new System.EventHandler(this.ComenzarIds_MouseEnter);
             this.ComenzarIds.MouseLeave += new System.EventHandler(this.ComenzarIds_MouseLeave);
-            this.ComenzarIds.MouseHover += new System.EventHandler(this.ComenzarIds_MouseHover);
             // 
             // linkLabel1IdS
             // 
@@ -599,7 +594,6 @@
             this.UserAgeCdU.TabIndex = 10;
             this.UserAgeCdU.Text = "Ingresar edad";
             this.UserAgeCdU.Click += new System.EventHandler(this.UserAgeCdU_Click);
-            this.UserAgeCdU.TextChanged += new System.EventHandler(this.UserAgeCdU_TextChanged);
             this.UserAgeCdU.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserAgeCdU_KeyDown);
             // 
             // panel3
@@ -776,7 +770,6 @@
             this.LeccionesMenu.Size = new System.Drawing.Size(1620, 875);
             this.LeccionesMenu.TabIndex = 3;
             this.LeccionesMenu.Text = "LeccionesMenu";
-            this.LeccionesMenu.Click += new System.EventHandler(this.LeccionesMenu_Click);
             // 
             // caracolLecciones
             // 
@@ -932,7 +925,7 @@
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
             this.diccionarioBeta.Controls.Add(this.videos);
-            this.diccionarioBeta.Location = new System.Drawing.Point(-4, 0);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-4, -42);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
             this.diccionarioBeta.Size = new System.Drawing.Size(1400, 900);
@@ -959,7 +952,6 @@
             this.MenuDB.Size = new System.Drawing.Size(1392, 874);
             this.MenuDB.TabIndex = 0;
             this.MenuDB.Text = "Menu";
-            this.MenuDB.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // SbarD
             // 
@@ -2996,7 +2988,6 @@
             this.label98.Size = new System.Drawing.Size(87, 31);
             this.label98.TabIndex = 91;
             this.label98.Text = "Jugar";
-            this.label98.Click += new System.EventHandler(this.label98_Click);
             // 
             // label99
             // 
@@ -4067,7 +4058,6 @@
             this.dBNros.Size = new System.Drawing.Size(1392, 874);
             this.dBNros.TabIndex = 2;
             this.dBNros.Text = "dbNros";
-            this.dBNros.Click += new System.EventHandler(this.dBNros_Click);
             // 
             // labelDBNum9
             // 
@@ -4656,7 +4646,6 @@
             this.progresoSett2.Size = new System.Drawing.Size(42, 46);
             this.progresoSett2.TabIndex = 7;
             this.progresoSett2.Text = "3";
-            this.progresoSett2.Click += new System.EventHandler(this.label3_Click);
             // 
             // progresoSett
             // 
@@ -4927,7 +4916,6 @@
             this.ejercicio1VideoC.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoC.OcxState")));
             this.ejercicio1VideoC.Size = new System.Drawing.Size(250, 265);
             this.ejercicio1VideoC.TabIndex = 3;
-            this.ejercicio1VideoC.ClickEvent += new AxWMPLib._WMPOCXEvents_ClickEventHandler(this.ejercicio1VideoC_ClickEvent);
             // 
             // panel11
             // 
@@ -4957,7 +4945,6 @@
             this.ejercicio1VideoB.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoB.OcxState")));
             this.ejercicio1VideoB.Size = new System.Drawing.Size(250, 265);
             this.ejercicio1VideoB.TabIndex = 2;
-            this.ejercicio1VideoB.ClickEvent += new AxWMPLib._WMPOCXEvents_ClickEventHandler(this.ejercicio1VideoB_ClickEvent);
             // 
             // panel10
             // 
@@ -4988,8 +4975,6 @@
             this.ejercicio1VideoA.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoA.OcxState")));
             this.ejercicio1VideoA.Size = new System.Drawing.Size(250, 265);
             this.ejercicio1VideoA.TabIndex = 1;
-            this.ejercicio1VideoA.ClickEvent += new AxWMPLib._WMPOCXEvents_ClickEventHandler(this.ejercicio1VideoA_ClickEvent);
-            this.ejercicio1VideoA.Enter += new System.EventHandler(this.ejercicio1VideoA_Enter);
             // 
             // panel5
             // 
@@ -5174,7 +5159,6 @@
             this.rtaEj2.Name = "rtaEj2";
             this.rtaEj2.Size = new System.Drawing.Size(478, 60);
             this.rtaEj2.TabIndex = 2;
-            this.rtaEj2.TextChanged += new System.EventHandler(this.rtaEj2_TextChanged);
             // 
             // label1
             // 
@@ -5186,7 +5170,6 @@
             this.label1.Size = new System.Drawing.Size(283, 41);
             this.label1.TabIndex = 1;
             this.label1.Text = "Traduce al español";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ej2cont
             // 

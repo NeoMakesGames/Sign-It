@@ -2938,96 +2938,9 @@ namespace SignIt
 
 
 
-        private void race2_Load(object sender, EventArgs e)
-        {
-
-        }
-        private void label2IdS_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         private void UserIdS_TextChanged(object sender, EventArgs e)
         {
             UserIdS.ForeColor = Color.Black;
-        }
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        private void IdS_Click(object sender, EventArgs e)
-        {
-        }
-        private void Chekeos_Tick(object sender, EventArgs e)
-        {
-
-        }
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void LeccionesMenu_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ComenzarIds_MouseHover(object sender, EventArgs e)
-        {
-
-        }
-        private void ejercicio1VideoA_Enter(object sender, EventArgs e)
-        {
-
-        }
-        private void dBNros_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ComenzarIds_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
-        private void UserAgeCdU_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void rtaEj2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void ejercicio1VideoA_ClickEvent(object sender, AxWMPLib._WMPOCXEvents_ClickEvent e)
-        {
-
-        }
-
-        private void ejercicio1VideoB_ClickEvent(object sender, AxWMPLib._WMPOCXEvents_ClickEvent e)
-        {
-
-        }
-        private void ejercicio1VideoC_ClickEvent(object sender, AxWMPLib._WMPOCXEvents_ClickEvent e)
-        {
-
-        }
-
-        private void label98_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
