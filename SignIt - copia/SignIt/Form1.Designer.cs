@@ -321,6 +321,7 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
+            this.panel21 = new System.Windows.Forms.Panel();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -361,6 +362,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.caracol.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel21.SuspendLayout();
             this.SuspendLayout();
             // 
             // signIt
@@ -486,13 +488,13 @@
             this.CdU.Location = new System.Drawing.Point(4, 22);
             this.CdU.Name = "CdU";
             this.CdU.Padding = new System.Windows.Forms.Padding(3);
-            this.CdU.Size = new System.Drawing.Size(1620, 875);
+            this.CdU.Size = new System.Drawing.Size(1620, 879);
             this.CdU.TabIndex = 1;
             this.CdU.Text = "Creación de usuario";
             // 
             // UserAgeCdU
             // 
-            this.UserAgeCdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.UserAgeCdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserAgeCdU.ForeColor = System.Drawing.Color.Silver;
             this.UserAgeCdU.Location = new System.Drawing.Point(454, 423);
             this.UserAgeCdU.Name = "UserAgeCdU";
@@ -514,7 +516,7 @@
             // 
             // UserCdU
             // 
-            this.UserCdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.UserCdU.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserCdU.ForeColor = System.Drawing.Color.Silver;
             this.UserCdU.Location = new System.Drawing.Point(454, 335);
             this.UserCdU.Name = "UserCdU";
@@ -581,7 +583,7 @@
             this.Home.Controls.Add(this.LeccionesHome);
             this.Home.Location = new System.Drawing.Point(4, 22);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(1620, 875);
+            this.Home.Size = new System.Drawing.Size(1620, 879);
             this.Home.TabIndex = 8;
             this.Home.Text = "Home";
             // 
@@ -686,7 +688,7 @@
             this.LeccionesMenu.Controls.Add(this.panel9);
             this.LeccionesMenu.Location = new System.Drawing.Point(4, 22);
             this.LeccionesMenu.Name = "LeccionesMenu";
-            this.LeccionesMenu.Size = new System.Drawing.Size(1620, 875);
+            this.LeccionesMenu.Size = new System.Drawing.Size(1620, 879);
             this.LeccionesMenu.TabIndex = 3;
             this.LeccionesMenu.Text = "LeccionesMenu";
             this.LeccionesMenu.Click += new System.EventHandler(this.LeccionesMenu_Click);
@@ -829,7 +831,7 @@
             this.Diccionario.Controls.Add(this.diccionarioBeta);
             this.Diccionario.Location = new System.Drawing.Point(4, 22);
             this.Diccionario.Name = "Diccionario";
-            this.Diccionario.Size = new System.Drawing.Size(1620, 875);
+            this.Diccionario.Size = new System.Drawing.Size(1620, 879);
             this.Diccionario.TabIndex = 4;
             this.Diccionario.Text = "Diccionario";
             // 
@@ -3274,13 +3276,12 @@
             // 
             // palabraDB
             // 
-            this.palabraDB.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.palabraDB.AutoSize = true;
+            this.palabraDB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.palabraDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.palabraDB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.palabraDB.Location = new System.Drawing.Point(198, 44);
+            this.palabraDB.Location = new System.Drawing.Point(0, 0);
             this.palabraDB.Name = "palabraDB";
-            this.palabraDB.Size = new System.Drawing.Size(36, 39);
+            this.palabraDB.Size = new System.Drawing.Size(443, 144);
             this.palabraDB.TabIndex = 1;
             this.palabraDB.Text = "a";
             this.palabraDB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3320,7 +3321,7 @@
             this.juegos.Controls.Add(this.race1);
             this.juegos.Location = new System.Drawing.Point(4, 22);
             this.juegos.Name = "juegos";
-            this.juegos.Size = new System.Drawing.Size(1620, 875);
+            this.juegos.Size = new System.Drawing.Size(1620, 879);
             this.juegos.TabIndex = 6;
             this.juegos.Text = "juegos";
             // 
@@ -3413,7 +3414,7 @@
             this.Ajustes.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ajustes.Location = new System.Drawing.Point(4, 22);
             this.Ajustes.Name = "Ajustes";
-            this.Ajustes.Size = new System.Drawing.Size(1620, 875);
+            this.Ajustes.Size = new System.Drawing.Size(1620, 879);
             this.Ajustes.TabIndex = 5;
             this.Ajustes.Text = "Ajustes";
             this.Ajustes.Click += new System.EventHandler(this.Ajustes_Click);
@@ -3608,14 +3609,14 @@
             this.Enseñanza.BackColor = System.Drawing.Color.LightBlue;
             this.Enseñanza.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Enseñanza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Enseñanza.Controls.Add(this.panel21);
             this.Enseñanza.Controls.Add(this.panel19);
             this.Enseñanza.Controls.Add(this.enseñanzaExit);
             this.Enseñanza.Controls.Add(this.caracolEnsenanza);
-            this.Enseñanza.Controls.Add(this.PalabraEns);
             this.Enseñanza.Controls.Add(this.contEnseñanza);
             this.Enseñanza.Location = new System.Drawing.Point(4, 22);
             this.Enseñanza.Name = "Enseñanza";
-            this.Enseñanza.Size = new System.Drawing.Size(1620, 875);
+            this.Enseñanza.Size = new System.Drawing.Size(1620, 879);
             this.Enseñanza.TabIndex = 7;
             this.Enseñanza.Text = "Enseñanza";
             // 
@@ -3630,14 +3631,15 @@
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(500, 500);
             this.panel19.TabIndex = 18;
+            this.panel19.Paint += new System.Windows.Forms.PaintEventHandler(this.panel19_Paint);
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel8.Location = new System.Drawing.Point(24, 433);
+            this.panel8.Location = new System.Drawing.Point(25, 414);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(451, 89);
+            this.panel8.Size = new System.Drawing.Size(451, 108);
             this.panel8.TabIndex = 3;
             // 
             // EnseñanzaPlayer
@@ -3681,14 +3683,15 @@
             // 
             // PalabraEns
             // 
-            this.PalabraEns.AutoSize = true;
             this.PalabraEns.BackColor = System.Drawing.Color.Transparent;
+            this.PalabraEns.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PalabraEns.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PalabraEns.Location = new System.Drawing.Point(616, 667);
+            this.PalabraEns.Location = new System.Drawing.Point(0, 0);
             this.PalabraEns.Name = "PalabraEns";
-            this.PalabraEns.Size = new System.Drawing.Size(164, 46);
+            this.PalabraEns.Size = new System.Drawing.Size(418, 53);
             this.PalabraEns.TabIndex = 1;
             this.PalabraEns.Text = "Palabra";
+            this.PalabraEns.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.PalabraEns.Click += new System.EventHandler(this.PalabraEns_Click);
             this.PalabraEns.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label4_MouseDown);
             // 
@@ -3772,9 +3775,9 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Transparent;
-            this.panel13.Location = new System.Drawing.Point(38, 258);
+            this.panel13.Location = new System.Drawing.Point(38, 248);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(250, 68);
+            this.panel13.Size = new System.Drawing.Size(250, 78);
             this.panel13.TabIndex = 12;
             // 
             // ejercicio1VideoC
@@ -3803,9 +3806,9 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.Transparent;
-            this.panel14.Location = new System.Drawing.Point(35, 257);
+            this.panel14.Location = new System.Drawing.Point(35, 247);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(251, 70);
+            this.panel14.Size = new System.Drawing.Size(251, 80);
             this.panel14.TabIndex = 13;
             // 
             // ejercicio1VideoB
@@ -3835,9 +3838,9 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.Transparent;
-            this.panel15.Location = new System.Drawing.Point(37, 257);
+            this.panel15.Location = new System.Drawing.Point(37, 247);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(250, 68);
+            this.panel15.Size = new System.Drawing.Size(250, 78);
             this.panel15.TabIndex = 14;
             // 
             // ejercicio1VideoA
@@ -3997,9 +4000,9 @@
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.Transparent;
-            this.panel17.Location = new System.Drawing.Point(39, 318);
+            this.panel17.Location = new System.Drawing.Point(39, 309);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(320, 73);
+            this.panel17.Size = new System.Drawing.Size(320, 82);
             this.panel17.TabIndex = 12;
             // 
             // ej2player
@@ -4093,7 +4096,7 @@
             this.ejercicio3.Controls.Add(this.label32);
             this.ejercicio3.Location = new System.Drawing.Point(4, 22);
             this.ejercicio3.Name = "ejercicio3";
-            this.ejercicio3.Size = new System.Drawing.Size(1620, 875);
+            this.ejercicio3.Size = new System.Drawing.Size(1620, 879);
             this.ejercicio3.TabIndex = 11;
             this.ejercicio3.Text = "ejercicio3";
             // 
@@ -4173,7 +4176,7 @@
             this.caracol.Controls.Add(this.caracolExit);
             this.caracol.Location = new System.Drawing.Point(4, 22);
             this.caracol.Name = "caracol";
-            this.caracol.Size = new System.Drawing.Size(1620, 875);
+            this.caracol.Size = new System.Drawing.Size(1620, 879);
             this.caracol.TabIndex = 12;
             this.caracol.Text = "caracol";
             // 
@@ -4359,6 +4362,15 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.Transparent;
+            this.panel21.Controls.Add(this.PalabraEns);
+            this.panel21.Location = new System.Drawing.Point(489, 650);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(418, 53);
+            this.panel21.TabIndex = 19;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4397,7 +4409,6 @@
             this.videos.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dbplayer)).EndInit();
             this.juegos.ResumeLayout(false);
             this.Ajustes.ResumeLayout(false);
@@ -4405,7 +4416,6 @@
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
             this.Enseñanza.ResumeLayout(false);
-            this.Enseñanza.PerformLayout();
             this.panel19.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.EnseñanzaPlayer)).EndInit();
             this.ejercicio1.ResumeLayout(false);
@@ -4427,6 +4437,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.caracol.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -4724,6 +4735,7 @@
         private System.Windows.Forms.Button Supermercado;
         private System.Windows.Forms.Label palabraDB;
         private System.Windows.Forms.TabPage videos;
+        private System.Windows.Forms.Panel panel21;
     }
 }
 

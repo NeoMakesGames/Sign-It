@@ -469,15 +469,15 @@ namespace SignIt
                 {
                     
                     case 0:
-                        int a = rdn.Next(1, 64); ;
-                        int b = rdn.Next(1, 64);
+                        int a = rdn.Next(rdnMin, rdnMax); ;
+                        int b = rdn.Next(rdnMin, rdnMax);
                         ej1palabra.Text = "¿Cual seña corresponde a la palabra: ";
                         ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
                         Random rm = new Random();
                         int f = rm.Next(0, 2);
                         for (int i = 0; i < 1;)
                         {
-                            a = rdn.Next(1, 64);
+                            a = rdn.Next(rdnMin, rdnMax);
                             if (id != a)
                             {
                                 i++;
@@ -485,7 +485,7 @@ namespace SignIt
                         }
                         for (int i = 0; i < 1;)
                         {
-                            b = rdn.Next(1, 64);
+                            b = rdn.Next(rdnMin, rdnMax);
                             if (id != b && a != b)
                             {
                                 i++;
@@ -1629,6 +1629,7 @@ namespace SignIt
         {
             continuar = true;
         }
+
         private void ej2cont_Click(object sender, EventArgs e)
         {
             continuar = true;
@@ -2946,6 +2947,11 @@ namespace SignIt
         }
 
         private void label47_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel19_Paint(object sender, PaintEventArgs e)
         {
 
         }
