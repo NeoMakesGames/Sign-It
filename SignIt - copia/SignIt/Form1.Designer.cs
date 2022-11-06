@@ -77,6 +77,7 @@
             this.comidaDiccionario = new System.Windows.Forms.Button();
             this.pronombresDiccionario = new System.Windows.Forms.Button();
             this.Basico = new System.Windows.Forms.TabPage();
+            this.label67 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
@@ -105,6 +106,7 @@
             this.Por_Favor = new System.Windows.Forms.Button();
             this.Bien = new System.Windows.Forms.Button();
             this.Comida = new System.Windows.Forms.TabPage();
+            this.label68 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
@@ -123,7 +125,32 @@
             this.Ensalada = new System.Windows.Forms.Button();
             this.ExitComidaDB = new System.Windows.Forms.Button();
             this.Colores = new System.Windows.Forms.TabPage();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.ExitColoresDB = new System.Windows.Forms.Button();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.Rojo = new System.Windows.Forms.Button();
+            this.Violeta = new System.Windows.Forms.Button();
+            this.Naranja = new System.Windows.Forms.Button();
+            this.Gris = new System.Windows.Forms.Button();
+            this.Blanco = new System.Windows.Forms.Button();
+            this.Celeste = new System.Windows.Forms.Button();
+            this.Azul = new System.Windows.Forms.Button();
+            this.Rosa = new System.Windows.Forms.Button();
+            this.Negro = new System.Windows.Forms.Button();
+            this.Verde = new System.Windows.Forms.Button();
+            this.Amarillo = new System.Windows.Forms.Button();
             this.Lugares = new System.Windows.Forms.TabPage();
+            this.label69 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
@@ -152,7 +179,49 @@
             this.Hospital = new System.Windows.Forms.Button();
             this.Supermercado = new System.Windows.Forms.Button();
             this.Pronombres = new System.Windows.Forms.TabPage();
+            this.ExitPronombresDB = new System.Windows.Forms.Button();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.Yo = new System.Windows.Forms.Button();
+            this.Ustedes = new System.Windows.Forms.Button();
+            this.Nosotros = new System.Windows.Forms.Button();
+            this.Usted = new System.Windows.Forms.Button();
+            this.Vos = new System.Windows.Forms.Button();
+            this.Ellos = new System.Windows.Forms.Button();
+            this.El = new System.Windows.Forms.Button();
             this.Verbos = new System.Windows.Forms.TabPage();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.Aprender = new System.Windows.Forms.Button();
+            this.ExitVerbosDB = new System.Windows.Forms.Button();
+            this.label96 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
+            this.label98 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label101 = new System.Windows.Forms.Label();
+            this.label102 = new System.Windows.Forms.Label();
+            this.Comer = new System.Windows.Forms.Button();
+            this.Tomar = new System.Windows.Forms.Button();
+            this.Caminar = new System.Windows.Forms.Button();
+            this.Dormir = new System.Windows.Forms.Button();
+            this.Estudiar = new System.Windows.Forms.Button();
+            this.Escribir = new System.Windows.Forms.Button();
+            this.Jugar = new System.Windows.Forms.Button();
+            this.Mirar = new System.Windows.Forms.Button();
+            this.Escuchar = new System.Windows.Forms.Button();
+            this.Hablar = new System.Windows.Forms.Button();
+            this.Correr = new System.Windows.Forms.Button();
             this.dBAbecedario = new System.Windows.Forms.TabPage();
             this.A = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
@@ -323,33 +392,6 @@
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.ExitColoresDB = new System.Windows.Forms.Button();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.Rojo = new System.Windows.Forms.Button();
-            this.Violeta = new System.Windows.Forms.Button();
-            this.Naranja = new System.Windows.Forms.Button();
-            this.Gris = new System.Windows.Forms.Button();
-            this.Blanco = new System.Windows.Forms.Button();
-            this.Celeste = new System.Windows.Forms.Button();
-            this.Azul = new System.Windows.Forms.Button();
-            this.Rosa = new System.Windows.Forms.Button();
-            this.Negro = new System.Windows.Forms.Button();
-            this.Verde = new System.Windows.Forms.Button();
-            this.Amarillo = new System.Windows.Forms.Button();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -364,6 +406,8 @@
             this.Comida.SuspendLayout();
             this.Colores.SuspendLayout();
             this.Lugares.SuspendLayout();
+            this.Pronombres.SuspendLayout();
+            this.Verbos.SuspendLayout();
             this.dBAbecedario.SuspendLayout();
             this.dBNros.SuspendLayout();
             this.videos.SuspendLayout();
@@ -1119,6 +1163,17 @@
             this.Basico.TabIndex = 1;
             this.Basico.Text = "Basico";
             // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.BackColor = System.Drawing.Color.Transparent;
+            this.label67.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(620, 107);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(125, 40);
+            this.label67.TabIndex = 48;
+            this.label67.Text = "Básico";
+            // 
             // label42
             // 
             this.label42.AutoSize = true;
@@ -1196,6 +1251,7 @@
             this.Quién.BackColor = System.Drawing.Color.Transparent;
             this.Quién.BackgroundImage = global::SignIt.Properties.Resources.Group_128;
             this.Quién.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Quién.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Quién.FlatAppearance.BorderSize = 0;
             this.Quién.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Quién.Location = new System.Drawing.Point(1166, 373);
@@ -1210,6 +1266,7 @@
             this.Gracias.BackColor = System.Drawing.Color.Transparent;
             this.Gracias.BackgroundImage = global::SignIt.Properties.Resources.Group_119;
             this.Gracias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Gracias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Gracias.FlatAppearance.BorderSize = 0;
             this.Gracias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Gracias.Location = new System.Drawing.Point(54, 373);
@@ -1224,6 +1281,7 @@
             this.ExitBasicoDB.BackColor = System.Drawing.Color.Transparent;
             this.ExitBasicoDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
             this.ExitBasicoDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExitBasicoDB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExitBasicoDB.FlatAppearance.BorderSize = 0;
             this.ExitBasicoDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitBasicoDB.Location = new System.Drawing.Point(42, 77);
@@ -1322,6 +1380,7 @@
             this.Hola.BackColor = System.Drawing.Color.Transparent;
             this.Hola.BackgroundImage = global::SignIt.Properties.Resources.Group_118;
             this.Hola.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Hola.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Hola.FlatAppearance.BorderSize = 0;
             this.Hola.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Hola.Location = new System.Drawing.Point(195, 173);
@@ -1336,6 +1395,7 @@
             this.Qué.BackColor = System.Drawing.Color.Transparent;
             this.Qué.BackgroundImage = global::SignIt.Properties.Resources.Group_126;
             this.Qué.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Qué.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Qué.FlatAppearance.BorderSize = 0;
             this.Qué.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Qué.Location = new System.Drawing.Point(888, 373);
@@ -1350,6 +1410,7 @@
             this.Como_Estas.BackColor = System.Drawing.Color.Transparent;
             this.Como_Estas.BackgroundImage = global::SignIt.Properties.Resources.Group_117;
             this.Como_Estas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Como_Estas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Como_Estas.FlatAppearance.BorderSize = 0;
             this.Como_Estas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Como_Estas.Location = new System.Drawing.Point(473, 173);
@@ -1364,6 +1425,7 @@
             this.Si.BackColor = System.Drawing.Color.Transparent;
             this.Si.BackgroundImage = global::SignIt.Properties.Resources.Group_123;
             this.Si.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Si.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Si.FlatAppearance.BorderSize = 0;
             this.Si.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Si.Location = new System.Drawing.Point(751, 574);
@@ -1378,7 +1440,7 @@
             this.No.BackColor = System.Drawing.Color.Transparent;
             this.No.BackgroundImage = global::SignIt.Properties.Resources.Group_129;
             this.No.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.No.Cursor = System.Windows.Forms.Cursors.Default;
+            this.No.Cursor = System.Windows.Forms.Cursors.Hand;
             this.No.FlatAppearance.BorderSize = 0;
             this.No.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.No.Location = new System.Drawing.Point(1029, 574);
@@ -1393,6 +1455,7 @@
             this.Como.BackColor = System.Drawing.Color.Transparent;
             this.Como.BackgroundImage = global::SignIt.Properties.Resources.Group_124;
             this.Como.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Como.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Como.FlatAppearance.BorderSize = 0;
             this.Como.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Como.Location = new System.Drawing.Point(610, 373);
@@ -1407,6 +1470,7 @@
             this.Adios.BackColor = System.Drawing.Color.Transparent;
             this.Adios.BackgroundImage = global::SignIt.Properties.Resources.Group_120;
             this.Adios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Adios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Adios.FlatAppearance.BorderSize = 0;
             this.Adios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Adios.Location = new System.Drawing.Point(332, 373);
@@ -1421,6 +1485,7 @@
             this.Dónde.BackColor = System.Drawing.Color.Transparent;
             this.Dónde.BackgroundImage = global::SignIt.Properties.Resources.Group_121;
             this.Dónde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Dónde.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Dónde.FlatAppearance.BorderSize = 0;
             this.Dónde.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Dónde.Location = new System.Drawing.Point(195, 574);
@@ -1435,6 +1500,7 @@
             this.Por_Qué.BackColor = System.Drawing.Color.Transparent;
             this.Por_Qué.BackgroundImage = global::SignIt.Properties.Resources.Group_122;
             this.Por_Qué.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Por_Qué.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Por_Qué.FlatAppearance.BorderSize = 0;
             this.Por_Qué.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Por_Qué.Location = new System.Drawing.Point(473, 574);
@@ -1449,6 +1515,7 @@
             this.Por_Favor.BackColor = System.Drawing.Color.Transparent;
             this.Por_Favor.BackgroundImage = global::SignIt.Properties.Resources.Group_127;
             this.Por_Favor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Por_Favor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Por_Favor.FlatAppearance.BorderSize = 0;
             this.Por_Favor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Por_Favor.Location = new System.Drawing.Point(1029, 173);
@@ -1463,6 +1530,7 @@
             this.Bien.BackColor = System.Drawing.Color.Transparent;
             this.Bien.BackgroundImage = global::SignIt.Properties.Resources.Group_125;
             this.Bien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bien.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bien.FlatAppearance.BorderSize = 0;
             this.Bien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bien.Location = new System.Drawing.Point(751, 173);
@@ -1499,6 +1567,17 @@
             this.Comida.Size = new System.Drawing.Size(1392, 874);
             this.Comida.TabIndex = 5;
             this.Comida.Text = "Comida";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.BackColor = System.Drawing.Color.Transparent;
+            this.label68.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(626, 107);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(141, 40);
+            this.label68.TabIndex = 57;
+            this.label68.Text = "Comida";
             // 
             // label50
             // 
@@ -1601,6 +1680,7 @@
             this.Pan.BackColor = System.Drawing.Color.Transparent;
             this.Pan.BackgroundImage = global::SignIt.Properties.Resources.Group_130;
             this.Pan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Pan.FlatAppearance.BorderSize = 0;
             this.Pan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Pan.Location = new System.Drawing.Point(209, 167);
@@ -1615,6 +1695,7 @@
             this.Pizza.BackColor = System.Drawing.Color.Transparent;
             this.Pizza.BackgroundImage = global::SignIt.Properties.Resources.Group_131;
             this.Pizza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pizza.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Pizza.FlatAppearance.BorderSize = 0;
             this.Pizza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Pizza.Location = new System.Drawing.Point(487, 167);
@@ -1629,6 +1710,7 @@
             this.Agua.BackColor = System.Drawing.Color.Transparent;
             this.Agua.BackgroundImage = global::SignIt.Properties.Resources.Group_135;
             this.Agua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Agua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Agua.FlatAppearance.BorderSize = 0;
             this.Agua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Agua.Location = new System.Drawing.Point(755, 446);
@@ -1643,7 +1725,7 @@
             this.Leche.BackColor = System.Drawing.Color.Transparent;
             this.Leche.BackgroundImage = global::SignIt.Properties.Resources.Group_134;
             this.Leche.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Leche.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Leche.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Leche.FlatAppearance.BorderSize = 0;
             this.Leche.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Leche.Location = new System.Drawing.Point(1033, 446);
@@ -1658,6 +1740,7 @@
             this.Banana.BackColor = System.Drawing.Color.Transparent;
             this.Banana.BackgroundImage = global::SignIt.Properties.Resources.Group_137;
             this.Banana.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Banana.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Banana.FlatAppearance.BorderSize = 0;
             this.Banana.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Banana.Location = new System.Drawing.Point(199, 446);
@@ -1672,6 +1755,7 @@
             this.Carne.BackColor = System.Drawing.Color.Transparent;
             this.Carne.BackgroundImage = global::SignIt.Properties.Resources.Group_136;
             this.Carne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Carne.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Carne.FlatAppearance.BorderSize = 0;
             this.Carne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Carne.Location = new System.Drawing.Point(477, 446);
@@ -1686,6 +1770,7 @@
             this.Manzana.BackColor = System.Drawing.Color.Transparent;
             this.Manzana.BackgroundImage = global::SignIt.Properties.Resources.Group_133;
             this.Manzana.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Manzana.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Manzana.FlatAppearance.BorderSize = 0;
             this.Manzana.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Manzana.Location = new System.Drawing.Point(1043, 167);
@@ -1700,6 +1785,7 @@
             this.Ensalada.BackColor = System.Drawing.Color.Transparent;
             this.Ensalada.BackgroundImage = global::SignIt.Properties.Resources.Group_132;
             this.Ensalada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ensalada.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Ensalada.FlatAppearance.BorderSize = 0;
             this.Ensalada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Ensalada.Location = new System.Drawing.Point(765, 167);
@@ -1714,6 +1800,7 @@
             this.ExitComidaDB.BackColor = System.Drawing.Color.Transparent;
             this.ExitComidaDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
             this.ExitComidaDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExitComidaDB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExitComidaDB.FlatAppearance.BorderSize = 0;
             this.ExitComidaDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitComidaDB.Location = new System.Drawing.Point(42, 77);
@@ -1757,6 +1844,329 @@
             this.Colores.TabIndex = 6;
             this.Colores.Text = "Colores";
             // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.BackColor = System.Drawing.Color.Transparent;
+            this.label70.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Location = new System.Drawing.Point(612, 107);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(142, 40);
+            this.label70.TabIndex = 99;
+            this.label70.Text = "Colores";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.BackColor = System.Drawing.Color.Transparent;
+            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.ForeColor = System.Drawing.Color.Blue;
+            this.label71.Location = new System.Drawing.Point(1048, 716);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(103, 31);
+            this.label71.TabIndex = 98;
+            this.label71.Text = "Blanco";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.BackColor = System.Drawing.Color.Transparent;
+            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.ForeColor = System.Drawing.Color.Blue;
+            this.label72.Location = new System.Drawing.Point(497, 716);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(93, 31);
+            this.label72.TabIndex = 97;
+            this.label72.Text = "Negro";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.BackColor = System.Drawing.Color.Transparent;
+            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.ForeColor = System.Drawing.Color.Blue;
+            this.label73.Location = new System.Drawing.Point(787, 716);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(68, 31);
+            this.label73.TabIndex = 96;
+            this.label73.Text = "Gris";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.BackColor = System.Drawing.Color.Transparent;
+            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.ForeColor = System.Drawing.Color.Blue;
+            this.label74.Location = new System.Drawing.Point(224, 716);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(82, 31);
+            this.label74.TabIndex = 95;
+            this.label74.Text = "Rosa";
+            // 
+            // ExitColoresDB
+            // 
+            this.ExitColoresDB.BackColor = System.Drawing.Color.Transparent;
+            this.ExitColoresDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
+            this.ExitColoresDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExitColoresDB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExitColoresDB.FlatAppearance.BorderSize = 0;
+            this.ExitColoresDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitColoresDB.Location = new System.Drawing.Point(42, 77);
+            this.ExitColoresDB.Name = "ExitColoresDB";
+            this.ExitColoresDB.Size = new System.Drawing.Size(96, 60);
+            this.ExitColoresDB.TabIndex = 94;
+            this.ExitColoresDB.UseVisualStyleBackColor = false;
+            this.ExitColoresDB.Click += new System.EventHandler(this.ExitColoresDB_Click);
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.BackColor = System.Drawing.Color.Transparent;
+            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.ForeColor = System.Drawing.Color.Blue;
+            this.label75.Location = new System.Drawing.Point(623, 516);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(114, 31);
+            this.label75.TabIndex = 93;
+            this.label75.Text = "Celeste";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.BackColor = System.Drawing.Color.Transparent;
+            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.ForeColor = System.Drawing.Color.Blue;
+            this.label76.Location = new System.Drawing.Point(906, 516);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(104, 31);
+            this.label76.TabIndex = 92;
+            this.label76.Text = "Violeta";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.BackColor = System.Drawing.Color.Transparent;
+            this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.ForeColor = System.Drawing.Color.Blue;
+            this.label77.Location = new System.Drawing.Point(367, 516);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(71, 31);
+            this.label77.TabIndex = 91;
+            this.label77.Text = "Azul";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.BackColor = System.Drawing.Color.Transparent;
+            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.ForeColor = System.Drawing.Color.Blue;
+            this.label78.Location = new System.Drawing.Point(1054, 316);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(91, 31);
+            this.label78.TabIndex = 90;
+            this.label78.Text = "Verde";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.BackColor = System.Drawing.Color.Transparent;
+            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.ForeColor = System.Drawing.Color.Blue;
+            this.label79.Location = new System.Drawing.Point(762, 316);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(119, 31);
+            this.label79.TabIndex = 89;
+            this.label79.Text = "Amarillo";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.BackColor = System.Drawing.Color.Transparent;
+            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.ForeColor = System.Drawing.Color.Blue;
+            this.label80.Location = new System.Drawing.Point(485, 316);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(116, 31);
+            this.label80.TabIndex = 88;
+            this.label80.Text = "Naranja";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.BackColor = System.Drawing.Color.Transparent;
+            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label81.ForeColor = System.Drawing.Color.Blue;
+            this.label81.Location = new System.Drawing.Point(223, 316);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(74, 31);
+            this.label81.TabIndex = 87;
+            this.label81.Text = "Rojo";
+            // 
+            // Rojo
+            // 
+            this.Rojo.BackColor = System.Drawing.Color.Transparent;
+            this.Rojo.BackgroundImage = global::SignIt.Properties.Resources.Group_152;
+            this.Rojo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Rojo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Rojo.FlatAppearance.BorderSize = 0;
+            this.Rojo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Rojo.Location = new System.Drawing.Point(195, 173);
+            this.Rojo.Name = "Rojo";
+            this.Rojo.Size = new System.Drawing.Size(140, 140);
+            this.Rojo.TabIndex = 86;
+            this.Rojo.UseVisualStyleBackColor = false;
+            this.Rojo.Click += new System.EventHandler(this.Rojo_Click);
+            // 
+            // Violeta
+            // 
+            this.Violeta.BackColor = System.Drawing.Color.Transparent;
+            this.Violeta.BackgroundImage = global::SignIt.Properties.Resources.Group_158;
+            this.Violeta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Violeta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Violeta.FlatAppearance.BorderSize = 0;
+            this.Violeta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Violeta.Location = new System.Drawing.Point(888, 373);
+            this.Violeta.Name = "Violeta";
+            this.Violeta.Size = new System.Drawing.Size(140, 140);
+            this.Violeta.TabIndex = 85;
+            this.Violeta.UseVisualStyleBackColor = false;
+            this.Violeta.Click += new System.EventHandler(this.Violeta_Click);
+            // 
+            // Naranja
+            // 
+            this.Naranja.BackColor = System.Drawing.Color.Transparent;
+            this.Naranja.BackgroundImage = global::SignIt.Properties.Resources.Group_153;
+            this.Naranja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Naranja.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Naranja.FlatAppearance.BorderSize = 0;
+            this.Naranja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Naranja.Location = new System.Drawing.Point(473, 173);
+            this.Naranja.Name = "Naranja";
+            this.Naranja.Size = new System.Drawing.Size(140, 140);
+            this.Naranja.TabIndex = 84;
+            this.Naranja.UseVisualStyleBackColor = false;
+            this.Naranja.Click += new System.EventHandler(this.Naranja_Click);
+            // 
+            // Gris
+            // 
+            this.Gris.BackColor = System.Drawing.Color.Transparent;
+            this.Gris.BackgroundImage = global::SignIt.Properties.Resources.Group_161;
+            this.Gris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Gris.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Gris.FlatAppearance.BorderSize = 0;
+            this.Gris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Gris.Location = new System.Drawing.Point(751, 574);
+            this.Gris.Name = "Gris";
+            this.Gris.Size = new System.Drawing.Size(140, 140);
+            this.Gris.TabIndex = 83;
+            this.Gris.UseVisualStyleBackColor = false;
+            this.Gris.Click += new System.EventHandler(this.Gris_Click);
+            // 
+            // Blanco
+            // 
+            this.Blanco.BackColor = System.Drawing.Color.Transparent;
+            this.Blanco.BackgroundImage = global::SignIt.Properties.Resources.Group_162;
+            this.Blanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Blanco.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Blanco.FlatAppearance.BorderSize = 0;
+            this.Blanco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Blanco.Location = new System.Drawing.Point(1029, 574);
+            this.Blanco.Name = "Blanco";
+            this.Blanco.Size = new System.Drawing.Size(140, 140);
+            this.Blanco.TabIndex = 82;
+            this.Blanco.UseVisualStyleBackColor = false;
+            this.Blanco.Click += new System.EventHandler(this.Blanco_Click);
+            // 
+            // Celeste
+            // 
+            this.Celeste.BackColor = System.Drawing.Color.Transparent;
+            this.Celeste.BackgroundImage = global::SignIt.Properties.Resources.Group_157;
+            this.Celeste.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Celeste.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Celeste.FlatAppearance.BorderSize = 0;
+            this.Celeste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Celeste.Location = new System.Drawing.Point(610, 373);
+            this.Celeste.Name = "Celeste";
+            this.Celeste.Size = new System.Drawing.Size(140, 140);
+            this.Celeste.TabIndex = 81;
+            this.Celeste.UseVisualStyleBackColor = false;
+            this.Celeste.Click += new System.EventHandler(this.Celeste_Click);
+            // 
+            // Azul
+            // 
+            this.Azul.BackColor = System.Drawing.Color.Transparent;
+            this.Azul.BackgroundImage = global::SignIt.Properties.Resources.Group_156;
+            this.Azul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Azul.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Azul.FlatAppearance.BorderSize = 0;
+            this.Azul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Azul.Location = new System.Drawing.Point(332, 373);
+            this.Azul.Name = "Azul";
+            this.Azul.Size = new System.Drawing.Size(140, 140);
+            this.Azul.TabIndex = 80;
+            this.Azul.UseVisualStyleBackColor = false;
+            this.Azul.Click += new System.EventHandler(this.Azul_Click);
+            // 
+            // Rosa
+            // 
+            this.Rosa.BackColor = System.Drawing.Color.Transparent;
+            this.Rosa.BackgroundImage = global::SignIt.Properties.Resources.Group_159;
+            this.Rosa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Rosa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Rosa.FlatAppearance.BorderSize = 0;
+            this.Rosa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Rosa.Location = new System.Drawing.Point(195, 574);
+            this.Rosa.Name = "Rosa";
+            this.Rosa.Size = new System.Drawing.Size(140, 140);
+            this.Rosa.TabIndex = 79;
+            this.Rosa.UseVisualStyleBackColor = false;
+            this.Rosa.Click += new System.EventHandler(this.Rosa_Click);
+            // 
+            // Negro
+            // 
+            this.Negro.BackColor = System.Drawing.Color.Transparent;
+            this.Negro.BackgroundImage = global::SignIt.Properties.Resources.Group_160;
+            this.Negro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Negro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Negro.FlatAppearance.BorderSize = 0;
+            this.Negro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Negro.Location = new System.Drawing.Point(473, 574);
+            this.Negro.Name = "Negro";
+            this.Negro.Size = new System.Drawing.Size(140, 140);
+            this.Negro.TabIndex = 78;
+            this.Negro.UseVisualStyleBackColor = false;
+            this.Negro.Click += new System.EventHandler(this.Negro_Click);
+            // 
+            // Verde
+            // 
+            this.Verde.BackColor = System.Drawing.Color.Transparent;
+            this.Verde.BackgroundImage = global::SignIt.Properties.Resources.Group_155;
+            this.Verde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Verde.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Verde.FlatAppearance.BorderSize = 0;
+            this.Verde.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Verde.Location = new System.Drawing.Point(1029, 173);
+            this.Verde.Name = "Verde";
+            this.Verde.Size = new System.Drawing.Size(140, 140);
+            this.Verde.TabIndex = 77;
+            this.Verde.UseVisualStyleBackColor = false;
+            this.Verde.Click += new System.EventHandler(this.Verde_Click);
+            // 
+            // Amarillo
+            // 
+            this.Amarillo.BackColor = System.Drawing.Color.Transparent;
+            this.Amarillo.BackgroundImage = global::SignIt.Properties.Resources.Group_154;
+            this.Amarillo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Amarillo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Amarillo.FlatAppearance.BorderSize = 0;
+            this.Amarillo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Amarillo.Location = new System.Drawing.Point(751, 173);
+            this.Amarillo.Name = "Amarillo";
+            this.Amarillo.Size = new System.Drawing.Size(140, 140);
+            this.Amarillo.TabIndex = 76;
+            this.Amarillo.UseVisualStyleBackColor = false;
+            this.Amarillo.Click += new System.EventHandler(this.Amarillo_Click);
+            // 
             // Lugares
             // 
             this.Lugares.BackColor = System.Drawing.Color.LightBlue;
@@ -1794,6 +2204,17 @@
             this.Lugares.Size = new System.Drawing.Size(1392, 874);
             this.Lugares.TabIndex = 7;
             this.Lugares.Text = "Lugares";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.BackColor = System.Drawing.Color.Transparent;
+            this.label69.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Location = new System.Drawing.Point(606, 107);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(148, 40);
+            this.label69.TabIndex = 75;
+            this.label69.Text = "Lugares";
             // 
             // label54
             // 
@@ -1872,6 +2293,7 @@
             this.Ciudad.BackColor = System.Drawing.Color.Transparent;
             this.Ciudad.BackgroundImage = global::SignIt.Properties.Resources.Group_143;
             this.Ciudad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ciudad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Ciudad.FlatAppearance.BorderSize = 0;
             this.Ciudad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Ciudad.Location = new System.Drawing.Point(1166, 373);
@@ -1886,6 +2308,7 @@
             this.Taller.BackColor = System.Drawing.Color.Transparent;
             this.Taller.BackgroundImage = global::SignIt.Properties.Resources.Group_147;
             this.Taller.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Taller.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Taller.FlatAppearance.BorderSize = 0;
             this.Taller.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Taller.Location = new System.Drawing.Point(54, 373);
@@ -1900,6 +2323,7 @@
             this.ExitLugaresDB.BackColor = System.Drawing.Color.Transparent;
             this.ExitLugaresDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
             this.ExitLugaresDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExitLugaresDB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExitLugaresDB.FlatAppearance.BorderSize = 0;
             this.ExitLugaresDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitLugaresDB.Location = new System.Drawing.Point(42, 77);
@@ -1998,6 +2422,7 @@
             this.Restaurante.BackColor = System.Drawing.Color.Transparent;
             this.Restaurante.BackgroundImage = global::SignIt.Properties.Resources.Group_138;
             this.Restaurante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Restaurante.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Restaurante.FlatAppearance.BorderSize = 0;
             this.Restaurante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Restaurante.Location = new System.Drawing.Point(195, 173);
@@ -2012,6 +2437,7 @@
             this.Farmacia.BackColor = System.Drawing.Color.Transparent;
             this.Farmacia.BackgroundImage = global::SignIt.Properties.Resources.Group_144;
             this.Farmacia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Farmacia.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Farmacia.FlatAppearance.BorderSize = 0;
             this.Farmacia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Farmacia.Location = new System.Drawing.Point(888, 373);
@@ -2026,6 +2452,7 @@
             this.Libreria.BackColor = System.Drawing.Color.Transparent;
             this.Libreria.BackgroundImage = global::SignIt.Properties.Resources.Group_139;
             this.Libreria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Libreria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Libreria.FlatAppearance.BorderSize = 0;
             this.Libreria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Libreria.Location = new System.Drawing.Point(473, 173);
@@ -2040,6 +2467,7 @@
             this.Teatro.BackColor = System.Drawing.Color.Transparent;
             this.Teatro.BackgroundImage = global::SignIt.Properties.Resources.Group_150;
             this.Teatro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Teatro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Teatro.FlatAppearance.BorderSize = 0;
             this.Teatro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Teatro.Location = new System.Drawing.Point(751, 574);
@@ -2054,7 +2482,7 @@
             this.Confiteria.BackColor = System.Drawing.Color.Transparent;
             this.Confiteria.BackgroundImage = global::SignIt.Properties.Resources.Group_151;
             this.Confiteria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Confiteria.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Confiteria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Confiteria.FlatAppearance.BorderSize = 0;
             this.Confiteria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Confiteria.Location = new System.Drawing.Point(1029, 574);
@@ -2069,6 +2497,7 @@
             this.Club.BackColor = System.Drawing.Color.Transparent;
             this.Club.BackgroundImage = global::SignIt.Properties.Resources.Group_145;
             this.Club.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Club.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Club.FlatAppearance.BorderSize = 0;
             this.Club.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Club.Location = new System.Drawing.Point(610, 373);
@@ -2083,6 +2512,7 @@
             this.Bar.BackColor = System.Drawing.Color.Transparent;
             this.Bar.BackgroundImage = global::SignIt.Properties.Resources.Group_146;
             this.Bar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bar.FlatAppearance.BorderSize = 0;
             this.Bar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bar.Location = new System.Drawing.Point(332, 373);
@@ -2097,6 +2527,7 @@
             this.Lugar.BackColor = System.Drawing.Color.Transparent;
             this.Lugar.BackgroundImage = global::SignIt.Properties.Resources.Group_148;
             this.Lugar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Lugar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Lugar.FlatAppearance.BorderSize = 0;
             this.Lugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Lugar.Location = new System.Drawing.Point(195, 574);
@@ -2111,6 +2542,7 @@
             this.Cine.BackColor = System.Drawing.Color.Transparent;
             this.Cine.BackgroundImage = global::SignIt.Properties.Resources.Group_149;
             this.Cine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Cine.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Cine.FlatAppearance.BorderSize = 0;
             this.Cine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cine.Location = new System.Drawing.Point(473, 574);
@@ -2125,6 +2557,7 @@
             this.Hospital.BackColor = System.Drawing.Color.Transparent;
             this.Hospital.BackgroundImage = global::SignIt.Properties.Resources.Group_142;
             this.Hospital.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Hospital.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Hospital.FlatAppearance.BorderSize = 0;
             this.Hospital.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Hospital.Location = new System.Drawing.Point(1029, 173);
@@ -2139,6 +2572,7 @@
             this.Supermercado.BackColor = System.Drawing.Color.Transparent;
             this.Supermercado.BackgroundImage = global::SignIt.Properties.Resources.Group_140;
             this.Supermercado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Supermercado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Supermercado.FlatAppearance.BorderSize = 0;
             this.Supermercado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Supermercado.Location = new System.Drawing.Point(751, 173);
@@ -2153,21 +2587,629 @@
             this.Pronombres.BackColor = System.Drawing.Color.LightBlue;
             this.Pronombres.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Pronombres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pronombres.Controls.Add(this.ExitPronombresDB);
+            this.Pronombres.Controls.Add(this.label82);
+            this.Pronombres.Controls.Add(this.label83);
+            this.Pronombres.Controls.Add(this.label84);
+            this.Pronombres.Controls.Add(this.label85);
+            this.Pronombres.Controls.Add(this.label86);
+            this.Pronombres.Controls.Add(this.label87);
+            this.Pronombres.Controls.Add(this.label88);
+            this.Pronombres.Controls.Add(this.label89);
+            this.Pronombres.Controls.Add(this.Yo);
+            this.Pronombres.Controls.Add(this.Ustedes);
+            this.Pronombres.Controls.Add(this.Nosotros);
+            this.Pronombres.Controls.Add(this.Usted);
+            this.Pronombres.Controls.Add(this.Vos);
+            this.Pronombres.Controls.Add(this.Ellos);
+            this.Pronombres.Controls.Add(this.El);
             this.Pronombres.Location = new System.Drawing.Point(4, 22);
             this.Pronombres.Name = "Pronombres";
             this.Pronombres.Size = new System.Drawing.Size(1392, 874);
             this.Pronombres.TabIndex = 8;
             this.Pronombres.Text = "Pronombres";
             // 
+            // ExitPronombresDB
+            // 
+            this.ExitPronombresDB.BackColor = System.Drawing.Color.Transparent;
+            this.ExitPronombresDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
+            this.ExitPronombresDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExitPronombresDB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExitPronombresDB.FlatAppearance.BorderSize = 0;
+            this.ExitPronombresDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitPronombresDB.Location = new System.Drawing.Point(42, 77);
+            this.ExitPronombresDB.Name = "ExitPronombresDB";
+            this.ExitPronombresDB.Size = new System.Drawing.Size(96, 60);
+            this.ExitPronombresDB.TabIndex = 91;
+            this.ExitPronombresDB.UseVisualStyleBackColor = false;
+            this.ExitPronombresDB.Click += new System.EventHandler(this.ExitPronombresDB_Click);
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.BackColor = System.Drawing.Color.Transparent;
+            this.label82.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label82.Location = new System.Drawing.Point(578, 107);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(213, 40);
+            this.label82.TabIndex = 90;
+            this.label82.Text = "Pronombres";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.BackColor = System.Drawing.Color.Transparent;
+            this.label83.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label83.ForeColor = System.Drawing.Color.Blue;
+            this.label83.Location = new System.Drawing.Point(634, 639);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(91, 31);
+            this.label83.TabIndex = 89;
+            this.label83.Text = "Usted";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.BackColor = System.Drawing.Color.Transparent;
+            this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label84.ForeColor = System.Drawing.Color.Blue;
+            this.label84.Location = new System.Drawing.Point(896, 639);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(122, 31);
+            this.label84.TabIndex = 88;
+            this.label84.Text = "Ustedes";
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.BackColor = System.Drawing.Color.Transparent;
+            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label85.ForeColor = System.Drawing.Color.Blue;
+            this.label85.Location = new System.Drawing.Point(369, 639);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(64, 31);
+            this.label85.TabIndex = 87;
+            this.label85.Text = "Vos";
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.BackColor = System.Drawing.Color.Transparent;
+            this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label86.ForeColor = System.Drawing.Color.Blue;
+            this.label86.Location = new System.Drawing.Point(1059, 355);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(78, 31);
+            this.label86.TabIndex = 86;
+            this.label86.Text = "Ellos";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.BackColor = System.Drawing.Color.Transparent;
+            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.ForeColor = System.Drawing.Color.Blue;
+            this.label87.Location = new System.Drawing.Point(800, 355);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(40, 31);
+            this.label87.TabIndex = 85;
+            this.label87.Text = "Él";
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.BackColor = System.Drawing.Color.Transparent;
+            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label88.ForeColor = System.Drawing.Color.Blue;
+            this.label88.Location = new System.Drawing.Point(476, 355);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(132, 31);
+            this.label88.TabIndex = 84;
+            this.label88.Text = "Nosotros";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.BackColor = System.Drawing.Color.Transparent;
+            this.label89.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label89.ForeColor = System.Drawing.Color.Blue;
+            this.label89.Location = new System.Drawing.Point(240, 355);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(49, 31);
+            this.label89.TabIndex = 83;
+            this.label89.Text = "Yo";
+            // 
+            // Yo
+            // 
+            this.Yo.BackColor = System.Drawing.Color.Transparent;
+            this.Yo.BackgroundImage = global::SignIt.Properties.Resources.Group_138;
+            this.Yo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Yo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Yo.FlatAppearance.BorderSize = 0;
+            this.Yo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Yo.Location = new System.Drawing.Point(194, 213);
+            this.Yo.Name = "Yo";
+            this.Yo.Size = new System.Drawing.Size(140, 140);
+            this.Yo.TabIndex = 82;
+            this.Yo.UseVisualStyleBackColor = false;
+            this.Yo.Click += new System.EventHandler(this.Yo_Click);
+            // 
+            // Ustedes
+            // 
+            this.Ustedes.BackColor = System.Drawing.Color.Transparent;
+            this.Ustedes.BackgroundImage = global::SignIt.Properties.Resources.Group_144;
+            this.Ustedes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ustedes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Ustedes.FlatAppearance.BorderSize = 0;
+            this.Ustedes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Ustedes.Location = new System.Drawing.Point(887, 496);
+            this.Ustedes.Name = "Ustedes";
+            this.Ustedes.Size = new System.Drawing.Size(140, 140);
+            this.Ustedes.TabIndex = 81;
+            this.Ustedes.UseVisualStyleBackColor = false;
+            this.Ustedes.Click += new System.EventHandler(this.Ustedes_Click);
+            // 
+            // Nosotros
+            // 
+            this.Nosotros.BackColor = System.Drawing.Color.Transparent;
+            this.Nosotros.BackgroundImage = global::SignIt.Properties.Resources.Group_139;
+            this.Nosotros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Nosotros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Nosotros.FlatAppearance.BorderSize = 0;
+            this.Nosotros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Nosotros.Location = new System.Drawing.Point(472, 213);
+            this.Nosotros.Name = "Nosotros";
+            this.Nosotros.Size = new System.Drawing.Size(140, 140);
+            this.Nosotros.TabIndex = 80;
+            this.Nosotros.UseVisualStyleBackColor = false;
+            this.Nosotros.Click += new System.EventHandler(this.Nosotros_Click);
+            // 
+            // Usted
+            // 
+            this.Usted.BackColor = System.Drawing.Color.Transparent;
+            this.Usted.BackgroundImage = global::SignIt.Properties.Resources.Group_145;
+            this.Usted.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Usted.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Usted.FlatAppearance.BorderSize = 0;
+            this.Usted.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Usted.Location = new System.Drawing.Point(609, 496);
+            this.Usted.Name = "Usted";
+            this.Usted.Size = new System.Drawing.Size(140, 140);
+            this.Usted.TabIndex = 79;
+            this.Usted.UseVisualStyleBackColor = false;
+            this.Usted.Click += new System.EventHandler(this.Usted_Click);
+            // 
+            // Vos
+            // 
+            this.Vos.BackColor = System.Drawing.Color.Transparent;
+            this.Vos.BackgroundImage = global::SignIt.Properties.Resources.Group_146;
+            this.Vos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Vos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Vos.FlatAppearance.BorderSize = 0;
+            this.Vos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Vos.Location = new System.Drawing.Point(331, 496);
+            this.Vos.Name = "Vos";
+            this.Vos.Size = new System.Drawing.Size(140, 140);
+            this.Vos.TabIndex = 78;
+            this.Vos.UseVisualStyleBackColor = false;
+            this.Vos.Click += new System.EventHandler(this.Vos_Click);
+            // 
+            // Ellos
+            // 
+            this.Ellos.BackColor = System.Drawing.Color.Transparent;
+            this.Ellos.BackgroundImage = global::SignIt.Properties.Resources.Group_142;
+            this.Ellos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ellos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Ellos.FlatAppearance.BorderSize = 0;
+            this.Ellos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Ellos.Location = new System.Drawing.Point(1028, 213);
+            this.Ellos.Name = "Ellos";
+            this.Ellos.Size = new System.Drawing.Size(140, 140);
+            this.Ellos.TabIndex = 77;
+            this.Ellos.UseVisualStyleBackColor = false;
+            this.Ellos.Click += new System.EventHandler(this.Ellos_Click);
+            // 
+            // El
+            // 
+            this.El.BackColor = System.Drawing.Color.Transparent;
+            this.El.BackgroundImage = global::SignIt.Properties.Resources.Group_140;
+            this.El.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.El.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.El.FlatAppearance.BorderSize = 0;
+            this.El.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.El.Location = new System.Drawing.Point(750, 213);
+            this.El.Name = "El";
+            this.El.Size = new System.Drawing.Size(140, 140);
+            this.El.TabIndex = 76;
+            this.El.UseVisualStyleBackColor = false;
+            this.El.Click += new System.EventHandler(this.El_Click);
+            // 
             // Verbos
             // 
             this.Verbos.BackColor = System.Drawing.Color.LightBlue;
             this.Verbos.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Verbos.Controls.Add(this.label90);
+            this.Verbos.Controls.Add(this.label91);
+            this.Verbos.Controls.Add(this.label92);
+            this.Verbos.Controls.Add(this.label93);
+            this.Verbos.Controls.Add(this.label94);
+            this.Verbos.Controls.Add(this.label95);
+            this.Verbos.Controls.Add(this.Aprender);
+            this.Verbos.Controls.Add(this.ExitVerbosDB);
+            this.Verbos.Controls.Add(this.label96);
+            this.Verbos.Controls.Add(this.label97);
+            this.Verbos.Controls.Add(this.label98);
+            this.Verbos.Controls.Add(this.label99);
+            this.Verbos.Controls.Add(this.label100);
+            this.Verbos.Controls.Add(this.label101);
+            this.Verbos.Controls.Add(this.label102);
+            this.Verbos.Controls.Add(this.Comer);
+            this.Verbos.Controls.Add(this.Tomar);
+            this.Verbos.Controls.Add(this.Caminar);
+            this.Verbos.Controls.Add(this.Dormir);
+            this.Verbos.Controls.Add(this.Estudiar);
+            this.Verbos.Controls.Add(this.Escribir);
+            this.Verbos.Controls.Add(this.Jugar);
+            this.Verbos.Controls.Add(this.Mirar);
+            this.Verbos.Controls.Add(this.Escuchar);
+            this.Verbos.Controls.Add(this.Hablar);
+            this.Verbos.Controls.Add(this.Correr);
             this.Verbos.Location = new System.Drawing.Point(4, 22);
             this.Verbos.Name = "Verbos";
             this.Verbos.Size = new System.Drawing.Size(1392, 874);
             this.Verbos.TabIndex = 4;
             this.Verbos.Text = "Verbos";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.BackColor = System.Drawing.Color.Transparent;
+            this.label90.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label90.Location = new System.Drawing.Point(612, 107);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(133, 40);
+            this.label90.TabIndex = 101;
+            this.label90.Text = "Verbos";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.BackColor = System.Drawing.Color.Transparent;
+            this.label91.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label91.ForeColor = System.Drawing.Color.Blue;
+            this.label91.Location = new System.Drawing.Point(1046, 717);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(122, 31);
+            this.label91.TabIndex = 100;
+            this.label91.Text = "Estudiar";
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.BackColor = System.Drawing.Color.Transparent;
+            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label92.ForeColor = System.Drawing.Color.Blue;
+            this.label92.Location = new System.Drawing.Point(483, 717);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(136, 31);
+            this.label92.TabIndex = 99;
+            this.label92.Text = "Escuchar";
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.BackColor = System.Drawing.Color.Transparent;
+            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label93.ForeColor = System.Drawing.Color.Blue;
+            this.label93.Location = new System.Drawing.Point(779, 717);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(101, 31);
+            this.label93.TabIndex = 98;
+            this.label93.Text = "Dormir";
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.BackColor = System.Drawing.Color.Transparent;
+            this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label94.ForeColor = System.Drawing.Color.Blue;
+            this.label94.Location = new System.Drawing.Point(211, 717);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(80, 31);
+            this.label94.TabIndex = 97;
+            this.label94.Text = "Mirar";
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.BackColor = System.Drawing.Color.Transparent;
+            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label95.ForeColor = System.Drawing.Color.Blue;
+            this.label95.Location = new System.Drawing.Point(1041, 516);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(133, 31);
+            this.label95.TabIndex = 96;
+            this.label95.Text = "Aprender";
+            // 
+            // Aprender
+            // 
+            this.Aprender.BackColor = System.Drawing.Color.Transparent;
+            this.Aprender.BackgroundImage = global::SignIt.Properties.Resources.Group_170;
+            this.Aprender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Aprender.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Aprender.FlatAppearance.BorderSize = 0;
+            this.Aprender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Aprender.Location = new System.Drawing.Point(1037, 373);
+            this.Aprender.Name = "Aprender";
+            this.Aprender.Size = new System.Drawing.Size(140, 140);
+            this.Aprender.TabIndex = 95;
+            this.Aprender.UseVisualStyleBackColor = false;
+            this.Aprender.Click += new System.EventHandler(this.Aprender_Click);
+            // 
+            // ExitVerbosDB
+            // 
+            this.ExitVerbosDB.BackColor = System.Drawing.Color.Transparent;
+            this.ExitVerbosDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
+            this.ExitVerbosDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExitVerbosDB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExitVerbosDB.FlatAppearance.BorderSize = 0;
+            this.ExitVerbosDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitVerbosDB.Location = new System.Drawing.Point(42, 77);
+            this.ExitVerbosDB.Name = "ExitVerbosDB";
+            this.ExitVerbosDB.Size = new System.Drawing.Size(96, 60);
+            this.ExitVerbosDB.TabIndex = 94;
+            this.ExitVerbosDB.UseVisualStyleBackColor = false;
+            this.ExitVerbosDB.Click += new System.EventHandler(this.ExitVerbosDB_Click);
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.BackColor = System.Drawing.Color.Transparent;
+            this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label96.ForeColor = System.Drawing.Color.Blue;
+            this.label96.Location = new System.Drawing.Point(495, 516);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(113, 31);
+            this.label96.TabIndex = 93;
+            this.label96.Text = "Escribir";
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.BackColor = System.Drawing.Color.Transparent;
+            this.label97.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label97.ForeColor = System.Drawing.Color.Blue;
+            this.label97.Location = new System.Drawing.Point(781, 516);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(97, 31);
+            this.label97.TabIndex = 92;
+            this.label97.Text = "Tomar";
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.BackColor = System.Drawing.Color.Transparent;
+            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label98.ForeColor = System.Drawing.Color.Blue;
+            this.label98.Location = new System.Drawing.Point(208, 516);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(87, 31);
+            this.label98.TabIndex = 91;
+            this.label98.Text = "Jugar";
+            this.label98.Click += new System.EventHandler(this.label98_Click);
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.BackColor = System.Drawing.Color.Transparent;
+            this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label99.ForeColor = System.Drawing.Color.Blue;
+            this.label99.Location = new System.Drawing.Point(1057, 313);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(100, 31);
+            this.label99.TabIndex = 90;
+            this.label99.Text = "Hablar";
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.BackColor = System.Drawing.Color.Transparent;
+            this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label100.ForeColor = System.Drawing.Color.Blue;
+            this.label100.Location = new System.Drawing.Point(781, 313);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(97, 31);
+            this.label100.TabIndex = 89;
+            this.label100.Text = "Correr";
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.BackColor = System.Drawing.Color.Transparent;
+            this.label101.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label101.ForeColor = System.Drawing.Color.Blue;
+            this.label101.Location = new System.Drawing.Point(490, 313);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(123, 31);
+            this.label101.TabIndex = 88;
+            this.label101.Text = "Caminar";
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.BackColor = System.Drawing.Color.Transparent;
+            this.label102.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label102.ForeColor = System.Drawing.Color.Blue;
+            this.label102.Location = new System.Drawing.Point(201, 313);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(100, 31);
+            this.label102.TabIndex = 87;
+            this.label102.Text = "Comer";
+            // 
+            // Comer
+            // 
+            this.Comer.BackColor = System.Drawing.Color.Transparent;
+            this.Comer.BackgroundImage = global::SignIt.Properties.Resources.Group_163;
+            this.Comer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Comer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Comer.FlatAppearance.BorderSize = 0;
+            this.Comer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Comer.Location = new System.Drawing.Point(181, 173);
+            this.Comer.Name = "Comer";
+            this.Comer.Size = new System.Drawing.Size(140, 140);
+            this.Comer.TabIndex = 86;
+            this.Comer.UseVisualStyleBackColor = false;
+            this.Comer.Click += new System.EventHandler(this.Comer_Click);
+            // 
+            // Tomar
+            // 
+            this.Tomar.BackColor = System.Drawing.Color.Transparent;
+            this.Tomar.BackgroundImage = global::SignIt.Properties.Resources.Group_169;
+            this.Tomar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Tomar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Tomar.FlatAppearance.BorderSize = 0;
+            this.Tomar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Tomar.Location = new System.Drawing.Point(759, 373);
+            this.Tomar.Name = "Tomar";
+            this.Tomar.Size = new System.Drawing.Size(140, 140);
+            this.Tomar.TabIndex = 85;
+            this.Tomar.UseVisualStyleBackColor = false;
+            this.Tomar.Click += new System.EventHandler(this.Tomar_Click);
+            // 
+            // Caminar
+            // 
+            this.Caminar.BackColor = System.Drawing.Color.Transparent;
+            this.Caminar.BackgroundImage = global::SignIt.Properties.Resources.Group_164;
+            this.Caminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Caminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Caminar.FlatAppearance.BorderSize = 0;
+            this.Caminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Caminar.Location = new System.Drawing.Point(481, 173);
+            this.Caminar.Name = "Caminar";
+            this.Caminar.Size = new System.Drawing.Size(140, 140);
+            this.Caminar.TabIndex = 84;
+            this.Caminar.UseVisualStyleBackColor = false;
+            this.Caminar.Click += new System.EventHandler(this.Caminar_Click);
+            // 
+            // Dormir
+            // 
+            this.Dormir.BackColor = System.Drawing.Color.Transparent;
+            this.Dormir.BackgroundImage = global::SignIt.Properties.Resources.Group_173;
+            this.Dormir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Dormir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Dormir.FlatAppearance.BorderSize = 0;
+            this.Dormir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Dormir.Location = new System.Drawing.Point(759, 574);
+            this.Dormir.Name = "Dormir";
+            this.Dormir.Size = new System.Drawing.Size(140, 140);
+            this.Dormir.TabIndex = 83;
+            this.Dormir.UseVisualStyleBackColor = false;
+            this.Dormir.Click += new System.EventHandler(this.Dormir_Click);
+            // 
+            // Estudiar
+            // 
+            this.Estudiar.BackColor = System.Drawing.Color.Transparent;
+            this.Estudiar.BackgroundImage = global::SignIt.Properties.Resources.Group_174;
+            this.Estudiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Estudiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Estudiar.FlatAppearance.BorderSize = 0;
+            this.Estudiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Estudiar.Location = new System.Drawing.Point(1037, 574);
+            this.Estudiar.Name = "Estudiar";
+            this.Estudiar.Size = new System.Drawing.Size(140, 140);
+            this.Estudiar.TabIndex = 82;
+            this.Estudiar.UseVisualStyleBackColor = false;
+            this.Estudiar.Click += new System.EventHandler(this.Estudiar_Click);
+            // 
+            // Escribir
+            // 
+            this.Escribir.BackColor = System.Drawing.Color.Transparent;
+            this.Escribir.BackgroundImage = global::SignIt.Properties.Resources.Group_168;
+            this.Escribir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Escribir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Escribir.FlatAppearance.BorderSize = 0;
+            this.Escribir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Escribir.Location = new System.Drawing.Point(481, 373);
+            this.Escribir.Name = "Escribir";
+            this.Escribir.Size = new System.Drawing.Size(140, 140);
+            this.Escribir.TabIndex = 81;
+            this.Escribir.UseVisualStyleBackColor = false;
+            this.Escribir.Click += new System.EventHandler(this.Escribir_Click);
+            // 
+            // Jugar
+            // 
+            this.Jugar.BackColor = System.Drawing.Color.Transparent;
+            this.Jugar.BackgroundImage = global::SignIt.Properties.Resources.Group_167;
+            this.Jugar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Jugar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Jugar.FlatAppearance.BorderSize = 0;
+            this.Jugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Jugar.Location = new System.Drawing.Point(181, 373);
+            this.Jugar.Name = "Jugar";
+            this.Jugar.Size = new System.Drawing.Size(140, 140);
+            this.Jugar.TabIndex = 80;
+            this.Jugar.UseVisualStyleBackColor = false;
+            this.Jugar.Click += new System.EventHandler(this.Jugar_Click);
+            // 
+            // Mirar
+            // 
+            this.Mirar.BackColor = System.Drawing.Color.Transparent;
+            this.Mirar.BackgroundImage = global::SignIt.Properties.Resources.Group_171;
+            this.Mirar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Mirar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Mirar.FlatAppearance.BorderSize = 0;
+            this.Mirar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Mirar.Location = new System.Drawing.Point(181, 574);
+            this.Mirar.Name = "Mirar";
+            this.Mirar.Size = new System.Drawing.Size(140, 140);
+            this.Mirar.TabIndex = 79;
+            this.Mirar.UseVisualStyleBackColor = false;
+            this.Mirar.Click += new System.EventHandler(this.Mirar_Click);
+            // 
+            // Escuchar
+            // 
+            this.Escuchar.BackColor = System.Drawing.Color.Transparent;
+            this.Escuchar.BackgroundImage = global::SignIt.Properties.Resources.Group_172;
+            this.Escuchar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Escuchar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Escuchar.FlatAppearance.BorderSize = 0;
+            this.Escuchar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Escuchar.Location = new System.Drawing.Point(481, 574);
+            this.Escuchar.Name = "Escuchar";
+            this.Escuchar.Size = new System.Drawing.Size(140, 140);
+            this.Escuchar.TabIndex = 78;
+            this.Escuchar.UseVisualStyleBackColor = false;
+            this.Escuchar.Click += new System.EventHandler(this.Escuchar_Click);
+            // 
+            // Hablar
+            // 
+            this.Hablar.BackColor = System.Drawing.Color.Transparent;
+            this.Hablar.BackgroundImage = global::SignIt.Properties.Resources.Group_166;
+            this.Hablar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Hablar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Hablar.FlatAppearance.BorderSize = 0;
+            this.Hablar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hablar.Location = new System.Drawing.Point(1037, 173);
+            this.Hablar.Name = "Hablar";
+            this.Hablar.Size = new System.Drawing.Size(140, 140);
+            this.Hablar.TabIndex = 77;
+            this.Hablar.UseVisualStyleBackColor = false;
+            this.Hablar.Click += new System.EventHandler(this.Hablar_Click);
+            // 
+            // Correr
+            // 
+            this.Correr.BackColor = System.Drawing.Color.Transparent;
+            this.Correr.BackgroundImage = global::SignIt.Properties.Resources.Group_175;
+            this.Correr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Correr.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Correr.FlatAppearance.BorderSize = 0;
+            this.Correr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Correr.Location = new System.Drawing.Point(759, 173);
+            this.Correr.Name = "Correr";
+            this.Correr.Size = new System.Drawing.Size(140, 140);
+            this.Correr.TabIndex = 76;
+            this.Correr.UseVisualStyleBackColor = false;
+            this.Correr.Click += new System.EventHandler(this.Correr_Click);
             // 
             // dBAbecedario
             // 
@@ -2241,10 +3283,11 @@
             this.A.BackColor = System.Drawing.Color.Transparent;
             this.A.BackgroundImage = global::SignIt.Properties.Resources.Rectangle_53__1_1;
             this.A.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.A.Cursor = System.Windows.Forms.Cursors.Hand;
             this.A.FlatAppearance.BorderSize = 0;
             this.A.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A.ForeColor = System.Drawing.Color.Navy;
-            this.A.Location = new System.Drawing.Point(35, 178);
+            this.A.Location = new System.Drawing.Point(21, 178);
             this.A.Name = "A";
             this.A.Size = new System.Drawing.Size(120, 120);
             this.A.TabIndex = 67;
@@ -2256,7 +3299,7 @@
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label31.Location = new System.Drawing.Point(605, 113);
+            this.label31.Location = new System.Drawing.Point(586, 113);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(190, 39);
             this.label31.TabIndex = 66;
@@ -2268,7 +3311,7 @@
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label28.ForeColor = System.Drawing.Color.Blue;
-            this.label28.Location = new System.Drawing.Point(1277, 678);
+            this.label28.Location = new System.Drawing.Point(1263, 678);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(32, 31);
             this.label28.TabIndex = 65;
@@ -2280,7 +3323,7 @@
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label29.ForeColor = System.Drawing.Color.Blue;
-            this.label29.Location = new System.Drawing.Point(1277, 487);
+            this.label29.Location = new System.Drawing.Point(1263, 487);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(36, 31);
             this.label29.TabIndex = 64;
@@ -2292,7 +3335,7 @@
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label30.ForeColor = System.Drawing.Color.Blue;
-            this.label30.Location = new System.Drawing.Point(1277, 297);
+            this.label30.Location = new System.Drawing.Point(1263, 297);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(23, 31);
             this.label30.TabIndex = 63;
@@ -2304,7 +3347,7 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label20.ForeColor = System.Drawing.Color.Blue;
-            this.label20.Location = new System.Drawing.Point(1128, 679);
+            this.label20.Location = new System.Drawing.Point(1114, 679);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(33, 31);
             this.label20.TabIndex = 62;
@@ -2316,7 +3359,7 @@
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label21.ForeColor = System.Drawing.Color.Blue;
-            this.label21.Location = new System.Drawing.Point(978, 679);
+            this.label21.Location = new System.Drawing.Point(964, 679);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(33, 31);
             this.label21.TabIndex = 61;
@@ -2328,7 +3371,7 @@
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label22.ForeColor = System.Drawing.Color.Blue;
-            this.label22.Location = new System.Drawing.Point(828, 679);
+            this.label22.Location = new System.Drawing.Point(814, 679);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(40, 31);
             this.label22.TabIndex = 60;
@@ -2340,7 +3383,7 @@
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label23.ForeColor = System.Drawing.Color.Blue;
-            this.label23.Location = new System.Drawing.Point(675, 679);
+            this.label23.Location = new System.Drawing.Point(661, 679);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(33, 31);
             this.label23.TabIndex = 59;
@@ -2352,7 +3395,7 @@
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label24.ForeColor = System.Drawing.Color.Blue;
-            this.label24.Location = new System.Drawing.Point(528, 679);
+            this.label24.Location = new System.Drawing.Point(514, 679);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(35, 31);
             this.label24.TabIndex = 58;
@@ -2364,7 +3407,7 @@
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label25.ForeColor = System.Drawing.Color.Blue;
-            this.label25.Location = new System.Drawing.Point(378, 679);
+            this.label25.Location = new System.Drawing.Point(364, 679);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(32, 31);
             this.label25.TabIndex = 57;
@@ -2376,7 +3419,7 @@
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label26.ForeColor = System.Drawing.Color.Blue;
-            this.label26.Location = new System.Drawing.Point(228, 679);
+            this.label26.Location = new System.Drawing.Point(214, 679);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(33, 31);
             this.label26.TabIndex = 56;
@@ -2388,7 +3431,7 @@
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label27.ForeColor = System.Drawing.Color.Blue;
-            this.label27.Location = new System.Drawing.Point(75, 679);
+            this.label27.Location = new System.Drawing.Point(61, 679);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(35, 31);
             this.label27.TabIndex = 55;
@@ -2400,7 +3443,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.Blue;
-            this.label12.Location = new System.Drawing.Point(1128, 488);
+            this.label12.Location = new System.Drawing.Point(1114, 488);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(33, 31);
             this.label12.TabIndex = 54;
@@ -2412,7 +3455,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label13.ForeColor = System.Drawing.Color.Blue;
-            this.label13.Location = new System.Drawing.Point(978, 488);
+            this.label13.Location = new System.Drawing.Point(964, 488);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(36, 31);
             this.label13.TabIndex = 53;
@@ -2424,7 +3467,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.Color.Blue;
-            this.label14.Location = new System.Drawing.Point(828, 488);
+            this.label14.Location = new System.Drawing.Point(814, 488);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(35, 31);
             this.label14.TabIndex = 52;
@@ -2436,7 +3479,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label15.ForeColor = System.Drawing.Color.Blue;
-            this.label15.Location = new System.Drawing.Point(675, 488);
+            this.label15.Location = new System.Drawing.Point(661, 488);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(35, 31);
             this.label15.TabIndex = 51;
@@ -2448,7 +3491,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label16.ForeColor = System.Drawing.Color.Blue;
-            this.label16.Location = new System.Drawing.Point(528, 488);
+            this.label16.Location = new System.Drawing.Point(514, 488);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(37, 31);
             this.label16.TabIndex = 50;
@@ -2460,7 +3503,7 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label17.ForeColor = System.Drawing.Color.Blue;
-            this.label17.Location = new System.Drawing.Point(378, 488);
+            this.label17.Location = new System.Drawing.Point(364, 488);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(30, 31);
             this.label17.TabIndex = 49;
@@ -2472,7 +3515,7 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label18.ForeColor = System.Drawing.Color.Blue;
-            this.label18.Location = new System.Drawing.Point(228, 488);
+            this.label18.Location = new System.Drawing.Point(214, 488);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(33, 31);
             this.label18.TabIndex = 48;
@@ -2484,7 +3527,7 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.Color.Blue;
-            this.label19.Location = new System.Drawing.Point(75, 488);
+            this.label19.Location = new System.Drawing.Point(61, 488);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(29, 31);
             this.label19.TabIndex = 47;
@@ -2496,7 +3539,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Blue;
-            this.label8.Location = new System.Drawing.Point(1128, 298);
+            this.label8.Location = new System.Drawing.Point(1114, 298);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(35, 31);
             this.label8.TabIndex = 46;
@@ -2508,7 +3551,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.Blue;
-            this.label9.Location = new System.Drawing.Point(978, 298);
+            this.label9.Location = new System.Drawing.Point(964, 298);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(36, 31);
             this.label9.TabIndex = 45;
@@ -2520,7 +3563,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Blue;
-            this.label10.Location = new System.Drawing.Point(828, 298);
+            this.label10.Location = new System.Drawing.Point(814, 298);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(32, 31);
             this.label10.TabIndex = 44;
@@ -2532,7 +3575,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.Blue;
-            this.label11.Location = new System.Drawing.Point(675, 298);
+            this.label11.Location = new System.Drawing.Point(661, 298);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(33, 31);
             this.label11.TabIndex = 43;
@@ -2544,7 +3587,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.Blue;
-            this.label6.Location = new System.Drawing.Point(528, 300);
+            this.label6.Location = new System.Drawing.Point(514, 300);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 31);
             this.label6.TabIndex = 42;
@@ -2556,7 +3599,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.Blue;
-            this.label7.Location = new System.Drawing.Point(378, 300);
+            this.label7.Location = new System.Drawing.Point(364, 300);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 31);
             this.label7.TabIndex = 41;
@@ -2568,7 +3611,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Blue;
-            this.label5.Location = new System.Drawing.Point(228, 300);
+            this.label5.Location = new System.Drawing.Point(214, 300);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(33, 31);
             this.label5.TabIndex = 40;
@@ -2580,7 +3623,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(75, 301);
+            this.label2.Location = new System.Drawing.Point(61, 301);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 31);
             this.label2.TabIndex = 39;
@@ -2591,9 +3634,10 @@
             this.Z.BackColor = System.Drawing.Color.Transparent;
             this.Z.BackgroundImage = global::SignIt.Properties.Resources.Group_113;
             this.Z.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Z.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Z.FlatAppearance.BorderSize = 0;
             this.Z.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Z.Location = new System.Drawing.Point(1236, 557);
+            this.Z.Location = new System.Drawing.Point(1222, 557);
             this.Z.Name = "Z";
             this.Z.Size = new System.Drawing.Size(120, 120);
             this.Z.TabIndex = 38;
@@ -2605,9 +3649,10 @@
             this.Y.BackColor = System.Drawing.Color.Transparent;
             this.Y.BackgroundImage = global::SignIt.Properties.Resources.Group_112;
             this.Y.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Y.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Y.FlatAppearance.BorderSize = 0;
             this.Y.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Y.Location = new System.Drawing.Point(1086, 557);
+            this.Y.Location = new System.Drawing.Point(1072, 557);
             this.Y.Name = "Y";
             this.Y.Size = new System.Drawing.Size(120, 120);
             this.Y.TabIndex = 37;
@@ -2619,9 +3664,10 @@
             this.X.BackColor = System.Drawing.Color.Transparent;
             this.X.BackgroundImage = global::SignIt.Properties.Resources.Group_111;
             this.X.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.X.Cursor = System.Windows.Forms.Cursors.Hand;
             this.X.FlatAppearance.BorderSize = 0;
             this.X.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.X.Location = new System.Drawing.Point(936, 557);
+            this.X.Location = new System.Drawing.Point(922, 557);
             this.X.Name = "X";
             this.X.Size = new System.Drawing.Size(120, 120);
             this.X.TabIndex = 36;
@@ -2633,9 +3679,10 @@
             this.W.BackColor = System.Drawing.Color.Transparent;
             this.W.BackgroundImage = global::SignIt.Properties.Resources.Group_110;
             this.W.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.W.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W.FlatAppearance.BorderSize = 0;
             this.W.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.W.Location = new System.Drawing.Point(786, 557);
+            this.W.Location = new System.Drawing.Point(772, 557);
             this.W.Name = "W";
             this.W.Size = new System.Drawing.Size(120, 120);
             this.W.TabIndex = 35;
@@ -2647,9 +3694,10 @@
             this.V.BackColor = System.Drawing.Color.Transparent;
             this.V.BackgroundImage = global::SignIt.Properties.Resources.Group_109;
             this.V.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.V.Cursor = System.Windows.Forms.Cursors.Hand;
             this.V.FlatAppearance.BorderSize = 0;
             this.V.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.V.Location = new System.Drawing.Point(636, 557);
+            this.V.Location = new System.Drawing.Point(622, 557);
             this.V.Name = "V";
             this.V.Size = new System.Drawing.Size(120, 120);
             this.V.TabIndex = 34;
@@ -2661,9 +3709,10 @@
             this.U.BackColor = System.Drawing.Color.Transparent;
             this.U.BackgroundImage = global::SignIt.Properties.Resources.Group_108;
             this.U.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.U.Cursor = System.Windows.Forms.Cursors.Hand;
             this.U.FlatAppearance.BorderSize = 0;
             this.U.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.U.Location = new System.Drawing.Point(486, 557);
+            this.U.Location = new System.Drawing.Point(472, 557);
             this.U.Name = "U";
             this.U.Size = new System.Drawing.Size(120, 120);
             this.U.TabIndex = 33;
@@ -2675,9 +3724,10 @@
             this.T.BackColor = System.Drawing.Color.Transparent;
             this.T.BackgroundImage = global::SignIt.Properties.Resources.Group_107;
             this.T.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.T.FlatAppearance.BorderSize = 0;
             this.T.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.T.Location = new System.Drawing.Point(336, 557);
+            this.T.Location = new System.Drawing.Point(322, 557);
             this.T.Name = "T";
             this.T.Size = new System.Drawing.Size(120, 120);
             this.T.TabIndex = 32;
@@ -2689,9 +3739,10 @@
             this.S.BackColor = System.Drawing.Color.Transparent;
             this.S.BackgroundImage = global::SignIt.Properties.Resources.Group_106;
             this.S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.S.Cursor = System.Windows.Forms.Cursors.Hand;
             this.S.FlatAppearance.BorderSize = 0;
             this.S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.S.Location = new System.Drawing.Point(186, 557);
+            this.S.Location = new System.Drawing.Point(172, 557);
             this.S.Name = "S";
             this.S.Size = new System.Drawing.Size(120, 120);
             this.S.TabIndex = 31;
@@ -2703,9 +3754,10 @@
             this.R.BackColor = System.Drawing.Color.Transparent;
             this.R.BackgroundImage = global::SignIt.Properties.Resources.Group_105;
             this.R.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.R.FlatAppearance.BorderSize = 0;
             this.R.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.R.Location = new System.Drawing.Point(36, 557);
+            this.R.Location = new System.Drawing.Point(22, 557);
             this.R.Name = "R";
             this.R.Size = new System.Drawing.Size(120, 120);
             this.R.TabIndex = 30;
@@ -2717,9 +3769,10 @@
             this.Q.BackColor = System.Drawing.Color.Transparent;
             this.Q.BackgroundImage = global::SignIt.Properties.Resources.Group_96;
             this.Q.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Q.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Q.FlatAppearance.BorderSize = 0;
             this.Q.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Q.Location = new System.Drawing.Point(1236, 366);
+            this.Q.Location = new System.Drawing.Point(1222, 366);
             this.Q.Name = "Q";
             this.Q.Size = new System.Drawing.Size(120, 120);
             this.Q.TabIndex = 29;
@@ -2731,9 +3784,10 @@
             this.P.BackColor = System.Drawing.Color.Transparent;
             this.P.BackgroundImage = global::SignIt.Properties.Resources.Group_97;
             this.P.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.P.Cursor = System.Windows.Forms.Cursors.Hand;
             this.P.FlatAppearance.BorderSize = 0;
             this.P.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.P.Location = new System.Drawing.Point(1086, 366);
+            this.P.Location = new System.Drawing.Point(1072, 366);
             this.P.Name = "P";
             this.P.Size = new System.Drawing.Size(120, 120);
             this.P.TabIndex = 28;
@@ -2745,9 +3799,10 @@
             this.O.BackColor = System.Drawing.Color.Transparent;
             this.O.BackgroundImage = global::SignIt.Properties.Resources.Group_98;
             this.O.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.O.Cursor = System.Windows.Forms.Cursors.Hand;
             this.O.FlatAppearance.BorderSize = 0;
             this.O.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.O.Location = new System.Drawing.Point(936, 366);
+            this.O.Location = new System.Drawing.Point(922, 366);
             this.O.Name = "O";
             this.O.Size = new System.Drawing.Size(120, 120);
             this.O.TabIndex = 27;
@@ -2759,9 +3814,10 @@
             this.Ñ.BackColor = System.Drawing.Color.Transparent;
             this.Ñ.BackgroundImage = global::SignIt.Properties.Resources.Group_99;
             this.Ñ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ñ.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Ñ.FlatAppearance.BorderSize = 0;
             this.Ñ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Ñ.Location = new System.Drawing.Point(786, 366);
+            this.Ñ.Location = new System.Drawing.Point(772, 366);
             this.Ñ.Name = "Ñ";
             this.Ñ.Size = new System.Drawing.Size(120, 120);
             this.Ñ.TabIndex = 26;
@@ -2773,9 +3829,10 @@
             this.N.BackColor = System.Drawing.Color.Transparent;
             this.N.BackgroundImage = global::SignIt.Properties.Resources.Group_100;
             this.N.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.N.Cursor = System.Windows.Forms.Cursors.Hand;
             this.N.FlatAppearance.BorderSize = 0;
             this.N.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.N.Location = new System.Drawing.Point(636, 366);
+            this.N.Location = new System.Drawing.Point(622, 366);
             this.N.Name = "N";
             this.N.Size = new System.Drawing.Size(120, 120);
             this.N.TabIndex = 25;
@@ -2787,9 +3844,10 @@
             this.M.BackColor = System.Drawing.Color.Transparent;
             this.M.BackgroundImage = global::SignIt.Properties.Resources.Group_101;
             this.M.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.M.Cursor = System.Windows.Forms.Cursors.Hand;
             this.M.FlatAppearance.BorderSize = 0;
             this.M.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M.Location = new System.Drawing.Point(486, 366);
+            this.M.Location = new System.Drawing.Point(472, 366);
             this.M.Name = "M";
             this.M.Size = new System.Drawing.Size(120, 120);
             this.M.TabIndex = 24;
@@ -2801,9 +3859,10 @@
             this.L.BackColor = System.Drawing.Color.Transparent;
             this.L.BackgroundImage = global::SignIt.Properties.Resources.Group_102;
             this.L.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.L.Cursor = System.Windows.Forms.Cursors.Hand;
             this.L.FlatAppearance.BorderSize = 0;
             this.L.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.L.Location = new System.Drawing.Point(336, 366);
+            this.L.Location = new System.Drawing.Point(322, 366);
             this.L.Name = "L";
             this.L.Size = new System.Drawing.Size(120, 120);
             this.L.TabIndex = 23;
@@ -2815,9 +3874,10 @@
             this.K.BackColor = System.Drawing.Color.Transparent;
             this.K.BackgroundImage = global::SignIt.Properties.Resources.Group_103;
             this.K.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.K.Cursor = System.Windows.Forms.Cursors.Hand;
             this.K.FlatAppearance.BorderSize = 0;
             this.K.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.K.Location = new System.Drawing.Point(186, 366);
+            this.K.Location = new System.Drawing.Point(172, 366);
             this.K.Name = "K";
             this.K.Size = new System.Drawing.Size(120, 120);
             this.K.TabIndex = 22;
@@ -2829,9 +3889,10 @@
             this.J.BackColor = System.Drawing.Color.Transparent;
             this.J.BackgroundImage = global::SignIt.Properties.Resources.Group_104;
             this.J.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.J.Cursor = System.Windows.Forms.Cursors.Hand;
             this.J.FlatAppearance.BorderSize = 0;
             this.J.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.J.Location = new System.Drawing.Point(36, 366);
+            this.J.Location = new System.Drawing.Point(22, 366);
             this.J.Name = "J";
             this.J.Size = new System.Drawing.Size(120, 120);
             this.J.TabIndex = 21;
@@ -2843,9 +3904,10 @@
             this.I.BackColor = System.Drawing.Color.Transparent;
             this.I.BackgroundImage = global::SignIt.Properties.Resources.Group_95;
             this.I.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.I.Cursor = System.Windows.Forms.Cursors.Hand;
             this.I.FlatAppearance.BorderSize = 0;
             this.I.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.I.Location = new System.Drawing.Point(1235, 177);
+            this.I.Location = new System.Drawing.Point(1221, 177);
             this.I.Name = "I";
             this.I.Size = new System.Drawing.Size(120, 120);
             this.I.TabIndex = 20;
@@ -2857,9 +3919,10 @@
             this.H.BackColor = System.Drawing.Color.Transparent;
             this.H.BackgroundImage = global::SignIt.Properties.Resources.Group_94;
             this.H.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.H.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H.FlatAppearance.BorderSize = 0;
             this.H.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.H.Location = new System.Drawing.Point(1085, 177);
+            this.H.Location = new System.Drawing.Point(1071, 177);
             this.H.Name = "H";
             this.H.Size = new System.Drawing.Size(120, 120);
             this.H.TabIndex = 19;
@@ -2871,9 +3934,10 @@
             this.G.BackColor = System.Drawing.Color.Transparent;
             this.G.BackgroundImage = global::SignIt.Properties.Resources.Group_931;
             this.G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.G.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G.FlatAppearance.BorderSize = 0;
             this.G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.G.Location = new System.Drawing.Point(935, 178);
+            this.G.Location = new System.Drawing.Point(921, 178);
             this.G.Name = "G";
             this.G.Size = new System.Drawing.Size(120, 120);
             this.G.TabIndex = 18;
@@ -2885,9 +3949,10 @@
             this.F.BackColor = System.Drawing.Color.Transparent;
             this.F.BackgroundImage = global::SignIt.Properties.Resources.Group_92;
             this.F.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.F.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F.FlatAppearance.BorderSize = 0;
             this.F.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.F.Location = new System.Drawing.Point(785, 178);
+            this.F.Location = new System.Drawing.Point(771, 178);
             this.F.Name = "F";
             this.F.Size = new System.Drawing.Size(120, 120);
             this.F.TabIndex = 17;
@@ -2899,9 +3964,10 @@
             this.E.BackColor = System.Drawing.Color.Transparent;
             this.E.BackgroundImage = global::SignIt.Properties.Resources.Group_91;
             this.E.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E.FlatAppearance.BorderSize = 0;
             this.E.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.E.Location = new System.Drawing.Point(635, 178);
+            this.E.Location = new System.Drawing.Point(621, 178);
             this.E.Name = "E";
             this.E.Size = new System.Drawing.Size(120, 120);
             this.E.TabIndex = 16;
@@ -2913,9 +3979,10 @@
             this.D.BackColor = System.Drawing.Color.Transparent;
             this.D.BackgroundImage = global::SignIt.Properties.Resources.Group_90;
             this.D.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.D.Cursor = System.Windows.Forms.Cursors.Hand;
             this.D.FlatAppearance.BorderSize = 0;
             this.D.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.D.Location = new System.Drawing.Point(485, 178);
+            this.D.Location = new System.Drawing.Point(471, 178);
             this.D.Name = "D";
             this.D.Size = new System.Drawing.Size(120, 120);
             this.D.TabIndex = 15;
@@ -2927,9 +3994,10 @@
             this.C.BackColor = System.Drawing.Color.Transparent;
             this.C.BackgroundImage = global::SignIt.Properties.Resources.Group_89;
             this.C.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.C.Cursor = System.Windows.Forms.Cursors.Hand;
             this.C.FlatAppearance.BorderSize = 0;
             this.C.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C.Location = new System.Drawing.Point(335, 178);
+            this.C.Location = new System.Drawing.Point(321, 178);
             this.C.Name = "C";
             this.C.Size = new System.Drawing.Size(120, 120);
             this.C.TabIndex = 14;
@@ -2941,9 +4009,10 @@
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.BackgroundImage = global::SignIt.Properties.Resources.Group_114;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(185, 178);
+            this.button3.Location = new System.Drawing.Point(171, 178);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(120, 120);
             this.button3.TabIndex = 13;
@@ -2955,6 +4024,7 @@
             this.abecedarioExit.BackColor = System.Drawing.Color.Transparent;
             this.abecedarioExit.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
             this.abecedarioExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.abecedarioExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.abecedarioExit.FlatAppearance.BorderSize = 0;
             this.abecedarioExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.abecedarioExit.Location = new System.Drawing.Point(42, 77);
@@ -3136,6 +4206,7 @@
             this.dBNum0.BackColor = System.Drawing.Color.Transparent;
             this.dBNum0.BackgroundImage = global::SignIt.Properties.Resources._0;
             this.dBNum0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNum0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dBNum0.FlatAppearance.BorderSize = 0;
             this.dBNum0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum0.Location = new System.Drawing.Point(200, 173);
@@ -3150,6 +4221,7 @@
             this.NumBack.BackColor = System.Drawing.Color.Transparent;
             this.NumBack.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
             this.NumBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.NumBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.NumBack.FlatAppearance.BorderSize = 0;
             this.NumBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NumBack.Location = new System.Drawing.Point(42, 77);
@@ -3164,6 +4236,7 @@
             this.dBNum6.BackColor = System.Drawing.Color.Transparent;
             this.dBNum6.BackgroundImage = global::SignIt.Properties.Resources._6;
             this.dBNum6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNum6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dBNum6.FlatAppearance.BorderSize = 0;
             this.dBNum6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum6.Location = new System.Drawing.Point(892, 373);
@@ -3178,6 +4251,7 @@
             this.dBNum1.BackColor = System.Drawing.Color.Transparent;
             this.dBNum1.BackgroundImage = global::SignIt.Properties.Resources._1;
             this.dBNum1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNum1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dBNum1.FlatAppearance.BorderSize = 0;
             this.dBNum1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum1.Location = new System.Drawing.Point(478, 173);
@@ -3192,6 +4266,7 @@
             this.dBNum9.BackColor = System.Drawing.Color.Transparent;
             this.dBNum9.BackgroundImage = global::SignIt.Properties.Resources._9;
             this.dBNum9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNum9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dBNum9.FlatAppearance.BorderSize = 0;
             this.dBNum9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum9.Location = new System.Drawing.Point(756, 574);
@@ -3206,7 +4281,7 @@
             this.dBNum10.BackColor = System.Drawing.Color.Transparent;
             this.dBNum10.BackgroundImage = global::SignIt.Properties.Resources._10;
             this.dBNum10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.dBNum10.Cursor = System.Windows.Forms.Cursors.Default;
+            this.dBNum10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dBNum10.FlatAppearance.BorderSize = 0;
             this.dBNum10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum10.Location = new System.Drawing.Point(1031, 574);
@@ -3221,6 +4296,7 @@
             this.dBNum5.BackColor = System.Drawing.Color.Transparent;
             this.dBNum5.BackgroundImage = global::SignIt.Properties.Resources._5;
             this.dBNum5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNum5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dBNum5.FlatAppearance.BorderSize = 0;
             this.dBNum5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum5.Location = new System.Drawing.Point(622, 373);
@@ -3235,6 +4311,7 @@
             this.dBNum4.BackColor = System.Drawing.Color.Transparent;
             this.dBNum4.BackgroundImage = global::SignIt.Properties.Resources._4;
             this.dBNum4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNum4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dBNum4.FlatAppearance.BorderSize = 0;
             this.dBNum4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum4.Location = new System.Drawing.Point(339, 373);
@@ -3249,6 +4326,7 @@
             this.dBNum7.BackColor = System.Drawing.Color.Transparent;
             this.dBNum7.BackgroundImage = global::SignIt.Properties.Resources._7;
             this.dBNum7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNum7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dBNum7.FlatAppearance.BorderSize = 0;
             this.dBNum7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum7.Location = new System.Drawing.Point(200, 574);
@@ -3263,6 +4341,7 @@
             this.dBNum8.BackColor = System.Drawing.Color.Transparent;
             this.dBNum8.BackgroundImage = global::SignIt.Properties.Resources._8;
             this.dBNum8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNum8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dBNum8.FlatAppearance.BorderSize = 0;
             this.dBNum8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum8.Location = new System.Drawing.Point(478, 574);
@@ -3277,6 +4356,7 @@
             this.dBNum3.BackColor = System.Drawing.Color.Transparent;
             this.dBNum3.BackgroundImage = global::SignIt.Properties.Resources._3;
             this.dBNum3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNum3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dBNum3.FlatAppearance.BorderSize = 0;
             this.dBNum3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum3.Location = new System.Drawing.Point(1031, 173);
@@ -3291,6 +4371,7 @@
             this.dBNum2.BackColor = System.Drawing.Color.Transparent;
             this.dBNum2.BackgroundImage = global::SignIt.Properties.Resources._2;
             this.dBNum2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dBNum2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dBNum2.FlatAppearance.BorderSize = 0;
             this.dBNum2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dBNum2.Location = new System.Drawing.Point(756, 173);
@@ -3329,9 +4410,9 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.Controls.Add(this.palabraDB);
-            this.panel7.Location = new System.Drawing.Point(4, 311);
+            this.panel7.Location = new System.Drawing.Point(4, 330);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(443, 144);
+            this.panel7.Size = new System.Drawing.Size(443, 125);
             this.panel7.TabIndex = 3;
             // 
             // palabraDB
@@ -3341,7 +4422,7 @@
             this.palabraDB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.palabraDB.Location = new System.Drawing.Point(0, 0);
             this.palabraDB.Name = "palabraDB";
-            this.palabraDB.Size = new System.Drawing.Size(443, 144);
+            this.palabraDB.Size = new System.Drawing.Size(443, 125);
             this.palabraDB.TabIndex = 1;
             this.palabraDB.Text = "a";
             this.palabraDB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3360,6 +4441,7 @@
             this.exitDB.BackColor = System.Drawing.Color.Transparent;
             this.exitDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
             this.exitDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exitDB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitDB.FlatAppearance.BorderSize = 0;
             this.exitDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitDB.Location = new System.Drawing.Point(25, 23);
@@ -4416,356 +5498,12 @@
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.BackColor = System.Drawing.Color.Transparent;
-            this.label67.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(620, 107);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(125, 40);
-            this.label67.TabIndex = 48;
-            this.label67.Text = "Básico";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.BackColor = System.Drawing.Color.Transparent;
-            this.label68.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(626, 107);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(141, 40);
-            this.label68.TabIndex = 57;
-            this.label68.Text = "Comida";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.BackColor = System.Drawing.Color.Transparent;
-            this.label69.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(606, 107);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(148, 40);
-            this.label69.TabIndex = 75;
-            this.label69.Text = "Lugares";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.BackColor = System.Drawing.Color.Transparent;
-            this.label70.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(696, 60);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(142, 40);
-            this.label70.TabIndex = 99;
-            this.label70.Text = "Colores";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.BackColor = System.Drawing.Color.Transparent;
-            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.ForeColor = System.Drawing.Color.Blue;
-            this.label71.Location = new System.Drawing.Point(1119, 670);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(103, 31);
-            this.label71.TabIndex = 98;
-            this.label71.Text = "Blanco";
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.BackColor = System.Drawing.Color.Transparent;
-            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.ForeColor = System.Drawing.Color.Blue;
-            this.label72.Location = new System.Drawing.Point(596, 670);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(93, 31);
-            this.label72.TabIndex = 97;
-            this.label72.Text = "Negro";
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.BackColor = System.Drawing.Color.Transparent;
-            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.ForeColor = System.Drawing.Color.Blue;
-            this.label73.Location = new System.Drawing.Point(862, 670);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(68, 31);
-            this.label73.TabIndex = 96;
-            this.label73.Text = "Gris";
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.BackColor = System.Drawing.Color.Transparent;
-            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.ForeColor = System.Drawing.Color.Blue;
-            this.label74.Location = new System.Drawing.Point(306, 670);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(82, 31);
-            this.label74.TabIndex = 95;
-            this.label74.Text = "Rosa";
-            // 
-            // ExitColoresDB
-            // 
-            this.ExitColoresDB.BackColor = System.Drawing.Color.Transparent;
-            this.ExitColoresDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
-            this.ExitColoresDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ExitColoresDB.FlatAppearance.BorderSize = 0;
-            this.ExitColoresDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitColoresDB.Location = new System.Drawing.Point(132, 30);
-            this.ExitColoresDB.Name = "ExitColoresDB";
-            this.ExitColoresDB.Size = new System.Drawing.Size(96, 60);
-            this.ExitColoresDB.TabIndex = 94;
-            this.ExitColoresDB.UseVisualStyleBackColor = false;
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.BackColor = System.Drawing.Color.Transparent;
-            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.ForeColor = System.Drawing.Color.Blue;
-            this.label75.Location = new System.Drawing.Point(733, 469);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(114, 31);
-            this.label75.TabIndex = 93;
-            this.label75.Text = "Celeste";
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.BackColor = System.Drawing.Color.Transparent;
-            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.ForeColor = System.Drawing.Color.Blue;
-            this.label76.Location = new System.Drawing.Point(981, 469);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(104, 31);
-            this.label76.TabIndex = 92;
-            this.label76.Text = "Violeta";
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = true;
-            this.label77.BackColor = System.Drawing.Color.Transparent;
-            this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label77.ForeColor = System.Drawing.Color.Blue;
-            this.label77.Location = new System.Drawing.Point(463, 469);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(71, 31);
-            this.label77.TabIndex = 91;
-            this.label77.Text = "Azul";
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.BackColor = System.Drawing.Color.Transparent;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.ForeColor = System.Drawing.Color.Blue;
-            this.label78.Location = new System.Drawing.Point(1129, 268);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(91, 31);
-            this.label78.TabIndex = 90;
-            this.label78.Text = "Verde";
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.BackColor = System.Drawing.Color.Transparent;
-            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.ForeColor = System.Drawing.Color.Blue;
-            this.label79.Location = new System.Drawing.Point(810, 268);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(119, 31);
-            this.label79.TabIndex = 89;
-            this.label79.Text = "Amarillo";
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.BackColor = System.Drawing.Color.Transparent;
-            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.ForeColor = System.Drawing.Color.Blue;
-            this.label80.Location = new System.Drawing.Point(577, 268);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(116, 31);
-            this.label80.TabIndex = 88;
-            this.label80.Text = "Naranja";
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.BackColor = System.Drawing.Color.Transparent;
-            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label81.ForeColor = System.Drawing.Color.Blue;
-            this.label81.Location = new System.Drawing.Point(268, 268);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(74, 31);
-            this.label81.TabIndex = 87;
-            this.label81.Text = "Rojo";
-            // 
-            // Rojo
-            // 
-            this.Rojo.BackColor = System.Drawing.Color.Transparent;
-            this.Rojo.BackgroundImage = global::SignIt.Properties.Resources.Group_138;
-            this.Rojo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Rojo.FlatAppearance.BorderSize = 0;
-            this.Rojo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Rojo.Location = new System.Drawing.Point(285, 126);
-            this.Rojo.Name = "Rojo";
-            this.Rojo.Size = new System.Drawing.Size(140, 140);
-            this.Rojo.TabIndex = 86;
-            this.Rojo.UseVisualStyleBackColor = false;
-            this.Rojo.Click += new System.EventHandler(this.Rojo_Click);
-            // 
-            // Violeta
-            // 
-            this.Violeta.BackColor = System.Drawing.Color.Transparent;
-            this.Violeta.BackgroundImage = global::SignIt.Properties.Resources.Group_144;
-            this.Violeta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Violeta.FlatAppearance.BorderSize = 0;
-            this.Violeta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Violeta.Location = new System.Drawing.Point(978, 326);
-            this.Violeta.Name = "Violeta";
-            this.Violeta.Size = new System.Drawing.Size(140, 140);
-            this.Violeta.TabIndex = 85;
-            this.Violeta.UseVisualStyleBackColor = false;
-            this.Violeta.Click += new System.EventHandler(this.Violeta_Click);
-            // 
-            // Naranja
-            // 
-            this.Naranja.BackColor = System.Drawing.Color.Transparent;
-            this.Naranja.BackgroundImage = global::SignIt.Properties.Resources.Group_139;
-            this.Naranja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Naranja.FlatAppearance.BorderSize = 0;
-            this.Naranja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Naranja.Location = new System.Drawing.Point(563, 126);
-            this.Naranja.Name = "Naranja";
-            this.Naranja.Size = new System.Drawing.Size(140, 140);
-            this.Naranja.TabIndex = 84;
-            this.Naranja.UseVisualStyleBackColor = false;
-            this.Naranja.Click += new System.EventHandler(this.Naranja_Click);
-            // 
-            // Gris
-            // 
-            this.Gris.BackColor = System.Drawing.Color.Transparent;
-            this.Gris.BackgroundImage = global::SignIt.Properties.Resources.Group_150;
-            this.Gris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Gris.FlatAppearance.BorderSize = 0;
-            this.Gris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Gris.Location = new System.Drawing.Point(841, 527);
-            this.Gris.Name = "Gris";
-            this.Gris.Size = new System.Drawing.Size(140, 140);
-            this.Gris.TabIndex = 83;
-            this.Gris.UseVisualStyleBackColor = false;
-            this.Gris.Click += new System.EventHandler(this.Gris_Click);
-            // 
-            // Blanco
-            // 
-            this.Blanco.BackColor = System.Drawing.Color.Transparent;
-            this.Blanco.BackgroundImage = global::SignIt.Properties.Resources.Group_151;
-            this.Blanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Blanco.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Blanco.FlatAppearance.BorderSize = 0;
-            this.Blanco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Blanco.Location = new System.Drawing.Point(1119, 527);
-            this.Blanco.Name = "Blanco";
-            this.Blanco.Size = new System.Drawing.Size(140, 140);
-            this.Blanco.TabIndex = 82;
-            this.Blanco.UseVisualStyleBackColor = false;
-            this.Blanco.Click += new System.EventHandler(this.Blanco_Click);
-            // 
-            // Celeste
-            // 
-            this.Celeste.BackColor = System.Drawing.Color.Transparent;
-            this.Celeste.BackgroundImage = global::SignIt.Properties.Resources.Group_145;
-            this.Celeste.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Celeste.FlatAppearance.BorderSize = 0;
-            this.Celeste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Celeste.Location = new System.Drawing.Point(700, 326);
-            this.Celeste.Name = "Celeste";
-            this.Celeste.Size = new System.Drawing.Size(140, 140);
-            this.Celeste.TabIndex = 81;
-            this.Celeste.UseVisualStyleBackColor = false;
-            this.Celeste.Click += new System.EventHandler(this.Celeste_Click);
-            // 
-            // Azul
-            // 
-            this.Azul.BackColor = System.Drawing.Color.Transparent;
-            this.Azul.BackgroundImage = global::SignIt.Properties.Resources.Group_146;
-            this.Azul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Azul.FlatAppearance.BorderSize = 0;
-            this.Azul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Azul.Location = new System.Drawing.Point(422, 326);
-            this.Azul.Name = "Azul";
-            this.Azul.Size = new System.Drawing.Size(140, 140);
-            this.Azul.TabIndex = 80;
-            this.Azul.UseVisualStyleBackColor = false;
-            this.Azul.Click += new System.EventHandler(this.Azul_Click);
-            // 
-            // Rosa
-            // 
-            this.Rosa.BackColor = System.Drawing.Color.Transparent;
-            this.Rosa.BackgroundImage = global::SignIt.Properties.Resources.Group_148;
-            this.Rosa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Rosa.FlatAppearance.BorderSize = 0;
-            this.Rosa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Rosa.Location = new System.Drawing.Point(285, 527);
-            this.Rosa.Name = "Rosa";
-            this.Rosa.Size = new System.Drawing.Size(140, 140);
-            this.Rosa.TabIndex = 79;
-            this.Rosa.UseVisualStyleBackColor = false;
-            this.Rosa.Click += new System.EventHandler(this.Rosa_Click);
-            // 
-            // Negro
-            // 
-            this.Negro.BackColor = System.Drawing.Color.Transparent;
-            this.Negro.BackgroundImage = global::SignIt.Properties.Resources.Group_149;
-            this.Negro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Negro.FlatAppearance.BorderSize = 0;
-            this.Negro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Negro.Location = new System.Drawing.Point(563, 527);
-            this.Negro.Name = "Negro";
-            this.Negro.Size = new System.Drawing.Size(140, 140);
-            this.Negro.TabIndex = 78;
-            this.Negro.UseVisualStyleBackColor = false;
-            this.Negro.Click += new System.EventHandler(this.Negro_Click);
-            // 
-            // Verde
-            // 
-            this.Verde.BackColor = System.Drawing.Color.Transparent;
-            this.Verde.BackgroundImage = global::SignIt.Properties.Resources.Group_142;
-            this.Verde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Verde.FlatAppearance.BorderSize = 0;
-            this.Verde.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Verde.Location = new System.Drawing.Point(1119, 126);
-            this.Verde.Name = "Verde";
-            this.Verde.Size = new System.Drawing.Size(140, 140);
-            this.Verde.TabIndex = 77;
-            this.Verde.UseVisualStyleBackColor = false;
-            this.Verde.Click += new System.EventHandler(this.Verde_Click);
-            // 
-            // Amarillo
-            // 
-            this.Amarillo.BackColor = System.Drawing.Color.Transparent;
-            this.Amarillo.BackgroundImage = global::SignIt.Properties.Resources.Group_140;
-            this.Amarillo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Amarillo.FlatAppearance.BorderSize = 0;
-            this.Amarillo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Amarillo.Location = new System.Drawing.Point(841, 126);
-            this.Amarillo.Name = "Amarillo";
-            this.Amarillo.Size = new System.Drawing.Size(140, 140);
-            this.Amarillo.TabIndex = 76;
-            this.Amarillo.UseVisualStyleBackColor = false;
-            this.Amarillo.Click += new System.EventHandler(this.Amarillo_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1350, 749);
+            this.ClientSize = new System.Drawing.Size(1350, 801);
             this.Controls.Add(this.signIt);
             this.Controls.Add(this.Menubutton);
             this.Controls.Add(this.panel1);
@@ -4793,6 +5531,10 @@
             this.Colores.PerformLayout();
             this.Lugares.ResumeLayout(false);
             this.Lugares.PerformLayout();
+            this.Pronombres.ResumeLayout(false);
+            this.Pronombres.PerformLayout();
+            this.Verbos.ResumeLayout(false);
+            this.Verbos.PerformLayout();
             this.dBAbecedario.ResumeLayout(false);
             this.dBAbecedario.PerformLayout();
             this.dBNros.ResumeLayout(false);
@@ -5155,6 +5897,48 @@
         private System.Windows.Forms.Button Verde;
         private System.Windows.Forms.Button Amarillo;
         private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Button ExitPronombresDB;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.Button Yo;
+        private System.Windows.Forms.Button Ustedes;
+        private System.Windows.Forms.Button Nosotros;
+        private System.Windows.Forms.Button Usted;
+        private System.Windows.Forms.Button Vos;
+        private System.Windows.Forms.Button Ellos;
+        private System.Windows.Forms.Button El;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.Button Aprender;
+        private System.Windows.Forms.Button ExitVerbosDB;
+        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.Button Comer;
+        private System.Windows.Forms.Button Tomar;
+        private System.Windows.Forms.Button Caminar;
+        private System.Windows.Forms.Button Dormir;
+        private System.Windows.Forms.Button Estudiar;
+        private System.Windows.Forms.Button Escribir;
+        private System.Windows.Forms.Button Jugar;
+        private System.Windows.Forms.Button Mirar;
+        private System.Windows.Forms.Button Escuchar;
+        private System.Windows.Forms.Button Hablar;
+        private System.Windows.Forms.Button Correr;
     }
 }
 

@@ -1814,7 +1814,7 @@ namespace SignIt
         {
             if (avance > 3)
             {
-                signIt.SelectedTab = Colores;
+                diccionarioBetas(Colores, "ComidaDB");
                 lastpage = 4;
             }
         }
@@ -1832,7 +1832,7 @@ namespace SignIt
         {
             if (avance > 5)
             {
-                signIt.SelectedTab = Pronombres;
+                diccionarioBetas(Pronombres, "ComidaDB");
                 lastpage = 6;
             }
         }
@@ -1841,7 +1841,7 @@ namespace SignIt
         {
             if (avance > 6)
             {
-                signIt.SelectedTab = Verbos;
+                diccionarioBetas(Verbos, "ComidaDB");
                 lastpage = 7;
             }
         }
@@ -2316,7 +2316,12 @@ namespace SignIt
 
 
 
-        private void Rosa_Click(object sender, EventArgs e)
+       private void ExitColoresDB_Click(object sender, EventArgs e)
+        {
+            byeDB();
+        }
+
+    private void Rosa_Click(object sender, EventArgs e)
         {
             diccionarioVideos("Rosa");
         }
@@ -2369,7 +2374,7 @@ namespace SignIt
         private void Rojo_Click(object sender, EventArgs e)
         {
             diccionarioVideos("Rojo");
-        }        .
+        }
 
 
 
@@ -2449,6 +2454,127 @@ namespace SignIt
         private void Supermercado_Click(object sender, EventArgs e)
         {
             diccionarioVideos("Supermercado");
+        }
+
+
+
+
+
+        //Diccionario_Pronombres
+
+
+
+
+
+        private void ExitPronombresDB_Click(object sender, EventArgs e)
+        {
+            byeDB();
+        }
+
+        private void Yo_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Yo");
+        }
+
+        private void Usted_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Usted");
+        }
+
+        private void Ustedes_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Ustedes");
+        }
+
+        private void Ellos_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Ellos");
+        }
+
+        private void El_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("El");
+        }
+
+        private void Nosotros_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Nosotros");
+        }
+
+        private void Vos_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Vos");
+        }
+
+
+
+
+        //Diccionario_Verbos
+
+
+
+
+        private void ExitVerbosDB_Click(object sender, EventArgs e)
+        {
+            byeDB();
+        }
+        private void Caminar_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Caminar");
+        }
+
+        private void Correr_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Correr");
+        }
+
+        private void Hablar_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Hablar");
+        }
+
+        private void Aprender_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Aprender");
+        }
+
+        private void Tomar_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Tomar");
+        }
+
+        private void Escribir_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Escribir");
+        }
+
+        private void Jugar_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Jugar");
+        }
+
+        private void Mirar_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Mirar");
+        }
+
+        private void Escuchar_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Escuchar");
+        }
+
+        private void Dormir_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Dormir");
+        }
+
+        private void Estudiar_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Estudiar");
+        }
+        private void Comer_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Comer");
         }
 
 
@@ -2895,6 +3021,11 @@ namespace SignIt
 
         }
         private void ejercicio1VideoC_ClickEvent(object sender, AxWMPLib._WMPOCXEvents_ClickEvent e)
+        {
+
+        }
+
+        private void label98_Click(object sender, EventArgs e)
         {
 
         }
