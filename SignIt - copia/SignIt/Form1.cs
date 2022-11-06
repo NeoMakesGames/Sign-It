@@ -1282,16 +1282,23 @@ namespace SignIt
             SearchDiccionario.BackColor = Color.FromArgb(235,228,228);
         }
 
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Escape)
+            {
+                cierre();
+            }
+        }
 
 
 
 
-//Inicio de Sesión
-        
-        
-        
-        
-        
+        //Inicio de Sesión
+
+
+
+
+
         private void ComenzarIds_Click(object sender, EventArgs e)
         {
             if (DatabaseFunctions.checkIfNameExists(UserIdS.Text, path) == true)
@@ -1771,7 +1778,7 @@ namespace SignIt
         {
             if (avance > 4)
             {
-                signIt.SelectedTab = Lugares;
+                diccionarioBetas(Lugares, "ComidaDB");
             }
         }
 
@@ -2208,6 +2215,96 @@ namespace SignIt
         private void Manzana_Click(object sender, EventArgs e)
         {
             diccionarioVideos("Manzana");
+        }
+
+
+
+
+        //Diccionario_Colores
+
+
+
+
+
+        //        .
+
+
+
+
+
+        //Diccionario_Lugares
+
+
+
+
+        private void ExitLugaresDB_Click(object sender, EventArgs e)
+        {
+            byeDB();
+        }
+
+        private void Libreria_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Libreria");
+        }
+
+        private void Taller_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Taller");
+        }
+
+        private void Restaurante_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Restaurante");
+        }
+
+        private void Farmacia_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Farmacia");
+        }
+
+        private void Ciudad_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Ciudad");
+        }
+
+        private void Teatro_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Teatro");
+        }
+
+        private void Confiteria_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Confiteria");
+        }
+
+        private void Club_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Club");
+        }
+
+        private void Bar_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Bar");
+        }
+
+        private void Lugar_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Lugar");
+        }
+
+        private void Cine_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Cine");
+        }
+
+        private void Hospital_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Hospital");
+        }
+
+        private void Supermercado_Click(object sender, EventArgs e)
+        {
+            diccionarioVideos("Supermercado");
         }
 
 

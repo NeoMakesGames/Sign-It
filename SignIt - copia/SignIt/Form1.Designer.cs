@@ -123,6 +123,33 @@
             this.ExitComidaDB = new System.Windows.Forms.Button();
             this.Colores = new System.Windows.Forms.TabPage();
             this.Lugares = new System.Windows.Forms.TabPage();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.Ciudad = new System.Windows.Forms.Button();
+            this.Taller = new System.Windows.Forms.Button();
+            this.ExitLugaresDB = new System.Windows.Forms.Button();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.Restaurante = new System.Windows.Forms.Button();
+            this.Farmacia = new System.Windows.Forms.Button();
+            this.Libreria = new System.Windows.Forms.Button();
+            this.Teatro = new System.Windows.Forms.Button();
+            this.Confiteria = new System.Windows.Forms.Button();
+            this.Club = new System.Windows.Forms.Button();
+            this.Bar = new System.Windows.Forms.Button();
+            this.Lugar = new System.Windows.Forms.Button();
+            this.Cine = new System.Windows.Forms.Button();
+            this.Hospital = new System.Windows.Forms.Button();
+            this.Supermercado = new System.Windows.Forms.Button();
             this.Pronombres = new System.Windows.Forms.TabPage();
             this.Verbos = new System.Windows.Forms.TabPage();
             this.dBAbecedario = new System.Windows.Forms.TabPage();
@@ -305,6 +332,7 @@
             this.SbarD.SuspendLayout();
             this.Basico.SuspendLayout();
             this.Comida.SuspendLayout();
+            this.Lugares.SuspendLayout();
             this.dBAbecedario.SuspendLayout();
             this.dBNros.SuspendLayout();
             this.DBeta.SuspendLayout();
@@ -349,7 +377,7 @@
             this.signIt.Controls.Add(this.ejercicio2);
             this.signIt.Controls.Add(this.ejercicio3);
             this.signIt.Controls.Add(this.caracol);
-            this.signIt.Location = new System.Drawing.Point(-10, -22);
+            this.signIt.Location = new System.Drawing.Point(-10, 0);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1628, 901);
@@ -799,14 +827,14 @@
             // 
             this.diccionarioBeta.Controls.Add(this.MenuDB);
             this.diccionarioBeta.Controls.Add(this.Basico);
+            this.diccionarioBeta.Controls.Add(this.Comida);
             this.diccionarioBeta.Controls.Add(this.Colores);
             this.diccionarioBeta.Controls.Add(this.Lugares);
             this.diccionarioBeta.Controls.Add(this.Pronombres);
             this.diccionarioBeta.Controls.Add(this.Verbos);
             this.diccionarioBeta.Controls.Add(this.dBAbecedario);
             this.diccionarioBeta.Controls.Add(this.dBNros);
-            this.diccionarioBeta.Controls.Add(this.Comida);
-            this.diccionarioBeta.Location = new System.Drawing.Point(-5, -41);
+            this.diccionarioBeta.Location = new System.Drawing.Point(-4, 0);
             this.diccionarioBeta.Name = "diccionarioBeta";
             this.diccionarioBeta.SelectedIndex = 0;
             this.diccionarioBeta.Size = new System.Drawing.Size(1400, 900);
@@ -841,7 +869,7 @@
             this.SbarD.BackgroundImage = global::SignIt.Properties.Resources.Group_115;
             this.SbarD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SbarD.Controls.Add(this.SearchDiccionario);
-            this.SbarD.Location = new System.Drawing.Point(335, 77);
+            this.SbarD.Location = new System.Drawing.Point(330, 77);
             this.SbarD.Name = "SbarD";
             this.SbarD.Size = new System.Drawing.Size(730, 70);
             this.SbarD.TabIndex = 10;
@@ -869,7 +897,7 @@
             this.ayudaDicionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ayudaDicionario.FlatAppearance.BorderSize = 0;
             this.ayudaDicionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ayudaDicionario.Location = new System.Drawing.Point(1228, 118);
+            this.ayudaDicionario.Location = new System.Drawing.Point(1223, 118);
             this.ayudaDicionario.Name = "ayudaDicionario";
             this.ayudaDicionario.Size = new System.Drawing.Size(120, 120);
             this.ayudaDicionario.TabIndex = 8;
@@ -883,7 +911,7 @@
             this.NumerosDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.NumerosDB.FlatAppearance.BorderSize = 0;
             this.NumerosDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NumerosDB.Location = new System.Drawing.Point(796, 552);
+            this.NumerosDB.Location = new System.Drawing.Point(791, 552);
             this.NumerosDB.Name = "NumerosDB";
             this.NumerosDB.Size = new System.Drawing.Size(220, 220);
             this.NumerosDB.TabIndex = 5;
@@ -897,7 +925,7 @@
             this.verbosDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.verbosDiccionario.FlatAppearance.BorderSize = 0;
             this.verbosDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.verbosDiccionario.Location = new System.Drawing.Point(978, 389);
+            this.verbosDiccionario.Location = new System.Drawing.Point(973, 389);
             this.verbosDiccionario.Name = "verbosDiccionario";
             this.verbosDiccionario.Size = new System.Drawing.Size(236, 110);
             this.verbosDiccionario.TabIndex = 7;
@@ -911,7 +939,7 @@
             this.AbecedarioDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.AbecedarioDB.FlatAppearance.BorderSize = 0;
             this.AbecedarioDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AbecedarioDB.Location = new System.Drawing.Point(351, 552);
+            this.AbecedarioDB.Location = new System.Drawing.Point(346, 552);
             this.AbecedarioDB.Name = "AbecedarioDB";
             this.AbecedarioDB.Size = new System.Drawing.Size(220, 220);
             this.AbecedarioDB.TabIndex = 4;
@@ -926,7 +954,7 @@
             this.basicoDiccionario.FlatAppearance.BorderSize = 0;
             this.basicoDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.basicoDiccionario.ForeColor = System.Drawing.Color.Black;
-            this.basicoDiccionario.Location = new System.Drawing.Point(142, 200);
+            this.basicoDiccionario.Location = new System.Drawing.Point(137, 200);
             this.basicoDiccionario.Name = "basicoDiccionario";
             this.basicoDiccionario.Size = new System.Drawing.Size(220, 110);
             this.basicoDiccionario.TabIndex = 0;
@@ -940,7 +968,7 @@
             this.lugaresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lugaresDiccionario.FlatAppearance.BorderSize = 0;
             this.lugaresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lugaresDiccionario.Location = new System.Drawing.Point(142, 389);
+            this.lugaresDiccionario.Location = new System.Drawing.Point(137, 389);
             this.lugaresDiccionario.Name = "lugaresDiccionario";
             this.lugaresDiccionario.Size = new System.Drawing.Size(220, 110);
             this.lugaresDiccionario.TabIndex = 2;
@@ -954,7 +982,7 @@
             this.coloresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.coloresDiccionario.FlatAppearance.BorderSize = 0;
             this.coloresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.coloresDiccionario.Location = new System.Drawing.Point(978, 200);
+            this.coloresDiccionario.Location = new System.Drawing.Point(973, 200);
             this.coloresDiccionario.Name = "coloresDiccionario";
             this.coloresDiccionario.Size = new System.Drawing.Size(220, 110);
             this.coloresDiccionario.TabIndex = 6;
@@ -968,7 +996,7 @@
             this.comidaDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.comidaDiccionario.FlatAppearance.BorderSize = 0;
             this.comidaDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comidaDiccionario.Location = new System.Drawing.Point(573, 200);
+            this.comidaDiccionario.Location = new System.Drawing.Point(568, 200);
             this.comidaDiccionario.Name = "comidaDiccionario";
             this.comidaDiccionario.Size = new System.Drawing.Size(220, 110);
             this.comidaDiccionario.TabIndex = 1;
@@ -982,7 +1010,7 @@
             this.pronombresDiccionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pronombresDiccionario.FlatAppearance.BorderSize = 0;
             this.pronombresDiccionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pronombresDiccionario.Location = new System.Drawing.Point(573, 389);
+            this.pronombresDiccionario.Location = new System.Drawing.Point(568, 389);
             this.pronombresDiccionario.Name = "pronombresDiccionario";
             this.pronombresDiccionario.Size = new System.Drawing.Size(220, 110);
             this.pronombresDiccionario.TabIndex = 3;
@@ -1033,7 +1061,7 @@
             this.label42.BackColor = System.Drawing.Color.Transparent;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.ForeColor = System.Drawing.Color.Blue;
-            this.label42.Location = new System.Drawing.Point(1090, 715);
+            this.label42.Location = new System.Drawing.Point(1074, 715);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(51, 31);
             this.label42.TabIndex = 47;
@@ -1045,7 +1073,7 @@
             this.label43.BackColor = System.Drawing.Color.Transparent;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.ForeColor = System.Drawing.Color.Blue;
-            this.label43.Location = new System.Drawing.Point(486, 715);
+            this.label43.Location = new System.Drawing.Point(470, 715);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(147, 31);
             this.label43.TabIndex = 46;
@@ -1057,7 +1085,7 @@
             this.label44.BackColor = System.Drawing.Color.Transparent;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.ForeColor = System.Drawing.Color.Blue;
-            this.label44.Location = new System.Drawing.Point(817, 715);
+            this.label44.Location = new System.Drawing.Point(801, 715);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(40, 31);
             this.label44.TabIndex = 45;
@@ -1069,7 +1097,7 @@
             this.label45.BackColor = System.Drawing.Color.Transparent;
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label45.ForeColor = System.Drawing.Color.Blue;
-            this.label45.Location = new System.Drawing.Point(232, 715);
+            this.label45.Location = new System.Drawing.Point(216, 715);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(99, 31);
             this.label45.TabIndex = 44;
@@ -1081,7 +1109,7 @@
             this.label41.BackColor = System.Drawing.Color.Transparent;
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.ForeColor = System.Drawing.Color.Blue;
-            this.label41.Location = new System.Drawing.Point(1203, 516);
+            this.label41.Location = new System.Drawing.Point(1175, 516);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(123, 31);
             this.label41.TabIndex = 43;
@@ -1093,7 +1121,7 @@
             this.label40.BackColor = System.Drawing.Color.Transparent;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.Color.Blue;
-            this.label40.Location = new System.Drawing.Point(69, 516);
+            this.label40.Location = new System.Drawing.Point(67, 516);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(115, 31);
             this.label40.TabIndex = 42;
@@ -1106,7 +1134,7 @@
             this.Quién.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Quién.FlatAppearance.BorderSize = 0;
             this.Quién.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Quién.Location = new System.Drawing.Point(1194, 373);
+            this.Quién.Location = new System.Drawing.Point(1166, 373);
             this.Quién.Name = "Quién";
             this.Quién.Size = new System.Drawing.Size(140, 140);
             this.Quién.TabIndex = 41;
@@ -1120,7 +1148,7 @@
             this.Gracias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Gracias.FlatAppearance.BorderSize = 0;
             this.Gracias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Gracias.Location = new System.Drawing.Point(56, 373);
+            this.Gracias.Location = new System.Drawing.Point(54, 373);
             this.Gracias.Name = "Gracias";
             this.Gracias.Size = new System.Drawing.Size(140, 140);
             this.Gracias.TabIndex = 40;
@@ -1147,7 +1175,7 @@
             this.label33.BackColor = System.Drawing.Color.Transparent;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.Blue;
-            this.label33.Location = new System.Drawing.Point(637, 516);
+            this.label33.Location = new System.Drawing.Point(619, 516);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(122, 31);
             this.label33.TabIndex = 38;
@@ -1159,7 +1187,7 @@
             this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.Blue;
-            this.label34.Location = new System.Drawing.Point(926, 516);
+            this.label34.Location = new System.Drawing.Point(908, 516);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(100, 31);
             this.label34.TabIndex = 37;
@@ -1171,7 +1199,7 @@
             this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.Blue;
-            this.label35.Location = new System.Drawing.Point(377, 516);
+            this.label35.Location = new System.Drawing.Point(359, 516);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(87, 31);
             this.label35.TabIndex = 36;
@@ -1183,7 +1211,7 @@
             this.label36.BackColor = System.Drawing.Color.Transparent;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.Color.Blue;
-            this.label36.Location = new System.Drawing.Point(1049, 315);
+            this.label36.Location = new System.Drawing.Point(1033, 315);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(133, 31);
             this.label36.TabIndex = 35;
@@ -1195,7 +1223,7 @@
             this.label37.BackColor = System.Drawing.Color.Transparent;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.ForeColor = System.Drawing.Color.Blue;
-            this.label37.Location = new System.Drawing.Point(801, 315);
+            this.label37.Location = new System.Drawing.Point(785, 315);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(72, 31);
             this.label37.TabIndex = 34;
@@ -1207,7 +1235,7 @@
             this.label38.BackColor = System.Drawing.Color.Transparent;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.ForeColor = System.Drawing.Color.Blue;
-            this.label38.Location = new System.Drawing.Point(459, 315);
+            this.label38.Location = new System.Drawing.Point(443, 315);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(201, 31);
             this.label38.TabIndex = 33;
@@ -1219,7 +1247,7 @@
             this.label39.BackColor = System.Drawing.Color.Transparent;
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.ForeColor = System.Drawing.Color.Blue;
-            this.label39.Location = new System.Drawing.Point(244, 315);
+            this.label39.Location = new System.Drawing.Point(228, 315);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(74, 31);
             this.label39.TabIndex = 32;
@@ -1232,7 +1260,7 @@
             this.Hola.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Hola.FlatAppearance.BorderSize = 0;
             this.Hola.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Hola.Location = new System.Drawing.Point(211, 173);
+            this.Hola.Location = new System.Drawing.Point(195, 173);
             this.Hola.Name = "Hola";
             this.Hola.Size = new System.Drawing.Size(140, 140);
             this.Hola.TabIndex = 31;
@@ -1246,7 +1274,7 @@
             this.Qué.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Qué.FlatAppearance.BorderSize = 0;
             this.Qué.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Qué.Location = new System.Drawing.Point(906, 373);
+            this.Qué.Location = new System.Drawing.Point(888, 373);
             this.Qué.Name = "Qué";
             this.Qué.Size = new System.Drawing.Size(140, 140);
             this.Qué.TabIndex = 30;
@@ -1260,7 +1288,7 @@
             this.Como_Estas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Como_Estas.FlatAppearance.BorderSize = 0;
             this.Como_Estas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Como_Estas.Location = new System.Drawing.Point(489, 173);
+            this.Como_Estas.Location = new System.Drawing.Point(473, 173);
             this.Como_Estas.Name = "Como_Estas";
             this.Como_Estas.Size = new System.Drawing.Size(140, 140);
             this.Como_Estas.TabIndex = 29;
@@ -1274,7 +1302,7 @@
             this.Si.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Si.FlatAppearance.BorderSize = 0;
             this.Si.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Si.Location = new System.Drawing.Point(767, 574);
+            this.Si.Location = new System.Drawing.Point(751, 574);
             this.Si.Name = "Si";
             this.Si.Size = new System.Drawing.Size(140, 140);
             this.Si.TabIndex = 28;
@@ -1289,7 +1317,7 @@
             this.No.Cursor = System.Windows.Forms.Cursors.Default;
             this.No.FlatAppearance.BorderSize = 0;
             this.No.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.No.Location = new System.Drawing.Point(1045, 574);
+            this.No.Location = new System.Drawing.Point(1029, 574);
             this.No.Name = "No";
             this.No.Size = new System.Drawing.Size(140, 140);
             this.No.TabIndex = 27;
@@ -1303,7 +1331,7 @@
             this.Como.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Como.FlatAppearance.BorderSize = 0;
             this.Como.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Como.Location = new System.Drawing.Point(628, 373);
+            this.Como.Location = new System.Drawing.Point(610, 373);
             this.Como.Name = "Como";
             this.Como.Size = new System.Drawing.Size(140, 140);
             this.Como.TabIndex = 26;
@@ -1317,7 +1345,7 @@
             this.Adios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Adios.FlatAppearance.BorderSize = 0;
             this.Adios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Adios.Location = new System.Drawing.Point(350, 373);
+            this.Adios.Location = new System.Drawing.Point(332, 373);
             this.Adios.Name = "Adios";
             this.Adios.Size = new System.Drawing.Size(140, 140);
             this.Adios.TabIndex = 25;
@@ -1331,7 +1359,7 @@
             this.Dónde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Dónde.FlatAppearance.BorderSize = 0;
             this.Dónde.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Dónde.Location = new System.Drawing.Point(211, 574);
+            this.Dónde.Location = new System.Drawing.Point(195, 574);
             this.Dónde.Name = "Dónde";
             this.Dónde.Size = new System.Drawing.Size(140, 140);
             this.Dónde.TabIndex = 24;
@@ -1345,7 +1373,7 @@
             this.Por_Qué.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Por_Qué.FlatAppearance.BorderSize = 0;
             this.Por_Qué.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Por_Qué.Location = new System.Drawing.Point(489, 574);
+            this.Por_Qué.Location = new System.Drawing.Point(473, 574);
             this.Por_Qué.Name = "Por_Qué";
             this.Por_Qué.Size = new System.Drawing.Size(140, 140);
             this.Por_Qué.TabIndex = 23;
@@ -1359,7 +1387,7 @@
             this.Por_Favor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Por_Favor.FlatAppearance.BorderSize = 0;
             this.Por_Favor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Por_Favor.Location = new System.Drawing.Point(1045, 173);
+            this.Por_Favor.Location = new System.Drawing.Point(1029, 173);
             this.Por_Favor.Name = "Por_Favor";
             this.Por_Favor.Size = new System.Drawing.Size(140, 140);
             this.Por_Favor.TabIndex = 22;
@@ -1373,7 +1401,7 @@
             this.Bien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bien.FlatAppearance.BorderSize = 0;
             this.Bien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bien.Location = new System.Drawing.Point(767, 173);
+            this.Bien.Location = new System.Drawing.Point(751, 173);
             this.Bien.Name = "Bien";
             this.Bien.Size = new System.Drawing.Size(140, 140);
             this.Bien.TabIndex = 21;
@@ -1645,11 +1673,391 @@
             // 
             this.Lugares.BackColor = System.Drawing.Color.LightBlue;
             this.Lugares.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
+            this.Lugares.Controls.Add(this.label54);
+            this.Lugares.Controls.Add(this.label55);
+            this.Lugares.Controls.Add(this.label56);
+            this.Lugares.Controls.Add(this.label57);
+            this.Lugares.Controls.Add(this.label58);
+            this.Lugares.Controls.Add(this.label59);
+            this.Lugares.Controls.Add(this.Ciudad);
+            this.Lugares.Controls.Add(this.Taller);
+            this.Lugares.Controls.Add(this.ExitLugaresDB);
+            this.Lugares.Controls.Add(this.label60);
+            this.Lugares.Controls.Add(this.label61);
+            this.Lugares.Controls.Add(this.label62);
+            this.Lugares.Controls.Add(this.label63);
+            this.Lugares.Controls.Add(this.label64);
+            this.Lugares.Controls.Add(this.label65);
+            this.Lugares.Controls.Add(this.label66);
+            this.Lugares.Controls.Add(this.Restaurante);
+            this.Lugares.Controls.Add(this.Farmacia);
+            this.Lugares.Controls.Add(this.Libreria);
+            this.Lugares.Controls.Add(this.Teatro);
+            this.Lugares.Controls.Add(this.Confiteria);
+            this.Lugares.Controls.Add(this.Club);
+            this.Lugares.Controls.Add(this.Bar);
+            this.Lugares.Controls.Add(this.Lugar);
+            this.Lugares.Controls.Add(this.Cine);
+            this.Lugares.Controls.Add(this.Hospital);
+            this.Lugares.Controls.Add(this.Supermercado);
             this.Lugares.Location = new System.Drawing.Point(4, 22);
             this.Lugares.Name = "Lugares";
             this.Lugares.Size = new System.Drawing.Size(1392, 874);
             this.Lugares.TabIndex = 7;
             this.Lugares.Text = "Lugares";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.BackColor = System.Drawing.Color.Transparent;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.ForeColor = System.Drawing.Color.Blue;
+            this.label54.Location = new System.Drawing.Point(1029, 717);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(141, 31);
+            this.label54.TabIndex = 74;
+            this.label54.Text = "Confitería";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.BackColor = System.Drawing.Color.Transparent;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.ForeColor = System.Drawing.Color.Blue;
+            this.label55.Location = new System.Drawing.Point(506, 717);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(74, 31);
+            this.label55.TabIndex = 73;
+            this.label55.Text = "Cine";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.BackColor = System.Drawing.Color.Transparent;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.Color.Blue;
+            this.label56.Location = new System.Drawing.Point(772, 717);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(99, 31);
+            this.label56.TabIndex = 72;
+            this.label56.Text = "Teatro";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.BackColor = System.Drawing.Color.Transparent;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.Color.Blue;
+            this.label57.Location = new System.Drawing.Point(216, 717);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(88, 31);
+            this.label57.TabIndex = 71;
+            this.label57.Text = "Lugar";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.BackColor = System.Drawing.Color.Transparent;
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.ForeColor = System.Drawing.Color.Blue;
+            this.label58.Location = new System.Drawing.Point(1183, 516);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(106, 31);
+            this.label58.TabIndex = 70;
+            this.label58.Text = "Ciudad";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.BackColor = System.Drawing.Color.Transparent;
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.ForeColor = System.Drawing.Color.Blue;
+            this.label59.Location = new System.Drawing.Point(80, 516);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(88, 31);
+            this.label59.TabIndex = 69;
+            this.label59.Text = "Taller";
+            // 
+            // Ciudad
+            // 
+            this.Ciudad.BackColor = System.Drawing.Color.Transparent;
+            this.Ciudad.BackgroundImage = global::SignIt.Properties.Resources.Group_143;
+            this.Ciudad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ciudad.FlatAppearance.BorderSize = 0;
+            this.Ciudad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Ciudad.Location = new System.Drawing.Point(1166, 373);
+            this.Ciudad.Name = "Ciudad";
+            this.Ciudad.Size = new System.Drawing.Size(140, 140);
+            this.Ciudad.TabIndex = 68;
+            this.Ciudad.UseVisualStyleBackColor = false;
+            this.Ciudad.Click += new System.EventHandler(this.Ciudad_Click);
+            // 
+            // Taller
+            // 
+            this.Taller.BackColor = System.Drawing.Color.Transparent;
+            this.Taller.BackgroundImage = global::SignIt.Properties.Resources.Group_147;
+            this.Taller.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Taller.FlatAppearance.BorderSize = 0;
+            this.Taller.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Taller.Location = new System.Drawing.Point(54, 373);
+            this.Taller.Name = "Taller";
+            this.Taller.Size = new System.Drawing.Size(140, 140);
+            this.Taller.TabIndex = 67;
+            this.Taller.UseVisualStyleBackColor = false;
+            this.Taller.Click += new System.EventHandler(this.Taller_Click);
+            // 
+            // ExitLugaresDB
+            // 
+            this.ExitLugaresDB.BackColor = System.Drawing.Color.Transparent;
+            this.ExitLugaresDB.BackgroundImage = global::SignIt.Properties.Resources.Flecha;
+            this.ExitLugaresDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExitLugaresDB.FlatAppearance.BorderSize = 0;
+            this.ExitLugaresDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitLugaresDB.Location = new System.Drawing.Point(50, 103);
+            this.ExitLugaresDB.Name = "ExitLugaresDB";
+            this.ExitLugaresDB.Size = new System.Drawing.Size(96, 60);
+            this.ExitLugaresDB.TabIndex = 66;
+            this.ExitLugaresDB.UseVisualStyleBackColor = false;
+            this.ExitLugaresDB.Click += new System.EventHandler(this.ExitLugaresDB_Click);
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.BackColor = System.Drawing.Color.Transparent;
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.ForeColor = System.Drawing.Color.Blue;
+            this.label60.Location = new System.Drawing.Point(643, 516);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(74, 31);
+            this.label60.TabIndex = 65;
+            this.label60.Text = "Club";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.BackColor = System.Drawing.Color.Transparent;
+            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.ForeColor = System.Drawing.Color.Blue;
+            this.label61.Location = new System.Drawing.Point(891, 516);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(135, 31);
+            this.label61.TabIndex = 64;
+            this.label61.Text = "Farmacia";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.BackColor = System.Drawing.Color.Transparent;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.ForeColor = System.Drawing.Color.Blue;
+            this.label62.Location = new System.Drawing.Point(373, 516);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(59, 31);
+            this.label62.TabIndex = 63;
+            this.label62.Text = "Bar";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.BackColor = System.Drawing.Color.Transparent;
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.ForeColor = System.Drawing.Color.Blue;
+            this.label63.Location = new System.Drawing.Point(1039, 315);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(121, 31);
+            this.label63.TabIndex = 62;
+            this.label63.Text = "Hospital";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.BackColor = System.Drawing.Color.Transparent;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.ForeColor = System.Drawing.Color.Blue;
+            this.label64.Location = new System.Drawing.Point(720, 315);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(203, 31);
+            this.label64.TabIndex = 61;
+            this.label64.Text = "Supermercado";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.BackColor = System.Drawing.Color.Transparent;
+            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.ForeColor = System.Drawing.Color.Blue;
+            this.label65.Location = new System.Drawing.Point(487, 315);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(112, 31);
+            this.label65.TabIndex = 60;
+            this.label65.Text = "Librería";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.BackColor = System.Drawing.Color.Transparent;
+            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.ForeColor = System.Drawing.Color.Blue;
+            this.label66.Location = new System.Drawing.Point(178, 315);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(174, 31);
+            this.label66.TabIndex = 59;
+            this.label66.Text = "Restaurante";
+            // 
+            // Restaurante
+            // 
+            this.Restaurante.BackColor = System.Drawing.Color.Transparent;
+            this.Restaurante.BackgroundImage = global::SignIt.Properties.Resources.Group_138;
+            this.Restaurante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Restaurante.FlatAppearance.BorderSize = 0;
+            this.Restaurante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Restaurante.Location = new System.Drawing.Point(195, 173);
+            this.Restaurante.Name = "Restaurante";
+            this.Restaurante.Size = new System.Drawing.Size(140, 140);
+            this.Restaurante.TabIndex = 58;
+            this.Restaurante.UseVisualStyleBackColor = false;
+            this.Restaurante.Click += new System.EventHandler(this.Restaurante_Click);
+            // 
+            // Farmacia
+            // 
+            this.Farmacia.BackColor = System.Drawing.Color.Transparent;
+            this.Farmacia.BackgroundImage = global::SignIt.Properties.Resources.Group_144;
+            this.Farmacia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Farmacia.FlatAppearance.BorderSize = 0;
+            this.Farmacia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Farmacia.Location = new System.Drawing.Point(888, 373);
+            this.Farmacia.Name = "Farmacia";
+            this.Farmacia.Size = new System.Drawing.Size(140, 140);
+            this.Farmacia.TabIndex = 57;
+            this.Farmacia.UseVisualStyleBackColor = false;
+            this.Farmacia.Click += new System.EventHandler(this.Farmacia_Click);
+            // 
+            // Libreria
+            // 
+            this.Libreria.BackColor = System.Drawing.Color.Transparent;
+            this.Libreria.BackgroundImage = global::SignIt.Properties.Resources.Group_139;
+            this.Libreria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Libreria.FlatAppearance.BorderSize = 0;
+            this.Libreria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Libreria.Location = new System.Drawing.Point(473, 173);
+            this.Libreria.Name = "Libreria";
+            this.Libreria.Size = new System.Drawing.Size(140, 140);
+            this.Libreria.TabIndex = 56;
+            this.Libreria.UseVisualStyleBackColor = false;
+            this.Libreria.Click += new System.EventHandler(this.Libreria_Click);
+            // 
+            // Teatro
+            // 
+            this.Teatro.BackColor = System.Drawing.Color.Transparent;
+            this.Teatro.BackgroundImage = global::SignIt.Properties.Resources.Group_150;
+            this.Teatro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Teatro.FlatAppearance.BorderSize = 0;
+            this.Teatro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Teatro.Location = new System.Drawing.Point(751, 574);
+            this.Teatro.Name = "Teatro";
+            this.Teatro.Size = new System.Drawing.Size(140, 140);
+            this.Teatro.TabIndex = 55;
+            this.Teatro.UseVisualStyleBackColor = false;
+            this.Teatro.Click += new System.EventHandler(this.Teatro_Click);
+            // 
+            // Confiteria
+            // 
+            this.Confiteria.BackColor = System.Drawing.Color.Transparent;
+            this.Confiteria.BackgroundImage = global::SignIt.Properties.Resources.Group_151;
+            this.Confiteria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Confiteria.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Confiteria.FlatAppearance.BorderSize = 0;
+            this.Confiteria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Confiteria.Location = new System.Drawing.Point(1029, 574);
+            this.Confiteria.Name = "Confiteria";
+            this.Confiteria.Size = new System.Drawing.Size(140, 140);
+            this.Confiteria.TabIndex = 54;
+            this.Confiteria.UseVisualStyleBackColor = false;
+            this.Confiteria.Click += new System.EventHandler(this.Confiteria_Click);
+            // 
+            // Club
+            // 
+            this.Club.BackColor = System.Drawing.Color.Transparent;
+            this.Club.BackgroundImage = global::SignIt.Properties.Resources.Group_145;
+            this.Club.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Club.FlatAppearance.BorderSize = 0;
+            this.Club.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Club.Location = new System.Drawing.Point(610, 373);
+            this.Club.Name = "Club";
+            this.Club.Size = new System.Drawing.Size(140, 140);
+            this.Club.TabIndex = 53;
+            this.Club.UseVisualStyleBackColor = false;
+            this.Club.Click += new System.EventHandler(this.Club_Click);
+            // 
+            // Bar
+            // 
+            this.Bar.BackColor = System.Drawing.Color.Transparent;
+            this.Bar.BackgroundImage = global::SignIt.Properties.Resources.Group_146;
+            this.Bar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bar.FlatAppearance.BorderSize = 0;
+            this.Bar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bar.Location = new System.Drawing.Point(332, 373);
+            this.Bar.Name = "Bar";
+            this.Bar.Size = new System.Drawing.Size(140, 140);
+            this.Bar.TabIndex = 52;
+            this.Bar.UseVisualStyleBackColor = false;
+            this.Bar.Click += new System.EventHandler(this.Bar_Click);
+            // 
+            // Lugar
+            // 
+            this.Lugar.BackColor = System.Drawing.Color.Transparent;
+            this.Lugar.BackgroundImage = global::SignIt.Properties.Resources.Group_148;
+            this.Lugar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Lugar.FlatAppearance.BorderSize = 0;
+            this.Lugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Lugar.Location = new System.Drawing.Point(195, 574);
+            this.Lugar.Name = "Lugar";
+            this.Lugar.Size = new System.Drawing.Size(140, 140);
+            this.Lugar.TabIndex = 51;
+            this.Lugar.UseVisualStyleBackColor = false;
+            this.Lugar.Click += new System.EventHandler(this.Ciudad_Click);
+            // 
+            // Cine
+            // 
+            this.Cine.BackColor = System.Drawing.Color.Transparent;
+            this.Cine.BackgroundImage = global::SignIt.Properties.Resources.Group_149;
+            this.Cine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Cine.FlatAppearance.BorderSize = 0;
+            this.Cine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cine.Location = new System.Drawing.Point(473, 574);
+            this.Cine.Name = "Cine";
+            this.Cine.Size = new System.Drawing.Size(140, 140);
+            this.Cine.TabIndex = 50;
+            this.Cine.UseVisualStyleBackColor = false;
+            this.Cine.Click += new System.EventHandler(this.Cine_Click);
+            // 
+            // Hospital
+            // 
+            this.Hospital.BackColor = System.Drawing.Color.Transparent;
+            this.Hospital.BackgroundImage = global::SignIt.Properties.Resources.Group_142;
+            this.Hospital.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Hospital.FlatAppearance.BorderSize = 0;
+            this.Hospital.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hospital.Location = new System.Drawing.Point(1029, 173);
+            this.Hospital.Name = "Hospital";
+            this.Hospital.Size = new System.Drawing.Size(140, 140);
+            this.Hospital.TabIndex = 49;
+            this.Hospital.UseVisualStyleBackColor = false;
+            this.Hospital.Click += new System.EventHandler(this.Hospital_Click);
+            // 
+            // Supermercado
+            // 
+            this.Supermercado.BackColor = System.Drawing.Color.Transparent;
+            this.Supermercado.BackgroundImage = global::SignIt.Properties.Resources.Group_140;
+            this.Supermercado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Supermercado.FlatAppearance.BorderSize = 0;
+            this.Supermercado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Supermercado.Location = new System.Drawing.Point(751, 173);
+            this.Supermercado.Name = "Supermercado";
+            this.Supermercado.Size = new System.Drawing.Size(140, 140);
+            this.Supermercado.TabIndex = 48;
+            this.Supermercado.UseVisualStyleBackColor = false;
+            this.Supermercado.Click += new System.EventHandler(this.Supermercado_Click);
             // 
             // Pronombres
             // 
@@ -2816,7 +3224,7 @@
             this.DBeta.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__1_1;
             this.DBeta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.DBeta.Controls.Add(this.panel6);
-            this.DBeta.Location = new System.Drawing.Point(-4, 0);
+            this.DBeta.Location = new System.Drawing.Point(-4, 3);
             this.DBeta.Name = "DBeta";
             this.DBeta.Size = new System.Drawing.Size(1408, 800);
             this.DBeta.TabIndex = 9;
@@ -3340,7 +3748,7 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Transparent;
-            this.panel13.Location = new System.Drawing.Point(38, 251);
+            this.panel13.Location = new System.Drawing.Point(38, 258);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(250, 68);
             this.panel13.TabIndex = 12;
@@ -3348,7 +3756,7 @@
             // ejercicio1VideoC
             // 
             this.ejercicio1VideoC.Enabled = true;
-            this.ejercicio1VideoC.Location = new System.Drawing.Point(38, 55);
+            this.ejercicio1VideoC.Location = new System.Drawing.Point(38, 62);
             this.ejercicio1VideoC.Name = "ejercicio1VideoC";
             this.ejercicio1VideoC.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoC.OcxState")));
             this.ejercicio1VideoC.Size = new System.Drawing.Size(250, 265);
@@ -3371,7 +3779,7 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.Transparent;
-            this.panel14.Location = new System.Drawing.Point(35, 251);
+            this.panel14.Location = new System.Drawing.Point(35, 257);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(251, 70);
             this.panel14.TabIndex = 13;
@@ -3379,7 +3787,7 @@
             // ejercicio1VideoB
             // 
             this.ejercicio1VideoB.Enabled = true;
-            this.ejercicio1VideoB.Location = new System.Drawing.Point(36, 55);
+            this.ejercicio1VideoB.Location = new System.Drawing.Point(36, 61);
             this.ejercicio1VideoB.Name = "ejercicio1VideoB";
             this.ejercicio1VideoB.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoB.OcxState")));
             this.ejercicio1VideoB.Size = new System.Drawing.Size(250, 265);
@@ -3403,7 +3811,7 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.Transparent;
-            this.panel15.Location = new System.Drawing.Point(37, 251);
+            this.panel15.Location = new System.Drawing.Point(37, 257);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(250, 68);
             this.panel15.TabIndex = 14;
@@ -3411,7 +3819,7 @@
             // ejercicio1VideoA
             // 
             this.ejercicio1VideoA.Enabled = true;
-            this.ejercicio1VideoA.Location = new System.Drawing.Point(37, 55);
+            this.ejercicio1VideoA.Location = new System.Drawing.Point(37, 61);
             this.ejercicio1VideoA.Name = "ejercicio1VideoA";
             this.ejercicio1VideoA.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoA.OcxState")));
             this.ejercicio1VideoA.Size = new System.Drawing.Size(250, 265);
@@ -3432,34 +3840,45 @@
             // 
             // ej2videoC
             // 
-            this.ej2videoC.BackColor = System.Drawing.Color.Navy;
+            this.ej2videoC.BackColor = System.Drawing.Color.Transparent;
+            this.ej2videoC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej2videoC.BackgroundImage")));
+            this.ej2videoC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ej2videoC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ej2videoC.Location = new System.Drawing.Point(853, -2);
+            this.ej2videoC.FlatAppearance.BorderSize = 0;
+            this.ej2videoC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ej2videoC.Location = new System.Drawing.Point(853, 3);
             this.ej2videoC.Name = "ej2videoC";
-            this.ej2videoC.Size = new System.Drawing.Size(320, 55);
+            this.ej2videoC.Size = new System.Drawing.Size(320, 65);
             this.ej2videoC.TabIndex = 11;
             this.ej2videoC.UseVisualStyleBackColor = false;
             this.ej2videoC.Click += new System.EventHandler(this.ej2videoC_Click_1);
             // 
             // ej2videoB
             // 
-            this.ej2videoB.BackColor = System.Drawing.Color.Navy;
+            this.ej2videoB.BackColor = System.Drawing.Color.Transparent;
+            this.ej2videoB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej2videoB.BackgroundImage")));
+            this.ej2videoB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ej2videoB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ej2videoB.Location = new System.Drawing.Point(466, -2);
+            this.ej2videoB.FlatAppearance.BorderSize = 0;
+            this.ej2videoB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ej2videoB.Location = new System.Drawing.Point(466, 3);
             this.ej2videoB.Name = "ej2videoB";
-            this.ej2videoB.Size = new System.Drawing.Size(320, 55);
+            this.ej2videoB.Size = new System.Drawing.Size(320, 65);
             this.ej2videoB.TabIndex = 10;
             this.ej2videoB.UseVisualStyleBackColor = false;
             this.ej2videoB.Click += new System.EventHandler(this.ej2videoB_Click_1);
             // 
             // ej2videoA
             // 
-            this.ej2videoA.BackColor = System.Drawing.Color.Navy;
+            this.ej2videoA.BackColor = System.Drawing.Color.Transparent;
+            this.ej2videoA.BackgroundImage = global::SignIt.Properties.Resources.elegir;
+            this.ej2videoA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ej2videoA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ej2videoA.FlatAppearance.BorderSize = 0;
-            this.ej2videoA.Location = new System.Drawing.Point(66, -2);
+            this.ej2videoA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ej2videoA.Location = new System.Drawing.Point(66, 3);
             this.ej2videoA.Name = "ej2videoA";
-            this.ej2videoA.Size = new System.Drawing.Size(320, 55);
+            this.ej2videoA.Size = new System.Drawing.Size(320, 65);
             this.ej2videoA.TabIndex = 9;
             this.ej2videoA.UseVisualStyleBackColor = false;
             this.ej2videoA.Click += new System.EventHandler(this.ej2videoA_Click);
@@ -3912,13 +4331,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1350, 781);
             this.Controls.Add(this.signIt);
             this.Controls.Add(this.Menubutton);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "SignIt!";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.signIt.ResumeLayout(false);
             this.IdS.ResumeLayout(false);
             this.IdS.PerformLayout();
@@ -3935,6 +4355,8 @@
             this.Basico.PerformLayout();
             this.Comida.ResumeLayout(false);
             this.Comida.PerformLayout();
+            this.Lugares.ResumeLayout(false);
+            this.Lugares.PerformLayout();
             this.dBAbecedario.ResumeLayout(false);
             this.dBAbecedario.PerformLayout();
             this.dBNros.ResumeLayout(false);
@@ -4242,6 +4664,33 @@
         private System.Windows.Forms.Button Carne;
         private System.Windows.Forms.Button Manzana;
         private System.Windows.Forms.Button Ensalada;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Button Ciudad;
+        private System.Windows.Forms.Button Taller;
+        private System.Windows.Forms.Button ExitLugaresDB;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Button Restaurante;
+        private System.Windows.Forms.Button Farmacia;
+        private System.Windows.Forms.Button Libreria;
+        private System.Windows.Forms.Button Teatro;
+        private System.Windows.Forms.Button Confiteria;
+        private System.Windows.Forms.Button Club;
+        private System.Windows.Forms.Button Bar;
+        private System.Windows.Forms.Button Lugar;
+        private System.Windows.Forms.Button Cine;
+        private System.Windows.Forms.Button Hospital;
+        private System.Windows.Forms.Button Supermercado;
     }
 }
 

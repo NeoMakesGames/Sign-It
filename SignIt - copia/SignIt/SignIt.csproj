@@ -300,6 +300,20 @@
     <None Include="Resources\Botón1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Group 151.png" />
+    <None Include="Resources\Group 150.png" />
+    <None Include="Resources\Group 149.png" />
+    <None Include="Resources\Group 148.png" />
+    <None Include="Resources\Group 147.png" />
+    <None Include="Resources\Group 146.png" />
+    <None Include="Resources\Group 145.png" />
+    <None Include="Resources\Group 144.png" />
+    <None Include="Resources\Group 143.png" />
+    <None Include="Resources\Group 142.png" />
+    <None Include="Resources\Group 140.png" />
+    <None Include="Resources\Group 139.png" />
+    <None Include="Resources\Group 138.png" />
+    <None Include="Resources\elegir.png" />
     <None Include="Resources\Group 137.png" />
     <None Include="Resources\Group 136.png" />
     <None Include="Resources\Group 135.png" />
