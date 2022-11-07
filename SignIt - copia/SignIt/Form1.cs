@@ -93,6 +93,7 @@ namespace SignIt
         }
 
 
+
         private void desaparicionDelMenu()
         {
             Menubutton.Hide();
@@ -298,7 +299,7 @@ namespace SignIt
                 notmyimage = new Bitmap(botonBI);
                 verbosDiccionario.BackgroundImage = notmyimage;
             }
-        }   //Actualiza los botones del diccionario segú tu avance.
+        }   //Actualiza los botones del diccionario según tu avance.
 
 
 
@@ -306,6 +307,8 @@ namespace SignIt
         {
             this.Close();
         }   //Cierra la aplicación.
+
+
 
         private void experiencia()
         {
@@ -470,12 +473,11 @@ namespace SignIt
                 {
                     
                     case 0:
-                        int a = rdn.Next(rdnMin, rdnMax); ;
+                        int a = rdn.Next(rdnMin, rdnMax);
                         int b = rdn.Next(rdnMin, rdnMax);
                         ej1palabra.Text = "¿Cual seña corresponde a la palabra: ";
                         ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
-                        Random rm = new Random();
-                        int f = rm.Next(0, 2);
+                        int f = rdn.Next(0, 2);
                         for (int i = 0; i < 1;)
                         {
                             a = rdn.Next(rdnMin, rdnMax);
@@ -719,7 +721,7 @@ namespace SignIt
 
 
 
-        public async void ejercicios(string tipo)
+        public async void ejercicios(string tipo, int rdnMin, int rdnMax)
         {
             desaparicionDelMenu();
             continuar = false;
@@ -729,15 +731,10 @@ namespace SignIt
             int xpGanada = 5;
             for (int o = 0; o < 5;)
             {
-                Random rdn = new Random();
-                int IDs_ = rdn.Next(1, 64);
-
-                if (tipo == DatabaseFunctions.GetCategoria(IDs_, "Usuarios.accdb") && IDs_ != 0)
-                {
-                    videos[z] = IDs_;
-                    z++;
-                    o++;
-                }
+                int IDs_ = rdn.Next(rdnMin, rdnMax);
+                videos[z] = IDs_;
+                z++;
+                o++;
             }
 
             z = 0;
@@ -778,16 +775,15 @@ namespace SignIt
                     {
 
                         case 0:
-                            int a = rdn.Next(1, 64);
-                            int b = rdn.Next(1, 64);
+                            int a = rdn.Next(rdnMin, rdnMax);
+                            int b = rdn.Next(rdnMin, rdnMax);
                             bool abc = false;
                             ej1palabra.Text = "¿Cual seña corresponde a la palabra: ";
                             ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
-                            Random rm = new Random();
-                            int f = rm.Next(0, 2);
+                            int f = rdn.Next(0, 2);
                             for (int i = 0; i < 1;)
                             {
-                                a = rdn.Next(1, 64);
+                                a = rdn.Next(rdnMin, rdnMax);
                                 if (id != a)
                                 {
                                     i++;
@@ -795,7 +791,7 @@ namespace SignIt
                             }
                             for (int i = 0; i < 1;)
                             {
-                                b = rdn.Next(1, 64);
+                                b = rdn.Next(rdnMin, rdnMax);
                                 if (id != b && a != b)
                                 {
                                     i++;
@@ -1325,6 +1321,10 @@ namespace SignIt
                 label2IdS.Show();
             }
         }
+        private void UserIdS_TextChanged(object sender, EventArgs e)
+        {
+            UserIdS.ForeColor = Color.Black;
+        }
 
         private void linkLabel1IdS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -1602,7 +1602,7 @@ namespace SignIt
                 caracolEJ1.Show();
                 caracolEJ2.Show();
                 caracolEnsenanza.Show();
-                ejercicios("Basico");
+                ejercicios("Basico", 1, 13);
             }
         }
         private void comidaLecc_Click(object sender, EventArgs e)
@@ -1614,7 +1614,7 @@ namespace SignIt
             }
             else if (avance > 2)
             {
-                ejercicios("Comida");
+                ejercicios("Comida", 14,  21);
             }
         }
         private void coloresLecc_Click(object sender, EventArgs e)
@@ -1626,7 +1626,7 @@ namespace SignIt
             }
             else if (avance > 3)
             {
-                ejercicios("Colores");
+                ejercicios("Colores", 22, 32);
             }
         }
         private void lugaresLecc_Click(object sender, EventArgs e)
@@ -1638,7 +1638,7 @@ namespace SignIt
             }
             else if (avance > 4)
             {
-                ejercicios("Lugares");
+                ejercicios("Lugares", 52, 64);
             }
         }
 
@@ -1651,7 +1651,7 @@ namespace SignIt
             }
             else if (avance > 5)
             {
-                ejercicios("Pronombres");
+                ejercicios("Pronombres", 33, 39);
             }
         }
 
@@ -1664,7 +1664,7 @@ namespace SignIt
             }
             else if (avance > 6)
             {
-                ejercicios("Verbos");
+                ejercicios("Verbos", 40, 51);
             }
         }
 
@@ -2933,14 +2933,5 @@ namespace SignIt
 
 
 //Codigo_Sobrante
-
-
-
-
-
-        private void UserIdS_TextChanged(object sender, EventArgs e)
-        {
-            UserIdS.ForeColor = Color.Black;
-        }
     }
 }

@@ -969,11 +969,11 @@
             this.SearchDiccionario.BackColor = System.Drawing.Color.White;
             this.SearchDiccionario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SearchDiccionario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SearchDiccionario.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchDiccionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SearchDiccionario.ForeColor = System.Drawing.Color.Gray;
             this.SearchDiccionario.Location = new System.Drawing.Point(76, 15);
             this.SearchDiccionario.Name = "SearchDiccionario";
-            this.SearchDiccionario.Size = new System.Drawing.Size(586, 40);
+            this.SearchDiccionario.Size = new System.Drawing.Size(586, 38);
             this.SearchDiccionario.TabIndex = 9;
             this.SearchDiccionario.Text = "Busca y aprende nuevas palabras";
             this.SearchDiccionario.Click += new System.EventHandler(this.SearchDiccionario_Click);
@@ -1159,10 +1159,10 @@
             // 
             this.label67.AutoSize = true;
             this.label67.BackColor = System.Drawing.Color.Transparent;
-            this.label67.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label67.Location = new System.Drawing.Point(620, 107);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(125, 40);
+            this.label67.Size = new System.Drawing.Size(122, 38);
             this.label67.TabIndex = 48;
             this.label67.Text = "Básico";
             // 
@@ -1564,10 +1564,10 @@
             // 
             this.label68.AutoSize = true;
             this.label68.BackColor = System.Drawing.Color.Transparent;
-            this.label68.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label68.Location = new System.Drawing.Point(626, 107);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(141, 40);
+            this.label68.Size = new System.Drawing.Size(135, 38);
             this.label68.TabIndex = 57;
             this.label68.Text = "Comida";
             // 
@@ -1840,10 +1840,10 @@
             // 
             this.label70.AutoSize = true;
             this.label70.BackColor = System.Drawing.Color.Transparent;
-            this.label70.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label70.Location = new System.Drawing.Point(612, 107);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(142, 40);
+            this.label70.Size = new System.Drawing.Size(137, 38);
             this.label70.TabIndex = 99;
             this.label70.Text = "Colores";
             // 
@@ -2201,10 +2201,10 @@
             // 
             this.label69.AutoSize = true;
             this.label69.BackColor = System.Drawing.Color.Transparent;
-            this.label69.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label69.Location = new System.Drawing.Point(606, 107);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(148, 40);
+            this.label69.Size = new System.Drawing.Size(142, 38);
             this.label69.TabIndex = 75;
             this.label69.Text = "Lugares";
             // 
@@ -2620,10 +2620,10 @@
             // 
             this.label82.AutoSize = true;
             this.label82.BackColor = System.Drawing.Color.Transparent;
-            this.label82.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label82.Location = new System.Drawing.Point(578, 107);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(213, 40);
+            this.label82.Size = new System.Drawing.Size(205, 38);
             this.label82.TabIndex = 90;
             this.label82.Text = "Pronombres";
             // 
@@ -2856,10 +2856,10 @@
             // 
             this.label90.AutoSize = true;
             this.label90.BackColor = System.Drawing.Color.Transparent;
-            this.label90.Font = new System.Drawing.Font("Inter", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label90.Location = new System.Drawing.Point(612, 107);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(133, 40);
+            this.label90.Size = new System.Drawing.Size(127, 38);
             this.label90.TabIndex = 101;
             this.label90.Text = "Verbos";
             // 
@@ -4553,7 +4553,7 @@
             // tiposDeLetra
             // 
             this.tiposDeLetra.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tiposDeLetra.Font = new System.Drawing.Font("Inter", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tiposDeLetra.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tiposDeLetra.FormattingEnabled = true;
             this.tiposDeLetra.Items.AddRange(new object[] {
             "Chica",
@@ -4561,20 +4561,20 @@
             "Grande"});
             this.tiposDeLetra.Location = new System.Drawing.Point(700, 576);
             this.tiposDeLetra.Name = "tiposDeLetra";
-            this.tiposDeLetra.Size = new System.Drawing.Size(165, 41);
+            this.tiposDeLetra.Size = new System.Drawing.Size(165, 39);
             this.tiposDeLetra.TabIndex = 18;
             this.tiposDeLetra.Text = "Inter";
             // 
             // Tipgrafia
             // 
             this.Tipgrafia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tipgrafia.Font = new System.Drawing.Font("Inter", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tipgrafia.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tipgrafia.FormattingEnabled = true;
             this.Tipgrafia.Items.AddRange(new object[] {
             "Inter"});
             this.Tipgrafia.Location = new System.Drawing.Point(700, 469);
             this.Tipgrafia.Name = "Tipgrafia";
-            this.Tipgrafia.Size = new System.Drawing.Size(165, 41);
+            this.Tipgrafia.Size = new System.Drawing.Size(165, 39);
             this.Tipgrafia.TabIndex = 17;
             this.Tipgrafia.Text = "Mediana";
             // 
@@ -4597,10 +4597,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(302, 674);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(390, 49);
+            this.label4.Size = new System.Drawing.Size(375, 46);
             this.label4.TabIndex = 13;
             this.label4.Text = "Pantalla Completa:";
             // 
@@ -4608,10 +4608,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(557, 568);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 49);
+            this.label3.Size = new System.Drawing.Size(127, 46);
             this.label3.TabIndex = 12;
             this.label3.Text = "Letra:";
             // 
@@ -4651,10 +4651,10 @@
             // 
             this.progresoSett.AutoSize = true;
             this.progresoSett.BackColor = System.Drawing.Color.Transparent;
-            this.progresoSett.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.progresoSett.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.progresoSett.Location = new System.Drawing.Point(373, 359);
             this.progresoSett.Name = "progresoSett";
-            this.progresoSett.Size = new System.Drawing.Size(319, 49);
+            this.progresoSett.Size = new System.Drawing.Size(309, 46);
             this.progresoSett.TabIndex = 6;
             this.progresoSett.Text = "Progreso Total:";
             // 
@@ -4662,10 +4662,10 @@
             // 
             this.XpLvlSett.AutoSize = true;
             this.XpLvlSett.BackColor = System.Drawing.Color.Transparent;
-            this.XpLvlSett.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XpLvlSett.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XpLvlSett.Location = new System.Drawing.Point(264, 260);
             this.XpLvlSett.Name = "XpLvlSett";
-            this.XpLvlSett.Size = new System.Drawing.Size(428, 49);
+            this.XpLvlSett.Size = new System.Drawing.Size(411, 46);
             this.XpLvlSett.TabIndex = 5;
             this.XpLvlSett.Text = "Nivel de experiencia:";
             // 
@@ -4688,10 +4688,10 @@
             // 
             this.PantallaSett.AutoSize = true;
             this.PantallaSett.BackColor = System.Drawing.Color.Transparent;
-            this.PantallaSett.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PantallaSett.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PantallaSett.Location = new System.Drawing.Point(458, 462);
             this.PantallaSett.Name = "PantallaSett";
-            this.PantallaSett.Size = new System.Drawing.Size(234, 49);
+            this.PantallaSett.Size = new System.Drawing.Size(219, 46);
             this.PantallaSett.TabIndex = 3;
             this.PantallaSett.Text = "Tipografía:";
             // 
@@ -5486,7 +5486,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1350, 801);
+            this.ClientSize = new System.Drawing.Size(1350, 749);
             this.Controls.Add(this.signIt);
             this.Controls.Add(this.Menubutton);
             this.Controls.Add(this.panel1);
