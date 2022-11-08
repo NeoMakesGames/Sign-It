@@ -46,6 +46,7 @@ namespace SignIt
         bool rta3 = false;
         bool turorial;
         bool rtaIncorrecta;
+        int size, sizeB;
 
         public Form1()
         {
@@ -2927,8 +2928,33 @@ namespace SignIt
             {
                 foreach (Control Label in TB.Controls.OfType<System.Windows.Forms.Label>())
                 {
-                    MessageBox.Show(Label.ToString());
-                    Label.Font = new Font("Calibri", 25);
+                    if (tiposDeLetra.SelectedIndex == 0)
+                    {
+                        size = 30;
+                        sizeB = 12;
+                    }
+                    else if (tiposDeLetra.SelectedIndex == 1)
+                    {
+                        size = 35;
+                        sizeB = 18;
+                    }
+                    switch (Tipgrafia.SelectedIndex.ToString())
+                    {
+                        case "1":
+                            Label.Font = new Font("Calibri", size);
+                            ej2RespuestaCorrecta.Font = new Font("Calibri", size);
+                            break;
+
+                        case "2":
+                            Label.Font = new Font("Microsoft Sans Serif", size);
+                            ej2RespuestaCorrecta.Font = new Font("Microsoft Sans Serif", sizeB);
+                            break;
+
+                        case "0":
+                            Label.Font = new Font("Arial", size);
+                            ej2RespuestaCorrecta.Font = new Font("Arial", sizeB);
+                            break;
+                    }
                 }
             }
         }
@@ -2938,10 +2964,31 @@ namespace SignIt
             {
                 foreach (Control Label in TB.Controls.OfType<System.Windows.Forms.Label>())
                 {
-                    MessageBox.Show(Label.ToString());
-                    Label.Font = new Font("Calibri", 25);
+                    string fontNow = Label.Name;
+                    switch (tiposDeLetra.SelectedIndex.ToString())
+                    {
+                        case "0":
+                            Label.Font = new Font(fontNow, 30);
+                            ej2RespuestaCorrecta.Font = new Font(fontNow, 12);
+                            break;
+
+                        case "1":
+                            Label.Font = new Font(fontNow, 35);
+                            ej2RespuestaCorrecta.Font = new Font(fontNow, 18);
+                            break;
+                    }
                 }
             }
+        }
+
+        private void XpLvlSett_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PantallaSett_Click(object sender, EventArgs e)
+        {
+
         }
 
 
