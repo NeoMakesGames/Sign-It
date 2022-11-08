@@ -119,6 +119,8 @@ namespace SignIt
         private void caracolayuda(string imagen, int page)
         {
             myimage = new Bitmap(imagePath + imagen + ".PNG");
+            atrasTutorial.Hide();
+            continuarTutorial.Hide();
             caracol.BackgroundImage = myimage;
             signIt.SelectedTab = caracol;
             lastpage = page;
@@ -2678,28 +2680,28 @@ namespace SignIt
                 switch (tuto)
                 {
                     case 1:
+                        caracolayuda("T1", 3);
                         caracolExit.Hide();
                         atrasTutorial.Hide();
                         continuarTutorial.Show();
-                        caracolayuda("T1", 3);
                         break;
                     case 2:
+                        caracolayuda("T2", 3);
                         atrasTutorial.Show();
                         continuarTutorial.Show();
                         caracolExit.Hide();
-                        caracolayuda("T2", 3);
                         break;
                     case 3:
+                        caracolayuda("T3", 3);
                         continuarTutorial.Show();
                         atrasTutorial.Show();
                         caracolExit.Hide();
-                        caracolayuda("T3", 3);
                         break;
                     case 4:
+                        caracolayuda("T4", 3);
                         continuarTutorial.Show();
                         atrasTutorial.Show();
                         caracolExit.Hide();
-                        caracolayuda("T4", 3);
                         break;
                     case 5:
                         aparicionDelMenu();
@@ -2767,28 +2769,28 @@ namespace SignIt
                 switch (tuto)
                 {
                     case 1:
+                        caracolayuda("T1", 3);
                         caracolExit.Hide();
                         atrasTutorial.Hide();
                         continuarTutorial.Show();
-                        caracolayuda("T1", 3);
                         break;
                     case 2:
+                        caracolayuda("T2", 3);
                         atrasTutorial.Show();
                         continuarTutorial.Show();
                         caracolExit.Hide();
-                        caracolayuda("T2", 3);
                         break;
                     case 3:
+                        caracolayuda("T3", 3);
                         continuarTutorial.Show();
                         atrasTutorial.Show();
                         caracolExit.Hide();
-                        caracolayuda("T3", 3);
                         break;
                     case 4:
+                        caracolayuda("T4", 3);
                         continuarTutorial.Show();
                         atrasTutorial.Show();
                         caracolExit.Hide();
-                        caracolayuda("T4", 3);
                         break;
                     case 5:
                         aparicionDelMenu();
@@ -2812,28 +2814,28 @@ namespace SignIt
                 switch (tuto)
                 {
                     case 1:
+                        caracolayuda("T1", 3);
                         caracolExit.Hide();
                         atrasTutorial.Hide();
                         continuarTutorial.Show();
-                        caracolayuda("T1", 3);
                         break;
                     case 2:
+                        caracolayuda("T2", 3);
                         atrasTutorial.Show();
                         continuarTutorial.Show();
                         caracolExit.Hide();
-                        caracolayuda("T2", 3);
                         break;
                     case 3:
+                        caracolayuda("T3", 3);
                         continuarTutorial.Show();
                         atrasTutorial.Show();
                         caracolExit.Hide();
-                        caracolayuda("T3", 3);
                         break;
                     case 4:
+                        caracolayuda("T4", 3);
                         continuarTutorial.Show();
                         atrasTutorial.Show();
                         caracolExit.Hide();
-                        caracolayuda("T4", 3);
                         break;
                     case 5:
                         aparicionDelMenu();
