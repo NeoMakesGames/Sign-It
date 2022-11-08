@@ -78,7 +78,7 @@ namespace SignIt
         {
             palabraDB.Text = palabra;
 
-            dbplayer.URL = signsPath + palabra + ".wmv";
+            dbplayer.URL = signsPath + palabra.Replace("-", " ") + ".wmv";
             dbplayer.settings.setMode("loop", true);
             diccionarioBeta.SelectedTab = videos;
             dbplayer.Ctlcontrols.play();
@@ -436,7 +436,7 @@ namespace SignIt
                 EnseñanzaPlayer.URL = signsPath + palabra + ".wmv";
                 EnseñanzaPlayer.Ctlcontrols.play();
                 await Task.Delay(50);
-                PalabraEns.Text = palabra;
+                PalabraEns.Text = palabra.Replace("-"," ");
                 while (!continuar)
                 {
                     await Task.Delay(250);
@@ -678,7 +678,7 @@ namespace SignIt
 
                         continuar = false;
 
-                        if (respuesta == rtaEj2.Text.ToLower())
+                        if (respuesta.Replace("-", " ") == rtaEj2.Text.ToLower().Replace("-", " "))
                         {
                             ej02.Show();
                             ej02.BringToFront();
@@ -949,7 +949,7 @@ namespace SignIt
                             break;
 
                         case 1:
-                            string respuesta = DatabaseFunctions.GetNameOfVideo(id, path).ToLower();
+                            string respuesta = DatabaseFunctions.GetNameOfVideo(id, path).ToLower().Replace("-", " ");
 
                             ej2player.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                             ej2player.settings.setMode("loop", true);
@@ -964,7 +964,7 @@ namespace SignIt
 
                             continuar = false;
 
-                            if (respuesta == rtaEj2.Text.ToLower())
+                            if (respuesta == rtaEj2.Text.ToLower().Replace("-", " "))
                             {
                                 ej02.Show();
                                 ej02.BringToFront();
@@ -1235,7 +1235,7 @@ namespace SignIt
         {
             if (rtaIncorrecta == true)
             {
-                ej2RespuestaCorrecta.Text = ej2RespuestaCorrecta.Text + " " + DatabaseFunctions.GetNameOfVideo(ids, path) + ".";
+                ej2RespuestaCorrecta.Text = ej2RespuestaCorrecta.Text + " " + DatabaseFunctions.GetNameOfVideo(ids, path).Replace("-", " ") + ".";
                 rtaIncorrecta = false;
                 abc.BackColor = Color.LightGreen;
                 ej2RespuestaCorrecta.Show();
