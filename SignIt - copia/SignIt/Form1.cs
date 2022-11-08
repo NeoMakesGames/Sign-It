@@ -44,6 +44,7 @@ namespace SignIt
         bool rta1 = false;
         bool rta2 = false;
         bool rta3 = false;
+        public static bool Memotest = false;
         bool turorial;
         bool rtaIncorrecta;
         int size, sizeB;
@@ -2590,7 +2591,10 @@ namespace SignIt
 
         private void MemotestGamesButton_Click(object sender, EventArgs e)
         {
-            //Memotest1.Show();
+            Memotest = true;
+            memoTest1.Show();
+            memoTest1.BringToFront();
+            desaparicionDelMenu();
         }
 
         private void questo2_Click(object sender, EventArgs e)
