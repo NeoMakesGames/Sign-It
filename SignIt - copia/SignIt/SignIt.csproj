@@ -77,10 +77,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="memoTest.cs">
+    <Compile Include="juegos_y_cositas\memoTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="memoTest.Designer.cs">
+    <Compile Include="juegos_y_cositas\memoTest.Designer.cs">
       <DependentUpon>memoTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -103,7 +103,7 @@
     <EmbeddedResource Include="juegos_y_cositas\Race.resx">
       <DependentUpon>Race.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="memoTest.resx">
+    <EmbeddedResource Include="juegos_y_cositas\memoTest.resx">
       <DependentUpon>memoTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

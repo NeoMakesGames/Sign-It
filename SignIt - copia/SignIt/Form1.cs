@@ -5,6 +5,7 @@ using System.ComponentModel.Design;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -546,8 +547,6 @@ namespace SignIt
                                 ej2videoA.Enabled = true;
                                 ej2videoB.Enabled = true;
                                 ej2videoC.Enabled = true;
-
-                                //  ej_2(id, b, a, xpGanada, rta1, rta2, rta3);
                                 break;
 
 
@@ -599,7 +598,6 @@ namespace SignIt
                                 ej2videoA.Enabled = true;
                                 ej2videoB.Enabled = true;
                                 ej2videoC.Enabled = true;
-                                //ej_2(a, id, b, xpGanada, rta2, rta1, rta3);
                                 break;
 
                             case 2:
@@ -645,7 +643,6 @@ namespace SignIt
                                 ej2videoA.Enabled = true;
                                 ej2videoB.Enabled = true;
                                 ej2videoC.Enabled = true;
-                                //ej_2(a, b, id, xpGanada, rta3, rta2, rta1);
                                 break;
                         }
                         ejercicio1VideoA.Ctlcontrols.stop();
@@ -841,8 +838,6 @@ namespace SignIt
                                     {
                                         await Task.Delay(250);
                                     }
-
-                                    //ej_2(id,b,a,xpGanada, rta1, rta2, rta3);
                                     break;
 
 
@@ -888,8 +883,6 @@ namespace SignIt
                                     {
                                         await Task.Delay(250);
                                     }
-
-                                    // ej_2(a,id,b,xpGanada,rta2, rta1, rta3);
                                     break;
 
                                 case 2:
@@ -927,12 +920,11 @@ namespace SignIt
                                        ganar_0_perder(ej01, id, "C", panel12);
                                        xpGanada += 2;
                                    }
-                                    while (!continuar)
+                                   while (!continuar)
                                    {
                                        await Task.Delay(250);
                                    }
-                                    //ej_2(a,b,id,xpGanada,rta3, rta2, rta1);
-                                    break;
+                                   break;
                             }
                             ejercicio1VideoA.Ctlcontrols.stop();
                             ejercicio1VideoB.Ctlcontrols.stop();
@@ -1017,11 +1009,12 @@ namespace SignIt
 
         private async void examenlecc_Click(object sender, EventArgs e)
         {
+            desaparicionDelMenu();
             int vidas = 5;
 
             List<int> videosExamen = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 442, 43, 44, 45, 46, 47, 48, 49, 50, 51, 5253, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64 };
             Random rand = new Random();
-            var shuffled = videosExamen.OrderBy(_ => rand.Next()).ToList();
+            var shuffled = videosExamen.OrderBy(_ => rand.Next(1,64)).ToList();
 
             foreach (int id in videosExamen)
             {
@@ -2928,10 +2921,33 @@ namespace SignIt
             ComenzarCdU.BackgroundImage = mYimage;
         }
 
+        private void Tipgrafia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (TabPage TB in signIt.Controls)
+            {
+                foreach (Control Label in TB.Controls.OfType<System.Windows.Forms.Label>())
+                {
+                    MessageBox.Show(Label.ToString());
+                    Label.Font = new Font("Calibri", 25);
+                }
+            }
+        }
+        private void tiposDeLetra_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (TabPage TB in signIt.Controls)
+            {
+                foreach (Control Label in TB.Controls.OfType<System.Windows.Forms.Label>())
+                {
+                    MessageBox.Show(Label.ToString());
+                    Label.Font = new Font("Calibri", 25);
+                }
+            }
+        }
 
 
 
 
-//Codigo_Sobrante
+
+        //Codigo_Sobrante
     }
 }
