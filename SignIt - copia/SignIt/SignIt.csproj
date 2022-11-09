@@ -34,6 +34,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoSiT_.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
       <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
@@ -439,6 +446,13 @@
     <None Include="Resources\10.png" />
     <None Include="bin\Debug\Imagenes\ADC.png" />
     <None Include="bin\Debug\Imagenes\Group 75.png" />
+    <Content Include="LogoSiT_.ico" />
+    <None Include="Resources\0Lfs.png" />
+    <None Include="Resources\1Lfs.png" />
+    <None Include="Resources\2Lfs.png" />
+    <None Include="Resources\3Lfs.png" />
+    <None Include="Resources\4Lfs.png" />
+    <None Include="Resources\5Lfs.png" />
     <Content Include="Resources\Botón %282%29.png" />
     <Content Include="Resources\Botón %283%29.png" />
     <None Include="Resources\Rectangle 177.png" />

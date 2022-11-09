@@ -311,12 +311,15 @@ namespace SignIt
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.palabraDB = new System.Windows.Forms.Label();
+            this.dbplayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.exitDB = new System.Windows.Forms.Button();
             this.juegos = new System.Windows.Forms.TabPage();
             this.questo2 = new System.Windows.Forms.Button();
             this.questo = new System.Windows.Forms.Button();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
+            this.memoTest1 = new SignIt.memoTest();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.XpLvlSett = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -334,10 +337,10 @@ namespace SignIt
             this.xProgressBar = new System.Windows.Forms.ProgressBar();
             this.xpB = new System.Windows.Forms.Label();
             this.Enseñanza = new System.Windows.Forms.TabPage();
-            this.panel21 = new System.Windows.Forms.Panel();
             this.PalabraEns = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.EnseñanzaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.enseñanzaExit = new System.Windows.Forms.Button();
             this.caracolEnsenanza = new System.Windows.Forms.Button();
             this.contEnseñanza = new System.Windows.Forms.Button();
@@ -346,29 +349,38 @@ namespace SignIt
             this.exitEj = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.ejercicio1VideoC = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.ejercicio1VideoB = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.ejercicio1VideoA = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel5 = new System.Windows.Forms.Panel();
             this.ej2videoC = new System.Windows.Forms.Button();
             this.ej2videoB = new System.Windows.Forms.Button();
             this.ej2videoA = new System.Windows.Forms.Button();
             this.ej1palabra = new System.Windows.Forms.Label();
+            this.ej11 = new SignIt.Ej1();
+            this.ej01 = new SignIt.Ej0();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
             this.ej2RespuestaCorrecta = new System.Windows.Forms.Label();
             this.exitEj2 = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.ej2player = new AxWMPLib.AxWindowsMediaPlayer();
             this.caracolEJ2 = new System.Windows.Forms.Button();
             this.rtaEj2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ej2cont = new System.Windows.Forms.Button();
+            this.ej12 = new SignIt.Ej1();
+            this.ej02 = new SignIt.Ej0();
             this.ejercicio3 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.label32 = new System.Windows.Forms.Label();
             this.caracol = new System.Windows.Forms.TabPage();
             this.atrasTutorial = new System.Windows.Forms.Button();
@@ -383,20 +395,8 @@ namespace SignIt
             this.MenuLectionsButton = new System.Windows.Forms.Button();
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.vidasExamen = new System.Windows.Forms.Panel();
             this.Menubutton = new System.Windows.Forms.Button();
-            this.dbplayer = new AxWMPLib.AxWindowsMediaPlayer();
-            this.race1 = new SignIt.Race();
-            this.EnseñanzaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
-            this.ejercicio1VideoC = new AxWMPLib.AxWindowsMediaPlayer();
-            this.ejercicio1VideoB = new AxWMPLib.AxWindowsMediaPlayer();
-            this.ejercicio1VideoA = new AxWMPLib.AxWindowsMediaPlayer();
-            this.ej11 = new SignIt.Ej1();
-            this.ej01 = new SignIt.Ej0();
-            this.ej2player = new AxWMPLib.AxWindowsMediaPlayer();
-            this.ej12 = new SignIt.Ej1();
-            this.ej02 = new SignIt.Ej0();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.memoTest1 = new SignIt.memoTest();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -418,30 +418,29 @@ namespace SignIt
             this.videos.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dbplayer)).BeginInit();
             this.juegos.SuspendLayout();
             this.Ajustes.SuspendLayout();
             this.panel20.SuspendLayout();
             this.Enseñanza.SuspendLayout();
-            this.panel21.SuspendLayout();
             this.panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EnseñanzaPlayer)).BeginInit();
             this.ejercicio1.SuspendLayout();
             this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoC)).BeginInit();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoB)).BeginInit();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoA)).BeginInit();
             this.panel5.SuspendLayout();
             this.ejercicio2.SuspendLayout();
             this.panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ej2player)).BeginInit();
             this.ejercicio3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.caracol.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dbplayer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnseñanzaPlayer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ej2player)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // signIt
@@ -4422,6 +4421,15 @@ namespace SignIt
             this.palabraDB.Text = "a";
             this.palabraDB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // dbplayer
+            // 
+            this.dbplayer.Enabled = true;
+            this.dbplayer.Location = new System.Drawing.Point(37, 89);
+            this.dbplayer.Name = "dbplayer";
+            this.dbplayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("dbplayer.OcxState")));
+            this.dbplayer.Size = new System.Drawing.Size(375, 343);
+            this.dbplayer.TabIndex = 0;
+            // 
             // exitDB
             // 
             this.exitDB.BackColor = System.Drawing.Color.Transparent;
@@ -4514,6 +4522,26 @@ namespace SignIt
             this.RaceGamesButton.UseVisualStyleBackColor = false;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
             // 
+            // race1
+            // 
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(1, 3);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1366, 788);
+            this.race1.TabIndex = 5;
+            this.race1.Visible = false;
+            // 
+            // memoTest1
+            // 
+            this.memoTest1.BackColor = System.Drawing.Color.LightBlue;
+            this.memoTest1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("memoTest1.BackgroundImage")));
+            this.memoTest1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.memoTest1.Location = new System.Drawing.Point(0, 0);
+            this.memoTest1.Name = "memoTest1";
+            this.memoTest1.Size = new System.Drawing.Size(1366, 788);
+            this.memoTest1.TabIndex = 6;
+            // 
             // Ajustes
             // 
             this.Ajustes.BackColor = System.Drawing.Color.LightBlue;
@@ -4573,7 +4601,6 @@ namespace SignIt
             this.tiposDeLetra.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tiposDeLetra.FormattingEnabled = true;
             this.tiposDeLetra.Items.AddRange(new object[] {
-            "Chica",
             "Media",
             "Grande"});
             this.tiposDeLetra.Location = new System.Drawing.Point(700, 574);
@@ -4737,7 +4764,7 @@ namespace SignIt
             this.Enseñanza.BackColor = System.Drawing.Color.LightBlue;
             this.Enseñanza.BackgroundImage = global::SignIt.Properties.Resources.Fondo_triángulos_prendidos__2_;
             this.Enseñanza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Enseñanza.Controls.Add(this.panel21);
+            this.Enseñanza.Controls.Add(this.PalabraEns);
             this.Enseñanza.Controls.Add(this.panel19);
             this.Enseñanza.Controls.Add(this.enseñanzaExit);
             this.Enseñanza.Controls.Add(this.caracolEnsenanza);
@@ -4748,21 +4775,14 @@ namespace SignIt
             this.Enseñanza.TabIndex = 7;
             this.Enseñanza.Text = "Enseñanza";
             // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.Transparent;
-            this.panel21.Controls.Add(this.PalabraEns);
-            this.panel21.Location = new System.Drawing.Point(489, 650);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(418, 53);
-            this.panel21.TabIndex = 19;
-            // 
             // PalabraEns
             // 
+            this.PalabraEns.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PalabraEns.BackColor = System.Drawing.Color.Transparent;
-            this.PalabraEns.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PalabraEns.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PalabraEns.Location = new System.Drawing.Point(0, 0);
+            this.PalabraEns.Location = new System.Drawing.Point(489, 639);
             this.PalabraEns.Name = "PalabraEns";
             this.PalabraEns.Size = new System.Drawing.Size(418, 53);
             this.PalabraEns.TabIndex = 1;
@@ -4790,6 +4810,15 @@ namespace SignIt
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(451, 108);
             this.panel8.TabIndex = 3;
+            // 
+            // EnseñanzaPlayer
+            // 
+            this.EnseñanzaPlayer.Enabled = true;
+            this.EnseñanzaPlayer.Location = new System.Drawing.Point(25, 72);
+            this.EnseñanzaPlayer.Name = "EnseñanzaPlayer";
+            this.EnseñanzaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("EnseñanzaPlayer.OcxState")));
+            this.EnseñanzaPlayer.Size = new System.Drawing.Size(450, 450);
+            this.EnseñanzaPlayer.TabIndex = 2;
             // 
             // enseñanzaExit
             // 
@@ -4905,6 +4934,15 @@ namespace SignIt
             this.panel13.Size = new System.Drawing.Size(250, 78);
             this.panel13.TabIndex = 12;
             // 
+            // ejercicio1VideoC
+            // 
+            this.ejercicio1VideoC.Enabled = true;
+            this.ejercicio1VideoC.Location = new System.Drawing.Point(38, 62);
+            this.ejercicio1VideoC.Name = "ejercicio1VideoC";
+            this.ejercicio1VideoC.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoC.OcxState")));
+            this.ejercicio1VideoC.Size = new System.Drawing.Size(250, 265);
+            this.ejercicio1VideoC.TabIndex = 3;
+            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Transparent;
@@ -4924,6 +4962,15 @@ namespace SignIt
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(251, 80);
             this.panel14.TabIndex = 13;
+            // 
+            // ejercicio1VideoB
+            // 
+            this.ejercicio1VideoB.Enabled = true;
+            this.ejercicio1VideoB.Location = new System.Drawing.Point(36, 61);
+            this.ejercicio1VideoB.Name = "ejercicio1VideoB";
+            this.ejercicio1VideoB.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoB.OcxState")));
+            this.ejercicio1VideoB.Size = new System.Drawing.Size(250, 265);
+            this.ejercicio1VideoB.TabIndex = 2;
             // 
             // panel10
             // 
@@ -4945,6 +4992,15 @@ namespace SignIt
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(250, 78);
             this.panel15.TabIndex = 14;
+            // 
+            // ejercicio1VideoA
+            // 
+            this.ejercicio1VideoA.Enabled = true;
+            this.ejercicio1VideoA.Location = new System.Drawing.Point(37, 61);
+            this.ejercicio1VideoA.Name = "ejercicio1VideoA";
+            this.ejercicio1VideoA.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoA.OcxState")));
+            this.ejercicio1VideoA.Size = new System.Drawing.Size(250, 265);
+            this.ejercicio1VideoA.TabIndex = 1;
             // 
             // panel5
             // 
@@ -5013,6 +5069,24 @@ namespace SignIt
             this.ej1palabra.TabIndex = 0;
             this.ej1palabra.Text = "¿Cual seña correspone a la palabra:";
             // 
+            // ej11
+            // 
+            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
+            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej11.Location = new System.Drawing.Point(-5, 579);
+            this.ej11.Name = "ej11";
+            this.ej11.Size = new System.Drawing.Size(1380, 150);
+            this.ej11.TabIndex = 17;
+            // 
+            // ej01
+            // 
+            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
+            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej01.Location = new System.Drawing.Point(5, 579);
+            this.ej01.Name = "ej01";
+            this.ej01.Size = new System.Drawing.Size(1378, 150);
+            this.ej01.TabIndex = 16;
+            // 
             // ejercicio2
             // 
             this.ejercicio2.BackColor = System.Drawing.Color.LightBlue;
@@ -5035,13 +5109,13 @@ namespace SignIt
             // 
             // ej2RespuestaCorrecta
             // 
-            this.ej2RespuestaCorrecta.AutoSize = true;
+            this.ej2RespuestaCorrecta.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.ej2RespuestaCorrecta.BackColor = System.Drawing.Color.Transparent;
             this.ej2RespuestaCorrecta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ej2RespuestaCorrecta.ForeColor = System.Drawing.Color.Green;
-            this.ej2RespuestaCorrecta.Location = new System.Drawing.Point(119, 557);
+            this.ej2RespuestaCorrecta.Location = new System.Drawing.Point(135, 539);
             this.ej2RespuestaCorrecta.Name = "ej2RespuestaCorrecta";
-            this.ej2RespuestaCorrecta.Size = new System.Drawing.Size(219, 20);
+            this.ej2RespuestaCorrecta.Size = new System.Drawing.Size(414, 38);
             this.ej2RespuestaCorrecta.TabIndex = 19;
             this.ej2RespuestaCorrecta.Text = "La respuesta correcta es: ";
             // 
@@ -5066,7 +5140,7 @@ namespace SignIt
             this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel16.Controls.Add(this.panel17);
             this.panel16.Controls.Add(this.ej2player);
-            this.panel16.Location = new System.Drawing.Point(132, 150);
+            this.panel16.Location = new System.Drawing.Point(132, 136);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(400, 400);
             this.panel16.TabIndex = 15;
@@ -5078,6 +5152,15 @@ namespace SignIt
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(320, 82);
             this.panel17.TabIndex = 12;
+            // 
+            // ej2player
+            // 
+            this.ej2player.Enabled = true;
+            this.ej2player.Location = new System.Drawing.Point(39, 76);
+            this.ej2player.Name = "ej2player";
+            this.ej2player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ej2player.OcxState")));
+            this.ej2player.Size = new System.Drawing.Size(320, 299);
+            this.ej2player.TabIndex = 0;
             // 
             // caracolEJ2
             // 
@@ -5128,6 +5211,24 @@ namespace SignIt
             this.ej2cont.TabIndex = 6;
             this.ej2cont.UseVisualStyleBackColor = false;
             this.ej2cont.Click += new System.EventHandler(this.ej2cont_Click);
+            // 
+            // ej12
+            // 
+            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
+            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej12.Location = new System.Drawing.Point(0, 579);
+            this.ej12.Name = "ej12";
+            this.ej12.Size = new System.Drawing.Size(1381, 150);
+            this.ej12.TabIndex = 18;
+            // 
+            // ej02
+            // 
+            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
+            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej02.Location = new System.Drawing.Point(4, 579);
+            this.ej02.Name = "ej02";
+            this.ej02.Size = new System.Drawing.Size(1377, 150);
+            this.ej02.TabIndex = 17;
             // 
             // ejercicio3
             // 
@@ -5189,6 +5290,15 @@ namespace SignIt
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(320, 73);
             this.panel18.TabIndex = 12;
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(39, 76);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(320, 299);
+            this.axWindowsMediaPlayer1.TabIndex = 0;
             // 
             // label32
             // 
@@ -5267,9 +5377,9 @@ namespace SignIt
             this.caracolExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.caracolExit.FlatAppearance.BorderSize = 0;
             this.caracolExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolExit.Location = new System.Drawing.Point(463, 596);
+            this.caracolExit.Location = new System.Drawing.Point(451, 596);
             this.caracolExit.Name = "caracolExit";
-            this.caracolExit.Size = new System.Drawing.Size(431, 86);
+            this.caracolExit.Size = new System.Drawing.Size(509, 119);
             this.caracolExit.TabIndex = 0;
             this.caracolExit.UseVisualStyleBackColor = false;
             this.caracolExit.Click += new System.EventHandler(this.caracolExit_Click);
@@ -5384,6 +5494,16 @@ namespace SignIt
             this.timer1.Interval = 200;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // vidasExamen
+            // 
+            this.vidasExamen.BackColor = System.Drawing.Color.LightBlue;
+            this.vidasExamen.BackgroundImage = global::SignIt.Properties.Resources._5Lfs;
+            this.vidasExamen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.vidasExamen.Location = new System.Drawing.Point(150, 100);
+            this.vidasExamen.Name = "vidasExamen";
+            this.vidasExamen.Size = new System.Drawing.Size(200, 46);
+            this.vidasExamen.TabIndex = 4;
+            // 
             // Menubutton
             // 
             this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
@@ -5397,131 +5517,13 @@ namespace SignIt
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
             // 
-            // dbplayer
-            // 
-            this.dbplayer.Enabled = true;
-            this.dbplayer.Location = new System.Drawing.Point(37, 89);
-            this.dbplayer.Name = "dbplayer";
-            this.dbplayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("dbplayer.OcxState")));
-            this.dbplayer.Size = new System.Drawing.Size(375, 343);
-            this.dbplayer.TabIndex = 0;
-            // 
-            // race1
-            // 
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(1, 3);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1366, 788);
-            this.race1.TabIndex = 5;
-            this.race1.Visible = false;
-            // 
-            // EnseñanzaPlayer
-            // 
-            this.EnseñanzaPlayer.Enabled = true;
-            this.EnseñanzaPlayer.Location = new System.Drawing.Point(25, 72);
-            this.EnseñanzaPlayer.Name = "EnseñanzaPlayer";
-            this.EnseñanzaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("EnseñanzaPlayer.OcxState")));
-            this.EnseñanzaPlayer.Size = new System.Drawing.Size(450, 450);
-            this.EnseñanzaPlayer.TabIndex = 2;
-            // 
-            // ejercicio1VideoC
-            // 
-            this.ejercicio1VideoC.Enabled = true;
-            this.ejercicio1VideoC.Location = new System.Drawing.Point(38, 62);
-            this.ejercicio1VideoC.Name = "ejercicio1VideoC";
-            this.ejercicio1VideoC.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoC.OcxState")));
-            this.ejercicio1VideoC.Size = new System.Drawing.Size(250, 265);
-            this.ejercicio1VideoC.TabIndex = 3;
-            // 
-            // ejercicio1VideoB
-            // 
-            this.ejercicio1VideoB.Enabled = true;
-            this.ejercicio1VideoB.Location = new System.Drawing.Point(36, 61);
-            this.ejercicio1VideoB.Name = "ejercicio1VideoB";
-            this.ejercicio1VideoB.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoB.OcxState")));
-            this.ejercicio1VideoB.Size = new System.Drawing.Size(250, 265);
-            this.ejercicio1VideoB.TabIndex = 2;
-            // 
-            // ejercicio1VideoA
-            // 
-            this.ejercicio1VideoA.Enabled = true;
-            this.ejercicio1VideoA.Location = new System.Drawing.Point(37, 61);
-            this.ejercicio1VideoA.Name = "ejercicio1VideoA";
-            this.ejercicio1VideoA.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ejercicio1VideoA.OcxState")));
-            this.ejercicio1VideoA.Size = new System.Drawing.Size(250, 265);
-            this.ejercicio1VideoA.TabIndex = 1;
-            // 
-            // ej11
-            // 
-            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
-            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej11.Location = new System.Drawing.Point(-5, 579);
-            this.ej11.Name = "ej11";
-            this.ej11.Size = new System.Drawing.Size(1380, 150);
-            this.ej11.TabIndex = 17;
-            // 
-            // ej01
-            // 
-            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
-            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej01.Location = new System.Drawing.Point(5, 579);
-            this.ej01.Name = "ej01";
-            this.ej01.Size = new System.Drawing.Size(1378, 150);
-            this.ej01.TabIndex = 16;
-            // 
-            // ej2player
-            // 
-            this.ej2player.Enabled = true;
-            this.ej2player.Location = new System.Drawing.Point(39, 76);
-            this.ej2player.Name = "ej2player";
-            this.ej2player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ej2player.OcxState")));
-            this.ej2player.Size = new System.Drawing.Size(320, 299);
-            this.ej2player.TabIndex = 0;
-            // 
-            // ej12
-            // 
-            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
-            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej12.Location = new System.Drawing.Point(0, 579);
-            this.ej12.Name = "ej12";
-            this.ej12.Size = new System.Drawing.Size(1381, 150);
-            this.ej12.TabIndex = 18;
-            // 
-            // ej02
-            // 
-            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
-            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej02.Location = new System.Drawing.Point(4, 579);
-            this.ej02.Name = "ej02";
-            this.ej02.Size = new System.Drawing.Size(1377, 150);
-            this.ej02.TabIndex = 17;
-            // 
-            // axWindowsMediaPlayer1
-            // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(39, 76);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(320, 299);
-            this.axWindowsMediaPlayer1.TabIndex = 0;
-            // 
-            // memoTest1
-            // 
-            this.memoTest1.BackColor = System.Drawing.Color.LightBlue;
-            this.memoTest1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("memoTest1.BackgroundImage")));
-            this.memoTest1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.memoTest1.Location = new System.Drawing.Point(0, 0);
-            this.memoTest1.Name = "memoTest1";
-            this.memoTest1.Size = new System.Drawing.Size(1366, 788);
-            this.memoTest1.TabIndex = 6;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1350, 749);
+            this.Controls.Add(this.vidasExamen);
             this.Controls.Add(this.signIt);
             this.Controls.Add(this.Menubutton);
             this.Controls.Add(this.panel1);
@@ -5560,35 +5562,34 @@ namespace SignIt
             this.videos.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dbplayer)).EndInit();
             this.juegos.ResumeLayout(false);
             this.Ajustes.ResumeLayout(false);
             this.Ajustes.PerformLayout();
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
             this.Enseñanza.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.EnseñanzaPlayer)).EndInit();
             this.ejercicio1.ResumeLayout(false);
             this.ejercicio1.PerformLayout();
             this.panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoC)).EndInit();
             this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoB)).EndInit();
             this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoA)).EndInit();
             this.panel5.ResumeLayout(false);
             this.ejercicio2.ResumeLayout(false);
             this.ejercicio2.PerformLayout();
             this.panel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ej2player)).EndInit();
             this.ejercicio3.ResumeLayout(false);
             this.ejercicio3.PerformLayout();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.caracol.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dbplayer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnseñanzaPlayer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicio1VideoA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ej2player)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5855,7 +5856,6 @@ namespace SignIt
         public System.Windows.Forms.Button Supermercado;
         public System.Windows.Forms.Label palabraDB;
         public System.Windows.Forms.TabPage videos;
-        public System.Windows.Forms.Panel panel21;
         public System.Windows.Forms.Panel panel22;
         public System.Windows.Forms.Label label67;
         public System.Windows.Forms.Label label68;
@@ -5958,6 +5958,7 @@ namespace SignIt
         public System.Windows.Forms.Label label65;
         public System.Windows.Forms.Label XpLvlSett;
         private memoTest memoTest1;
+        private Panel vidasExamen;
     }
 }
 

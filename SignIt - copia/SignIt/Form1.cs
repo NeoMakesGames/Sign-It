@@ -52,7 +52,6 @@ namespace SignIt
         public Form1()
         {
             InitializeComponent();
-
         }
 
 
@@ -432,7 +431,7 @@ namespace SignIt
             signIt.SelectedTab = Enseñanza;
             foreach (int id in videos)
             {
-                string palabra = DatabaseFunctions.GetNameOfVideo(id, path);
+                string palabra = DatabaseFunctions.GetNameOfVideo(id, path).Replace("-"," ");
                 EnseñanzaPlayer.URL = signsPath + palabra + ".wmv";
                 EnseñanzaPlayer.Ctlcontrols.play();
                 await Task.Delay(50);
@@ -756,7 +755,7 @@ namespace SignIt
                     EnseñanzaPlayer.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                     EnseñanzaPlayer.settings.setMode("loop", true);
 
-                    PalabraEns.Text = DatabaseFunctions.GetNameOfVideo(id, path);
+                    PalabraEns.Text = DatabaseFunctions.GetNameOfVideo(id, path).Replace("-"," ");
                     EnseñanzaPlayer.Ctlcontrols.play();
 
                     while (!continuar)
@@ -1011,14 +1010,40 @@ namespace SignIt
 
         private async void examenlecc_Click(object sender, EventArgs e)
         {
+            vidasExamen.BringToFront();
             desaparicionDelMenu();
             int vidas = 5;
 
-            List<int> videosExamen = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 442, 43, 44, 45, 46, 47, 48, 49, 50, 51, 5253, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64 };
-            Random rand = new Random();
-            var shuffled = videosExamen.OrderBy(_ => rand.Next(1,64)).ToList();
+            List<int> videosExamen = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64 };
+            int[] id = new int[29];
 
-            foreach (int id in videosExamen)
+            for (int i = 0; i < 29;)
+            {
+                bool trueId = true;
+                int a = Form1.rdn.Next(1, 64);
+                if (i < 1 && a != 0)
+                {
+                    id[i] = a;
+                    i++;
+                }
+                else
+                {
+                    foreach (int ids in id)
+                    {
+                        if (a == 0 || a == ids)
+                        {
+                            trueId = false;
+                        }
+                    }
+                    if (trueId == true)
+                    {
+                        id[i] = a;
+                        i++;
+                    }
+                }
+            }
+
+            foreach (int ids in id)
             {
                 panel10.BackColor = Color.Transparent;
                 panel11.BackColor = Color.Transparent;
@@ -1041,7 +1066,7 @@ namespace SignIt
 
                         case 0:
                             ej1palabra.Text = "¿Cual seña corresponde a la palabra: ";
-                            ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
+                            ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(ids, path) + "?";
                             Random rm = new Random();
                             int a = rdn.Next(1, 64);
                             int b = rdn.Next(1, 64);
@@ -1050,7 +1075,7 @@ namespace SignIt
                             {
 
                                 case 0:
-                                    ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                                    ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(ids, path) + ".wmv";
                                     ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
                                     ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
                                     ejercicio1VideoA.Ctlcontrols.play();
@@ -1068,18 +1093,18 @@ namespace SignIt
 
                                     if (rta1 == true)
                                     {
-                                        ganar_0_perder(ej01, id, "A", panel10);
+                                        ganar_0_perder(ej01, ids, "A", panel10);
                                     }
                                     else if (rta2 == true)
                                     {
                                         rtaIncorrecta = true;
-                                        ganar_0_perder(ej11, id, "A", panel10);
+                                        ganar_0_perder(ej11, ids, "A", panel10);
                                         vidas--;
                                     }
                                     else if (rta3 == true)
                                     {
                                         rtaIncorrecta = true;
-                                        ganar_0_perder(ej11, id, "A", panel10);
+                                        ganar_0_perder(ej11, ids, "A", panel10);
                                         vidas--;
                                     }
                                     rta1 = false;
@@ -1089,7 +1114,7 @@ namespace SignIt
 
 
                                 case 1:
-                                    ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                                    ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(ids, path) + ".wmv";
                                     ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
                                     ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
                                     ejercicio1VideoA.Ctlcontrols.play();
@@ -1108,17 +1133,17 @@ namespace SignIt
                                     if (rta1 == true)
                                     {
                                         rtaIncorrecta = true;
-                                        ganar_0_perder(ej11, id, "B", panel1);
+                                        ganar_0_perder(ej11, ids, "B", panel1);
                                         vidas--;
                                     }
                                     else if (rta2 == true)
                                     {
-                                        ganar_0_perder(ej01, id, "B", panel11);
+                                        ganar_0_perder(ej01, ids, "B", panel11);
                                     }
                                     else if (rta3 == true)
                                     {
                                         rtaIncorrecta = true;
-                                        ganar_0_perder(ej11, id, "B", panel11);
+                                        ganar_0_perder(ej11, ids, "B", panel11);
                                         vidas--;
                                     }
                                     rta1 = false;
@@ -1129,7 +1154,7 @@ namespace SignIt
                                 case 2:
                                     ejercicio1VideoA.URL = signsPath + DatabaseFunctions.GetNameOfVideo(a, path) + ".wmv";
                                     ejercicio1VideoB.URL = signsPath + DatabaseFunctions.GetNameOfVideo(b, path) + ".wmv";
-                                    ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                                    ejercicio1VideoC.URL = signsPath + DatabaseFunctions.GetNameOfVideo(ids, path) + ".wmv";
                                     ejercicio1VideoA.Ctlcontrols.play();
                                     ejercicio1VideoB.Ctlcontrols.play();
                                     ejercicio1VideoC.Ctlcontrols.play();
@@ -1144,18 +1169,18 @@ namespace SignIt
                                     if (rta1 == true)
                                     {
                                         rtaIncorrecta = true;
-                                        ganar_0_perder(ej11, id, "C", panel12);
+                                        ganar_0_perder(ej11, ids, "C", panel12);
                                         vidas--;
                                     }
                                     else if (rta2 == true)
                                     {
                                         rtaIncorrecta = true;
-                                        ganar_0_perder(ej11, id, "C", panel12);
+                                        ganar_0_perder(ej11, ids, "C", panel12);
                                         vidas--;
                                     }
                                     else if (rta3 == true)
                                     {
-                                        ganar_0_perder(ej01, id, "C", panel12);
+                                        ganar_0_perder(ej01, ids, "C", panel12);
                                     }
                                     rta1 = false;
                                     rta2 = false;
@@ -1176,9 +1201,9 @@ namespace SignIt
                             break;
 
                         case 1:
-                            string respuesta = DatabaseFunctions.GetNameOfVideo(id, path).ToLower();
+                            string respuesta = DatabaseFunctions.GetNameOfVideo(ids, path).ToLower();
 
-                            ej2player.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
+                            ej2player.URL = signsPath + DatabaseFunctions.GetNameOfVideo(ids, path) + ".wmv";
                             ej2player.Ctlcontrols.play();
 
                             signIt.SelectedTab = ejercicio2;
@@ -1199,7 +1224,7 @@ namespace SignIt
                             else
                             {
                                 rtaIncorrecta = true;
-                                ganar_0_perder(ej12, id, "", panel10);
+                                ganar_0_perder(ej12, ids, "", panel10);
                                 vidas--;
                             }
 
@@ -1222,7 +1247,40 @@ namespace SignIt
 
                     }
                 }
+                switch (vidas)
+                {
+                    case 0:
+                        vidasExamen.SendToBack();
+                        caracolayuda("Group 182", 3);
+                        return;
+
+                    case 1:
+                        myimage = new Bitmap(imagePath + "1Lfs.PNG");
+                        vidasExamen.BackgroundImage = myimage;
+                        break;
+
+                    case 2:
+                        myimage = new Bitmap(imagePath + "2Lfs.PNG");
+                        vidasExamen.BackgroundImage = myimage;
+                        break;
+
+                    case 3:
+                        myimage = new Bitmap(imagePath + "3Lfs.PNG");
+                        vidasExamen.BackgroundImage = myimage;
+                        break;
+
+                    case 4:
+                        myimage = new Bitmap(imagePath + "4Lfs.PNG");
+                        vidasExamen.BackgroundImage = myimage;
+                        break;
+
+                    case 5:
+                        myimage = new Bitmap(imagePath + "5Lfs.PNG");
+                        vidasExamen.BackgroundImage = myimage;
+                        break;
+                }
             }
+            vidasExamen.SendToBack();
             aparicionDelMenu();
             DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
             avance++;
@@ -1255,6 +1313,7 @@ namespace SignIt
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            vidasExamen.SendToBack();
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
             desaparicionDelMenu();
@@ -1725,6 +1784,7 @@ namespace SignIt
 
         private void endExitRaceButton_Click(object sender, EventArgs e)
         {
+            vidasExamen.SendToBack();
             aparicionDelMenu();
             signIt.SelectedTab = LeccionesMenu;
             ej2player.Ctlcontrols.stop();
@@ -2591,10 +2651,11 @@ namespace SignIt
 
         private void MemotestGamesButton_Click(object sender, EventArgs e)
         {
-            Memotest = true;
-            memoTest1.Show();
-            memoTest1.BringToFront();
-            desaparicionDelMenu();
+            // Memotest = true;
+            // memoTest1.Show();
+            // memoTest1.BringToFront();
+            // desaparicionDelMenu();
+            MessageBox.Show("Mamá siempre decía: la vida es como una caja de bombones. Nunca sabes lo que te va a tocar");
         }
 
         private void questo2_Click(object sender, EventArgs e)
@@ -2932,32 +2993,32 @@ namespace SignIt
             {
                 foreach (Control Label in TB.Controls.OfType<System.Windows.Forms.Label>())
                 {
-                    if (tiposDeLetra.SelectedIndex == 0)
+                    if (Label != ej2RespuestaCorrecta)
                     {
-                        size = 30;
-                        sizeB = 12;
-                    }
-                    else if (tiposDeLetra.SelectedIndex == 1)
-                    {
-                        size = 35;
-                        sizeB = 18;
-                    }
-                    switch (Tipgrafia.SelectedIndex.ToString())
-                    {
-                        case "1":
-                            Label.Font = new Font("Calibri", size);
-                            ej2RespuestaCorrecta.Font = new Font("Calibri", size);
-                            break;
+                        if (tiposDeLetra.SelectedIndex == 0)
+                        {
+                            size = 30;
+                            sizeB = 12;
+                        }
+                        else if (tiposDeLetra.SelectedIndex == 1)
+                        {
+                            size = 35;
+                            sizeB = 18;
+                        }
+                        switch (Tipgrafia.SelectedIndex.ToString())
+                        {
+                            case "1":
+                                Label.Font = new Font("Calibri", size);
+                                break;
 
-                        case "2":
-                            Label.Font = new Font("Microsoft Sans Serif", size);
-                            ej2RespuestaCorrecta.Font = new Font("Microsoft Sans Serif", sizeB);
-                            break;
+                            case "2":
+                                Label.Font = new Font("Microsoft Sans Serif", size);
+                                break;
 
-                        case "0":
-                            Label.Font = new Font("Arial", size);
-                            ej2RespuestaCorrecta.Font = new Font("Arial", sizeB);
-                            break;
+                            case "0":
+                                Label.Font = new Font("Arial", size);
+                                break;
+                        }
                     }
                 }
             }
