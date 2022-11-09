@@ -318,8 +318,6 @@ namespace SignIt
             this.questo = new System.Windows.Forms.Button();
             this.MemotestGamesButton = new System.Windows.Forms.Button();
             this.RaceGamesButton = new System.Windows.Forms.Button();
-            this.race1 = new SignIt.Race();
-            this.memoTest1 = new SignIt.memoTest();
             this.Ajustes = new System.Windows.Forms.TabPage();
             this.XpLvlSett = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -362,8 +360,6 @@ namespace SignIt
             this.ej2videoB = new System.Windows.Forms.Button();
             this.ej2videoA = new System.Windows.Forms.Button();
             this.ej1palabra = new System.Windows.Forms.Label();
-            this.ej11 = new SignIt.Ej1();
-            this.ej01 = new SignIt.Ej0();
             this.ejercicio2 = new System.Windows.Forms.TabPage();
             this.ej2RespuestaCorrecta = new System.Windows.Forms.Label();
             this.exitEj2 = new System.Windows.Forms.Button();
@@ -374,8 +370,6 @@ namespace SignIt
             this.rtaEj2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ej2cont = new System.Windows.Forms.Button();
-            this.ej12 = new SignIt.Ej1();
-            this.ej02 = new SignIt.Ej0();
             this.ejercicio3 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -397,6 +391,12 @@ namespace SignIt
             this.MenuHomeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menubutton = new System.Windows.Forms.Button();
+            this.race1 = new SignIt.Race();
+            this.memoTest1 = new SignIt.memoTest();
+            this.ej11 = new SignIt.Ej1();
+            this.ej01 = new SignIt.Ej0();
+            this.ej12 = new SignIt.Ej1();
+            this.ej02 = new SignIt.Ej0();
             this.signIt.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
@@ -461,7 +461,7 @@ namespace SignIt
             this.signIt.Location = new System.Drawing.Point(-10, -43);
             this.signIt.Name = "signIt";
             this.signIt.SelectedIndex = 0;
-            this.signIt.Size = new System.Drawing.Size(1628, 901);
+            this.signIt.Size = new System.Drawing.Size(1700, 1000);
             this.signIt.TabIndex = 0;
             // 
             // IdS
@@ -477,7 +477,7 @@ namespace SignIt
             this.IdS.Location = new System.Drawing.Point(4, 22);
             this.IdS.Name = "IdS";
             this.IdS.Padding = new System.Windows.Forms.Padding(3);
-            this.IdS.Size = new System.Drawing.Size(1620, 875);
+            this.IdS.Size = new System.Drawing.Size(1692, 974);
             this.IdS.TabIndex = 0;
             this.IdS.Text = "Inicio de Sesión";
             // 
@@ -4523,26 +4523,6 @@ namespace SignIt
             this.RaceGamesButton.UseVisualStyleBackColor = false;
             this.RaceGamesButton.Click += new System.EventHandler(this.RaceGamesButton_Click);
             // 
-            // race1
-            // 
-            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
-            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.race1.Location = new System.Drawing.Point(1, 3);
-            this.race1.Name = "race1";
-            this.race1.Size = new System.Drawing.Size(1366, 788);
-            this.race1.TabIndex = 5;
-            this.race1.Visible = false;
-            // 
-            // memoTest1
-            // 
-            this.memoTest1.BackColor = System.Drawing.Color.LightBlue;
-            this.memoTest1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("memoTest1.BackgroundImage")));
-            this.memoTest1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.memoTest1.Location = new System.Drawing.Point(0, 0);
-            this.memoTest1.Name = "memoTest1";
-            this.memoTest1.Size = new System.Drawing.Size(1366, 788);
-            this.memoTest1.TabIndex = 6;
-            // 
             // Ajustes
             // 
             this.Ajustes.BackColor = System.Drawing.Color.LightBlue;
@@ -5078,24 +5058,6 @@ namespace SignIt
             this.ej1palabra.TabIndex = 0;
             this.ej1palabra.Text = "¿Cual seña correspone a la palabra:";
             // 
-            // ej11
-            // 
-            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
-            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej11.Location = new System.Drawing.Point(-5, 579);
-            this.ej11.Name = "ej11";
-            this.ej11.Size = new System.Drawing.Size(1380, 150);
-            this.ej11.TabIndex = 17;
-            // 
-            // ej01
-            // 
-            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
-            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej01.Location = new System.Drawing.Point(5, 579);
-            this.ej01.Name = "ej01";
-            this.ej01.Size = new System.Drawing.Size(1378, 150);
-            this.ej01.TabIndex = 16;
-            // 
             // ejercicio2
             // 
             this.ejercicio2.BackColor = System.Drawing.Color.LightBlue;
@@ -5220,24 +5182,6 @@ namespace SignIt
             this.ej2cont.TabIndex = 6;
             this.ej2cont.UseVisualStyleBackColor = false;
             this.ej2cont.Click += new System.EventHandler(this.ej2cont_Click);
-            // 
-            // ej12
-            // 
-            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
-            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej12.Location = new System.Drawing.Point(0, 579);
-            this.ej12.Name = "ej12";
-            this.ej12.Size = new System.Drawing.Size(1381, 150);
-            this.ej12.TabIndex = 18;
-            // 
-            // ej02
-            // 
-            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
-            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ej02.Location = new System.Drawing.Point(4, 579);
-            this.ej02.Name = "ej02";
-            this.ej02.Size = new System.Drawing.Size(1377, 150);
-            this.ej02.TabIndex = 17;
             // 
             // ejercicio3
             // 
@@ -5515,6 +5459,62 @@ namespace SignIt
             this.Menubutton.TabIndex = 3;
             this.Menubutton.UseVisualStyleBackColor = true;
             this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
+            // 
+            // race1
+            // 
+            this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
+            this.race1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.race1.Location = new System.Drawing.Point(1, 3);
+            this.race1.Name = "race1";
+            this.race1.Size = new System.Drawing.Size(1366, 788);
+            this.race1.TabIndex = 5;
+            this.race1.Visible = false;
+            // 
+            // memoTest1
+            // 
+            this.memoTest1.BackColor = System.Drawing.Color.LightBlue;
+            this.memoTest1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("memoTest1.BackgroundImage")));
+            this.memoTest1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.memoTest1.Location = new System.Drawing.Point(0, 0);
+            this.memoTest1.Name = "memoTest1";
+            this.memoTest1.Size = new System.Drawing.Size(1366, 788);
+            this.memoTest1.TabIndex = 6;
+            // 
+            // ej11
+            // 
+            this.ej11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej11.BackgroundImage")));
+            this.ej11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej11.Location = new System.Drawing.Point(-5, 579);
+            this.ej11.Name = "ej11";
+            this.ej11.Size = new System.Drawing.Size(1380, 150);
+            this.ej11.TabIndex = 17;
+            // 
+            // ej01
+            // 
+            this.ej01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej01.BackgroundImage")));
+            this.ej01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej01.Location = new System.Drawing.Point(5, 579);
+            this.ej01.Name = "ej01";
+            this.ej01.Size = new System.Drawing.Size(1378, 150);
+            this.ej01.TabIndex = 16;
+            // 
+            // ej12
+            // 
+            this.ej12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej12.BackgroundImage")));
+            this.ej12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej12.Location = new System.Drawing.Point(0, 579);
+            this.ej12.Name = "ej12";
+            this.ej12.Size = new System.Drawing.Size(1381, 150);
+            this.ej12.TabIndex = 18;
+            // 
+            // ej02
+            // 
+            this.ej02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ej02.BackgroundImage")));
+            this.ej02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ej02.Location = new System.Drawing.Point(4, 579);
+            this.ej02.Name = "ej02";
+            this.ej02.Size = new System.Drawing.Size(1377, 150);
+            this.ej02.TabIndex = 17;
             // 
             // Form1
             // 

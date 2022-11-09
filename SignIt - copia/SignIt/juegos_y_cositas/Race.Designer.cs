@@ -49,11 +49,11 @@
             // 
             // RaceTextBox
             // 
-            this.RaceTextBox.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RaceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RaceTextBox.ForeColor = System.Drawing.Color.Silver;
             this.RaceTextBox.Location = new System.Drawing.Point(183, 459);
             this.RaceTextBox.Name = "RaceTextBox";
-            this.RaceTextBox.Size = new System.Drawing.Size(1028, 56);
+            this.RaceTextBox.Size = new System.Drawing.Size(1028, 53);
             this.RaceTextBox.TabIndex = 1;
             this.RaceTextBox.Text = "Escribe la definición antes de que se acabe el tiempo";
             this.RaceTextBox.Click += new System.EventHandler(this.RaceTextBox_Click);
@@ -63,11 +63,11 @@
             // 
             this.RacePoints.AutoSize = true;
             this.RacePoints.BackColor = System.Drawing.Color.Transparent;
-            this.RacePoints.Font = new System.Drawing.Font("Inter", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RacePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RacePoints.ForeColor = System.Drawing.Color.Navy;
             this.RacePoints.Location = new System.Drawing.Point(1102, 57);
             this.RacePoints.Name = "RacePoints";
-            this.RacePoints.Size = new System.Drawing.Size(35, 35);
+            this.RacePoints.Size = new System.Drawing.Size(32, 33);
             this.RacePoints.TabIndex = 2;
             this.RacePoints.Text = "0";
             this.RacePoints.Click += new System.EventHandler(this.RacePoints_Click);
@@ -110,11 +110,11 @@
             // 
             this.Contador.AutoSize = true;
             this.Contador.BackColor = System.Drawing.Color.Transparent;
-            this.Contador.Font = new System.Drawing.Font("Inter", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contador.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Contador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Contador.Location = new System.Drawing.Point(1175, 676);
             this.Contador.Name = "Contador";
-            this.Contador.Size = new System.Drawing.Size(99, 33);
+            this.Contador.Size = new System.Drawing.Size(87, 31);
             this.Contador.TabIndex = 6;
             this.Contador.Text = "00:00";
             // 
@@ -156,11 +156,11 @@
             // 
             this.finalRaceText.AutoSize = true;
             this.finalRaceText.BackColor = System.Drawing.Color.Transparent;
-            this.finalRaceText.Font = new System.Drawing.Font("Inter", 70F, System.Drawing.FontStyle.Bold);
+            this.finalRaceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 70F, System.Drawing.FontStyle.Bold);
             this.finalRaceText.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.finalRaceText.Location = new System.Drawing.Point(234, 123);
+            this.finalRaceText.Location = new System.Drawing.Point(279, 123);
             this.finalRaceText.Name = "finalRaceText";
-            this.finalRaceText.Size = new System.Drawing.Size(663, 114);
+            this.finalRaceText.Size = new System.Drawing.Size(609, 107);
             this.finalRaceText.TabIndex = 8;
             this.finalRaceText.Text = "¡Buen intento";
             this.finalRaceText.Click += new System.EventHandler(this.finalRaceText_Click);
@@ -169,11 +169,11 @@
             // 
             this.endRacePoints.AutoSize = true;
             this.endRacePoints.BackColor = System.Drawing.Color.Transparent;
-            this.endRacePoints.Font = new System.Drawing.Font("Inter", 34.75F, System.Drawing.FontStyle.Bold);
+            this.endRacePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 34.75F, System.Drawing.FontStyle.Bold);
             this.endRacePoints.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.endRacePoints.Location = new System.Drawing.Point(498, 252);
             this.endRacePoints.Name = "endRacePoints";
-            this.endRacePoints.Size = new System.Drawing.Size(286, 57);
+            this.endRacePoints.Size = new System.Drawing.Size(267, 54);
             this.endRacePoints.TabIndex = 9;
             this.endRacePoints.Text = "Puntuación";
             this.endRacePoints.Click += new System.EventHandler(this.endRacePoints_Click);

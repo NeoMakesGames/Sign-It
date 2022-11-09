@@ -109,7 +109,8 @@ namespace SignIt
         private void RaceButtonStart_Click(object sender, EventArgs e)
         {
             jugando = true;
-
+            finalRaceText.Text = "¡Buen intento";
+            endRacePoints.Text = "Puntuación";
             puntos = 0;
 
             RacePoints.Text = "Tus puntos:  0";
