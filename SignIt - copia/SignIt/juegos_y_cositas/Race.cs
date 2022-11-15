@@ -141,7 +141,7 @@ namespace SignIt
         {
             if (jugando == true)
             {
-                if (RaceTextBox.Text.ToLowerInvariant() == DatabaseFunctions.GetNameOfVideo(id_, Form1.path).ToLowerInvariant())
+                if (RaceTextBox.Text.ToLowerInvariant() == DatabaseFunctions.GetNameOfVideo(id_, Form1.path).ToLowerInvariant().Replace("-"," "))
                 {
                     raceTimer += 3000;
                     RaceTextBox.Text = "";

@@ -434,7 +434,7 @@ namespace SignIt
             signIt.SelectedTab = Enseñanza;
             foreach (int id in videos)
             {
-                string palabra = DatabaseFunctions.GetNameOfVideo(id, path);
+                string palabra = DatabaseFunctions.GetNameOfVideo(id, path).Replace("-", " ");
                 EnseñanzaPlayer.URL = signsPath + palabra + ".wmv";
                 EnseñanzaPlayer.Ctlcontrols.play();
                 await Task.Delay(50);
@@ -665,7 +665,7 @@ namespace SignIt
                         break;
 
                     case 1:
-                        string respuesta = DatabaseFunctions.GetNameOfVideo(id, path).ToLower();
+                        string respuesta = DatabaseFunctions.GetNameOfVideo(id, path).ToLower().Replace("-", " ");
 
                         ej2player.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                         ej2player.settings.setMode("loop", true);
@@ -758,7 +758,7 @@ namespace SignIt
                     EnseñanzaPlayer.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                     EnseñanzaPlayer.settings.setMode("loop", true);
 
-                    PalabraEns.Text = DatabaseFunctions.GetNameOfVideo(id, path);
+                    PalabraEns.Text = DatabaseFunctions.GetNameOfVideo(id, path).Replace("-", " ");
                     EnseñanzaPlayer.Ctlcontrols.play();
 
                     while (!continuar)
@@ -1178,7 +1178,7 @@ namespace SignIt
                             break;
 
                         case 1:
-                            string respuesta = DatabaseFunctions.GetNameOfVideo(id, path).ToLower();
+                            string respuesta = DatabaseFunctions.GetNameOfVideo(id, path).ToLower().Replace("-", " ");
 
                             ej2player.URL = signsPath + DatabaseFunctions.GetNameOfVideo(id, path) + ".wmv";
                             ej2player.Ctlcontrols.play();
