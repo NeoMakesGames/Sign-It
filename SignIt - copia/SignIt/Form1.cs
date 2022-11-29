@@ -3,12 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Image = System.Drawing.Image;
 
 namespace SignIt
@@ -1466,12 +1468,29 @@ namespace SignIt
         {
             caracolayuda("Presentacion", 3);
         }
+        private void sliderHome_Click(object sender, EventArgs e)
+        {
+            switch(homeSlider)
+            {
+                case 1:
+                    Process.Start("chrome.exe", "https://www.fundasor.org.ar/");
+                    return;
+
+                case 2:
+                    Process.Start("chrome.exe", "https://cas.org.ar/");
+                    return;
+
+                case 3:
+                    Process.Start("chrome.exe", "https://www.asamutual.org.ar/");
+                    return;
+            }
+        }
 
 
 
 
 
-//Menu
+        //Menu
 
 
 
@@ -2990,6 +3009,12 @@ namespace SignIt
         private void XpLvlSett_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void sliderHome_MouseEnter(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(sliderHome, "Asociaciones y organizaciones que te podrían ayudar");
         }
 
         private void PantallaSett_Click(object sender, EventArgs e)
