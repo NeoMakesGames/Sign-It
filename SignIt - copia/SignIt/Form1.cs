@@ -1018,6 +1018,7 @@ namespace SignIt
            private async void examenlecc_Click(object sender, EventArgs e)
         {
             desaparicionDelMenu();
+            Life.BringToFront();
             int vidas = 5;
 
             List<int> videosExamen = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 442, 43, 44, 45, 46, 47, 48, 49, 50, 51, 5253, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64 };
@@ -1026,6 +1027,34 @@ namespace SignIt
 
             foreach (int id in videosExamen)
             {
+                switch (vidas)
+                {
+                    case 0:
+                        Life.BackgroundImage = new Bitmap(imagePath + "Vidas0.PNG");
+                        Life.SendToBack();
+                        signIt.SelectedTab = LeccionesMenu;
+                        return;
+
+                    case 1:
+                        Life.BackgroundImage = new Bitmap(imagePath + "Vidas1.PNG");
+                        break;
+
+                    case 2:
+                        Life.BackgroundImage = new Bitmap(imagePath + "Vidas2.PNG");
+                        break;
+
+                    case 3:
+                        Life.BackgroundImage = new Bitmap(imagePath + "Vidas3.PNG");
+                        break;
+
+                    case 4:
+                        Life.BackgroundImage = new Bitmap(imagePath + "Vidas4.PNG");
+                        break;
+
+                    case 5:
+                        Life.BackgroundImage = new Bitmap(imagePath + "Vidas5.PNG");
+                        break;
+                }
                 panel10.BackColor = Color.Transparent;
                 panel11.BackColor = Color.Transparent;
                 panel12.BackColor = Color.Transparent;
@@ -1223,15 +1252,12 @@ namespace SignIt
 
                             break;
                     }
-                    if (vidas == 0)
-                    {
-
-                    }
                 }
             }
             aparicionDelMenu();
             DatabaseFunctions.addAvance(DatabaseFunctions.currentUser, path);
             avance++;
+            Life.SendToBack();
             signIt.SelectedTab = LeccionesMenu;
         }       //Se escojen 30 señas en total, al azar y de todas las clasificaciones (verbos, comidas, etc...). Luego se realizará una actividad para cada seña. Si el usuario hace mal 5 ejercicios pierde y debe comenzar de nuevo el mismo.
 
@@ -1242,9 +1268,9 @@ namespace SignIt
             if (rtaIncorrecta == true)
             {
                 ej2RespuestaCorrecta.Text = ej2RespuestaCorrecta.Text + " " + DatabaseFunctions.GetNameOfVideo(ids, path).Replace("-", " ") + ".";
-                rtaIncorrecta = false;
                 abc.BackColor = Color.LightGreen;
                 ej2RespuestaCorrecta.Show();
+                rtaIncorrecta = false;
             }
             uc.Show();
             uc.BringToFront();
@@ -1749,6 +1775,7 @@ namespace SignIt
         private void endExitRaceButton_Click(object sender, EventArgs e)
         {
             aparicionDelMenu();
+            Life.SendToBack();
             signIt.SelectedTab = LeccionesMenu;
             ej2player.Ctlcontrols.stop();
             ejercicio1VideoA.Ctlcontrols.stop();

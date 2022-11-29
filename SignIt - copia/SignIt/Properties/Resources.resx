@@ -121,6 +121,9 @@
   <data name="Group 44" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group 167" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 167.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Básico (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Básico (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,6 +139,9 @@
   <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group 166" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 166.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="3 rayitas botón" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3 rayitas botón.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,11 +151,8 @@
   <data name="Group 148" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 148.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 75" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Imagenes\Group 75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 133" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 133.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 163" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 163.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rectangle 177" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 177.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,14 +187,8 @@
   <data name="Group 54 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 54 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 102" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 102.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Group 93" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 93.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 161" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 87 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 87 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -204,6 +201,12 @@
   </data>
   <data name="Botón" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Botón.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 175" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 175.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fondo triángulos prendidos (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo triángulos prendidos (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fundasor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fundasor1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,6 +235,9 @@
   <data name="Group 84" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 84.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group 174" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 174.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Group 143" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 143.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -241,14 +247,14 @@
   <data name="Group 115" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 115.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group 151" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 151.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Botón (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Botón (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 150" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 140" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 140.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="elegir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\elegir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,8 +262,8 @@
   <data name="Group 147" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 147.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Botón (4)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Botón (4)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 156" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 931" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 931.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,6 +286,9 @@
   <data name="Group 53" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 53.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group 172" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 172.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="nros" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nros.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -292,20 +301,32 @@
   <data name="Group 49" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Básico (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Básico (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Group 145" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 145.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Caracol boceto 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Caracol boceto 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group 173" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 173.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Group 50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 116" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 116.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 611.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 164" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 164.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 121" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 104" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 104.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 109" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 109.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -324,6 +345,9 @@
   </data>
   <data name="Group 107" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 107.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Botón (4)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Botón (4)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 91" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 91.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -358,9 +382,6 @@
   <data name="Group 34" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ícono de salir (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ícono de salir (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Group 90" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -388,14 +409,17 @@
   <data name="logo azul sin fondo 2 (1)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo azul sin fondo 2 (1)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group 47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Ícono del perfil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ícono del perfil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="T2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\T2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 169" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 169.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="restar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\restar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -415,8 +439,8 @@
   <data name="Group 160" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 160.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 61" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 611.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 102.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 144" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 144.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -442,14 +466,14 @@
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Vector 97" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Vector 97.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 152" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 152.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rectangle 39" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 39.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 126" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 126.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 901" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 901.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -463,8 +487,8 @@
   <data name="Group 136" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 136.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 156" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 170" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 170.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 57" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 57.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -493,8 +517,8 @@
   <data name="Group 154" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 154.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 152" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 152.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Básico (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Básico (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Fondo triángulos prendidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fondo triángulos prendidos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -544,8 +568,11 @@
   <data name="Botón (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Botón (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 47" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 140" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 140.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 58 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 58 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -556,8 +583,11 @@
   <data name="Group 105" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 105.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 151" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 151.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 168" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 168.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="T2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\T2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -604,20 +634,26 @@
   <data name="Group 110" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Básico (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Básico (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Vector 97" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vector 97.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 126" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 126.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Básico (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Básico (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Básico (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Básico (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Imagenes\Group 75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Vector 97 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vector 97 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 133" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 133.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Flecha1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Flecha1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -631,49 +667,16 @@
   <data name="logo azul sin fondo 2 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo azul sin fondo 2 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fondo triángulos prendidos (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fondo triángulos prendidos (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 116" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 116.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 158" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 158.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 104" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 104.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ícono de salir (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ícono de salir (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 175" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 175.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 163" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 163.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 164" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 164.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 166" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 166.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 167" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 167.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 168" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 168.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 169" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 169.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 170" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 170.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 171" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 172" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 172.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 173" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 173.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 174" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 174.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="0Vidas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0Vidas1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

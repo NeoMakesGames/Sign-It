@@ -35,6 +35,16 @@ namespace SignIt
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.signIt = new System.Windows.Forms.TabControl();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Life = new System.Windows.Forms.Panel();
+            this.Menubutton = new System.Windows.Forms.Button();
+            this.MenuExitButton = new System.Windows.Forms.Button();
+            this.MenuSettingsButton = new System.Windows.Forms.Button();
+            this.MenuGamesButton = new System.Windows.Forms.Button();
+            this.MenuDiccionarioButton = new System.Windows.Forms.Button();
+            this.MenuLectionsButton = new System.Windows.Forms.Button();
+            this.MenuHomeButton = new System.Windows.Forms.Button();
             this.IdS = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2IdS = new System.Windows.Forms.Label();
@@ -382,15 +392,6 @@ namespace SignIt
             this.continuarTutorial = new System.Windows.Forms.Button();
             this.caracolExit2 = new System.Windows.Forms.Button();
             this.caracolExit = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.MenuExitButton = new System.Windows.Forms.Button();
-            this.MenuSettingsButton = new System.Windows.Forms.Button();
-            this.MenuGamesButton = new System.Windows.Forms.Button();
-            this.MenuDiccionarioButton = new System.Windows.Forms.Button();
-            this.MenuLectionsButton = new System.Windows.Forms.Button();
-            this.MenuHomeButton = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Menubutton = new System.Windows.Forms.Button();
             this.race1 = new SignIt.Race();
             this.memoTest1 = new SignIt.memoTest();
             this.ej11 = new SignIt.Ej1();
@@ -398,6 +399,7 @@ namespace SignIt
             this.ej12 = new SignIt.Ej1();
             this.ej02 = new SignIt.Ej0();
             this.signIt.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.IdS.SuspendLayout();
             this.CdU.SuspendLayout();
             this.panel22.SuspendLayout();
@@ -441,7 +443,6 @@ namespace SignIt
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.caracol.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // signIt
@@ -463,6 +464,140 @@ namespace SignIt
             this.signIt.SelectedIndex = 0;
             this.signIt.Size = new System.Drawing.Size(1700, 1000);
             this.signIt.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel1.Controls.Add(this.MenuExitButton);
+            this.panel1.Controls.Add(this.MenuSettingsButton);
+            this.panel1.Controls.Add(this.MenuGamesButton);
+            this.panel1.Controls.Add(this.MenuDiccionarioButton);
+            this.panel1.Controls.Add(this.MenuLectionsButton);
+            this.panel1.Controls.Add(this.MenuHomeButton);
+            this.panel1.Location = new System.Drawing.Point(0, -23);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(332, 807);
+            this.panel1.TabIndex = 2;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Life
+            // 
+            this.Life.BackColor = System.Drawing.Color.LightBlue;
+            this.Life.BackgroundImage = global::SignIt.Properties.Resources._0Vidas;
+            this.Life.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Life.Cursor = System.Windows.Forms.Cursors.No;
+            this.Life.Location = new System.Drawing.Point(1073, 24);
+            this.Life.Name = "Life";
+            this.Life.Size = new System.Drawing.Size(268, 55);
+            this.Life.TabIndex = 4;
+            // 
+            // Menubutton
+            // 
+            this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
+            this.Menubutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Menubutton.FlatAppearance.BorderSize = 0;
+            this.Menubutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Menubutton.Location = new System.Drawing.Point(0, 0);
+            this.Menubutton.Name = "Menubutton";
+            this.Menubutton.Size = new System.Drawing.Size(100, 75);
+            this.Menubutton.TabIndex = 3;
+            this.Menubutton.UseVisualStyleBackColor = true;
+            this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
+            // 
+            // MenuExitButton
+            // 
+            this.MenuExitButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuExitButton.BackgroundImage = global::SignIt.Properties.Resources.Group_55__2_;
+            this.MenuExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuExitButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MenuExitButton.FlatAppearance.BorderSize = 0;
+            this.MenuExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MenuExitButton.Location = new System.Drawing.Point(3, 637);
+            this.MenuExitButton.Name = "MenuExitButton";
+            this.MenuExitButton.Size = new System.Drawing.Size(326, 100);
+            this.MenuExitButton.TabIndex = 5;
+            this.MenuExitButton.UseVisualStyleBackColor = false;
+            this.MenuExitButton.Click += new System.EventHandler(this.MenuExitButton_Click);
+            // 
+            // MenuSettingsButton
+            // 
+            this.MenuSettingsButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuSettingsButton.BackgroundImage = global::SignIt.Properties.Resources.Group_53;
+            this.MenuSettingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuSettingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MenuSettingsButton.FlatAppearance.BorderSize = 0;
+            this.MenuSettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MenuSettingsButton.Location = new System.Drawing.Point(3, 531);
+            this.MenuSettingsButton.Name = "MenuSettingsButton";
+            this.MenuSettingsButton.Size = new System.Drawing.Size(326, 100);
+            this.MenuSettingsButton.TabIndex = 4;
+            this.MenuSettingsButton.UseVisualStyleBackColor = false;
+            this.MenuSettingsButton.Click += new System.EventHandler(this.MenuSettingsButton_Click);
+            // 
+            // MenuGamesButton
+            // 
+            this.MenuGamesButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuGamesButton.BackgroundImage = global::SignIt.Properties.Resources.Group_52;
+            this.MenuGamesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuGamesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MenuGamesButton.FlatAppearance.BorderSize = 0;
+            this.MenuGamesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MenuGamesButton.Location = new System.Drawing.Point(3, 425);
+            this.MenuGamesButton.Name = "MenuGamesButton";
+            this.MenuGamesButton.Size = new System.Drawing.Size(326, 100);
+            this.MenuGamesButton.TabIndex = 3;
+            this.MenuGamesButton.UseVisualStyleBackColor = false;
+            this.MenuGamesButton.Click += new System.EventHandler(this.MenuGamesButton_Click);
+            // 
+            // MenuDiccionarioButton
+            // 
+            this.MenuDiccionarioButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuDiccionarioButton.BackgroundImage = global::SignIt.Properties.Resources.Group_50;
+            this.MenuDiccionarioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuDiccionarioButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MenuDiccionarioButton.FlatAppearance.BorderSize = 0;
+            this.MenuDiccionarioButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MenuDiccionarioButton.Location = new System.Drawing.Point(3, 319);
+            this.MenuDiccionarioButton.Name = "MenuDiccionarioButton";
+            this.MenuDiccionarioButton.Size = new System.Drawing.Size(326, 100);
+            this.MenuDiccionarioButton.TabIndex = 2;
+            this.MenuDiccionarioButton.UseVisualStyleBackColor = false;
+            this.MenuDiccionarioButton.Click += new System.EventHandler(this.MenuDiccionarioButton_Click);
+            // 
+            // MenuLectionsButton
+            // 
+            this.MenuLectionsButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuLectionsButton.BackgroundImage = global::SignIt.Properties.Resources.Group_49;
+            this.MenuLectionsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuLectionsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MenuLectionsButton.FlatAppearance.BorderSize = 0;
+            this.MenuLectionsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MenuLectionsButton.Location = new System.Drawing.Point(3, 213);
+            this.MenuLectionsButton.Name = "MenuLectionsButton";
+            this.MenuLectionsButton.Size = new System.Drawing.Size(326, 100);
+            this.MenuLectionsButton.TabIndex = 1;
+            this.MenuLectionsButton.UseVisualStyleBackColor = false;
+            this.MenuLectionsButton.Click += new System.EventHandler(this.MenuLectionsButton_Click);
+            // 
+            // MenuHomeButton
+            // 
+            this.MenuHomeButton.BackColor = System.Drawing.Color.Transparent;
+            this.MenuHomeButton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas_botón;
+            this.MenuHomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuHomeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MenuHomeButton.FlatAppearance.BorderSize = 0;
+            this.MenuHomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MenuHomeButton.Location = new System.Drawing.Point(3, 104);
+            this.MenuHomeButton.Name = "MenuHomeButton";
+            this.MenuHomeButton.Size = new System.Drawing.Size(326, 100);
+            this.MenuHomeButton.TabIndex = 0;
+            this.MenuHomeButton.UseVisualStyleBackColor = false;
+            this.MenuHomeButton.Click += new System.EventHandler(this.MenuHomeButton_Click);
             // 
             // IdS
             // 
@@ -5054,7 +5189,7 @@ namespace SignIt
             this.ej1palabra.AutoSize = true;
             this.ej1palabra.BackColor = System.Drawing.Color.Transparent;
             this.ej1palabra.Font = new System.Drawing.Font("Corbel", 30F, System.Drawing.FontStyle.Bold);
-            this.ej1palabra.Location = new System.Drawing.Point(361, 85);
+            this.ej1palabra.Location = new System.Drawing.Point(328, 85);
             this.ej1palabra.Name = "ej1palabra";
             this.ej1palabra.Size = new System.Drawing.Size(624, 49);
             this.ej1palabra.TabIndex = 0;
@@ -5143,9 +5278,9 @@ namespace SignIt
             this.caracolEJ2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.caracolEJ2.FlatAppearance.BorderSize = 0;
             this.caracolEJ2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.caracolEJ2.Location = new System.Drawing.Point(1213, 255);
+            this.caracolEJ2.Location = new System.Drawing.Point(1235, 166);
             this.caracolEJ2.Name = "caracolEJ2";
-            this.caracolEJ2.Size = new System.Drawing.Size(113, 119);
+            this.caracolEJ2.Size = new System.Drawing.Size(115, 118);
             this.caracolEJ2.TabIndex = 12;
             this.caracolEJ2.UseVisualStyleBackColor = false;
             this.caracolEJ2.Click += new System.EventHandler(this.button1_Click_2);
@@ -5207,9 +5342,9 @@ namespace SignIt
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(1177, 83);
+            this.button4.Location = new System.Drawing.Point(1235, 166);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 150);
+            this.button4.Size = new System.Drawing.Size(115, 118);
             this.button4.TabIndex = 20;
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -5339,129 +5474,6 @@ namespace SignIt
             this.caracolExit.UseVisualStyleBackColor = false;
             this.caracolExit.Click += new System.EventHandler(this.caracolExit_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel1.Controls.Add(this.MenuExitButton);
-            this.panel1.Controls.Add(this.MenuSettingsButton);
-            this.panel1.Controls.Add(this.MenuGamesButton);
-            this.panel1.Controls.Add(this.MenuDiccionarioButton);
-            this.panel1.Controls.Add(this.MenuLectionsButton);
-            this.panel1.Controls.Add(this.MenuHomeButton);
-            this.panel1.Location = new System.Drawing.Point(0, -23);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(332, 807);
-            this.panel1.TabIndex = 2;
-            // 
-            // MenuExitButton
-            // 
-            this.MenuExitButton.BackColor = System.Drawing.Color.Transparent;
-            this.MenuExitButton.BackgroundImage = global::SignIt.Properties.Resources.Group_55__2_;
-            this.MenuExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MenuExitButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MenuExitButton.FlatAppearance.BorderSize = 0;
-            this.MenuExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MenuExitButton.Location = new System.Drawing.Point(3, 637);
-            this.MenuExitButton.Name = "MenuExitButton";
-            this.MenuExitButton.Size = new System.Drawing.Size(326, 100);
-            this.MenuExitButton.TabIndex = 5;
-            this.MenuExitButton.UseVisualStyleBackColor = false;
-            this.MenuExitButton.Click += new System.EventHandler(this.MenuExitButton_Click);
-            // 
-            // MenuSettingsButton
-            // 
-            this.MenuSettingsButton.BackColor = System.Drawing.Color.Transparent;
-            this.MenuSettingsButton.BackgroundImage = global::SignIt.Properties.Resources.Group_53;
-            this.MenuSettingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MenuSettingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MenuSettingsButton.FlatAppearance.BorderSize = 0;
-            this.MenuSettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MenuSettingsButton.Location = new System.Drawing.Point(3, 531);
-            this.MenuSettingsButton.Name = "MenuSettingsButton";
-            this.MenuSettingsButton.Size = new System.Drawing.Size(326, 100);
-            this.MenuSettingsButton.TabIndex = 4;
-            this.MenuSettingsButton.UseVisualStyleBackColor = false;
-            this.MenuSettingsButton.Click += new System.EventHandler(this.MenuSettingsButton_Click);
-            // 
-            // MenuGamesButton
-            // 
-            this.MenuGamesButton.BackColor = System.Drawing.Color.Transparent;
-            this.MenuGamesButton.BackgroundImage = global::SignIt.Properties.Resources.Group_52;
-            this.MenuGamesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MenuGamesButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MenuGamesButton.FlatAppearance.BorderSize = 0;
-            this.MenuGamesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MenuGamesButton.Location = new System.Drawing.Point(3, 425);
-            this.MenuGamesButton.Name = "MenuGamesButton";
-            this.MenuGamesButton.Size = new System.Drawing.Size(326, 100);
-            this.MenuGamesButton.TabIndex = 3;
-            this.MenuGamesButton.UseVisualStyleBackColor = false;
-            this.MenuGamesButton.Click += new System.EventHandler(this.MenuGamesButton_Click);
-            // 
-            // MenuDiccionarioButton
-            // 
-            this.MenuDiccionarioButton.BackColor = System.Drawing.Color.Transparent;
-            this.MenuDiccionarioButton.BackgroundImage = global::SignIt.Properties.Resources.Group_50;
-            this.MenuDiccionarioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MenuDiccionarioButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MenuDiccionarioButton.FlatAppearance.BorderSize = 0;
-            this.MenuDiccionarioButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MenuDiccionarioButton.Location = new System.Drawing.Point(3, 319);
-            this.MenuDiccionarioButton.Name = "MenuDiccionarioButton";
-            this.MenuDiccionarioButton.Size = new System.Drawing.Size(326, 100);
-            this.MenuDiccionarioButton.TabIndex = 2;
-            this.MenuDiccionarioButton.UseVisualStyleBackColor = false;
-            this.MenuDiccionarioButton.Click += new System.EventHandler(this.MenuDiccionarioButton_Click);
-            // 
-            // MenuLectionsButton
-            // 
-            this.MenuLectionsButton.BackColor = System.Drawing.Color.Transparent;
-            this.MenuLectionsButton.BackgroundImage = global::SignIt.Properties.Resources.Group_49;
-            this.MenuLectionsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MenuLectionsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MenuLectionsButton.FlatAppearance.BorderSize = 0;
-            this.MenuLectionsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MenuLectionsButton.Location = new System.Drawing.Point(3, 213);
-            this.MenuLectionsButton.Name = "MenuLectionsButton";
-            this.MenuLectionsButton.Size = new System.Drawing.Size(326, 100);
-            this.MenuLectionsButton.TabIndex = 1;
-            this.MenuLectionsButton.UseVisualStyleBackColor = false;
-            this.MenuLectionsButton.Click += new System.EventHandler(this.MenuLectionsButton_Click);
-            // 
-            // MenuHomeButton
-            // 
-            this.MenuHomeButton.BackColor = System.Drawing.Color.Transparent;
-            this.MenuHomeButton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas_botón;
-            this.MenuHomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MenuHomeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MenuHomeButton.FlatAppearance.BorderSize = 0;
-            this.MenuHomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MenuHomeButton.Location = new System.Drawing.Point(3, 104);
-            this.MenuHomeButton.Name = "MenuHomeButton";
-            this.MenuHomeButton.Size = new System.Drawing.Size(326, 100);
-            this.MenuHomeButton.TabIndex = 0;
-            this.MenuHomeButton.UseVisualStyleBackColor = false;
-            this.MenuHomeButton.Click += new System.EventHandler(this.MenuHomeButton_Click);
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 200;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // Menubutton
-            // 
-            this.Menubutton.BackgroundImage = global::SignIt.Properties.Resources._3_rayitas__2_;
-            this.Menubutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Menubutton.FlatAppearance.BorderSize = 0;
-            this.Menubutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menubutton.Location = new System.Drawing.Point(0, 0);
-            this.Menubutton.Name = "Menubutton";
-            this.Menubutton.Size = new System.Drawing.Size(100, 75);
-            this.Menubutton.TabIndex = 3;
-            this.Menubutton.UseVisualStyleBackColor = true;
-            this.Menubutton.Click += new System.EventHandler(this.Menubutton_Click);
-            // 
             // race1
             // 
             this.race1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("race1.BackgroundImage")));
@@ -5527,10 +5539,12 @@ namespace SignIt
             this.Controls.Add(this.signIt);
             this.Controls.Add(this.Menubutton);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Life);
             this.Name = "Form1";
             this.Text = "SignIt!";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.signIt.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.IdS.ResumeLayout(false);
             this.IdS.PerformLayout();
             this.CdU.ResumeLayout(false);
@@ -5590,7 +5604,6 @@ namespace SignIt
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.caracol.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -5960,6 +5973,7 @@ namespace SignIt
         public System.Windows.Forms.Label label65;
         public System.Windows.Forms.Label XpLvlSett;
         private memoTest memoTest1;
+        private Panel Life;
     }
 }
 

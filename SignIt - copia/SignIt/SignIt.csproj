@@ -439,6 +439,7 @@
     <None Include="Resources\10.png" />
     <None Include="bin\Debug\Imagenes\ADC.png" />
     <None Include="bin\Debug\Imagenes\Group 75.png" />
+    <None Include="Resources\0Vidas1.png" />
     <Content Include="Resources\Botón %282%29.png" />
     <Content Include="Resources\Botón %283%29.png" />
     <None Include="Resources\Rectangle 177.png" />
