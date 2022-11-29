@@ -385,6 +385,8 @@ namespace SignIt
             turorial = true;
         }   //Muestra la pantalla del tutorial, la primera vez que inicias sesión. 
 
+
+
         private async void ej_1 (int idA, int idB, int idC, int xp, bool rtA, bool rtB, bool rtC)
         {
             ejercicio1VideoA.settings.setMode("loop", true);
@@ -436,7 +438,7 @@ namespace SignIt
             signIt.SelectedTab = Enseñanza;
             foreach (int id in videos)
             {
-                string palabra = DatabaseFunctions.GetNameOfVideo(id, path).Replace("-", " ");
+                string palabra = DatabaseFunctions.GetNameOfVideo(id, path);
                 EnseñanzaPlayer.URL = signsPath + palabra + ".wmv";
                 EnseñanzaPlayer.Ctlcontrols.play();
                 await Task.Delay(50);
@@ -782,7 +784,7 @@ namespace SignIt
                             int b = rdn.Next(rdnMin, rdnMax);
                             bool abc = false;
                             ej1palabra.Text = "¿Cual seña corresponde a la palabra: ";
-                            ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(id, path) + "?";
+                            ej1palabra.Text = ej1palabra.Text + DatabaseFunctions.GetNameOfVideo(id, path).Replace("-", " ") + "?";
                             int f = rdn.Next(0, 2);
                             for (int i = 0; i < 1;)
                             {
@@ -1013,7 +1015,7 @@ namespace SignIt
 
 
 
-        private async void examenlecc_Click(object sender, EventArgs e)
+           private async void examenlecc_Click(object sender, EventArgs e)
         {
             desaparicionDelMenu();
             int vidas = 5;
@@ -1539,8 +1541,8 @@ namespace SignIt
                 myimage = new Bitmap(imagePath + "ContinuarLecciones" + ".PNG");
                 LeccionesHome.BackgroundImage = myimage;
             }
-            menu = false;
             Menubutton_Click(sender, e);
+            menu = false;
             signIt.SelectedTab = Home;
         }
 
